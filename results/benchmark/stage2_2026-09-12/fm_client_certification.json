@@ -1,0 +1,67 @@
+{
+  "esm2_likelihood": {
+    "server": "predictive",
+    "known_input": "PASS",
+    "negative_control": "PASS",
+    "receipt_resolves": "PASS",
+    "agent_reachability": "NOT_CHECKED",
+    "known_observed": {
+      "delta_log_probability": 0.19333171844482422,
+      "device": "cpu",
+      "method": "ESM2_single_position_masked_marginal_natural_log",
+      "model": "facebook/esm2_t6_8M_UR50D",
+      "mutant": "R",
+      "mutant_log_probability": -4.624170303344727,
+      "position": 1,
+      "revision": "c731040fcd8d73dceaa04b0a8e6329b345b0f5df",
+      "wt": "A",
+      "wt_log_probability": -4.817502021789551
+    },
+    "known_error": null,
+    "negative_error": "ValueError: ESM-2 requires <=1022 residues, one mutant amino acid, valid position",
+    "known_call_id": "call_id:348094a4da4d42c88b51c960974dbecc"
+  },
+  "esmfold": {
+    "server": "predictive",
+    "known_input": "PASS",
+    "negative_control": "PASS",
+    "receipt_resolves": "PASS",
+    "agent_reachability": "NOT_CHECKED",
+    "known_observed": {
+      "ca_count": 20,
+      "device": "cuda",
+      "interpretation": "structure confidence only; not a binding or stability measurement",
+      "mean_ca_bfactor_as_written": 0.7150000000000001,
+      "model": "facebook/esmfold_v1",
+      "pdb_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/model_artifacts/esmfold/d8a9bb2992295788facd0a6cb3245e2b0c24089c8e00b66ec79f316b9a16da49.pdb",
+      "revision": "75a3841ee059df2bf4d56688166c8fb459ddd97a",
+      "seed": 0,
+      "sequence_length": 20
+    },
+    "known_error": null,
+    "negative_error": "ValueError: sequence must contain 1\u201310000 canonical amino acids",
+    "known_call_id": "call_id:2d1d2820911f4c6b88eee1f6c74a0af4"
+  },
+  "esm_if": {
+    "server": "generative",
+    "known_input": "PASS",
+    "negative_control": "PASS",
+    "receipt_resolves": "PASS",
+    "agent_reachability": "NOT_CHECKED",
+    "known_observed": {
+      "sequence_length": 76,
+      "backbone_length": 76,
+      "mean_log_likelihood": -0.06536056493457995,
+      "mean_log_likelihood_with_coords": -0.06536056493457995,
+      "native_sequence_match": true,
+      "model": "esm_if1_gvp4_t16_142M_UR50",
+      "device": "cpu",
+      "pdb_path": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/1ubq.pdb",
+      "chain": "A",
+      "interpretation": "backbone-conditioned sequence score; not a measured stability effect"
+    },
+    "known_error": null,
+    "negative_error": "RuntimeError: ESM-IF1 worker exited 1: Traceback (most recent call last):\n  File \"/home/aid1/Documents/2_19C_biology/benchmark-mcp/esm_if_worker.py\", line 50, in <module>\n    print(json.dumps(score(**json.load(sys.stdin)), allow_nan=False))\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/aid1/Documents/2_19C_biology/benchmark-mcp/esm_if_worker.py\", line 36, in score\n    raise ValueError(\"input sequence length must match the backbone\")\nValueError: input sequence length must match the backbone\n",
+    "known_call_id": "call_id:df228250084844049a7652bf06ea7e51"
+  }
+}

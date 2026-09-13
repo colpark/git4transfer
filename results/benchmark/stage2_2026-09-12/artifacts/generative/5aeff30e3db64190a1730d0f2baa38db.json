@@ -1,0 +1,29 @@
+{
+  "args": {
+    "chain": "A",
+    "pdb_path": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/1ubq.pdb",
+    "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "60170e59cce84b1678b0e3b722b0214eea04928eeee3b2b2a37cfa57b4057fd6",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/generative/5aeff30e3db64190a1730d0f2baa38db.json",
+    "cache_hit": true,
+    "call_id": "call_id:5aeff30e3db64190a1730d0f2baa38db",
+    "runtime_s": 0.000206,
+    "tool": "esm_if"
+  },
+  "result": {
+    "backbone_length": 76,
+    "chain": "A",
+    "device": "cpu",
+    "interpretation": "backbone-conditioned sequence score; not a measured stability effect",
+    "mean_log_likelihood": -0.06536056493457995,
+    "mean_log_likelihood_with_coords": -0.06536056493457995,
+    "model": "esm_if1_gvp4_t16_142M_UR50",
+    "native_sequence_match": true,
+    "pdb_path": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/1ubq.pdb",
+    "sequence_length": 76
+  },
+  "server": "generative"
+}

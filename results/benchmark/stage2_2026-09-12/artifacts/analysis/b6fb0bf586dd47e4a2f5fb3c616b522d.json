@@ -1,0 +1,24 @@
+{
+  "args": {
+    "sequence_a": "ACDE",
+    "sequence_b": "ACDE"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "c19386e1fcaeffe7ecc923ad66c3f831ca4097bb28b6c963c7fe2a89f04527f7",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/analysis/b6fb0bf586dd47e4a2f5fb3c616b522d.json",
+    "cache_hit": true,
+    "call_id": "call_id:b6fb0bf586dd47e4a2f5fb3c616b522d",
+    "runtime_s": 0.000252,
+    "tool": "seq_identity"
+  },
+  "result": {
+    "aligned_a": "ACDE",
+    "aligned_b": "ACDE",
+    "alignment_columns": 4,
+    "definition": "global_matches_over_all_columns",
+    "identity": 1.0,
+    "matches": 4
+  },
+  "server": "analysis"
+}

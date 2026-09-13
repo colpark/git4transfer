@@ -1,0 +1,21 @@
+{
+  "args": {
+    "item_id": "stage2_smoke_w2_guided",
+    "note": "NON-SCORING MCP plumbing smoke for MegaScale 1UBQ.pdb_I3A. Required retrieve/score/compare/control calls succeeded. No assay label was fetched and no measured outcome is asserted. The two-copy [query,query] MSA is a toy plumbing input only. ESM-IF/DSSP use the independent 76-aa known 1UBQ structure; the identical-input OpenMM call is a zero control and is not ddG."
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "a92b3107ab70e3bd185afeb924b607f5709b4c642420ffc0e24ae39fafa83511",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/record/13a659cee7384806b1fea0b795be5641.json",
+    "cache_hit": false,
+    "call_id": "call_id:13a659cee7384806b1fea0b795be5641",
+    "runtime_s": 0.000642,
+    "tool": "log_note"
+  },
+  "result": {
+    "item_id": "stage2_smoke_w2_guided",
+    "logged": true,
+    "note_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/notes/stage2_smoke_w2_guided_48d01e8902774ac99ebbe8d6cdf9396a.json"
+  },
+  "server": "record"
+}

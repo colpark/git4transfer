@@ -1,0 +1,24 @@
+{
+  "args": {
+    "answer": {
+      "kind": "plumbing",
+      "status": "non_scoring"
+    },
+    "item_id": "stage2_agent_nonfm_20260912"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "96cb20e92fc5a8b95570b7b63619b229e741145f2c7216df56963fb8357dbc68",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/record/ff4fdbc15ad149c7b214fe21e56bebab.json",
+    "cache_hit": false,
+    "call_id": "call_id:ff4fdbc15ad149c7b214fe21e56bebab",
+    "runtime_s": 0.000457,
+    "tool": "submit_answer"
+  },
+  "result": {
+    "accepted": true,
+    "item_id": "stage2_agent_nonfm_20260912",
+    "submission_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/submissions/stage2_agent_nonfm_20260912.json"
+  },
+  "server": "record"
+}

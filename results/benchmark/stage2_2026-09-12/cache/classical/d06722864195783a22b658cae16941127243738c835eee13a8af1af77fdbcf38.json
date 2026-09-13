@@ -1,0 +1,1 @@
+{"error": null, "result": {"hits": [{"alignment_length": 40, "bitscore": 90.9, "evalue": 2.67e-32, "pident_pct": 100.0, "query_coverage_pct": 100.0, "target": "exact_reference"}], "reference_fasta": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/search.fasta"}}

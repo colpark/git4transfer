@@ -1,0 +1,44 @@
+{
+  "blosum_score": {
+    "agent_called_through_mcp": true,
+    "agent_read_value_correctly": true,
+    "receipt_resolves": true,
+    "call_id": "call_id:f384f3690c9e4d0585aad0c3d607dafa"
+  },
+  "pssm_score": {
+    "agent_called_through_mcp": true,
+    "agent_read_value_correctly": true,
+    "receipt_resolves": true,
+    "call_id": "call_id:3130d04f956f4a588a94aedf1739a928"
+  },
+  "conservation": {
+    "agent_called_through_mcp": true,
+    "agent_read_value_correctly": true,
+    "receipt_resolves": true,
+    "call_id": "call_id:d7e1544757454947b258077a137f6031"
+  },
+  "motif_scan": {
+    "agent_called_through_mcp": true,
+    "agent_read_value_correctly": true,
+    "receipt_resolves": true,
+    "call_id": "call_id:e56e367c4b624f54aabfbe4fc708372e"
+  },
+  "hbond_geometry": {
+    "agent_called_through_mcp": true,
+    "agent_read_value_correctly": true,
+    "receipt_resolves": true,
+    "call_id": "call_id:bd791569e9644034a6013307a224603d"
+  },
+  "blast_search": {
+    "agent_called_through_mcp": true,
+    "agent_read_value_correctly": true,
+    "receipt_resolves": true,
+    "call_id": "call_id:15580a46e9664b7fbd223943841bd640"
+  },
+  "mmseqs_search": {
+    "agent_called_through_mcp": true,
+    "agent_read_value_correctly": true,
+    "receipt_resolves": true,
+    "call_id": "call_id:0f4aa6583365483bae173f8fee0c06bf"
+  }
+}

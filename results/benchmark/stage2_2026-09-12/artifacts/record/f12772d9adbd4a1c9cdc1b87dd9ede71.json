@@ -1,0 +1,21 @@
+{
+  "args": {
+    "item_id": "stage2_smoke_w2_unguided",
+    "note": "NON-SCORING unguided MCP smoke; no cohort membership, label lookup, measured outcome, or predictive-accuracy claim. Workflow retrieve \u2192 score \u2192 compare \u2192 rank \u2192 filter \u2192 submit. Exact supplied sequence is 72 aa, despite user description of 74-aa assay construct; used supplied sequence without adding residues. I3A validated at one-based position 3; identity 71/72. MMseqs retrieved sequence-only reference hits. ESM2 mutant-minus-WT log likelihood -1.6643191576004028 and BLOSUM62 -1 support only modest provisional lower sequence preference; rank 1 of 1 smoke candidates, low priority for stability follow-up and retain only for plumbing, with biological advancement held pending construct reconciliation and independent evidence. PSSM delta -1.584962500721156 bits uses duplicate [sequence,sequence] toy plumbing MSA, not biological evidence. ESMFold seed 0 produced 72 CA atoms; confidence is not a stability delta. ESM-IF and DSSP use independent native 76-aa 1UBQ chain A structure control, not the assay construct. ESM-IF native sequence matched, mean log likelihood -0.06536056493457995; DSSP returned 76 residues. OpenMM uses identical unrelated prepared test.pdb inputs, yielding exactly 0 kJ/mol potential-energy difference as ZERO control only, not ddG or I3A effect. PubMed search succeeded but returned broad ubiquitin-pathway articles, not direct evidence for I3A."
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "b6458b8c50c8ea4dfc50fcdcab2f974e511f3ecb20898055743d6cb82eb9501a",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/record/f12772d9adbd4a1c9cdc1b87dd9ede71.json",
+    "cache_hit": false,
+    "call_id": "call_id:f12772d9adbd4a1c9cdc1b87dd9ede71",
+    "runtime_s": 0.000459,
+    "tool": "log_note"
+  },
+  "result": {
+    "item_id": "stage2_smoke_w2_unguided",
+    "logged": true,
+    "note_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/notes/stage2_smoke_w2_unguided_a91d97a609e6469484bee9e7a7cea85e.json"
+  },
+  "server": "record"
+}

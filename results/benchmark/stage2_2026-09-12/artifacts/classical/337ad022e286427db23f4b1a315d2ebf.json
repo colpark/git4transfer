@@ -1,0 +1,31 @@
+{
+  "args": {
+    "max_hits": 5,
+    "reference_fasta": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage1_2026-09-12/w1_sequences.fasta",
+    "sequence": "GATAVSEWTEYKTADGKTYYYNNRTLESTWEKPQELK"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "95fb8d22eb28ca60352d2c98566f132ac037137a2a1bbbc5d1b0a01266754ae5",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/337ad022e286427db23f4b1a315d2ebf.json",
+    "cache_hit": true,
+    "call_id": "call_id:337ad022e286427db23f4b1a315d2ebf",
+    "runtime_s": 0.000326,
+    "tool": "mmseqs_search"
+  },
+  "result": {
+    "hits": [
+      {
+        "alignment_length": 37,
+        "bitscore": 83.0,
+        "evalue": 2.531e-23,
+        "pident_pct": 100.0,
+        "query_coverage": 1.0,
+        "target": "TCRG1_MOUSE_Tsuboyama_2023_1E0L",
+        "target_coverage": 1.0
+      }
+    ],
+    "reference_fasta": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage1_2026-09-12/w1_sequences.fasta"
+  },
+  "server": "classical"
+}

@@ -1,0 +1,17 @@
+{
+  "args": {
+    "max_hits": 1,
+    "term": "zzzz_stage2_no_such_paper_934829"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "7bf3295f694ec2fdb14f348715ea38d396c85cc22049e7f65d6cf3719dd09aa3",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/lit/6607828cf27f425684d08dedd847ab2e.json",
+    "cache_hit": false,
+    "call_id": "call_id:6607828cf27f425684d08dedd847ab2e",
+    "runtime_s": 0.227251,
+    "tool": "pubmed_search"
+  },
+  "result": null,
+  "server": "lit"
+}

@@ -1,0 +1,21 @@
+{
+  "args": {
+    "item_id": "stage2_smoke_w2_guided_v2",
+    "note": "NON-SCORING smoke, not a cohort item. Completed retrieve -> score -> compare. All required scientific calls succeeded (cached receipts). Assay construct is 72 aa; I3A yields 71/72 identity. Provisional rank: WT reference ahead of I3A for sequence plausibility only (ESM2 delta log probability -1.6643191576004028; BLOSUM62 -1); I3A rank 1 of 1 submitted substitutions. Filter: retain for plumbing smoke, do not advance as an established stabilizing substitution. PSSM delta -1.584962500721156 bits and guided conservation 1.0 use a toy duplicate MSA [sequence, sequence], not biological evidence. MMseqs retrieved reference sequence records including I3A, with no assay label lookup. PubMed results are broad and do not establish I3A stability. ESMFold seed 0 produced 72 CA atoms, confidence only. ESM-IF and DSSP used independent 76-aa native 1UBQ chain A structural controls, distinct from the assay construct. OpenMM used the same unrelated prepared test.pdb twice and returned zero potential-energy difference; zero control only, not ddG. No measured outcome, benchmark score, or predictive accuracy claim."
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "2e895e90953be2f1a0f1451ad7a64e4069ff021a2510f85cc91e46c50345d9d3",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/record/9b811f6e587540d9aa4ed9a2bebb0ef0.json",
+    "cache_hit": false,
+    "call_id": "call_id:9b811f6e587540d9aa4ed9a2bebb0ef0",
+    "runtime_s": 0.000424,
+    "tool": "log_note"
+  },
+  "result": {
+    "item_id": "stage2_smoke_w2_guided_v2",
+    "logged": true,
+    "note_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/notes/stage2_smoke_w2_guided_v2_7c91bbd543474f078ad88973ec88897e.json"
+  },
+  "server": "record"
+}

@@ -1,0 +1,18 @@
+{
+  "args": {
+    "chain": "A",
+    "pdb_path": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/1ubq.pdb",
+    "sequence": "ACDEFGHIKLMNPQRSTVWY"
+  },
+  "error": "RuntimeError: ESM-IF1 worker exited 1: Traceback (most recent call last):\n  File \"/home/aid1/Documents/2_19C_biology/benchmark-mcp/esm_if_worker.py\", line 50, in <module>\n    print(json.dumps(score(**json.load(sys.stdin)), allow_nan=False))\n                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/home/aid1/Documents/2_19C_biology/benchmark-mcp/esm_if_worker.py\", line 36, in score\n    raise ValueError(\"input sequence length must match the backbone\")\nValueError: input sequence length must match the backbone\n",
+  "receipt": {
+    "args_hash": "3b1ccb5aeb1c30e31f5699f464eb92cca9ca039a8e4115b1b921394bc347392b",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/generative/a3db30b314924ae68c442219eabf43fb.json",
+    "cache_hit": false,
+    "call_id": "call_id:a3db30b314924ae68c442219eabf43fb",
+    "runtime_s": 2.441993,
+    "tool": "esm_if"
+  },
+  "result": null,
+  "server": "generative"
+}

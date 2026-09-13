@@ -1,0 +1,24 @@
+{
+  "args": {
+    "sequence_a": "GATAVSEWTEYKTADGKTYYYNNRTLESTWEKPQELK",
+    "sequence_b": "GVTAVSEWTEYKTADGKTYYYNNRTLESTWEKPQELK"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "45a7b20bf0299238311a1f1511ca4828563bbda1d04030f570d11635e44e3f0c",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/analysis/53f2e4072e064fb6993687164ab225e9.json",
+    "cache_hit": false,
+    "call_id": "call_id:53f2e4072e064fb6993687164ab225e9",
+    "runtime_s": 0.006789,
+    "tool": "seq_identity"
+  },
+  "result": {
+    "aligned_a": "GATAVSEWTEYKTADGKTYYYNNRTLESTWEKPQELK",
+    "aligned_b": "GVTAVSEWTEYKTADGKTYYYNNRTLESTWEKPQELK",
+    "alignment_columns": 37,
+    "definition": "global_matches_over_all_columns",
+    "identity": 0.972972972972973,
+    "matches": 36
+  },
+  "server": "analysis"
+}

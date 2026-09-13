@@ -1,0 +1,18 @@
+{
+  "args": {
+    "max_hits": 5,
+    "reference_fasta": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/search.fasta",
+    "sequence": "ACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY"
+  },
+  "error": "RuntimeError: blastp exit 127: /home/aid1/Documents/2_19C_biology/biology-stack/ncbi-blast/usr/bin/blastp: error while loading shared libraries: libblastinput.so: cannot open shared object file: No such file or directory\n",
+  "receipt": {
+    "args_hash": "d06722864195783a22b658cae16941127243738c835eee13a8af1af77fdbcf38",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/c78acefbfdf745bca50c88499da236c5.json",
+    "cache_hit": false,
+    "call_id": "call_id:c78acefbfdf745bca50c88499da236c5",
+    "runtime_s": 0.001482,
+    "tool": "blast_search"
+  },
+  "result": null,
+  "server": "classical"
+}

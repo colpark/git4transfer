@@ -1,0 +1,30 @@
+{
+  "args": {
+    "max_hits": 5,
+    "reference_fasta": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/search.fasta",
+    "sequence": "ACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "d06722864195783a22b658cae16941127243738c835eee13a8af1af77fdbcf38",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/15580a46e9664b7fbd223943841bd640.json",
+    "cache_hit": true,
+    "call_id": "call_id:15580a46e9664b7fbd223943841bd640",
+    "runtime_s": 0.000205,
+    "tool": "blast_search"
+  },
+  "result": {
+    "hits": [
+      {
+        "alignment_length": 40,
+        "bitscore": 90.9,
+        "evalue": 2.67e-32,
+        "pident_pct": 100.0,
+        "query_coverage_pct": 100.0,
+        "target": "exact_reference"
+      }
+    ],
+    "reference_fasta": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/search.fasta"
+  },
+  "server": "classical"
+}

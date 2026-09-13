@@ -1,0 +1,17 @@
+{
+  "args": {
+    "pdb_a": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/invalid.pdb",
+    "pdb_b": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/pdb1.pdb"
+  },
+  "error": "ValueError: TM-align did not return both normalized TM-scores",
+  "receipt": {
+    "args_hash": "fcc67efbb069902118de486fecc3ed6c6141fb86aa1c948e4433ebaecd26e1cd",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/analysis/87a06a27d5354e6ea8dda8788862f378.json",
+    "cache_hit": false,
+    "call_id": "call_id:87a06a27d5354e6ea8dda8788862f378",
+    "runtime_s": 0.001988,
+    "tool": "tmalign"
+  },
+  "result": null,
+  "server": "analysis"
+}

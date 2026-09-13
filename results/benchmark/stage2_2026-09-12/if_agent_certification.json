@@ -1,0 +1,8 @@
+{
+  "esm_if": {
+    "agent_called_through_mcp": true,
+    "agent_read_value_correctly": true,
+    "receipt_resolves": true,
+    "call_id": "call_id:78c01f16dc7845f3b4cbd77e56c4fdd7"
+  }
+}

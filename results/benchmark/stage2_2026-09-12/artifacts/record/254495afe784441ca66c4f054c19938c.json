@@ -1,0 +1,21 @@
+{
+  "args": {
+    "item_id": "stage2_smoke_w2_unguided_v2",
+    "note": "NON-SCORING unguided plumbing smoke, not a cohort item. Completed retrieve \u2192 score \u2192 compare. Provisional rank: I3A is 1 of 1 supplied candidates, with low priority for a stability-improvement hypothesis because BLOSUM62=-1 and ESM2 masked-marginal delta log probability=-1.6643191576004028 favor WT; these are not stability measurements. Filter: retain for plumbing only; insufficient evidence to select as stabilizing. Identity is 71/72. PSSM delta=-1.584962500721156 bits uses two identical copies of the 72-aa query, a toy plumbing MSA, not biological evidence. ESMFold seed 0 returns 72 CA atoms and structure confidence only. ESM-IF and DSSP use the independent 76-aa native 1UBQ chain A control, distinct from the 72-aa MegaScale construct. OpenMM uses identical unrelated prepared test.pdb inputs and returns zero potential-energy difference, solely a ZERO control, not ddG. PubMed broad search succeeded but returned no variant-specific evidence. No assay label fetched, no measured outcome, no stability delta or predictive-accuracy claim."
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "3614cc8cba6ab458d72049ca294865e1300f346b5e5a023960caaca34b724a3c",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/record/254495afe784441ca66c4f054c19938c.json",
+    "cache_hit": false,
+    "call_id": "call_id:254495afe784441ca66c4f054c19938c",
+    "runtime_s": 0.000637,
+    "tool": "log_note"
+  },
+  "result": {
+    "item_id": "stage2_smoke_w2_unguided_v2",
+    "logged": true,
+    "note_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/notes/stage2_smoke_w2_unguided_v2_15c1a409e5d04a1486dc9739b2bee052.json"
+  },
+  "server": "record"
+}

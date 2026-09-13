@@ -1,0 +1,121 @@
+{
+  "model": "glm-4.7-flash-cpu8k:stage2",
+  "base_model": "glm-4.7-flash:q4_K_M",
+  "host": "spark-112b",
+  "architecture": "aarch64",
+  "model_info": {
+    "parameter_size": "29.9B",
+    "quantization_level": "Q4_K_M",
+    "family": "glm4moelite",
+    "modified_at": "2026-09-12T23:07:12.786684975-05:00",
+    "digest": null
+  },
+  "precision": "Q4_K_M",
+  "memory_before": {
+    "MemTotal_GiB": 119.676,
+    "MemFree_GiB": 22.288,
+    "MemAvailable_GiB": 84.579,
+    "SwapTotal_GiB": 0.0
+  },
+  "memory_after_load": {
+    "MemTotal_GiB": 119.676,
+    "MemFree_GiB": 22.233,
+    "MemAvailable_GiB": 84.523,
+    "SwapTotal_GiB": 0.0
+  },
+  "memory_after_smoke": {
+    "MemTotal_GiB": 119.676,
+    "MemFree_GiB": 21.945,
+    "MemAvailable_GiB": 84.245,
+    "SwapTotal_GiB": 0.0
+  },
+  "load_and_serve_s": 1.347,
+  "served_response": "",
+  "served_thinking": "The user wants a simple response: \"READY\".\n\n1.  **Analyze",
+  "served_done_reason": "length",
+  "served": true,
+  "codex_exit_code": 1,
+  "stderr": "2026-09-13T04:07:41.855985Z ERROR codex_models_manager::manager: failed to refresh available models: stream disconnected before completion: failed to decode models response: missing field `models` at line 1 column 288; body: {\"object\":\"list\",\"data\":[{\"id\":\"glm-4.7-flash-cpu8k:stage2\",\"object\":\"model\",\"created\":1789272432,\"owned_by\":\"library\"},{\"id\":\"glm-4.7-flash:q4_K_M\",\"object\":\"model\",\"created\":1789272426,\"owned_by\":\"library\"},{\"id\":\"qwen3:30b\",\"object\":\"model\",\"created\":1789272030,\"owned_by\":\"library\"}]}\n\n",
+  "trace_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/subject_glm_w1_trace.jsonl",
+  "server_calls": {
+    "classical": {
+      "attempted": 0,
+      "successful": 0,
+      "success_rate": null,
+      "not_attempted": true
+    },
+    "analysis": {
+      "attempted": 0,
+      "successful": 0,
+      "success_rate": null,
+      "not_attempted": true
+    },
+    "predictive": {
+      "attempted": 0,
+      "successful": 0,
+      "success_rate": null,
+      "not_attempted": true
+    },
+    "generative": {
+      "attempted": 0,
+      "successful": 0,
+      "success_rate": null,
+      "not_attempted": true
+    },
+    "physics": {
+      "attempted": 0,
+      "successful": 0,
+      "success_rate": null,
+      "not_attempted": true
+    },
+    "lit": {
+      "attempted": 0,
+      "successful": 0,
+      "success_rate": null,
+      "not_attempted": true
+    },
+    "record": {
+      "attempted": 0,
+      "successful": 0,
+      "success_rate": null,
+      "not_attempted": true
+    }
+  },
+  "citation_valid_by_server": {
+    "classical": false,
+    "analysis": false,
+    "predictive": false,
+    "generative": false,
+    "physics": false,
+    "lit": false,
+    "record": false
+  },
+  "criterion_c_pass": false,
+  "submission_count": 0,
+  "submitted_answer": {},
+  "events": [
+    {
+      "type": "thread.started",
+      "thread_id": "01a098f3-11fd-7172-8b94-19ba67b86c7b"
+    },
+    {
+      "type": "item.completed",
+      "item": {
+        "id": "item_0",
+        "type": "error",
+        "message": "Model metadata for `glm-4.7-flash-cpu8k:stage2` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."
+      }
+    },
+    {
+      "type": "turn.started"
+    },
+    {
+      "type": "item.completed",
+      "item": {
+        "id": "item_1",
+        "type": "error",
+        "message": "Skill descriptions were shortened to fit the skills context budget. Codex can still see every skill, but some descriptions are shorter. Disable unused skills or plugins to leave more room for the rest."
+      }
+    }
+  ]
+}

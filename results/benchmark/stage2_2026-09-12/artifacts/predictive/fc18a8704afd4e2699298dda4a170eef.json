@@ -1,0 +1,29 @@
+{
+  "args": {
+    "mutant": "V",
+    "position": 2,
+    "sequence": "GATAVSEWTEYKTADGKTYYYNNRTLESTWEKPQELK"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "a033c3a3337cb753eb107261e873b240c26ded9eea23984918ec6b539ea6e8a2",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/predictive/fc18a8704afd4e2699298dda4a170eef.json",
+    "cache_hit": false,
+    "call_id": "call_id:fc18a8704afd4e2699298dda4a170eef",
+    "runtime_s": 2.068765,
+    "tool": "esm2_likelihood"
+  },
+  "result": {
+    "delta_log_probability": -0.5500593185424805,
+    "device": "cpu",
+    "method": "ESM2_single_position_masked_marginal_natural_log",
+    "model": "facebook/esm2_t6_8M_UR50D",
+    "mutant": "V",
+    "mutant_log_probability": -3.279609203338623,
+    "position": 2,
+    "revision": "c731040fcd8d73dceaa04b0a8e6329b345b0f5df",
+    "wt": "A",
+    "wt_log_probability": -2.7295498847961426
+  },
+  "server": "predictive"
+}

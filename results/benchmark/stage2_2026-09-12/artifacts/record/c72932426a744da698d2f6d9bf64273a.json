@@ -1,0 +1,17 @@
+{
+  "args": {
+    "item_id": "stage2_smoke_w1_guided",
+    "note": "{\"mode\":\"guided_non_scoring_smoke\",\"assay_id\":\"TCRG1_MOUSE_Tsuboyama_2023_1E0L\",\"sequence\":\"GATAVSEWTEYKTADGKTYYYNNRTLESTWEKPQELK\",\"variant\":\"A2V\",\"cohort_item\":false,\"workflow\":[\"retrieve\",\"score\",\"compare\",\"rank\",\"filter\",\"submit\"],\"retrieval\":\"MMseqs returned only a 100%-identity self-hit over all 37 residues; no independent homolog evidence. PubMed returned PMID 37468638 as general study context only; no assay label or measured outcome was fetched.\",\"comparison\":\"A2V has 36/37 aligned matches (identity 0.972972972972973). BLOSUM62 A-to-V is 0, which does not mean zero biological effect. ESM2 masked-marginal mutant-minus-WT log probability is -0.5500593185424805: a modest model preference for WT, not a stability measurement or calibrated assay prediction.\",\"ranking\":[{\"variant\":\"A2V\",\"rank\":1,\"candidate_count\":1,\"explanation\":\"Provisional singleton smoke rank only; retain for plumbing. There is no comparative superiority claim and insufficient evidence to prioritize this as a stabilizing substitution.\"}],\"filter\":{\"decision\":\"retain_for_smoke_only\",\"explanation\":\"Valid one-based A2V substitution in the 37-aa construct. Exclude from cohort scoring and from claims of improved stability or predictive accuracy.\"},\"toy_msa\":\"PSSM and guided screen used [sequence, sequence], a two-copy toy plumbing MSA, not biological evidence. Delta is -1.584962500721156 bits; apparent conservation 1.0 is an artifact of duplicated WT and contributes no biological ranking evidence.\",\"structure\":\"ESMFold seed 0 returned 37 CA atoms, mean CA B-factor as written 0.831081081081081. Confidence is not a stability delta.\",\"independent_controls\":\"ESM-IF used unrelated 1UBQ chain A with the exact 76-aa ubiquitin sequence; native_sequence_match=true, mean log likelihood=-0.06536056493457995. DSSP assigned 76 residues in that unrelated structure. Neither result describes the 37-aa TCRG1 construct. OpenMM used the identical prepared test.pdb for both arguments: both potential energies -100205.28562001859 kJ/mol, difference 0.0 kJ/mol. This is a ZERO backend control only, not folding ddG or an A2V stability effect.\",\"measured_outcome\":null,\"assay_score\":null,\"predictive_accuracy_claim\":false}"
+  },
+  "error": "ValueError: note must be nonempty and at most 2000 characters",
+  "receipt": {
+    "args_hash": "149b42617e2fd81367c7cbdec16b7605f2ceb81e3ccb946c70685711841e7d30",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/record/c72932426a744da698d2f6d9bf64273a.json",
+    "cache_hit": false,
+    "call_id": "call_id:c72932426a744da698d2f6d9bf64273a",
+    "runtime_s": 0.000344,
+    "tool": "log_note"
+  },
+  "result": null,
+  "server": "record"
+}

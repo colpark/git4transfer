@@ -1,0 +1,50 @@
+{
+  "seq_identity": {
+    "agent_called_through_mcp": true,
+    "agent_read_value_correctly": true,
+    "receipt_resolves": true,
+    "call_id": "call_id:b6fb0bf586dd47e4a2f5fb3c616b522d"
+  },
+  "tmalign": {
+    "agent_called_through_mcp": true,
+    "agent_read_value_correctly": true,
+    "receipt_resolves": true,
+    "call_id": "call_id:5783aea84aab4e7d830cb34ab598afc1"
+  },
+  "dssp": {
+    "agent_called_through_mcp": true,
+    "agent_read_value_correctly": true,
+    "receipt_resolves": true,
+    "call_id": "call_id:8cb498b645f64ae3a5d2484c39f9d00c"
+  },
+  "openmm_delta_energy": {
+    "agent_called_through_mcp": true,
+    "agent_read_value_correctly": true,
+    "receipt_resolves": true,
+    "call_id": "call_id:113a185e53014f87847f4bbcbd8b97e0"
+  },
+  "pubmed_search": {
+    "agent_called_through_mcp": true,
+    "agent_read_value_correctly": true,
+    "receipt_resolves": true,
+    "call_id": "call_id:96986d58f6b24396a31fddadbaac0439"
+  },
+  "log_note": {
+    "agent_called_through_mcp": true,
+    "agent_read_value_correctly": true,
+    "receipt_resolves": true,
+    "call_id": "call_id:b8c71b956346457a9ade2bb3f412d3a2"
+  },
+  "submit_answer": {
+    "agent_called_through_mcp": true,
+    "agent_read_value_correctly": true,
+    "receipt_resolves": true,
+    "call_id": "call_id:ff4fdbc15ad149c7b214fe21e56bebab"
+  },
+  "pyrosetta_ddg": {
+    "agent_called_through_mcp": true,
+    "agent_read_value_correctly": true,
+    "receipt_resolves": true,
+    "call_id": "call_id:4e9ef58618054be896050b16cd280b9c"
+  }
+}

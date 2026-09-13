@@ -1,0 +1,17 @@
+{
+  "args": {
+    "seed": 0,
+    "sequence": "ACDEX"
+  },
+  "error": "ValueError: sequence must contain 1\u201310000 canonical amino acids",
+  "receipt": {
+    "args_hash": "14095025952a491bef897f79172a155d5cda2b299305eff764bc8412fcc53f4f",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/predictive/cf2ff0cc76664c96bf56d28b9da0b89e.json",
+    "cache_hit": false,
+    "call_id": "call_id:cf2ff0cc76664c96bf56d28b9da0b89e",
+    "runtime_s": 0.000101,
+    "tool": "esmfold"
+  },
+  "result": null,
+  "server": "predictive"
+}

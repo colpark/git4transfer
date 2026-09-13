@@ -1,0 +1,580 @@
+{
+  "seq_identity": {
+    "server": "analysis",
+    "known_input": "PASS",
+    "negative_control": "PASS",
+    "receipt_resolves": "PASS",
+    "agent_reachability": "NOT_CHECKED",
+    "known_observed": {
+      "identity": 1.0,
+      "matches": 4,
+      "alignment_columns": 4,
+      "aligned_a": "ACDE",
+      "aligned_b": "ACDE",
+      "definition": "global_matches_over_all_columns"
+    },
+    "known_error": null,
+    "negative_error": "ValueError: sequence must contain 1\u201310000 canonical amino acids",
+    "known_call_id": "call_id:ee8711efac7f48f2a5c348077228cebf"
+  },
+  "tmalign": {
+    "server": "analysis",
+    "known_input": "PASS",
+    "negative_control": "PASS",
+    "receipt_resolves": "PASS",
+    "agent_reachability": "NOT_CHECKED",
+    "known_observed": {
+      "tm_score_by_structure_1": 1.0,
+      "tm_score_by_structure_2": 1.0,
+      "rmsd_A": 0.0,
+      "aligned_length": 250,
+      "source": "pylelab/USalign TMalign.cpp fcb0f9d921415a2095bc509975db7fc1e968af1d"
+    },
+    "known_error": null,
+    "negative_error": "ValueError: TM-align did not return both normalized TM-scores",
+    "known_call_id": "call_id:3c6c2612984541fa950a9f51e2dbad63"
+  },
+  "dssp": {
+    "server": "physics",
+    "known_input": "PASS",
+    "negative_control": "PASS",
+    "receipt_resolves": "PASS",
+    "agent_reachability": "NOT_CHECKED",
+    "known_observed": {
+      "residue_count": 76,
+      "residues": [
+        {
+          "position": 1,
+          "chain": "A",
+          "aa": "M",
+          "secondary_structure": "-"
+        },
+        {
+          "position": 2,
+          "chain": "A",
+          "aa": "Q",
+          "secondary_structure": "E"
+        },
+        {
+          "position": 3,
+          "chain": "A",
+          "aa": "I",
+          "secondary_structure": "E"
+        },
+        {
+          "position": 4,
+          "chain": "A",
+          "aa": "F",
+          "secondary_structure": "E"
+        },
+        {
+          "position": 5,
+          "chain": "A",
+          "aa": "V",
+          "secondary_structure": "E"
+        },
+        {
+          "position": 6,
+          "chain": "A",
+          "aa": "K",
+          "secondary_structure": "E"
+        },
+        {
+          "position": 7,
+          "chain": "A",
+          "aa": "T",
+          "secondary_structure": "E"
+        },
+        {
+          "position": 8,
+          "chain": "A",
+          "aa": "L",
+          "secondary_structure": "T"
+        },
+        {
+          "position": 9,
+          "chain": "A",
+          "aa": "T",
+          "secondary_structure": "T"
+        },
+        {
+          "position": 10,
+          "chain": "A",
+          "aa": "G",
+          "secondary_structure": "S"
+        },
+        {
+          "position": 11,
+          "chain": "A",
+          "aa": "K",
+          "secondary_structure": "-"
+        },
+        {
+          "position": 12,
+          "chain": "A",
+          "aa": "T",
+          "secondary_structure": "E"
+        },
+        {
+          "position": 13,
+          "chain": "A",
+          "aa": "I",
+          "secondary_structure": "E"
+        },
+        {
+          "position": 14,
+          "chain": "A",
+          "aa": "T",
+          "secondary_structure": "E"
+        },
+        {
+          "position": 15,
+          "chain": "A",
+          "aa": "L",
+          "secondary_structure": "E"
+        },
+        {
+          "position": 16,
+          "chain": "A",
+          "aa": "E",
+          "secondary_structure": "E"
+        },
+        {
+          "position": 17,
+          "chain": "A",
+          "aa": "V",
+          "secondary_structure": "-"
+        },
+        {
+          "position": 18,
+          "chain": "A",
+          "aa": "E",
+          "secondary_structure": "-"
+        },
+        {
+          "position": 19,
+          "chain": "A",
+          "aa": "P",
+          "secondary_structure": "T"
+        },
+        {
+          "position": 20,
+          "chain": "A",
+          "aa": "S",
+          "secondary_structure": "T"
+        },
+        {
+          "position": 21,
+          "chain": "A",
+          "aa": "D",
+          "secondary_structure": "S"
+        },
+        {
+          "position": 22,
+          "chain": "A",
+          "aa": "T",
+          "secondary_structure": "B"
+        },
+        {
+          "position": 23,
+          "chain": "A",
+          "aa": "I",
+          "secondary_structure": "H"
+        },
+        {
+          "position": 24,
+          "chain": "A",
+          "aa": "E",
+          "secondary_structure": "H"
+        },
+        {
+          "position": 25,
+          "chain": "A",
+          "aa": "N",
+          "secondary_structure": "H"
+        },
+        {
+          "position": 26,
+          "chain": "A",
+          "aa": "V",
+          "secondary_structure": "H"
+        },
+        {
+          "position": 27,
+          "chain": "A",
+          "aa": "K",
+          "secondary_structure": "H"
+        },
+        {
+          "position": 28,
+          "chain": "A",
+          "aa": "A",
+          "secondary_structure": "H"
+        },
+        {
+          "position": 29,
+          "chain": "A",
+          "aa": "K",
+          "secondary_structure": "H"
+        },
+        {
+          "position": 30,
+          "chain": "A",
+          "aa": "I",
+          "secondary_structure": "H"
+        },
+        {
+          "position": 31,
+          "chain": "A",
+          "aa": "Q",
+          "secondary_structure": "H"
+        },
+        {
+          "position": 32,
+          "chain": "A",
+          "aa": "D",
+          "secondary_structure": "H"
+        },
+        {
+          "position": 33,
+          "chain": "A",
+          "aa": "K",
+          "secondary_structure": "H"
+        },
+        {
+          "position": 34,
+          "chain": "A",
+          "aa": "E",
+          "secondary_structure": "H"
+        },
+        {
+          "position": 35,
+          "chain": "A",
+          "aa": "G",
+          "secondary_structure": "-"
+        },
+        {
+          "position": 36,
+          "chain": "A",
+          "aa": "I",
+          "secondary_structure": "-"
+        },
+        {
+          "position": 37,
+          "chain": "A",
+          "aa": "P",
+          "secondary_structure": "-"
+        },
+        {
+          "position": 38,
+          "chain": "A",
+          "aa": "P",
+          "secondary_structure": "G"
+        },
+        {
+          "position": 39,
+          "chain": "A",
+          "aa": "D",
+          "secondary_structure": "G"
+        },
+        {
+          "position": 40,
+          "chain": "A",
+          "aa": "Q",
+          "secondary_structure": "G"
+        },
+        {
+          "position": 41,
+          "chain": "A",
+          "aa": "Q",
+          "secondary_structure": "E"
+        },
+        {
+          "position": 42,
+          "chain": "A",
+          "aa": "R",
+          "secondary_structure": "E"
+        },
+        {
+          "position": 43,
+          "chain": "A",
+          "aa": "L",
+          "secondary_structure": "E"
+        },
+        {
+          "position": 44,
+          "chain": "A",
+          "aa": "I",
+          "secondary_structure": "E"
+        },
+        {
+          "position": 45,
+          "chain": "A",
+          "aa": "F",
+          "secondary_structure": "E"
+        },
+        {
+          "position": 46,
+          "chain": "A",
+          "aa": "A",
+          "secondary_structure": "T"
+        },
+        {
+          "position": 47,
+          "chain": "A",
+          "aa": "G",
+          "secondary_structure": "T"
+        },
+        {
+          "position": 48,
+          "chain": "A",
+          "aa": "K",
+          "secondary_structure": "E"
+        },
+        {
+          "position": 49,
+          "chain": "A",
+          "aa": "Q",
+          "secondary_structure": "E"
+        },
+        {
+          "position": 50,
+          "chain": "A",
+          "aa": "L",
+          "secondary_structure": "P"
+        },
+        {
+          "position": 51,
+          "chain": "A",
+          "aa": "E",
+          "secondary_structure": "P"
+        },
+        {
+          "position": 52,
+          "chain": "A",
+          "aa": "D",
+          "secondary_structure": "T"
+        },
+        {
+          "position": 53,
+          "chain": "A",
+          "aa": "G",
+          "secondary_structure": "T"
+        },
+        {
+          "position": 54,
+          "chain": "A",
+          "aa": "R",
+          "secondary_structure": "S"
+        },
+        {
+          "position": 55,
+          "chain": "A",
+          "aa": "T",
+          "secondary_structure": "B"
+        },
+        {
+          "position": 56,
+          "chain": "A",
+          "aa": "L",
+          "secondary_structure": "T"
+        },
+        {
+          "position": 57,
+          "chain": "A",
+          "aa": "S",
+          "secondary_structure": "G"
+        },
+        {
+          "position": 58,
+          "chain": "A",
+          "aa": "D",
+          "secondary_structure": "G"
+        },
+        {
+          "position": 59,
+          "chain": "A",
+          "aa": "Y",
+          "secondary_structure": "G"
+        },
+        {
+          "position": 60,
+          "chain": "A",
+          "aa": "N",
+          "secondary_structure": "T"
+        },
+        {
+          "position": 61,
+          "chain": "A",
+          "aa": "I",
+          "secondary_structure": "P"
+        },
+        {
+          "position": 62,
+          "chain": "A",
+          "aa": "Q",
+          "secondary_structure": "P"
+        },
+        {
+          "position": 63,
+          "chain": "A",
+          "aa": "K",
+          "secondary_structure": "T"
+        },
+        {
+          "position": 64,
+          "chain": "A",
+          "aa": "E",
+          "secondary_structure": "T"
+        },
+        {
+          "position": 65,
+          "chain": "A",
+          "aa": "S",
+          "secondary_structure": "-"
+        },
+        {
+          "position": 66,
+          "chain": "A",
+          "aa": "T",
+          "secondary_structure": "E"
+        },
+        {
+          "position": 67,
+          "chain": "A",
+          "aa": "L",
+          "secondary_structure": "E"
+        },
+        {
+          "position": 68,
+          "chain": "A",
+          "aa": "H",
+          "secondary_structure": "E"
+        },
+        {
+          "position": 69,
+          "chain": "A",
+          "aa": "L",
+          "secondary_structure": "E"
+        },
+        {
+          "position": 70,
+          "chain": "A",
+          "aa": "V",
+          "secondary_structure": "E"
+        },
+        {
+          "position": 71,
+          "chain": "A",
+          "aa": "L",
+          "secondary_structure": "E"
+        },
+        {
+          "position": 72,
+          "chain": "A",
+          "aa": "R",
+          "secondary_structure": "-"
+        },
+        {
+          "position": 73,
+          "chain": "A",
+          "aa": "L",
+          "secondary_structure": "-"
+        },
+        {
+          "position": 74,
+          "chain": "A",
+          "aa": "R",
+          "secondary_structure": "S"
+        },
+        {
+          "position": 75,
+          "chain": "A",
+          "aa": "G",
+          "secondary_structure": "-"
+        },
+        {
+          "position": 76,
+          "chain": "A",
+          "aa": "G",
+          "secondary_structure": "-"
+        }
+      ],
+      "backend": "mkdssp_4.2.2"
+    },
+    "known_error": null,
+    "negative_error": "RuntimeError: mkdssp exited 1: Since the file did not start with a valid PDB HEADER line mmCIF was assumed, but that failed.\n >> parse error at line 1: This file does not seem to be an mmCIF file\n",
+    "known_call_id": "call_id:94a362f539e74ffe9ea975a568ae5fc7"
+  },
+  "openmm_delta_energy": {
+    "server": "physics",
+    "known_input": "PASS",
+    "negative_control": "PASS",
+    "receipt_resolves": "PASS",
+    "agent_reachability": "NOT_CHECKED",
+    "known_observed": {
+      "wt_kj_per_mol": -100205.28562001859,
+      "mutant_kj_per_mol": -100205.28562001859,
+      "delta_kj_per_mol": 0.0,
+      "atom_count": 8867,
+      "method": "OpenMM_8.6.1_CPU_unminimized_potential_energy",
+      "is_folding_ddg": false,
+      "deviation": "not PyRosetta ddG; requires fully prepared matched-topology WT and mutant PDBs"
+    },
+    "known_error": null,
+    "negative_error": "IndexError: list index out of range",
+    "known_call_id": "call_id:cbce7dc6480640a69dff574aff2149bd"
+  },
+  "pubmed_search": {
+    "server": "lit",
+    "known_input": "PASS",
+    "negative_control": "PASS",
+    "receipt_resolves": "PASS",
+    "agent_reachability": "NOT_CHECKED",
+    "known_observed": {
+      "articles": [
+        {
+          "pmid": "3041007",
+          "title": "Structure of ubiquitin refined at 1.8 A resolution.",
+          "publication_date": "1987 Apr 5"
+        }
+      ],
+      "count": 1,
+      "source": "NCBI_Eutilities_ESearch_ESummary",
+      "scireason_mcp_reused": false
+    },
+    "known_error": null,
+    "negative_error": null,
+    "known_call_id": "call_id:fb6d76669c44484ca4d9fbc440c703cc"
+  },
+  "submit_answer": {
+    "server": "record",
+    "known_input": "PASS",
+    "negative_control": "PASS",
+    "receipt_resolves": "PASS",
+    "agent_reachability": "NOT_CHECKED",
+    "known_observed": {
+      "accepted": true,
+      "item_id": "stage2_cert_c00fc263b6844f30ac998a5cca743914",
+      "submission_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/submissions/stage2_cert_c00fc263b6844f30ac998a5cca743914.json"
+    },
+    "known_error": null,
+    "negative_error": "ValueError: item_id has already been submitted",
+    "known_call_id": "call_id:c88b5c97dc984868ba3baffff8c199da"
+  },
+  "log_note": {
+    "server": "record",
+    "known_input": "PASS",
+    "negative_control": "PASS",
+    "receipt_resolves": "PASS",
+    "agent_reachability": "NOT_CHECKED",
+    "known_observed": {
+      "logged": true,
+      "item_id": "stage2_cert_c00fc263b6844f30ac998a5cca743914",
+      "note_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/notes/stage2_cert_c00fc263b6844f30ac998a5cca743914_e2096cc49c734443a765014032a7d5d1.json"
+    },
+    "known_error": null,
+    "negative_error": "ValueError: note must be nonempty and at most 2000 characters",
+    "known_call_id": "call_id:79a078d21d7e4143a3901401105c2c0b"
+  }
+}

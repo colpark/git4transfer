@@ -1,0 +1,22 @@
+{
+  "args": {
+    "msa": [
+      "AA",
+      "A"
+    ],
+    "mutant": "C",
+    "position": 1,
+    "query": "AA"
+  },
+  "error": "ValueError: MSA must have equal-length rows and exact query first",
+  "receipt": {
+    "args_hash": "9378b4afe5dfffea9f0bc571e1ed7d63e9c871a92fc4c93d3d176c151b7a2885",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/327804e7626d4957bf90cd7aef8c73b5.json",
+    "cache_hit": false,
+    "call_id": "call_id:327804e7626d4957bf90cd7aef8c73b5",
+    "runtime_s": 0.000191,
+    "tool": "pssm_score"
+  },
+  "result": null,
+  "server": "classical"
+}

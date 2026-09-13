@@ -1,0 +1,22 @@
+model,server,trial_status,attempted_calls,successful_calls,tool_call_success_rate,receipt_cited_correctly,criterion_c_model
+qwen3:30b,classical,SAFETY_ABORTED_GPU_OVER_90; unsupported tool calls observed,0,0,NOT_ATTEMPTED,False,NOT_DEMONSTRATED
+qwen3:30b,analysis,SAFETY_ABORTED_GPU_OVER_90; unsupported tool calls observed,0,0,NOT_ATTEMPTED,False,NOT_DEMONSTRATED
+qwen3:30b,predictive,SAFETY_ABORTED_GPU_OVER_90; unsupported tool calls observed,0,0,NOT_ATTEMPTED,False,NOT_DEMONSTRATED
+qwen3:30b,generative,SAFETY_ABORTED_GPU_OVER_90; unsupported tool calls observed,0,0,NOT_ATTEMPTED,False,NOT_DEMONSTRATED
+qwen3:30b,physics,SAFETY_ABORTED_GPU_OVER_90; unsupported tool calls observed,0,0,NOT_ATTEMPTED,False,NOT_DEMONSTRATED
+qwen3:30b,lit,SAFETY_ABORTED_GPU_OVER_90; unsupported tool calls observed,0,0,NOT_ATTEMPTED,False,NOT_DEMONSTRATED
+qwen3:30b,record,SAFETY_ABORTED_GPU_OVER_90; unsupported tool calls observed,0,0,NOT_ATTEMPTED,False,NOT_DEMONSTRATED
+qwen2.5-7b-cpu4-8k:stage2,classical,SAFETY_ABORTED_CPU_86C; custom-provider model metadata error,0,0,NOT_ATTEMPTED,False,NOT_DEMONSTRATED
+qwen2.5-7b-cpu4-8k:stage2,analysis,SAFETY_ABORTED_CPU_86C; custom-provider model metadata error,0,0,NOT_ATTEMPTED,False,NOT_DEMONSTRATED
+qwen2.5-7b-cpu4-8k:stage2,predictive,SAFETY_ABORTED_CPU_86C; custom-provider model metadata error,0,0,NOT_ATTEMPTED,False,NOT_DEMONSTRATED
+qwen2.5-7b-cpu4-8k:stage2,generative,SAFETY_ABORTED_CPU_86C; custom-provider model metadata error,0,0,NOT_ATTEMPTED,False,NOT_DEMONSTRATED
+qwen2.5-7b-cpu4-8k:stage2,physics,SAFETY_ABORTED_CPU_86C; custom-provider model metadata error,0,0,NOT_ATTEMPTED,False,NOT_DEMONSTRATED
+qwen2.5-7b-cpu4-8k:stage2,lit,SAFETY_ABORTED_CPU_86C; custom-provider model metadata error,0,0,NOT_ATTEMPTED,False,NOT_DEMONSTRATED
+qwen2.5-7b-cpu4-8k:stage2,record,SAFETY_ABORTED_CPU_86C; custom-provider model metadata error,0,0,NOT_ATTEMPTED,False,NOT_DEMONSTRATED
+glm-4.7-flash-cpu4-8k:stage2,classical,SAFETY_ABORTED_CPU_87C; no completed MCP call,0,0,NOT_ATTEMPTED,False,NOT_DEMONSTRATED
+glm-4.7-flash-cpu4-8k:stage2,analysis,SAFETY_ABORTED_CPU_87C; no completed MCP call,0,0,NOT_ATTEMPTED,False,NOT_DEMONSTRATED
+glm-4.7-flash-cpu4-8k:stage2,predictive,SAFETY_ABORTED_CPU_87C; no completed MCP call,0,0,NOT_ATTEMPTED,False,NOT_DEMONSTRATED
+glm-4.7-flash-cpu4-8k:stage2,generative,SAFETY_ABORTED_CPU_87C; no completed MCP call,0,0,NOT_ATTEMPTED,False,NOT_DEMONSTRATED
+glm-4.7-flash-cpu4-8k:stage2,physics,SAFETY_ABORTED_CPU_87C; no completed MCP call,0,0,NOT_ATTEMPTED,False,NOT_DEMONSTRATED
+glm-4.7-flash-cpu4-8k:stage2,lit,SAFETY_ABORTED_CPU_87C; no completed MCP call,0,0,NOT_ATTEMPTED,False,NOT_DEMONSTRATED
+glm-4.7-flash-cpu4-8k:stage2,record,SAFETY_ABORTED_CPU_87C; no completed MCP call,0,0,NOT_ATTEMPTED,False,NOT_DEMONSTRATED

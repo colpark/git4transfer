@@ -1,0 +1,67 @@
+{
+  "args": {
+    "max_hits": 5,
+    "reference_fasta": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage1_2026-09-12/w2_sequences.fasta",
+    "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "e8764696ad7670d8cf82553297931cdf31215b89366b2963b290346b97b57284",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/83f36fb72c2b4a238ac0d6ff3590228e.json",
+    "cache_hit": true,
+    "call_id": "call_id:83f36fb72c2b4a238ac0d6ff3590228e",
+    "runtime_s": 0.000324,
+    "tool": "mmseqs_search"
+  },
+  "result": {
+    "hits": [
+      {
+        "alignment_length": 72,
+        "bitscore": 143.0,
+        "evalue": 5.231e-44,
+        "pident_pct": 100.0,
+        "query_coverage": 1.0,
+        "target": "1UBQ.pdb",
+        "target_coverage": 1.0
+      },
+      {
+        "alignment_length": 72,
+        "bitscore": 142.0,
+        "evalue": 1.352e-43,
+        "pident_pct": 98.6,
+        "query_coverage": 1.0,
+        "target": "1UBQ.pdb_pross7",
+        "target_coverage": 1.0
+      },
+      {
+        "alignment_length": 72,
+        "bitscore": 141.0,
+        "evalue": 2.548e-43,
+        "pident_pct": 98.6,
+        "query_coverage": 1.0,
+        "target": "1UBQ.pdb_I3A",
+        "target_coverage": 1.0
+      },
+      {
+        "alignment_length": 72,
+        "bitscore": 141.0,
+        "evalue": 3.497e-43,
+        "pident_pct": 98.6,
+        "query_coverage": 1.0,
+        "target": "1UBQ.pdb_L15S",
+        "target_coverage": 1.0
+      },
+      {
+        "alignment_length": 72,
+        "bitscore": 141.0,
+        "evalue": 3.497e-43,
+        "pident_pct": 98.6,
+        "query_coverage": 1.0,
+        "target": "1UBQ.pdb_L67S",
+        "target_coverage": 1.0
+      }
+    ],
+    "reference_fasta": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage1_2026-09-12/w2_sequences.fasta"
+  },
+  "server": "classical"
+}

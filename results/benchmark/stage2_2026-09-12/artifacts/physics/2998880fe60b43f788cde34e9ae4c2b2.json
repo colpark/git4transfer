@@ -1,0 +1,17 @@
+{
+  "args": {
+    "mutant_pdb": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/.venv/lib/python3.12/site-packages/openmm/app/data/test.pdb",
+    "wt_pdb": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/invalid.pdb"
+  },
+  "error": "IndexError: list index out of range",
+  "receipt": {
+    "args_hash": "1e4a28c476cac1fcd44c50d608b9f5eb179c5bb5caefd7cc7e2c46a71b19fa41",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/physics/2998880fe60b43f788cde34e9ae4c2b2.json",
+    "cache_hit": false,
+    "call_id": "call_id:2998880fe60b43f788cde34e9ae4c2b2",
+    "runtime_s": 0.0002,
+    "tool": "openmm_delta_energy"
+  },
+  "result": null,
+  "server": "physics"
+}

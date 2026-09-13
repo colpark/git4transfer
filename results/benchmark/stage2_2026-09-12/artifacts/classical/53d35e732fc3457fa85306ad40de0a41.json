@@ -1,0 +1,27 @@
+{
+  "args": {
+    "msa": [
+      "AA",
+      "AC"
+    ],
+    "position": 2,
+    "query": "AA"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "64d6c33bc5b4cf796593e0ad15a473406e9d1ea9efa90e340532223c02b6e234",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/53d35e732fc3457fa85306ad40de0a41.json",
+    "cache_hit": true,
+    "call_id": "call_id:53d35e732fc3457fa85306ad40de0a41",
+    "runtime_s": 0.000177,
+    "tool": "conservation"
+  },
+  "result": {
+    "conservation": 0.7686217868402409,
+    "depth": 2,
+    "entropy_bits": 1.0,
+    "gap_fraction": 0.0,
+    "position": 2
+  },
+  "server": "classical"
+}

@@ -1,0 +1,239 @@
+{
+  "args": {
+    "answer": {
+      "all_tool_call_ids": {
+        "blosum": "call_id:f0eef8b4e3f44630a858fabf10cf0b80",
+        "dssp": "call_id:e34f9f1a11ad4223b18289bb3247fd0d",
+        "esm2": "call_id:c1d50ad07c9143f1b9f0f363f5d24303",
+        "esm_if": "call_id:d4aa515d27fd48ba82e641265df53943",
+        "esmfold": "call_id:46149e50075c4219add9c9b5faeb4628",
+        "identity": "call_id:e9ed9287c59a4d8ea3c932e2861f2593",
+        "note": "call_id:254495afe784441ca66c4f054c19938c",
+        "openmm": "call_id:27ddeede238f42a29fdc183cbfe23ede",
+        "pssm": "call_id:064c19d664ae4f00a5a33916f1ffa558"
+      },
+      "assay_label_lookup": false,
+      "call_ids": {
+        "analysis": "call_id:e9ed9287c59a4d8ea3c932e2861f2593",
+        "classical": "call_id:83f36fb72c2b4a238ac0d6ff3590228e",
+        "generative": "call_id:d4aa515d27fd48ba82e641265df53943",
+        "lit": "call_id:ab3ceb0f57944bb98d3c698972139751",
+        "physics": "call_id:27ddeede238f42a29fdc183cbfe23ede",
+        "predictive": "call_id:c1d50ad07c9143f1b9f0f363f5d24303",
+        "record": "call_id:254495afe784441ca66c4f054c19938c"
+      },
+      "computational_outputs": {
+        "blosum62": {
+          "matrix": "BLOSUM62",
+          "mutant": "A",
+          "score": -1,
+          "wt": "I",
+          "zero_effect": false
+        },
+        "esm2": {
+          "delta_log_probability": -1.6643191576004028,
+          "device": "cpu",
+          "method": "ESM2_single_position_masked_marginal_natural_log",
+          "model": "facebook/esm2_t6_8M_UR50D",
+          "mutant": "A",
+          "mutant_log_probability": -3.0254855155944824,
+          "position": 3,
+          "revision": "c731040fcd8d73dceaa04b0a8e6329b345b0f5df",
+          "wt": "I",
+          "wt_log_probability": -1.3611663579940796
+        },
+        "identity": {
+          "aligned_a": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+          "aligned_b": "MQAFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+          "alignment_columns": 72,
+          "definition": "global_matches_over_all_columns",
+          "identity": 0.9861111111111112,
+          "matches": 71
+        },
+        "pssm": {
+          "background": 0.05,
+          "delta_bits": -1.584962500721156,
+          "depth": 2,
+          "msa_type": "Toy plumbing MSA [sequence, sequence]; duplicated query, not biological evidence.",
+          "mutant": "A",
+          "mutant_bits": -0.13750352374993496,
+          "position": 3,
+          "pseudocount_per_aa": 1,
+          "wt": "I",
+          "wt_bits": 1.4474589769712212
+        }
+      },
+      "controls": {
+        "dssp": {
+          "chain": "A",
+          "interpretation": "Independent 76-aa known-structure control; not an assay-construct stability measurement.",
+          "position_3_secondary_structure": "E",
+          "residue_count": 76
+        },
+        "esm_if": {
+          "backbone_length": 76,
+          "chain": "A",
+          "device": "cpu",
+          "interpretation": "Independent 76-aa native 1UBQ chain A backend plumbing control; not the 72-aa MegaScale assay construct or its mutant.",
+          "mean_log_likelihood": -0.06536056493457995,
+          "mean_log_likelihood_with_coords": -0.06536056493457995,
+          "model": "esm_if1_gvp4_t16_142M_UR50",
+          "native_sequence_match": true,
+          "pdb_path": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/1ubq.pdb",
+          "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG",
+          "sequence_length": 76
+        },
+        "esmfold": {
+          "ca_count": 72,
+          "device": "cuda",
+          "interpretation": "72-aa input, seed 0. Confidence only; no stability delta inferred.",
+          "mean_ca_bfactor_as_written": 0.9331944444444444,
+          "model": "facebook/esmfold_v1",
+          "pdb_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/model_artifacts/esmfold/9702e0fc37f4bf5a2cef5ccf84f7dfe9c814fa0d589de38f315fe9d117a1199c.pdb",
+          "revision": "75a3841ee059df2bf4d56688166c8fb459ddd97a",
+          "seed": 0,
+          "sequence_length": 72
+        },
+        "openmm": {
+          "atom_count": 8867,
+          "delta_kj_per_mol": 0,
+          "deviation": "not PyRosetta ddG; requires fully prepared matched-topology WT and mutant PDBs",
+          "input_for_both": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/.venv/lib/python3.12/site-packages/openmm/app/data/test.pdb",
+          "interpretation": "Unrelated identical prepared PDB inputs; zero potential-energy difference is a ZERO control only, not folding ddG or the I3A effect.",
+          "is_folding_ddg": false,
+          "method": "OpenMM_8.6.1_CPU_unminimized_potential_energy",
+          "mutant_kj_per_mol": -100205.28562001859,
+          "wt_kj_per_mol": -100205.28562001859
+        }
+      },
+      "every_server_succeeded": true,
+      "filter": {
+        "explanation": "Insufficient biological evidence to select as stabilizing. Toy PSSM, independent structural controls, and unrelated OpenMM ZERO control are excluded from biological support.",
+        "retain_for_plumbing": true,
+        "select_as_demonstrated_stabilizing": false
+      },
+      "is_cohort_item": false,
+      "item": "MegaScale 1UBQ.pdb_I3A",
+      "measured_outcome": null,
+      "mode": "unguided",
+      "non_scoring": true,
+      "predictive_accuracy_claimed": false,
+      "ranking": [
+        {
+          "candidate_count": 1,
+          "explanation": "Only supplied smoke candidate. BLOSUM62 -1 and ESM2 delta log probability -1.6643 favor WT in their respective sequence models, supporting modest caution and low priority for a stability-improvement hypothesis, without establishing a stability effect or meaningful ordering against untested alternatives.",
+          "provisional": true,
+          "rank": 1,
+          "variant": "I3A"
+        }
+      ],
+      "retrieval": {
+        "interpretation": "Sequence reference matches only; no assay labels retrieved. Broad PubMed titles provide no variant-specific stability evidence.",
+        "literature": {
+          "articles": [
+            {
+              "pmid": "42727187",
+              "publication_date": "2026 Sep 8",
+              "title": "USP10 is associated with TUBA1B protein stability, PI3K/AKT phosphorylation changes, and progression of triple-negative breast cancer."
+            },
+            {
+              "pmid": "42725854",
+              "publication_date": "2026 Sep",
+              "title": "SFRP2 Potentiates Metastasis of Colon Cancer by Enhancing Snai1 Protein Stability via USP11."
+            },
+            {
+              "pmid": "42724590",
+              "publication_date": "2026",
+              "title": "AI-assisted design and virtual profiling of targeted degraders for pancreatic cancer therapy via PROTAC technology."
+            }
+          ],
+          "count": 13249,
+          "scireason_mcp_reused": false,
+          "source": "NCBI_Eutilities_ESearch_ESummary"
+        },
+        "mmseqs": {
+          "hits": [
+            {
+              "alignment_length": 72,
+              "bitscore": 143,
+              "evalue": 5.231e-44,
+              "pident_pct": 100,
+              "query_coverage": 1,
+              "target": "1UBQ.pdb",
+              "target_coverage": 1
+            },
+            {
+              "alignment_length": 72,
+              "bitscore": 142,
+              "evalue": 1.352e-43,
+              "pident_pct": 98.6,
+              "query_coverage": 1,
+              "target": "1UBQ.pdb_pross7",
+              "target_coverage": 1
+            },
+            {
+              "alignment_length": 72,
+              "bitscore": 141,
+              "evalue": 2.548e-43,
+              "pident_pct": 98.6,
+              "query_coverage": 1,
+              "target": "1UBQ.pdb_I3A",
+              "target_coverage": 1
+            },
+            {
+              "alignment_length": 72,
+              "bitscore": 141,
+              "evalue": 3.497e-43,
+              "pident_pct": 98.6,
+              "query_coverage": 1,
+              "target": "1UBQ.pdb_L15S",
+              "target_coverage": 1
+            },
+            {
+              "alignment_length": 72,
+              "bitscore": 141,
+              "evalue": 3.497e-43,
+              "pident_pct": 98.6,
+              "query_coverage": 1,
+              "target": "1UBQ.pdb_L67S",
+              "target_coverage": 1
+            }
+          ],
+          "reference_fasta": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage1_2026-09-12/w2_sequences.fasta"
+        }
+      },
+      "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+      "sequence_length": 72,
+      "stability_delta": null,
+      "variant": {
+        "mutant": "A",
+        "position": 3,
+        "wt": "I"
+      },
+      "workflow": [
+        "retrieve",
+        "score",
+        "compare",
+        "rank",
+        "filter",
+        "submit"
+      ]
+    },
+    "item_id": "stage2_smoke_w2_unguided_v2"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "e0d7d67916906efc939712064429691343c76209b4a20ae0631ccea531623733",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/record/930febd34da64ed19b6437c90b8ebc76.json",
+    "cache_hit": false,
+    "call_id": "call_id:930febd34da64ed19b6437c90b8ebc76",
+    "runtime_s": 0.000809,
+    "tool": "submit_answer"
+  },
+  "result": {
+    "accepted": true,
+    "item_id": "stage2_smoke_w2_unguided_v2",
+    "submission_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/submissions/stage2_smoke_w2_unguided_v2.json"
+  },
+  "server": "record"
+}

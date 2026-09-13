@@ -1,0 +1,14 @@
+{
+  "esm2_likelihood": {
+    "agent_called_through_mcp": true,
+    "agent_read_value_correctly": true,
+    "receipt_resolves": true,
+    "call_id": "call_id:e6042d79ef6448238dddb9d0f441b235"
+  },
+  "esmfold": {
+    "agent_called_through_mcp": true,
+    "agent_read_value_correctly": true,
+    "receipt_resolves": true,
+    "call_id": "call_id:8990e2746fe24aa0a4f6135f5f1319d8"
+  }
+}

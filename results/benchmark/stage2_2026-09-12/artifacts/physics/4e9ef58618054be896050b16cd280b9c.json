@@ -1,0 +1,17 @@
+{
+  "args": {
+    "mutant_pdb": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/.venv/lib/python3.12/site-packages/openmm/app/data/test.pdb",
+    "wt_pdb": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/.venv/lib/python3.12/site-packages/openmm/app/data/test.pdb"
+  },
+  "error": "RuntimeError: PyRosetta institutional license and runnable current-host aarch64 build not verified; use openmm_delta_energy, which is not ddG",
+  "receipt": {
+    "args_hash": "7aa5f41b0ee9509bc0e24172f34417c29731779600a2e6511f3e6d25e19820ab",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/physics/4e9ef58618054be896050b16cd280b9c.json",
+    "cache_hit": false,
+    "call_id": "call_id:4e9ef58618054be896050b16cd280b9c",
+    "runtime_s": 0.00027,
+    "tool": "pyrosetta_ddg"
+  },
+  "result": null,
+  "server": "physics"
+}

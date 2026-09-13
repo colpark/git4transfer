@@ -1,0 +1,23 @@
+{
+  "args": {
+    "pdb_a": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/pdb1.pdb",
+    "pdb_b": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/pdb1.pdb"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "56c0dcc31d2d293907279162eab3db6820e185022534abb988d89744c35a6d85",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/analysis/3c6c2612984541fa950a9f51e2dbad63.json",
+    "cache_hit": false,
+    "call_id": "call_id:3c6c2612984541fa950a9f51e2dbad63",
+    "runtime_s": 0.062855,
+    "tool": "tmalign"
+  },
+  "result": {
+    "aligned_length": 250,
+    "rmsd_A": 0.0,
+    "source": "pylelab/USalign TMalign.cpp fcb0f9d921415a2095bc509975db7fc1e968af1d",
+    "tm_score_by_structure_1": 1.0,
+    "tm_score_by_structure_2": 1.0
+  },
+  "server": "analysis"
+}

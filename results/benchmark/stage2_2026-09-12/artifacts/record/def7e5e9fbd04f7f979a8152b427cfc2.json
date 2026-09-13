@@ -1,0 +1,94 @@
+{
+  "args": {
+    "answer": {
+      "assay_label_looked_up": false,
+      "call_ids": {
+        "analysis": "call_id:ac45ce16dc7b4e3ebe11b06b4b885ccc",
+        "classical": "call_id:408f48861f334398b241fe5216bf470d",
+        "generative": "call_id:cb6277ab5e414a6a815c4fbd4450141c",
+        "lit": "call_id:9a6b66302cdd48a88bd74616c68ce73b",
+        "physics": "call_id:586bd90d861440a58561a56e392c9c11",
+        "predictive": "call_id:9047ad13e808433a98238df23b0a575b",
+        "record": "call_id:f12772d9adbd4a1c9cdc1b87dd9ede71"
+      },
+      "cohort_item": false,
+      "comparison": "I3A has lower ESM2 masked sequence preference than WT and BLOSUM62 -1. These are uncalibrated sequence proxies, not measured stability or a predicted stability delta.",
+      "construct_discrepancy": "User described a 74-aa assay construct but supplied 72 residues. All assay-sequence tools used the exact supplied 72-aa string; no residues inferred or added.",
+      "controls": {
+        "esmfold": "Seed 0 returned 72 CA atoms and mean CA B-factor as written 0.9331944444444444. Structure confidence only; no stability delta inferred.",
+        "literature": "PubMed query ubiquitin protein stability succeeded, returning broad ubiquitin-pathway papers without direct I3A stability evidence.",
+        "openmm": "Identical unrelated prepared OpenMM test.pdb used for WT and mutant arguments; both energies -100205.28562001859 kJ/mol, difference 0.0 kJ/mol. ZERO backend control only, not folding ddG, an I3A energy calculation, or a stability measurement.",
+        "structure": "ESM-IF and DSSP used independent native 76-aa 1UBQ chain A fixture, distinct from the described MegaScale assay construct. ESM-IF exact 76-aa native sequence matched, mean log likelihood -0.06536056493457995; DSSP returned 76 residues with position 3 in E. These controls are not assay-variant stability evidence."
+      },
+      "every_server_succeeded": true,
+      "filter": {
+        "biological_advancement": "hold pending construct-length reconciliation and independent evidence",
+        "smoke": "retain: valid I at position 3 and successful tool plumbing"
+      },
+      "item": "MegaScale 1UBQ.pdb_I3A",
+      "measured_outcome": null,
+      "mode": "unguided",
+      "non_scoring": true,
+      "predictive_accuracy_claimed": false,
+      "ranking": [
+        {
+          "candidate_count": 1,
+          "explanation": "Sole smoke candidate; ordinal rank is trivial and does not demonstrate superiority. Modestly deprioritize for biological follow-up based only on lower sequence preference; stability effect remains unknown.",
+          "priority": "provisional low priority for stability follow-up",
+          "rank": 1,
+          "variant": "I3A"
+        }
+      ],
+      "retrieval": "MMseqs sequence-only search against specified w2_sequences.fasta succeeded; exact reference match over 72 residues and four close variant hits. These are not independent evolutionary evidence. No assay labels fetched.",
+      "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+      "sequence_length": 72,
+      "stability_delta": null,
+      "tool_call_ids": {
+        "blosum": "call_id:682c16c2405149bd96982ef827758ff1",
+        "dssp": "call_id:b72bd46eaaa44e399f78bbe65180f251",
+        "esm2": "call_id:9047ad13e808433a98238df23b0a575b",
+        "esm_if": "call_id:cb6277ab5e414a6a815c4fbd4450141c",
+        "esmfold": "call_id:9a675123f60a467bb52d7cbce35a1071",
+        "identity": "call_id:ac45ce16dc7b4e3ebe11b06b4b885ccc",
+        "lit": "call_id:9a6b66302cdd48a88bd74616c68ce73b",
+        "note": "call_id:f12772d9adbd4a1c9cdc1b87dd9ede71",
+        "openmm": "call_id:586bd90d861440a58561a56e392c9c11",
+        "pssm": "call_id:3a108b87f68d4d3c91c45249b94555da",
+        "retrieve": "call_id:408f48861f334398b241fe5216bf470d"
+      },
+      "tool_outputs": {
+        "blosum62": -1,
+        "esm2_delta_log_probability": -1.6643191576004028,
+        "esmfold_ca_count": 72,
+        "identity": 0.9861111111111112,
+        "toy_pssm_delta_bits": -1.584962500721156
+      },
+      "toy_msa": "PSSM used [sequence, sequence], a two-copy toy plumbing MSA only. Its negative delta is not biological conservation evidence and does not count as independent support.",
+      "variant": "I3A",
+      "workflow": [
+        "retrieve",
+        "score",
+        "compare",
+        "rank",
+        "filter",
+        "submit"
+      ]
+    },
+    "item_id": "stage2_smoke_w2_unguided"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "7bff866d363d488504a8264768f021b86c19edad870e0ce43d9f7b4d57ca6fb8",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/record/def7e5e9fbd04f7f979a8152b427cfc2.json",
+    "cache_hit": false,
+    "call_id": "call_id:def7e5e9fbd04f7f979a8152b427cfc2",
+    "runtime_s": 0.000638,
+    "tool": "submit_answer"
+  },
+  "result": {
+    "accepted": true,
+    "item_id": "stage2_smoke_w2_unguided",
+    "submission_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/submissions/stage2_smoke_w2_unguided.json"
+  },
+  "server": "record"
+}

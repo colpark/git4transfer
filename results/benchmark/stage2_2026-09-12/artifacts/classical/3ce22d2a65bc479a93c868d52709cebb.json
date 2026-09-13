@@ -1,0 +1,48 @@
+{
+  "args": {
+    "msa": [
+      "AA",
+      "AA"
+    ],
+    "mutant": "R",
+    "position": 1,
+    "query": "AA"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "836e6f1f7ec31588232c8dc691d8f2ddf26d743043504bde2a8a2fcaee6d67ce",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/3ce22d2a65bc479a93c868d52709cebb.json",
+    "cache_hit": true,
+    "call_id": "call_id:3ce22d2a65bc479a93c868d52709cebb",
+    "runtime_s": 9.5e-05,
+    "tool": "screen_variant_classical"
+  },
+  "result": {
+    "blosum": {
+      "matrix": "BLOSUM62",
+      "mutant": "R",
+      "score": -1,
+      "wt": "A",
+      "zero_effect": false
+    },
+    "conservation": {
+      "conservation": 1.0,
+      "depth": 2,
+      "entropy_bits": -0.0,
+      "gap_fraction": 0.0,
+      "position": 1
+    },
+    "pssm": {
+      "background": 0.05,
+      "delta_bits": -1.584962500721156,
+      "depth": 2,
+      "mutant": "R",
+      "mutant_bits": -0.13750352374993496,
+      "position": 1,
+      "pseudocount_per_aa": 1,
+      "wt": "A",
+      "wt_bits": 1.4474589769712212
+    }
+  },
+  "server": "classical"
+}

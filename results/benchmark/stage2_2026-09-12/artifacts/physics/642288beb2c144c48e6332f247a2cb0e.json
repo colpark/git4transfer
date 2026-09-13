@@ -1,0 +1,16 @@
+{
+  "args": {
+    "pdb_path": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/invalid.pdb"
+  },
+  "error": "RuntimeError: mkdssp exited 1: Since the file did not start with a valid PDB HEADER line mmCIF was assumed, but that failed.\n >> parse error at line 1: This file does not seem to be an mmCIF file\n",
+  "receipt": {
+    "args_hash": "d21e60a5de6548a0afc3d656219e64fe2d02b1abd14c4aad3c7605dfb8588aca",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/physics/642288beb2c144c48e6332f247a2cb0e.json",
+    "cache_hit": false,
+    "call_id": "call_id:642288beb2c144c48e6332f247a2cb0e",
+    "runtime_s": 0.003039,
+    "tool": "dssp"
+  },
+  "result": null,
+  "server": "physics"
+}

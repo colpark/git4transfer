@@ -1,0 +1,129 @@
+{
+  "args": {
+    "answer": {
+      "all_seven_servers_succeeded": true,
+      "assay_label_looked_up": false,
+      "benchmark_score": null,
+      "call_ids": {
+        "rescue_analysis": "call_id:af9166a30bd04f5f9704668b68c0d390",
+        "rescue_classical": "call_id:63cbdec81afd495f952ac150787d7408",
+        "rescue_generative": "call_id:3b527b493062471b900a27a347abb7f6",
+        "rescue_lit": "call_id:acb2cb7da4334ba886efcd3f3ae1e595",
+        "rescue_physics": "call_id:feffbc3f8e9147ddbb8ecaece1934a8a",
+        "rescue_predictive": "call_id:9e6a891f02064bc7a548eecf41ad7a0b",
+        "rescue_record": "call_id:9b811f6e587540d9aa4ed9a2bebb0ef0"
+      },
+      "filter": {
+        "confidence": "Low; no measured outcome or stability delta established.",
+        "decision": "Retain as the requested plumbing smoke candidate; withhold promotion as an established stabilizing substitution."
+      },
+      "item": "MegaScale 1UBQ.pdb_I3A",
+      "measured_outcome": null,
+      "mode": "guided NON-SCORING MCP plumbing smoke; not a cohort item",
+      "mutant_sequence": "MQAFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+      "observations": {
+        "esm2": {
+          "delta_log_probability": -1.6643191576004028,
+          "device": "cpu",
+          "method": "ESM2_single_position_masked_marginal_natural_log",
+          "model": "facebook/esm2_t6_8M_UR50D",
+          "mutant": "A",
+          "mutant_log_probability": -3.0254855155944824,
+          "position": 3,
+          "revision": "c731040fcd8d73dceaa04b0a8e6329b345b0f5df",
+          "wt": "I",
+          "wt_log_probability": -1.3611663579940796
+        },
+        "esmfold": {
+          "ca_count": 72,
+          "interpretation": "Structure confidence only; no stability delta inferred.",
+          "mean_ca_bfactor_as_written": 0.9331944444444444,
+          "seed": 0
+        },
+        "identity": {
+          "aligned_a": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+          "aligned_b": "MQAFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+          "alignment_columns": 72,
+          "definition": "global_matches_over_all_columns",
+          "identity": 0.9861111111111112,
+          "matches": 71
+        },
+        "independent_structure_controls": {
+          "chain": "A",
+          "dssp_position_3": "E",
+          "dssp_residue_count": 76,
+          "esm_if_mean_log_likelihood": -0.06536056493457995,
+          "interpretation": "Independent backend plumbing controls on native 76-aa 1UBQ, unrelated to measurement of the 72-aa assay construct's I3A effect; not conflated with that construct and excluded from variant ranking.",
+          "length": 76,
+          "native_sequence_match": true,
+          "pdb": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/1ubq.pdb",
+          "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG"
+        },
+        "literature": "PubMed search 'ubiquitin protein stability' returned 13249 matches and three broad article records; no variant-specific stability evidence established.",
+        "openmm_control": {
+          "delta_kj_per_mol": 0,
+          "interpretation": "Same unrelated prepared PDB twice, ZERO control only. Potential energy difference is not folding ddG or I3A stability.",
+          "mutant_pdb": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/.venv/lib/python3.12/site-packages/openmm/app/data/test.pdb",
+          "wt_pdb": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/.venv/lib/python3.12/site-packages/openmm/app/data/test.pdb"
+        },
+        "retrieval": "MMseqs found the 72-aa reference at 100% identity and I3A at 98.6%; sequence records only, no assay labels retrieved. These hits were not treated as independent evolutionary evidence.",
+        "toy_msa": {
+          "description": "Exactly [sequence, sequence], a two-copy toy plumbing MSA, not biological evidence. Its conservation is duplication-induced.",
+          "guided_conservation": 1,
+          "pssm_delta_bits": -1.584962500721156
+        }
+      },
+      "predictive_accuracy_claimed": false,
+      "ranking": {
+        "rationale": "ESM2 masked-marginal delta log probability -1.6643191576004028 favors I over A; BLOSUM62 I->A is -1. These are weak, uncalibrated prioritization signals, not a measured stability effect.",
+        "reference_comparison": "Provisionally place I3A below WT for sequence plausibility only. Rank 1 of 1 candidate substitutions is trivial, not evidence of stabilization.",
+        "substitutions": [
+          {
+            "rank": 1,
+            "variant": "I3A"
+          }
+        ]
+      },
+      "required_tool_call_ids": {
+        "blosum_score": "call_id:a044d11b485549d1b9c6ab156a24565c",
+        "dssp": "call_id:92db0cc0c32b4b82ba5ed311a4a4e7ef",
+        "esm2_likelihood": "call_id:9e6a891f02064bc7a548eecf41ad7a0b",
+        "esm_if": "call_id:3b527b493062471b900a27a347abb7f6",
+        "esmfold": "call_id:ab93b622483646be963f0dddc54f7628",
+        "mmseqs_search": "call_id:63cbdec81afd495f952ac150787d7408",
+        "openmm_delta_energy": "call_id:feffbc3f8e9147ddbb8ecaece1934a8a",
+        "pssm_score": "call_id:648a0c9f5d6d4116b02b3e5a54baea8d",
+        "pubmed_search": "call_id:acb2cb7da4334ba886efcd3f3ae1e595",
+        "screen_variant_classical": "call_id:ea881f9266264811af561a7335bda792",
+        "seq_identity": "call_id:af9166a30bd04f5f9704668b68c0d390"
+      },
+      "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+      "sequence_length": 72,
+      "variant": "I3A",
+      "workflow": [
+        "retrieve",
+        "score",
+        "compare",
+        "rank",
+        "filter",
+        "submit"
+      ]
+    },
+    "item_id": "stage2_smoke_w2_guided_v2"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "15c0d8e9df2555dd99d59973e41c842a874d0b3882ce8dd589cc36389416044e",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/record/770d0d49c5cc410e805eff4f90bc46c9.json",
+    "cache_hit": false,
+    "call_id": "call_id:770d0d49c5cc410e805eff4f90bc46c9",
+    "runtime_s": 0.000431,
+    "tool": "submit_answer"
+  },
+  "result": {
+    "accepted": true,
+    "item_id": "stage2_smoke_w2_guided_v2",
+    "submission_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/submissions/stage2_smoke_w2_guided_v2.json"
+  },
+  "server": "record"
+}

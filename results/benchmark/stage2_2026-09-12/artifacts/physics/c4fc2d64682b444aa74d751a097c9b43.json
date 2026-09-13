@@ -1,0 +1,25 @@
+{
+  "args": {
+    "mutant_pdb": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/.venv/lib/python3.12/site-packages/openmm/app/data/test.pdb",
+    "wt_pdb": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/.venv/lib/python3.12/site-packages/openmm/app/data/test.pdb"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "234fc0519170720756f5151f0e1daf614d603027e14f0fa9f3a8e1757917e438",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/physics/c4fc2d64682b444aa74d751a097c9b43.json",
+    "cache_hit": true,
+    "call_id": "call_id:c4fc2d64682b444aa74d751a097c9b43",
+    "runtime_s": 0.000167,
+    "tool": "openmm_delta_energy"
+  },
+  "result": {
+    "atom_count": 8867,
+    "delta_kj_per_mol": 0.0,
+    "deviation": "not PyRosetta ddG; requires fully prepared matched-topology WT and mutant PDBs",
+    "is_folding_ddg": false,
+    "method": "OpenMM_8.6.1_CPU_unminimized_potential_energy",
+    "mutant_kj_per_mol": -100205.28562001859,
+    "wt_kj_per_mol": -100205.28562001859
+  },
+  "server": "physics"
+}

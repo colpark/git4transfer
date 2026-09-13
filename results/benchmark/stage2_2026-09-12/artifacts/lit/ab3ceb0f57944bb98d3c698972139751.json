@@ -1,0 +1,38 @@
+{
+  "args": {
+    "max_hits": 3,
+    "term": "ubiquitin protein stability"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "ebd63a91d1e577f6fc9a108511c0d791e69327d70fdc3c5aa4065366bc908805",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/lit/ab3ceb0f57944bb98d3c698972139751.json",
+    "cache_hit": true,
+    "call_id": "call_id:ab3ceb0f57944bb98d3c698972139751",
+    "runtime_s": 0.000204,
+    "tool": "pubmed_search"
+  },
+  "result": {
+    "articles": [
+      {
+        "pmid": "42727187",
+        "publication_date": "2026 Sep 8",
+        "title": "USP10 is associated with TUBA1B protein stability, PI3K/AKT phosphorylation changes, and progression of triple-negative breast cancer."
+      },
+      {
+        "pmid": "42725854",
+        "publication_date": "2026 Sep",
+        "title": "SFRP2 Potentiates Metastasis of Colon Cancer by Enhancing Snai1 Protein Stability via USP11."
+      },
+      {
+        "pmid": "42724590",
+        "publication_date": "2026",
+        "title": "AI-assisted design and virtual profiling of targeted degraders for pancreatic cancer therapy via PROTAC technology."
+      }
+    ],
+    "count": 13249,
+    "scireason_mcp_reused": false,
+    "source": "NCBI_Eutilities_ESearch_ESummary"
+  },
+  "server": "lit"
+}

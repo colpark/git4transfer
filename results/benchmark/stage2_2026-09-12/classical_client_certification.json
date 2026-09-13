@@ -1,0 +1,134 @@
+{
+  "mmseqs_search": {
+    "known_input": "PASS",
+    "negative_control": "PASS",
+    "receipt_resolves": "PASS",
+    "cache": "PASS",
+    "known_observed": {
+      "hits": [
+        {
+          "alignment_length": 40,
+          "bitscore": 97.0,
+          "evalue": 8.693e-34,
+          "pident_pct": 100.0,
+          "query_coverage": 1.0,
+          "target": "exact_reference",
+          "target_coverage": 1.0
+        }
+      ],
+      "reference_fasta": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/search.fasta"
+    },
+    "negative_error": "ValueError: reference FASTA must be an existing <=10 MB workspace file",
+    "known_call_id": "call_id:27bc1e4313914e40935631cf5c9780a0",
+    "agent_reachability": "NOT_CHECKED"
+  },
+  "blast_search": {
+    "known_input": "PASS",
+    "negative_control": "PASS",
+    "receipt_resolves": "PASS",
+    "cache": "PASS",
+    "known_observed": {
+      "hits": [
+        {
+          "target": "exact_reference",
+          "pident_pct": 100.0,
+          "alignment_length": 40,
+          "evalue": 2.67e-32,
+          "bitscore": 90.9,
+          "query_coverage_pct": 100.0
+        }
+      ],
+      "reference_fasta": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/search.fasta"
+    },
+    "negative_error": "ValueError: reference FASTA must be an existing <=10 MB workspace file",
+    "known_call_id": "call_id:b0664444edfc4a618c5ec8787f7490ba",
+    "agent_reachability": "NOT_CHECKED"
+  },
+  "pssm_score": {
+    "known_input": "PASS",
+    "negative_control": "PASS",
+    "receipt_resolves": "PASS",
+    "cache": "PASS",
+    "known_observed": {
+      "background": 0.05,
+      "delta_bits": -1.584962500721156,
+      "depth": 2,
+      "mutant": "C",
+      "mutant_bits": -0.13750352374993496,
+      "position": 1,
+      "pseudocount_per_aa": 1,
+      "wt": "A",
+      "wt_bits": 1.4474589769712212
+    },
+    "negative_error": "ValueError: MSA must have equal-length rows and exact query first",
+    "known_call_id": "call_id:85b60192c04e4772b7498c863c3bb8eb",
+    "agent_reachability": "NOT_CHECKED"
+  },
+  "conservation": {
+    "known_input": "PASS",
+    "negative_control": "PASS",
+    "receipt_resolves": "PASS",
+    "cache": "PASS",
+    "known_observed": {
+      "conservation": 0.7686217868402409,
+      "depth": 2,
+      "entropy_bits": 1.0,
+      "gap_fraction": 0.0,
+      "position": 2
+    },
+    "negative_error": "ValueError: MSA has fewer than two rows at >=80% coverage",
+    "known_call_id": "call_id:53d35e732fc3457fa85306ad40de0a41",
+    "agent_reachability": "NOT_CHECKED"
+  },
+  "motif_scan": {
+    "known_input": "PASS",
+    "negative_control": "PASS",
+    "receipt_resolves": "PASS",
+    "cache": "PASS",
+    "known_observed": {
+      "coordinate_system": "one_based_closed",
+      "hits": [
+        {
+          "end": 4,
+          "match": "ACCD",
+          "start": 1
+        }
+      ],
+      "pattern": "A..D"
+    },
+    "negative_error": "error: unterminated character set at position 4",
+    "known_call_id": "call_id:0a65517d88624da388ebd92486eb51bd",
+    "agent_reachability": "NOT_CHECKED"
+  },
+  "blosum_score": {
+    "known_input": "PASS",
+    "negative_control": "PASS",
+    "receipt_resolves": "PASS",
+    "cache": "PASS",
+    "known_observed": {
+      "matrix": "BLOSUM62",
+      "mutant": "R",
+      "score": -1,
+      "wt": "A",
+      "zero_effect": false
+    },
+    "negative_error": "ValueError: sequence must contain 1\u201310000 canonical amino acids",
+    "known_call_id": "call_id:b199d6f08fec4f5d8f0a62cb603a3040",
+    "agent_reachability": "NOT_CHECKED"
+  },
+  "hbond_geometry": {
+    "known_input": "PASS",
+    "negative_control": "PASS",
+    "receipt_resolves": "PASS",
+    "cache": "PASS",
+    "known_observed": {
+      "dha_angle_deg": 180.0,
+      "donor_acceptor_A": 2.0,
+      "hydrogen_acceptor_A": 1.0,
+      "is_hbond": true
+    },
+    "negative_error": "ValueError: coincident atoms make the angle undefined",
+    "known_call_id": "call_id:3391aca2a032424ebec150e30aea88cf",
+    "agent_reachability": "NOT_CHECKED"
+  }
+}

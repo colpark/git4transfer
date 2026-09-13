@@ -1,0 +1,28 @@
+{
+  "args": {
+    "max_hits": 1,
+    "term": "3041007[uid]"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "2b97d6ad4d60bcd1b10b22c7103e389a60928d9e46bbf869c13efbe0158809fc",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/lit/fb6d76669c44484ca4d9fbc440c703cc.json",
+    "cache_hit": false,
+    "call_id": "call_id:fb6d76669c44484ca4d9fbc440c703cc",
+    "runtime_s": 0.392041,
+    "tool": "pubmed_search"
+  },
+  "result": {
+    "articles": [
+      {
+        "pmid": "3041007",
+        "publication_date": "1987 Apr 5",
+        "title": "Structure of ubiquitin refined at 1.8 A resolution."
+      }
+    ],
+    "count": 1,
+    "scireason_mcp_reused": false,
+    "source": "NCBI_Eutilities_ESearch_ESummary"
+  },
+  "server": "lit"
+}

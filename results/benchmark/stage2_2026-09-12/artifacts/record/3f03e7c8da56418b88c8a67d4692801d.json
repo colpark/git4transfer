@@ -1,0 +1,21 @@
+{
+  "args": {
+    "item_id": "stage2_smoke_w1_unguided",
+    "note": "Stage 2 non-scoring plumbing smoke completed through retrieve, score, compare, rank, and filter for TCRG1_MOUSE_Tsuboyama_2023_1E0L A2V. No assay label was retrieved and no measured outcome or predictive-accuracy claim is made. The two-copy MSA is a toy plumbing input; 1UBQ ESM-IF/DSSP and identical-PDB OpenMM are unrelated backend controls."
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "976003021fcc20928dc7602c22df014f994d1b79ca08961a2e0541d79ead4c72",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/record/3f03e7c8da56418b88c8a67d4692801d.json",
+    "cache_hit": false,
+    "call_id": "call_id:3f03e7c8da56418b88c8a67d4692801d",
+    "runtime_s": 0.000695,
+    "tool": "log_note"
+  },
+  "result": {
+    "item_id": "stage2_smoke_w1_unguided",
+    "logged": true,
+    "note_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/notes/stage2_smoke_w1_unguided_67176ae11c3e4365828580978446dce9.json"
+  },
+  "server": "record"
+}

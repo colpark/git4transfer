@@ -1,0 +1,2141 @@
+{
+  "unguided": {
+    "workflow": "w2",
+    "presentation": "unguided",
+    "server_success": {
+      "classical": true,
+      "analysis": true,
+      "predictive": true,
+      "generative": true,
+      "physics": true,
+      "lit": true,
+      "record": true
+    },
+    "every_server_success": true,
+    "submission_count": 1,
+    "guided_composite_used": false,
+    "calls": [
+      {
+        "server": "rescue_classical",
+        "tool": "mmseqs_search",
+        "status": "in_progress"
+      },
+      {
+        "server": "rescue_classical",
+        "tool": "mmseqs_search",
+        "status": "completed",
+        "success": true,
+        "call_id": "call_id:83f36fb72c2b4a238ac0d6ff3590228e",
+        "receipt_resolves": true
+      },
+      {
+        "server": "rescue_lit",
+        "tool": "pubmed_search",
+        "status": "in_progress"
+      },
+      {
+        "server": "rescue_lit",
+        "tool": "pubmed_search",
+        "status": "completed",
+        "success": true,
+        "call_id": "call_id:ab3ceb0f57944bb98d3c698972139751",
+        "receipt_resolves": true
+      },
+      {
+        "server": "rescue_classical",
+        "tool": "pssm_score",
+        "status": "in_progress"
+      },
+      {
+        "server": "rescue_classical",
+        "tool": "pssm_score",
+        "status": "completed",
+        "success": true,
+        "call_id": "call_id:064c19d664ae4f00a5a33916f1ffa558",
+        "receipt_resolves": true
+      },
+      {
+        "server": "rescue_classical",
+        "tool": "blosum_score",
+        "status": "in_progress"
+      },
+      {
+        "server": "rescue_classical",
+        "tool": "blosum_score",
+        "status": "completed",
+        "success": true,
+        "call_id": "call_id:f0eef8b4e3f44630a858fabf10cf0b80",
+        "receipt_resolves": true
+      },
+      {
+        "server": "rescue_predictive",
+        "tool": "esm2_likelihood",
+        "status": "in_progress"
+      },
+      {
+        "server": "rescue_predictive",
+        "tool": "esm2_likelihood",
+        "status": "completed",
+        "success": true,
+        "call_id": "call_id:c1d50ad07c9143f1b9f0f363f5d24303",
+        "receipt_resolves": true
+      },
+      {
+        "server": "rescue_predictive",
+        "tool": "esmfold",
+        "status": "in_progress"
+      },
+      {
+        "server": "rescue_predictive",
+        "tool": "esmfold",
+        "status": "completed",
+        "success": true,
+        "call_id": "call_id:46149e50075c4219add9c9b5faeb4628",
+        "receipt_resolves": true
+      },
+      {
+        "server": "rescue_generative",
+        "tool": "esm_if",
+        "status": "in_progress"
+      },
+      {
+        "server": "rescue_generative",
+        "tool": "esm_if",
+        "status": "completed",
+        "success": true,
+        "call_id": "call_id:d4aa515d27fd48ba82e641265df53943",
+        "receipt_resolves": true
+      },
+      {
+        "server": "rescue_physics",
+        "tool": "dssp",
+        "status": "in_progress"
+      },
+      {
+        "server": "rescue_physics",
+        "tool": "dssp",
+        "status": "completed",
+        "success": true,
+        "call_id": "call_id:e34f9f1a11ad4223b18289bb3247fd0d",
+        "receipt_resolves": true
+      },
+      {
+        "server": "rescue_physics",
+        "tool": "openmm_delta_energy",
+        "status": "in_progress"
+      },
+      {
+        "server": "rescue_physics",
+        "tool": "openmm_delta_energy",
+        "status": "completed",
+        "success": true,
+        "call_id": "call_id:27ddeede238f42a29fdc183cbfe23ede",
+        "receipt_resolves": true
+      },
+      {
+        "server": "rescue_analysis",
+        "tool": "seq_identity",
+        "status": "in_progress"
+      },
+      {
+        "server": "rescue_analysis",
+        "tool": "seq_identity",
+        "status": "completed",
+        "success": true,
+        "call_id": "call_id:e9ed9287c59a4d8ea3c932e2861f2593",
+        "receipt_resolves": true
+      },
+      {
+        "server": "rescue_record",
+        "tool": "log_note",
+        "status": "in_progress"
+      },
+      {
+        "server": "rescue_record",
+        "tool": "log_note",
+        "status": "completed",
+        "success": true,
+        "call_id": "call_id:254495afe784441ca66c4f054c19938c",
+        "receipt_resolves": true
+      },
+      {
+        "server": "rescue_record",
+        "tool": "submit_answer",
+        "status": "in_progress"
+      },
+      {
+        "server": "rescue_record",
+        "tool": "submit_answer",
+        "status": "completed",
+        "success": true,
+        "call_id": "call_id:930febd34da64ed19b6437c90b8ebc76",
+        "receipt_resolves": true
+      }
+    ],
+    "exit_code": 0,
+    "stderr": "",
+    "trace_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/smoke_w2_unguided_trace.jsonl",
+    "events": [
+      {
+        "type": "thread.started",
+        "thread_id": "01a098e9-d967-73a2-a93d-c0e174f59127"
+      },
+      {
+        "type": "turn.started"
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_0",
+          "type": "agent_message",
+          "text": "I\u2019ll run the required calls in order, inspect their values and receipt IDs, and submit a provisional plumbing-only ranking with no assay-label lookup or measured outcome."
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_1",
+          "type": "mcp_tool_call",
+          "server": "rescue_classical",
+          "tool": "mmseqs_search",
+          "arguments": {
+            "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+            "reference_fasta": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage1_2026-09-12/w2_sequences.fasta"
+          },
+          "result": null,
+          "error": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_1",
+          "type": "mcp_tool_call",
+          "server": "rescue_classical",
+          "tool": "mmseqs_search",
+          "arguments": {
+            "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+            "reference_fasta": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage1_2026-09-12/w2_sequences.fasta"
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"error\": null,\n  \"result\": {\n    \"hits\": [\n      {\n        \"alignment_length\": 72,\n        \"bitscore\": 143.0,\n        \"evalue\": 5.231e-44,\n        \"pident_pct\": 100.0,\n        \"query_coverage\": 1.0,\n        \"target\": \"1UBQ.pdb\",\n        \"target_coverage\": 1.0\n      },\n      {\n        \"alignment_length\": 72,\n        \"bitscore\": 142.0,\n        \"evalue\": 1.352e-43,\n        \"pident_pct\": 98.6,\n        \"query_coverage\": 1.0,\n        \"target\": \"1UBQ.pdb_pross7\",\n        \"target_coverage\": 1.0\n      },\n      {\n        \"alignment_length\": 72,\n        \"bitscore\": 141.0,\n        \"evalue\": 2.548e-43,\n        \"pident_pct\": 98.6,\n        \"query_coverage\": 1.0,\n        \"target\": \"1UBQ.pdb_I3A\",\n        \"target_coverage\": 1.0\n      },\n      {\n        \"alignment_length\": 72,\n        \"bitscore\": 141.0,\n        \"evalue\": 3.497e-43,\n        \"pident_pct\": 98.6,\n        \"query_coverage\": 1.0,\n        \"target\": \"1UBQ.pdb_L15S\",\n        \"target_coverage\": 1.0\n      },\n      {\n        \"alignment_length\": 72,\n        \"bitscore\": 141.0,\n        \"evalue\": 3.497e-43,\n        \"pident_pct\": 98.6,\n        \"query_coverage\": 1.0,\n        \"target\": \"1UBQ.pdb_L67S\",\n        \"target_coverage\": 1.0\n      }\n    ],\n    \"reference_fasta\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage1_2026-09-12/w2_sequences.fasta\"\n  },\n  \"receipt\": {\n    \"call_id\": \"call_id:83f36fb72c2b4a238ac0d6ff3590228e\",\n    \"tool\": \"mmseqs_search\",\n    \"args_hash\": \"e8764696ad7670d8cf82553297931cdf31215b89366b2963b290346b97b57284\",\n    \"runtime_s\": 0.000324,\n    \"artifact_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/83f36fb72c2b4a238ac0d6ff3590228e.json\",\n    \"cache_hit\": true\n  }\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_2",
+          "type": "mcp_tool_call",
+          "server": "rescue_lit",
+          "tool": "pubmed_search",
+          "arguments": {
+            "term": "ubiquitin protein stability",
+            "max_hits": 3
+          },
+          "result": null,
+          "error": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_2",
+          "type": "mcp_tool_call",
+          "server": "rescue_lit",
+          "tool": "pubmed_search",
+          "arguments": {
+            "term": "ubiquitin protein stability",
+            "max_hits": 3
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"error\": null,\n  \"result\": {\n    \"articles\": [\n      {\n        \"pmid\": \"42727187\",\n        \"publication_date\": \"2026 Sep 8\",\n        \"title\": \"USP10 is associated with TUBA1B protein stability, PI3K/AKT phosphorylation changes, and progression of triple-negative breast cancer.\"\n      },\n      {\n        \"pmid\": \"42725854\",\n        \"publication_date\": \"2026 Sep\",\n        \"title\": \"SFRP2 Potentiates Metastasis of Colon Cancer by Enhancing Snai1 Protein Stability via USP11.\"\n      },\n      {\n        \"pmid\": \"42724590\",\n        \"publication_date\": \"2026\",\n        \"title\": \"AI-assisted design and virtual profiling of targeted degraders for pancreatic cancer therapy via PROTAC technology.\"\n      }\n    ],\n    \"count\": 13249,\n    \"scireason_mcp_reused\": false,\n    \"source\": \"NCBI_Eutilities_ESearch_ESummary\"\n  },\n  \"receipt\": {\n    \"call_id\": \"call_id:ab3ceb0f57944bb98d3c698972139751\",\n    \"tool\": \"pubmed_search\",\n    \"args_hash\": \"ebd63a91d1e577f6fc9a108511c0d791e69327d70fdc3c5aa4065366bc908805\",\n    \"runtime_s\": 0.000204,\n    \"artifact_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/lit/ab3ceb0f57944bb98d3c698972139751.json\",\n    \"cache_hit\": true\n  }\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_3",
+          "type": "mcp_tool_call",
+          "server": "rescue_classical",
+          "tool": "pssm_score",
+          "arguments": {
+            "msa": [
+              "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+              "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR"
+            ],
+            "query": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+            "position": 3,
+            "mutant": "A"
+          },
+          "result": null,
+          "error": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_3",
+          "type": "mcp_tool_call",
+          "server": "rescue_classical",
+          "tool": "pssm_score",
+          "arguments": {
+            "msa": [
+              "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+              "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR"
+            ],
+            "query": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+            "position": 3,
+            "mutant": "A"
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"error\": null,\n  \"result\": {\n    \"background\": 0.05,\n    \"delta_bits\": -1.584962500721156,\n    \"depth\": 2,\n    \"mutant\": \"A\",\n    \"mutant_bits\": -0.13750352374993496,\n    \"position\": 3,\n    \"pseudocount_per_aa\": 1,\n    \"wt\": \"I\",\n    \"wt_bits\": 1.4474589769712212\n  },\n  \"receipt\": {\n    \"call_id\": \"call_id:064c19d664ae4f00a5a33916f1ffa558\",\n    \"tool\": \"pssm_score\",\n    \"args_hash\": \"b611747815ee8a5e12767514c4f3ef658d91365c885323f00ea2d3130700f364\",\n    \"runtime_s\": 0.000217,\n    \"artifact_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/064c19d664ae4f00a5a33916f1ffa558.json\",\n    \"cache_hit\": true\n  }\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_4",
+          "type": "mcp_tool_call",
+          "server": "rescue_classical",
+          "tool": "blosum_score",
+          "arguments": {
+            "wt": "I",
+            "mutant": "A"
+          },
+          "result": null,
+          "error": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_4",
+          "type": "mcp_tool_call",
+          "server": "rescue_classical",
+          "tool": "blosum_score",
+          "arguments": {
+            "wt": "I",
+            "mutant": "A"
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"error\": null,\n  \"result\": {\n    \"matrix\": \"BLOSUM62\",\n    \"mutant\": \"A\",\n    \"score\": -1,\n    \"wt\": \"I\",\n    \"zero_effect\": false\n  },\n  \"receipt\": {\n    \"call_id\": \"call_id:f0eef8b4e3f44630a858fabf10cf0b80\",\n    \"tool\": \"blosum_score\",\n    \"args_hash\": \"330f15b6b20cdca097fbb3c317c6c114d8b8de2bccc726f939553aa180fc0691\",\n    \"runtime_s\": 0.000172,\n    \"artifact_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/f0eef8b4e3f44630a858fabf10cf0b80.json\",\n    \"cache_hit\": true\n  }\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_5",
+          "type": "mcp_tool_call",
+          "server": "rescue_predictive",
+          "tool": "esm2_likelihood",
+          "arguments": {
+            "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+            "position": 3,
+            "mutant": "A"
+          },
+          "result": null,
+          "error": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_5",
+          "type": "mcp_tool_call",
+          "server": "rescue_predictive",
+          "tool": "esm2_likelihood",
+          "arguments": {
+            "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+            "position": 3,
+            "mutant": "A"
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"error\": null,\n  \"result\": {\n    \"delta_log_probability\": -1.6643191576004028,\n    \"device\": \"cpu\",\n    \"method\": \"ESM2_single_position_masked_marginal_natural_log\",\n    \"model\": \"facebook/esm2_t6_8M_UR50D\",\n    \"mutant\": \"A\",\n    \"mutant_log_probability\": -3.0254855155944824,\n    \"position\": 3,\n    \"revision\": \"c731040fcd8d73dceaa04b0a8e6329b345b0f5df\",\n    \"wt\": \"I\",\n    \"wt_log_probability\": -1.3611663579940796\n  },\n  \"receipt\": {\n    \"call_id\": \"call_id:c1d50ad07c9143f1b9f0f363f5d24303\",\n    \"tool\": \"esm2_likelihood\",\n    \"args_hash\": \"b05696aa799825b25394a8042f9a0050eed86ee58e6e2824c2f8efe581be04d7\",\n    \"runtime_s\": 0.000196,\n    \"artifact_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/predictive/c1d50ad07c9143f1b9f0f363f5d24303.json\",\n    \"cache_hit\": true\n  }\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_6",
+          "type": "mcp_tool_call",
+          "server": "rescue_predictive",
+          "tool": "esmfold",
+          "arguments": {
+            "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+            "seed": 0
+          },
+          "result": null,
+          "error": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_6",
+          "type": "mcp_tool_call",
+          "server": "rescue_predictive",
+          "tool": "esmfold",
+          "arguments": {
+            "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+            "seed": 0
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"error\": null,\n  \"result\": {\n    \"ca_count\": 72,\n    \"device\": \"cuda\",\n    \"interpretation\": \"structure confidence only; not a binding or stability measurement\",\n    \"mean_ca_bfactor_as_written\": 0.9331944444444444,\n    \"model\": \"facebook/esmfold_v1\",\n    \"pdb_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/model_artifacts/esmfold/9702e0fc37f4bf5a2cef5ccf84f7dfe9c814fa0d589de38f315fe9d117a1199c.pdb\",\n    \"revision\": \"75a3841ee059df2bf4d56688166c8fb459ddd97a\",\n    \"seed\": 0,\n    \"sequence_length\": 72\n  },\n  \"receipt\": {\n    \"call_id\": \"call_id:46149e50075c4219add9c9b5faeb4628\",\n    \"tool\": \"esmfold\",\n    \"args_hash\": \"5610332aee8a7c2e6d895ff713db59a46e1fb0b2fb06046ba9c9d2bf167d7795\",\n    \"runtime_s\": 0.000081,\n    \"artifact_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/predictive/46149e50075c4219add9c9b5faeb4628.json\",\n    \"cache_hit\": true\n  }\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_7",
+          "type": "mcp_tool_call",
+          "server": "rescue_generative",
+          "tool": "esm_if",
+          "arguments": {
+            "pdb_path": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/1ubq.pdb",
+            "chain": "A",
+            "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG"
+          },
+          "result": null,
+          "error": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_7",
+          "type": "mcp_tool_call",
+          "server": "rescue_generative",
+          "tool": "esm_if",
+          "arguments": {
+            "pdb_path": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/1ubq.pdb",
+            "chain": "A",
+            "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG"
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"error\": null,\n  \"result\": {\n    \"backbone_length\": 76,\n    \"chain\": \"A\",\n    \"device\": \"cpu\",\n    \"interpretation\": \"backbone-conditioned sequence score; not a measured stability effect\",\n    \"mean_log_likelihood\": -0.06536056493457995,\n    \"mean_log_likelihood_with_coords\": -0.06536056493457995,\n    \"model\": \"esm_if1_gvp4_t16_142M_UR50\",\n    \"native_sequence_match\": true,\n    \"pdb_path\": \"/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/1ubq.pdb\",\n    \"sequence_length\": 76\n  },\n  \"receipt\": {\n    \"call_id\": \"call_id:d4aa515d27fd48ba82e641265df53943\",\n    \"tool\": \"esm_if\",\n    \"args_hash\": \"60170e59cce84b1678b0e3b722b0214eea04928eeee3b2b2a37cfa57b4057fd6\",\n    \"runtime_s\": 0.000368,\n    \"artifact_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/generative/d4aa515d27fd48ba82e641265df53943.json\",\n    \"cache_hit\": true\n  }\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_8",
+          "type": "mcp_tool_call",
+          "server": "rescue_physics",
+          "tool": "dssp",
+          "arguments": {
+            "pdb_path": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/1ubq.pdb"
+          },
+          "result": null,
+          "error": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_8",
+          "type": "mcp_tool_call",
+          "server": "rescue_physics",
+          "tool": "dssp",
+          "arguments": {
+            "pdb_path": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/1ubq.pdb"
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"error\": null,\n  \"result\": {\n    \"backend\": \"mkdssp_4.2.2\",\n    \"residue_count\": 76,\n    \"residues\": [\n      {\n        \"aa\": \"M\",\n        \"chain\": \"A\",\n        \"position\": 1,\n        \"secondary_structure\": \"-\"\n      },\n      {\n        \"aa\": \"Q\",\n        \"chain\": \"A\",\n        \"position\": 2,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"I\",\n        \"chain\": \"A\",\n        \"position\": 3,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"F\",\n        \"chain\": \"A\",\n        \"position\": 4,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"V\",\n        \"chain\": \"A\",\n        \"position\": 5,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"K\",\n        \"chain\": \"A\",\n        \"position\": 6,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"T\",\n        \"chain\": \"A\",\n        \"position\": 7,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"L\",\n        \"chain\": \"A\",\n        \"position\": 8,\n        \"secondary_structure\": \"T\"\n      },\n      {\n        \"aa\": \"T\",\n        \"chain\": \"A\",\n        \"position\": 9,\n        \"secondary_structure\": \"T\"\n      },\n      {\n        \"aa\": \"G\",\n        \"chain\": \"A\",\n        \"position\": 10,\n        \"secondary_structure\": \"S\"\n      },\n      {\n        \"aa\": \"K\",\n        \"chain\": \"A\",\n        \"position\": 11,\n        \"secondary_structure\": \"-\"\n      },\n      {\n        \"aa\": \"T\",\n        \"chain\": \"A\",\n        \"position\": 12,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"I\",\n        \"chain\": \"A\",\n        \"position\": 13,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"T\",\n        \"chain\": \"A\",\n        \"position\": 14,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"L\",\n        \"chain\": \"A\",\n        \"position\": 15,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"E\",\n        \"chain\": \"A\",\n        \"position\": 16,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"V\",\n        \"chain\": \"A\",\n        \"position\": 17,\n        \"secondary_structure\": \"-\"\n      },\n      {\n        \"aa\": \"E\",\n        \"chain\": \"A\",\n        \"position\": 18,\n        \"secondary_structure\": \"-\"\n      },\n      {\n        \"aa\": \"P\",\n        \"chain\": \"A\",\n        \"position\": 19,\n        \"secondary_structure\": \"T\"\n      },\n      {\n        \"aa\": \"S\",\n        \"chain\": \"A\",\n        \"position\": 20,\n        \"secondary_structure\": \"T\"\n      },\n      {\n        \"aa\": \"D\",\n        \"chain\": \"A\",\n        \"position\": 21,\n        \"secondary_structure\": \"S\"\n      },\n      {\n        \"aa\": \"T\",\n        \"chain\": \"A\",\n        \"position\": 22,\n        \"secondary_structure\": \"B\"\n      },\n      {\n        \"aa\": \"I\",\n        \"chain\": \"A\",\n        \"position\": 23,\n        \"secondary_structure\": \"H\"\n      },\n      {\n        \"aa\": \"E\",\n        \"chain\": \"A\",\n        \"position\": 24,\n        \"secondary_structure\": \"H\"\n      },\n      {\n        \"aa\": \"N\",\n        \"chain\": \"A\",\n        \"position\": 25,\n        \"secondary_structure\": \"H\"\n      },\n      {\n        \"aa\": \"V\",\n        \"chain\": \"A\",\n        \"position\": 26,\n        \"secondary_structure\": \"H\"\n      },\n      {\n        \"aa\": \"K\",\n        \"chain\": \"A\",\n        \"position\": 27,\n        \"secondary_structure\": \"H\"\n      },\n      {\n        \"aa\": \"A\",\n        \"chain\": \"A\",\n        \"position\": 28,\n        \"secondary_structure\": \"H\"\n      },\n      {\n        \"aa\": \"K\",\n        \"chain\": \"A\",\n        \"position\": 29,\n        \"secondary_structure\": \"H\"\n      },\n      {\n        \"aa\": \"I\",\n        \"chain\": \"A\",\n        \"position\": 30,\n        \"secondary_structure\": \"H\"\n      },\n      {\n        \"aa\": \"Q\",\n        \"chain\": \"A\",\n        \"position\": 31,\n        \"secondary_structure\": \"H\"\n      },\n      {\n        \"aa\": \"D\",\n        \"chain\": \"A\",\n        \"position\": 32,\n        \"secondary_structure\": \"H\"\n      },\n      {\n        \"aa\": \"K\",\n        \"chain\": \"A\",\n        \"position\": 33,\n        \"secondary_structure\": \"H\"\n      },\n      {\n        \"aa\": \"E\",\n        \"chain\": \"A\",\n        \"position\": 34,\n        \"secondary_structure\": \"H\"\n      },\n      {\n        \"aa\": \"G\",\n        \"chain\": \"A\",\n        \"position\": 35,\n        \"secondary_structure\": \"-\"\n      },\n      {\n        \"aa\": \"I\",\n        \"chain\": \"A\",\n        \"position\": 36,\n        \"secondary_structure\": \"-\"\n      },\n      {\n        \"aa\": \"P\",\n        \"chain\": \"A\",\n        \"position\": 37,\n        \"secondary_structure\": \"-\"\n      },\n      {\n        \"aa\": \"P\",\n        \"chain\": \"A\",\n        \"position\": 38,\n        \"secondary_structure\": \"G\"\n      },\n      {\n        \"aa\": \"D\",\n        \"chain\": \"A\",\n        \"position\": 39,\n        \"secondary_structure\": \"G\"\n      },\n      {\n        \"aa\": \"Q\",\n        \"chain\": \"A\",\n        \"position\": 40,\n        \"secondary_structure\": \"G\"\n      },\n      {\n        \"aa\": \"Q\",\n        \"chain\": \"A\",\n        \"position\": 41,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"R\",\n        \"chain\": \"A\",\n        \"position\": 42,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"L\",\n        \"chain\": \"A\",\n        \"position\": 43,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"I\",\n        \"chain\": \"A\",\n        \"position\": 44,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"F\",\n        \"chain\": \"A\",\n        \"position\": 45,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"A\",\n        \"chain\": \"A\",\n        \"position\": 46,\n        \"secondary_structure\": \"T\"\n      },\n      {\n        \"aa\": \"G\",\n        \"chain\": \"A\",\n        \"position\": 47,\n        \"secondary_structure\": \"T\"\n      },\n      {\n        \"aa\": \"K\",\n        \"chain\": \"A\",\n        \"position\": 48,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"Q\",\n        \"chain\": \"A\",\n        \"position\": 49,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"L\",\n        \"chain\": \"A\",\n        \"position\": 50,\n        \"secondary_structure\": \"P\"\n      },\n      {\n        \"aa\": \"E\",\n        \"chain\": \"A\",\n        \"position\": 51,\n        \"secondary_structure\": \"P\"\n      },\n      {\n        \"aa\": \"D\",\n        \"chain\": \"A\",\n        \"position\": 52,\n        \"secondary_structure\": \"T\"\n      },\n      {\n        \"aa\": \"G\",\n        \"chain\": \"A\",\n        \"position\": 53,\n        \"secondary_structure\": \"T\"\n      },\n      {\n        \"aa\": \"R\",\n        \"chain\": \"A\",\n        \"position\": 54,\n        \"secondary_structure\": \"S\"\n      },\n      {\n        \"aa\": \"T\",\n        \"chain\": \"A\",\n        \"position\": 55,\n        \"secondary_structure\": \"B\"\n      },\n      {\n        \"aa\": \"L\",\n        \"chain\": \"A\",\n        \"position\": 56,\n        \"secondary_structure\": \"T\"\n      },\n      {\n        \"aa\": \"S\",\n        \"chain\": \"A\",\n        \"position\": 57,\n        \"secondary_structure\": \"G\"\n      },\n      {\n        \"aa\": \"D\",\n        \"chain\": \"A\",\n        \"position\": 58,\n        \"secondary_structure\": \"G\"\n      },\n      {\n        \"aa\": \"Y\",\n        \"chain\": \"A\",\n        \"position\": 59,\n        \"secondary_structure\": \"G\"\n      },\n      {\n        \"aa\": \"N\",\n        \"chain\": \"A\",\n        \"position\": 60,\n        \"secondary_structure\": \"T\"\n      },\n      {\n        \"aa\": \"I\",\n        \"chain\": \"A\",\n        \"position\": 61,\n        \"secondary_structure\": \"P\"\n      },\n      {\n        \"aa\": \"Q\",\n        \"chain\": \"A\",\n        \"position\": 62,\n        \"secondary_structure\": \"P\"\n      },\n      {\n        \"aa\": \"K\",\n        \"chain\": \"A\",\n        \"position\": 63,\n        \"secondary_structure\": \"T\"\n      },\n      {\n        \"aa\": \"E\",\n        \"chain\": \"A\",\n        \"position\": 64,\n        \"secondary_structure\": \"T\"\n      },\n      {\n        \"aa\": \"S\",\n        \"chain\": \"A\",\n        \"position\": 65,\n        \"secondary_structure\": \"-\"\n      },\n      {\n        \"aa\": \"T\",\n        \"chain\": \"A\",\n        \"position\": 66,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"L\",\n        \"chain\": \"A\",\n        \"position\": 67,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"H\",\n        \"chain\": \"A\",\n        \"position\": 68,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"L\",\n        \"chain\": \"A\",\n        \"position\": 69,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"V\",\n        \"chain\": \"A\",\n        \"position\": 70,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"L\",\n        \"chain\": \"A\",\n        \"position\": 71,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"R\",\n        \"chain\": \"A\",\n        \"position\": 72,\n        \"secondary_structure\": \"-\"\n      },\n      {\n        \"aa\": \"L\",\n        \"chain\": \"A\",\n        \"position\": 73,\n        \"secondary_structure\": \"-\"\n      },\n      {\n        \"aa\": \"R\",\n        \"chain\": \"A\",\n        \"position\": 74,\n        \"secondary_structure\": \"S\"\n      },\n      {\n        \"aa\": \"G\",\n        \"chain\": \"A\",\n        \"position\": 75,\n        \"secondary_structure\": \"-\"\n      },\n      {\n        \"aa\": \"G\",\n        \"chain\": \"A\",\n        \"position\": 76,\n        \"secondary_structure\": \"-\"\n      }\n    ]\n  },\n  \"receipt\": {\n    \"call_id\": \"call_id:e34f9f1a11ad4223b18289bb3247fd0d\",\n    \"tool\": \"dssp\",\n    \"args_hash\": \"2415b5a60c83639726d4e6a9b9af1a3d8b098f93262d06bcf48d7306170e7855\",\n    \"runtime_s\": 0.000383,\n    \"artifact_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/physics/e34f9f1a11ad4223b18289bb3247fd0d.json\",\n    \"cache_hit\": true\n  }\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_9",
+          "type": "mcp_tool_call",
+          "server": "rescue_physics",
+          "tool": "openmm_delta_energy",
+          "arguments": {
+            "wt_pdb": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/.venv/lib/python3.12/site-packages/openmm/app/data/test.pdb",
+            "mutant_pdb": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/.venv/lib/python3.12/site-packages/openmm/app/data/test.pdb"
+          },
+          "result": null,
+          "error": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_9",
+          "type": "mcp_tool_call",
+          "server": "rescue_physics",
+          "tool": "openmm_delta_energy",
+          "arguments": {
+            "wt_pdb": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/.venv/lib/python3.12/site-packages/openmm/app/data/test.pdb",
+            "mutant_pdb": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/.venv/lib/python3.12/site-packages/openmm/app/data/test.pdb"
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"error\": null,\n  \"result\": {\n    \"atom_count\": 8867,\n    \"delta_kj_per_mol\": 0.0,\n    \"deviation\": \"not PyRosetta ddG; requires fully prepared matched-topology WT and mutant PDBs\",\n    \"is_folding_ddg\": false,\n    \"method\": \"OpenMM_8.6.1_CPU_unminimized_potential_energy\",\n    \"mutant_kj_per_mol\": -100205.28562001859,\n    \"wt_kj_per_mol\": -100205.28562001859\n  },\n  \"receipt\": {\n    \"call_id\": \"call_id:27ddeede238f42a29fdc183cbfe23ede\",\n    \"tool\": \"openmm_delta_energy\",\n    \"args_hash\": \"234fc0519170720756f5151f0e1daf614d603027e14f0fa9f3a8e1757917e438\",\n    \"runtime_s\": 0.000135,\n    \"artifact_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/physics/27ddeede238f42a29fdc183cbfe23ede.json\",\n    \"cache_hit\": true\n  }\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_10",
+          "type": "mcp_tool_call",
+          "server": "rescue_analysis",
+          "tool": "seq_identity",
+          "arguments": {
+            "sequence_a": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+            "sequence_b": "MQAFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR"
+          },
+          "result": null,
+          "error": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_10",
+          "type": "mcp_tool_call",
+          "server": "rescue_analysis",
+          "tool": "seq_identity",
+          "arguments": {
+            "sequence_a": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+            "sequence_b": "MQAFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR"
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"error\": null,\n  \"result\": {\n    \"aligned_a\": \"MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR\",\n    \"aligned_b\": \"MQAFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR\",\n    \"alignment_columns\": 72,\n    \"definition\": \"global_matches_over_all_columns\",\n    \"identity\": 0.9861111111111112,\n    \"matches\": 71\n  },\n  \"receipt\": {\n    \"call_id\": \"call_id:e9ed9287c59a4d8ea3c932e2861f2593\",\n    \"tool\": \"seq_identity\",\n    \"args_hash\": \"84335614307518f45d2182faf9d3e0a2d11fe22824ed512f78e430d6e2449643\",\n    \"runtime_s\": 0.00022,\n    \"artifact_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/analysis/e9ed9287c59a4d8ea3c932e2861f2593.json\",\n    \"cache_hit\": true\n  }\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_11",
+          "type": "agent_message",
+          "text": "The scientific calls succeeded. Identity confirms the single substitution; BLOSUM62 and ESM-2 favor the original residue, but neither establishes a stability effect. I\u2019ll rank I3A first among the single smoke candidate and retain it for plumbing only, excluding the toy MSA and independent structure/OpenMM controls from biological support."
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_12",
+          "type": "mcp_tool_call",
+          "server": "rescue_record",
+          "tool": "log_note",
+          "arguments": {
+            "item_id": "stage2_smoke_w2_unguided_v2",
+            "note": "NON-SCORING unguided plumbing smoke, not a cohort item. Completed retrieve \u2192 score \u2192 compare. Provisional rank: I3A is 1 of 1 supplied candidates, with low priority for a stability-improvement hypothesis because BLOSUM62=-1 and ESM2 masked-marginal delta log probability=-1.6643191576004028 favor WT; these are not stability measurements. Filter: retain for plumbing only; insufficient evidence to select as stabilizing. Identity is 71/72. PSSM delta=-1.584962500721156 bits uses two identical copies of the 72-aa query, a toy plumbing MSA, not biological evidence. ESMFold seed 0 returns 72 CA atoms and structure confidence only. ESM-IF and DSSP use the independent 76-aa native 1UBQ chain A control, distinct from the 72-aa MegaScale construct. OpenMM uses identical unrelated prepared test.pdb inputs and returns zero potential-energy difference, solely a ZERO control, not ddG. PubMed broad search succeeded but returned no variant-specific evidence. No assay label fetched, no measured outcome, no stability delta or predictive-accuracy claim."
+          },
+          "result": null,
+          "error": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_12",
+          "type": "mcp_tool_call",
+          "server": "rescue_record",
+          "tool": "log_note",
+          "arguments": {
+            "item_id": "stage2_smoke_w2_unguided_v2",
+            "note": "NON-SCORING unguided plumbing smoke, not a cohort item. Completed retrieve \u2192 score \u2192 compare. Provisional rank: I3A is 1 of 1 supplied candidates, with low priority for a stability-improvement hypothesis because BLOSUM62=-1 and ESM2 masked-marginal delta log probability=-1.6643191576004028 favor WT; these are not stability measurements. Filter: retain for plumbing only; insufficient evidence to select as stabilizing. Identity is 71/72. PSSM delta=-1.584962500721156 bits uses two identical copies of the 72-aa query, a toy plumbing MSA, not biological evidence. ESMFold seed 0 returns 72 CA atoms and structure confidence only. ESM-IF and DSSP use the independent 76-aa native 1UBQ chain A control, distinct from the 72-aa MegaScale construct. OpenMM uses identical unrelated prepared test.pdb inputs and returns zero potential-energy difference, solely a ZERO control, not ddG. PubMed broad search succeeded but returned no variant-specific evidence. No assay label fetched, no measured outcome, no stability delta or predictive-accuracy claim."
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"result\": {\n    \"logged\": true,\n    \"item_id\": \"stage2_smoke_w2_unguided_v2\",\n    \"note_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/notes/stage2_smoke_w2_unguided_v2_15c1a409e5d04a1486dc9739b2bee052.json\"\n  },\n  \"error\": null,\n  \"receipt\": {\n    \"call_id\": \"call_id:254495afe784441ca66c4f054c19938c\",\n    \"tool\": \"log_note\",\n    \"args_hash\": \"3614cc8cba6ab458d72049ca294865e1300f346b5e5a023960caaca34b724a3c\",\n    \"runtime_s\": 0.000637,\n    \"artifact_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/record/254495afe784441ca66c4f054c19938c.json\",\n    \"cache_hit\": false\n  }\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_13",
+          "type": "mcp_tool_call",
+          "server": "rescue_record",
+          "tool": "submit_answer",
+          "arguments": {
+            "item_id": "stage2_smoke_w2_unguided_v2",
+            "answer": {
+              "mode": "unguided",
+              "non_scoring": true,
+              "is_cohort_item": false,
+              "item": "MegaScale 1UBQ.pdb_I3A",
+              "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+              "sequence_length": 72,
+              "variant": {
+                "position": 3,
+                "wt": "I",
+                "mutant": "A"
+              },
+              "workflow": [
+                "retrieve",
+                "score",
+                "compare",
+                "rank",
+                "filter",
+                "submit"
+              ],
+              "retrieval": {
+                "mmseqs": {
+                  "hits": [
+                    {
+                      "alignment_length": 72,
+                      "bitscore": 143,
+                      "evalue": 5.231e-44,
+                      "pident_pct": 100,
+                      "query_coverage": 1,
+                      "target": "1UBQ.pdb",
+                      "target_coverage": 1
+                    },
+                    {
+                      "alignment_length": 72,
+                      "bitscore": 142,
+                      "evalue": 1.352e-43,
+                      "pident_pct": 98.6,
+                      "query_coverage": 1,
+                      "target": "1UBQ.pdb_pross7",
+                      "target_coverage": 1
+                    },
+                    {
+                      "alignment_length": 72,
+                      "bitscore": 141,
+                      "evalue": 2.548e-43,
+                      "pident_pct": 98.6,
+                      "query_coverage": 1,
+                      "target": "1UBQ.pdb_I3A",
+                      "target_coverage": 1
+                    },
+                    {
+                      "alignment_length": 72,
+                      "bitscore": 141,
+                      "evalue": 3.497e-43,
+                      "pident_pct": 98.6,
+                      "query_coverage": 1,
+                      "target": "1UBQ.pdb_L15S",
+                      "target_coverage": 1
+                    },
+                    {
+                      "alignment_length": 72,
+                      "bitscore": 141,
+                      "evalue": 3.497e-43,
+                      "pident_pct": 98.6,
+                      "query_coverage": 1,
+                      "target": "1UBQ.pdb_L67S",
+                      "target_coverage": 1
+                    }
+                  ],
+                  "reference_fasta": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage1_2026-09-12/w2_sequences.fasta"
+                },
+                "literature": {
+                  "articles": [
+                    {
+                      "pmid": "42727187",
+                      "publication_date": "2026 Sep 8",
+                      "title": "USP10 is associated with TUBA1B protein stability, PI3K/AKT phosphorylation changes, and progression of triple-negative breast cancer."
+                    },
+                    {
+                      "pmid": "42725854",
+                      "publication_date": "2026 Sep",
+                      "title": "SFRP2 Potentiates Metastasis of Colon Cancer by Enhancing Snai1 Protein Stability via USP11."
+                    },
+                    {
+                      "pmid": "42724590",
+                      "publication_date": "2026",
+                      "title": "AI-assisted design and virtual profiling of targeted degraders for pancreatic cancer therapy via PROTAC technology."
+                    }
+                  ],
+                  "count": 13249,
+                  "scireason_mcp_reused": false,
+                  "source": "NCBI_Eutilities_ESearch_ESummary"
+                },
+                "interpretation": "Sequence reference matches only; no assay labels retrieved. Broad PubMed titles provide no variant-specific stability evidence."
+              },
+              "computational_outputs": {
+                "blosum62": {
+                  "matrix": "BLOSUM62",
+                  "mutant": "A",
+                  "score": -1,
+                  "wt": "I",
+                  "zero_effect": false
+                },
+                "esm2": {
+                  "delta_log_probability": -1.6643191576004028,
+                  "device": "cpu",
+                  "method": "ESM2_single_position_masked_marginal_natural_log",
+                  "model": "facebook/esm2_t6_8M_UR50D",
+                  "mutant": "A",
+                  "mutant_log_probability": -3.0254855155944824,
+                  "position": 3,
+                  "revision": "c731040fcd8d73dceaa04b0a8e6329b345b0f5df",
+                  "wt": "I",
+                  "wt_log_probability": -1.3611663579940796
+                },
+                "identity": {
+                  "aligned_a": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+                  "aligned_b": "MQAFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+                  "alignment_columns": 72,
+                  "definition": "global_matches_over_all_columns",
+                  "identity": 0.9861111111111112,
+                  "matches": 71
+                },
+                "pssm": {
+                  "background": 0.05,
+                  "delta_bits": -1.584962500721156,
+                  "depth": 2,
+                  "mutant": "A",
+                  "mutant_bits": -0.13750352374993496,
+                  "position": 3,
+                  "pseudocount_per_aa": 1,
+                  "wt": "I",
+                  "wt_bits": 1.4474589769712212,
+                  "msa_type": "Toy plumbing MSA [sequence, sequence]; duplicated query, not biological evidence."
+                }
+              },
+              "ranking": [
+                {
+                  "variant": "I3A",
+                  "rank": 1,
+                  "candidate_count": 1,
+                  "provisional": true,
+                  "explanation": "Only supplied smoke candidate. BLOSUM62 -1 and ESM2 delta log probability -1.6643 favor WT in their respective sequence models, supporting modest caution and low priority for a stability-improvement hypothesis, without establishing a stability effect or meaningful ordering against untested alternatives."
+                }
+              ],
+              "filter": {
+                "retain_for_plumbing": true,
+                "select_as_demonstrated_stabilizing": false,
+                "explanation": "Insufficient biological evidence to select as stabilizing. Toy PSSM, independent structural controls, and unrelated OpenMM ZERO control are excluded from biological support."
+              },
+              "controls": {
+                "esmfold": {
+                  "ca_count": 72,
+                  "device": "cuda",
+                  "interpretation": "72-aa input, seed 0. Confidence only; no stability delta inferred.",
+                  "mean_ca_bfactor_as_written": 0.9331944444444444,
+                  "model": "facebook/esmfold_v1",
+                  "pdb_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/model_artifacts/esmfold/9702e0fc37f4bf5a2cef5ccf84f7dfe9c814fa0d589de38f315fe9d117a1199c.pdb",
+                  "revision": "75a3841ee059df2bf4d56688166c8fb459ddd97a",
+                  "seed": 0,
+                  "sequence_length": 72
+                },
+                "esm_if": {
+                  "backbone_length": 76,
+                  "chain": "A",
+                  "device": "cpu",
+                  "interpretation": "Independent 76-aa native 1UBQ chain A backend plumbing control; not the 72-aa MegaScale assay construct or its mutant.",
+                  "mean_log_likelihood": -0.06536056493457995,
+                  "mean_log_likelihood_with_coords": -0.06536056493457995,
+                  "model": "esm_if1_gvp4_t16_142M_UR50",
+                  "native_sequence_match": true,
+                  "pdb_path": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/1ubq.pdb",
+                  "sequence_length": 76,
+                  "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG"
+                },
+                "dssp": {
+                  "residue_count": 76,
+                  "chain": "A",
+                  "position_3_secondary_structure": "E",
+                  "interpretation": "Independent 76-aa known-structure control; not an assay-construct stability measurement."
+                },
+                "openmm": {
+                  "atom_count": 8867,
+                  "delta_kj_per_mol": 0,
+                  "deviation": "not PyRosetta ddG; requires fully prepared matched-topology WT and mutant PDBs",
+                  "is_folding_ddg": false,
+                  "method": "OpenMM_8.6.1_CPU_unminimized_potential_energy",
+                  "mutant_kj_per_mol": -100205.28562001859,
+                  "wt_kj_per_mol": -100205.28562001859,
+                  "input_for_both": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/.venv/lib/python3.12/site-packages/openmm/app/data/test.pdb",
+                  "interpretation": "Unrelated identical prepared PDB inputs; zero potential-energy difference is a ZERO control only, not folding ddG or the I3A effect."
+                }
+              },
+              "assay_label_lookup": false,
+              "measured_outcome": null,
+              "stability_delta": null,
+              "predictive_accuracy_claimed": false,
+              "call_ids": {
+                "classical": "call_id:83f36fb72c2b4a238ac0d6ff3590228e",
+                "analysis": "call_id:e9ed9287c59a4d8ea3c932e2861f2593",
+                "predictive": "call_id:c1d50ad07c9143f1b9f0f363f5d24303",
+                "generative": "call_id:d4aa515d27fd48ba82e641265df53943",
+                "physics": "call_id:27ddeede238f42a29fdc183cbfe23ede",
+                "lit": "call_id:ab3ceb0f57944bb98d3c698972139751",
+                "record": "call_id:254495afe784441ca66c4f054c19938c"
+              },
+              "all_tool_call_ids": {
+                "pssm": "call_id:064c19d664ae4f00a5a33916f1ffa558",
+                "blosum": "call_id:f0eef8b4e3f44630a858fabf10cf0b80",
+                "esm2": "call_id:c1d50ad07c9143f1b9f0f363f5d24303",
+                "esmfold": "call_id:46149e50075c4219add9c9b5faeb4628",
+                "esm_if": "call_id:d4aa515d27fd48ba82e641265df53943",
+                "dssp": "call_id:e34f9f1a11ad4223b18289bb3247fd0d",
+                "openmm": "call_id:27ddeede238f42a29fdc183cbfe23ede",
+                "identity": "call_id:e9ed9287c59a4d8ea3c932e2861f2593",
+                "note": "call_id:254495afe784441ca66c4f054c19938c"
+              },
+              "every_server_succeeded": true
+            }
+          },
+          "result": null,
+          "error": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_13",
+          "type": "mcp_tool_call",
+          "server": "rescue_record",
+          "tool": "submit_answer",
+          "arguments": {
+            "item_id": "stage2_smoke_w2_unguided_v2",
+            "answer": {
+              "mode": "unguided",
+              "non_scoring": true,
+              "is_cohort_item": false,
+              "item": "MegaScale 1UBQ.pdb_I3A",
+              "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+              "sequence_length": 72,
+              "variant": {
+                "position": 3,
+                "wt": "I",
+                "mutant": "A"
+              },
+              "workflow": [
+                "retrieve",
+                "score",
+                "compare",
+                "rank",
+                "filter",
+                "submit"
+              ],
+              "retrieval": {
+                "mmseqs": {
+                  "hits": [
+                    {
+                      "alignment_length": 72,
+                      "bitscore": 143,
+                      "evalue": 5.231e-44,
+                      "pident_pct": 100,
+                      "query_coverage": 1,
+                      "target": "1UBQ.pdb",
+                      "target_coverage": 1
+                    },
+                    {
+                      "alignment_length": 72,
+                      "bitscore": 142,
+                      "evalue": 1.352e-43,
+                      "pident_pct": 98.6,
+                      "query_coverage": 1,
+                      "target": "1UBQ.pdb_pross7",
+                      "target_coverage": 1
+                    },
+                    {
+                      "alignment_length": 72,
+                      "bitscore": 141,
+                      "evalue": 2.548e-43,
+                      "pident_pct": 98.6,
+                      "query_coverage": 1,
+                      "target": "1UBQ.pdb_I3A",
+                      "target_coverage": 1
+                    },
+                    {
+                      "alignment_length": 72,
+                      "bitscore": 141,
+                      "evalue": 3.497e-43,
+                      "pident_pct": 98.6,
+                      "query_coverage": 1,
+                      "target": "1UBQ.pdb_L15S",
+                      "target_coverage": 1
+                    },
+                    {
+                      "alignment_length": 72,
+                      "bitscore": 141,
+                      "evalue": 3.497e-43,
+                      "pident_pct": 98.6,
+                      "query_coverage": 1,
+                      "target": "1UBQ.pdb_L67S",
+                      "target_coverage": 1
+                    }
+                  ],
+                  "reference_fasta": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage1_2026-09-12/w2_sequences.fasta"
+                },
+                "literature": {
+                  "articles": [
+                    {
+                      "pmid": "42727187",
+                      "publication_date": "2026 Sep 8",
+                      "title": "USP10 is associated with TUBA1B protein stability, PI3K/AKT phosphorylation changes, and progression of triple-negative breast cancer."
+                    },
+                    {
+                      "pmid": "42725854",
+                      "publication_date": "2026 Sep",
+                      "title": "SFRP2 Potentiates Metastasis of Colon Cancer by Enhancing Snai1 Protein Stability via USP11."
+                    },
+                    {
+                      "pmid": "42724590",
+                      "publication_date": "2026",
+                      "title": "AI-assisted design and virtual profiling of targeted degraders for pancreatic cancer therapy via PROTAC technology."
+                    }
+                  ],
+                  "count": 13249,
+                  "scireason_mcp_reused": false,
+                  "source": "NCBI_Eutilities_ESearch_ESummary"
+                },
+                "interpretation": "Sequence reference matches only; no assay labels retrieved. Broad PubMed titles provide no variant-specific stability evidence."
+              },
+              "computational_outputs": {
+                "blosum62": {
+                  "matrix": "BLOSUM62",
+                  "mutant": "A",
+                  "score": -1,
+                  "wt": "I",
+                  "zero_effect": false
+                },
+                "esm2": {
+                  "delta_log_probability": -1.6643191576004028,
+                  "device": "cpu",
+                  "method": "ESM2_single_position_masked_marginal_natural_log",
+                  "model": "facebook/esm2_t6_8M_UR50D",
+                  "mutant": "A",
+                  "mutant_log_probability": -3.0254855155944824,
+                  "position": 3,
+                  "revision": "c731040fcd8d73dceaa04b0a8e6329b345b0f5df",
+                  "wt": "I",
+                  "wt_log_probability": -1.3611663579940796
+                },
+                "identity": {
+                  "aligned_a": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+                  "aligned_b": "MQAFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+                  "alignment_columns": 72,
+                  "definition": "global_matches_over_all_columns",
+                  "identity": 0.9861111111111112,
+                  "matches": 71
+                },
+                "pssm": {
+                  "background": 0.05,
+                  "delta_bits": -1.584962500721156,
+                  "depth": 2,
+                  "mutant": "A",
+                  "mutant_bits": -0.13750352374993496,
+                  "position": 3,
+                  "pseudocount_per_aa": 1,
+                  "wt": "I",
+                  "wt_bits": 1.4474589769712212,
+                  "msa_type": "Toy plumbing MSA [sequence, sequence]; duplicated query, not biological evidence."
+                }
+              },
+              "ranking": [
+                {
+                  "variant": "I3A",
+                  "rank": 1,
+                  "candidate_count": 1,
+                  "provisional": true,
+                  "explanation": "Only supplied smoke candidate. BLOSUM62 -1 and ESM2 delta log probability -1.6643 favor WT in their respective sequence models, supporting modest caution and low priority for a stability-improvement hypothesis, without establishing a stability effect or meaningful ordering against untested alternatives."
+                }
+              ],
+              "filter": {
+                "retain_for_plumbing": true,
+                "select_as_demonstrated_stabilizing": false,
+                "explanation": "Insufficient biological evidence to select as stabilizing. Toy PSSM, independent structural controls, and unrelated OpenMM ZERO control are excluded from biological support."
+              },
+              "controls": {
+                "esmfold": {
+                  "ca_count": 72,
+                  "device": "cuda",
+                  "interpretation": "72-aa input, seed 0. Confidence only; no stability delta inferred.",
+                  "mean_ca_bfactor_as_written": 0.9331944444444444,
+                  "model": "facebook/esmfold_v1",
+                  "pdb_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/model_artifacts/esmfold/9702e0fc37f4bf5a2cef5ccf84f7dfe9c814fa0d589de38f315fe9d117a1199c.pdb",
+                  "revision": "75a3841ee059df2bf4d56688166c8fb459ddd97a",
+                  "seed": 0,
+                  "sequence_length": 72
+                },
+                "esm_if": {
+                  "backbone_length": 76,
+                  "chain": "A",
+                  "device": "cpu",
+                  "interpretation": "Independent 76-aa native 1UBQ chain A backend plumbing control; not the 72-aa MegaScale assay construct or its mutant.",
+                  "mean_log_likelihood": -0.06536056493457995,
+                  "mean_log_likelihood_with_coords": -0.06536056493457995,
+                  "model": "esm_if1_gvp4_t16_142M_UR50",
+                  "native_sequence_match": true,
+                  "pdb_path": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/1ubq.pdb",
+                  "sequence_length": 76,
+                  "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG"
+                },
+                "dssp": {
+                  "residue_count": 76,
+                  "chain": "A",
+                  "position_3_secondary_structure": "E",
+                  "interpretation": "Independent 76-aa known-structure control; not an assay-construct stability measurement."
+                },
+                "openmm": {
+                  "atom_count": 8867,
+                  "delta_kj_per_mol": 0,
+                  "deviation": "not PyRosetta ddG; requires fully prepared matched-topology WT and mutant PDBs",
+                  "is_folding_ddg": false,
+                  "method": "OpenMM_8.6.1_CPU_unminimized_potential_energy",
+                  "mutant_kj_per_mol": -100205.28562001859,
+                  "wt_kj_per_mol": -100205.28562001859,
+                  "input_for_both": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/.venv/lib/python3.12/site-packages/openmm/app/data/test.pdb",
+                  "interpretation": "Unrelated identical prepared PDB inputs; zero potential-energy difference is a ZERO control only, not folding ddG or the I3A effect."
+                }
+              },
+              "assay_label_lookup": false,
+              "measured_outcome": null,
+              "stability_delta": null,
+              "predictive_accuracy_claimed": false,
+              "call_ids": {
+                "classical": "call_id:83f36fb72c2b4a238ac0d6ff3590228e",
+                "analysis": "call_id:e9ed9287c59a4d8ea3c932e2861f2593",
+                "predictive": "call_id:c1d50ad07c9143f1b9f0f363f5d24303",
+                "generative": "call_id:d4aa515d27fd48ba82e641265df53943",
+                "physics": "call_id:27ddeede238f42a29fdc183cbfe23ede",
+                "lit": "call_id:ab3ceb0f57944bb98d3c698972139751",
+                "record": "call_id:254495afe784441ca66c4f054c19938c"
+              },
+              "all_tool_call_ids": {
+                "pssm": "call_id:064c19d664ae4f00a5a33916f1ffa558",
+                "blosum": "call_id:f0eef8b4e3f44630a858fabf10cf0b80",
+                "esm2": "call_id:c1d50ad07c9143f1b9f0f363f5d24303",
+                "esmfold": "call_id:46149e50075c4219add9c9b5faeb4628",
+                "esm_if": "call_id:d4aa515d27fd48ba82e641265df53943",
+                "dssp": "call_id:e34f9f1a11ad4223b18289bb3247fd0d",
+                "openmm": "call_id:27ddeede238f42a29fdc183cbfe23ede",
+                "identity": "call_id:e9ed9287c59a4d8ea3c932e2861f2593",
+                "note": "call_id:254495afe784441ca66c4f054c19938c"
+              },
+              "every_server_succeeded": true
+            }
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"result\": {\n    \"accepted\": true,\n    \"item_id\": \"stage2_smoke_w2_unguided_v2\",\n    \"submission_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/submissions/stage2_smoke_w2_unguided_v2.json\"\n  },\n  \"error\": null,\n  \"receipt\": {\n    \"call_id\": \"call_id:930febd34da64ed19b6437c90b8ebc76\",\n    \"tool\": \"submit_answer\",\n    \"args_hash\": \"e0d7d67916906efc939712064429691343c76209b4a20ae0631ccea531623733\",\n    \"runtime_s\": 0.000809,\n    \"artifact_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/record/930febd34da64ed19b6437c90b8ebc76.json\",\n    \"cache_hit\": false\n  }\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_14",
+          "type": "agent_message",
+          "text": "Submitted `stage2_smoke_w2_unguided_v2`. All seven servers succeeded."
+        }
+      },
+      {
+        "type": "turn.completed",
+        "usage": {
+          "input_tokens": 152487,
+          "cached_input_tokens": 125056,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1945,
+          "reasoning_output_tokens": 10
+        }
+      }
+    ]
+  },
+  "guided": {
+    "workflow": "w2",
+    "presentation": "guided",
+    "server_success": {
+      "classical": true,
+      "analysis": true,
+      "predictive": true,
+      "generative": true,
+      "physics": true,
+      "lit": true,
+      "record": true
+    },
+    "every_server_success": true,
+    "submission_count": 1,
+    "guided_composite_used": true,
+    "calls": [
+      {
+        "server": "rescue_classical",
+        "tool": "mmseqs_search",
+        "status": "in_progress"
+      },
+      {
+        "server": "rescue_classical",
+        "tool": "mmseqs_search",
+        "status": "completed",
+        "success": true,
+        "call_id": "call_id:63cbdec81afd495f952ac150787d7408",
+        "receipt_resolves": true
+      },
+      {
+        "server": "rescue_lit",
+        "tool": "pubmed_search",
+        "status": "in_progress"
+      },
+      {
+        "server": "rescue_lit",
+        "tool": "pubmed_search",
+        "status": "completed",
+        "success": true,
+        "call_id": "call_id:acb2cb7da4334ba886efcd3f3ae1e595",
+        "receipt_resolves": true
+      },
+      {
+        "server": "rescue_classical",
+        "tool": "pssm_score",
+        "status": "in_progress"
+      },
+      {
+        "server": "rescue_classical",
+        "tool": "pssm_score",
+        "status": "completed",
+        "success": true,
+        "call_id": "call_id:648a0c9f5d6d4116b02b3e5a54baea8d",
+        "receipt_resolves": true
+      },
+      {
+        "server": "rescue_classical",
+        "tool": "blosum_score",
+        "status": "in_progress"
+      },
+      {
+        "server": "rescue_classical",
+        "tool": "blosum_score",
+        "status": "completed",
+        "success": true,
+        "call_id": "call_id:a044d11b485549d1b9c6ab156a24565c",
+        "receipt_resolves": true
+      },
+      {
+        "server": "rescue_classical",
+        "tool": "screen_variant_classical",
+        "status": "in_progress"
+      },
+      {
+        "server": "rescue_classical",
+        "tool": "screen_variant_classical",
+        "status": "completed",
+        "success": true,
+        "call_id": "call_id:ea881f9266264811af561a7335bda792",
+        "receipt_resolves": true
+      },
+      {
+        "server": "rescue_predictive",
+        "tool": "esm2_likelihood",
+        "status": "in_progress"
+      },
+      {
+        "server": "rescue_predictive",
+        "tool": "esm2_likelihood",
+        "status": "completed",
+        "success": true,
+        "call_id": "call_id:9e6a891f02064bc7a548eecf41ad7a0b",
+        "receipt_resolves": true
+      },
+      {
+        "server": "rescue_predictive",
+        "tool": "esmfold",
+        "status": "in_progress"
+      },
+      {
+        "server": "rescue_predictive",
+        "tool": "esmfold",
+        "status": "completed",
+        "success": true,
+        "call_id": "call_id:ab93b622483646be963f0dddc54f7628",
+        "receipt_resolves": true
+      },
+      {
+        "server": "rescue_physics",
+        "tool": "dssp",
+        "status": "in_progress"
+      },
+      {
+        "server": "rescue_physics",
+        "tool": "dssp",
+        "status": "completed",
+        "success": true,
+        "call_id": "call_id:92db0cc0c32b4b82ba5ed311a4a4e7ef",
+        "receipt_resolves": true
+      },
+      {
+        "server": "rescue_generative",
+        "tool": "esm_if",
+        "status": "in_progress"
+      },
+      {
+        "server": "rescue_generative",
+        "tool": "esm_if",
+        "status": "completed",
+        "success": true,
+        "call_id": "call_id:3b527b493062471b900a27a347abb7f6",
+        "receipt_resolves": true
+      },
+      {
+        "server": "rescue_physics",
+        "tool": "openmm_delta_energy",
+        "status": "in_progress"
+      },
+      {
+        "server": "rescue_physics",
+        "tool": "openmm_delta_energy",
+        "status": "completed",
+        "success": true,
+        "call_id": "call_id:feffbc3f8e9147ddbb8ecaece1934a8a",
+        "receipt_resolves": true
+      },
+      {
+        "server": "rescue_analysis",
+        "tool": "seq_identity",
+        "status": "in_progress"
+      },
+      {
+        "server": "rescue_analysis",
+        "tool": "seq_identity",
+        "status": "completed",
+        "success": true,
+        "call_id": "call_id:af9166a30bd04f5f9704668b68c0d390",
+        "receipt_resolves": true
+      },
+      {
+        "server": "rescue_record",
+        "tool": "log_note",
+        "status": "in_progress"
+      },
+      {
+        "server": "rescue_record",
+        "tool": "log_note",
+        "status": "completed",
+        "success": true,
+        "call_id": "call_id:9b811f6e587540d9aa4ed9a2bebb0ef0",
+        "receipt_resolves": true
+      },
+      {
+        "server": "rescue_record",
+        "tool": "submit_answer",
+        "status": "in_progress"
+      },
+      {
+        "server": "rescue_record",
+        "tool": "submit_answer",
+        "status": "completed",
+        "success": true,
+        "call_id": "call_id:770d0d49c5cc410e805eff4f90bc46c9",
+        "receipt_resolves": true
+      }
+    ],
+    "exit_code": 0,
+    "stderr": "",
+    "trace_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/smoke_w2_guided_trace.jsonl",
+    "events": [
+      {
+        "type": "thread.started",
+        "thread_id": "01a098e9-e69f-7540-9a40-de5e3e6666e0"
+      },
+      {
+        "type": "turn.started"
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_0",
+          "type": "agent_message",
+          "text": "I\u2019ll run the required calls in order, read their receipts, and submit a provisional smoke-test ranking with the controls clearly labeled.\n"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_1",
+          "type": "mcp_tool_call",
+          "server": "rescue_classical",
+          "tool": "mmseqs_search",
+          "arguments": {
+            "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+            "reference_fasta": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage1_2026-09-12/w2_sequences.fasta"
+          },
+          "result": null,
+          "error": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_1",
+          "type": "mcp_tool_call",
+          "server": "rescue_classical",
+          "tool": "mmseqs_search",
+          "arguments": {
+            "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+            "reference_fasta": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage1_2026-09-12/w2_sequences.fasta"
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"error\": null,\n  \"result\": {\n    \"hits\": [\n      {\n        \"alignment_length\": 72,\n        \"bitscore\": 143.0,\n        \"evalue\": 5.231e-44,\n        \"pident_pct\": 100.0,\n        \"query_coverage\": 1.0,\n        \"target\": \"1UBQ.pdb\",\n        \"target_coverage\": 1.0\n      },\n      {\n        \"alignment_length\": 72,\n        \"bitscore\": 142.0,\n        \"evalue\": 1.352e-43,\n        \"pident_pct\": 98.6,\n        \"query_coverage\": 1.0,\n        \"target\": \"1UBQ.pdb_pross7\",\n        \"target_coverage\": 1.0\n      },\n      {\n        \"alignment_length\": 72,\n        \"bitscore\": 141.0,\n        \"evalue\": 2.548e-43,\n        \"pident_pct\": 98.6,\n        \"query_coverage\": 1.0,\n        \"target\": \"1UBQ.pdb_I3A\",\n        \"target_coverage\": 1.0\n      },\n      {\n        \"alignment_length\": 72,\n        \"bitscore\": 141.0,\n        \"evalue\": 3.497e-43,\n        \"pident_pct\": 98.6,\n        \"query_coverage\": 1.0,\n        \"target\": \"1UBQ.pdb_L15S\",\n        \"target_coverage\": 1.0\n      },\n      {\n        \"alignment_length\": 72,\n        \"bitscore\": 141.0,\n        \"evalue\": 3.497e-43,\n        \"pident_pct\": 98.6,\n        \"query_coverage\": 1.0,\n        \"target\": \"1UBQ.pdb_L67S\",\n        \"target_coverage\": 1.0\n      }\n    ],\n    \"reference_fasta\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage1_2026-09-12/w2_sequences.fasta\"\n  },\n  \"receipt\": {\n    \"call_id\": \"call_id:63cbdec81afd495f952ac150787d7408\",\n    \"tool\": \"mmseqs_search\",\n    \"args_hash\": \"e8764696ad7670d8cf82553297931cdf31215b89366b2963b290346b97b57284\",\n    \"runtime_s\": 0.000227,\n    \"artifact_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/63cbdec81afd495f952ac150787d7408.json\",\n    \"cache_hit\": true\n  }\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_2",
+          "type": "mcp_tool_call",
+          "server": "rescue_lit",
+          "tool": "pubmed_search",
+          "arguments": {
+            "term": "ubiquitin protein stability",
+            "max_hits": 3
+          },
+          "result": null,
+          "error": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_2",
+          "type": "mcp_tool_call",
+          "server": "rescue_lit",
+          "tool": "pubmed_search",
+          "arguments": {
+            "term": "ubiquitin protein stability",
+            "max_hits": 3
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"error\": null,\n  \"result\": {\n    \"articles\": [\n      {\n        \"pmid\": \"42727187\",\n        \"publication_date\": \"2026 Sep 8\",\n        \"title\": \"USP10 is associated with TUBA1B protein stability, PI3K/AKT phosphorylation changes, and progression of triple-negative breast cancer.\"\n      },\n      {\n        \"pmid\": \"42725854\",\n        \"publication_date\": \"2026 Sep\",\n        \"title\": \"SFRP2 Potentiates Metastasis of Colon Cancer by Enhancing Snai1 Protein Stability via USP11.\"\n      },\n      {\n        \"pmid\": \"42724590\",\n        \"publication_date\": \"2026\",\n        \"title\": \"AI-assisted design and virtual profiling of targeted degraders for pancreatic cancer therapy via PROTAC technology.\"\n      }\n    ],\n    \"count\": 13249,\n    \"scireason_mcp_reused\": false,\n    \"source\": \"NCBI_Eutilities_ESearch_ESummary\"\n  },\n  \"receipt\": {\n    \"call_id\": \"call_id:acb2cb7da4334ba886efcd3f3ae1e595\",\n    \"tool\": \"pubmed_search\",\n    \"args_hash\": \"ebd63a91d1e577f6fc9a108511c0d791e69327d70fdc3c5aa4065366bc908805\",\n    \"runtime_s\": 0.00041,\n    \"artifact_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/lit/acb2cb7da4334ba886efcd3f3ae1e595.json\",\n    \"cache_hit\": true\n  }\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_3",
+          "type": "mcp_tool_call",
+          "server": "rescue_classical",
+          "tool": "pssm_score",
+          "arguments": {
+            "msa": [
+              "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+              "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR"
+            ],
+            "mutant": "A",
+            "position": 3,
+            "query": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR"
+          },
+          "result": null,
+          "error": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_3",
+          "type": "mcp_tool_call",
+          "server": "rescue_classical",
+          "tool": "pssm_score",
+          "arguments": {
+            "msa": [
+              "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+              "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR"
+            ],
+            "mutant": "A",
+            "position": 3,
+            "query": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR"
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"error\": null,\n  \"result\": {\n    \"background\": 0.05,\n    \"delta_bits\": -1.584962500721156,\n    \"depth\": 2,\n    \"mutant\": \"A\",\n    \"mutant_bits\": -0.13750352374993496,\n    \"position\": 3,\n    \"pseudocount_per_aa\": 1,\n    \"wt\": \"I\",\n    \"wt_bits\": 1.4474589769712212\n  },\n  \"receipt\": {\n    \"call_id\": \"call_id:648a0c9f5d6d4116b02b3e5a54baea8d\",\n    \"tool\": \"pssm_score\",\n    \"args_hash\": \"b611747815ee8a5e12767514c4f3ef658d91365c885323f00ea2d3130700f364\",\n    \"runtime_s\": 0.000201,\n    \"artifact_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/648a0c9f5d6d4116b02b3e5a54baea8d.json\",\n    \"cache_hit\": true\n  }\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_4",
+          "type": "mcp_tool_call",
+          "server": "rescue_classical",
+          "tool": "blosum_score",
+          "arguments": {
+            "wt": "I",
+            "mutant": "A"
+          },
+          "result": null,
+          "error": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_4",
+          "type": "mcp_tool_call",
+          "server": "rescue_classical",
+          "tool": "blosum_score",
+          "arguments": {
+            "wt": "I",
+            "mutant": "A"
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"error\": null,\n  \"result\": {\n    \"matrix\": \"BLOSUM62\",\n    \"mutant\": \"A\",\n    \"score\": -1,\n    \"wt\": \"I\",\n    \"zero_effect\": false\n  },\n  \"receipt\": {\n    \"call_id\": \"call_id:a044d11b485549d1b9c6ab156a24565c\",\n    \"tool\": \"blosum_score\",\n    \"args_hash\": \"330f15b6b20cdca097fbb3c317c6c114d8b8de2bccc726f939553aa180fc0691\",\n    \"runtime_s\": 0.000173,\n    \"artifact_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/a044d11b485549d1b9c6ab156a24565c.json\",\n    \"cache_hit\": true\n  }\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_5",
+          "type": "mcp_tool_call",
+          "server": "rescue_classical",
+          "tool": "screen_variant_classical",
+          "arguments": {
+            "msa": [
+              "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+              "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR"
+            ],
+            "mutant": "A",
+            "position": 3,
+            "query": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR"
+          },
+          "result": null,
+          "error": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_5",
+          "type": "mcp_tool_call",
+          "server": "rescue_classical",
+          "tool": "screen_variant_classical",
+          "arguments": {
+            "msa": [
+              "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+              "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR"
+            ],
+            "mutant": "A",
+            "position": 3,
+            "query": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR"
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"error\": null,\n  \"result\": {\n    \"blosum\": {\n      \"matrix\": \"BLOSUM62\",\n      \"mutant\": \"A\",\n      \"score\": -1,\n      \"wt\": \"I\",\n      \"zero_effect\": false\n    },\n    \"conservation\": {\n      \"conservation\": 1.0,\n      \"depth\": 2,\n      \"entropy_bits\": -0.0,\n      \"gap_fraction\": 0.0,\n      \"position\": 3\n    },\n    \"pssm\": {\n      \"background\": 0.05,\n      \"delta_bits\": -1.584962500721156,\n      \"depth\": 2,\n      \"mutant\": \"A\",\n      \"mutant_bits\": -0.13750352374993496,\n      \"position\": 3,\n      \"pseudocount_per_aa\": 1,\n      \"wt\": \"I\",\n      \"wt_bits\": 1.4474589769712212\n    }\n  },\n  \"receipt\": {\n    \"call_id\": \"call_id:ea881f9266264811af561a7335bda792\",\n    \"tool\": \"screen_variant_classical\",\n    \"args_hash\": \"ad75b9e706a895e646e9870c3093b76b8d90ef280239e73d965e85535a38846f\",\n    \"runtime_s\": 0.000187,\n    \"artifact_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/ea881f9266264811af561a7335bda792.json\",\n    \"cache_hit\": true\n  }\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_6",
+          "type": "mcp_tool_call",
+          "server": "rescue_predictive",
+          "tool": "esm2_likelihood",
+          "arguments": {
+            "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+            "position": 3,
+            "mutant": "A"
+          },
+          "result": null,
+          "error": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_6",
+          "type": "mcp_tool_call",
+          "server": "rescue_predictive",
+          "tool": "esm2_likelihood",
+          "arguments": {
+            "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+            "position": 3,
+            "mutant": "A"
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"error\": null,\n  \"result\": {\n    \"delta_log_probability\": -1.6643191576004028,\n    \"device\": \"cpu\",\n    \"method\": \"ESM2_single_position_masked_marginal_natural_log\",\n    \"model\": \"facebook/esm2_t6_8M_UR50D\",\n    \"mutant\": \"A\",\n    \"mutant_log_probability\": -3.0254855155944824,\n    \"position\": 3,\n    \"revision\": \"c731040fcd8d73dceaa04b0a8e6329b345b0f5df\",\n    \"wt\": \"I\",\n    \"wt_log_probability\": -1.3611663579940796\n  },\n  \"receipt\": {\n    \"call_id\": \"call_id:9e6a891f02064bc7a548eecf41ad7a0b\",\n    \"tool\": \"esm2_likelihood\",\n    \"args_hash\": \"b05696aa799825b25394a8042f9a0050eed86ee58e6e2824c2f8efe581be04d7\",\n    \"runtime_s\": 0.000422,\n    \"artifact_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/predictive/9e6a891f02064bc7a548eecf41ad7a0b.json\",\n    \"cache_hit\": true\n  }\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_7",
+          "type": "mcp_tool_call",
+          "server": "rescue_predictive",
+          "tool": "esmfold",
+          "arguments": {
+            "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+            "seed": 0
+          },
+          "result": null,
+          "error": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_7",
+          "type": "mcp_tool_call",
+          "server": "rescue_predictive",
+          "tool": "esmfold",
+          "arguments": {
+            "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+            "seed": 0
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"error\": null,\n  \"result\": {\n    \"ca_count\": 72,\n    \"device\": \"cuda\",\n    \"interpretation\": \"structure confidence only; not a binding or stability measurement\",\n    \"mean_ca_bfactor_as_written\": 0.9331944444444444,\n    \"model\": \"facebook/esmfold_v1\",\n    \"pdb_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/model_artifacts/esmfold/9702e0fc37f4bf5a2cef5ccf84f7dfe9c814fa0d589de38f315fe9d117a1199c.pdb\",\n    \"revision\": \"75a3841ee059df2bf4d56688166c8fb459ddd97a\",\n    \"seed\": 0,\n    \"sequence_length\": 72\n  },\n  \"receipt\": {\n    \"call_id\": \"call_id:ab93b622483646be963f0dddc54f7628\",\n    \"tool\": \"esmfold\",\n    \"args_hash\": \"5610332aee8a7c2e6d895ff713db59a46e1fb0b2fb06046ba9c9d2bf167d7795\",\n    \"runtime_s\": 0.000277,\n    \"artifact_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/predictive/ab93b622483646be963f0dddc54f7628.json\",\n    \"cache_hit\": true\n  }\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_8",
+          "type": "mcp_tool_call",
+          "server": "rescue_physics",
+          "tool": "dssp",
+          "arguments": {
+            "pdb_path": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/1ubq.pdb"
+          },
+          "result": null,
+          "error": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_8",
+          "type": "mcp_tool_call",
+          "server": "rescue_physics",
+          "tool": "dssp",
+          "arguments": {
+            "pdb_path": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/1ubq.pdb"
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"error\": null,\n  \"result\": {\n    \"backend\": \"mkdssp_4.2.2\",\n    \"residue_count\": 76,\n    \"residues\": [\n      {\n        \"aa\": \"M\",\n        \"chain\": \"A\",\n        \"position\": 1,\n        \"secondary_structure\": \"-\"\n      },\n      {\n        \"aa\": \"Q\",\n        \"chain\": \"A\",\n        \"position\": 2,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"I\",\n        \"chain\": \"A\",\n        \"position\": 3,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"F\",\n        \"chain\": \"A\",\n        \"position\": 4,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"V\",\n        \"chain\": \"A\",\n        \"position\": 5,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"K\",\n        \"chain\": \"A\",\n        \"position\": 6,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"T\",\n        \"chain\": \"A\",\n        \"position\": 7,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"L\",\n        \"chain\": \"A\",\n        \"position\": 8,\n        \"secondary_structure\": \"T\"\n      },\n      {\n        \"aa\": \"T\",\n        \"chain\": \"A\",\n        \"position\": 9,\n        \"secondary_structure\": \"T\"\n      },\n      {\n        \"aa\": \"G\",\n        \"chain\": \"A\",\n        \"position\": 10,\n        \"secondary_structure\": \"S\"\n      },\n      {\n        \"aa\": \"K\",\n        \"chain\": \"A\",\n        \"position\": 11,\n        \"secondary_structure\": \"-\"\n      },\n      {\n        \"aa\": \"T\",\n        \"chain\": \"A\",\n        \"position\": 12,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"I\",\n        \"chain\": \"A\",\n        \"position\": 13,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"T\",\n        \"chain\": \"A\",\n        \"position\": 14,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"L\",\n        \"chain\": \"A\",\n        \"position\": 15,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"E\",\n        \"chain\": \"A\",\n        \"position\": 16,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"V\",\n        \"chain\": \"A\",\n        \"position\": 17,\n        \"secondary_structure\": \"-\"\n      },\n      {\n        \"aa\": \"E\",\n        \"chain\": \"A\",\n        \"position\": 18,\n        \"secondary_structure\": \"-\"\n      },\n      {\n        \"aa\": \"P\",\n        \"chain\": \"A\",\n        \"position\": 19,\n        \"secondary_structure\": \"T\"\n      },\n      {\n        \"aa\": \"S\",\n        \"chain\": \"A\",\n        \"position\": 20,\n        \"secondary_structure\": \"T\"\n      },\n      {\n        \"aa\": \"D\",\n        \"chain\": \"A\",\n        \"position\": 21,\n        \"secondary_structure\": \"S\"\n      },\n      {\n        \"aa\": \"T\",\n        \"chain\": \"A\",\n        \"position\": 22,\n        \"secondary_structure\": \"B\"\n      },\n      {\n        \"aa\": \"I\",\n        \"chain\": \"A\",\n        \"position\": 23,\n        \"secondary_structure\": \"H\"\n      },\n      {\n        \"aa\": \"E\",\n        \"chain\": \"A\",\n        \"position\": 24,\n        \"secondary_structure\": \"H\"\n      },\n      {\n        \"aa\": \"N\",\n        \"chain\": \"A\",\n        \"position\": 25,\n        \"secondary_structure\": \"H\"\n      },\n      {\n        \"aa\": \"V\",\n        \"chain\": \"A\",\n        \"position\": 26,\n        \"secondary_structure\": \"H\"\n      },\n      {\n        \"aa\": \"K\",\n        \"chain\": \"A\",\n        \"position\": 27,\n        \"secondary_structure\": \"H\"\n      },\n      {\n        \"aa\": \"A\",\n        \"chain\": \"A\",\n        \"position\": 28,\n        \"secondary_structure\": \"H\"\n      },\n      {\n        \"aa\": \"K\",\n        \"chain\": \"A\",\n        \"position\": 29,\n        \"secondary_structure\": \"H\"\n      },\n      {\n        \"aa\": \"I\",\n        \"chain\": \"A\",\n        \"position\": 30,\n        \"secondary_structure\": \"H\"\n      },\n      {\n        \"aa\": \"Q\",\n        \"chain\": \"A\",\n        \"position\": 31,\n        \"secondary_structure\": \"H\"\n      },\n      {\n        \"aa\": \"D\",\n        \"chain\": \"A\",\n        \"position\": 32,\n        \"secondary_structure\": \"H\"\n      },\n      {\n        \"aa\": \"K\",\n        \"chain\": \"A\",\n        \"position\": 33,\n        \"secondary_structure\": \"H\"\n      },\n      {\n        \"aa\": \"E\",\n        \"chain\": \"A\",\n        \"position\": 34,\n        \"secondary_structure\": \"H\"\n      },\n      {\n        \"aa\": \"G\",\n        \"chain\": \"A\",\n        \"position\": 35,\n        \"secondary_structure\": \"-\"\n      },\n      {\n        \"aa\": \"I\",\n        \"chain\": \"A\",\n        \"position\": 36,\n        \"secondary_structure\": \"-\"\n      },\n      {\n        \"aa\": \"P\",\n        \"chain\": \"A\",\n        \"position\": 37,\n        \"secondary_structure\": \"-\"\n      },\n      {\n        \"aa\": \"P\",\n        \"chain\": \"A\",\n        \"position\": 38,\n        \"secondary_structure\": \"G\"\n      },\n      {\n        \"aa\": \"D\",\n        \"chain\": \"A\",\n        \"position\": 39,\n        \"secondary_structure\": \"G\"\n      },\n      {\n        \"aa\": \"Q\",\n        \"chain\": \"A\",\n        \"position\": 40,\n        \"secondary_structure\": \"G\"\n      },\n      {\n        \"aa\": \"Q\",\n        \"chain\": \"A\",\n        \"position\": 41,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"R\",\n        \"chain\": \"A\",\n        \"position\": 42,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"L\",\n        \"chain\": \"A\",\n        \"position\": 43,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"I\",\n        \"chain\": \"A\",\n        \"position\": 44,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"F\",\n        \"chain\": \"A\",\n        \"position\": 45,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"A\",\n        \"chain\": \"A\",\n        \"position\": 46,\n        \"secondary_structure\": \"T\"\n      },\n      {\n        \"aa\": \"G\",\n        \"chain\": \"A\",\n        \"position\": 47,\n        \"secondary_structure\": \"T\"\n      },\n      {\n        \"aa\": \"K\",\n        \"chain\": \"A\",\n        \"position\": 48,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"Q\",\n        \"chain\": \"A\",\n        \"position\": 49,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"L\",\n        \"chain\": \"A\",\n        \"position\": 50,\n        \"secondary_structure\": \"P\"\n      },\n      {\n        \"aa\": \"E\",\n        \"chain\": \"A\",\n        \"position\": 51,\n        \"secondary_structure\": \"P\"\n      },\n      {\n        \"aa\": \"D\",\n        \"chain\": \"A\",\n        \"position\": 52,\n        \"secondary_structure\": \"T\"\n      },\n      {\n        \"aa\": \"G\",\n        \"chain\": \"A\",\n        \"position\": 53,\n        \"secondary_structure\": \"T\"\n      },\n      {\n        \"aa\": \"R\",\n        \"chain\": \"A\",\n        \"position\": 54,\n        \"secondary_structure\": \"S\"\n      },\n      {\n        \"aa\": \"T\",\n        \"chain\": \"A\",\n        \"position\": 55,\n        \"secondary_structure\": \"B\"\n      },\n      {\n        \"aa\": \"L\",\n        \"chain\": \"A\",\n        \"position\": 56,\n        \"secondary_structure\": \"T\"\n      },\n      {\n        \"aa\": \"S\",\n        \"chain\": \"A\",\n        \"position\": 57,\n        \"secondary_structure\": \"G\"\n      },\n      {\n        \"aa\": \"D\",\n        \"chain\": \"A\",\n        \"position\": 58,\n        \"secondary_structure\": \"G\"\n      },\n      {\n        \"aa\": \"Y\",\n        \"chain\": \"A\",\n        \"position\": 59,\n        \"secondary_structure\": \"G\"\n      },\n      {\n        \"aa\": \"N\",\n        \"chain\": \"A\",\n        \"position\": 60,\n        \"secondary_structure\": \"T\"\n      },\n      {\n        \"aa\": \"I\",\n        \"chain\": \"A\",\n        \"position\": 61,\n        \"secondary_structure\": \"P\"\n      },\n      {\n        \"aa\": \"Q\",\n        \"chain\": \"A\",\n        \"position\": 62,\n        \"secondary_structure\": \"P\"\n      },\n      {\n        \"aa\": \"K\",\n        \"chain\": \"A\",\n        \"position\": 63,\n        \"secondary_structure\": \"T\"\n      },\n      {\n        \"aa\": \"E\",\n        \"chain\": \"A\",\n        \"position\": 64,\n        \"secondary_structure\": \"T\"\n      },\n      {\n        \"aa\": \"S\",\n        \"chain\": \"A\",\n        \"position\": 65,\n        \"secondary_structure\": \"-\"\n      },\n      {\n        \"aa\": \"T\",\n        \"chain\": \"A\",\n        \"position\": 66,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"L\",\n        \"chain\": \"A\",\n        \"position\": 67,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"H\",\n        \"chain\": \"A\",\n        \"position\": 68,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"L\",\n        \"chain\": \"A\",\n        \"position\": 69,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"V\",\n        \"chain\": \"A\",\n        \"position\": 70,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"L\",\n        \"chain\": \"A\",\n        \"position\": 71,\n        \"secondary_structure\": \"E\"\n      },\n      {\n        \"aa\": \"R\",\n        \"chain\": \"A\",\n        \"position\": 72,\n        \"secondary_structure\": \"-\"\n      },\n      {\n        \"aa\": \"L\",\n        \"chain\": \"A\",\n        \"position\": 73,\n        \"secondary_structure\": \"-\"\n      },\n      {\n        \"aa\": \"R\",\n        \"chain\": \"A\",\n        \"position\": 74,\n        \"secondary_structure\": \"S\"\n      },\n      {\n        \"aa\": \"G\",\n        \"chain\": \"A\",\n        \"position\": 75,\n        \"secondary_structure\": \"-\"\n      },\n      {\n        \"aa\": \"G\",\n        \"chain\": \"A\",\n        \"position\": 76,\n        \"secondary_structure\": \"-\"\n      }\n    ]\n  },\n  \"receipt\": {\n    \"call_id\": \"call_id:92db0cc0c32b4b82ba5ed311a4a4e7ef\",\n    \"tool\": \"dssp\",\n    \"args_hash\": \"2415b5a60c83639726d4e6a9b9af1a3d8b098f93262d06bcf48d7306170e7855\",\n    \"runtime_s\": 0.000381,\n    \"artifact_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/physics/92db0cc0c32b4b82ba5ed311a4a4e7ef.json\",\n    \"cache_hit\": true\n  }\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_9",
+          "type": "mcp_tool_call",
+          "server": "rescue_generative",
+          "tool": "esm_if",
+          "arguments": {
+            "chain": "A",
+            "pdb_path": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/1ubq.pdb",
+            "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG"
+          },
+          "result": null,
+          "error": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_9",
+          "type": "mcp_tool_call",
+          "server": "rescue_generative",
+          "tool": "esm_if",
+          "arguments": {
+            "chain": "A",
+            "pdb_path": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/1ubq.pdb",
+            "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG"
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"error\": null,\n  \"result\": {\n    \"backbone_length\": 76,\n    \"chain\": \"A\",\n    \"device\": \"cpu\",\n    \"interpretation\": \"backbone-conditioned sequence score; not a measured stability effect\",\n    \"mean_log_likelihood\": -0.06536056493457995,\n    \"mean_log_likelihood_with_coords\": -0.06536056493457995,\n    \"model\": \"esm_if1_gvp4_t16_142M_UR50\",\n    \"native_sequence_match\": true,\n    \"pdb_path\": \"/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/1ubq.pdb\",\n    \"sequence_length\": 76\n  },\n  \"receipt\": {\n    \"call_id\": \"call_id:3b527b493062471b900a27a347abb7f6\",\n    \"tool\": \"esm_if\",\n    \"args_hash\": \"60170e59cce84b1678b0e3b722b0214eea04928eeee3b2b2a37cfa57b4057fd6\",\n    \"runtime_s\": 0.000209,\n    \"artifact_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/generative/3b527b493062471b900a27a347abb7f6.json\",\n    \"cache_hit\": true\n  }\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_10",
+          "type": "mcp_tool_call",
+          "server": "rescue_physics",
+          "tool": "openmm_delta_energy",
+          "arguments": {
+            "wt_pdb": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/.venv/lib/python3.12/site-packages/openmm/app/data/test.pdb",
+            "mutant_pdb": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/.venv/lib/python3.12/site-packages/openmm/app/data/test.pdb"
+          },
+          "result": null,
+          "error": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_10",
+          "type": "mcp_tool_call",
+          "server": "rescue_physics",
+          "tool": "openmm_delta_energy",
+          "arguments": {
+            "wt_pdb": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/.venv/lib/python3.12/site-packages/openmm/app/data/test.pdb",
+            "mutant_pdb": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/.venv/lib/python3.12/site-packages/openmm/app/data/test.pdb"
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"error\": null,\n  \"result\": {\n    \"atom_count\": 8867,\n    \"delta_kj_per_mol\": 0.0,\n    \"deviation\": \"not PyRosetta ddG; requires fully prepared matched-topology WT and mutant PDBs\",\n    \"is_folding_ddg\": false,\n    \"method\": \"OpenMM_8.6.1_CPU_unminimized_potential_energy\",\n    \"mutant_kj_per_mol\": -100205.28562001859,\n    \"wt_kj_per_mol\": -100205.28562001859\n  },\n  \"receipt\": {\n    \"call_id\": \"call_id:feffbc3f8e9147ddbb8ecaece1934a8a\",\n    \"tool\": \"openmm_delta_energy\",\n    \"args_hash\": \"234fc0519170720756f5151f0e1daf614d603027e14f0fa9f3a8e1757917e438\",\n    \"runtime_s\": 0.000277,\n    \"artifact_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/physics/feffbc3f8e9147ddbb8ecaece1934a8a.json\",\n    \"cache_hit\": true\n  }\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_11",
+          "type": "mcp_tool_call",
+          "server": "rescue_analysis",
+          "tool": "seq_identity",
+          "arguments": {
+            "sequence_a": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+            "sequence_b": "MQAFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR"
+          },
+          "result": null,
+          "error": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_11",
+          "type": "mcp_tool_call",
+          "server": "rescue_analysis",
+          "tool": "seq_identity",
+          "arguments": {
+            "sequence_a": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+            "sequence_b": "MQAFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR"
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"error\": null,\n  \"result\": {\n    \"aligned_a\": \"MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR\",\n    \"aligned_b\": \"MQAFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR\",\n    \"alignment_columns\": 72,\n    \"definition\": \"global_matches_over_all_columns\",\n    \"identity\": 0.9861111111111112,\n    \"matches\": 71\n  },\n  \"receipt\": {\n    \"call_id\": \"call_id:af9166a30bd04f5f9704668b68c0d390\",\n    \"tool\": \"seq_identity\",\n    \"args_hash\": \"84335614307518f45d2182faf9d3e0a2d11fe22824ed512f78e430d6e2449643\",\n    \"runtime_s\": 0.000196,\n    \"artifact_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/analysis/af9166a30bd04f5f9704668b68c0d390.json\",\n    \"cache_hit\": true\n  }\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_12",
+          "type": "agent_message",
+          "text": "All six scientific servers returned successful receipts. The sequence comparison confirms I3A, and the identical-PDB OpenMM control returned zero. I\u2019ll retain I3A as the sole smoke candidate, provisionally below WT for sequence plausibility; these results establish no measured stability outcome.\n"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_13",
+          "type": "mcp_tool_call",
+          "server": "rescue_record",
+          "tool": "log_note",
+          "arguments": {
+            "item_id": "stage2_smoke_w2_guided_v2",
+            "note": "NON-SCORING smoke, not a cohort item. Completed retrieve -> score -> compare. All required scientific calls succeeded (cached receipts). Assay construct is 72 aa; I3A yields 71/72 identity. Provisional rank: WT reference ahead of I3A for sequence plausibility only (ESM2 delta log probability -1.6643191576004028; BLOSUM62 -1); I3A rank 1 of 1 submitted substitutions. Filter: retain for plumbing smoke, do not advance as an established stabilizing substitution. PSSM delta -1.584962500721156 bits and guided conservation 1.0 use a toy duplicate MSA [sequence, sequence], not biological evidence. MMseqs retrieved reference sequence records including I3A, with no assay label lookup. PubMed results are broad and do not establish I3A stability. ESMFold seed 0 produced 72 CA atoms, confidence only. ESM-IF and DSSP used independent 76-aa native 1UBQ chain A structural controls, distinct from the assay construct. OpenMM used the same unrelated prepared test.pdb twice and returned zero potential-energy difference; zero control only, not ddG. No measured outcome, benchmark score, or predictive accuracy claim."
+          },
+          "result": null,
+          "error": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_13",
+          "type": "mcp_tool_call",
+          "server": "rescue_record",
+          "tool": "log_note",
+          "arguments": {
+            "item_id": "stage2_smoke_w2_guided_v2",
+            "note": "NON-SCORING smoke, not a cohort item. Completed retrieve -> score -> compare. All required scientific calls succeeded (cached receipts). Assay construct is 72 aa; I3A yields 71/72 identity. Provisional rank: WT reference ahead of I3A for sequence plausibility only (ESM2 delta log probability -1.6643191576004028; BLOSUM62 -1); I3A rank 1 of 1 submitted substitutions. Filter: retain for plumbing smoke, do not advance as an established stabilizing substitution. PSSM delta -1.584962500721156 bits and guided conservation 1.0 use a toy duplicate MSA [sequence, sequence], not biological evidence. MMseqs retrieved reference sequence records including I3A, with no assay label lookup. PubMed results are broad and do not establish I3A stability. ESMFold seed 0 produced 72 CA atoms, confidence only. ESM-IF and DSSP used independent 76-aa native 1UBQ chain A structural controls, distinct from the assay construct. OpenMM used the same unrelated prepared test.pdb twice and returned zero potential-energy difference; zero control only, not ddG. No measured outcome, benchmark score, or predictive accuracy claim."
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"result\": {\n    \"logged\": true,\n    \"item_id\": \"stage2_smoke_w2_guided_v2\",\n    \"note_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/notes/stage2_smoke_w2_guided_v2_7c91bbd543474f078ad88973ec88897e.json\"\n  },\n  \"error\": null,\n  \"receipt\": {\n    \"call_id\": \"call_id:9b811f6e587540d9aa4ed9a2bebb0ef0\",\n    \"tool\": \"log_note\",\n    \"args_hash\": \"2e895e90953be2f1a0f1451ad7a64e4069ff021a2510f85cc91e46c50345d9d3\",\n    \"runtime_s\": 0.000424,\n    \"artifact_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/record/9b811f6e587540d9aa4ed9a2bebb0ef0.json\",\n    \"cache_hit\": false\n  }\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.started",
+        "item": {
+          "id": "item_14",
+          "type": "mcp_tool_call",
+          "server": "rescue_record",
+          "tool": "submit_answer",
+          "arguments": {
+            "item_id": "stage2_smoke_w2_guided_v2",
+            "answer": {
+              "mode": "guided NON-SCORING MCP plumbing smoke; not a cohort item",
+              "item": "MegaScale 1UBQ.pdb_I3A",
+              "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+              "sequence_length": 72,
+              "variant": "I3A",
+              "mutant_sequence": "MQAFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+              "workflow": [
+                "retrieve",
+                "score",
+                "compare",
+                "rank",
+                "filter",
+                "submit"
+              ],
+              "ranking": {
+                "substitutions": [
+                  {
+                    "variant": "I3A",
+                    "rank": 1
+                  }
+                ],
+                "reference_comparison": "Provisionally place I3A below WT for sequence plausibility only. Rank 1 of 1 candidate substitutions is trivial, not evidence of stabilization.",
+                "rationale": "ESM2 masked-marginal delta log probability -1.6643191576004028 favors I over A; BLOSUM62 I->A is -1. These are weak, uncalibrated prioritization signals, not a measured stability effect."
+              },
+              "filter": {
+                "decision": "Retain as the requested plumbing smoke candidate; withhold promotion as an established stabilizing substitution.",
+                "confidence": "Low; no measured outcome or stability delta established."
+              },
+              "observations": {
+                "retrieval": "MMseqs found the 72-aa reference at 100% identity and I3A at 98.6%; sequence records only, no assay labels retrieved. These hits were not treated as independent evolutionary evidence.",
+                "toy_msa": {
+                  "description": "Exactly [sequence, sequence], a two-copy toy plumbing MSA, not biological evidence. Its conservation is duplication-induced.",
+                  "pssm_delta_bits": -1.584962500721156,
+                  "guided_conservation": 1
+                },
+                "identity": {
+                  "aligned_a": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+                  "aligned_b": "MQAFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+                  "alignment_columns": 72,
+                  "definition": "global_matches_over_all_columns",
+                  "identity": 0.9861111111111112,
+                  "matches": 71
+                },
+                "esm2": {
+                  "delta_log_probability": -1.6643191576004028,
+                  "device": "cpu",
+                  "method": "ESM2_single_position_masked_marginal_natural_log",
+                  "model": "facebook/esm2_t6_8M_UR50D",
+                  "mutant": "A",
+                  "mutant_log_probability": -3.0254855155944824,
+                  "position": 3,
+                  "revision": "c731040fcd8d73dceaa04b0a8e6329b345b0f5df",
+                  "wt": "I",
+                  "wt_log_probability": -1.3611663579940796
+                },
+                "esmfold": {
+                  "seed": 0,
+                  "ca_count": 72,
+                  "mean_ca_bfactor_as_written": 0.9331944444444444,
+                  "interpretation": "Structure confidence only; no stability delta inferred."
+                },
+                "independent_structure_controls": {
+                  "pdb": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/1ubq.pdb",
+                  "chain": "A",
+                  "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG",
+                  "length": 76,
+                  "esm_if_mean_log_likelihood": -0.06536056493457995,
+                  "native_sequence_match": true,
+                  "dssp_residue_count": 76,
+                  "dssp_position_3": "E",
+                  "interpretation": "Independent backend plumbing controls on native 76-aa 1UBQ, unrelated to measurement of the 72-aa assay construct's I3A effect; not conflated with that construct and excluded from variant ranking."
+                },
+                "openmm_control": {
+                  "wt_pdb": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/.venv/lib/python3.12/site-packages/openmm/app/data/test.pdb",
+                  "mutant_pdb": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/.venv/lib/python3.12/site-packages/openmm/app/data/test.pdb",
+                  "delta_kj_per_mol": 0,
+                  "interpretation": "Same unrelated prepared PDB twice, ZERO control only. Potential energy difference is not folding ddG or I3A stability."
+                },
+                "literature": "PubMed search 'ubiquitin protein stability' returned 13249 matches and three broad article records; no variant-specific stability evidence established."
+              },
+              "measured_outcome": null,
+              "assay_label_looked_up": false,
+              "benchmark_score": null,
+              "predictive_accuracy_claimed": false,
+              "call_ids": {
+                "rescue_classical": "call_id:63cbdec81afd495f952ac150787d7408",
+                "rescue_analysis": "call_id:af9166a30bd04f5f9704668b68c0d390",
+                "rescue_predictive": "call_id:9e6a891f02064bc7a548eecf41ad7a0b",
+                "rescue_generative": "call_id:3b527b493062471b900a27a347abb7f6",
+                "rescue_physics": "call_id:feffbc3f8e9147ddbb8ecaece1934a8a",
+                "rescue_lit": "call_id:acb2cb7da4334ba886efcd3f3ae1e595",
+                "rescue_record": "call_id:9b811f6e587540d9aa4ed9a2bebb0ef0"
+              },
+              "required_tool_call_ids": {
+                "mmseqs_search": "call_id:63cbdec81afd495f952ac150787d7408",
+                "pubmed_search": "call_id:acb2cb7da4334ba886efcd3f3ae1e595",
+                "pssm_score": "call_id:648a0c9f5d6d4116b02b3e5a54baea8d",
+                "blosum_score": "call_id:a044d11b485549d1b9c6ab156a24565c",
+                "screen_variant_classical": "call_id:ea881f9266264811af561a7335bda792",
+                "esm2_likelihood": "call_id:9e6a891f02064bc7a548eecf41ad7a0b",
+                "esmfold": "call_id:ab93b622483646be963f0dddc54f7628",
+                "esm_if": "call_id:3b527b493062471b900a27a347abb7f6",
+                "dssp": "call_id:92db0cc0c32b4b82ba5ed311a4a4e7ef",
+                "seq_identity": "call_id:af9166a30bd04f5f9704668b68c0d390",
+                "openmm_delta_energy": "call_id:feffbc3f8e9147ddbb8ecaece1934a8a"
+              },
+              "all_seven_servers_succeeded": true
+            }
+          },
+          "result": null,
+          "error": null,
+          "status": "in_progress"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_14",
+          "type": "mcp_tool_call",
+          "server": "rescue_record",
+          "tool": "submit_answer",
+          "arguments": {
+            "item_id": "stage2_smoke_w2_guided_v2",
+            "answer": {
+              "mode": "guided NON-SCORING MCP plumbing smoke; not a cohort item",
+              "item": "MegaScale 1UBQ.pdb_I3A",
+              "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+              "sequence_length": 72,
+              "variant": "I3A",
+              "mutant_sequence": "MQAFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+              "workflow": [
+                "retrieve",
+                "score",
+                "compare",
+                "rank",
+                "filter",
+                "submit"
+              ],
+              "ranking": {
+                "substitutions": [
+                  {
+                    "variant": "I3A",
+                    "rank": 1
+                  }
+                ],
+                "reference_comparison": "Provisionally place I3A below WT for sequence plausibility only. Rank 1 of 1 candidate substitutions is trivial, not evidence of stabilization.",
+                "rationale": "ESM2 masked-marginal delta log probability -1.6643191576004028 favors I over A; BLOSUM62 I->A is -1. These are weak, uncalibrated prioritization signals, not a measured stability effect."
+              },
+              "filter": {
+                "decision": "Retain as the requested plumbing smoke candidate; withhold promotion as an established stabilizing substitution.",
+                "confidence": "Low; no measured outcome or stability delta established."
+              },
+              "observations": {
+                "retrieval": "MMseqs found the 72-aa reference at 100% identity and I3A at 98.6%; sequence records only, no assay labels retrieved. These hits were not treated as independent evolutionary evidence.",
+                "toy_msa": {
+                  "description": "Exactly [sequence, sequence], a two-copy toy plumbing MSA, not biological evidence. Its conservation is duplication-induced.",
+                  "pssm_delta_bits": -1.584962500721156,
+                  "guided_conservation": 1
+                },
+                "identity": {
+                  "aligned_a": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+                  "aligned_b": "MQAFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+                  "alignment_columns": 72,
+                  "definition": "global_matches_over_all_columns",
+                  "identity": 0.9861111111111112,
+                  "matches": 71
+                },
+                "esm2": {
+                  "delta_log_probability": -1.6643191576004028,
+                  "device": "cpu",
+                  "method": "ESM2_single_position_masked_marginal_natural_log",
+                  "model": "facebook/esm2_t6_8M_UR50D",
+                  "mutant": "A",
+                  "mutant_log_probability": -3.0254855155944824,
+                  "position": 3,
+                  "revision": "c731040fcd8d73dceaa04b0a8e6329b345b0f5df",
+                  "wt": "I",
+                  "wt_log_probability": -1.3611663579940796
+                },
+                "esmfold": {
+                  "seed": 0,
+                  "ca_count": 72,
+                  "mean_ca_bfactor_as_written": 0.9331944444444444,
+                  "interpretation": "Structure confidence only; no stability delta inferred."
+                },
+                "independent_structure_controls": {
+                  "pdb": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/1ubq.pdb",
+                  "chain": "A",
+                  "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG",
+                  "length": 76,
+                  "esm_if_mean_log_likelihood": -0.06536056493457995,
+                  "native_sequence_match": true,
+                  "dssp_residue_count": 76,
+                  "dssp_position_3": "E",
+                  "interpretation": "Independent backend plumbing controls on native 76-aa 1UBQ, unrelated to measurement of the 72-aa assay construct's I3A effect; not conflated with that construct and excluded from variant ranking."
+                },
+                "openmm_control": {
+                  "wt_pdb": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/.venv/lib/python3.12/site-packages/openmm/app/data/test.pdb",
+                  "mutant_pdb": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/.venv/lib/python3.12/site-packages/openmm/app/data/test.pdb",
+                  "delta_kj_per_mol": 0,
+                  "interpretation": "Same unrelated prepared PDB twice, ZERO control only. Potential energy difference is not folding ddG or I3A stability."
+                },
+                "literature": "PubMed search 'ubiquitin protein stability' returned 13249 matches and three broad article records; no variant-specific stability evidence established."
+              },
+              "measured_outcome": null,
+              "assay_label_looked_up": false,
+              "benchmark_score": null,
+              "predictive_accuracy_claimed": false,
+              "call_ids": {
+                "rescue_classical": "call_id:63cbdec81afd495f952ac150787d7408",
+                "rescue_analysis": "call_id:af9166a30bd04f5f9704668b68c0d390",
+                "rescue_predictive": "call_id:9e6a891f02064bc7a548eecf41ad7a0b",
+                "rescue_generative": "call_id:3b527b493062471b900a27a347abb7f6",
+                "rescue_physics": "call_id:feffbc3f8e9147ddbb8ecaece1934a8a",
+                "rescue_lit": "call_id:acb2cb7da4334ba886efcd3f3ae1e595",
+                "rescue_record": "call_id:9b811f6e587540d9aa4ed9a2bebb0ef0"
+              },
+              "required_tool_call_ids": {
+                "mmseqs_search": "call_id:63cbdec81afd495f952ac150787d7408",
+                "pubmed_search": "call_id:acb2cb7da4334ba886efcd3f3ae1e595",
+                "pssm_score": "call_id:648a0c9f5d6d4116b02b3e5a54baea8d",
+                "blosum_score": "call_id:a044d11b485549d1b9c6ab156a24565c",
+                "screen_variant_classical": "call_id:ea881f9266264811af561a7335bda792",
+                "esm2_likelihood": "call_id:9e6a891f02064bc7a548eecf41ad7a0b",
+                "esmfold": "call_id:ab93b622483646be963f0dddc54f7628",
+                "esm_if": "call_id:3b527b493062471b900a27a347abb7f6",
+                "dssp": "call_id:92db0cc0c32b4b82ba5ed311a4a4e7ef",
+                "seq_identity": "call_id:af9166a30bd04f5f9704668b68c0d390",
+                "openmm_delta_energy": "call_id:feffbc3f8e9147ddbb8ecaece1934a8a"
+              },
+              "all_seven_servers_succeeded": true
+            }
+          },
+          "result": {
+            "content": [
+              {
+                "type": "text",
+                "text": "{\n  \"result\": {\n    \"accepted\": true,\n    \"item_id\": \"stage2_smoke_w2_guided_v2\",\n    \"submission_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/submissions/stage2_smoke_w2_guided_v2.json\"\n  },\n  \"error\": null,\n  \"receipt\": {\n    \"call_id\": \"call_id:770d0d49c5cc410e805eff4f90bc46c9\",\n    \"tool\": \"submit_answer\",\n    \"args_hash\": \"15c0d8e9df2555dd99d59973e41c842a874d0b3882ce8dd589cc36389416044e\",\n    \"runtime_s\": 0.000431,\n    \"artifact_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/record/770d0d49c5cc410e805eff4f90bc46c9.json\",\n    \"cache_hit\": false\n  }\n}"
+              }
+            ],
+            "structured_content": null
+          },
+          "error": null,
+          "status": "completed"
+        }
+      },
+      {
+        "type": "item.completed",
+        "item": {
+          "id": "item_15",
+          "type": "agent_message",
+          "text": "Submitted `stage2_smoke_w2_guided_v2`. Every server succeeded (7/7)."
+        }
+      },
+      {
+        "type": "turn.completed",
+        "usage": {
+          "input_tokens": 154772,
+          "cached_input_tokens": 126464,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 2195,
+          "reasoning_output_tokens": 11
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "w1_unguided": {
+    "pass": true,
+    "tampered_call_id_rejected": true,
+    "server_success": {
+      "classical": true,
+      "analysis": true,
+      "predictive": true,
+      "generative": true,
+      "physics": true,
+      "lit": true,
+      "record": true
+    }
+  },
+  "w1_guided": {
+    "pass": true,
+    "tampered_call_id_rejected": true,
+    "server_success": {
+      "classical": true,
+      "analysis": true,
+      "predictive": true,
+      "generative": true,
+      "physics": true,
+      "lit": true,
+      "record": true
+    }
+  },
+  "w2_unguided": {
+    "pass": true,
+    "tampered_call_id_rejected": true,
+    "server_success": {
+      "classical": true,
+      "analysis": true,
+      "predictive": true,
+      "generative": true,
+      "physics": true,
+      "lit": true,
+      "record": true
+    }
+  },
+  "w2_guided": {
+    "pass": true,
+    "tampered_call_id_rejected": true,
+    "server_success": {
+      "classical": true,
+      "analysis": true,
+      "predictive": true,
+      "generative": true,
+      "physics": true,
+      "lit": true,
+      "record": true
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "args": {
+    "item_id": "stage2_agent_nonfm_20260912",
+    "note": "Non-scoring MCP plumbing check"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "9342209c1597e3bd54079acfee67fd4a47533b759d7bd17498d3fda4277e9a7f",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/record/b8c71b956346457a9ade2bb3f412d3a2.json",
+    "cache_hit": false,
+    "call_id": "call_id:b8c71b956346457a9ade2bb3f412d3a2",
+    "runtime_s": 0.000642,
+    "tool": "log_note"
+  },
+  "result": {
+    "item_id": "stage2_agent_nonfm_20260912",
+    "logged": true,
+    "note_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/notes/stage2_agent_nonfm_20260912_35e0acc0a38d4487aa52cb887552284d.json"
+  },
+  "server": "record"
+}

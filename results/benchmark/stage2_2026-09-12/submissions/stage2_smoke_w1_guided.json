@@ -1,0 +1,48 @@
+{
+  "answer": {
+    "assay_id": "TCRG1_MOUSE_Tsuboyama_2023_1E0L",
+    "assay_score": null,
+    "call_ids": {
+      "analysis": "call_id:e9e3a9b2f5ef43388b313df22132a73e",
+      "classical": "call_id:337ad022e286427db23f4b1a315d2ebf",
+      "generative": "call_id:5aeff30e3db64190a1730d0f2baa38db",
+      "lit": "call_id:f2614aacfb5a4f86988799da1cc3deb6",
+      "physics": "call_id:c4fc2d64682b444aa74d751a097c9b43",
+      "predictive": "call_id:380c3254eff94379ad7f4549f5371ef2",
+      "record": "call_id:bddbb475b56b447e84a9c00cc51f0bbf"
+    },
+    "cohort_item": false,
+    "comparison": "A2V has 36/37 aligned matches (identity 0.972972972972973). BLOSUM62 A-to-V is 0, which does not mean zero biological effect. ESM2 masked-marginal mutant-minus-WT log probability is -0.5500593185424805: a modest model preference for WT, not a stability measurement or calibrated assay prediction.",
+    "filter": {
+      "decision": "retain_for_smoke_only",
+      "explanation": "Valid one-based A2V substitution in the 37-aa construct. Exclude from cohort scoring and from claims of improved stability or predictive accuracy."
+    },
+    "independent_controls": "ESM-IF used unrelated 1UBQ chain A with the exact 76-aa ubiquitin sequence; native_sequence_match=true, mean log likelihood=-0.06536056493457995. DSSP assigned 76 residues in that unrelated structure. Neither result describes the 37-aa TCRG1 construct. OpenMM used the identical prepared test.pdb for both arguments: both potential energies -100205.28562001859 kJ/mol, difference 0.0 kJ/mol. This is a ZERO backend control only, not folding ddG or an A2V stability effect.",
+    "measured_outcome": null,
+    "mode": "guided_non_scoring_smoke",
+    "predictive_accuracy_claim": false,
+    "ranking": [
+      {
+        "candidate_count": 1,
+        "explanation": "Provisional singleton smoke rank only; retain for plumbing. There is no comparative superiority claim and insufficient evidence to prioritize this as a stabilizing substitution.",
+        "rank": 1,
+        "variant": "A2V"
+      }
+    ],
+    "record_note_status": "One successful note logged after an initial length-validation rejection.",
+    "retrieval": "MMseqs returned only a 100%-identity self-hit over all 37 residues; no independent homolog evidence. PubMed returned PMID 37468638 as general study context only; no assay label or measured outcome was fetched.",
+    "sequence": "GATAVSEWTEYKTADGKTYYYNNRTLESTWEKPQELK",
+    "structure": "ESMFold seed 0 returned 37 CA atoms, mean CA B-factor as written 0.831081081081081. Confidence is not a stability delta.",
+    "toy_msa": "PSSM and guided screen used [sequence, sequence], a two-copy toy plumbing MSA, not biological evidence. Delta is -1.584962500721156 bits; apparent conservation 1.0 is an artifact of duplicated WT and contributes no biological ranking evidence.",
+    "variant": "A2V",
+    "workflow": [
+      "retrieve",
+      "score",
+      "compare",
+      "rank",
+      "filter",
+      "submit"
+    ]
+  },
+  "item_id": "stage2_smoke_w1_guided"
+}

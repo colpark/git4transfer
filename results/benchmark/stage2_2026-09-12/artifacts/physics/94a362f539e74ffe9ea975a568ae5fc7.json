@@ -1,0 +1,477 @@
+{
+  "args": {
+    "pdb_path": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/1ubq.pdb"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "2415b5a60c83639726d4e6a9b9af1a3d8b098f93262d06bcf48d7306170e7855",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/physics/94a362f539e74ffe9ea975a568ae5fc7.json",
+    "cache_hit": false,
+    "call_id": "call_id:94a362f539e74ffe9ea975a568ae5fc7",
+    "runtime_s": 0.118524,
+    "tool": "dssp"
+  },
+  "result": {
+    "backend": "mkdssp_4.2.2",
+    "residue_count": 76,
+    "residues": [
+      {
+        "aa": "M",
+        "chain": "A",
+        "position": 1,
+        "secondary_structure": "-"
+      },
+      {
+        "aa": "Q",
+        "chain": "A",
+        "position": 2,
+        "secondary_structure": "E"
+      },
+      {
+        "aa": "I",
+        "chain": "A",
+        "position": 3,
+        "secondary_structure": "E"
+      },
+      {
+        "aa": "F",
+        "chain": "A",
+        "position": 4,
+        "secondary_structure": "E"
+      },
+      {
+        "aa": "V",
+        "chain": "A",
+        "position": 5,
+        "secondary_structure": "E"
+      },
+      {
+        "aa": "K",
+        "chain": "A",
+        "position": 6,
+        "secondary_structure": "E"
+      },
+      {
+        "aa": "T",
+        "chain": "A",
+        "position": 7,
+        "secondary_structure": "E"
+      },
+      {
+        "aa": "L",
+        "chain": "A",
+        "position": 8,
+        "secondary_structure": "T"
+      },
+      {
+        "aa": "T",
+        "chain": "A",
+        "position": 9,
+        "secondary_structure": "T"
+      },
+      {
+        "aa": "G",
+        "chain": "A",
+        "position": 10,
+        "secondary_structure": "S"
+      },
+      {
+        "aa": "K",
+        "chain": "A",
+        "position": 11,
+        "secondary_structure": "-"
+      },
+      {
+        "aa": "T",
+        "chain": "A",
+        "position": 12,
+        "secondary_structure": "E"
+      },
+      {
+        "aa": "I",
+        "chain": "A",
+        "position": 13,
+        "secondary_structure": "E"
+      },
+      {
+        "aa": "T",
+        "chain": "A",
+        "position": 14,
+        "secondary_structure": "E"
+      },
+      {
+        "aa": "L",
+        "chain": "A",
+        "position": 15,
+        "secondary_structure": "E"
+      },
+      {
+        "aa": "E",
+        "chain": "A",
+        "position": 16,
+        "secondary_structure": "E"
+      },
+      {
+        "aa": "V",
+        "chain": "A",
+        "position": 17,
+        "secondary_structure": "-"
+      },
+      {
+        "aa": "E",
+        "chain": "A",
+        "position": 18,
+        "secondary_structure": "-"
+      },
+      {
+        "aa": "P",
+        "chain": "A",
+        "position": 19,
+        "secondary_structure": "T"
+      },
+      {
+        "aa": "S",
+        "chain": "A",
+        "position": 20,
+        "secondary_structure": "T"
+      },
+      {
+        "aa": "D",
+        "chain": "A",
+        "position": 21,
+        "secondary_structure": "S"
+      },
+      {
+        "aa": "T",
+        "chain": "A",
+        "position": 22,
+        "secondary_structure": "B"
+      },
+      {
+        "aa": "I",
+        "chain": "A",
+        "position": 23,
+        "secondary_structure": "H"
+      },
+      {
+        "aa": "E",
+        "chain": "A",
+        "position": 24,
+        "secondary_structure": "H"
+      },
+      {
+        "aa": "N",
+        "chain": "A",
+        "position": 25,
+        "secondary_structure": "H"
+      },
+      {
+        "aa": "V",
+        "chain": "A",
+        "position": 26,
+        "secondary_structure": "H"
+      },
+      {
+        "aa": "K",
+        "chain": "A",
+        "position": 27,
+        "secondary_structure": "H"
+      },
+      {
+        "aa": "A",
+        "chain": "A",
+        "position": 28,
+        "secondary_structure": "H"
+      },
+      {
+        "aa": "K",
+        "chain": "A",
+        "position": 29,
+        "secondary_structure": "H"
+      },
+      {
+        "aa": "I",
+        "chain": "A",
+        "position": 30,
+        "secondary_structure": "H"
+      },
+      {
+        "aa": "Q",
+        "chain": "A",
+        "position": 31,
+        "secondary_structure": "H"
+      },
+      {
+        "aa": "D",
+        "chain": "A",
+        "position": 32,
+        "secondary_structure": "H"
+      },
+      {
+        "aa": "K",
+        "chain": "A",
+        "position": 33,
+        "secondary_structure": "H"
+      },
+      {
+        "aa": "E",
+        "chain": "A",
+        "position": 34,
+        "secondary_structure": "H"
+      },
+      {
+        "aa": "G",
+        "chain": "A",
+        "position": 35,
+        "secondary_structure": "-"
+      },
+      {
+        "aa": "I",
+        "chain": "A",
+        "position": 36,
+        "secondary_structure": "-"
+      },
+      {
+        "aa": "P",
+        "chain": "A",
+        "position": 37,
+        "secondary_structure": "-"
+      },
+      {
+        "aa": "P",
+        "chain": "A",
+        "position": 38,
+        "secondary_structure": "G"
+      },
+      {
+        "aa": "D",
+        "chain": "A",
+        "position": 39,
+        "secondary_structure": "G"
+      },
+      {
+        "aa": "Q",
+        "chain": "A",
+        "position": 40,
+        "secondary_structure": "G"
+      },
+      {
+        "aa": "Q",
+        "chain": "A",
+        "position": 41,
+        "secondary_structure": "E"
+      },
+      {
+        "aa": "R",
+        "chain": "A",
+        "position": 42,
+        "secondary_structure": "E"
+      },
+      {
+        "aa": "L",
+        "chain": "A",
+        "position": 43,
+        "secondary_structure": "E"
+      },
+      {
+        "aa": "I",
+        "chain": "A",
+        "position": 44,
+        "secondary_structure": "E"
+      },
+      {
+        "aa": "F",
+        "chain": "A",
+        "position": 45,
+        "secondary_structure": "E"
+      },
+      {
+        "aa": "A",
+        "chain": "A",
+        "position": 46,
+        "secondary_structure": "T"
+      },
+      {
+        "aa": "G",
+        "chain": "A",
+        "position": 47,
+        "secondary_structure": "T"
+      },
+      {
+        "aa": "K",
+        "chain": "A",
+        "position": 48,
+        "secondary_structure": "E"
+      },
+      {
+        "aa": "Q",
+        "chain": "A",
+        "position": 49,
+        "secondary_structure": "E"
+      },
+      {
+        "aa": "L",
+        "chain": "A",
+        "position": 50,
+        "secondary_structure": "P"
+      },
+      {
+        "aa": "E",
+        "chain": "A",
+        "position": 51,
+        "secondary_structure": "P"
+      },
+      {
+        "aa": "D",
+        "chain": "A",
+        "position": 52,
+        "secondary_structure": "T"
+      },
+      {
+        "aa": "G",
+        "chain": "A",
+        "position": 53,
+        "secondary_structure": "T"
+      },
+      {
+        "aa": "R",
+        "chain": "A",
+        "position": 54,
+        "secondary_structure": "S"
+      },
+      {
+        "aa": "T",
+        "chain": "A",
+        "position": 55,
+        "secondary_structure": "B"
+      },
+      {
+        "aa": "L",
+        "chain": "A",
+        "position": 56,
+        "secondary_structure": "T"
+      },
+      {
+        "aa": "S",
+        "chain": "A",
+        "position": 57,
+        "secondary_structure": "G"
+      },
+      {
+        "aa": "D",
+        "chain": "A",
+        "position": 58,
+        "secondary_structure": "G"
+      },
+      {
+        "aa": "Y",
+        "chain": "A",
+        "position": 59,
+        "secondary_structure": "G"
+      },
+      {
+        "aa": "N",
+        "chain": "A",
+        "position": 60,
+        "secondary_structure": "T"
+      },
+      {
+        "aa": "I",
+        "chain": "A",
+        "position": 61,
+        "secondary_structure": "P"
+      },
+      {
+        "aa": "Q",
+        "chain": "A",
+        "position": 62,
+        "secondary_structure": "P"
+      },
+      {
+        "aa": "K",
+        "chain": "A",
+        "position": 63,
+        "secondary_structure": "T"
+      },
+      {
+        "aa": "E",
+        "chain": "A",
+        "position": 64,
+        "secondary_structure": "T"
+      },
+      {
+        "aa": "S",
+        "chain": "A",
+        "position": 65,
+        "secondary_structure": "-"
+      },
+      {
+        "aa": "T",
+        "chain": "A",
+        "position": 66,
+        "secondary_structure": "E"
+      },
+      {
+        "aa": "L",
+        "chain": "A",
+        "position": 67,
+        "secondary_structure": "E"
+      },
+      {
+        "aa": "H",
+        "chain": "A",
+        "position": 68,
+        "secondary_structure": "E"
+      },
+      {
+        "aa": "L",
+        "chain": "A",
+        "position": 69,
+        "secondary_structure": "E"
+      },
+      {
+        "aa": "V",
+        "chain": "A",
+        "position": 70,
+        "secondary_structure": "E"
+      },
+      {
+        "aa": "L",
+        "chain": "A",
+        "position": 71,
+        "secondary_structure": "E"
+      },
+      {
+        "aa": "R",
+        "chain": "A",
+        "position": 72,
+        "secondary_structure": "-"
+      },
+      {
+        "aa": "L",
+        "chain": "A",
+        "position": 73,
+        "secondary_structure": "-"
+      },
+      {
+        "aa": "R",
+        "chain": "A",
+        "position": 74,
+        "secondary_structure": "S"
+      },
+      {
+        "aa": "G",
+        "chain": "A",
+        "position": 75,
+        "secondary_structure": "-"
+      },
+      {
+        "aa": "G",
+        "chain": "A",
+        "position": 76,
+        "secondary_structure": "-"
+      }
+    ]
+  },
+  "server": "physics"
+}

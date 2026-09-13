@@ -1,0 +1,17 @@
+{
+  "args": {
+    "mutant": "R",
+    "wt": "X"
+  },
+  "error": "ValueError: sequence must contain 1\u201310000 canonical amino acids",
+  "receipt": {
+    "args_hash": "d76bdbd56332ba3b42d00e900a175cd451b295978da88b59b50ce1f39c16a621",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/a8a673c397c14674859adcb8899ec96a.json",
+    "cache_hit": false,
+    "call_id": "call_id:a8a673c397c14674859adcb8899ec96a",
+    "runtime_s": 0.00019,
+    "tool": "blosum_score"
+  },
+  "result": null,
+  "server": "classical"
+}

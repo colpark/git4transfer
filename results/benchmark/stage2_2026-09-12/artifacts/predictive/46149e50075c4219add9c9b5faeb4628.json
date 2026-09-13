@@ -1,0 +1,27 @@
+{
+  "args": {
+    "seed": 0,
+    "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "5610332aee8a7c2e6d895ff713db59a46e1fb0b2fb06046ba9c9d2bf167d7795",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/predictive/46149e50075c4219add9c9b5faeb4628.json",
+    "cache_hit": true,
+    "call_id": "call_id:46149e50075c4219add9c9b5faeb4628",
+    "runtime_s": 8.1e-05,
+    "tool": "esmfold"
+  },
+  "result": {
+    "ca_count": 72,
+    "device": "cuda",
+    "interpretation": "structure confidence only; not a binding or stability measurement",
+    "mean_ca_bfactor_as_written": 0.9331944444444444,
+    "model": "facebook/esmfold_v1",
+    "pdb_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/model_artifacts/esmfold/9702e0fc37f4bf5a2cef5ccf84f7dfe9c814fa0d589de38f315fe9d117a1199c.pdb",
+    "revision": "75a3841ee059df2bf4d56688166c8fb459ddd97a",
+    "seed": 0,
+    "sequence_length": 72
+  },
+  "server": "predictive"
+}

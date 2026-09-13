@@ -1,0 +1,48 @@
+{
+  "answer": {
+    "assay": "ProteinGym TCRG1_MOUSE_Tsuboyama_2023_1E0L",
+    "call_ids": {
+      "analysis": "call_id:53f2e4072e064fb6993687164ab225e9",
+      "classical": "call_id:bbd8613d65114bb7a2215c8b5d1a2acc",
+      "generative": "call_id:d81e1e26bcd741ffa9553e64cf76329e",
+      "lit": "call_id:7a49fa2da9a648dfb31eeb7594ce76e0",
+      "physics": "call_id:44a7451e7c6e42a4a69be51aa105491e",
+      "predictive": "call_id:fc18a8704afd4e2699298dda4a170eef",
+      "record": "call_id:3f03e7c8da56418b88c8a67d4692801d"
+    },
+    "candidate": {
+      "mutant": "V",
+      "position_one_based": 2,
+      "substitution": "A2V",
+      "wt": "A"
+    },
+    "controls": {
+      "esmfold": "Seed-0 ESMFold returned 37 C-alpha atoms and mean written C-alpha B-factor 0.831081081081081. This is structure confidence only and is not a stability delta or measured outcome.",
+      "literature": "PubMed returned PMID 37468638, the 2023 Tsuboyama protein stability study, as assay-context plumbing only.",
+      "openmm_zero": "The same prepared OpenMM test PDB was supplied as WT and mutant, yielding 0.0 kJ/mol by construction. This is a zero control only, not ddG and not evidence about A2V.",
+      "unrelated_1ubq": "ESM-IF on the known 76-aa 1UBQ chain A sequence returned native_sequence_match=true and mean log-likelihood -0.06536056493457995; DSSP returned 76 residues. These are independent backend plumbing controls unrelated to the 37-aa ProteinGym construct."
+    },
+    "mode": "non-scoring MCP plumbing smoke; not a cohort item",
+    "outcome_statement": "No assay label was looked up. No measured outcome, stability delta, or predictive-accuracy claim is provided.",
+    "sequence_length": 37,
+    "workflow": {
+      "compare": "WT and A2V mutant have global identity 36/37 = 0.972972972972973.",
+      "filter": {
+        "decision": "retain for plumbing smoke only",
+        "rationale": "The substitution is valid and all required backends returned successful records. No biological pass/fail or assay outcome is inferred."
+      },
+      "rank": {
+        "interpretation": "With only one candidate, the ordinal rank is mechanical. Neutral BLOSUM62 and mildly unfavorable ESM2/toy-PSSM values support only a modest, low-confidence smoke ranking; they do not establish stability.",
+        "provisional_rank": "1 of 1 submitted candidates"
+      },
+      "retrieve": "MMseqs found the named 37-aa reference at 100% identity and full coverage; this verifies retrieval and is not variant-effect evidence.",
+      "score": {
+        "blosum62": 0,
+        "esm2_delta_log_probability": -0.5500593185424805,
+        "toy_pssm_delta_bits": -1.584962500721156,
+        "toy_pssm_notice": "The MSA was exactly two identical copies of the query. It is a toy plumbing MSA and is not biological evidence."
+      }
+    }
+  },
+  "item_id": "stage2_smoke_w1_unguided"
+}

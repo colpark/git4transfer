@@ -1,0 +1,8 @@
+{
+  "screen_variant_classical": {
+    "agent_called_through_mcp": true,
+    "agent_read_value_correctly": true,
+    "receipt_resolves": true,
+    "call_id": "call_id:12cc5f76c3bd40499f179714701764c3"
+  }
+}

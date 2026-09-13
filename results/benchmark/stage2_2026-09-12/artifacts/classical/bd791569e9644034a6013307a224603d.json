@@ -1,0 +1,35 @@
+{
+  "args": {
+    "acceptor": [
+      2.0,
+      0.0,
+      0.0
+    ],
+    "donor": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "hydrogen": [
+      1.0,
+      0.0,
+      0.0
+    ]
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "2530530dc7743ad5305440bc711dc9d949ae2f472b5cbc111738c6b94096b18c",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/bd791569e9644034a6013307a224603d.json",
+    "cache_hit": true,
+    "call_id": "call_id:bd791569e9644034a6013307a224603d",
+    "runtime_s": 0.0002,
+    "tool": "hbond_geometry"
+  },
+  "result": {
+    "dha_angle_deg": 180.0,
+    "donor_acceptor_A": 2.0,
+    "hydrogen_acceptor_A": 1.0,
+    "is_hbond": true
+  },
+  "server": "classical"
+}

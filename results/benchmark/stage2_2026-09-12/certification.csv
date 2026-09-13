@@ -1,0 +1,21 @@
+server,tool,status,known_input,negative_control,agent_reachability,receipt_resolves,known_reference,workflow_stage,agent_call_id,reason_or_substitution
+classical,mmseqs_search,CERTIFIED,PASS,PASS,PASS,PASS,exact sequence recovered in tiny FASTA,retrieve,call_id:0f4aa6583365483bae173f8fee0c06bf,
+classical,blast_search,CERTIFIED,PASS,PASS,PASS,PASS,exact sequence recovered in tiny FASTA,retrieve,call_id:15580a46e9664b7fbd223943841bd640,
+classical,pssm_score,CERTIFIED,PASS,PASS,PASS,PASS,AA/AA A→C = -log2(3) bits,score,call_id:3130d04f956f4a588a94aedf1739a928,
+classical,conservation,CERTIFIED,PASS,PASS,PASS,PASS,balanced A/C = 1-1/log2(20),score,call_id:d7e1544757454947b258077a137f6031,
+classical,motif_scan,CERTIFIED,PASS,PASS,PASS,PASS,A..D in ACCD = positions 1–4,filter,call_id:e56e367c4b624f54aabfbe4fc708372e,
+classical,blosum_score,CERTIFIED,PASS,PASS,PASS,PASS,BLOSUM62 A→R = -1,score,call_id:f384f3690c9e4d0585aad0c3d607dafa,
+classical,hbond_geometry,CERTIFIED,PASS,PASS,PASS,PASS,collinear D-H-A satisfies preregistered geometry,score,call_id:bd791569e9644034a6013307a224603d,
+classical guided,screen_variant_classical,CERTIFIED,PASS,PASS,PASS,PASS,"AA/AA A→R combines PSSM -log2(3), conservation 1, BLOSUM -1",score/compare,call_id:12cc5f76c3bd40499f179714701764c3,
+predictive,esm2_likelihood,CERTIFIED,PASS,PASS,PASS,PASS,pinned ESM2 20-aa A1R masked marginal ΔlnP = 0.19333 ±0.02,score,call_id:e6042d79ef6448238dddb9d0f441b235,
+predictive,esmfold,CERTIFIED,PASS,PASS,PASS,PASS,pinned ESMFold 20-aa input gives 20 CA atoms and PDB artifact,structure,call_id:8990e2746fe24aa0a4f6135f5f1319d8,
+generative,esm_if,CERTIFIED,PASS,PASS,PASS,PASS,"pinned ESM-IF1 1UBQ/A 76-aa native sequence score, native match",score,call_id:78c01f16dc7845f3b4cbd77e56c4fdd7,
+physics,pyrosetta_ddg,BLOCKED,BLOCKED,PASS:null with reason,PASS:agent read block,PASS,no licensed installed build; no ddG result,score,call_id:4e9ef58618054be896050b16cd280b9c,No verified institutional license or executable current aarch64 build; OpenMM is not ddG
+physics,dssp,CERTIFIED,PASS,PASS,PASS,PASS,"1UBQ/A has 76 residues, helix A23–A34",structure,call_id:8cb498b645f64ae3a5d2484c39f9d00c,
+physics,openmm_delta_energy,SUBSTITUTED,PASS,PASS,PASS,PASS,"same prepared PDB twice = 0 kJ/mol, not folding ddG",score/control,call_id:113a185e53014f87847f4bbcbd8b97e0,OpenMM potential-energy difference substituted for unavailable PyRosetta ddG
+analysis,seq_identity,CERTIFIED,PASS,PASS,PASS,PASS,ACDE/ACDE global identity = 1,compare,call_id:b6fb0bf586dd47e4a2f5fb3c616b522d,
+analysis,tmalign,CERTIFIED,PASS,PASS,PASS,PASS,PDB1/PDB1 TM-score = 1,compare,call_id:5783aea84aab4e7d830cb34ab598afc1,
+lit,scireason-mcp pubmed (eight tools unnamed),BLOCKED,NOT_CHECKED,NOT_CHECKED,NOT_CHECKED,NOT_CHECKED,service unavailable; individual tool names unknown,retrieve,,No connected server/endpoint or eight named tools; NCBI substitute is one tool
+lit substitute,pubmed_search,SUBSTITUTED,PASS,PASS,PASS,PASS,PMID 3041007 resolves to ubiquitin paper,retrieve,call_id:96986d58f6b24396a31fddadbaac0439,NCBI E-utilities search substituted for unavailable scireason PubMed
+record,submit_answer,CERTIFIED,PASS,PASS,PASS,PASS,one synthetic item accepted and artifact exists,submit,call_id:ff4fdbc15ad149c7b214fe21e56bebab,
+record,log_note,CERTIFIED,PASS,PASS,PASS,PASS,synthetic note accepted and artifact exists,record,call_id:b8c71b956346457a9ade2bb3f412d3a2,

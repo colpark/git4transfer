@@ -1,0 +1,1 @@
+{"error": null, "result": {"delta_log_probability": -0.5500593185424805, "device": "cpu", "method": "ESM2_single_position_masked_marginal_natural_log", "model": "facebook/esm2_t6_8M_UR50D", "mutant": "V", "mutant_log_probability": -3.279609203338623, "position": 2, "revision": "c731040fcd8d73dceaa04b0a8e6329b345b0f5df", "wt": "A", "wt_log_probability": -2.7295498847961426}}

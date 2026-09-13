@@ -1,0 +1,24 @@
+{
+  "args": {
+    "sequence_a": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+    "sequence_b": "MQAFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "84335614307518f45d2182faf9d3e0a2d11fe22824ed512f78e430d6e2449643",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/analysis/e9ed9287c59a4d8ea3c932e2861f2593.json",
+    "cache_hit": true,
+    "call_id": "call_id:e9ed9287c59a4d8ea3c932e2861f2593",
+    "runtime_s": 0.00022,
+    "tool": "seq_identity"
+  },
+  "result": {
+    "aligned_a": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+    "aligned_b": "MQAFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR",
+    "alignment_columns": 72,
+    "definition": "global_matches_over_all_columns",
+    "identity": 0.9861111111111112,
+    "matches": 71
+  },
+  "server": "analysis"
+}

@@ -1,0 +1,52 @@
+{
+  "answer": {
+    "assay_construct": {
+      "note": "Assay construct supplied by the task; no assay label or measured outcome was retrieved.",
+      "supplied_sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLR"
+    },
+    "call_ids": {
+      "analysis": "call_id:4f9ef1521cae4d38bb450de629e58fd8",
+      "classical": "call_id:47e6d9aec10144d891338d9ce6ff0b26",
+      "generative": "call_id:29c98939ce55477993ce5baa426166e3",
+      "lit": "call_id:8ef606cccff34ece80fc10b118a129d1",
+      "physics": "call_id:63f495fa08c74979bc8ace8b04b383e6",
+      "predictive": "call_id:260a6082e8f5460e8617ff20f884419c",
+      "record": "call_id:13a659cee7384806b1fea0b795be5641"
+    },
+    "candidate": {
+      "mutant": "A",
+      "position_one_based": 3,
+      "substitution": "I3A",
+      "wild_type": "I"
+    },
+    "claims": {
+      "assay_label_looked_up": false,
+      "predictive_accuracy_claimed": false,
+      "stability_delta_claimed_from_esmfold": false,
+      "stability_delta_claimed_from_openmm": false
+    },
+    "independent_controls": {
+      "esmfold": "ESMFold seed 0 returned 72 C-alpha atoms and mean written C-alpha B-factor/confidence 0.9331944444. This is structure confidence only and is not a stability delta.",
+      "known_structure": "ESM-IF and DSSP used the separate known 1UBQ chain A PDB and its exact 76-aa sequence MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG. This independent backend plumbing control must not be conflated with the supplied MegaScale assay construct. ESM-IF mean log-likelihood was -0.0653605649 with a native sequence match; DSSP assigned residue 3 to beta strand (E). Neither is a measured stability effect.",
+      "literature": "PubMed search for 'ubiquitin protein stability' succeeded as literature-server plumbing; returned hits were not used as variant evidence.",
+      "openmm": "The same prepared OpenMM test PDB was supplied as both WT and mutant, yielding exactly 0.0 kJ/mol potential-energy difference. This is an identical-input ZERO control, unrelated to I3A, and is not folding ddG."
+    },
+    "item": "MegaScale 1UBQ.pdb_I3A",
+    "measured_outcome": null,
+    "task_type": "NON-SCORING MCP plumbing smoke",
+    "workflow": {
+      "compare": "The supplied WT and single-mutant sequences have 71/72 global aligned identity (0.9861111111), confirming a single I-to-A substitution at position 3.",
+      "filter": "Provisional filter: retain only as a flagged, lower-priority candidate for follow-up rather than treating it as stability-improving. This is a qualitative smoke-test decision, not a prediction of a measured stability delta.",
+      "rank": "With only one candidate, I3A ranks first by default within this one-item smoke set. As a modest provisional stability-domain prioritization, it receives low/guarded priority because BLOSUM62 and ESM-2 both disfavor A relative to I at position 3, while the toy PSSM points the same way but carries no biological evidentiary weight.",
+      "retrieve": "MMseqs2 found the 1UBQ family in the specified Stage 1 reference FASTA; the exact supplied query matched 1UBQ.pdb at 100% over 72 aligned residues, and the I3A record appeared at 98.6%. This was sequence retrieval only, with no label lookup.",
+      "score": {
+        "blosum62": -1,
+        "esm2_delta_log_probability": -1.6643191576004028,
+        "toy_msa_warning": "The MSA was exactly [sequence, sequence], depth 2. It is a toy plumbing MSA and its apparent conservation and PSSM values are not biological evidence.",
+        "toy_pssm_delta_bits": -1.584962500721156
+      },
+      "submit": "Single non-scoring record submission."
+    }
+  },
+  "item_id": "stage2_smoke_w2_guided"
+}
