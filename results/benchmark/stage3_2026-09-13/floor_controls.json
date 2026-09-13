@@ -1,0 +1,13 @@
+{
+  "blind_predictions_sha256": "754b1c7e6e010b3815e58cf5280dde16709dd8fc8a1269ac7a9ae843a6f28613",
+  "label_tamper_does_not_change_allowed_scores": true,
+  "label_permutation_preserves_candidate_scores": true,
+  "sign_inversion_changes_rho": true,
+  "inverted_rho_sums_to_zero": true,
+  "missing_msa_rejected": true,
+  "missing_esm2_rejected": true,
+  "control_assay": "A0A192B1T2_9HIV1_Haddox_2018",
+  "label_permutation_assay": "GLPA_HUMAN_Elazar_2016",
+  "normal_rho": 0.3780734784925648,
+  "inverted_rho": -0.3780734784925648
+}

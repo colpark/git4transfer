@@ -1,0 +1,16 @@
+{
+  "selected_items": 20,
+  "attempted_items": 20,
+  "completed_items": 20,
+  "burn_count": 0,
+  "burn_rate_among_completed": 0.0,
+  "interrupted_or_failed_items": 0,
+  "not_attempted_items": 0,
+  "source_absence_control": true,
+  "exact_match_positive_and_wrong_id_controls": true,
+  "abort_reason": null,
+  "thermal_samples": 226,
+  "max_gpu_util_pct": 7.0,
+  "max_gpu_c": 56.0,
+  "max_cpu_c": 84.4
+}

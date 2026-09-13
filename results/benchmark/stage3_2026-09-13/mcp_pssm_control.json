@@ -1,0 +1,10 @@
+{
+  "tool_advertised": true,
+  "known_delta_bits": -1.584962500721156,
+  "hand_computed_delta_bits": -1.584962500721156,
+  "known_input_pass": true,
+  "negative_input_failed": true,
+  "receipt_resolves": true,
+  "call_id": "call_id:96cfd9e8c17b4e878b00a0edf8cf62ca",
+  "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/96cfd9e8c17b4e878b00a0edf8cf62ca.json"
+}

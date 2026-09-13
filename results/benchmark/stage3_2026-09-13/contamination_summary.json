@@ -1,0 +1,11 @@
+{
+  "eligible_items": 148,
+  "items_with_eight_gram_overlap": 0,
+  "items_with_exact_identifier": 0,
+  "pre_2025_publication_items": 148,
+  "recitation_probe_items_selected": 20,
+  "positive_eight_gram_control": true,
+  "positive_identifier_control": true,
+  "negative_clean_control": true,
+  "pretraining_corpus_overlap_checked": false
+}

@@ -1,0 +1,11 @@
+{
+  "clusters_inherited": 174,
+  "eligible_clusters": 148,
+  "excluded_reasons": {
+    "no_50_to_1000_aa_assay_with_msa": 25,
+    "fewer than 20 eligible single substitutions": 1
+  },
+  "candidate_rows": 14668,
+  "model_calls": 0,
+  "gpu_hours": 0
+}

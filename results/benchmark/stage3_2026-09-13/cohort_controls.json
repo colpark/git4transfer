@@ -1,0 +1,14 @@
+{
+  "inherited_clusters": 174,
+  "eligible_clusters": 148,
+  "unique_assays": 148,
+  "unique_clusters": 148,
+  "candidate_rows": 14668,
+  "prediction_rows": 14668,
+  "all_candidate_counts_20_to_100": true,
+  "blind_tables_exclude_measured_labels": true,
+  "duplicate_candidate_control_rejected": true,
+  "missing_cluster_control_rejected": true,
+  "floor_m_evaluable_items": 148,
+  "floor_item_score_rows": 296
+}
