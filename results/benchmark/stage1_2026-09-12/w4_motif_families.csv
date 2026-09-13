@@ -1,0 +1,3 @@
+family_id,anchor_pdb,motif_family,coordination_geometry_family,validated_family_counted,geometry_independently_measured,source,limitation
+W4_LBT_2OJR,2OJR,lanthanide_binding_tag,LBT_derived,True,False,https://github.com/colpark/git4transfer/blob/main/19C_benchmark_implementation_plan.md,"Plan names this validated family; 503-pocket and 350-design source manifest is unavailable locally"
+W4_EFHAND_1NCZ,1NCZ,EF_hand,EF_hand_derived,True,False,https://github.com/colpark/git4transfer/blob/main/19C_benchmark_implementation_plan.md,"Plan names this validated family; distinct coordination-number or donor-geometry subclasses were not audited"

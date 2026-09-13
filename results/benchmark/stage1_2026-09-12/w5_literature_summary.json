@@ -1,0 +1,14 @@
+{
+  "measurement_rule": "nonoverlap of mean +/- 2 published SD within same protein, pH and assay",
+  "measured_unique_lanthanide_pairs": 85,
+  "distinguishable_unique_lanthanide_pairs": 43,
+  "structural_entry_pairs": 327,
+  "structural_ca_ree_element_pairs": 5,
+  "structural_selectivity_ground_truth_pairs": 0,
+  "full_length_protein_conditions": 9,
+  "controls": {
+    "Ce/Lu_separated": "PASS",
+    "Eu/Sm_near_equal_excluded": "PASS",
+    "duplicate_pair_across_proteins_collapsed": "PASS"
+  }
+}

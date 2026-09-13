@@ -1,0 +1,392 @@
+>Cluster 0
+0	3423aa, >A0A140D2T1_ZIKV_Sourisseau_2019... *
+1	900aa, >POLG_DEN26_Suphatrakul_2023... at 3:899:2522:3423/66.41%
+2	3423aa, >CONTROL_DUPLICATE... at 1:3423:1:3423/100.00%
+>Cluster 1
+0	3418aa, >BRCA2_HUMAN_Erwood_2022_HEK293T... *
+>Cluster 2
+0	3033aa, >POLG_HCVJF_Qi_2014... *
+>Cluster 3
+0	2185aa, >POLG_CXB3N_Mattenberger_2021... *
+>Cluster 4
+0	2016aa, >SCN5A_HUMAN_Glazer_2019... *
+>Cluster 5
+0	1863aa, >BRCA1_HUMAN_Findlay_2018... *
+>Cluster 6
+0	1368aa, >CAS9_STRP1_Spencer_2017_positive... *
+>Cluster 7
+0	1278aa, >NPC1_HUMAN_Erwood_2022_HEK293T... *
+1	1278aa, >NPC1_HUMAN_Erwood_2022_RPE1... at 1:1278:1:1278/100.00%
+>Cluster 8
+0	1273aa, >SPIKE_SARS2_Starr_2020_binding... *
+1	1273aa, >SPIKE_SARS2_Starr_2020_expression... at 1:1273:1:1273/100.00%
+>Cluster 9
+0	1255aa, >ERBB2_HUMAN_Elazar_2016... *
+>Cluster 10
+0	69aa, >UBE4B_HUMAN_Tsuboyama_2023_3L1X... at 1:69:1098:1166/97.10%
+1	1173aa, >UBE4B_MOUSE_Starita_2013... *
+>Cluster 11
+0	1159aa, >KCNH2_HUMAN_Kozek_2020... *
+>Cluster 12
+0	1154aa, >CAR11_HUMAN_Meitlis_2020_gof... *
+1	1154aa, >CAR11_HUMAN_Meitlis_2020_lof... at 1:1154:1:1154/100.00%
+>Cluster 13
+0	934aa, >MSH2_HUMAN_Jia_2020... *
+>Cluster 14
+0	888aa, >HMDH_HUMAN_Jiang_2019... *
+>Cluster 15
+0	881aa, >GAL4_YEAST_Kitzman_2015... *
+>Cluster 16
+0	852aa, >A0A192B1T2_9HIV1_Haddox_2018... at 15:852:16:861/73.43%
+1	853aa, >ENV_HV1B9_DuenasDecamp_2016... at 1:853:1:861/81.62%
+2	861aa, >ENV_HV1BR_Haddox_2016... *
+3	860aa, >Q2N0S5_9HIV1_Haddox_2018... at 4:860:1:861/73.43%
+>Cluster 17
+0	805aa, >ACE2_HUMAN_Chan_2020... *
+>Cluster 18
+0	770aa, >A4_HUMAN_Seuma_2022... *
+>Cluster 19
+0	759aa, >A4D664_9INFA_Soh_2019... *
+>Cluster 20
+0	757aa, >RDRP_I33A0_Li_2023... *
+>Cluster 21
+0	735aa, >CAPSD_AAV2S_Sinai_2021... *
+>Cluster 22
+0	724aa, >DLG4_HUMAN_Faure_2021... *
+1	724aa, >DLG4_RAT_McLaughlin_2012... at 1:724:1:724/99.86%
+>Cluster 23
+0	716aa, >PA_I34A1_Wu_2015... *
+>Cluster 24
+0	709aa, >HSP82_YEAST_Cote-Hammarlof_2020_growth-H2O2... *
+1	709aa, >HSP82_YEAST_Flynn_2019... at 1:709:1:709/100.00%
+2	709aa, >HSP82_YEAST_Mishra_2016... at 1:709:1:709/100.00%
+>Cluster 25
+0	656aa, >MTHR_HUMAN_Weile_2021... *
+>Cluster 26
+0	648aa, >RAF1_HUMAN_Zinkus-Boltz_2019... *
+>Cluster 27
+0	635aa, >TPOR_HUMAN_Bridgford_2020... *
+>Cluster 28
+0	630aa, >SC6A4_HUMAN_Young_2021... *
+>Cluster 29
+0	627aa, >ANCSZ_Hobbs_2022... *
+>Cluster 30
+0	605aa, >PPM1D_HUMAN_Miller_2022... *
+>Cluster 31
+0	589aa, >Q837P4_ENTFA_Meier_2023... *
+>Cluster 32
+0	582aa, >SHOC2_HUMAN_Kwon_2022... *
+>Cluster 33
+0	577aa, >PABP_YEAST_Melamed_2013... *
+>Cluster 34
+0	571aa, >Q837P5_ENTFA_Meier_2023... *
+>Cluster 35
+0	566aa, >C6KNH7_9INFA_Lee_2018... *
+>Cluster 36
+0	565aa, >A0A2Z5U3Z0_9INFA_Doud_2016... *
+1	565aa, >A0A2Z5U3Z0_9INFA_Wu_2014... at 1:565:1:565/100.00%
+>Cluster 37
+0	556aa, >CD19_HUMAN_Klesmith_2019_FMC_singles... *
+>Cluster 38
+0	553aa, >S22A1_HUMAN_Yee_2023_abundance... *
+1	553aa, >S22A1_HUMAN_Yee_2023_activity... at 1:553:1:553/100.00%
+>Cluster 39
+0	551aa, >CBS_HUMAN_Sun_2020... *
+>Cluster 40
+0	536aa, >SRC_HUMAN_Ahler_2019... *
+1	536aa, >SRC_HUMAN_Chakraborty_2023_binding-DAS_25uM... at 1:536:1:536/100.00%
+2	536aa, >SRC_HUMAN_Nguyen_2022... at 1:536:1:536/100.00%
+>Cluster 41
+0	505aa, >PPARG_HUMAN_Majithia_2016... *
+>Cluster 42
+0	504aa, >YAP1_HUMAN_Araya_2012... *
+>Cluster 43
+0	501aa, >Q59976_STRSQ_Romero_2015... *
+>Cluster 44
+0	498aa, >I6TAH8_I68A0_Doud_2015... *
+1	498aa, >NCAP_I34A1_Doud_2015... at 1:498:1:498/93.98%
+>Cluster 45
+0	490aa, >CP2C9_HUMAN_Amorosi_2021_abundance... *
+1	490aa, >CP2C9_HUMAN_Amorosi_2021_activity... at 1:490:1:490/100.00%
+>Cluster 46
+0	465aa, >HXK4_HUMAN_Gersing_2022_activity... *
+1	465aa, >HXK4_HUMAN_Gersing_2023_abundance... at 1:465:1:465/100.00%
+>Cluster 47
+0	465aa, >PRKN_HUMAN_Clausen_2023... *
+>Cluster 48
+0	453aa, >NRAM_I33A0_Jiang_2016... *
+>Cluster 49
+0	448aa, >SPG1_STRSG_Olson_2014... *
+1	448aa, >SPG1_STRSG_Wu_2016... at 1:448:1:448/100.00%
+2	56aa, >SPG2_STRSG_Tsuboyama_2023_5UBS... at 3:56:229:282/90.74%
+>Cluster 50
+0	447aa, >GDIA_HUMAN_Silverstein_2021... *
+>Cluster 51
+0	439aa, >LGK_LIPST_Klesmith_2015... *
+>Cluster 52
+0	428aa, >KCNJ2_MOUSE_Coyote-Maestas_2022_function... *
+1	428aa, >KCNJ2_MOUSE_Coyote-Maestas_2022_surface... at 1:428:1:428/100.00%
+>Cluster 53
+0	414aa, >TADBP_HUMAN_Bolognesi_2019... *
+>Cluster 54
+0	413aa, >ADRB2_HUMAN_Jones_2020... *
+>Cluster 55
+0	403aa, >PTEN_HUMAN_Matreyek_2021... *
+1	403aa, >PTEN_HUMAN_Mighell_2018... at 1:403:1:403/100.00%
+>Cluster 56
+0	402aa, >PAI1_HUMAN_Huttinger_2021... *
+>Cluster 57
+0	393aa, >P53_HUMAN_Giacomelli_2018_Null_Etoposide... *
+1	393aa, >P53_HUMAN_Giacomelli_2018_Null_Nutlin... at 1:393:1:393/100.00%
+2	393aa, >P53_HUMAN_Giacomelli_2018_WT_Nutlin... at 1:393:1:393/100.00%
+3	393aa, >P53_HUMAN_Kotler_2018... at 1:393:1:393/99.75%
+>Cluster 58
+0	372aa, >LYAM1_HUMAN_Elazar_2016... *
+>Cluster 59
+0	370aa, >SERC_HUMAN_Xie_2023... *
+>Cluster 60
+0	365aa, >Q53Z42_HUMAN_McShan_2019_binding-TAPBPR... *
+1	365aa, >Q53Z42_HUMAN_McShan_2019_expression... at 1:365:1:365/100.00%
+>Cluster 61
+0	364aa, >OXDA_RHOTO_Vanella_2023_activity... *
+1	364aa, >OXDA_RHOTO_Vanella_2023_expression... at 1:364:1:364/100.00%
+>Cluster 62
+0	361aa, >HEM3_HUMAN_Loggerenberg_2023... *
+>Cluster 63
+0	360aa, >MK01_HUMAN_Brenan_2016... *
+>Cluster 64
+0	354aa, >OTC_HUMAN_Lo_2023... *
+>Cluster 65
+0	352aa, >CCR5_HUMAN_Gill_2023... *
+>Cluster 66
+0	348aa, >OPSD_HUMAN_Wan_2019... *
+>Cluster 67
+0	346aa, >AMIE_PSEAE_Wrenbeck_2017... *
+>Cluster 68
+0	330aa, >MTH3_HAEAE_RockahShmuel_2015... *
+>Cluster 69
+0	306aa, >R1AB_SARS2_Flynn_2022... *
+>Cluster 70
+0	287aa, >MET_HUMAN_Estevam_2023... *
+>Cluster 71
+0	286aa, >BLAT_ECOLX_Deng_2012... *
+1	286aa, >BLAT_ECOLX_Firnberg_2014... at 1:286:1:286/100.00%
+2	286aa, >BLAT_ECOLX_Jacquier_2013... at 1:286:1:286/100.00%
+3	286aa, >BLAT_ECOLX_Stiffler_2015... at 1:286:1:286/100.00%
+>Cluster 72
+0	258aa, >CASP3_HUMAN_Roychowdhury_2020... at 10:248:38:279/57.02%
+1	281aa, >CASP7_HUMAN_Roychowdhury_2020... *
+>Cluster 73
+0	281aa, >GCN4_YEAST_Staller_2018... *
+>Cluster 74
+0	266aa, >A4GRB6_PSEAI_Chen_2020... *
+>Cluster 75
+0	264aa, >KKA2_KLEPN_Melnikov_2014... *
+>Cluster 76
+0	254aa, >P84126_THETH_Chan_2017... *
+>Cluster 77
+0	252aa, >TRPC_THEMA_Chan_2017... *
+>Cluster 78
+0	248aa, >TRPC_SACS2_Chan_2017... *
+>Cluster 79
+0	245aa, >TPMT_HUMAN_Matreyek_2018... *
+>Cluster 80
+0	243aa, >TPK1_HUMAN_Weile_2017... *
+>Cluster 81
+0	238aa, >GFP_AEQVI_Sarkisyan_2016... *
+1	238aa, >Q8WTC7_9CNID_Somermeyer_2022... at 1:238:1:238/82.77%
+>Cluster 82
+0	237aa, >RPC1_LAMBD_Li_2019_high-expression... *
+1	237aa, >RPC1_LAMBD_Li_2019_low-expression... at 1:237:1:237/100.00%
+>Cluster 83
+0	235aa, >D7PM05_CLYGR_Somermeyer_2022... *
+>Cluster 84
+0	226aa, >RNC_ECOLI_Weeks_2023... *
+>Cluster 85
+0	222aa, >Q6WV12_9MAXI_Somermeyer_2022... *
+>Cluster 86
+0	220aa, >HIS7_YEAST_Pokusaeva_2019... *
+>Cluster 87
+0	217aa, >GRB2_HUMAN_Faure_2021... *
+>Cluster 88
+0	212aa, >ESTA_BACSU_Nutschel_2020... *
+>Cluster 89
+0	211aa, >MLAC_ECOLI_MacRae_2023... *
+>Cluster 90
+0	198aa, >AICDA_HUMAN_Gajula_2014_3cycles... *
+>Cluster 91
+0	198aa, >B2L11_HUMAN_Dutta_2010_binding-Mcl-1... *
+>Cluster 92
+0	189aa, >RASH_HUMAN_Bandaru_2017... *
+1	188aa, >RASK_HUMAN_Weng_2022_abundance... at 1:187:1:188/85.64%
+2	188aa, >RASK_HUMAN_Weng_2022_binding-DARPin_K55... at 1:187:1:188/85.64%
+>Cluster 93
+0	177aa, >AACC1_PSEAI_Dandage_2018... *
+>Cluster 94
+0	164aa, >NUD15_HUMAN_Suiter_2020... *
+>Cluster 95
+0	163aa, >VKOR1_HUMAN_Chiasson_2020_abundance... *
+1	163aa, >VKOR1_HUMAN_Chiasson_2020_activity... at 1:163:1:163/100.00%
+>Cluster 96
+0	161aa, >A0A1I9GEU1_NEIME_Kennouche_2019... *
+>Cluster 97
+0	159aa, >DYR_ECOLI_Nguyen_2023... *
+1	159aa, >DYR_ECOLI_Thompson_2019... at 1:159:1:159/100.00%
+>Cluster 98
+0	159aa, >UBC9_HUMAN_Weile_2017... *
+>Cluster 99
+0	150aa, >GLPA_HUMAN_Elazar_2016... *
+>Cluster 100
+0	149aa, >CALM1_HUMAN_Weile_2017... *
+1	72aa, >CATR_CHLRE_Tsuboyama_2023_2AMI... at 2:71:5:74/61.43%
+>Cluster 101
+0	140aa, >SYUA_HUMAN_Newberry_2020... *
+>Cluster 102
+0	129aa, >KCNE1_HUMAN_Muhammad_2023_expression... *
+1	129aa, >KCNE1_HUMAN_Muhammad_2023_function... at 1:129:1:129/100.00%
+>Cluster 103
+0	128aa, >RL40A_YEAST_Mavor_2016... *
+1	128aa, >RL40A_YEAST_Roscoe_2013... at 1:128:1:128/100.00%
+2	128aa, >RL40A_YEAST_Roscoe_2014... at 1:128:1:128/100.00%
+>Cluster 104
+0	118aa, >PHOT_CHLRE_Chen_2023... *
+>Cluster 105
+0	116aa, >REV_HV1H2_Fernandes_2016... *
+>Cluster 106
+0	101aa, >CCDB_ECOLI_Adkar_2012... *
+1	101aa, >CCDB_ECOLI_Tripathi_2016... at 1:101:1:101/100.00%
+>Cluster 107
+0	101aa, >SUMO1_HUMAN_Weile_2017... *
+>Cluster 108
+0	93aa, >F7YBW8_MESOW_Ding_2023... *
+1	93aa, >F7YBW8_MESOW_Aakre_2015... at 1:93:1:93/100.00%
+>Cluster 109
+0	87aa, >A0A247D711_LISMN_Stadelmann_2021... *
+>Cluster 110
+0	86aa, >TAT_HV1BR_Fernandes_2016... *
+>Cluster 111
+0	72aa, >CBPA2_HUMAN_Tsuboyama_2023_1O6X... *
+>Cluster 112
+0	72aa, >CSN4_MOUSE_Tsuboyama_2023_1UFM... *
+>Cluster 113
+0	72aa, >FECA_ECOLI_Tsuboyama_2023_2D1U... *
+>Cluster 114
+0	72aa, >HECD1_HUMAN_Tsuboyama_2023_3DKM... *
+>Cluster 115
+0	72aa, >IF1_ECOLI_Kelsic_2016... *
+>Cluster 116
+0	71aa, >ILF3_HUMAN_Tsuboyama_2023_2L33... *
+>Cluster 117
+0	71aa, >PKN1_HUMAN_Tsuboyama_2023_1URF... *
+>Cluster 118
+0	70aa, >SCIN_STAAR_Tsuboyama_2023_2QFF... *
+>Cluster 119
+0	69aa, >ARGR_ECOLI_Tsuboyama_2023_1AOY... *
+>Cluster 120
+0	69aa, >FKBP3_HUMAN_Tsuboyama_2023_2KFV... *
+>Cluster 121
+0	69aa, >NUSA_ECOLI_Tsuboyama_2023_1WCL... *
+>Cluster 122
+0	68aa, >PSAE_PICP2_Tsuboyama_2023_1PSE... *
+>Cluster 123
+0	67aa, >SRBS1_HUMAN_Tsuboyama_2023_2O2W... *
+>Cluster 124
+0	66aa, >DOCK1_MOUSE_Tsuboyama_2023_2M0Y... *
+>Cluster 125
+0	66aa, >EPHB2_HUMAN_Tsuboyama_2023_1F0M... *
+>Cluster 126
+0	66aa, >MBD11_ARATH_Tsuboyama_2023_6ACV... *
+>Cluster 127
+0	65aa, >DNJA1_HUMAN_Tsuboyama_2023_2LO1... *
+>Cluster 128
+0	65aa, >OBSCN_HUMAN_Tsuboyama_2023_1V1C... *
+>Cluster 129
+0	65aa, >VILI_CHICK_Tsuboyama_2023_1YU5... *
+>Cluster 130
+0	64aa, >BBC1_YEAST_Tsuboyama_2023_1TG0... *
+>Cluster 131
+0	63aa, >PR40A_HUMAN_Tsuboyama_2023_1UZC... *
+>Cluster 132
+0	63aa, >RCRO_LAMBD_Tsuboyama_2023_1ORC... *
+>Cluster 133
+0	63aa, >RS15_GEOSE_Tsuboyama_2023_1A32... *
+>Cluster 134
+0	61aa, >MYO3_YEAST_Tsuboyama_2023_2BTT... *
+>Cluster 135
+0	61aa, >NKX31_HUMAN_Tsuboyama_2023_2L9R... *
+>Cluster 136
+0	61aa, >RPC1_BP434_Tsuboyama_2023_1R69... *
+>Cluster 137
+0	60aa, >ENVZ_ECOLI_Ghose_2023... *
+>Cluster 138
+0	60aa, >SPTN1_CHICK_Tsuboyama_2023_1TUD... *
+>Cluster 139
+0	59aa, >RL20_AQUAE_Tsuboyama_2023_1GYZ... *
+>Cluster 140
+0	59aa, >TNKS2_HUMAN_Tsuboyama_2023_5JRT... *
+>Cluster 141
+0	58aa, >UBR5_HUMAN_Tsuboyama_2023_1I2T... *
+>Cluster 142
+0	57aa, >RCD1_ARATH_Tsuboyama_2023_5OAO... *
+>Cluster 143
+0	57aa, >SOX30_HUMAN_Tsuboyama_2023_7JJK... *
+>Cluster 144
+0	56aa, >SBI_STAAM_Tsuboyama_2023_2JVG... *
+>Cluster 145
+0	56aa, >VRPI_BPT7_Tsuboyama_2023_2WNM... *
+>Cluster 146
+0	55aa, >DN7A_SACS2_Tsuboyama_2023_1JIC... *
+>Cluster 147
+0	55aa, >HCP_LAMBD_Tsuboyama_2023_2L6Q... *
+>Cluster 148
+0	55aa, >ISDH_STAAW_Tsuboyama_2023_2LHR... *
+>Cluster 149
+0	55aa, >NUSG_MYCTU_Tsuboyama_2023_2MI6... *
+>Cluster 150
+0	55aa, >RFAH_ECOLI_Tsuboyama_2023_2LCL... *
+>Cluster 151
+0	55aa, >SPA_STAAU_Tsuboyama_2023_1LP1... *
+>Cluster 152
+0	54aa, >RAD_ANTMA_Tsuboyama_2023_2CJJ... *
+>Cluster 153
+0	53aa, >POLG_PESV_Tsuboyama_2023_2MXD... *
+>Cluster 154
+0	52aa, >BCHB_CHLTE_Tsuboyama_2023_2KRU... *
+>Cluster 155
+0	52aa, >CUE1_YEAST_Tsuboyama_2023_2MYX... *
+>Cluster 156
+0	52aa, >PITX2_HUMAN_Tsuboyama_2023_2L7M... *
+>Cluster 157
+0	52aa, >RBP1_HUMAN_Tsuboyama_2023_2KWH... *
+>Cluster 158
+0	52aa, >YAIA_ECOLI_Tsuboyama_2023_2KVT... *
+>Cluster 159
+0	50aa, >CBX4_HUMAN_Tsuboyama_2023_2K28... *
+>Cluster 160
+0	48aa, >SR43C_ARATH_Tsuboyama_2023_2N88... *
+>Cluster 161
+0	47aa, >AMFR_HUMAN_Tsuboyama_2023_4G3O... *
+>Cluster 162
+0	44aa, >ODP2_GEOSE_Tsuboyama_2023_1W4G... *
+>Cluster 163
+0	44aa, >RD23A_HUMAN_Tsuboyama_2023_1IFY... *
+>Cluster 164
+0	44aa, >SDA_BACSU_Tsuboyama_2023_1PV0... *
+>Cluster 165
+0	43aa, >SAV1_MOUSE_Tsuboyama_2023_2YSB... *
+>Cluster 166
+0	42aa, >OTU7A_HUMAN_Tsuboyama_2023_2L2D... *
+>Cluster 167
+0	41aa, >MAFG_MOUSE_Tsuboyama_2023_1K1V... *
+>Cluster 168
+0	41aa, >THO1_YEAST_Tsuboyama_2023_2WQG... *
+>Cluster 169
+0	40aa, >SQSTM_MOUSE_Tsuboyama_2023_2RRU... *
+>Cluster 170
+0	40aa, >VG08_BPP22_Tsuboyama_2023_2GP8... *
+>Cluster 171
+0	39aa, >PIN1_HUMAN_Tsuboyama_2023_1I6C... *
+>Cluster 172
+0	39aa, >YNZC_BACSU_Tsuboyama_2023_2JVD... *
+>Cluster 173
+0	37aa, >TCRG1_MOUSE_Tsuboyama_2023_1E0L... *

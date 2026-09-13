@@ -1,0 +1,722 @@
+>Cluster 0
+0	74aa, >1IGV.pdb... *
+>Cluster 1
+0	72aa, >2D1U.pdb... *
+>Cluster 2
+0	72aa, >1UFM.pdb... *
+>Cluster 3
+0	72aa, >3DKM.pdb... *
+>Cluster 4
+0	72aa, >1O6X.pdb... *
+>Cluster 5
+0	72aa, >2AMI.pdb... *
+>Cluster 6
+0	71aa, >1SIF.pdb_F13S... at 2:71:2:71/91.43%
+1	71aa, >1SIF.pdb_L3A... at 2:71:2:71/92.86%
+2	72aa, >1UBQ.pdb_I3A... *
+3	72aa, >1UBQ.pdb_L15S... at 1:72:1:72/97.22%
+4	72aa, >1UBQ.pdb_L43A... at 1:72:1:72/97.22%
+5	72aa, >1UBQ.pdb_L67S... at 1:72:1:72/97.22%
+6	72aa, >5ZD0.pdb... at 1:72:1:72/94.44%
+7	72aa, >1UBQ.pdb_pross7... at 1:72:1:72/97.22%
+8	72aa, >2M0X.pdb... at 1:72:1:72/90.28%
+9	71aa, >1SIF.pdb... at 2:71:2:71/91.43%
+10	70aa, >2MSG.pdb... at 1:70:1:70/98.57%
+11	70aa, >v2_5XK5.pdb... at 1:70:2:71/98.57%
+12	72aa, >1UBQ.pdb... at 1:72:1:72/98.61%
+13	72aa, >6XQC.pdb... at 1:72:1:72/93.06%
+14	70aa, >v2_1OGW.pdb... at 1:70:2:71/98.57%
+>Cluster 7
+0	72aa, >2MLB.pdb_L43D... *
+>Cluster 8
+0	72aa, >2PFU.pdb... *
+>Cluster 9
+0	71aa, >2M2J.pdb... *
+>Cluster 10
+0	71aa, >2K52.pdb_F21S... *
+1	71aa, >2K52.pdb_L42A... at 1:71:1:71/97.18%
+2	71aa, >2K52.pdb... at 1:71:1:71/98.59%
+>Cluster 11
+0	59aa, >1TUC.pdb... at 3:59:13:69/100.00%
+1	71aa, >2KXD.pdb... *
+>Cluster 12
+0	71aa, >1URF.pdb... *
+>Cluster 13
+0	71aa, >2L33.pdb... *
+>Cluster 14
+0	70aa, >2MA4.pdb... *
+>Cluster 15
+0	70aa, >2QFF.pdb... *
+>Cluster 16
+0	70aa, >5GU9.pdb_L66K... *
+1	70aa, >5GU9.pdb_V60D... at 1:70:1:70/97.14%
+2	70aa, >5GU9.pdb... at 1:70:1:70/98.57%
+>Cluster 17
+0	70aa, >6NS8.pdb_L8K... *
+>Cluster 18
+0	70aa, >v2R31S|R32S_2N5D.pdb... *
+>Cluster 19
+0	69aa, >5KPH.pdb... *
+>Cluster 20
+0	69aa, >1WCL.pdb... *
+>Cluster 21
+0	69aa, >2MC5.pdb... *
+>Cluster 22
+0	69aa, >2KFV.pdb... *
+>Cluster 23
+0	69aa, >3ZGK.pdb... *
+1	64aa, >2LC2.pdb... at 5:62:11:68/84.48%
+2	56aa, >v2_2LC2.pdb... at 1:54:15:68/83.33%
+>Cluster 24
+0	69aa, >3L1X.pdb... *
+>Cluster 25
+0	69aa, >7BPM.pdb... *
+>Cluster 26
+0	69aa, >1AOY.pdb... *
+>Cluster 27
+0	69aa, >2LSS.pdb_F17A... *
+1	69aa, >2LSS.pdb_G6S... at 1:69:1:69/97.10%
+2	69aa, >2LSS.pdb... at 1:69:1:69/98.55%
+>Cluster 28
+0	65aa, >2KR3.pdb... at 1:65:5:69/93.85%
+1	61aa, >6SCW.pdb... at 1:61:1:69/85.51%
+2	59aa, >2LJ3.pdb... at 1:59:3:69/85.07%
+3	57aa, >1PWT.pdb... at 1:57:5:69/84.62%
+4	56aa, >1QKX.pdb... at 1:56:6:69/81.25%
+5	56aa, >2CDT.pdb... at 1:55:7:69/82.54%
+6	56aa, >1BK2.pdb_F47A... at 1:56:6:69/87.50%
+7	56aa, >1BK2.pdb_L5S... at 1:56:6:69/84.38%
+8	56aa, >1H8K.pdb_R44S... at 1:56:6:69/73.44%
+9	56aa, >1H8K.pdb_W36A... at 1:56:6:69/73.44%
+10	69aa, >2ROT.pdb_F60A... *
+11	69aa, >2ROT.pdb_W41S... at 1:69:1:69/97.10%
+12	60aa, >5FWB.pdb_A10S... at 1:60:2:69/82.35%
+13	60aa, >5FWB.pdb_M24A... at 1:60:2:69/82.35%
+14	61aa, >1E6H.pdb... at 1:60:2:69/79.41%
+15	56aa, >1H8K.pdb... at 1:56:6:69/75.00%
+16	56aa, >1BK2.pdb... at 1:56:6:69/85.94%
+17	56aa, >3NGP.pdb... at 1:56:6:69/78.12%
+18	56aa, >6RO9.pdb... at 3:56:8:69/83.87%
+19	56aa, >5FW9.pdb... at 3:56:8:69/83.87%
+20	69aa, >2ROT.pdb... at 1:69:1:69/98.55%
+21	60aa, >5FWB.pdb... at 1:60:2:69/83.82%
+>Cluster 29
+0	68aa, >1ZHC.pdb... *
+>Cluster 30
+0	68aa, >2RU9.pdb... *
+>Cluster 31
+0	68aa, >1PSE.pdb... *
+1	63aa, >1QP2.pdb... at 2:61:2:68/67.16%
+>Cluster 32
+0	68aa, >1QKH.pdb... *
+>Cluster 33
+0	68aa, >2KCM.pdb... *
+>Cluster 34
+0	67aa, >1CSQ.pdb_F49A... at 2:65:3:67/58.46%
+1	67aa, >1CSQ.pdb_F9S... at 2:65:3:67/58.46%
+2	68aa, >1MJC.pdb_G17A... *
+3	68aa, >1MJC.pdb_L43S... at 1:68:1:68/97.06%
+4	66aa, >2LXK.pdb_F15S... at 4:63:5:65/65.57%
+5	66aa, >2LXK.pdb_G4A... at 6:63:7:65/67.80%
+6	67aa, >1CSQ.pdb... at 2:65:3:67/60.00%
+7	66aa, >2I5L.pdb... at 1:64:2:66/60.00%
+8	68aa, >1MJC.pdb... at 1:68:1:68/98.53%
+9	66aa, >v2_2L15.pdb... at 1:66:3:68/98.48%
+10	66aa, >2LXK.pdb... at 4:63:5:65/67.21%
+>Cluster 35
+0	67aa, >2M8U.pdb... *
+>Cluster 36
+0	67aa, >2RRT.pdb... *
+1	63aa, >2K2A.pdb... at 1:63:4:66/50.79%
+>Cluster 37
+0	67aa, >2O2W.pdb... *
+>Cluster 38
+0	67aa, >2JT1.pdb... *
+>Cluster 39
+0	67aa, >2K5N.pdb... *
+>Cluster 40
+0	67aa, >2KT8.pdb_G54S... *
+1	67aa, >2KT8.pdb_V15A... at 1:67:1:67/97.01%
+2	58aa, >2KYB.pdb_G2S... at 1:58:4:61/93.10%
+3	58aa, >2KYB.pdb_K55A... at 1:58:4:61/93.10%
+4	67aa, >2KT8.pdb... at 1:67:1:67/98.51%
+5	58aa, >2KYB.pdb... at 1:58:4:61/94.83%
+>Cluster 41
+0	67aa, >2KVS.pdb... *
+>Cluster 42
+0	49aa, >r11_233_TrROS_Hall.pdb... at 7:49:21:65/51.11%
+1	49aa, >r11_951_TrROS_Hall.pdb... at 1:49:16:66/51.92%
+2	54aa, >r12_757_TrROS_Hall.pdb... at 2:51:18:66/50.98%
+3	52aa, >r18_3_TrROS_Hall.pdb... at 5:52:19:64/56.25%
+4	67aa, >r14_263_TrROS_Hall.pdb... *
+>Cluster 43
+0	66aa, >2JN4.pdb... *
+>Cluster 44
+0	66aa, >2M0Y.pdb... *
+>Cluster 45
+0	66aa, >6ACV.pdb... *
+>Cluster 46
+0	66aa, >1F0M.pdb... *
+>Cluster 47
+0	66aa, >v2R14S|R16S_2L3X.pdb... *
+>Cluster 48
+0	65aa, >2LO1.pdb... *
+1	65aa, >2LGW.pdb... at 1:65:2:62/52.31%
+2	62aa, >2OCH.pdb... at 3:62:3:62/76.67%
+3	59aa, >2M6Y.pdb... at 1:59:1:59/100.00%
+4	65aa, >6IWS.pdb... at 3:64:3:61/58.06%
+>Cluster 49
+0	65aa, >1V1C.pdb... *
+>Cluster 50
+0	65aa, >1YU5.pdb... *
+1	64aa, >2RJV.pdb... at 1:64:2:65/98.44%
+2	63aa, >3MYC.pdb... at 1:63:3:65/98.41%
+3	36aa, >1VII.pdb... at 2:36:31:65/100.00%
+4	35aa, >1YRF.pdb... at 1:35:31:65/97.14%
+>Cluster 51
+0	65aa, >1SF0.pdb_V59K... *
+1	65aa, >1SF0.pdb... at 1:65:1:65/98.46%
+>Cluster 52
+0	63aa, >1OPS.pdb_T53S... at 2:63:3:64/51.61%
+1	63aa, >1OPS.pdb_V44A... at 2:63:3:64/51.61%
+2	64aa, >1UCS.pdb_M59K... at 1:63:1:63/66.67%
+3	65aa, >2LX2.pdb_I32A... *
+4	63aa, >5XR0.pdb_T53S... at 2:63:3:64/51.61%
+5	63aa, >1OPS.pdb... at 2:63:3:64/53.23%
+6	64aa, >6MSI.pdb... at 2:64:2:64/73.02%
+7	64aa, >1MSJ.pdb... at 1:64:1:64/75.00%
+8	64aa, >1B7J.pdb... at 1:64:1:64/76.56%
+9	63aa, >5XR0.pdb... at 2:63:3:64/53.23%
+10	64aa, >9AME.pdb... at 1:64:1:64/75.00%
+11	65aa, >2LX2.pdb... at 1:65:1:65/98.46%
+12	64aa, >7MSI.pdb... at 2:64:2:64/74.60%
+13	64aa, >8MSI.pdb... at 1:64:1:64/73.44%
+14	64aa, >6AME.pdb... at 1:64:1:64/75.00%
+15	64aa, >8AME.pdb... at 1:64:1:64/73.44%
+16	64aa, >1EKL.pdb... at 1:64:1:64/75.00%
+17	64aa, >1UCS.pdb... at 1:63:1:63/68.25%
+18	64aa, >3QF6.pdb... at 1:63:1:63/74.60%
+19	64aa, >4AME.pdb... at 1:64:1:64/75.00%
+20	64aa, >2MSJ.pdb... at 1:64:1:64/75.00%
+21	64aa, >4UR4.pdb... at 1:64:1:64/75.00%
+22	64aa, >2AME.pdb... at 1:64:1:64/75.00%
+23	64aa, >3AME.pdb... at 1:64:1:64/75.00%
+>Cluster 53
+0	64aa, >2K5P.pdb... *
+>Cluster 54
+0	64aa, >1TG0.pdb... *
+>Cluster 55
+0	64aa, >6M3N.pdb... *
+>Cluster 56
+0	62aa, >2LYQ.pdb... at 1:62:2:63/98.39%
+1	62aa, >2LYR.pdb... at 1:62:1:62/98.39%
+2	64aa, >2LYP.pdb_P41A... *
+3	64aa, >2LYP.pdb_V26S... at 1:64:1:64/96.88%
+4	64aa, >2LYP.pdb... at 1:64:1:64/98.44%
+>Cluster 57
+0	61aa, >2MCK.pdb... at 1:61:4:64/91.80%
+1	64aa, >2MCH.pdb... *
+>Cluster 58
+0	63aa, >1UZC.pdb... *
+>Cluster 59
+0	63aa, >2KGT.pdb... *
+>Cluster 60
+0	63aa, >1A32.pdb... *
+>Cluster 61
+0	63aa, >2JTV.pdb... *
+>Cluster 62
+0	63aa, >1ORC.pdb... *
+>Cluster 63
+0	63aa, >2KRS.pdb_W42A... *
+1	63aa, >2KRS.pdb_Y53S... at 1:63:1:63/96.83%
+2	63aa, >2KRS.pdb... at 1:63:1:63/98.41%
+>Cluster 64
+0	63aa, >r16_88_TrROS_Hall.pdb... *
+>Cluster 65
+0	62aa, >5VNT.pdb... *
+>Cluster 66
+0	62aa, >2LQK.pdb... *
+>Cluster 67
+0	62aa, >4C26.pdb... *
+>Cluster 68
+0	62aa, >2K5H.pdb_G11S... *
+1	62aa, >2K5H.pdb_G23A... at 1:62:1:62/96.77%
+2	62aa, >2K5H.pdb... at 1:62:1:62/98.39%
+>Cluster 69
+0	62aa, >2PTL.pdb_I58A... *
+1	62aa, >2PTL.pdb_L38S... at 1:62:1:62/96.77%
+2	62aa, >2PTL.pdb... at 1:62:1:62/98.39%
+>Cluster 70
+0	55aa, >1JIC.pdb... at 1:55:3:57/96.36%
+1	62aa, >1BNZ.pdb_Y34W... *
+2	62aa, >1BNZ.pdb... at 1:62:1:62/98.39%
+>Cluster 71
+0	61aa, >2L9R.pdb... *
+>Cluster 72
+0	61aa, >2BTT.pdb... *
+1	57aa, >1YP5.pdb... at 1:57:3:59/84.21%
+>Cluster 73
+0	61aa, >1R69.pdb... *
+>Cluster 74
+0	61aa, >v2K43S_2KVV.pdb... *
+>Cluster 75
+0	60aa, >r15_550_TrROS_Hall.pdb... *
+>Cluster 76
+0	60aa, >1TUD.pdb... *
+>Cluster 77
+0	60aa, >2M7O.pdb_I21A... *
+1	60aa, >2M7O.pdb... at 1:60:1:60/98.33%
+>Cluster 78
+0	59aa, >6NMW.pdb... *
+1	59aa, >4HCK.pdb... at 3:58:4:59/69.64%
+2	57aa, >1H92.pdb... at 2:56:3:57/56.36%
+3	57aa, >3CQT.pdb... at 5:57:7:58/50.94%
+4	58aa, >1A0N.pdb_L7S... at 3:58:4:58/51.79%
+5	58aa, >1A0N.pdb_V55A... at 3:58:4:58/51.79%
+6	59aa, >5ECA.pdb_P51S... at 5:56:6:56/51.92%
+7	59aa, >5ECA.pdb_W37A... at 5:56:6:56/51.92%
+8	59aa, >5ECA.pdb... at 5:56:6:56/53.85%
+9	59aa, >6IPY.pdb... at 3:59:4:59/54.39%
+10	58aa, >1A0N.pdb... at 3:58:4:58/53.57%
+>Cluster 79
+0	59aa, >1GYZ.pdb... *
+>Cluster 80
+0	59aa, >5JRT.pdb... *
+>Cluster 81
+0	56aa, >5UBS.pdb... at 2:56:3:57/81.82%
+1	56aa, >5UCE.pdb... at 2:56:3:57/81.82%
+2	56aa, >1EM7.pdb_L7A... at 1:56:2:57/82.14%
+3	56aa, >1EM7.pdb_V54S... at 1:56:2:57/80.36%
+4	57aa, >1GB4.pdb_A27K... at 2:57:2:57/80.36%
+5	57aa, >1GB4.pdb_F53D... at 2:57:2:57/78.57%
+6	56aa, >1PGA.pdb_L5A... at 2:56:3:57/85.45%
+7	56aa, >1PGA.pdb_L7S... at 2:56:3:57/87.27%
+8	56aa, >1PGA.pdb_T51A... at 2:56:3:57/85.45%
+9	56aa, >1PGA.pdb_V39S... at 2:56:3:57/85.45%
+10	59aa, >1PGX.pdb_A27S... *
+11	59aa, >1PGX.pdb_G42A... at 1:59:1:59/96.61%
+12	57aa, >2ZW1.pdb_V55S... at 3:57:3:57/74.55%
+13	57aa, >2ZW1.pdb_Y34A... at 3:57:3:57/74.55%
+14	56aa, >2LUM.pdb... at 3:56:4:57/98.15%
+15	56aa, >1PGA.pdb_pross9... at 2:56:3:57/87.27%
+16	59aa, >1PGX.pdb... at 1:59:1:59/98.31%
+17	56aa, >1EM7.pdb... at 1:56:2:57/82.14%
+18	57aa, >2N9L.pdb... at 3:57:3:57/87.27%
+19	57aa, >1IGD.pdb... at 1:57:1:57/98.25%
+20	56aa, >1PGA.pdb... at 2:56:3:57/87.27%
+21	56aa, >6NJF.pdb... at 2:56:3:57/83.64%
+22	56aa, >5UB0.pdb... at 2:56:3:57/83.64%
+>Cluster 82
+0	59aa, >1S1N.pdb_F11S... *
+1	59aa, >1S1N.pdb_V29A... at 1:59:1:59/96.61%
+2	59aa, >1S1N.pdb... at 1:59:1:59/98.31%
+>Cluster 83
+0	59aa, >1YEZ.pdb_V46S... *
+>Cluster 84
+0	58aa, >1I2T.pdb... *
+>Cluster 85
+0	58aa, >1Y0M.pdb... *
+>Cluster 86
+0	58aa, >1QLY.pdb... *
+1	58aa, >1GL5.pdb... at 4:55:4:55/65.38%
+>Cluster 87
+0	58aa, >v2_4UZX.pdb... *
+>Cluster 88
+0	58aa, >2EXD.pdb... *
+>Cluster 89
+0	57aa, >6EWT.pdb... *
+1	56aa, >6EWU.pdb... at 2:56:2:56/72.73%
+2	56aa, >6EWS.pdb... at 1:56:1:56/71.43%
+>Cluster 90
+0	57aa, >5OAO.pdb... *
+>Cluster 91
+0	57aa, >3I35.pdb... *
+>Cluster 92
+0	57aa, >7JJK.pdb... *
+>Cluster 93
+0	57aa, >2LP5.pdb... *
+1	55aa, >2L2P.pdb... at 1:55:1:55/100.00%
+2	55aa, >1SRM.pdb... at 2:55:3:56/72.22%
+>Cluster 94
+0	56aa, >r6_560_TrROS_Hall.pdb... *
+>Cluster 95
+0	56aa, >r6_831_TrROS_Hall.pdb... *
+>Cluster 96
+0	56aa, >1ZLM.pdb... *
+>Cluster 97
+0	56aa, >2JVG.pdb... *
+>Cluster 98
+0	56aa, >2JZ2.pdb... *
+>Cluster 99
+0	56aa, >2WNM.pdb... *
+>Cluster 100
+0	55aa, >1LP1.pdb... at 1:53:4:56/75.47%
+1	54aa, >2B88.pdb... at 1:54:3:56/75.93%
+2	50aa, >6SOW.pdb... at 1:50:7:56/88.00%
+3	50aa, >2KZJ.pdb... at 1:50:7:56/76.00%
+4	56aa, >v2_2M5A.pdb... *
+5	54aa, >2B88.pdb_pross1... at 1:54:3:56/81.48%
+6	54aa, >2B88.pdb_pross4... at 1:54:3:56/85.19%
+7	54aa, >2B89.pdb... at 1:53:4:56/75.47%
+8	54aa, >2KZI.pdb_pross1... at 1:54:3:56/81.48%
+>Cluster 101
+0	55aa, >2L6Q.pdb... *
+>Cluster 102
+0	55aa, >2LHR.pdb... *
+>Cluster 103
+0	55aa, >2MI6.pdb... *
+>Cluster 104
+0	55aa, >2MKY.pdb... *
+>Cluster 105
+0	55aa, >2LCL.pdb... *
+>Cluster 106
+0	54aa, >2CJJ.pdb... *
+>Cluster 107
+0	48aa, >2JWS.pdb... at 3:44:9:50/61.90%
+1	45aa, >1GJS.pdb... at 1:44:7:50/50.00%
+2	54aa, >2MH8.pdb... *
+3	46aa, >2LHC.pdb... at 2:42:9:49/56.10%
+>Cluster 108
+0	53aa, >2MXD.pdb... *
+>Cluster 109
+0	53aa, >v2_2LXE.pdb... *
+>Cluster 110
+0	52aa, >2KRU.pdb... *
+>Cluster 111
+0	52aa, >2KWH.pdb... *
+>Cluster 112
+0	52aa, >2M2L.pdb... *
+>Cluster 113
+0	52aa, >2L7M.pdb... *
+1	51aa, >2L7F.pdb... at 1:51:2:52/98.04%
+2	48aa, >2M0C.pdb... at 2:48:3:49/65.96%
+>Cluster 114
+0	52aa, >2MYX.pdb... *
+>Cluster 115
+0	52aa, >2L09.pdb... *
+>Cluster 116
+0	52aa, >2KVT.pdb... *
+>Cluster 117
+0	51aa, >r3_162_TrROS_Hall.pdb... *
+>Cluster 118
+0	51aa, >v2_2LDM.pdb... *
+>Cluster 119
+0	50aa, >2JWT.pdb... *
+1	48aa, >1ENH.pdb... at 1:48:3:50/100.00%
+2	44aa, >6FVC.pdb... at 1:44:7:50/97.73%
+>Cluster 120
+0	50aa, >2K28.pdb... *
+1	49aa, >2K1B.pdb... at 2:49:1:48/75.00%
+>Cluster 121
+0	50aa, >v2_2HDZ.pdb... *
+>Cluster 122
+0	49aa, >r11_569_TrROS_Hall.pdb... *
+>Cluster 123
+0	49aa, >r11_797_TrROS_Hall.pdb... *
+>Cluster 124
+0	49aa, >r11_829_TrROS_Hall.pdb... *
+>Cluster 125
+0	49aa, >r11_1081_TrROS_Hall.pdb... *
+>Cluster 126
+0	48aa, >r7_587_TrROS_Hall.pdb... *
+>Cluster 127
+0	48aa, >2HBB.pdb... *
+1	48aa, >2HBB.pdb_pross4... at 1:48:1:48/97.92%
+2	48aa, >2HBB.pdb_pross6... at 1:48:1:48/95.83%
+3	48aa, >2HBB.pdb_pross7... at 1:48:1:48/91.67%
+4	48aa, >2HBB.pdb_pross9... at 1:48:1:48/87.50%
+>Cluster 128
+0	48aa, >2N88.pdb... *
+>Cluster 129
+0	48aa, >v2_6IVS.pdb... *
+>Cluster 130
+0	47aa, >EA|run2_0325_0005.pdb... *
+1	47aa, >EA|run3_0321_0005.pdb... at 2:44:2:44/51.16%
+2	47aa, >CONTROL_DUPLICATE... at 1:47:1:47/100.00%
+>Cluster 131
+0	47aa, >EA|run3_0525_0006.pdb... *
+>Cluster 132
+0	47aa, >EA|run3_1140_0005.pdb... *
+1	47aa, >EA|run7_1572_0002.pdb... at 4:47:4:47/52.27%
+2	47aa, >XX|run10_1081_0004.pdb... at 4:47:4:47/54.55%
+3	47aa, >EA|run2_0290_0001.pdb... at 3:44:3:44/52.38%
+>Cluster 133
+0	47aa, >EA|run5_0050_0004.pdb... *
+1	47aa, >GG|run4_1050_0002.pdb... at 11:47:11:47/56.76%
+>Cluster 134
+0	47aa, >EA|run6_1429_0006.pdb... *
+1	47aa, >XX|run8_1063_0003.pdb... at 4:44:4:44/51.22%
+>Cluster 135
+0	47aa, >GG|run1_1390_0006.pdb... *
+>Cluster 136
+0	47aa, >GG|run2_0085_0001.pdb... *
+1	47aa, >GG|run5_1309_0004.pdb... at 5:45:5:45/53.66%
+>Cluster 137
+0	47aa, >GG|run3_1315_0003.pdb... *
+>Cluster 138
+0	47aa, >GG|run3_1365_0003.pdb... *
+1	47aa, >GG|run6_1310_0004.pdb... at 1:47:1:47/61.70%
+2	47aa, >XX|run1_0254_0003.pdb... at 2:47:2:47/50.00%
+>Cluster 139
+0	47aa, >GG|run4_0467_0002.pdb... *
+>Cluster 140
+0	47aa, >GG|run5_0637_0006.pdb... *
+>Cluster 141
+0	47aa, >GG|run5_1147_0004.pdb... *
+>Cluster 142
+0	47aa, >GG|run6_0775_0006.pdb... *
+>Cluster 143
+0	47aa, >GG|run6_0851_0003.pdb... *
+1	47aa, >GG|run4_0284_0002.pdb... at 3:47:3:47/51.11%
+>Cluster 144
+0	47aa, >XX|run1_0367_0004.pdb... *
+>Cluster 145
+0	47aa, >XX|run1_0455_0002.pdb... *
+>Cluster 146
+0	47aa, >XX|run1_0461_0006.pdb... *
+>Cluster 147
+0	47aa, >XX|run3_1384_0005.pdb... *
+>Cluster 148
+0	47aa, >XX|run5_0690_0002.pdb... *
+>Cluster 149
+0	47aa, >XX|run6_1020_0004.pdb... *
+>Cluster 150
+0	47aa, >XX|run6_1081_0004.pdb... *
+>Cluster 151
+0	47aa, >XX|run7_0974_0003.pdb... *
+1	47aa, >EA|run7_1025_0001.pdb... at 4:47:4:47/56.82%
+>Cluster 152
+0	47aa, >XX|run8_0733_0006.pdb... *
+>Cluster 153
+0	47aa, >XX|run8_1098_0003.pdb... *
+>Cluster 154
+0	47aa, >r10_437_TrROS_Hall.pdb... *
+1	47aa, >r10_572_TrROS_Hall.pdb... at 4:47:8:47/50.00%
+>Cluster 155
+0	47aa, >5LXJ.pdb... *
+1	44aa, >2K9D.pdb... at 1:44:3:46/61.36%
+>Cluster 156
+0	47aa, >4G3O.pdb... *
+1	46aa, >2LVN.pdb... at 1:43:5:47/100.00%
+>Cluster 157
+0	47aa, >5Z2S.pdb... *
+>Cluster 158
+0	47aa, >2MKX.pdb_L11A... *
+1	47aa, >2MKX.pdb_N29S... at 1:47:1:47/95.74%
+>Cluster 159
+0	47aa, >EA|run6_0680_0006.pdb... *
+>Cluster 160
+0	47aa, >XX|run5_1034_0004.pdb... *
+>Cluster 161
+0	47aa, >r10_490_TrROS_Hall.pdb... *
+>Cluster 162
+0	47aa, >XX|run8_1203_0001.pdb... *
+>Cluster 163
+0	46aa, >r4_412_TrROS_Hall.pdb... *
+>Cluster 164
+0	46aa, >r4_43_TrROS_Hall.pdb... *
+>Cluster 165
+0	44aa, >1IFY.pdb... *
+>Cluster 166
+0	44aa, >1PV0.pdb... *
+>Cluster 167
+0	44aa, >1W4G.pdb... *
+1	41aa, >1W4F.pdb... at 1:41:3:43/95.12%
+>Cluster 168
+0	44aa, >2WXC.pdb... *
+1	44aa, >1W4H.pdb... at 1:44:1:44/97.73%
+2	44aa, >2BTH.pdb... at 1:44:1:44/95.45%
+>Cluster 169
+0	41aa, >2WQG.pdb... at 1:41:1:41/97.56%
+1	44aa, >4UZW.pdb... *
+>Cluster 170
+0	44aa, >3V1A.pdb... *
+>Cluster 171
+0	43aa, >EEHEE_rd3_0019.pdb... *
+1	43aa, >EEHEE_rd3_0094.pdb... at 2:43:2:43/52.38%
+2	43aa, >EEHEE_rd3_1587.pdb... at 3:43:3:43/58.54%
+3	43aa, >EEHEE_rd3_1810.pdb... at 3:43:3:43/51.22%
+4	43aa, >EEHEE_rd4_0371.pdb... at 3:43:3:43/63.41%
+5	43aa, >EEHEE_rd4_0469.pdb... at 3:43:3:43/51.22%
+6	43aa, >EEHEE_rd4_0794.pdb... at 3:43:3:43/56.10%
+7	43aa, >EEHEE_rd3_0657.pdb... at 1:43:1:43/55.81%
+8	43aa, >EEHEE_rd3_0809.pdb... at 3:43:3:43/53.66%
+9	43aa, >EEHEE_rd3_1615.pdb... at 2:43:2:43/64.29%
+>Cluster 172
+0	43aa, >EEHEE_rd3_0130.pdb... *
+1	43aa, >EEHEE_rd3_1367.pdb... at 6:43:6:43/55.26%
+>Cluster 173
+0	43aa, >EEHEE_rd3_0146.pdb... *
+1	43aa, >EEHEE_rd4_0256.pdb... at 2:43:2:43/50.00%
+>Cluster 174
+0	43aa, >EEHEE_rd3_0602.pdb... *
+1	43aa, >EEHEE_rd3_1049.pdb... at 1:43:1:43/51.16%
+2	40aa, >EHEE_rd3_0053.pdb... at 6:40:12:43/50.00%
+>Cluster 175
+0	43aa, >EEHEE_rd3_1498.pdb... *
+>Cluster 176
+0	43aa, >EEHEE_rd3_1716.pdb... *
+>Cluster 177
+0	43aa, >EEHEE_rd4_0003.pdb... *
+1	43aa, >EEHEE_rd4_0308.pdb... at 3:43:3:43/56.10%
+2	43aa, >EEHEE_rd4_0481.pdb... at 3:43:3:43/60.98%
+3	43aa, >EEHEE_rd4_0005.pdb... at 3:43:3:43/60.98%
+>Cluster 178
+0	43aa, >EEHEE_rd4_0363.pdb... *
+1	43aa, >EEHEE_rd4_0784.pdb... at 2:43:2:43/50.00%
+>Cluster 179
+0	43aa, >EEHEE_rd4_0647.pdb... *
+1	43aa, >EEHEE_rd4_0763.pdb... at 6:43:6:43/50.00%
+>Cluster 180
+0	43aa, >HEEH_KT_rd6_0007.pdb... *
+>Cluster 181
+0	43aa, >HEEH_KT_rd6_0746.pdb... *
+>Cluster 182
+0	43aa, >HEEH_KT_rd6_0790.pdb... *
+>Cluster 183
+0	43aa, >HEEH_KT_rd6_1415.pdb... *
+>Cluster 184
+0	43aa, >HEEH_KT_rd6_3632.pdb... *
+>Cluster 185
+0	43aa, >HEEH_rd3_0223.pdb... *
+>Cluster 186
+0	43aa, >HEEH_rd4_0094.pdb... *
+>Cluster 187
+0	43aa, >HEEH_rd4_0097.pdb... *
+1	43aa, >HEEH_rd4_0349.pdb... at 4:43:4:43/55.00%
+2	41aa, >5UYO.pdb... at 1:41:1:41/100.00%
+>Cluster 188
+0	43aa, >HHH_rd1_0244.pdb... *
+>Cluster 189
+0	43aa, >HHH_rd1_0335.pdb... *
+>Cluster 190
+0	43aa, >HHH_rd1_0473.pdb... *
+1	43aa, >HHH_rd1_0493.pdb... at 3:43:3:43/56.10%
+>Cluster 191
+0	43aa, >HHH_rd1_0516.pdb... *
+>Cluster 192
+0	43aa, >HHH_rd1_0598.pdb... *
+>Cluster 193
+0	43aa, >HHH_rd1_0606.pdb... *
+>Cluster 194
+0	43aa, >HHH_rd1_0949.pdb... *
+>Cluster 195
+0	43aa, >HHH_rd2_0181.pdb... *
+>Cluster 196
+0	43aa, >HHH_rd4_0124.pdb... *
+1	43aa, >HHH_rd4_0613.pdb... at 2:42:2:42/51.22%
+2	43aa, >HHH_rd4_0557.pdb... at 2:42:2:42/51.22%
+3	43aa, >HHH_rd4_0395.pdb... at 2:43:2:43/59.52%
+>Cluster 197
+0	43aa, >HHH_rd4_0676.pdb... *
+>Cluster 198
+0	43aa, >HHH_rd4_0816.pdb... *
+>Cluster 199
+0	43aa, >HHH_rd4_0870.pdb... *
+>Cluster 200
+0	39aa, >1I6C.pdb... at 1:34:10:43/100.00%
+1	43aa, >2M8I.pdb... *
+2	43aa, >2M8J.pdb... at 1:43:1:43/97.67%
+3	34aa, >2M9I.pdb... at 1:34:10:43/88.24%
+4	36aa, >2KCF.pdb... at 3:36:10:43/100.00%
+5	33aa, >2M9F.pdb... at 1:33:10:43/82.35%
+6	32aa, >2M9E.pdb... at 1:32:10:42/81.82%
+>Cluster 201
+0	43aa, >HHH_rd2_0155.pdb... *
+>Cluster 202
+0	43aa, >EEHEE_rd3_1702.pdb... *
+>Cluster 203
+0	43aa, >EEHEE_rd3_1818.pdb... *
+>Cluster 204
+0	43aa, >EEHEE_rd4_0470.pdb... *
+>Cluster 205
+0	43aa, >HEEH_KT_rd6_0280.pdb... *
+>Cluster 206
+0	43aa, >HEEH_KT_rd6_0793.pdb... *
+>Cluster 207
+0	43aa, >HHH_rd1_0142.pdb... *
+>Cluster 208
+0	43aa, >HHH_rd1_0578.pdb... *
+>Cluster 209
+0	36aa, >1WR4.pdb... at 5:34:8:37/50.00%
+1	39aa, >2OP7.pdb... at 5:35:8:38/58.06%
+2	34aa, >2YSF.pdb... at 2:32:8:38/58.06%
+3	43aa, >5AHT.pdb... *
+>Cluster 210
+0	43aa, >2YSB.pdb... *
+>Cluster 211
+0	43aa, >HEEH_KT_rd6_0872.pdb... *
+>Cluster 212
+0	43aa, >HEEH_KT_rd6_3546.pdb... *
+>Cluster 213
+0	43aa, >HEEH_rd3_0055.pdb... *
+>Cluster 214
+0	43aa, >5LWC.pdb... *
+>Cluster 215
+0	42aa, >2L2D.pdb... *
+>Cluster 216
+0	41aa, >1K1V.pdb... *
+>Cluster 217
+0	40aa, >EHEE_rd1_0101.pdb... *
+>Cluster 218
+0	40aa, >EHEE_rd1_0407.pdb... *
+1	40aa, >EHEE_rd2_0601.pdb... at 3:37:3:37/57.14%
+>Cluster 219
+0	40aa, >EHEE_rd1_0459.pdb... *
+1	40aa, >EHEE_rd2_0152.pdb... at 7:40:7:40/55.88%
+>Cluster 220
+0	40aa, >EHEE_rd2_0191.pdb... *
+1	40aa, >EHEE_rd2_0751.pdb... at 4:40:4:40/62.16%
+2	40aa, >EHEE_rd2_1257.pdb... at 3:39:3:39/59.46%
+>Cluster 221
+0	40aa, >EHEE_rd2_0196.pdb... *
+1	39aa, >5UP5.pdb... at 1:39:2:40/51.28%
+>Cluster 222
+0	40aa, >EHEE_rd2_0372.pdb... *
+>Cluster 223
+0	40aa, >EHEE_rd2_0487.pdb... *
+>Cluster 224
+0	40aa, >EHEE_rd2_1106.pdb... *
+>Cluster 225
+0	40aa, >EHEE_rd3_0035.pdb... *
+>Cluster 226
+0	40aa, >EHEE_rd4_0086.pdb... *
+1	40aa, >EHEE_rd4_0195.pdb... at 2:37:2:37/50.00%
+2	40aa, >EHEE_rd4_0864.pdb... at 7:40:7:40/55.88%
+3	40aa, >EHEE_rd4_0726.pdb... at 2:37:2:37/55.56%
+>Cluster 227
+0	40aa, >EHEE_rd4_0172.pdb... *
+1	40aa, >EHEE_rd4_0325.pdb... at 2:37:2:37/50.00%
+>Cluster 228
+0	40aa, >EHEE_rd4_0463.pdb... *
+>Cluster 229
+0	40aa, >EHEE_rd4_0625.pdb... *
+1	40aa, >EHEE_rd4_0502.pdb... at 3:40:3:40/57.89%
+>Cluster 230
+0	40aa, >EHEE_rd4_0840.pdb... *
+>Cluster 231
+0	40aa, >2RRU.pdb... *
+>Cluster 232
+0	40aa, >2GP8.pdb... *
+>Cluster 233
+0	40aa, >EHEE_rd4_0044.pdb... *
+>Cluster 234
+0	40aa, >EHEE_rd4_0098.pdb... *
+>Cluster 235
+0	40aa, >EHEE_rd4_0394.pdb... *
+>Cluster 236
+0	40aa, >EHEE_rd4_0877.pdb... *
+>Cluster 237
+0	40aa, >6OBK.pdb... *
+>Cluster 238
+0	39aa, >2JVD.pdb... *
+>Cluster 239
+0	38aa, >2M8E.pdb... *
+>Cluster 240
+0	37aa, >6YSE.pdb... *
+>Cluster 241
+0	37aa, >1E0L.pdb... *
+1	37aa, >2MW9.pdb... at 1:37:1:37/97.30%
+2	37aa, >2MWA.pdb... at 1:37:1:37/97.30%
+3	37aa, >2MWB.pdb... at 1:37:1:37/97.30%
+4	37aa, >2N4R.pdb... at 1:37:1:37/97.30%

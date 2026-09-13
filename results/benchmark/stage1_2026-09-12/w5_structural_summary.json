@@ -1,0 +1,24 @@
+{
+  "source_ree_raw_chain_pairs": 822,
+  "unique_ree_sequences_at_least_10aa": 439,
+  "short_sequences_unsearchable": [
+    "2VXC_C",
+    "3B7S_B",
+    "3B7T_B",
+    "6ENB_B"
+  ],
+  "candidate_ca_entities": 605,
+  "exact_sequence_cross_deposit_rows": 327,
+  "distinct_ree_ca_entry_pairs": 327,
+  "distinct_exact_sequences": 8,
+  "element_pair_contrasts": [
+    "CA/LU",
+    "CA/PR",
+    "CA/SM",
+    "CA/TB",
+    "CA/YB"
+  ],
+  "selectivity_ground_truth_pairs": 0,
+  "positive_control_1NCZ_1TOP": true,
+  "negative_control_same_entry_excluded": true
+}
