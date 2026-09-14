@@ -1,0 +1,7 @@
+Sign-in unavailable to this agent; Stage 3i-b stopped at Task 0.
+
+14 September 2026, 14:57 UTC. `codex login` started a local browser callback flow on port 1455, but the ChatGPT account sign-in could not be completed from this terminal. `codex login status` remained `Not logged in`. The waiting login process was interrupted. No API-key path, alternate CLI, or vendor was substituted.
+
+The authenticated models endpoint did not return a model list, so no exact model ID or reasoning effort was pinned. Tasks 1–5 were not run. In particular, the prior-cell model-visible grant remains unaudited, the MCP-only firewall and shell negative control remain unverified, and the single frontier cell remains unattempted. The result is **UNDEMONSTRATED**; dispositions (a), (b), and (c) do not apply. Stage 4 remains closed. No labels, evaluator, scorer, or additional cells were opened or run.
+
+The account holder must complete `codex login` in this environment before this control can resume. [Official OpenAI documentation](https://developers.openai.com/codex/auth) says `codex login` requires completion of the browser flow. Once the session is active, the authorized sequence is the model-side prior-grant audit, an MCP-only single-agent grant with a shell must-fail control, exact model pinning, the seven-server ladder, then one unscored cell. This finding does not infer that prior cells were or were not MCP-only.
