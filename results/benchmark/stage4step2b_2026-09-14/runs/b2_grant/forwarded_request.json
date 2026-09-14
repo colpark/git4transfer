@@ -1,0 +1,13 @@
+{
+  "model": "Qwen3-30B-A3B-Q4_K_M",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Reply ok"
+    }
+  ],
+  "temperature": 0.2,
+  "seed": 1,
+  "max_tokens": 32,
+  "stream": false
+}

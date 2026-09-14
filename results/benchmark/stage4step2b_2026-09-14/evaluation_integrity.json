@@ -1,0 +1,44 @@
+{
+  "scored_once": true,
+  "blind_hashes_verified_before_label_open": true,
+  "sealed_only": [
+    "AACC1_PSEAI_Dandage_2018",
+    "ARGR_ECOLI_Tsuboyama_2023_1AOY",
+    "ENVZ_ECOLI_Ghose_2023"
+  ],
+  "scorable_145_labels_opened": false,
+  "stage3_evaluator_sha256": "723fbf5c03831d470b54fa5d566a7782304e43900a3bed932355084aa56d7b91",
+  "mechanical_floor_checks": [
+    {
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "b3",
+      "matches_published": true
+    },
+    {
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "floor_c",
+      "matches_published": true
+    },
+    {
+      "assay_id": "ARGR_ECOLI_Tsuboyama_2023_1AOY",
+      "arm": "b3",
+      "matches_published": true
+    },
+    {
+      "assay_id": "ARGR_ECOLI_Tsuboyama_2023_1AOY",
+      "arm": "floor_c",
+      "matches_published": true
+    },
+    {
+      "assay_id": "ENVZ_ECOLI_Ghose_2023",
+      "arm": "b3",
+      "matches_published": true
+    },
+    {
+      "assay_id": "ENVZ_ECOLI_Ghose_2023",
+      "arm": "floor_c",
+      "matches_published": true
+    }
+  ],
+  "smoke_eval_rows_sha256": "930d481884d6e8e64b5cdf904635a3dd2633ea0809d27b7e5045913a82cf223c"
+}

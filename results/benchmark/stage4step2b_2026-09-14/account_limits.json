@@ -1,0 +1,80 @@
+{
+  "observed_at_utc": "2026-09-14T21:09:42.588067+00:00",
+  "account": {
+    "authMode": null,
+    "planType": null,
+    "error": null
+  },
+  "rateLimits": {
+    "limitId": "codex",
+    "limitName": null,
+    "normalModelSlug": null,
+    "primary": {
+      "usedPercent": 49,
+      "windowDurationMins": 10080,
+      "resetsAt": 1789831829
+    },
+    "secondary": null,
+    "credits": {
+      "hasCredits": false,
+      "unlimited": false,
+      "balance": "0"
+    },
+    "individualLimit": null,
+    "spendControlReached": false,
+    "planType": "prolite",
+    "rateLimitReachedType": null
+  },
+  "rateLimitsByLimitId": {
+    "codex_bengalfox": {
+      "limitId": "codex_bengalfox",
+      "limitName": "GPT-5.3-Codex-Spark",
+      "normalModelSlug": null,
+      "primary": {
+        "usedPercent": 0,
+        "windowDurationMins": 300,
+        "resetsAt": 1789438182
+      },
+      "secondary": {
+        "usedPercent": 0,
+        "windowDurationMins": 10080,
+        "resetsAt": 1790024982
+      },
+      "credits": null,
+      "individualLimit": null,
+      "spendControlReached": null,
+      "planType": "prolite",
+      "rateLimitReachedType": null
+    },
+    "codex": {
+      "limitId": "codex",
+      "limitName": null,
+      "normalModelSlug": null,
+      "primary": {
+        "usedPercent": 49,
+        "windowDurationMins": 10080,
+        "resetsAt": 1789831829
+      },
+      "secondary": null,
+      "credits": {
+        "hasCredits": false,
+        "unlimited": false,
+        "balance": "0"
+      },
+      "individualLimit": null,
+      "spendControlReached": false,
+      "planType": "prolite",
+      "rateLimitReachedType": null
+    }
+  },
+  "rateLimitReachedType": null,
+  "rateLimits_error": null,
+  "usage_summary": {
+    "lifetimeTokens": 397456621,
+    "peakDailyTokens": 185440562,
+    "longestRunningTurnSec": 5821,
+    "currentStreakDays": 4,
+    "longestStreakDays": 4
+  },
+  "usage_error": null
+}

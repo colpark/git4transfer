@@ -1,0 +1,215 @@
+[
+  {
+    "assay_id": "AACC1_PSEAI_Dandage_2018",
+    "wall_s": 929.156,
+    "trace_path": "results/benchmark/stage4step2b_2026-09-14/runs/b4_AACC1_PSEAI_Dandage_2018/trace.jsonl",
+    "turn_completed": true,
+    "usage": {
+      "input_tokens": 1006510,
+      "cached_input_tokens": 921728,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 8947,
+      "reasoning_output_tokens": 3017
+    },
+    "by_server": {
+      "classical": {
+        "attempted": 38,
+        "usable": 37
+      },
+      "generative": {
+        "attempted": 101,
+        "usable": 101
+      },
+      "physics": {
+        "attempted": 1,
+        "usable": 0
+      },
+      "predictive": {
+        "attempted": 100,
+        "usable": 100
+      },
+      "record": {
+        "attempted": 1,
+        "usable": 1
+      }
+    },
+    "fm": {
+      "esm2_likelihood": {
+        "attempted": 100,
+        "usable": 100,
+        "unique_variants_attempted": 100,
+        "unique_variants_usable": 100
+      },
+      "esm_if": {
+        "attempted": 101,
+        "usable": 101,
+        "unique_variants_attempted": 100,
+        "unique_variants_usable": 100
+      }
+    },
+    "input_forms": {
+      "blosum_score": {
+        "variant": 37
+      },
+      "esm2_likelihood": {
+        "variant": 100
+      },
+      "esm_if": {
+        "variant": 100
+      }
+    },
+    "submissions": [
+      {
+        "usable": true,
+        "accepted": true
+      }
+    ],
+    "native_invocations": [],
+    "subagents_spawned": 0,
+    "permission_denials": null,
+    "cost_usd": null
+  },
+  {
+    "assay_id": "ARGR_ECOLI_Tsuboyama_2023_1AOY",
+    "wall_s": 413.588,
+    "trace_path": "results/benchmark/stage4step1_2026-09-14/codex_cell.jsonl",
+    "turn_completed": true,
+    "usage": {
+      "input_tokens": 753312,
+      "cached_input_tokens": 685696,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 15943,
+      "reasoning_output_tokens": 7437
+    },
+    "by_server": {
+      "classical": {
+        "attempted": 311,
+        "usable": 311
+      },
+      "generative": {
+        "attempted": 304,
+        "usable": 304
+      },
+      "physics": {
+        "attempted": 1,
+        "usable": 0
+      },
+      "predictive": {
+        "attempted": 302,
+        "usable": 302
+      },
+      "record": {
+        "attempted": 1,
+        "usable": 1
+      }
+    },
+    "fm": {
+      "esm2_likelihood": {
+        "attempted": 302,
+        "usable": 302,
+        "unique_variants_attempted": 100,
+        "unique_variants_usable": 100
+      },
+      "esm_if": {
+        "attempted": 304,
+        "usable": 304,
+        "unique_variants_attempted": 100,
+        "unique_variants_usable": 100
+      }
+    },
+    "input_forms": {
+      "esm2_likelihood": {
+        "variant": 302
+      },
+      "esm_if": {
+        "variant": 301
+      },
+      "pssm_score": {
+        "variant": 302
+      }
+    },
+    "submissions": [
+      {
+        "usable": true,
+        "accepted": true
+      }
+    ],
+    "native_invocations": [],
+    "subagents_spawned": 0,
+    "permission_denials": null,
+    "cost_usd": null
+  },
+  {
+    "assay_id": "ENVZ_ECOLI_Ghose_2023",
+    "wall_s": 1154.817,
+    "trace_path": "results/benchmark/stage4step2b_2026-09-14/runs/b4_ENVZ_ECOLI_Ghose_2023/trace.jsonl",
+    "turn_completed": true,
+    "usage": {
+      "input_tokens": 1693148,
+      "cached_input_tokens": 1589504,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 19521,
+      "reasoning_output_tokens": 5611
+    },
+    "by_server": {
+      "classical": {
+        "attempted": 203,
+        "usable": 203
+      },
+      "generative": {
+        "attempted": 101,
+        "usable": 101
+      },
+      "physics": {
+        "attempted": 1,
+        "usable": 0
+      },
+      "predictive": {
+        "attempted": 225,
+        "usable": 225
+      },
+      "record": {
+        "attempted": 1,
+        "usable": 1
+      }
+    },
+    "fm": {
+      "esm2_likelihood": {
+        "attempted": 225,
+        "usable": 225,
+        "unique_variants_attempted": 100,
+        "unique_variants_usable": 100
+      },
+      "esm_if": {
+        "attempted": 101,
+        "usable": 101,
+        "unique_variants_attempted": 100,
+        "unique_variants_usable": 100
+      }
+    },
+    "input_forms": {
+      "blosum_score": {
+        "variant": 100
+      },
+      "esm2_likelihood": {
+        "variant": 225
+      },
+      "esm_if": {
+        "variant": 100
+      },
+      "pssm_score": {
+        "variant": 101
+      }
+    },
+    "submissions": [
+      {
+        "usable": true,
+        "accepted": true
+      }
+    ],
+    "native_invocations": [],
+    "subagents_spawned": 0,
+    "permission_denials": null,
+    "cost_usd": null
+  }
+]

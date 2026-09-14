@@ -1,0 +1,1089 @@
+{
+  "args": {
+    "answer": {
+      "methodology": "Ranked all supplied candidates by ESM-2 masked-marginal \u0394lnP plus ESM-IF1 backbone-conditioned \u0394lnP; larger is better. BLOSUM62 was used as independent validation and not added to the ranking score. BLAST-MSA retrieval and DSSP parsing failed, so no homolog/PSSM or DSSP claims are made. No assay outcome is claimed.",
+      "ranking": [
+        {
+          "mutant": "K38S",
+          "score": 3.322029
+        },
+        {
+          "mutant": "R72S",
+          "score": 1.668089
+        },
+        {
+          "mutant": "T75D",
+          "score": 1.337195
+        },
+        {
+          "mutant": "S39Y",
+          "score": 0.157856
+        },
+        {
+          "mutant": "K74N",
+          "score": -0.378586
+        },
+        {
+          "mutant": "Q101R",
+          "score": -0.527023
+        },
+        {
+          "mutant": "Q59R",
+          "score": -0.668869
+        },
+        {
+          "mutant": "D35E",
+          "score": -1.105525
+        },
+        {
+          "mutant": "E116T",
+          "score": -1.141926
+        },
+        {
+          "mutant": "Y148D",
+          "score": -2.56352
+        },
+        {
+          "mutant": "S39M",
+          "score": -2.860108
+        },
+        {
+          "mutant": "R28S",
+          "score": -3.06412
+        },
+        {
+          "mutant": "H117R",
+          "score": -3.715834
+        },
+        {
+          "mutant": "A55G",
+          "score": -3.793684
+        },
+        {
+          "mutant": "N135F",
+          "score": -4.051805
+        },
+        {
+          "mutant": "S104H",
+          "score": -4.601199
+        },
+        {
+          "mutant": "I106V",
+          "score": -4.677575
+        },
+        {
+          "mutant": "V95I",
+          "score": -4.805784
+        },
+        {
+          "mutant": "Q120H",
+          "score": -4.81706
+        },
+        {
+          "mutant": "D65G",
+          "score": -4.933398
+        },
+        {
+          "mutant": "A136G",
+          "score": -5.117888
+        },
+        {
+          "mutant": "E50A",
+          "score": -5.58067
+        },
+        {
+          "mutant": "V37I",
+          "score": -5.619564
+        },
+        {
+          "mutant": "Q36R",
+          "score": -5.868642
+        },
+        {
+          "mutant": "V37E",
+          "score": -6.40424
+        },
+        {
+          "mutant": "T124G",
+          "score": -6.414059
+        },
+        {
+          "mutant": "H117A",
+          "score": -6.472042
+        },
+        {
+          "mutant": "T124E",
+          "score": -6.591249
+        },
+        {
+          "mutant": "K131S",
+          "score": -6.740156
+        },
+        {
+          "mutant": "D151H",
+          "score": -6.851284
+        },
+        {
+          "mutant": "R49C",
+          "score": -7.083112
+        },
+        {
+          "mutant": "Y143H",
+          "score": -7.087992
+        },
+        {
+          "mutant": "G115C",
+          "score": -7.424456
+        },
+        {
+          "mutant": "N128G",
+          "score": -7.438721
+        },
+        {
+          "mutant": "T29S",
+          "score": -7.524274
+        },
+        {
+          "mutant": "D147S",
+          "score": -7.57229
+        },
+        {
+          "mutant": "L137I",
+          "score": -7.590394
+        },
+        {
+          "mutant": "R163V",
+          "score": -7.68536
+        },
+        {
+          "mutant": "E50S",
+          "score": -7.686304
+        },
+        {
+          "mutant": "R163M",
+          "score": -8.179081
+        },
+        {
+          "mutant": "E133D",
+          "score": -8.76296
+        },
+        {
+          "mutant": "L111M",
+          "score": -9.426681
+        },
+        {
+          "mutant": "R41W",
+          "score": -9.545986
+        },
+        {
+          "mutant": "T124N",
+          "score": -9.694812
+        },
+        {
+          "mutant": "D45W",
+          "score": -9.754246
+        },
+        {
+          "mutant": "Q120D",
+          "score": -9.849174
+        },
+        {
+          "mutant": "L70F",
+          "score": -10.20228
+        },
+        {
+          "mutant": "R41G",
+          "score": -10.257425
+        },
+        {
+          "mutant": "D150S",
+          "score": -10.688875
+        },
+        {
+          "mutant": "V141S",
+          "score": -10.753895
+        },
+        {
+          "mutant": "R163P",
+          "score": -11.047252
+        },
+        {
+          "mutant": "G52L",
+          "score": -11.085152
+        },
+        {
+          "mutant": "G149S",
+          "score": -12.488104
+        },
+        {
+          "mutant": "G149E",
+          "score": -12.722165
+        },
+        {
+          "mutant": "N128C",
+          "score": -12.82669
+        },
+        {
+          "mutant": "L70S",
+          "score": -12.853025
+        },
+        {
+          "mutant": "L44H",
+          "score": -13.537024
+        },
+        {
+          "mutant": "V37D",
+          "score": -13.859406
+        },
+        {
+          "mutant": "G149T",
+          "score": -13.942609
+        },
+        {
+          "mutant": "S114I",
+          "score": -14.204832
+        },
+        {
+          "mutant": "L46I",
+          "score": -14.332797
+        },
+        {
+          "mutant": "S58P",
+          "score": -14.418235
+        },
+        {
+          "mutant": "A125F",
+          "score": -14.542156
+        },
+        {
+          "mutant": "F51S",
+          "score": -14.88779
+        },
+        {
+          "mutant": "G149H",
+          "score": -15.243369
+        },
+        {
+          "mutant": "V88R",
+          "score": -15.514373
+        },
+        {
+          "mutant": "A78P",
+          "score": -15.615862
+        },
+        {
+          "mutant": "D150Y",
+          "score": -15.641578
+        },
+        {
+          "mutant": "T75P",
+          "score": -15.658162
+        },
+        {
+          "mutant": "D151W",
+          "score": -15.691848
+        },
+        {
+          "mutant": "A80L",
+          "score": -15.918475
+        },
+        {
+          "mutant": "Y143K",
+          "score": -16.177482
+        },
+        {
+          "mutant": "D150R",
+          "score": -16.573776
+        },
+        {
+          "mutant": "A43R",
+          "score": -18.55088
+        },
+        {
+          "mutant": "E133G",
+          "score": -18.675938
+        },
+        {
+          "mutant": "G149Y",
+          "score": -19.046787
+        },
+        {
+          "mutant": "Y157H",
+          "score": -19.782789
+        },
+        {
+          "mutant": "A112Q",
+          "score": -20.50036
+        },
+        {
+          "mutant": "L32H",
+          "score": -22.133969
+        },
+        {
+          "mutant": "L111S",
+          "score": -23.003202
+        },
+        {
+          "mutant": "A134L",
+          "score": -23.299119
+        },
+        {
+          "mutant": "L79P",
+          "score": -23.372015
+        },
+        {
+          "mutant": "A139H",
+          "score": -23.91594
+        },
+        {
+          "mutant": "L137P",
+          "score": -24.193734
+        },
+        {
+          "mutant": "G121M",
+          "score": -24.818873
+        },
+        {
+          "mutant": "V141P",
+          "score": -24.918314
+        },
+        {
+          "mutant": "L126T",
+          "score": -25.124835
+        },
+        {
+          "mutant": "A139Y",
+          "score": -25.262978
+        },
+        {
+          "mutant": "A134F",
+          "score": -25.450639
+        },
+        {
+          "mutant": "I142Y",
+          "score": -25.539928
+        },
+        {
+          "mutant": "G121Y",
+          "score": -25.997398
+        },
+        {
+          "mutant": "L130N",
+          "score": -26.089975
+        },
+        {
+          "mutant": "G161Q",
+          "score": -27.697769
+        },
+        {
+          "mutant": "A146K",
+          "score": -27.993782
+        },
+        {
+          "mutant": "Y157Q",
+          "score": -28.827661
+        },
+        {
+          "mutant": "Y157I",
+          "score": -29.37681
+        },
+        {
+          "mutant": "A134P",
+          "score": -29.811615
+        },
+        {
+          "mutant": "V113N",
+          "score": -29.894866
+        },
+        {
+          "mutant": "Y157R",
+          "score": -30.402658
+        },
+        {
+          "mutant": "Y157P",
+          "score": -37.086996
+        }
+      ],
+      "rejected": [
+        {
+          "mutant": "S39M",
+          "reason": "Rejected after full comparison: ensemble predicted score -2.860 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "R28S",
+          "reason": "Rejected after full comparison: ensemble predicted score -3.064 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "H117R",
+          "reason": "Rejected after full comparison: ensemble predicted score -3.716 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "A55G",
+          "reason": "Rejected after full comparison: ensemble predicted score -3.794 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "N135F",
+          "reason": "Rejected after full comparison: ensemble predicted score -4.052 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "S104H",
+          "reason": "Rejected after full comparison: ensemble predicted score -4.601 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "I106V",
+          "reason": "Rejected after full comparison: ensemble predicted score -4.678 versus cutoff -2.564; sequence-only support was outweighed by an unfavorable backbone-conditioned prediction. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "V95I",
+          "reason": "Rejected after full comparison: ensemble predicted score -4.806 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "Q120H",
+          "reason": "Rejected after full comparison: ensemble predicted score -4.817 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "D65G",
+          "reason": "Rejected after full comparison: ensemble predicted score -4.933 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "A136G",
+          "reason": "Rejected after full comparison: ensemble predicted score -5.118 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "E50A",
+          "reason": "Rejected after full comparison: ensemble predicted score -5.581 versus cutoff -2.564; sequence-only support was outweighed by an unfavorable backbone-conditioned prediction. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "V37I",
+          "reason": "Rejected after full comparison: ensemble predicted score -5.620 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "Q36R",
+          "reason": "Rejected after full comparison: ensemble predicted score -5.869 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "V37E",
+          "reason": "Rejected after full comparison: ensemble predicted score -6.404 versus cutoff -2.564; sequence-only support was outweighed by an unfavorable backbone-conditioned prediction. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "T124G",
+          "reason": "Rejected after full comparison: ensemble predicted score -6.414 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "H117A",
+          "reason": "Rejected after full comparison: ensemble predicted score -6.472 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "T124E",
+          "reason": "Rejected after full comparison: ensemble predicted score -6.591 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "K131S",
+          "reason": "Rejected after full comparison: ensemble predicted score -6.740 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "D151H",
+          "reason": "Rejected after full comparison: ensemble predicted score -6.851 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "R49C",
+          "reason": "Rejected after full comparison: ensemble predicted score -7.083 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "Y143H",
+          "reason": "Rejected after full comparison: ensemble predicted score -7.088 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "G115C",
+          "reason": "Rejected after full comparison: ensemble predicted score -7.424 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "N128G",
+          "reason": "Rejected after full comparison: ensemble predicted score -7.439 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "T29S",
+          "reason": "Rejected after full comparison: ensemble predicted score -7.524 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "D147S",
+          "reason": "Rejected after full comparison: ensemble predicted score -7.572 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "L137I",
+          "reason": "Rejected after full comparison: ensemble predicted score -7.590 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "R163V",
+          "reason": "Rejected after full comparison: ensemble predicted score -7.685 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "E50S",
+          "reason": "Rejected after full comparison: ensemble predicted score -7.686 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "R163M",
+          "reason": "Rejected after full comparison: ensemble predicted score -8.179 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "E133D",
+          "reason": "Rejected after full comparison: ensemble predicted score -8.763 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "L111M",
+          "reason": "Rejected after full comparison: ensemble predicted score -9.427 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "R41W",
+          "reason": "Rejected after full comparison: ensemble predicted score -9.546 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "T124N",
+          "reason": "Rejected after full comparison: ensemble predicted score -9.695 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "D45W",
+          "reason": "Rejected after full comparison: ensemble predicted score -9.754 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "Q120D",
+          "reason": "Rejected after full comparison: ensemble predicted score -9.849 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "L70F",
+          "reason": "Rejected after full comparison: ensemble predicted score -10.202 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "R41G",
+          "reason": "Rejected after full comparison: ensemble predicted score -10.257 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "D150S",
+          "reason": "Rejected after full comparison: ensemble predicted score -10.689 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "V141S",
+          "reason": "Rejected after full comparison: ensemble predicted score -10.754 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "R163P",
+          "reason": "Rejected after full comparison: ensemble predicted score -11.047 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "G52L",
+          "reason": "Rejected after full comparison: ensemble predicted score -11.085 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "G149S",
+          "reason": "Rejected after full comparison: ensemble predicted score -12.488 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "G149E",
+          "reason": "Rejected after full comparison: ensemble predicted score -12.722 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "N128C",
+          "reason": "Rejected after full comparison: ensemble predicted score -12.827 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "L70S",
+          "reason": "Rejected after full comparison: ensemble predicted score -12.853 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "L44H",
+          "reason": "Rejected after full comparison: ensemble predicted score -13.537 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "V37D",
+          "reason": "Rejected after full comparison: ensemble predicted score -13.859 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "G149T",
+          "reason": "Rejected after full comparison: ensemble predicted score -13.943 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "S114I",
+          "reason": "Rejected after full comparison: ensemble predicted score -14.205 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "L46I",
+          "reason": "Rejected after full comparison: ensemble predicted score -14.333 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "S58P",
+          "reason": "Rejected after full comparison: ensemble predicted score -14.418 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "A125F",
+          "reason": "Rejected after full comparison: ensemble predicted score -14.542 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "F51S",
+          "reason": "Rejected after full comparison: ensemble predicted score -14.888 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "G149H",
+          "reason": "Rejected after full comparison: ensemble predicted score -15.243 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "V88R",
+          "reason": "Rejected after full comparison: ensemble predicted score -15.514 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "A78P",
+          "reason": "Rejected after full comparison: ensemble predicted score -15.616 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "D150Y",
+          "reason": "Rejected after full comparison: ensemble predicted score -15.642 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "T75P",
+          "reason": "Rejected after full comparison: ensemble predicted score -15.658 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "D151W",
+          "reason": "Rejected after full comparison: ensemble predicted score -15.692 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "A80L",
+          "reason": "Rejected after full comparison: ensemble predicted score -15.918 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "Y143K",
+          "reason": "Rejected after full comparison: ensemble predicted score -16.177 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "D150R",
+          "reason": "Rejected after full comparison: ensemble predicted score -16.574 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "A43R",
+          "reason": "Rejected after full comparison: ensemble predicted score -18.551 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "E133G",
+          "reason": "Rejected after full comparison: ensemble predicted score -18.676 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "G149Y",
+          "reason": "Rejected after full comparison: ensemble predicted score -19.047 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "Y157H",
+          "reason": "Rejected after full comparison: ensemble predicted score -19.783 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "A112Q",
+          "reason": "Rejected after full comparison: ensemble predicted score -20.500 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "L32H",
+          "reason": "Rejected after full comparison: ensemble predicted score -22.134 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "L111S",
+          "reason": "Rejected after full comparison: ensemble predicted score -23.003 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "A134L",
+          "reason": "Rejected after full comparison: ensemble predicted score -23.299 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "L79P",
+          "reason": "Rejected after full comparison: ensemble predicted score -23.372 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "A139H",
+          "reason": "Rejected after full comparison: ensemble predicted score -23.916 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "L137P",
+          "reason": "Rejected after full comparison: ensemble predicted score -24.194 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "G121M",
+          "reason": "Rejected after full comparison: ensemble predicted score -24.819 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "V141P",
+          "reason": "Rejected after full comparison: ensemble predicted score -24.918 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "L126T",
+          "reason": "Rejected after full comparison: ensemble predicted score -25.125 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "A139Y",
+          "reason": "Rejected after full comparison: ensemble predicted score -25.263 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "A134F",
+          "reason": "Rejected after full comparison: ensemble predicted score -25.451 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "I142Y",
+          "reason": "Rejected after full comparison: ensemble predicted score -25.540 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "G121Y",
+          "reason": "Rejected after full comparison: ensemble predicted score -25.997 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "L130N",
+          "reason": "Rejected after full comparison: ensemble predicted score -26.090 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "G161Q",
+          "reason": "Rejected after full comparison: ensemble predicted score -27.698 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "A146K",
+          "reason": "Rejected after full comparison: ensemble predicted score -27.994 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "Y157Q",
+          "reason": "Rejected after full comparison: ensemble predicted score -28.828 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "Y157I",
+          "reason": "Rejected after full comparison: ensemble predicted score -29.377 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "A134P",
+          "reason": "Rejected after full comparison: ensemble predicted score -29.812 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "V113N",
+          "reason": "Rejected after full comparison: ensemble predicted score -29.895 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "Y157R",
+          "reason": "Rejected after full comparison: ensemble predicted score -30.403 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        },
+        {
+          "mutant": "Y157P",
+          "reason": "Rejected after full comparison: ensemble predicted score -37.087 versus cutoff -2.564; both learned evidence channels were unfavorable. This is a prediction, not a measured assay result."
+        }
+      ],
+      "selected": [
+        {
+          "basis": "Highest ensemble prediction: ESM-2 \u0394lnP +1.794 and ESM-IF1 backbone \u0394lnP +1.528 (sum +3.322); BLOSUM62 0. These are predictive log-likelihood changes, not assay outcomes; no valid homolog MSA was available.",
+          "evidence": [
+            "call_id:9653e4a2f51e460da232e1bc46e55396",
+            "call_id:101e70ba9db94f25aca5f7c2f5563f5b",
+            "call_id:6ec6770da47c41d2ae9e223098bffeb4",
+            "call_id:d9b6fcf425194b23a0849eb436756c4b"
+          ],
+          "mutant": "K38S",
+          "rank": 1,
+          "validation": [
+            {
+              "call_id": "call_id:9653e4a2f51e460da232e1bc46e55396",
+              "category": "learned_sequence"
+            },
+            {
+              "call_id": "call_id:101e70ba9db94f25aca5f7c2f5563f5b",
+              "category": "structure_conditioned_variant"
+            },
+            {
+              "call_id": "call_id:6ec6770da47c41d2ae9e223098bffeb4",
+              "category": "structure_conditioned_wild_type_reference"
+            },
+            {
+              "call_id": "call_id:d9b6fcf425194b23a0849eb436756c4b",
+              "category": "classical_substitution"
+            }
+          ],
+          "would_overturn": "Overturn if direct structural or biochemical evidence shows Lys38 makes an essential salt bridge/contact, or if replicate expression/stability/function measurements place K38S below lower-ranked candidates."
+        },
+        {
+          "basis": "Second ensemble prediction: ESM-2 \u0394lnP -0.259 offset by ESM-IF1 backbone \u0394lnP +1.927 (sum +1.668); BLOSUM62 -1. These are predictive log-likelihood changes, not assay outcomes; no valid homolog MSA was available.",
+          "evidence": [
+            "call_id:558a37c2297d42d2bc67668f2d9cef8e",
+            "call_id:32008408f8f547158e23a15be1845758",
+            "call_id:6ec6770da47c41d2ae9e223098bffeb4",
+            "call_id:b306bb9e723d4a4bbf3ed68afecd59c9"
+          ],
+          "mutant": "R72S",
+          "rank": 2,
+          "validation": [
+            {
+              "call_id": "call_id:558a37c2297d42d2bc67668f2d9cef8e",
+              "category": "learned_sequence"
+            },
+            {
+              "call_id": "call_id:32008408f8f547158e23a15be1845758",
+              "category": "structure_conditioned_variant"
+            },
+            {
+              "call_id": "call_id:6ec6770da47c41d2ae9e223098bffeb4",
+              "category": "structure_conditioned_wild_type_reference"
+            },
+            {
+              "call_id": "call_id:b306bb9e723d4a4bbf3ed68afecd59c9",
+              "category": "classical_substitution"
+            }
+          ],
+          "would_overturn": "Overturn if Arg72 is shown to contact substrate/cofactor or maintain an essential electrostatic network, or if replicate measurements show loss of expression, stability, or activity."
+        },
+        {
+          "basis": "Third ensemble prediction with agreement in direction: ESM-2 \u0394lnP +0.401 and ESM-IF1 backbone \u0394lnP +0.936 (sum +1.337); BLOSUM62 -1. These are predictive log-likelihood changes, not assay outcomes; no valid homolog MSA was available.",
+          "evidence": [
+            "call_id:34807df989e143d6be3c66ef4cc0aca1",
+            "call_id:f4e0afe531a74fd39c32dd395b2cfc15",
+            "call_id:6ec6770da47c41d2ae9e223098bffeb4",
+            "call_id:c82927ee66f74b848501dd417ad53fed"
+          ],
+          "mutant": "T75D",
+          "rank": 3,
+          "validation": [
+            {
+              "call_id": "call_id:34807df989e143d6be3c66ef4cc0aca1",
+              "category": "learned_sequence"
+            },
+            {
+              "call_id": "call_id:f4e0afe531a74fd39c32dd395b2cfc15",
+              "category": "structure_conditioned_variant"
+            },
+            {
+              "call_id": "call_id:6ec6770da47c41d2ae9e223098bffeb4",
+              "category": "structure_conditioned_wild_type_reference"
+            },
+            {
+              "call_id": "call_id:c82927ee66f74b848501dd417ad53fed",
+              "category": "classical_substitution"
+            }
+          ],
+          "would_overturn": "Overturn if Asp75 creates an unfavorable buried charge or disrupts ligand recognition, or if replicate measurements rank it below the cutoff."
+        },
+        {
+          "basis": "Fourth ensemble prediction: ESM-2 \u0394lnP +0.620, ESM-IF1 backbone \u0394lnP -0.463 (sum +0.158); BLOSUM62 -2, so this is a model-conflict candidate. These are predictive log-likelihood changes, not assay outcomes; no valid homolog MSA was available.",
+          "evidence": [
+            "call_id:974ad2bffc944836b58a8c88cbd12cb1",
+            "call_id:780ddb157783458ba0588a6e85690f72",
+            "call_id:6ec6770da47c41d2ae9e223098bffeb4",
+            "call_id:7ba7041f9f914c1bb8c8236aa1b1a2e4"
+          ],
+          "mutant": "S39Y",
+          "rank": 4,
+          "validation": [
+            {
+              "call_id": "call_id:974ad2bffc944836b58a8c88cbd12cb1",
+              "category": "learned_sequence"
+            },
+            {
+              "call_id": "call_id:780ddb157783458ba0588a6e85690f72",
+              "category": "structure_conditioned_variant"
+            },
+            {
+              "call_id": "call_id:6ec6770da47c41d2ae9e223098bffeb4",
+              "category": "structure_conditioned_wild_type_reference"
+            },
+            {
+              "call_id": "call_id:7ba7041f9f914c1bb8c8236aa1b1a2e4",
+              "category": "classical_substitution"
+            }
+          ],
+          "would_overturn": "Overturn if higher-resolution geometry shows a steric clash or exposed aromatic aggregation liability; the mildly unfavorable backbone score and BLOSUM62 score already make this less secure than ranks 1\u20133."
+        },
+        {
+          "basis": "Fifth ensemble prediction: ESM-2 \u0394lnP +0.228, ESM-IF1 backbone \u0394lnP -0.607 (sum -0.379); BLOSUM62 0. These are predictive log-likelihood changes, not assay outcomes; no valid homolog MSA was available.",
+          "evidence": [
+            "call_id:c68c8b1e235d438e8186a63dabf1c4b2",
+            "call_id:5ebd431502244c9098917a0e939b43f4",
+            "call_id:6ec6770da47c41d2ae9e223098bffeb4",
+            "call_id:79e5abb3e05b4a47a462abf822b7b2a8"
+          ],
+          "mutant": "K74N",
+          "rank": 5,
+          "validation": [
+            {
+              "call_id": "call_id:c68c8b1e235d438e8186a63dabf1c4b2",
+              "category": "learned_sequence"
+            },
+            {
+              "call_id": "call_id:5ebd431502244c9098917a0e939b43f4",
+              "category": "structure_conditioned_variant"
+            },
+            {
+              "call_id": "call_id:6ec6770da47c41d2ae9e223098bffeb4",
+              "category": "structure_conditioned_wild_type_reference"
+            },
+            {
+              "call_id": "call_id:79e5abb3e05b4a47a462abf822b7b2a8",
+              "category": "classical_substitution"
+            }
+          ],
+          "would_overturn": "Overturn if Lys74 is required for a salt bridge or ligand contact, or if replicate measurements confirm the modest negative ensemble prediction corresponds to impaired protein performance."
+        },
+        {
+          "basis": "Sixth ensemble prediction: ESM-2 \u0394lnP -1.226, ESM-IF1 backbone \u0394lnP +0.699 (sum -0.527); BLOSUM62 +1. These are predictive log-likelihood changes, not assay outcomes; no valid homolog MSA was available.",
+          "evidence": [
+            "call_id:9661dd553a674d4eb44f19acf18e7e80",
+            "call_id:ec9c783b39064841b5977ba6cbbb7f83",
+            "call_id:6ec6770da47c41d2ae9e223098bffeb4",
+            "call_id:f72e6cd5abf64353acae5c2071d0a967"
+          ],
+          "mutant": "Q101R",
+          "rank": 6,
+          "validation": [
+            {
+              "call_id": "call_id:9661dd553a674d4eb44f19acf18e7e80",
+              "category": "learned_sequence"
+            },
+            {
+              "call_id": "call_id:ec9c783b39064841b5977ba6cbbb7f83",
+              "category": "structure_conditioned_variant"
+            },
+            {
+              "call_id": "call_id:6ec6770da47c41d2ae9e223098bffeb4",
+              "category": "structure_conditioned_wild_type_reference"
+            },
+            {
+              "call_id": "call_id:f72e6cd5abf64353acae5c2071d0a967",
+              "category": "classical_substitution"
+            }
+          ],
+          "would_overturn": "Overturn if the introduced positive charge disrupts local packing, catalysis, or binding; sequence-only evidence is unfavorable despite backbone support."
+        },
+        {
+          "basis": "Seventh ensemble prediction: ESM-2 \u0394lnP +0.071, ESM-IF1 backbone \u0394lnP -0.740 (sum -0.669); BLOSUM62 +1. These are predictive log-likelihood changes, not assay outcomes; no valid homolog MSA was available.",
+          "evidence": [
+            "call_id:fcfd72a497bc44338733a92d9010a021",
+            "call_id:e1eaa9888998478e88ff6eec5395797f",
+            "call_id:6ec6770da47c41d2ae9e223098bffeb4",
+            "call_id:33452a3eeb384fc2a2c15b06608e02d9"
+          ],
+          "mutant": "Q59R",
+          "rank": 7,
+          "validation": [
+            {
+              "call_id": "call_id:fcfd72a497bc44338733a92d9010a021",
+              "category": "learned_sequence"
+            },
+            {
+              "call_id": "call_id:e1eaa9888998478e88ff6eec5395797f",
+              "category": "structure_conditioned_variant"
+            },
+            {
+              "call_id": "call_id:6ec6770da47c41d2ae9e223098bffeb4",
+              "category": "structure_conditioned_wild_type_reference"
+            },
+            {
+              "call_id": "call_id:33452a3eeb384fc2a2c15b06608e02d9",
+              "category": "classical_substitution"
+            }
+          ],
+          "would_overturn": "Overturn if Arg59 causes electrostatic/packing disruption or if replicate measurements show a consistent deficit; the backbone channel is mildly unfavorable."
+        },
+        {
+          "basis": "Eighth ensemble prediction: ESM-2 \u0394lnP -0.486 and ESM-IF1 backbone \u0394lnP -0.620 (sum -1.106); conservative BLOSUM62 +2. These are predictive log-likelihood changes, not assay outcomes; no valid homolog MSA was available.",
+          "evidence": [
+            "call_id:941da232a455423e982e0b8dfcd78b5e",
+            "call_id:ebe1f058538041e2875bcc094a323b41",
+            "call_id:6ec6770da47c41d2ae9e223098bffeb4",
+            "call_id:a8293ca9a8314b75a9ed66e2fa4a165b"
+          ],
+          "mutant": "D35E",
+          "rank": 8,
+          "validation": [
+            {
+              "call_id": "call_id:941da232a455423e982e0b8dfcd78b5e",
+              "category": "learned_sequence"
+            },
+            {
+              "call_id": "call_id:ebe1f058538041e2875bcc094a323b41",
+              "category": "structure_conditioned_variant"
+            },
+            {
+              "call_id": "call_id:6ec6770da47c41d2ae9e223098bffeb4",
+              "category": "structure_conditioned_wild_type_reference"
+            },
+            {
+              "call_id": "call_id:a8293ca9a8314b75a9ed66e2fa4a165b",
+              "category": "classical_substitution"
+            }
+          ],
+          "would_overturn": "Overturn if the one-methylene extension perturbs a geometrically precise catalytic or hydrogen-bond contact, or if measurements show the mild model penalty is functionally important."
+        },
+        {
+          "basis": "Ninth ensemble prediction: ESM-2 \u0394lnP -0.402 and ESM-IF1 backbone \u0394lnP -0.740 (sum -1.142); BLOSUM62 -1. These are predictive log-likelihood changes, not assay outcomes; no valid homolog MSA was available.",
+          "evidence": [
+            "call_id:8c96b2a323c5496e810d820a028e86d1",
+            "call_id:6af4e97ec856453bbb598159eca7e88d",
+            "call_id:6ec6770da47c41d2ae9e223098bffeb4",
+            "call_id:e2f2a9b5d20c4809a3332aba8a7051f5"
+          ],
+          "mutant": "E116T",
+          "rank": 9,
+          "validation": [
+            {
+              "call_id": "call_id:8c96b2a323c5496e810d820a028e86d1",
+              "category": "learned_sequence"
+            },
+            {
+              "call_id": "call_id:6af4e97ec856453bbb598159eca7e88d",
+              "category": "structure_conditioned_variant"
+            },
+            {
+              "call_id": "call_id:6ec6770da47c41d2ae9e223098bffeb4",
+              "category": "structure_conditioned_wild_type_reference"
+            },
+            {
+              "call_id": "call_id:e2f2a9b5d20c4809a3332aba8a7051f5",
+              "category": "classical_substitution"
+            }
+          ],
+          "would_overturn": "Overturn if Glu116 participates in an essential acidic or hydrogen-bond network, or if replicate measurements show loss of function/stability; both model channels are mildly unfavorable."
+        },
+        {
+          "basis": "Tenth ensemble prediction: ESM-2 \u0394lnP -3.820 conflicts with ESM-IF1 backbone \u0394lnP +1.257 (sum -2.564); BLOSUM62 -3. Selected as the best remaining ensemble score but high uncertainty. These are predictive log-likelihood changes, not assay outcomes; no valid homolog MSA was available.",
+          "evidence": [
+            "call_id:fe7c7bd72f0b4ca6afa89c0b2fbfe737",
+            "call_id:17f52441bb5f439ca2d0abba68c1f5cf",
+            "call_id:6ec6770da47c41d2ae9e223098bffeb4",
+            "call_id:ff748162ff7d4b6b860254bbcc90c7ef"
+          ],
+          "mutant": "Y148D",
+          "rank": 10,
+          "validation": [
+            {
+              "call_id": "call_id:fe7c7bd72f0b4ca6afa89c0b2fbfe737",
+              "category": "learned_sequence"
+            },
+            {
+              "call_id": "call_id:17f52441bb5f439ca2d0abba68c1f5cf",
+              "category": "structure_conditioned_variant"
+            },
+            {
+              "call_id": "call_id:6ec6770da47c41d2ae9e223098bffeb4",
+              "category": "structure_conditioned_wild_type_reference"
+            },
+            {
+              "call_id": "call_id:ff748162ff7d4b6b860254bbcc90c7ef",
+              "category": "classical_substitution"
+            }
+          ],
+          "would_overturn": "Overturn readily if Tyr148 is conserved, buried, or functionally essential, or if direct geometry/measurements show the acidic substitution is deleterious; sequence and BLOSUM evidence conflict with its favorable backbone-conditioned score."
+        }
+      ]
+    },
+    "item_id": "pilot_item"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "ebbbaa293a68d59a2b0a6aafdc14f6555f682f47dc98c69eaea911946808f32c",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step2b_2026-09-14/runs/b4_AACC1_PSEAI_Dandage_2018/record/artifacts/record/974027234acd4788a7744fc91b282dda.json",
+    "cache_hit": false,
+    "call_id": "call_id:974027234acd4788a7744fc91b282dda",
+    "runtime_s": 0.001934,
+    "tool": "submit_answer"
+  },
+  "result": {
+    "accepted": true,
+    "item_id": "pilot_item",
+    "submission_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step2b_2026-09-14/runs/b4_AACC1_PSEAI_Dandage_2018/record/submissions/pilot_item.json"
+  },
+  "server": "record"
+}

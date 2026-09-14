@@ -1,0 +1,5 @@
+{"type":"thread.started","thread_id":"01a0a1a3-a79c-71e1-9b12-fd4853162501"}
+{"type":"turn.started"}
+{"type":"item.completed","item":{"id":"item_0","type":"agent_message","text":"I’ll inspect the runtime’s `ALL_TOOLS` metadata directly and return only the names."}}
+{"type":"item.completed","item":{"id":"item_1","type":"agent_message","text":"[\"apply_patch\",\"clock__curr_time\",\"view_image\"]"}}
+{"type":"turn.completed","usage":{"input_tokens":17804,"cached_input_tokens":8704,"cache_write_input_tokens":0,"output_tokens":123,"reasoning_output_tokens":55}}

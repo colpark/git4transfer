@@ -1,0 +1,31 @@
+{
+  "sealed_items": [
+    "AACC1_PSEAI_Dandage_2018",
+    "ARGR_ECOLI_Tsuboyama_2023_1AOY",
+    "ENVZ_ECOLI_Ghose_2023"
+  ],
+  "prediction_sha256": {
+    "b1": {
+      "path": "results/benchmark/stage4step2b_2026-09-14/blind_b1.jsonl",
+      "digest": "36f8b9024c48002d9a2fca64dee4ea265da80b6f70bafa3af2e51bc833effe3e"
+    },
+    "b2": {
+      "path": "results/benchmark/stage4step2b_2026-09-14/blind_b2.jsonl",
+      "digest": "3f3585d0f026f7a986b23e087952aecbaf28fc928ef8bcde63ed9eef15b05856"
+    },
+    "b3": {
+      "path": "results/benchmark/stage4step2b_2026-09-14/blind_b3.csv",
+      "digest": "a6174fff61a2cd5e8a3f3603c153caf599ac7b1863bb5ae27c073c1b9db34153"
+    },
+    "b4": {
+      "path": "results/benchmark/stage4step2b_2026-09-14/blind_b4.jsonl",
+      "digest": "4c6a65c5926933e856916dd2b5725ee7562ba19d0d626c41e2a6cdc058590399"
+    },
+    "floor_c": {
+      "path": "results/benchmark/stage4step2b_2026-09-14/blind_floor_c.csv",
+      "digest": "e55136309df5c841328e7ecdb79fa4b6a697e80b4e6ef814cec1deb8a8ead0bd"
+    }
+  },
+  "evaluator_sha256": "723fbf5c03831d470b54fa5d566a7782304e43900a3bed932355084aa56d7b91",
+  "scorer_sha256": "24896f361c8de45c19f2d69b99bb897b9b20cdb1735a9bb2489f047177630bcb"
+}

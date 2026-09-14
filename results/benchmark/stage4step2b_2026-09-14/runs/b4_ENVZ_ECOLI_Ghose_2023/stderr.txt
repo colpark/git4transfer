@@ -1,0 +1,1 @@
+2026-09-14T20:54:37.363170Z ERROR codex_core::tools::router: error=code-mode host closed its stdout

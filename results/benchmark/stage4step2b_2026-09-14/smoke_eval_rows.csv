@@ -1,0 +1,16 @@
+assay_id,arm,n_candidates,chance_p_at_10,parser_accepted,parser_rejection,ten_valid_unique_picks,complete_candidate_ranking,precision_computable,spearman_computable,precision_at_10,spearman,precision_coverage_failure,spearman_coverage_failure
+AACC1_PSEAI_Dandage_2018,b1,100,0.1,False,Expecting value: line 1 column 1 (char 0),False,False,False,False,,,True,True
+AACC1_PSEAI_Dandage_2018,b2,100,0.1,False,answer has wrong top-level contract,True,False,True,False,0.3,,False,True
+AACC1_PSEAI_Dandage_2018,b3,100,0.1,True,,True,True,True,True,0.2,0.5287454960261144,False,False
+AACC1_PSEAI_Dandage_2018,b4,100,0.1,True,,True,True,True,True,0.2,0.5903510351035104,False,False
+AACC1_PSEAI_Dandage_2018,floor_c,100,0.1,True,,True,True,True,True,0.2,0.3018605251901163,False,False
+ARGR_ECOLI_Tsuboyama_2023_1AOY,b1,100,0.1,False,Expecting value: line 1 column 1 (char 0),False,False,False,False,,,True,True
+ARGR_ECOLI_Tsuboyama_2023_1AOY,b2,100,0.1,False,answer has wrong top-level contract,True,False,True,False,0.0,,False,True
+ARGR_ECOLI_Tsuboyama_2023_1AOY,b3,100,0.1,True,,True,True,True,True,0.2,0.6148039247869201,False,False
+ARGR_ECOLI_Tsuboyama_2023_1AOY,b4,100,0.1,True,,True,True,True,True,0.2,0.4622142214221422,False,False
+ARGR_ECOLI_Tsuboyama_2023_1AOY,floor_c,100,0.1,True,,True,True,True,True,0.2,0.40173540484286024,False,False
+ENVZ_ECOLI_Ghose_2023,b1,100,0.1,False,Expecting value: line 1 column 1 (char 0),False,False,False,False,,,True,True
+ENVZ_ECOLI_Ghose_2023,b2,100,0.1,False,Expecting value: line 1 column 1 (char 0),False,False,False,False,,,True,True
+ENVZ_ECOLI_Ghose_2023,b3,100,0.1,True,,True,True,True,True,0.1,0.002178335466838405,False,False
+ENVZ_ECOLI_Ghose_2023,b4,100,0.1,True,,True,True,True,True,0.1,0.08406840684068406,False,False
+ENVZ_ECOLI_Ghose_2023,floor_c,100,0.1,True,,True,True,True,True,0.1,-0.04952428960283345,False,False

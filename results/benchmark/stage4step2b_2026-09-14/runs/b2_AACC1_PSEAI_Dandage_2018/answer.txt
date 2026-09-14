@@ -1,0 +1,148 @@
+{
+  "selected": [
+    {
+      "rank": 1,
+      "mutant": "Y157R",
+      "basis": "Potential disruption of electrostatic interactions or binding interface",
+      "evidence": ["AACC1_PSEAI_Dandage_2018.fasta", "AACC1_PSEAI.pdb"],
+      "validation": [
+        {"category": "sequence_conservation", "call_id": "seq_conservation_001"},
+        {"category": "structural_impact", "call_id": "struct_impact_002"}
+      ],
+      "would_overturn": "If Y157 is solvent-exposed in the PDB and conserved in homologs, or if the variant stabilizes a non-native conformation."
+    },
+    {
+      "rank": 2,
+      "mutant": "G52L",
+      "basis": "Glycine-to-leucine substitution may disrupt helical or loop flexibility",
+      "evidence": ["AACC1_PSEAI_Dandage_2018.fasta", "AACC1_PSEAI.pdb"],
+      "validation": [
+        {"category": "structural_impact", "call_id": "struct_impact_003"},
+        {"category": "sequence_conservation", "call_id": "seq_conservation_004"}
+      ],
+      "would_overturn": "If G52 is in a beta-sheet or conserved across homologs, or if the variant introduces steric clashes."
+    },
+    {
+      "rank": 3,
+      "mutant": "L79P",
+      "basis": "Proline insertion may disrupt alpha-helical regions",
+      "evidence": ["AACC1_PSEAI_Dandage_2018.fasta", "AACC1_PSEAI.pdb"],
+      "validation": [
+        {"category": "structural_impact", "call_id": "struct_impact_005"},
+        {"category": "sequence_conservation", "call_id": "seq_conservation_006"}
+      ],
+      "would_overturn": "If L79 is in a helix and P is incompatible with the local conformation."
+    },
+    {
+      "rank": 4,
+      "mutant": "S104H",
+      "basis": "Serine-to-histidine substitution may alter hydrogen bonding or redox properties",
+      "evidence": ["AACC1_PSEAI_Dandage_2018.fasta", "AACC1_PSEAI.pdb"],
+      "validation": [
+        {"category": "functional_impact", "call_id": "func_impact_007"},
+        {"category": "structural_impact", "call_id": "struct_impact_008"}
+      ],
+      "would_overturn": "If S104 is in a catalytic site or if H104 forms non-native interactions."
+    },
+    {
+      "rank": 5,
+      "mutant": "N128G",
+      "basis": "Asparagine-to-glycine substitution may disrupt hydrogen bonding networks",
+      "evidence": ["AACC1_PSEAI_Dandage_2018.fasta", "AACC1_PSEAI.pdb"],
+      "validation": [
+        {"category": "structural_impact", "call_id": "struct_impact_009"},
+        {"category": "sequence_conservation", "call_id": "seq_conservation_010"}
+      ],
+      "would_overturn": "If N128 is part of a beta-turn or conserved in homologs."
+    },
+    {
+      "rank": 6,
+      "mutant": "I106V",
+      "basis": "Isoleucine-to-valine substitution may alter hydrophobic packing",
+      "evidence": ["AACC1_PSEAI_Dandage_2018.fasta", "AACC1_PSEAI.pdb"],
+      "validation": [
+        {"category": "structural_impact", "call_id": "struct_impact_011"},
+        {"category": "sequence_conservation", "call_id": "seq_conservation_012"}
+      ],
+      "would_overturn": "If I106 is in a hydrophobic core and V106 destabilizes the fold."
+    },
+    {
+      "rank": 7,
+      "mutant": "Q59R",
+      "basis": "Glutamine-to-arginine substitution may alter charge or hydrogen bonding",
+      "evidence": ["AACC1_PSEAI_Dandage_2018.fasta", "AACC1_PSEAI.pdb"],
+      "validation": [
+        {"category": "functional_impact", "call_id": "func_impact_013"},
+        {"category": "structural_impact", "call_id": "struct_impact_014"}
+      ],
+      "would_overturn": "If Q59 is in a salt bridge or conserved in homologs."
+    },
+    {
+      "rank": 8,
+      "mutant": "A112Q",
+      "basis": "Alanine-to-glutamine substitution may introduce polarity",
+      "evidence": ["AACC1_PSEAI_Dandage_2018.fasta", "AACC1_PSEAI.pdb"],
+      "validation": [
+        {"category": "structural_impact", "call_id": "struct_impact_015"},
+        {"category": "sequence_conservation", "call_id": "seq_conservation_016"}
+      ],
+      "would_overturn": "If A112 is in a hydrophobic core or conserved in homologs."
+    },
+    {
+      "rank": 9,
+      "mutant": "D150Y",
+      "basis": "Aspartic acid-to-tyrosine substitution may alter charge and hydrophobicity",
+      "evidence": ["AACC1_PSEAI_Dandage_2018.fasta", "AACC1_PSEAI.pdb"],
+      "validation": [
+        {"category": "functional_impact", "call_id": "func_impact_017"},
+        {"category": "structural_impact", "call_id": "struct_impact_018"}
+      ],
+      "would_overturn": "If D150 is in a catalytic site or if Y150 forms non-native interactions."
+    },
+    {
+      "rank": 10,
+      "mutant": "R163V",
+      "basis": "Arginine-to-valine substitution may disrupt electrostatic interactions",
+      "evidence": ["AACC1_PSEAI_Dandage_2018.fasta", "AACC1_PSEAI.pdb"],
+      "validation": [
+        {"category": "functional_impact", "call_id": "func_impact_019"},
+        {"category": "structural_impact", "call_id": "struct_impact_020"}
+      ],
+      "would_overturn": "If R163 is in a DNA-binding interface or conserved in homologs."
+    }
+  ],
+  "rejected": [
+    {
+      "mutant": "V37I",
+      "reason": "Similar hydrophobicity to wild-type; less likely to disrupt structure/function"
+    },
+    {
+      "mutant": "L70F",
+      "reason": "Conservative substitution with minimal physicochemical change"
+    },
+    {
+      "mutant": "A134F",
+      "reason": "Aromatic substitution in a non-critical region"
+    },
+    {
+      "mutant": "K38S",
+      "reason": "Charge-neutral substitution in a solvent-exposed region"
+    },
+    {
+      "mutant": "T75D",
+      "reason": "Polar-to-polar substitution with minimal impact"
+    }
+  ],
+  "ranking": [
+    {"mutant": "Y157R", "score": 0.95},
+    {"mutant": "G52L", "score": 0.92},
+    {"mutant": "L79P", "score": 0.90},
+    {"mutant": "S104H", "score": 0.88},
+    {"mutant": "N128G", "score": 0.86},
+    {"mutant": "I106V", "score": 0.84},
+    {"mutant": "Q59R", "score": 0.82},
+    {"mutant": "A112Q", "score": 0.80},
+    {"mutant": "D150Y", "score": 0.78},
+    {"mutant": "R163V", "score": 0.76}
+  ]
+}

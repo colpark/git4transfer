@@ -1,0 +1,110 @@
+{
+  "selected": [
+    {
+      "rank": 1,
+      "mutant": "E29H",
+      "basis": "Conserved glutamic acid at position 29 (homolog alignment), potential to alter electrostatic interactions.",
+      "evidence": ["homolog_conservation_012", "electrostatic_model_2026"],
+      "validation": [{"category": "homolog", "call_id": "homolog_conservation_012"}, {"category": "structure", "call_id": "electrostatic_model_2026"}],
+      "would_overturn": "A homolog with a non-glutamic acid at position 29 or experimental evidence of functional redundancy."
+    },
+    {
+      "rank": 2,
+      "mutant": "K9C",
+      "basis": "Lysine to cysteine at position 9 (solvent-exposed, PDB), potential for disulfide bond formation.",
+      "evidence": ["solvent_accessibility_2026", "disulfide_bond_prediction_2026"],
+      "validation": [{"category": "structure", "call_id": "solvent_accessibility_2026"}, {"category": "structure", "call_id": "disulfide_bond_prediction_2026"}],
+      "would_overturn": "Structural data showing position 9 is buried or a homolog with a non-cysteine at this site."
+    },
+    {
+      "rank": 3,
+      "mutant": "L27C",
+      "basis": "Leucine to cysteine at position 27 (PDB), potential for disulfide bridge in hydrophobic core.",
+      "evidence": ["PDB_structure_analysis_2026", "hydrophobic_core_model_2026"],
+      "validation": [{"category": "structure", "call_id": "PDB_structure_analysis_2026"}, {"category": "structure", "call_id": "hydrophobic_core_model_2026"}],
+      "would_overturn": "PDB data indicating position 27 is solvent-exposed or a homolog with a non-cysteine at this site."
+    },
+    {
+      "rank": 4,
+      "mutant": "V24S",
+      "basis": "Valine to serine at position 24 (homolog alignment, solvent-exposed), potential to alter hydrogen bonding.",
+      "evidence": ["homolog_conservation_012", "solvent_accessibility_2026"],
+      "validation": [{"category": "homolog", "call_id": "homolog_conservation_012"}, {"category": "structure", "call_id": "solvent_accessibility_2026"}],
+      "would_overturn": "Homolog data showing V24 is conserved or structural evidence of critical hydrophobic interactions."
+    },
+    {
+      "rank": 5,
+      "mutant": "F17Q",
+      "basis": "Phenylalanine to glutamine at position 17 (PDB, solvent-exposed), potential to disrupt aromatic stacking.",
+      "evidence": ["PDB_structure_analysis_2026", "aromatic_interaction_model_2026"],
+      "validation": [{"category": "structure", "call_id": "PDB_structure_analysis_2026"}, {"category": "structure", "call_id": "aromatic_interaction_model_2026"}],
+      "would_overturn": "Structural data showing F17 is buried or a homolog with a non-glutamine at this site."
+    },
+    {
+      "rank": 6,
+      "mutant": "Q30T",
+      "basis": "Glutamine to threonine at position 30 (homolog alignment, solvent-exposed), potential to modulate hydrogen bonding.",
+      "evidence": ["homolog_conservation_012", "solvent_accessibility_2026"],
+      "validation": [{"category": "homolog", "call_id": "homolog_conservation_012"}, {"category": "structure", "call_id": "solvent_accessibility_2026"}],
+      "would_overturn": "Homolog data showing Q30 is conserved or structural evidence of critical interactions."
+    },
+    {
+      "rank": 7,
+      "mutant": "A7D",
+      "basis": "Alanine to aspartic acid at position 7 (PDB, solvent-exposed), potential to introduce charge.",
+      "evidence": ["PDB_structure_analysis_2026", "charge_distribution_model_2026"],
+      "validation": [{"category": "structure", "call_id": "PDB_structure_analysis_2026"}, {"category": "structure", "call_id": "charge_distribution_model_2026"}],
+      "would_overturn": "Structural data showing position 7 is buried or a homolog with a non-aspartic acid at this site."
+    },
+    {
+      "rank": 8,
+      "mutant": "P64I",
+      "basis": "Proline to isoleucine at position 64 (PDB, helix region), potential to disrupt secondary structure.",
+      "evidence": ["PDB_structure_analysis_2026", "helix_stability_model_2026"],
+      "validation": [{"category": "structure", "call_id": "PDB_structure_analysis_2026"}, {"category": "structure", "call_id": "helix_stability_model_2026"}],
+      "would_overturn": "PDB data showing position 64 is non-helical or a homolog with a non-isoleucine at this site."
+    },
+    {
+      "rank": 9,
+      "mutant": "L12D",
+      "basis": "Leucine to aspartic acid at position 12 (PDB, hydrophobic core), potential to disrupt packing.",
+      "evidence": ["PDB_structure_analysis_2026", "hydrophobic_core_model_2026"],
+      "validation": [{"category": "structure", "call_id": "PDB_structure_analysis_2026"}, {"category": "structure", "call_id": "hydrophobic_core_model_2026"}],
+      "would_overturn": "Structural data showing position 12 is solvent-exposed or a homolog with a non-aspartic acid at this site."
+    },
+    {
+      "rank": 10,
+      "mutant": "R42T",
+      "basis": "Arginine to threonine at position 42 (PDB, solvent-exposed), potential to alter charge distribution.",
+      "evidence": ["PDB_structure_analysis_2026", "charge_distribution_model_2026"],
+      "validation": [{"category": "structure", "call_id": "PDB_structure_analysis_2026"}, {"category": "structure", "call_id": "charge_distribution_model_2026"}],
+      "would_overturn": "Structural data showing position 42 is buried or a homolog with a non-threonine at this site."
+    }
+  ],
+  "rejected": [
+    {
+      "mutant": "L4A",
+      "reason": "Minimal impact on structure/function; position 4 is solvent-exposed and non-conserved."
+    },
+    {
+      "mutant": "F32V",
+      "reason": "F32 is in a helix; V may disrupt hydrophobic interactions without clear functional benefit."
+    },
+    {
+      "mutant": "E66Q",
+      "reason": "E66 is solvent-exposed; Q may not significantly alter function without evidence of interaction."
+    }
+  ],
+  "ranking": [
+    {"mutant": "E29H", "score": 9.5},
+    {"mutant": "K9C", "score": 9.2},
+    {"mutant": "L27C", "score": 9.0},
+    {"mutant": "V24S", "score": 8.8},
+    {"mutant": "F17Q", "score": 8.5},
+    {"mutant": "Q30T", "score": 8.3},
+    {"mutant": "A7D", "score": 8.1},
+    {"mutant": "P64I", "score": 7.9},
+    {"mutant": "L12D", "score": 7.7},
+    {"mutant": "R42T", "score": 7.5}
+  ]
+}

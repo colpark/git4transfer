@@ -1,0 +1,1173 @@
+{
+  "answer": {
+    "evidence_scope": "All 100 supplied candidates were scored by the same four channels. The PSSM used 74 query-anchored homolog rows. ESM-IF used chain A of the supplied 60-residue PDB and a separately scored WT baseline.",
+    "ranking": [
+      {
+        "mutant": "I56L",
+        "score": 4.630073
+      },
+      {
+        "mutant": "Q33E",
+        "score": 2.316435
+      },
+      {
+        "mutant": "G35R",
+        "score": 0.806642
+      },
+      {
+        "mutant": "S31A",
+        "score": 0.112245
+      },
+      {
+        "mutant": "I23L",
+        "score": 0.009134
+      },
+      {
+        "mutant": "Y36V",
+        "score": -0.008097
+      },
+      {
+        "mutant": "G35S",
+        "score": -0.072785
+      },
+      {
+        "mutant": "D34A",
+        "score": -0.42394
+      },
+      {
+        "mutant": "T6E",
+        "score": -0.588955
+      },
+      {
+        "mutant": "Y36T",
+        "score": -0.606933
+      },
+      {
+        "mutant": "C48A",
+        "score": -1.491437
+      },
+      {
+        "mutant": "T27V",
+        "score": -1.580326
+      },
+      {
+        "mutant": "M30A",
+        "score": -1.808391
+      },
+      {
+        "mutant": "E46N",
+        "score": -2.162328
+      },
+      {
+        "mutant": "E46H",
+        "score": -2.615641
+      },
+      {
+        "mutant": "S31V",
+        "score": -2.69111
+      },
+      {
+        "mutant": "A50G",
+        "score": -2.7316
+      },
+      {
+        "mutant": "E28D",
+        "score": -3.011097
+      },
+      {
+        "mutant": "I56A",
+        "score": -3.115593
+      },
+      {
+        "mutant": "G35P",
+        "score": -3.176902
+      },
+      {
+        "mutant": "N42V",
+        "score": -3.228908
+      },
+      {
+        "mutant": "E39S",
+        "score": -3.484017
+      },
+      {
+        "mutant": "L37H",
+        "score": -3.759056
+      },
+      {
+        "mutant": "K43H",
+        "score": -3.945109
+      },
+      {
+        "mutant": "D44H",
+        "score": -3.958314
+      },
+      {
+        "mutant": "R60D",
+        "score": -3.983231
+      },
+      {
+        "mutant": "T6L",
+        "score": -3.991641
+      },
+      {
+        "mutant": "E32P",
+        "score": -4.023673
+      },
+      {
+        "mutant": "C48V",
+        "score": -4.031517
+      },
+      {
+        "mutant": "A50Y",
+        "score": -4.201918
+      },
+      {
+        "mutant": "D15E",
+        "score": -4.262583
+      },
+      {
+        "mutant": "N49A",
+        "score": -4.31634
+      },
+      {
+        "mutant": "L37A",
+        "score": -4.587939
+      },
+      {
+        "mutant": "N42Y",
+        "score": -4.815751
+      },
+      {
+        "mutant": "L37E",
+        "score": -4.924303
+      },
+      {
+        "mutant": "M29V",
+        "score": -4.929273
+      },
+      {
+        "mutant": "T27I",
+        "score": -4.937717
+      },
+      {
+        "mutant": "Y58K",
+        "score": -5.071873
+      },
+      {
+        "mutant": "E53K",
+        "score": -5.240942
+      },
+      {
+        "mutant": "R24A",
+        "score": -5.261242
+      },
+      {
+        "mutant": "R24G",
+        "score": -5.658794
+      },
+      {
+        "mutant": "Q54H",
+        "score": -5.785369
+      },
+      {
+        "mutant": "E53R",
+        "score": -5.831968
+      },
+      {
+        "mutant": "M9P",
+        "score": -6.106432
+      },
+      {
+        "mutant": "Q54K",
+        "score": -6.111249
+      },
+      {
+        "mutant": "D57A",
+        "score": -6.217742
+      },
+      {
+        "mutant": "M29K",
+        "score": -6.389747
+      },
+      {
+        "mutant": "L25A",
+        "score": -6.461368
+      },
+      {
+        "mutant": "T18N",
+        "score": -6.484711
+      },
+      {
+        "mutant": "I41T",
+        "score": -6.573948
+      },
+      {
+        "mutant": "K43C",
+        "score": -7.043354
+      },
+      {
+        "mutant": "L59Q",
+        "score": -7.080187
+      },
+      {
+        "mutant": "L8Y",
+        "score": -7.372369
+      },
+      {
+        "mutant": "A26L",
+        "score": -7.446437
+      },
+      {
+        "mutant": "S40C",
+        "score": -7.473357
+      },
+      {
+        "mutant": "E39L",
+        "score": -7.615819
+      },
+      {
+        "mutant": "C48K",
+        "score": -7.743011
+      },
+      {
+        "mutant": "V12A",
+        "score": -7.834449
+      },
+      {
+        "mutant": "E28R",
+        "score": -7.849943
+      },
+      {
+        "mutant": "M30R",
+        "score": -7.962078
+      },
+      {
+        "mutant": "R24I",
+        "score": -8.043645
+      },
+      {
+        "mutant": "G11T",
+        "score": -8.157976
+      },
+      {
+        "mutant": "C48E",
+        "score": -8.30064
+      },
+      {
+        "mutant": "D34W",
+        "score": -8.323967
+      },
+      {
+        "mutant": "E39M",
+        "score": -8.376615
+      },
+      {
+        "mutant": "T6W",
+        "score": -8.407851
+      },
+      {
+        "mutant": "A10C",
+        "score": -8.45177
+      },
+      {
+        "mutant": "Y58P",
+        "score": -8.484671
+      },
+      {
+        "mutant": "G11Q",
+        "score": -8.567998
+      },
+      {
+        "mutant": "M9E",
+        "score": -8.57025
+      },
+      {
+        "mutant": "L8H",
+        "score": -8.632564
+      },
+      {
+        "mutant": "M30K",
+        "score": -8.682003
+      },
+      {
+        "mutant": "A38P",
+        "score": -8.789027
+      },
+      {
+        "mutant": "R60W",
+        "score": -8.821163
+      },
+      {
+        "mutant": "G11L",
+        "score": -8.915215
+      },
+      {
+        "mutant": "E32C",
+        "score": -8.920366
+      },
+      {
+        "mutant": "E53Y",
+        "score": -9.061373
+      },
+      {
+        "mutant": "S13D",
+        "score": -10.114842
+      },
+      {
+        "mutant": "I23T",
+        "score": -10.287416
+      },
+      {
+        "mutant": "K43P",
+        "score": -10.35409
+      },
+      {
+        "mutant": "I51G",
+        "score": -10.403173
+      },
+      {
+        "mutant": "G11M",
+        "score": -10.478259
+      },
+      {
+        "mutant": "R17G",
+        "score": -11.003651
+      },
+      {
+        "mutant": "T21H",
+        "score": -11.418671
+      },
+      {
+        "mutant": "T21R",
+        "score": -11.721917
+      },
+      {
+        "mutant": "G11I",
+        "score": -11.903262
+      },
+      {
+        "mutant": "R17C",
+        "score": -11.953093
+      },
+      {
+        "mutant": "I23Q",
+        "score": -12.311619
+      },
+      {
+        "mutant": "I52G",
+        "score": -13.146427
+      },
+      {
+        "mutant": "H14S",
+        "score": -13.20159
+      },
+      {
+        "mutant": "R17F",
+        "score": -13.84922
+      },
+      {
+        "mutant": "T18W",
+        "score": -14.233625
+      },
+      {
+        "mutant": "L16T",
+        "score": -14.468959
+      },
+      {
+        "mutant": "P19T",
+        "score": -14.759824
+      },
+      {
+        "mutant": "R17D",
+        "score": -14.982703
+      },
+      {
+        "mutant": "R17W",
+        "score": -15.291998
+      },
+      {
+        "mutant": "L16S",
+        "score": -15.298538
+      },
+      {
+        "mutant": "I41G",
+        "score": -15.428655
+      },
+      {
+        "mutant": "D15F",
+        "score": -17.046717
+      },
+      {
+        "mutant": "L16H",
+        "score": -17.388775
+      }
+    ],
+    "rejected": [
+      {
+        "mutant": "C48A",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-1.491 < -0.607); component predictions were ESM-2 \u0394 -1.083, PSSM \u0394 -1.585 bits, BLOSUM62 +0, and ESM-IF total \u0394 3.450."
+      },
+      {
+        "mutant": "T27V",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-1.580 < -0.607); component predictions were ESM-2 \u0394 -1.045, PSSM \u0394 1.322 bits, BLOSUM62 +0, and ESM-IF total \u0394 -7.260."
+      },
+      {
+        "mutant": "M30A",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-1.808 < -0.607); component predictions were ESM-2 \u0394 -1.409, PSSM \u0394 1.263 bits, BLOSUM62 -1, and ESM-IF total \u0394 -5.126."
+      },
+      {
+        "mutant": "E46N",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-2.162 < -0.607); component predictions were ESM-2 \u0394 -0.735, PSSM \u0394 -1.322 bits, BLOSUM62 +0, and ESM-IF total \u0394 -2.557."
+      },
+      {
+        "mutant": "E46H",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-2.616 < -0.607); component predictions were ESM-2 \u0394 -2.587, PSSM \u0394 1.263 bits, BLOSUM62 +0, and ESM-IF total \u0394 -4.521."
+      },
+      {
+        "mutant": "S31V",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-2.691 < -0.607); component predictions were ESM-2 \u0394 -1.123, PSSM \u0394 0.585 bits, BLOSUM62 -2, and ESM-IF total \u0394 -7.366."
+      },
+      {
+        "mutant": "A50G",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-2.732 < -0.607); component predictions were ESM-2 \u0394 -0.911, PSSM \u0394 -1.585 bits, BLOSUM62 +0, and ESM-IF total \u0394 -3.608."
+      },
+      {
+        "mutant": "E28D",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-3.011 < -0.607); component predictions were ESM-2 \u0394 -1.229, PSSM \u0394 -3.233 bits, BLOSUM62 +2, and ESM-IF total \u0394 -0.207."
+      },
+      {
+        "mutant": "I56A",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-3.116 < -0.607); component predictions were ESM-2 \u0394 -2.229, PSSM \u0394 -1.000 bits, BLOSUM62 -1, and ESM-IF total \u0394 0.283."
+      },
+      {
+        "mutant": "G35P",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-3.177 < -0.607); component predictions were ESM-2 \u0394 1.689, PSSM \u0394 -3.248 bits, BLOSUM62 -2, and ESM-IF total \u0394 -10.571."
+      },
+      {
+        "mutant": "N42V",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-3.229 < -0.607); component predictions were ESM-2 \u0394 -1.413, PSSM \u0394 1.000 bits, BLOSUM62 -3, and ESM-IF total \u0394 -8.798."
+      },
+      {
+        "mutant": "E39S",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-3.484 < -0.607); component predictions were ESM-2 \u0394 -0.853, PSSM \u0394 -3.248 bits, BLOSUM62 +0, and ESM-IF total \u0394 -1.901."
+      },
+      {
+        "mutant": "L37H",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-3.759 < -0.607); component predictions were ESM-2 \u0394 -3.187, PSSM \u0394 2.115 bits, BLOSUM62 -3, and ESM-IF total \u0394 -6.441."
+      },
+      {
+        "mutant": "K43H",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-3.945 < -0.607); component predictions were ESM-2 \u0394 -0.590, PSSM \u0394 -4.524 bits, BLOSUM62 -1, and ESM-IF total \u0394 0.154."
+      },
+      {
+        "mutant": "D44H",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-3.958 < -0.607); component predictions were ESM-2 \u0394 -5.116, PSSM \u0394 2.322 bits, BLOSUM62 -1, and ESM-IF total \u0394 -1.010."
+      },
+      {
+        "mutant": "R60D",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-3.983 < -0.607); component predictions were ESM-2 \u0394 -0.407, PSSM \u0394 -4.248 bits, BLOSUM62 -2, and ESM-IF total \u0394 -0.657."
+      },
+      {
+        "mutant": "T6L",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-3.992 < -0.607); component predictions were ESM-2 \u0394 -1.198, PSSM \u0394 -4.392 bits, BLOSUM62 -1, and ESM-IF total \u0394 2.504."
+      },
+      {
+        "mutant": "E32P",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-4.024 < -0.607); component predictions were ESM-2 \u0394 -1.774, PSSM \u0394 -3.392 bits, BLOSUM62 -1, and ESM-IF total \u0394 1.758."
+      },
+      {
+        "mutant": "C48V",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-4.032 < -0.607); component predictions were ESM-2 \u0394 -2.190, PSSM \u0394 -1.585 bits, BLOSUM62 -1, and ESM-IF total \u0394 -2.463."
+      },
+      {
+        "mutant": "A50Y",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-4.202 < -0.607); component predictions were ESM-2 \u0394 -1.969, PSSM \u0394 -1.585 bits, BLOSUM62 -2, and ESM-IF total \u0394 -3.171."
+      },
+      {
+        "mutant": "D15E",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-4.263 < -0.607); component predictions were ESM-2 \u0394 -5.298, PSSM \u0394 0.860 bits, BLOSUM62 +2, and ESM-IF total \u0394 -0.301."
+      },
+      {
+        "mutant": "N49A",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-4.316 < -0.607); component predictions were ESM-2 \u0394 -2.530, PSSM \u0394 -1.138 bits, BLOSUM62 -2, and ESM-IF total \u0394 -2.489."
+      },
+      {
+        "mutant": "L37A",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-4.588 < -0.607); component predictions were ESM-2 \u0394 -2.382, PSSM \u0394 -1.585 bits, BLOSUM62 -1, and ESM-IF total \u0394 -4.285."
+      },
+      {
+        "mutant": "N42Y",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-4.816 < -0.607); component predictions were ESM-2 \u0394 -1.780, PSSM \u0394 -1.000 bits, BLOSUM62 -2, and ESM-IF total \u0394 -9.215."
+      },
+      {
+        "mutant": "L37E",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-4.924 < -0.607); component predictions were ESM-2 \u0394 -3.771, PSSM \u0394 0.737 bits, BLOSUM62 -3, and ESM-IF total \u0394 -4.568."
+      },
+      {
+        "mutant": "M29V",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-4.929 < -0.607); component predictions were ESM-2 \u0394 -2.802, PSSM \u0394 -2.000 bits, BLOSUM62 +1, and ESM-IF total \u0394 -4.953."
+      },
+      {
+        "mutant": "T27I",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-4.938 < -0.607); component predictions were ESM-2 \u0394 -2.613, PSSM \u0394 0.585 bits, BLOSUM62 -1, and ESM-IF total \u0394 -12.402."
+      },
+      {
+        "mutant": "Y58K",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-5.072 < -0.607); component predictions were ESM-2 \u0394 -4.026, PSSM \u0394 -1.585 bits, BLOSUM62 -2, and ESM-IF total \u0394 2.764."
+      },
+      {
+        "mutant": "E53K",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-5.241 < -0.607); component predictions were ESM-2 \u0394 -1.809, PSSM \u0394 -5.044 bits, BLOSUM62 +1, and ESM-IF total \u0394 -0.929."
+      },
+      {
+        "mutant": "R24A",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-5.261 < -0.607); component predictions were ESM-2 \u0394 -3.616, PSSM \u0394 -1.807 bits, BLOSUM62 -1, and ESM-IF total \u0394 -0.713."
+      },
+      {
+        "mutant": "R24G",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-5.659 < -0.607); component predictions were ESM-2 \u0394 -3.442, PSSM \u0394 -1.485 bits, BLOSUM62 -2, and ESM-IF total \u0394 -3.437."
+      },
+      {
+        "mutant": "Q54H",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-5.785 < -0.607); component predictions were ESM-2 \u0394 -3.659, PSSM \u0394 -2.585 bits, BLOSUM62 +0, and ESM-IF total \u0394 -1.672."
+      },
+      {
+        "mutant": "E53R",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-5.832 < -0.607); component predictions were ESM-2 \u0394 -1.931, PSSM \u0394 -5.044 bits, BLOSUM62 +0, and ESM-IF total \u0394 -2.023."
+      },
+      {
+        "mutant": "M9P",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-6.106 < -0.607); component predictions were ESM-2 \u0394 -3.104, PSSM \u0394 -1.000 bits, BLOSUM62 -2, and ESM-IF total \u0394 -9.044."
+      },
+      {
+        "mutant": "Q54K",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-6.111 < -0.607); component predictions were ESM-2 \u0394 -3.650, PSSM \u0394 -4.170 bits, BLOSUM62 +1, and ESM-IF total \u0394 0.897."
+      },
+      {
+        "mutant": "D57A",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-6.218 < -0.607); component predictions were ESM-2 \u0394 -1.080, PSSM \u0394 -6.190 bits, BLOSUM62 -2, and ESM-IF total \u0394 -1.736."
+      },
+      {
+        "mutant": "M29K",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-6.390 < -0.607); component predictions were ESM-2 \u0394 -5.052, PSSM \u0394 -2.000 bits, BLOSUM62 -1, and ESM-IF total \u0394 1.491."
+      },
+      {
+        "mutant": "L25A",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-6.461 < -0.607); component predictions were ESM-2 \u0394 -5.112, PSSM \u0394 -1.107 bits, BLOSUM62 -1, and ESM-IF total \u0394 -1.662."
+      },
+      {
+        "mutant": "T18N",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-6.485 < -0.607); component predictions were ESM-2 \u0394 -3.267, PSSM \u0394 -4.170 bits, BLOSUM62 +0, and ESM-IF total \u0394 -1.637."
+      },
+      {
+        "mutant": "I41T",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-6.574 < -0.607); component predictions were ESM-2 \u0394 -4.880, PSSM \u0394 -0.383 bits, BLOSUM62 -1, and ESM-IF total \u0394 -5.893."
+      },
+      {
+        "mutant": "K43C",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-7.043 < -0.607); component predictions were ESM-2 \u0394 -2.692, PSSM \u0394 -4.524 bits, BLOSUM62 -3, and ESM-IF total \u0394 -2.331."
+      },
+      {
+        "mutant": "L59Q",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-7.080 < -0.607); component predictions were ESM-2 \u0394 -2.621, PSSM \u0394 -4.700 bits, BLOSUM62 -2, and ESM-IF total \u0394 -3.505."
+      },
+      {
+        "mutant": "L8Y",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-7.372 < -0.607); component predictions were ESM-2 \u0394 -6.264, PSSM \u0394 -1.000 bits, BLOSUM62 -1, and ESM-IF total \u0394 -0.827."
+      },
+      {
+        "mutant": "A26L",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-7.446 < -0.607); component predictions were ESM-2 \u0394 -3.887, PSSM \u0394 -4.322 bits, BLOSUM62 -1, and ESM-IF total \u0394 -1.571."
+      },
+      {
+        "mutant": "S40C",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-7.473 < -0.607); component predictions were ESM-2 \u0394 -3.855, PSSM \u0394 -4.000 bits, BLOSUM62 -1, and ESM-IF total \u0394 -2.978."
+      },
+      {
+        "mutant": "E39L",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-7.616 < -0.607); component predictions were ESM-2 \u0394 -3.378, PSSM \u0394 -4.248 bits, BLOSUM62 -3, and ESM-IF total \u0394 -2.717."
+      },
+      {
+        "mutant": "C48K",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-7.743 < -0.607); component predictions were ESM-2 \u0394 -5.016, PSSM \u0394 -1.585 bits, BLOSUM62 -3, and ESM-IF total \u0394 -4.390."
+      },
+      {
+        "mutant": "V12A",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-7.834 < -0.607); component predictions were ESM-2 \u0394 -3.919, PSSM \u0394 -4.481 bits, BLOSUM62 +0, and ESM-IF total \u0394 -4.048."
+      },
+      {
+        "mutant": "E28R",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-7.850 < -0.607); component predictions were ESM-2 \u0394 -4.372, PSSM \u0394 -4.555 bits, BLOSUM62 +0, and ESM-IF total \u0394 -1.606."
+      },
+      {
+        "mutant": "M30R",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-7.962 < -0.607); component predictions were ESM-2 \u0394 -4.384, PSSM \u0394 -2.322 bits, BLOSUM62 -1, and ESM-IF total \u0394 -8.592."
+      },
+      {
+        "mutant": "R24I",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-8.044 < -0.607); component predictions were ESM-2 \u0394 -5.341, PSSM \u0394 -1.485 bits, BLOSUM62 -3, and ESM-IF total \u0394 -4.613."
+      },
+      {
+        "mutant": "G11T",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-8.158 < -0.607); component predictions were ESM-2 \u0394 -6.048, PSSM \u0394 -2.000 bits, BLOSUM62 -2, and ESM-IF total \u0394 -1.116."
+      },
+      {
+        "mutant": "C48E",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-8.301 < -0.607); component predictions were ESM-2 \u0394 -5.274, PSSM \u0394 -1.585 bits, BLOSUM62 -4, and ESM-IF total \u0394 -4.638."
+      },
+      {
+        "mutant": "D34W",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-8.324 < -0.607); component predictions were ESM-2 \u0394 -5.532, PSSM \u0394 -1.322 bits, BLOSUM62 -4, and ESM-IF total \u0394 -4.380."
+      },
+      {
+        "mutant": "E39M",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-8.377 < -0.607); component predictions were ESM-2 \u0394 -4.122, PSSM \u0394 -4.248 bits, BLOSUM62 -2, and ESM-IF total \u0394 -4.052."
+      },
+      {
+        "mutant": "T6W",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-8.408 < -0.607); component predictions were ESM-2 \u0394 -4.390, PSSM \u0394 -4.392 bits, BLOSUM62 -2, and ESM-IF total \u0394 -2.367."
+      },
+      {
+        "mutant": "A10C",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-8.452 < -0.607); component predictions were ESM-2 \u0394 -4.499, PSSM \u0394 -4.954 bits, BLOSUM62 +0, and ESM-IF total \u0394 -2.592."
+      },
+      {
+        "mutant": "Y58P",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-8.485 < -0.607); component predictions were ESM-2 \u0394 -5.756, PSSM \u0394 -1.585 bits, BLOSUM62 -3, and ESM-IF total \u0394 -4.398."
+      },
+      {
+        "mutant": "G11Q",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-8.568 < -0.607); component predictions were ESM-2 \u0394 -7.303, PSSM \u0394 -1.000 bits, BLOSUM62 -2, and ESM-IF total \u0394 -0.359."
+      },
+      {
+        "mutant": "M9E",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-8.570 < -0.607); component predictions were ESM-2 \u0394 -6.577, PSSM \u0394 -1.000 bits, BLOSUM62 -2, and ESM-IF total \u0394 -4.003."
+      },
+      {
+        "mutant": "L8H",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-8.633 < -0.607); component predictions were ESM-2 \u0394 -6.863, PSSM \u0394 -1.000 bits, BLOSUM62 -3, and ESM-IF total \u0394 -1.632."
+      },
+      {
+        "mutant": "M30K",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-8.682 < -0.607); component predictions were ESM-2 \u0394 -5.036, PSSM \u0394 -2.322 bits, BLOSUM62 -1, and ESM-IF total \u0394 -8.934."
+      },
+      {
+        "mutant": "A38P",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-8.789 < -0.607); component predictions were ESM-2 \u0394 -1.574, PSSM \u0394 -5.322 bits, BLOSUM62 -1, and ESM-IF total \u0394 -16.380."
+      },
+      {
+        "mutant": "R60W",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-8.821 < -0.607); component predictions were ESM-2 \u0394 -4.195, PSSM \u0394 -4.248 bits, BLOSUM62 -3, and ESM-IF total \u0394 -4.656."
+      },
+      {
+        "mutant": "G11L",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-8.915 < -0.607); component predictions were ESM-2 \u0394 -9.235, PSSM \u0394 2.459 bits, BLOSUM62 -4, and ESM-IF total \u0394 -1.924."
+      },
+      {
+        "mutant": "E32C",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-8.920 < -0.607); component predictions were ESM-2 \u0394 -3.999, PSSM \u0394 -4.392 bits, BLOSUM62 -4, and ESM-IF total \u0394 -4.386."
+      },
+      {
+        "mutant": "E53Y",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-9.061 < -0.607); component predictions were ESM-2 \u0394 -4.179, PSSM \u0394 -5.044 bits, BLOSUM62 -2, and ESM-IF total \u0394 -4.428."
+      },
+      {
+        "mutant": "S13D",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-10.115 < -0.607); component predictions were ESM-2 \u0394 -5.341, PSSM \u0394 -6.190 bits, BLOSUM62 +0, and ESM-IF total \u0394 -2.418."
+      },
+      {
+        "mutant": "I23T",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-10.287 < -0.607); component predictions were ESM-2 \u0394 -5.416, PSSM \u0394 -5.285 bits, BLOSUM62 -1, and ESM-IF total \u0394 -4.788."
+      },
+      {
+        "mutant": "K43P",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-10.354 < -0.607); component predictions were ESM-2 \u0394 -4.532, PSSM \u0394 -4.524 bits, BLOSUM62 -1, and ESM-IF total \u0394 -12.183."
+      },
+      {
+        "mutant": "I51G",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-10.403 < -0.607); component predictions were ESM-2 \u0394 -6.295, PSSM \u0394 -1.585 bits, BLOSUM62 -4, and ESM-IF total \u0394 -10.049."
+      },
+      {
+        "mutant": "G11M",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-10.478 < -0.607); component predictions were ESM-2 \u0394 -8.634, PSSM \u0394 -1.000 bits, BLOSUM62 -3, and ESM-IF total \u0394 -2.008."
+      },
+      {
+        "mutant": "R17G",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-11.004 < -0.607); component predictions were ESM-2 \u0394 -5.130, PSSM \u0394 -6.150 bits, BLOSUM62 -2, and ESM-IF total \u0394 -5.557."
+      },
+      {
+        "mutant": "T21H",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-11.419 < -0.607); component predictions were ESM-2 \u0394 -7.205, PSSM \u0394 -5.285 bits, BLOSUM62 -2, and ESM-IF total \u0394 -0.249."
+      },
+      {
+        "mutant": "T21R",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-11.722 < -0.607); component predictions were ESM-2 \u0394 -7.986, PSSM \u0394 -5.285 bits, BLOSUM62 -1, and ESM-IF total \u0394 0.890."
+      },
+      {
+        "mutant": "G11I",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-11.903 < -0.607); component predictions were ESM-2 \u0394 -8.873, PSSM \u0394 -2.000 bits, BLOSUM62 -4, and ESM-IF total \u0394 -3.221."
+      },
+      {
+        "mutant": "R17C",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-11.953 < -0.607); component predictions were ESM-2 \u0394 -6.154, PSSM \u0394 -6.150 bits, BLOSUM62 -3, and ESM-IF total \u0394 -3.933."
+      },
+      {
+        "mutant": "I23Q",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-12.312 < -0.607); component predictions were ESM-2 \u0394 -6.025, PSSM \u0394 -5.285 bits, BLOSUM62 -3, and ESM-IF total \u0394 -9.366."
+      },
+      {
+        "mutant": "I52G",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-13.146 < -0.607); component predictions were ESM-2 \u0394 -7.480, PSSM \u0394 -4.755 bits, BLOSUM62 -4, and ESM-IF total \u0394 -6.853."
+      },
+      {
+        "mutant": "H14S",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-13.202 < -0.607); component predictions were ESM-2 \u0394 -8.912, PSSM \u0394 -6.229 bits, BLOSUM62 -1, and ESM-IF total \u0394 1.388."
+      },
+      {
+        "mutant": "R17F",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-13.849 < -0.607); component predictions were ESM-2 \u0394 -7.993, PSSM \u0394 -6.150 bits, BLOSUM62 -3, and ESM-IF total \u0394 -4.217."
+      },
+      {
+        "mutant": "T18W",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-14.234 < -0.607); component predictions were ESM-2 \u0394 -9.121, PSSM \u0394 -5.755 bits, BLOSUM62 -2, and ESM-IF total \u0394 -3.118."
+      },
+      {
+        "mutant": "L16T",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-14.469 < -0.607); component predictions were ESM-2 \u0394 -8.895, PSSM \u0394 -5.907 bits, BLOSUM62 -1, and ESM-IF total \u0394 -6.148."
+      },
+      {
+        "mutant": "P19T",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-14.760 < -0.607); component predictions were ESM-2 \u0394 -7.409, PSSM \u0394 -6.229 bits, BLOSUM62 -1, and ESM-IF total \u0394 -13.917."
+      },
+      {
+        "mutant": "R17D",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-14.983 < -0.607); component predictions were ESM-2 \u0394 -9.864, PSSM \u0394 -6.150 bits, BLOSUM62 -2, and ESM-IF total \u0394 -1.782."
+      },
+      {
+        "mutant": "R17W",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-15.292 < -0.607); component predictions were ESM-2 \u0394 -9.429, PSSM \u0394 -6.150 bits, BLOSUM62 -3, and ESM-IF total \u0394 -4.253."
+      },
+      {
+        "mutant": "L16S",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-15.299 < -0.607); component predictions were ESM-2 \u0394 -9.287, PSSM \u0394 -5.907 bits, BLOSUM62 -2, and ESM-IF total \u0394 -7.087."
+      },
+      {
+        "mutant": "I41G",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-15.429 < -0.607); component predictions were ESM-2 \u0394 -7.997, PSSM \u0394 -4.907 bits, BLOSUM62 -4, and ESM-IF total \u0394 -15.151."
+      },
+      {
+        "mutant": "D15F",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-17.047 < -0.607); component predictions were ESM-2 \u0394 -12.489, PSSM \u0394 -4.755 bits, BLOSUM62 -3, and ESM-IF total \u0394 -2.557."
+      },
+      {
+        "mutant": "L16H",
+        "reason": "Considered and rejected below the ten-variant predicted cutoff (-17.389 < -0.607); component predictions were ESM-2 \u0394 -10.936, PSSM \u0394 -5.907 bits, BLOSUM62 -3, and ESM-IF total \u0394 -8.043."
+      }
+    ],
+    "scoring_method": "Predicted prioritization score = ESM-2 masked-marginal delta + ln(2) \u00d7 homolog-PSSM delta_bits + 0.25 \u00d7 BLOSUM62 score + 0.20 \u00d7 ESM-IF backbone-conditioned total log-likelihood delta. Larger is predicted better. These are model-based priorities, not measured assay outcomes.",
+    "selected": [
+      {
+        "basis": "Strong four-channel consensus: PSSM \u0394 +4.907 bits, ESM-2 \u0394 +0.145, BLOSUM62 +2, and backbone-conditioned ESM-IF total log-likelihood \u0394 +2.919. This conservative hydrophobic substitution is the clearest predicted choice.",
+        "evidence": [
+          "call_id:58e2f603c79049a4b49eab9374119f5f",
+          "call_id:75a4fec30cf648fab7d2ecef0dc5776c",
+          "call_id:e1088fd89be54a7fa9720f4cd30e1965",
+          "call_id:a92a81480b9a45d49200298137416b43",
+          "call_id:5590e110cc5142d1bdd388a040ffa1ff",
+          "call_id:bbfb7931200140efb9f91cb5038ad187"
+        ],
+        "mutant": "I56L",
+        "rank": 1,
+        "validation": [
+          {
+            "call_id": "call_id:58e2f603c79049a4b49eab9374119f5f",
+            "category": "homolog_alignment"
+          },
+          {
+            "call_id": "call_id:75a4fec30cf648fab7d2ecef0dc5776c",
+            "category": "evolutionary_substitution"
+          },
+          {
+            "call_id": "call_id:e1088fd89be54a7fa9720f4cd30e1965",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:a92a81480b9a45d49200298137416b43",
+            "category": "generic_substitution"
+          },
+          {
+            "call_id": "call_id:5590e110cc5142d1bdd388a040ffa1ff",
+            "category": "structure_baseline"
+          },
+          {
+            "call_id": "call_id:bbfb7931200140efb9f91cb5038ad187",
+            "category": "structure_conditioned"
+          }
+        ],
+        "would_overturn": "Overturn if a site-matched functional assay shows reproducible loss relative to WT, or a deeper function-matched alignment shows Leu is excluded at position 56."
+      },
+      {
+        "basis": "Agreement across all channels: PSSM \u0394 +1.322 bits, ESM-2 \u0394 +0.575, BLOSUM62 +2, and ESM-IF total \u0394 +1.626. The charge-preserving polar-to-acidic change is supported in both sequence and backbone context.",
+        "evidence": [
+          "call_id:58e2f603c79049a4b49eab9374119f5f",
+          "call_id:cbea45a9299f4d629e7b7ab8f2f6cf9e",
+          "call_id:dd30a7edc982469ead97ca043b8248c0",
+          "call_id:1f4a76932d9749899738899389a591ad",
+          "call_id:5590e110cc5142d1bdd388a040ffa1ff",
+          "call_id:cfdaaec0a93a47c9aae0026a2d089e16"
+        ],
+        "mutant": "Q33E",
+        "rank": 2,
+        "validation": [
+          {
+            "call_id": "call_id:58e2f603c79049a4b49eab9374119f5f",
+            "category": "homolog_alignment"
+          },
+          {
+            "call_id": "call_id:cbea45a9299f4d629e7b7ab8f2f6cf9e",
+            "category": "evolutionary_substitution"
+          },
+          {
+            "call_id": "call_id:dd30a7edc982469ead97ca043b8248c0",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:1f4a76932d9749899738899389a591ad",
+            "category": "generic_substitution"
+          },
+          {
+            "call_id": "call_id:5590e110cc5142d1bdd388a040ffa1ff",
+            "category": "structure_baseline"
+          },
+          {
+            "call_id": "call_id:cfdaaec0a93a47c9aae0026a2d089e16",
+            "category": "structure_conditioned"
+          }
+        ],
+        "would_overturn": "Overturn if direct assay data show reduced function or abundance, or if a better domain-specific alignment reverses the positive substitution odds at position 33."
+      },
+      {
+        "basis": "Site-specific evidence outweighs the generic penalty: PSSM \u0394 +1.037 bits, ESM-2 \u0394 +0.029, and ESM-IF total \u0394 +2.795, despite BLOSUM62 -2. The large positive backbone-conditioned change makes it a useful high-information choice.",
+        "evidence": [
+          "call_id:58e2f603c79049a4b49eab9374119f5f",
+          "call_id:afabfb917fd54a1f8a776c3e31077dbe",
+          "call_id:ca89bc25723e40ce972b6d41b3c62053",
+          "call_id:b95c613e6a7e47a3ae5a16403a5522b4",
+          "call_id:5590e110cc5142d1bdd388a040ffa1ff",
+          "call_id:c23e132a8d7e40fc98a0d2830ca71a62"
+        ],
+        "mutant": "G35R",
+        "rank": 3,
+        "validation": [
+          {
+            "call_id": "call_id:58e2f603c79049a4b49eab9374119f5f",
+            "category": "homolog_alignment"
+          },
+          {
+            "call_id": "call_id:afabfb917fd54a1f8a776c3e31077dbe",
+            "category": "evolutionary_substitution"
+          },
+          {
+            "call_id": "call_id:ca89bc25723e40ce972b6d41b3c62053",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:b95c613e6a7e47a3ae5a16403a5522b4",
+            "category": "generic_substitution"
+          },
+          {
+            "call_id": "call_id:5590e110cc5142d1bdd388a040ffa1ff",
+            "category": "structure_baseline"
+          },
+          {
+            "call_id": "call_id:c23e132a8d7e40fc98a0d2830ca71a62",
+            "category": "structure_conditioned"
+          }
+        ],
+        "would_overturn": "Overturn if direct measurements show loss of function/solubility, or if an experimentally resolved backbone indicates steric or electrostatic incompatibility absent from the supplied model."
+      },
+      {
+        "basis": "Mild consensus for a conservative small-residue change: PSSM \u0394 +0.222 bits, ESM-2 \u0394 +0.092, and BLOSUM62 +1. ESM-IF is modestly negative (total \u0394 -1.919), so it ranks below the three stronger consensus choices.",
+        "evidence": [
+          "call_id:58e2f603c79049a4b49eab9374119f5f",
+          "call_id:9c4231185ce445c79d80696494a1670c",
+          "call_id:3f777a676b034e62b62b328e0bacd350",
+          "call_id:db06b66a2d224c5aa9dfa48b18c7e09a",
+          "call_id:5590e110cc5142d1bdd388a040ffa1ff",
+          "call_id:56455fc7cef549c782d8f2e94fcbb36d"
+        ],
+        "mutant": "S31A",
+        "rank": 4,
+        "validation": [
+          {
+            "call_id": "call_id:58e2f603c79049a4b49eab9374119f5f",
+            "category": "homolog_alignment"
+          },
+          {
+            "call_id": "call_id:9c4231185ce445c79d80696494a1670c",
+            "category": "evolutionary_substitution"
+          },
+          {
+            "call_id": "call_id:3f777a676b034e62b62b328e0bacd350",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:db06b66a2d224c5aa9dfa48b18c7e09a",
+            "category": "generic_substitution"
+          },
+          {
+            "call_id": "call_id:5590e110cc5142d1bdd388a040ffa1ff",
+            "category": "structure_baseline"
+          },
+          {
+            "call_id": "call_id:56455fc7cef549c782d8f2e94fcbb36d",
+            "category": "structure_conditioned"
+          }
+        ],
+        "would_overturn": "Overturn if direct measurements place it below WT or below a rejected candidate, or if higher-quality structural evidence shows the Ser hydroxyl makes an essential interaction."
+      },
+      {
+        "basis": "Conservative isomeric substitution with BLOSUM62 +2 and ESM-2 \u0394 +0.471. PSSM \u0394 -0.642 bits and ESM-IF total \u0394 -2.586 are modest counter-signals, leaving a near-neutral positive composite.",
+        "evidence": [
+          "call_id:58e2f603c79049a4b49eab9374119f5f",
+          "call_id:a8d3a659956540b280bc65d00282aa6e",
+          "call_id:84f3ec43ef2040ec8e0c7dbe243023d5",
+          "call_id:80d095914fe646c38ff3bf6cf9f3bf0a",
+          "call_id:5590e110cc5142d1bdd388a040ffa1ff",
+          "call_id:146a99689d5c45b5b239585ef487d8d4"
+        ],
+        "mutant": "I23L",
+        "rank": 5,
+        "validation": [
+          {
+            "call_id": "call_id:58e2f603c79049a4b49eab9374119f5f",
+            "category": "homolog_alignment"
+          },
+          {
+            "call_id": "call_id:a8d3a659956540b280bc65d00282aa6e",
+            "category": "evolutionary_substitution"
+          },
+          {
+            "call_id": "call_id:84f3ec43ef2040ec8e0c7dbe243023d5",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:80d095914fe646c38ff3bf6cf9f3bf0a",
+            "category": "generic_substitution"
+          },
+          {
+            "call_id": "call_id:5590e110cc5142d1bdd388a040ffa1ff",
+            "category": "structure_baseline"
+          },
+          {
+            "call_id": "call_id:146a99689d5c45b5b239585ef487d8d4",
+            "category": "structure_conditioned"
+          }
+        ],
+        "would_overturn": "Overturn if the assay reveals that Ile-specific packing or signaling is required, or if a function-matched homolog set strengthens the current negative PSSM signal."
+      },
+      {
+        "basis": "ESM-2 favors the substitution (\u0394 +0.508) and the homolog PSSM is slightly favorable (\u0394 +0.263 bits). BLOSUM62 -1 and ESM-IF total \u0394 -2.241 temper confidence but do not erase the cross-sequence support.",
+        "evidence": [
+          "call_id:58e2f603c79049a4b49eab9374119f5f",
+          "call_id:7ce3c7ed44aa48e58e0da7f508766806",
+          "call_id:4991c4b9b9ba40adb7a1eda9f1199532",
+          "call_id:7f6178add08f429d829e8569147202a9",
+          "call_id:5590e110cc5142d1bdd388a040ffa1ff",
+          "call_id:cc3ee953abce43669b35c45fdd9f14ec"
+        ],
+        "mutant": "Y36V",
+        "rank": 6,
+        "validation": [
+          {
+            "call_id": "call_id:58e2f603c79049a4b49eab9374119f5f",
+            "category": "homolog_alignment"
+          },
+          {
+            "call_id": "call_id:7ce3c7ed44aa48e58e0da7f508766806",
+            "category": "evolutionary_substitution"
+          },
+          {
+            "call_id": "call_id:4991c4b9b9ba40adb7a1eda9f1199532",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:7f6178add08f429d829e8569147202a9",
+            "category": "generic_substitution"
+          },
+          {
+            "call_id": "call_id:5590e110cc5142d1bdd388a040ffa1ff",
+            "category": "structure_baseline"
+          },
+          {
+            "call_id": "call_id:cc3ee953abce43669b35c45fdd9f14ec",
+            "category": "structure_conditioned"
+          }
+        ],
+        "would_overturn": "Overturn if direct measurements show loss, or if resolved structural data establish an essential Tyr aromatic or hydroxyl interaction at position 36."
+      },
+      {
+        "basis": "The two learned context channels strongly favor it: ESM-2 \u0394 +1.156 and ESM-IF total \u0394 +5.110, the largest structural improvement among candidates. PSSM \u0394 -3.248 bits is a serious evolutionary conflict, so it is retained but ranked below consensus choices.",
+        "evidence": [
+          "call_id:58e2f603c79049a4b49eab9374119f5f",
+          "call_id:f136ae48f4ce48a9adabd706dc60968b",
+          "call_id:b28ba69a2c93451fad4c2bf7946fc89b",
+          "call_id:ad336124b75645f28b3bad4a70347441",
+          "call_id:5590e110cc5142d1bdd388a040ffa1ff",
+          "call_id:40f4fba9e949425f9dfb57260ee272cc"
+        ],
+        "mutant": "G35S",
+        "rank": 7,
+        "validation": [
+          {
+            "call_id": "call_id:58e2f603c79049a4b49eab9374119f5f",
+            "category": "homolog_alignment"
+          },
+          {
+            "call_id": "call_id:f136ae48f4ce48a9adabd706dc60968b",
+            "category": "evolutionary_substitution"
+          },
+          {
+            "call_id": "call_id:b28ba69a2c93451fad4c2bf7946fc89b",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:ad336124b75645f28b3bad4a70347441",
+            "category": "generic_substitution"
+          },
+          {
+            "call_id": "call_id:5590e110cc5142d1bdd388a040ffa1ff",
+            "category": "structure_baseline"
+          },
+          {
+            "call_id": "call_id:40f4fba9e949425f9dfb57260ee272cc",
+            "category": "structure_conditioned"
+          }
+        ],
+        "would_overturn": "Overturn if assay data show reduced function or if a deeper function-matched MSA confirms the strong negative evolutionary signal and outweighs both learned-model predictions."
+      },
+      {
+        "basis": "Homolog evidence is strong (PSSM \u0394 +1.585 bits), while ESM-2 \u0394 -0.891 and ESM-IF total \u0394 -0.659 are only moderate penalties. BLOSUM62 -2 adds uncertainty, yielding a positive evolutionary but mixed-context candidate.",
+        "evidence": [
+          "call_id:58e2f603c79049a4b49eab9374119f5f",
+          "call_id:70a039bc83d54a4cbb930a111c8679f6",
+          "call_id:e4eaaf87c16e4ce7a5efc694262c8507",
+          "call_id:71bc21d20b0c4c77bf7c975ab9190cd2",
+          "call_id:5590e110cc5142d1bdd388a040ffa1ff",
+          "call_id:3560ef2459ac4b1085787ef7f948f573"
+        ],
+        "mutant": "D34A",
+        "rank": 8,
+        "validation": [
+          {
+            "call_id": "call_id:58e2f603c79049a4b49eab9374119f5f",
+            "category": "homolog_alignment"
+          },
+          {
+            "call_id": "call_id:70a039bc83d54a4cbb930a111c8679f6",
+            "category": "evolutionary_substitution"
+          },
+          {
+            "call_id": "call_id:e4eaaf87c16e4ce7a5efc694262c8507",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:71bc21d20b0c4c77bf7c975ab9190cd2",
+            "category": "generic_substitution"
+          },
+          {
+            "call_id": "call_id:5590e110cc5142d1bdd388a040ffa1ff",
+            "category": "structure_baseline"
+          },
+          {
+            "call_id": "call_id:3560ef2459ac4b1085787ef7f948f573",
+            "category": "structure_conditioned"
+          }
+        ],
+        "would_overturn": "Overturn if direct measurements show loss, or if structural/biochemical evidence establishes that the Asp charge is required despite homolog tolerance."
+      },
+      {
+        "basis": "ESM-2 favors it (\u0394 +0.777) and ESM-IF is essentially neutral (total \u0394 -0.086). PSSM \u0394 -1.585 bits and BLOSUM62 -1 disagree, so this is a model-led choice with explicit evolutionary uncertainty.",
+        "evidence": [
+          "call_id:58e2f603c79049a4b49eab9374119f5f",
+          "call_id:f264298f67904271bb5a0f0326d0a49e",
+          "call_id:9a967e32d33a4d88af3e773f01fc1655",
+          "call_id:31bbda9679454fb5bc9c55b4ff627762",
+          "call_id:5590e110cc5142d1bdd388a040ffa1ff",
+          "call_id:35fef26088ac4e4194505c173d2b1ed5"
+        ],
+        "mutant": "T6E",
+        "rank": 9,
+        "validation": [
+          {
+            "call_id": "call_id:58e2f603c79049a4b49eab9374119f5f",
+            "category": "homolog_alignment"
+          },
+          {
+            "call_id": "call_id:f264298f67904271bb5a0f0326d0a49e",
+            "category": "evolutionary_substitution"
+          },
+          {
+            "call_id": "call_id:9a967e32d33a4d88af3e773f01fc1655",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:31bbda9679454fb5bc9c55b4ff627762",
+            "category": "generic_substitution"
+          },
+          {
+            "call_id": "call_id:5590e110cc5142d1bdd388a040ffa1ff",
+            "category": "structure_baseline"
+          },
+          {
+            "call_id": "call_id:35fef26088ac4e4194505c173d2b1ed5",
+            "category": "structure_conditioned"
+          }
+        ],
+        "would_overturn": "Overturn if direct measurements show loss, or if a higher-quality N-terminal homolog alignment confirms exclusion of Glu at position 6 and the sequence-model preference fails to generalize."
+      },
+      {
+        "basis": "ESM-2 favors it (\u0394 +0.716). PSSM \u0394 -0.737 bits, BLOSUM62 -2, and ESM-IF total \u0394 -1.559 are moderate counter-signals; its composite narrowly clears the ten-variant cutoff.",
+        "evidence": [
+          "call_id:58e2f603c79049a4b49eab9374119f5f",
+          "call_id:8aed58b707e84bbc86c59a3b3423bb0c",
+          "call_id:a46ba89603224519b0643359c30ccff7",
+          "call_id:1bdac523507c4d9d9004d334a78a5076",
+          "call_id:5590e110cc5142d1bdd388a040ffa1ff",
+          "call_id:f886161a463e446ba6de27a4b04f82f3"
+        ],
+        "mutant": "Y36T",
+        "rank": 10,
+        "validation": [
+          {
+            "call_id": "call_id:58e2f603c79049a4b49eab9374119f5f",
+            "category": "homolog_alignment"
+          },
+          {
+            "call_id": "call_id:8aed58b707e84bbc86c59a3b3423bb0c",
+            "category": "evolutionary_substitution"
+          },
+          {
+            "call_id": "call_id:a46ba89603224519b0643359c30ccff7",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:1bdac523507c4d9d9004d334a78a5076",
+            "category": "generic_substitution"
+          },
+          {
+            "call_id": "call_id:5590e110cc5142d1bdd388a040ffa1ff",
+            "category": "structure_baseline"
+          },
+          {
+            "call_id": "call_id:f886161a463e446ba6de27a4b04f82f3",
+            "category": "structure_conditioned"
+          }
+        ],
+        "would_overturn": "Overturn if direct measurements show loss or if resolved structure demonstrates an indispensable aromatic packing role for Tyr36; either would outweigh the ESM-2 preference."
+      }
+    ]
+  },
+  "item_id": "pilot_item"
+}
