@@ -1,0 +1,21 @@
+# Stage 4-prep-d finding — grant passes; second end-to-end control does not
+
+14 September 2026. The corrected Claude Code/Opus grant passed model-side verification: **seven connected RESCUE servers, exactly 18 `mcp__*` functions, no native function, `memory_paths: null`, no subagent**. The three MCP-resource names disappeared under the 31-name subtraction list; no new hidden layer appeared. No out-of-grant execution, network fetch, package-install or filesystem-write path survived. The physics server no longer advertises blocked `pyrosetta_ddg`; it still advertises the correctly named `openmm_snapshot_potential_delta`. Before correction, PyRosetta was a callable MCP wrapper whose implementation always raised the known licence/aarch64 block—a real false-advertisement defect.
+
+The one authorized sealed ARGR cell then completed in **751.68 s**. It obtained **100/100 unique usable ESM-2 variant scores** and **29 unique usable ESM-IF variant scores plus a WT control**, with 159 total MCP calls, 155 usable returns, zero native calls, zero subagents and no permission denials. Every selected pick cites at least one variant-specific usable receipt. This demonstrates cross-harness **tool reachability** on a second model family; it does not by itself satisfy the end-to-end B4 criterion.
+
+The record server accepted one object with ten unique ranked selections, but the object **fails the frozen Codex answer contract**: wrong item ID (`hth69_QEELVKAFKALLK`, not `pilot_item`), `ranked_selection` instead of `selected`, no proper `rejected`/100-entry `ranking`, and no per-pick `validation` field. Storage acceptance is not contract compliance. Four other tool results were unusable: three classical retrieval calls lacked a reference FASTA, and DSSP rejected the ESMFold PDB format. Neither error was counted as evidence.
+
+There is an important **prompt confound**, discovered before the cell and disclosed then. The user-mandated frozen manifest prompt was **973 bytes** and supplied no reference FASTA/PDB or record schema. The accepted Codex B4 cell used a **2,023-byte** diagnostic prompt that supplied both paths and the explicit `pilot_item` contract. We followed the exact 973-byte instruction without coaxing or retrying. Therefore the missing MSA path and nonstandard submission cannot be attributed cleanly to Opus or Claude Code, and this run is **not** a prompt-matched two-harness comparison. The Codex B4 pass remains intact; the Claude tool surface reached usable FM scores but the declared second end-to-end pass was not established. The change to `server.py` also makes the prior Stage 4-prep surface hash stale until re-registered before any scored run.
+
+The Max-subscription CLI reports `total_cost_usd: 3.0499405` as a **list-price estimate, not a charge**. Its full `/usage` dashboard moved current-session 44%→45%, weekly all-model 6%→6% at integer resolution; rate-limit events moved five-hour 0.43→0.45 and seven-day 0.05→0.06. Auxiliary Haiku 4.5 appeared in `modelUsage`. Full [cell trace](cell_claude_opus.jsonl), [grant trace](grant_verify.jsonl), [audit](cell_audit.json) and [cell report](cell_claude_opus.md) are preserved. No labels were opened or scored.
+
+Required disclosures, verbatim (the third records the prior allowed-resource policy; the current 31-name subtraction removed those resources from Claude's catalog):
+
+> "Claude Code ran on a Max subscription with apiKeySource none. total_cost_usd is a list-price accounting estimate, not a charge. Usage credits are disabled at the organization level (overageStatus rejected, org_level_disabled), so a weekly cap means waiting rather than billing through."
+
+> "Claude Code invokes an auxiliary model (Haiku 4.5) on every turn alongside the named subject model. The subject is not a single model."
+
+> "Native MCP-resource tools remained in the catalog under both harnesses and were allowed under the revised firewall, which judges execution, network, package and write access rather than tool names."
+
+**Disposition (c): a different failure—usable FM tool scores and a storage-accepted ten-pick answer, but no contract-compliant submission under a non-matched prompt. Stage 4 remains closed; the panel rules before any cohort harness or scored run.**

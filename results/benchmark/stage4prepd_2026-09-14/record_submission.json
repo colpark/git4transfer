@@ -1,0 +1,284 @@
+{
+  "answer": {
+    "calibration": {
+      "esm_if_bias_note": "ESM-IF1 backbone encodes WT, so it is biased against all mutants; positive deltas are the informative signal",
+      "esm_if_wt_mean_ll": -1.31343,
+      "esm_if_wt_native_match": true,
+      "esmfold_wt_plddt": 0.885,
+      "negative_controls_behave_correctly": "I23E (ESM2 -11.81, ESM-IF -16.6 nats) and Y61E (ESM2 -9.95, ESM-IF -12.6 nats) both strongly penalized, confirming sign and scale"
+    },
+    "caveats": [
+      "No measured assay outcome is reported or implied; all values are model scores.",
+      "The classical evolutionary channel (PSSM, Shannon conservation) is missing because no reference FASTA exists in the workspace - this is the single largest gap and a real MSA could reorder ranks 3-10.",
+      "ESM-2 and ESM-IF1 are both ESM-family models and are correlated; agreement between them is weaker evidence than two truly independent channels.",
+      "No burial/secondary-structure measurement (dssp failed on the ESMFold artifact), so all buried-vs-exposed reasoning is inferred, not measured.",
+      "Ranks 1-2 (D33E, R51K) are meaningfully better supported than ranks 3-10; the tail is a low-risk-filler tier, not a set of confident positives.",
+      "TM-align does not discriminate here: all three refolds scored TM 0.97-0.996 vs WT, so fold retention alone did not separate good from bad candidates - only pLDDT and ESM-IF1 did."
+    ],
+    "considered_and_rejected": {
+      "rejected_channel_disagreement_trusting_structure": {
+        "rationale": "ESM-2 rates these neutral-to-positive (F17A +0.08, S18F +0.02, A49L +0.53) but ESM-IF1 penalizes them heavily (-7.5 to -15.7 nats), the signature of cavity creation / packing loss at buried sites that a sequence-only model misses. F17A was refolded as a direct test: fold is retained (TM 0.971 vs WT) but pLDDT drops to 0.864, the largest decrease of any refold performed, corroborating the structure channel. Note A49L has the single highest ESM-2 score among rejects and is the strongest candidate to promote if burial at position 49 turns out to be low - an MSA or dssp run would decide.",
+        "receipts": [
+          "call_id:166eb26735a24bae915104602ceaac4d",
+          "call_id:9366cb64f4b54fa18550c81e4c13f2e3",
+          "call_id:8bc204d19b184b4a9ffb7436e3b0aa02",
+          "call_id:00f35cac7a6243959e5f6c9cfc2f17fb",
+          "call_id:3f42beaff6514533813f8804247471a0",
+          "call_id:6490441239d8400fa0c16d159d9176b6"
+        ],
+        "variants": [
+          "F17A",
+          "S18F",
+          "A49L",
+          "A49F",
+          "L12V",
+          "L11V"
+        ]
+      },
+      "rejected_mild_but_outranked": [
+        "K9E",
+        "K9C",
+        "K9Y",
+        "L4V",
+        "L4A",
+        "L4S",
+        "V40I",
+        "K16D",
+        "F17Q",
+        "T45I",
+        "E3Q(kept)",
+        "E14V",
+        "E14M",
+        "E29R",
+        "E29N",
+        "E29D",
+        "E29H",
+        "E66Q",
+        "E66T",
+        "Q30T",
+        "Q30I",
+        "Q20N",
+        "S18E",
+        "S19N",
+        "A26S",
+        "G48D",
+        "K13D",
+        "A10T",
+        "Q28T",
+        "S18N",
+        "G21S(kept)"
+      ],
+      "strong_two_channel_agreement_deleterious": [
+        "I23E",
+        "I23G",
+        "I23C",
+        "Y61E",
+        "L44S",
+        "F32T",
+        "F32V",
+        "F32M",
+        "L27C",
+        "K39C",
+        "R42T",
+        "R42M",
+        "R42L",
+        "S38Q",
+        "A49Q",
+        "G48Y",
+        "S19P",
+        "S19M",
+        "A7D",
+        "A7P",
+        "L12D",
+        "L12Q",
+        "N36M",
+        "N36R",
+        "N36I",
+        "I35R",
+        "R53Y",
+        "R51H",
+        "A26D",
+        "A26E",
+        "V24D",
+        "V24N",
+        "G21H",
+        "E29F",
+        "E29L",
+        "K16W",
+        "Q20Y",
+        "L63R",
+        "P64I",
+        "P64L",
+        "V60G",
+        "F47G",
+        "K56Y",
+        "K6Y",
+        "E14P",
+        "E15C",
+        "D33Y",
+        "D33F",
+        "Q37R",
+        "A25F",
+        "A55I",
+        "M43N",
+        "E66F",
+        "V24S"
+      ]
+    },
+    "evidence_gaps": "blast_msa/blast_search/mmseqs_search require an existing workspace reference FASTA; none exists, so pssm_score and conservation could not be run - the classical evolutionary channel is entirely absent. dssp rejects the ESMFold artifact (no valid PDB HEADER), so no measured burial/secondary structure; burial is inferred indirectly from ESM-IF1 penalties. Both remaining scoring channels are ESM-family and therefore correlated, not fully independent.",
+    "method": "All 100 candidates scored with ESM-2 650M masked marginals (delta log-prob, nats). Top tier cross-checked with ESM-IF1 conditioned on the ESMFold WT backbone (WT baseline mean LL -1.31343, native_sequence_match=true; delta reported as total nats over 69 residues). Generic BLOSUM62 added as a protein-independent sanity check. Top 2 picks plus the main rejected disagreement case were refolded and TM-aligned to WT. Consensus score = ESM2_delta + ESM_IF_delta_total.",
+    "next_alternates_if_slots_free": [
+      "A10T (ESM2 -0.50 / ESM-IF -1.71)",
+      "K13D (-1.12 / -1.45)",
+      "Q28T (-1.23 / -5.15)",
+      "S18N (-1.28 / -4.73)"
+    ],
+    "objective_assumed": "No assay objective was specified; ranked for highest probability of being tolerated / mildly beneficial for fold and function. These are PREDICTIONS only - no measured assay outcome is claimed or implied.",
+    "ranked_selection": [
+      {
+        "blosum62": 2,
+        "esm2_delta": 0.46,
+        "esm_if_delta_nats": 1.851,
+        "rank": 1,
+        "receipts": [
+          "call_id:f573a40a2b0441a0804a152472db8892",
+          "call_id:c26f6966de26496080684578569e18c7",
+          "call_id:2610b90e047f44ae96c6f4cf6affb1ad",
+          "call_id:519efd22ef314bbc8768158d2e08368b",
+          "call_id:a45126b22a6543ee8c41bd1883e628c7"
+        ],
+        "supporting_evidence": "Only candidate clearly positive in BOTH learned channels. Conservative acidic-to-acidic swap. Refold keeps pLDDT 0.885 (identical to WT) and TM 0.971 / RMSD 0.73 A vs WT.",
+        "variant": "D33E",
+        "what_would_overturn": "A real MSA showing D33 strictly invariant (e.g. a metal/DNA-contact or salt-bridge partner where the extra methylene misplaces the carboxylate); or a measured loss of function despite conserved fold."
+      },
+      {
+        "blosum62": 2,
+        "esm2_delta": 1.907,
+        "esm_if_delta_nats": 0.334,
+        "rank": 2,
+        "receipts": [
+          "call_id:9456a2eac5764ace997890361bb51ec0",
+          "call_id:366ae49bcc9c4b1aa15bed391451f9df",
+          "call_id:2a619dcd79474bba86c89f648badb86c",
+          "call_id:fae3107ee7cc463f97564faf7a121c1c",
+          "call_id:1642ab02002242208ef7961d1646f488"
+        ],
+        "supporting_evidence": "Highest ESM-2 score of all 100 candidates (+1.91; mutant log-prob -0.14 vs WT -2.05, i.e. ESM-2 prefers K over R here). ESM-IF1 also positive despite WT bias. Refold is nearly identical to WT: TM 0.996, RMSD 0.19 A, pLDDT 0.880.",
+        "variant": "R51K",
+        "what_would_overturn": "If R51 makes a bidentate arginine-specific contact (DNA phosphate/guanine or a buried salt bridge) that lysine cannot replace - exactly the kind of specificity BLOSUM and sequence models blur. A DNA-binding assay would test this directly."
+      },
+      {
+        "blosum62": 0,
+        "esm2_delta": 1.206,
+        "esm_if_delta_nats": -0.762,
+        "rank": 3,
+        "receipts": [
+          "call_id:a3fb4f00f60e49289587c7c12391160b",
+          "call_id:4210a10db72c47388c859669ffc99d19",
+          "call_id:7390122b99a04e4095f2c9ab1baa7fff"
+        ],
+        "supporting_evidence": "Second-highest ESM-2 score (+1.21); ESM-IF1 penalty is negligible (-0.011 mean LL). ESM-2 assigns WT G21 a low probability (-3.11), i.e. glycine is not the model's preferred residue at this site.",
+        "variant": "G21S",
+        "what_would_overturn": "If G21 is a required backbone-flexibility hinge (it sits just before the E22-I23-V24 segment), any beta-branched/larger side chain could rigidify it; DSSP/phi-psi at position 21 would settle this and was NOT obtainable here."
+      },
+      {
+        "blosum62": 2,
+        "esm2_delta": -0.133,
+        "esm_if_delta_nats": 0.566,
+        "rank": 4,
+        "receipts": [
+          "call_id:6372d34dbf404a9da92cafaebfbb6046",
+          "call_id:fc6533beafe248d2a880ae858c645173",
+          "call_id:99efaadd85c3435c8fd92b0b6a90acf3"
+        ],
+        "supporting_evidence": "Near-neutral in ESM-2 and positive in ESM-IF1; conservative E-to-D in the C-terminal tail, a low-constraint region. Low-risk queue filler.",
+        "variant": "E66D",
+        "what_would_overturn": "Involvement of E66 in a C-terminal capping interaction where shortening the side chain breaks an H-bond; low prior, low information either way."
+      },
+      {
+        "blosum62": 2,
+        "esm2_delta": -1.177,
+        "esm_if_delta_nats": 1.553,
+        "rank": 5,
+        "receipts": [
+          "call_id:84cb937459504433a47897d8e7733f22",
+          "call_id:c209f3616de9432687fa5e3ec5246f0e",
+          "call_id:2fcc2bf5ef3d4af69a58b8132c88d7c6"
+        ],
+        "supporting_evidence": "Second-largest positive ESM-IF1 delta (backbone tolerates K at 53 well). Conservative charge-preserving swap.",
+        "variant": "R53K",
+        "what_would_overturn": "Channel conflict: ESM-2 mildly disfavours it (-1.18), and ESM-2 rates WT R53 highly (-0.34), hinting at evolutionary constraint. An MSA showing R53 invariant would demote this; same arginine-specific-contact caveat as R51K."
+      },
+      {
+        "blosum62": -1,
+        "esm2_delta": -0.816,
+        "esm_if_delta_nats": 1.128,
+        "rank": 6,
+        "receipts": [
+          "call_id:60610724eea045a4991d65733245cfb5",
+          "call_id:95cc1bc36b444b7296de410a1651fa20",
+          "call_id:3623a70a9c7c42a99a96b1607c7c8655"
+        ],
+        "supporting_evidence": "Positive ESM-IF1 delta, suggesting position 25 is solvent-exposed enough to accept a larger polar side chain; ESM-2 penalty is mild.",
+        "variant": "A25Q",
+        "what_would_overturn": "A25 sits in the A25-A26-L27 stretch; if it is in fact partly buried, Gln introduces a desolvation penalty that ESM-IF1's backbone-only view can miss. Burial measurement (dssp) was unavailable - this is the weakest structural assumption in the top 6."
+      },
+      {
+        "blosum62": -1,
+        "esm2_delta": -0.822,
+        "esm_if_delta_nats": 0.028,
+        "rank": 7,
+        "receipts": [
+          "call_id:e2e14d3b096844f89b06969c113adb56",
+          "call_id:97e94d21e3f044d6a85038fa81a0bf75",
+          "call_id:770539851a8c4b0d87f58855d9040214"
+        ],
+        "supporting_evidence": "Essentially neutral on the structure channel (delta +0.03 nats) with only a mild ESM-2 penalty; adjacent to the well-tolerated R51/R53 sites.",
+        "variant": "T52L",
+        "what_would_overturn": "Loss of a Thr hydroxyl H-bond or helix-capping role; also a polar-to-hydrophobic change on a likely exposed face could promote aggregation, which neither channel models."
+      },
+      {
+        "blosum62": -3,
+        "esm2_delta": -0.376,
+        "esm_if_delta_nats": -1.26,
+        "rank": 8,
+        "receipts": [
+          "call_id:295a45fbec85492293ec416111635138",
+          "call_id:72b5974e6e7c402fbca3f97dff0c0cc9",
+          "call_id:56299d78289d4fa1aa4d25054397076d"
+        ],
+        "supporting_evidence": "Both learned channels near-neutral despite a strongly negative BLOSUM62 (-3), a case where generic substitution scoring and context-aware models disagree and the context-aware models should win. ESM-2 gives WT C62 a low probability (-3.79), so the lone cysteine is not model-preferred. High information: C62 is the only Cys in the protein, so this tests whether it matters at all.",
+        "variant": "C62H",
+        "what_would_overturn": "Any role for C62 as a metal ligand or in a cross-link/redox function would make this severely deleterious - BLOSUM -3 is a genuine warning I am partly discounting. Rank 8 reflects that residual risk."
+      },
+      {
+        "blosum62": 2,
+        "esm2_delta": -1.363,
+        "esm_if_delta_nats": -0.414,
+        "rank": 9,
+        "receipts": [
+          "call_id:b7177644149e4dedaad45e4169c6181d",
+          "call_id:3f778e37617b4fb2a07780873adbeb4d"
+        ],
+        "supporting_evidence": "Small penalties in both channels; position 3 is in the flexible N-terminal region where constraint is lowest. Conservative isosteric charge-neutralizing change.",
+        "variant": "E3Q",
+        "what_would_overturn": "Little - this is a low-risk, low-information pick included to fill the queue rather than to test a hypothesis. A strong N-terminal electrostatic requirement would overturn it."
+      },
+      {
+        "blosum62": -2,
+        "esm2_delta": -0.096,
+        "esm_if_delta_nats": -2.021,
+        "rank": 10,
+        "receipts": [
+          "call_id:c7a59664be864a589dd5c9dc235c6f6a",
+          "call_id:bb6c2c8c31bb487a97a10279c9a37e89",
+          "call_id:dc58eb3ac52d47e6a43ae1fa726402ca"
+        ],
+        "supporting_evidence": "Almost exactly neutral on ESM-2 (-0.10), which also rates WT M59 only -2.92, so methionine is weakly preferred at this site. Modest ESM-IF1 penalty.",
+        "variant": "M59N",
+        "what_would_overturn": "The ESM-IF1 penalty (-2.0 nats) plus BLOSUM -2 suggests M59 may contribute hydrophobic packing in the C-terminal M57-E58-M59-V60-Y61 stretch; if buried, M-to-N would be destabilizing. Ranked last of the ten for this reason."
+      }
+    ]
+  },
+  "item_id": "hth69_QEELVKAFKALLK"
+}

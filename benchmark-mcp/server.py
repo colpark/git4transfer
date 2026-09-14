@@ -187,13 +187,6 @@ def make_physics(presentation: str) -> MCPServer:
         args = locals()
         return emit("physics", "dssp", args, lambda: physics.dssp(**args))
 
-    @mcp.tool(name="pyrosetta_ddg")
-    def pyrosetta_ddg(wt_pdb: str, mutant_pdb: str) -> dict:
-        """SCORE, physics channel BLOCKED: PyRosetta ddG unavailable on this host. Do not treat openmm_snapshot_potential_delta as ddG or use it to rank W1 fitness."""
-        args = locals()
-        return emit("physics", "pyrosetta_ddg", args,
-                    lambda: physics.pyrosetta_ddg(**args))
-
     @mcp.tool(name="openmm_snapshot_potential_delta")
     def openmm_snapshot_potential_delta(wt_pdb: str, mutant_pdb: str) -> dict:
         """ANALYSE, physics diagnostic: potential-energy difference of two supplied unminimized PDB snapshots. Neither ddG nor stability/fitness ranker; complementary to learned esm2_likelihood, never interchangeable."""

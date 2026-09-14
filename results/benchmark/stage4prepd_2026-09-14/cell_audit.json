@@ -1,0 +1,335 @@
+{
+  "candidate_count": 100,
+  "tool_calls_total": 159,
+  "by_server": {
+    "rescue_analysis": {
+      "attempted": 3,
+      "usable": 3
+    },
+    "rescue_classical": {
+      "attempted": 17,
+      "usable": 14
+    },
+    "rescue_generative": {
+      "attempted": 30,
+      "usable": 30
+    },
+    "rescue_physics": {
+      "attempted": 1
+    },
+    "rescue_predictive": {
+      "attempted": 105,
+      "usable": 105
+    },
+    "rescue_record": {
+      "attempted": 3,
+      "usable": 3
+    }
+  },
+  "esm2": {
+    "attempted": 101,
+    "unique_variants_attempted": 100,
+    "usable": 101,
+    "unique_variants_usable": 100
+  },
+  "esm_if": {
+    "attempted": 30,
+    "unique_variants_attempted": 29,
+    "usable": 30,
+    "unique_variants_usable": 29
+  },
+  "input_forms_by_tool": {
+    "blosum_score": {
+      "variant": 14
+    },
+    "esm2_likelihood": {
+      "variant": 101
+    },
+    "esm_if": {
+      "variant": 29
+    }
+  },
+  "failed_or_unusable": [
+    {
+      "server": "rescue_classical",
+      "tool": "blast_msa",
+      "variant": null,
+      "error": "ValueError: reference FASTA must be an existing <=10 MB workspace file"
+    },
+    {
+      "server": "rescue_physics",
+      "tool": "dssp",
+      "variant": null,
+      "error": "RuntimeError: mkdssp exited 1: Since the file did not start with a valid PDB HEADER line mmCIF was assumed, but that failed.\n >> parse error at line 1: This file does not seem to be an mmCIF file\n"
+    },
+    {
+      "server": "rescue_classical",
+      "tool": "blast_search",
+      "variant": null,
+      "error": "ValueError: reference FASTA must be an existing <=10 MB workspace file"
+    },
+    {
+      "server": "rescue_classical",
+      "tool": "blast_search",
+      "variant": null,
+      "error": "ValueError: reference FASTA must be an existing <=10 MB workspace file"
+    }
+  ],
+  "native_invocations": [],
+  "submit_answer": {
+    "attempted": 1,
+    "record_accepted": true,
+    "item_id": "hth69_QEELVKAFKALLK",
+    "answer_keys": [
+      "calibration",
+      "caveats",
+      "considered_and_rejected",
+      "evidence_gaps",
+      "method",
+      "next_alternates_if_slots_free",
+      "objective_assumed",
+      "ranked_selection"
+    ],
+    "ten_ranked_selection_entries": true,
+    "contract_compliant": false
+  },
+  "pick_audit": [
+    {
+      "rank": 1,
+      "variant": "D33E",
+      "cited_receipts": 5,
+      "resolving_usable_receipts": 5,
+      "variant_specific_usable_receipts": 3,
+      "cited_usable_tool_types": [
+        "blosum_score",
+        "esm2_likelihood",
+        "esm_if",
+        "esmfold",
+        "tmalign"
+      ],
+      "formal_validation_entries": 0
+    },
+    {
+      "rank": 2,
+      "variant": "R51K",
+      "cited_receipts": 5,
+      "resolving_usable_receipts": 5,
+      "variant_specific_usable_receipts": 3,
+      "cited_usable_tool_types": [
+        "blosum_score",
+        "esm2_likelihood",
+        "esm_if",
+        "esmfold",
+        "tmalign"
+      ],
+      "formal_validation_entries": 0
+    },
+    {
+      "rank": 3,
+      "variant": "G21S",
+      "cited_receipts": 3,
+      "resolving_usable_receipts": 3,
+      "variant_specific_usable_receipts": 3,
+      "cited_usable_tool_types": [
+        "blosum_score",
+        "esm2_likelihood",
+        "esm_if"
+      ],
+      "formal_validation_entries": 0
+    },
+    {
+      "rank": 4,
+      "variant": "E66D",
+      "cited_receipts": 3,
+      "resolving_usable_receipts": 3,
+      "variant_specific_usable_receipts": 3,
+      "cited_usable_tool_types": [
+        "blosum_score",
+        "esm2_likelihood",
+        "esm_if"
+      ],
+      "formal_validation_entries": 0
+    },
+    {
+      "rank": 5,
+      "variant": "R53K",
+      "cited_receipts": 3,
+      "resolving_usable_receipts": 3,
+      "variant_specific_usable_receipts": 3,
+      "cited_usable_tool_types": [
+        "blosum_score",
+        "esm2_likelihood",
+        "esm_if"
+      ],
+      "formal_validation_entries": 0
+    },
+    {
+      "rank": 6,
+      "variant": "A25Q",
+      "cited_receipts": 3,
+      "resolving_usable_receipts": 3,
+      "variant_specific_usable_receipts": 3,
+      "cited_usable_tool_types": [
+        "blosum_score",
+        "esm2_likelihood",
+        "esm_if"
+      ],
+      "formal_validation_entries": 0
+    },
+    {
+      "rank": 7,
+      "variant": "T52L",
+      "cited_receipts": 3,
+      "resolving_usable_receipts": 3,
+      "variant_specific_usable_receipts": 3,
+      "cited_usable_tool_types": [
+        "blosum_score",
+        "esm2_likelihood",
+        "esm_if"
+      ],
+      "formal_validation_entries": 0
+    },
+    {
+      "rank": 8,
+      "variant": "C62H",
+      "cited_receipts": 3,
+      "resolving_usable_receipts": 3,
+      "variant_specific_usable_receipts": 3,
+      "cited_usable_tool_types": [
+        "blosum_score",
+        "esm2_likelihood",
+        "esm_if"
+      ],
+      "formal_validation_entries": 0
+    },
+    {
+      "rank": 9,
+      "variant": "E3Q",
+      "cited_receipts": 2,
+      "resolving_usable_receipts": 2,
+      "variant_specific_usable_receipts": 1,
+      "cited_usable_tool_types": [
+        "esm2_likelihood",
+        "esm_if"
+      ],
+      "formal_validation_entries": 0
+    },
+    {
+      "rank": 10,
+      "variant": "M59N",
+      "cited_receipts": 3,
+      "resolving_usable_receipts": 3,
+      "variant_specific_usable_receipts": 3,
+      "cited_usable_tool_types": [
+        "blosum_score",
+        "esm2_likelihood",
+        "esm_if"
+      ],
+      "formal_validation_entries": 0
+    }
+  ],
+  "result": {
+    "duration_ms": 750002,
+    "num_turns": 160,
+    "total_cost_usd": 3.0499405,
+    "usage": {
+      "input_tokens": 28,
+      "cache_creation_input_tokens": 133061,
+      "cache_read_input_tokens": 886643,
+      "output_tokens": 50976,
+      "output_tokens_details": {
+        "thinking_tokens": 15638
+      },
+      "server_tool_use": {
+        "web_search_requests": 0,
+        "web_fetch_requests": 0
+      },
+      "service_tier": "standard",
+      "cache_creation": {
+        "ephemeral_1h_input_tokens": 133061,
+        "ephemeral_5m_input_tokens": 0
+      },
+      "inference_geo": "not_available",
+      "iterations": [
+        {
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "cache_read_input_tokens": 6939,
+          "cache_creation_input_tokens": 126010,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 126010
+          },
+          "type": "message"
+        },
+        {
+          "input_tokens": 2,
+          "output_tokens": 1564,
+          "cache_read_input_tokens": 127209,
+          "cache_creation_input_tokens": 5852,
+          "cache_creation": {
+            "ephemeral_5m_input_tokens": 0,
+            "ephemeral_1h_input_tokens": 5852
+          },
+          "type": "message"
+        }
+      ],
+      "speed": "standard"
+    },
+    "modelUsage": {
+      "claude-haiku-4-5-20251001": {
+        "inputTokens": 1399,
+        "outputTokens": 14,
+        "cacheReadInputTokens": 0,
+        "cacheCreationInputTokens": 0,
+        "webSearchRequests": 0,
+        "costUSD": 0.001469,
+        "contextWindow": 200000,
+        "maxOutputTokens": 32000,
+        "thinkingTokens": 0,
+        "canonicalModel": "claude-haiku-4-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      },
+      "claude-opus-5": {
+        "inputTokens": 28,
+        "outputTokens": 50976,
+        "cacheReadInputTokens": 886643,
+        "cacheCreationInputTokens": 133061,
+        "webSearchRequests": 0,
+        "costUSD": 3.0484715,
+        "contextWindow": 1000000,
+        "maxOutputTokens": 64000,
+        "thinkingTokens": 15638,
+        "canonicalModel": "claude-opus-5",
+        "provider": "firstParty",
+        "costBasis": "list"
+      }
+    },
+    "subagent_stats": {
+      "spawned": 0,
+      "requested": {
+        "background": 0,
+        "foreground": 0,
+        "unset": 0
+      },
+      "started_in_background": 0,
+      "max_depth": 0,
+      "spawned_by_subagents": 0,
+      "completed": 0,
+      "failed": 0,
+      "killed": {
+        "parent": 0,
+        "user": 0,
+        "system": 0
+      },
+      "refused": {
+        "depth_limit": 0,
+        "concurrency_limit": 0,
+        "budget": 0
+      },
+      "by_type": {}
+    },
+    "permission_denials": []
+  }
+}
