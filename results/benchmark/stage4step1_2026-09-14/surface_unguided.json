@@ -1,0 +1,708 @@
+[
+  {
+    "server": "record",
+    "name": "submit_answer",
+    "description": "SUBMIT: record the one final ranked answer after evaluating and filtering candidates. Receipts must resolve; this records an unscored answer, not a measured assay result.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "item_id": {
+          "title": "Item Id",
+          "type": "string"
+        },
+        "answer": {
+          "additionalProperties": true,
+          "title": "Answer",
+          "type": "object"
+        }
+      },
+      "required": [
+        "item_id",
+        "answer"
+      ],
+      "title": "submit_answerArguments"
+    },
+    "in_unguided_grant": true
+  },
+  {
+    "server": "record",
+    "name": "log_note",
+    "description": "RECORD: append an auditable working note or rejection rationale; not final submission. Use submit_answer exactly once when evaluation is finished.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "item_id": {
+          "title": "Item Id",
+          "type": "string"
+        },
+        "note": {
+          "title": "Note",
+          "type": "string"
+        }
+      },
+      "required": [
+        "item_id",
+        "note"
+      ],
+      "title": "log_noteArguments"
+    },
+    "in_unguided_grant": true
+  },
+  {
+    "server": "classical",
+    "name": "mmseqs_search",
+    "description": "RETRIEVE: MMseqs2 homolog IDs and alignment statistics, not sequences. Use blast_msa for query-anchored rows before pssm_score or conservation; compare learned esm2_likelihood separately.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "sequence": {
+          "title": "Sequence",
+          "type": "string"
+        },
+        "reference_fasta": {
+          "title": "Reference Fasta",
+          "type": "string"
+        },
+        "max_hits": {
+          "default": 5,
+          "title": "Max Hits",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "sequence",
+        "reference_fasta"
+      ],
+      "title": "mmseqs_searchArguments"
+    },
+    "in_unguided_grant": true
+  },
+  {
+    "server": "classical",
+    "name": "blast_search",
+    "description": "RETRIEVE: BLASTP homolog IDs and alignment statistics, not MSA rows. Use blast_msa to retrieve and align sequences for pssm_score or conservation; avoid repeating identical calls.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "sequence": {
+          "title": "Sequence",
+          "type": "string"
+        },
+        "reference_fasta": {
+          "title": "Reference Fasta",
+          "type": "string"
+        },
+        "max_hits": {
+          "default": 5,
+          "title": "Max Hits",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "sequence",
+        "reference_fasta"
+      ],
+      "title": "blast_searchArguments"
+    },
+    "in_unguided_grant": true
+  },
+  {
+    "server": "classical",
+    "name": "blast_msa",
+    "description": "RETRIEVE\u2192ANALYSE: BLASTP hits plus distinct query-anchored homolog rows, query first. Pass result.msa and result.query to pssm_score or conservation; no fitness label is used.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "sequence": {
+          "title": "Sequence",
+          "type": "string"
+        },
+        "reference_fasta": {
+          "title": "Reference Fasta",
+          "type": "string"
+        },
+        "max_hits": {
+          "default": 10,
+          "title": "Max Hits",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "sequence",
+        "reference_fasta"
+      ],
+      "title": "blast_msaArguments"
+    },
+    "in_unguided_grant": true
+  },
+  {
+    "server": "classical",
+    "name": "pssm_score",
+    "description": "SCORE, classical evolutionary evidence: substitution log-odds from aligned homologs. Pass variant='G52L' OR one-letter mutant plus position; query and blast_msa rows are required. Compare learned esm2_likelihood.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "title": "Query",
+          "type": "string"
+        },
+        "msa": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Msa",
+          "type": "array"
+        },
+        "position": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Position"
+        },
+        "mutant": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Mutant"
+        },
+        "wt": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Wt"
+        },
+        "variant": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY][1-9][0-9]*[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Variant"
+        }
+      },
+      "required": [
+        "query",
+        "msa"
+      ],
+      "title": "pssm_scoreArguments"
+    },
+    "in_unguided_grant": true
+  },
+  {
+    "server": "classical",
+    "name": "conservation",
+    "description": "ANALYSE, classical site evidence: normalized Shannon conservation. Pass variant='G52L' OR position; query and blast_msa rows required. One sequence fails; not mutation-specific.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "title": "Query",
+          "type": "string"
+        },
+        "msa": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Msa",
+          "type": "array"
+        },
+        "position": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Position"
+        },
+        "wt": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Wt"
+        },
+        "mutant": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Mutant"
+        },
+        "variant": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY][1-9][0-9]*[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Variant"
+        }
+      },
+      "required": [
+        "query",
+        "msa"
+      ],
+      "title": "conservationArguments"
+    },
+    "in_unguided_grant": true
+  },
+  {
+    "server": "classical",
+    "name": "motif_scan",
+    "description": "ANALYSE: one-based overlapping sequence-regex motif hits. A motif is contextual evidence, not a measured variant effect; compare pssm_score and learned esm2_likelihood.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "sequence": {
+          "title": "Sequence",
+          "type": "string"
+        },
+        "pattern": {
+          "title": "Pattern",
+          "type": "string"
+        }
+      },
+      "required": [
+        "sequence",
+        "pattern"
+      ],
+      "title": "motif_scanArguments"
+    },
+    "in_unguided_grant": true
+  },
+  {
+    "server": "classical",
+    "name": "blosum_score",
+    "description": "SCORE, classical generic BLOSUM62 substitution evidence. Pass variant='G52L' OR one-letter wt and mutant; position is optional. Protein-independent; compare learned esm2_likelihood.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "wt": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Wt"
+        },
+        "mutant": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Mutant"
+        },
+        "position": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Position"
+        },
+        "variant": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY][1-9][0-9]*[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Variant"
+        }
+      },
+      "title": "blosum_scoreArguments"
+    },
+    "in_unguided_grant": true
+  },
+  {
+    "server": "classical",
+    "name": "hbond_geometry",
+    "description": "ANALYSE, geometric evidence: distance/angle hydrogen-bond check on supplied coordinates. Not energy, ddG or variant fitness; compare dssp and learned sequence scores separately.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "donor": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Donor",
+          "type": "array"
+        },
+        "hydrogen": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Hydrogen",
+          "type": "array"
+        },
+        "acceptor": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Acceptor",
+          "type": "array"
+        }
+      },
+      "required": [
+        "donor",
+        "hydrogen",
+        "acceptor"
+      ],
+      "title": "hbond_geometryArguments"
+    },
+    "in_unguided_grant": true
+  },
+  {
+    "server": "analysis",
+    "name": "seq_identity",
+    "description": "ANALYSE: global BLOSUM62-aligned sequence identity including terminal gaps. Detect redundancy; not fitness or independent validation. For mutation evidence compare pssm_score and esm2_likelihood.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "sequence_a": {
+          "title": "Sequence A",
+          "type": "string"
+        },
+        "sequence_b": {
+          "title": "Sequence B",
+          "type": "string"
+        }
+      },
+      "required": [
+        "sequence_a",
+        "sequence_b"
+      ],
+      "title": "seq_identityArguments"
+    },
+    "in_unguided_grant": true
+  },
+  {
+    "server": "analysis",
+    "name": "tmalign",
+    "description": "ANALYSE: TM-align two explicit PDB backbones for structural similarity. Not measured stability; complement learned esmfold structure and sequence plausibility with geometric comparison.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "pdb_a": {
+          "title": "Pdb A",
+          "type": "string"
+        },
+        "pdb_b": {
+          "title": "Pdb B",
+          "type": "string"
+        }
+      },
+      "required": [
+        "pdb_a",
+        "pdb_b"
+      ],
+      "title": "tmalignArguments"
+    },
+    "in_unguided_grant": true
+  },
+  {
+    "server": "predictive",
+    "name": "esm2_likelihood",
+    "description": "SCORE, learned sequence channel: pinned ESM-2 650M masked-marginal log-odds. Pass variant='G52L' OR position plus one-letter mutant; compare classical PSSM/BLOSUM and ESM-IF1.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "sequence": {
+          "title": "Sequence",
+          "type": "string"
+        },
+        "position": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Position"
+        },
+        "mutant": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Mutant"
+        },
+        "wt": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Wt"
+        },
+        "variant": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY][1-9][0-9]*[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Variant"
+        }
+      },
+      "required": [
+        "sequence"
+      ],
+      "title": "esm2_likelihoodArguments"
+    },
+    "in_unguided_grant": true
+  },
+  {
+    "server": "predictive",
+    "name": "esmfold",
+    "description": "PREDICT, learned structure channel: pinned ESMFold v1 PDB artifact, CA count and confidence. pLDDT is local structural confidence, not fitness/stability; compare geometry with dssp or tmalign.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "sequence": {
+          "title": "Sequence",
+          "type": "string"
+        },
+        "seed": {
+          "default": 0,
+          "title": "Seed",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "sequence"
+      ],
+      "title": "esmfoldArguments"
+    },
+    "in_unguided_grant": true
+  },
+  {
+    "server": "generative",
+    "name": "esm_if",
+    "description": "SCORE, learned structure-conditioned ESM-IF1. Without variant, score supplied sequence; with variant='G52L' OR position plus one-letter mutant, treat sequence as native and score its substitution on the backbone.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "pdb_path": {
+          "title": "Pdb Path",
+          "type": "string"
+        },
+        "chain": {
+          "title": "Chain",
+          "type": "string"
+        },
+        "sequence": {
+          "title": "Sequence",
+          "type": "string"
+        },
+        "position": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Position"
+        },
+        "mutant": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Mutant"
+        },
+        "wt": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Wt"
+        },
+        "variant": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY][1-9][0-9]*[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Variant"
+        }
+      },
+      "required": [
+        "pdb_path",
+        "chain",
+        "sequence"
+      ],
+      "title": "esm_ifArguments"
+    },
+    "in_unguided_grant": true
+  },
+  {
+    "server": "physics",
+    "name": "dssp",
+    "description": "ANALYSE, geometric structural evidence: mkdssp 4.2.2 secondary structure and solvent exposure from a valid PDB. Not stability or fitness; compare learned esmfold and esm2_likelihood separately.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "pdb_path": {
+          "title": "Pdb Path",
+          "type": "string"
+        }
+      },
+      "required": [
+        "pdb_path"
+      ],
+      "title": "dsspArguments"
+    },
+    "in_unguided_grant": true
+  },
+  {
+    "server": "physics",
+    "name": "openmm_snapshot_potential_delta",
+    "description": "ANALYSE, physics diagnostic: potential-energy difference of two supplied unminimized PDB snapshots. Neither ddG nor stability/fitness ranker; complementary to learned esm2_likelihood, never interchangeable.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "wt_pdb": {
+          "title": "Wt Pdb",
+          "type": "string"
+        },
+        "mutant_pdb": {
+          "title": "Mutant Pdb",
+          "type": "string"
+        }
+      },
+      "required": [
+        "wt_pdb",
+        "mutant_pdb"
+      ],
+      "title": "openmm_snapshot_potential_deltaArguments"
+    },
+    "in_unguided_grant": true
+  },
+  {
+    "server": "lit",
+    "name": "pubmed_search",
+    "description": "RETRIEVE, literature evidence: live PubMed titles/records via NCBI E-utilities. Prior publications provide context, not this assay's label; compare sequence and structural tools independently.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "term": {
+          "title": "Term",
+          "type": "string"
+        },
+        "max_hits": {
+          "default": 3,
+          "title": "Max Hits",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "term"
+      ],
+      "title": "pubmed_searchArguments"
+    },
+    "in_unguided_grant": true
+  }
+]

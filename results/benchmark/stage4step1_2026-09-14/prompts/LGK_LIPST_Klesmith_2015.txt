@@ -1,0 +1,22 @@
+You have a protein and candidate single substitutions. Your assay queue accepts ten. Choose ten variants, rank them, and state what evidence supports each choice and what would overturn it. Report variants you considered and rejected. Do not claim a measured assay outcome.
+
+Protein sequence:
+MPIATSTGDNVLDFTVLGLNSGTSMDGIDCALCHFYQKTPDAPMEFELLEYGEVPLAQPIKQRVMRMILEDTTSPSELSEVNVILGEHFADAVRQFAAERNVDLSTIDAIASHGQTIWLLSMPEEGQVKSALTMAEGAIIAARTGITSITDFRISDQAAGRQGAPLIAFFDALLLHHPTKLRACQNIGGIANVCFIPPDVDGRRTDEYYDFDTGPGNVFIDAVVRHFTNGEQEYDKDGAMGKRGKVDQELVDDFLKMPYFQLDPPKTTGREVFRDTLAHDLIRRAEAKGLSPDDIVATTTRITAQAIVDHYRRYAPSQEIDEIFMCGGGAYNPNIVEFIQQSYPNTKIMMLDEAGVPAGAKEAITFAWQGMECLVGRSIPVPTRVETRQHYVLGKVSPGLNYRSVMKKGMAFGGDAQQLPWVSEMIVKKKGKVITNNWA
+
+Candidate variants:
+A358S, A354H, S21G, D263E, V272D, A141R, D352T, P123S, K129V, L48P, A278G, E124P, G22N, L290D, A297Q, V193Q, G376L, Y391R, Q248M, I139Q, Y36L, A141G, Q389E, I295W, D293H, V16L, F152C, V385T, E87W, F170Q, G327W, T73G, T346A, R301L, D352S, R283W, Q261F, F89K, T300S, Q369V, I146P, E136S, D206A, R100S, M240R, N20F, Y234L, D221G, F254L, S342F, R301T, T299E, P198A, N20T, V385N, S378A, A363G, E87M, E136T, K236N, L250D, L85S, R270Y, P55S, F227A, E337D, M134A, C326Y, I295C, G370A, E319L, A164I, P382E, V102M, G52P, Y343H, G216T, V381L, H113F, D212E, T346Y, G327Q, R161K, G241C, I68D, E372Y, Q369R, S397I, E124I, E271R, E322L, R94T, F254Q, F366R, Q261M, W368V, G160F, P123G, N229C, E372K
+
+
+Reference homolog FASTA for retrieval: /home/aid1/Documents/2_19C_biology/results/benchmark/stage4step1_2026-09-14/reference_fastas/LGK_LIPST_Klesmith_2015.fasta
+Reference structure PDB for geometric evaluation: /home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/LGK_LIPST.pdb
+
+Submit exactly one answer through the mounted record channel, using item_id
+`pilot_item`. The answer object must contain `selected`: exactly ten entries,
+each with `rank` (1–10), `mutant`, `basis`, `evidence` (receipt ID array),
+`validation` (array of {category, call_id}), and `would_overturn`.
+Include `rejected`: an array of {mutant, reason}, empty only if none were
+rejected. If possible, include `ranking`: one {mutant, score} entry per
+supplied candidate, with larger predicted scores better. The scores are your predictions, not
+measured fitness. Every cited receipt must come from a successful tool call
+in this run. If you cannot support a site/variant, say so; do not invent data.
+Submit only when finished. Do not claim an assay result.

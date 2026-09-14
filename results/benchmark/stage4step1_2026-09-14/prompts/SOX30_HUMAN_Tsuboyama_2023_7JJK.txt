@@ -1,0 +1,22 @@
+You have a protein and candidate single substitutions. Your assay queue accepts ten. Choose ten variants, rank them, and state what evidence supports each choice and what would overturn it. Report variants you considered and rejected. Do not claim a measured assay outcome.
+
+Protein sequence:
+RPMNAFMVWARIHRPALAKANPAANNAEISVQLGLEWNKLSEEQKKPYYDEAQKIKE
+
+Candidate variants:
+V31D, V31H, K19C, I55V, M7I, L17E, A18W, E36L, K45E, A52N, L40V, E28G, P22V, Q32R, P47C, A27T, G34E, A20C, L40C, P15A, A23P, H13C, E43G, Q53F, P15E, I55T, N21A, M3L, I12R, N21S, K45C, N25T, V31P, E28C, N21L, A20Q, R1N, E42C, P22N, E36Q, A16V, L35H, A5D, H13A, L17Q, I55M, E42T, E36W, S30V, S30L, Y49R, N4A, L40W, A20L, E28V, N26S, A52I, A18V, A5I, A20D, A10W, V31G, K46P, Y48H, N4M, L35F, N26F, L33V, N38S, E51R, Q44T, P15F, V31E, N21V, A23L, R11A, I12G, H13W, K45R, P2E, A52H, Q53S, M7V, A24M, P47F, D50R, N26H, I55D, L33F, S41P, A18Y, V31K, P2G, A52D, N21W, E51C, V31Q, K46H, Q32G, I29E
+
+
+Reference homolog FASTA for retrieval: /home/aid1/Documents/2_19C_biology/results/benchmark/stage4step1_2026-09-14/reference_fastas/SOX30_HUMAN_Tsuboyama_2023_7JJK.fasta
+Reference structure PDB for geometric evaluation: /home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/SOX30_HUMAN.pdb
+
+Submit exactly one answer through the mounted record channel, using item_id
+`pilot_item`. The answer object must contain `selected`: exactly ten entries,
+each with `rank` (1–10), `mutant`, `basis`, `evidence` (receipt ID array),
+`validation` (array of {category, call_id}), and `would_overturn`.
+Include `rejected`: an array of {mutant, reason}, empty only if none were
+rejected. If possible, include `ranking`: one {mutant, score} entry per
+supplied candidate, with larger predicted scores better. The scores are your predictions, not
+measured fitness. Every cited receipt must come from a successful tool call
+in this run. If you cannot support a site/variant, say so; do not invent data.
+Submit only when finished. Do not claim an assay result.

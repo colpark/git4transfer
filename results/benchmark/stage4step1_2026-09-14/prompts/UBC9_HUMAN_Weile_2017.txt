@@ -1,0 +1,22 @@
+You have a protein and candidate single substitutions. Your assay queue accepts ten. Choose ten variants, rank them, and state what evidence supports each choice and what would overturn it. Report variants you considered and rejected. Do not claim a measured assay outcome.
+
+Protein sequence:
+MSGIALSRLAQERKAWRKDHPFGFVAVPTKNPDGTMNLMNWECAIPGKKGTPWEGGLFKLRMLFKDDYPSSPPKCKFEPPLFHPNVYPSGTVCLSILEEDKDWRPAITIKQILLGIQELLNEPNIQDPAQAEAYTIYCQNRVEYEKRVRAQAKKFAPSY
+
+Candidate variants:
+C138W, Y68P, L81V, Y137I, A133P, R147W, P128A, A106V, R104I, K18S, E78T, P88T, P105Q, Q111I, E99G, P79Q, G55D, A133M, P28I, A131I, K146C, I112H, R141C, P28A, C43L, F77H, S95C, C138V, E98W, K48N, A10E, R147Q, H83G, R17K, K30C, N37F, I136H, K48Y, N140Y, S70G, T135W, N140I, A133N, Y144I, R104P, E145T, E118F, R61W, S70N, L63N, V92A, R104D, N121Y, P128N, W53V, I136K, E132F, P28Y, D127L, S71I, L97F, P88R, D19W, L119S, D67I, T91L, E78V, L94W, S95N, L97T, E42P, F24V, L63A, W53E, S7K, K59W, L119K, A133K, N85P, G90L, N85H, C93Y, I136D, F22K, P79L, Q11D, V148I, P46L, P123E, T29V, E12N, R147G, G23E, G90R, K49R, A133W, I109T, E143H, D102F, W16K
+
+
+Reference homolog FASTA for retrieval: /home/aid1/Documents/2_19C_biology/results/benchmark/stage4step1_2026-09-14/reference_fastas/UBC9_HUMAN_Weile_2017.fasta
+Reference structure PDB for geometric evaluation: /home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/UBC9_HUMAN.pdb
+
+Submit exactly one answer through the mounted record channel, using item_id
+`pilot_item`. The answer object must contain `selected`: exactly ten entries,
+each with `rank` (1–10), `mutant`, `basis`, `evidence` (receipt ID array),
+`validation` (array of {category, call_id}), and `would_overturn`.
+Include `rejected`: an array of {mutant, reason}, empty only if none were
+rejected. If possible, include `ranking`: one {mutant, score} entry per
+supplied candidate, with larger predicted scores better. The scores are your predictions, not
+measured fitness. Every cited receipt must come from a successful tool call
+in this run. If you cannot support a site/variant, say so; do not invent data.
+Submit only when finished. Do not claim an assay result.

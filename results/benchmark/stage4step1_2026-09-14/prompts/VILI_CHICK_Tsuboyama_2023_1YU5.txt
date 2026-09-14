@@ -1,0 +1,22 @@
+You have a protein and candidate single substitutions. Your assay queue accepts ten. Choose ten variants, rank them, and state what evidence supports each choice and what would overturn it. Report variants you considered and rejected. Do not claim a measured assay outcome.
+
+Protein sequence:
+KLETFPLDVLVNTAAEDLPRGVDPSRKENHLSDEDFKAVFGMTRSAFANLPLWKQQNLKKEKGLF
+
+Candidate variants:
+V9R, R44E, P6Q, V39D, M42W, D17P, R44C, G41E, L31M, S25C, D23H, P19F, A38G, S25N, G41R, P19Y, V39G, E28P, L18D, A15S, D33I, L31I, F36Y, A38Y, T13V, R44K, D8M, M42Q, L52Q, P51T, R20W, P24D, S32R, V11Q, N29Q, H30E, S25I, N12H, D23E, L7C, P24R, S45C, F40L, Q55K, V22C, L18A, G21L, L10P, V9K, L7M, A48G, A14I, A46E, K27D, L50Q, K37L, A15D, D23A, S25G, T13W, D33P, K54T, L10A, N12M, H30W, F47C, W53P, N29H, L31Q, F47T, P51G, L7E, M42Y, L18S, V39K, L50K, M42F, S45V, A46W, F40Y, P51S, M42C, D8Y, A46C, V11L, T43I, L7Y, S25P, N49V, K27G, S45R, A46I, T13C, K37M, N29L, A38S, A14K, N49S, L10D, M42V
+
+
+Reference homolog FASTA for retrieval: /home/aid1/Documents/2_19C_biology/results/benchmark/stage4step1_2026-09-14/reference_fastas/VILI_CHICK_Tsuboyama_2023_1YU5.fasta
+Reference structure PDB for geometric evaluation: /home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/VILI_CHICK.pdb
+
+Submit exactly one answer through the mounted record channel, using item_id
+`pilot_item`. The answer object must contain `selected`: exactly ten entries,
+each with `rank` (1–10), `mutant`, `basis`, `evidence` (receipt ID array),
+`validation` (array of {category, call_id}), and `would_overturn`.
+Include `rejected`: an array of {mutant, reason}, empty only if none were
+rejected. If possible, include `ranking`: one {mutant, score} entry per
+supplied candidate, with larger predicted scores better. The scores are your predictions, not
+measured fitness. Every cited receipt must come from a successful tool call
+in this run. If you cannot support a site/variant, say so; do not invent data.
+Submit only when finished. Do not claim an assay result.

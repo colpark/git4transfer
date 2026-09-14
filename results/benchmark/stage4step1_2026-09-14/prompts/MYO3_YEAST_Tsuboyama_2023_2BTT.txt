@@ -1,0 +1,22 @@
+You have a protein and candidate single substitutions. Your assay queue accepts ten. Choose ten variants, rank them, and state what evidence supports each choice and what would overturn it. Report variants you considered and rejected. Do not claim a measured assay outcome.
+
+Protein sequence:
+KDPKFEAAYDFPGSGSSSELPLKKGDIVFISRDEPSGWSLAKLLDGSKEGWVPTAYMTPYK
+
+Candidate variants:
+D33V, G13Q, Y56K, S16L, P35S, A7S, S47I, L43V, A41W, E19G, Y9E, L43C, P35R, T54H, E34R, K23Q, F29K, A8C, D26L, S17E, L43E, A7V, W51C, D33S, D26I, T54Y, D45T, G46K, K4N, D45R, W38L, L44I, L40R, E49D, R32S, P53R, S17Q, P53F, Y56A, R32G, K4S, G50Y, T58E, S36M, F29T, L44M, G13R, A55I, V28L, L44Q, S17V, D33C, R32L, K4V, L44W, A41V, I27F, E34Y, S31L, S14W, K48D, G37P, L43A, S16N, D33Q, K42L, L40A, T54N, S18W, S31W, S18V, I30M, R32Y, S39D, P21F, E34F, K23V, S17R, D33I, S36C, W38I, S36F, W51Y, S39C, T58M, S14I, S47D, K4L, T54G, K4Y, S31R, W51F, K23A, S47V, Y56F, A7I, A55E, D10A, L40K, S39H
+
+
+Reference homolog FASTA for retrieval: /home/aid1/Documents/2_19C_biology/results/benchmark/stage4step1_2026-09-14/reference_fastas/MYO3_YEAST_Tsuboyama_2023_2BTT.fasta
+Reference structure PDB for geometric evaluation: /home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/MYO3_YEAST.pdb
+
+Submit exactly one answer through the mounted record channel, using item_id
+`pilot_item`. The answer object must contain `selected`: exactly ten entries,
+each with `rank` (1–10), `mutant`, `basis`, `evidence` (receipt ID array),
+`validation` (array of {category, call_id}), and `would_overturn`.
+Include `rejected`: an array of {mutant, reason}, empty only if none were
+rejected. If possible, include `ranking`: one {mutant, score} entry per
+supplied candidate, with larger predicted scores better. The scores are your predictions, not
+measured fitness. Every cited receipt must come from a successful tool call
+in this run. If you cannot support a site/variant, say so; do not invent data.
+Submit only when finished. Do not claim an assay result.

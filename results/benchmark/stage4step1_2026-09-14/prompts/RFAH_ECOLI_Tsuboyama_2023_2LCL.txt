@@ -1,0 +1,22 @@
+You have a protein and candidate single substitutions. Your assay queue accepts ten. Choose ten variants, rank them, and state what evidence supports each choice and what would overturn it. Report variants you considered and rejected. Do not claim a measured assay outcome.
+
+Protein sequence:
+ATPYPGDKVIITEGAFEGFQAIFTEPDGEARSMLLLNLINKEIKHSVKNTEFRKL
+
+Candidate variants:
+F16M, N40A, A15K, P5F, K48A, K8F, K48W, L38E, L38V, G14A, A15Q, E51K, F16P, E29M, V9S, P5G, I43A, N37S, T50Q, I10R, F16A, D7L, N49G, F23N, E29P, A21P, K44F, K54A, E25H, K48C, Y4V, A15L, G18W, Y4N, N40L, S32G, H45W, I11E, D27R, Q20H, L38Q, I22L, V47E, G14L, T50A, N49F, N40W, F19S, I39G, P5V, K41P, G28T, R53W, F19N, N49E, S32K, L34H, G18E, L38I, S46V, S46W, G6E, I39S, E51H, E51N, T24Y, V9E, H45Q, R53G, R31Q, L38F, E29R, G18N, K44G, D27Q, N37R, I22Q, K44L, K54R, K41G, F19Q, T24H, T12Y, K44T, N37M, N37D, G6L, E51F, I10F, Q20S, N40I, F52Y, S46T, A30I, E17D, G6T, G28N, D7G, P26L, H45K
+
+
+Reference homolog FASTA for retrieval: /home/aid1/Documents/2_19C_biology/results/benchmark/stage4step1_2026-09-14/reference_fastas/RFAH_ECOLI_Tsuboyama_2023_2LCL.fasta
+Reference structure PDB for geometric evaluation: /home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/RFAH_ECOLI.pdb
+
+Submit exactly one answer through the mounted record channel, using item_id
+`pilot_item`. The answer object must contain `selected`: exactly ten entries,
+each with `rank` (1–10), `mutant`, `basis`, `evidence` (receipt ID array),
+`validation` (array of {category, call_id}), and `would_overturn`.
+Include `rejected`: an array of {mutant, reason}, empty only if none were
+rejected. If possible, include `ranking`: one {mutant, score} entry per
+supplied candidate, with larger predicted scores better. The scores are your predictions, not
+measured fitness. Every cited receipt must come from a successful tool call
+in this run. If you cannot support a site/variant, say so; do not invent data.
+Submit only when finished. Do not claim an assay result.

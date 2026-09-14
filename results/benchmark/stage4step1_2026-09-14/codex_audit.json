@@ -1,0 +1,219 @@
+{
+  "kind": "codex",
+  "candidate_count": 100,
+  "meta": {
+    "usage": {
+      "input_tokens": 753312,
+      "cached_input_tokens": 685696,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 15943,
+      "reasoning_output_tokens": 7437
+    },
+    "native": [],
+    "turn_completed": true,
+    "model": "gpt-5.6-sol",
+    "cost": null,
+    "subagents": 0,
+    "permission_denials": null,
+    "responses": 6
+  },
+  "by_server": {
+    "classical": {
+      "attempted": 311,
+      "usable": 311
+    },
+    "generative": {
+      "attempted": 304,
+      "usable": 304
+    },
+    "physics": {
+      "attempted": 1
+    },
+    "predictive": {
+      "attempted": 302,
+      "usable": 302
+    },
+    "record": {
+      "attempted": 1,
+      "usable": 1
+    }
+  },
+  "fm": {
+    "esm2_likelihood": {
+      "attempted": 302,
+      "usable": 302,
+      "unique_variants_attempted": 100,
+      "unique_variants_usable": 100
+    },
+    "esm_if": {
+      "attempted": 304,
+      "usable": 304,
+      "unique_variants_attempted": 100,
+      "unique_variants_usable": 100
+    }
+  },
+  "input_forms": {
+    "esm2_likelihood": {
+      "variant": 302
+    },
+    "pssm_score": {
+      "variant": 302
+    },
+    "esm_if": {
+      "variant": 301
+    }
+  },
+  "submission": {
+    "attempts": 1,
+    "record_accepted": true,
+    "contract_compliant": true,
+    "item_id": "pilot_item",
+    "selected_count": 10,
+    "rejected_count": 90,
+    "ranking_count": 100
+  },
+  "candidates_considered": 100,
+  "pick_audit": [
+    {
+      "rank": 1,
+      "mutant": "R51K",
+      "validation_categories": [
+        "backbone_conditioned_variant",
+        "backbone_wild_type_reference",
+        "homolog_retrieval",
+        "homolog_substitution",
+        "learned_sequence"
+      ],
+      "variant_specific_usable_receipts": 3,
+      "evidence_receipts": 5,
+      "validation_receipts": 5
+    },
+    {
+      "rank": 2,
+      "mutant": "S18E",
+      "validation_categories": [
+        "backbone_conditioned_variant",
+        "backbone_wild_type_reference",
+        "homolog_retrieval",
+        "homolog_substitution",
+        "learned_sequence"
+      ],
+      "variant_specific_usable_receipts": 3,
+      "evidence_receipts": 5,
+      "validation_receipts": 5
+    },
+    {
+      "rank": 3,
+      "mutant": "E66D",
+      "validation_categories": [
+        "backbone_conditioned_variant",
+        "backbone_wild_type_reference",
+        "homolog_retrieval",
+        "homolog_substitution",
+        "learned_sequence"
+      ],
+      "variant_specific_usable_receipts": 3,
+      "evidence_receipts": 5,
+      "validation_receipts": 5
+    },
+    {
+      "rank": 4,
+      "mutant": "G21S",
+      "validation_categories": [
+        "backbone_conditioned_variant",
+        "backbone_wild_type_reference",
+        "homolog_retrieval",
+        "homolog_substitution",
+        "learned_sequence"
+      ],
+      "variant_specific_usable_receipts": 3,
+      "evidence_receipts": 5,
+      "validation_receipts": 5
+    },
+    {
+      "rank": 5,
+      "mutant": "A49L",
+      "validation_categories": [
+        "backbone_conditioned_variant",
+        "backbone_wild_type_reference",
+        "homolog_retrieval",
+        "homolog_substitution",
+        "learned_sequence"
+      ],
+      "variant_specific_usable_receipts": 3,
+      "evidence_receipts": 5,
+      "validation_receipts": 5
+    },
+    {
+      "rank": 6,
+      "mutant": "D33E",
+      "validation_categories": [
+        "backbone_conditioned_variant",
+        "backbone_wild_type_reference",
+        "homolog_retrieval",
+        "homolog_substitution",
+        "learned_sequence"
+      ],
+      "variant_specific_usable_receipts": 3,
+      "evidence_receipts": 5,
+      "validation_receipts": 5
+    },
+    {
+      "rank": 7,
+      "mutant": "K16D",
+      "validation_categories": [
+        "backbone_conditioned_variant",
+        "backbone_wild_type_reference",
+        "homolog_retrieval",
+        "homolog_substitution",
+        "learned_sequence"
+      ],
+      "variant_specific_usable_receipts": 3,
+      "evidence_receipts": 5,
+      "validation_receipts": 5
+    },
+    {
+      "rank": 8,
+      "mutant": "M59N",
+      "validation_categories": [
+        "backbone_conditioned_variant",
+        "backbone_wild_type_reference",
+        "homolog_retrieval",
+        "homolog_substitution",
+        "learned_sequence"
+      ],
+      "variant_specific_usable_receipts": 3,
+      "evidence_receipts": 5,
+      "validation_receipts": 5
+    },
+    {
+      "rank": 9,
+      "mutant": "A10T",
+      "validation_categories": [
+        "backbone_conditioned_variant",
+        "backbone_wild_type_reference",
+        "homolog_retrieval",
+        "homolog_substitution",
+        "learned_sequence"
+      ],
+      "variant_specific_usable_receipts": 3,
+      "evidence_receipts": 5,
+      "validation_receipts": 5
+    },
+    {
+      "rank": 10,
+      "mutant": "A25Q",
+      "validation_categories": [
+        "backbone_conditioned_variant",
+        "backbone_wild_type_reference",
+        "homolog_retrieval",
+        "homolog_substitution",
+        "learned_sequence"
+      ],
+      "variant_specific_usable_receipts": 3,
+      "evidence_receipts": 5,
+      "validation_receipts": 5
+    }
+  ],
+  "native_invocations": []
+}

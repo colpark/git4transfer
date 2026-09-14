@@ -1,0 +1,22 @@
+You have a protein and candidate single substitutions. Your assay queue accepts ten. Choose ten variants, rank them, and state what evidence supports each choice and what would overturn it. Report variants you considered and rejected. Do not claim a measured assay outcome.
+
+Protein sequence:
+WIARINAAVRAYGLNYSTFINGLKKAGIELDRKILADMAVRDPQAFEQVVNKVKEALQV
+
+Candidate variants:
+V49N, A45L, V49E, R41G, E29C, N6R, V9N, L23Q, D37C, D31K, N6L, D31M, M38K, M38Y, V49M, Q48V, R10N, K25G, N15P, F19P, A11Y, G22H, A36L, Y16D, N6S, V50S, R41P, R41S, V40R, A8R, Q48E, Y16E, Q48T, L35D, G27W, I34S, V9Y, G22S, A39H, L30P, E47S, I20W, I34T, D31L, L23R, E47M, R4T, A26Y, K24M, L35N, A45H, A26K, E29F, A26D, I34Y, P43T, V9H, L35H, S17I, K24V, L14G, F46V, F46D, K33C, G13M, A8F, A7D, A45F, Q44S, L14R, L23F, A39W, K25Q, I34L, R4E, D31P, V50F, K24E, K24P, S17F, L14P, Q48S, N15M, N15I, N21D, R32P, N21Y, G22Y, L30W, R10D, A11Q, P43W, F19S, T18S, I20A, L14V, Y12P, Q44L, A39Q, A39D
+
+
+Reference homolog FASTA for retrieval: /home/aid1/Documents/2_19C_biology/results/benchmark/stage4step1_2026-09-14/reference_fastas/RL20_AQUAE_Tsuboyama_2023_1GYZ.fasta
+Reference structure PDB for geometric evaluation: /home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/RL20_AQUAE.pdb
+
+Submit exactly one answer through the mounted record channel, using item_id
+`pilot_item`. The answer object must contain `selected`: exactly ten entries,
+each with `rank` (1–10), `mutant`, `basis`, `evidence` (receipt ID array),
+`validation` (array of {category, call_id}), and `would_overturn`.
+Include `rejected`: an array of {mutant, reason}, empty only if none were
+rejected. If possible, include `ranking`: one {mutant, score} entry per
+supplied candidate, with larger predicted scores better. The scores are your predictions, not
+measured fitness. Every cited receipt must come from a successful tool call
+in this run. If you cannot support a site/variant, say so; do not invent data.
+Submit only when finished. Do not claim an assay result.

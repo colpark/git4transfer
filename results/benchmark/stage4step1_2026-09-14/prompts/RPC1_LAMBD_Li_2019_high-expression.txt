@@ -1,0 +1,22 @@
+You have a protein and candidate single substitutions. Your assay queue accepts ten. Choose ten variants, rank them, and state what evidence supports each choice and what would overturn it. Report variants you considered and rejected. Do not claim a measured assay outcome.
+
+Protein sequence:
+MSTKKKPLTQEQLEDARRLKAIYEKKKNELGLSQESVADKMGMGQSGVGALFNGINALNAYNAALLAKILKVSVEEFSPSIAREIYEMYEAVSMQPSLRSEYEYPVFSHVQAGMFSPELRTFTKGDAERWVSTTKKASDSAFWLEVEGNSMTAPTGSKPSFPDGMLILVDPEQAVEPGDFCIARLGGDEFTFKKLIRDSGQVFLQPLNPQYPMIPCNESCSVVGKVIASQWPEETFG
+
+Candidate variants:
+A67T, V74L, Q45L, K71E, S36P, A60T, L19H, L30P, E35Q, K71N, S73H, A63G, S73R, K68N, D39G, N53S, S73I, G31D, G42W, L58V, A64G, K40M, K26T, G44V, E75A, G47R, I55F, N28Y, K71T, A38S, I55S, S33Y, K20Q, I55L, G31C, S73N, S33C, S36C, I22T, V72D, V48L, L30F, A64K, A67P, N56D, I22M, L65F, I69F, N62I, E29D, Y61S, N56H, F52V, N59D, N28T, D39Y, Q45E, G49C, G44W, E76G, N56K, A38T, G31R, N28S, I22F, K25Q, Q34H, A21S, N59S, A64V, A63D, S46A, G47S, F77Y, K27N, V72A, S73C, A57P, E75G, A21E, E35K, N59H, V74G, K68E, K25E, L70I, N53H, A21T, A50G, L32I, K68I, G31A, L66F, L58I, E24K, I69S, I69M, V37F, E75Q, N56T
+
+
+Reference homolog FASTA for retrieval: /home/aid1/Documents/2_19C_biology/results/benchmark/stage4step1_2026-09-14/reference_fastas/RPC1_LAMBD_Li_2019_high-expression.fasta
+Reference structure PDB for geometric evaluation: /home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/RPC1_LAMBD.pdb
+
+Submit exactly one answer through the mounted record channel, using item_id
+`pilot_item`. The answer object must contain `selected`: exactly ten entries,
+each with `rank` (1–10), `mutant`, `basis`, `evidence` (receipt ID array),
+`validation` (array of {category, call_id}), and `would_overturn`.
+Include `rejected`: an array of {mutant, reason}, empty only if none were
+rejected. If possible, include `ranking`: one {mutant, score} entry per
+supplied candidate, with larger predicted scores better. The scores are your predictions, not
+measured fitness. Every cited receipt must come from a successful tool call
+in this run. If you cannot support a site/variant, say so; do not invent data.
+Submit only when finished. Do not claim an assay result.

@@ -1,0 +1,22 @@
+You have a protein and candidate single substitutions. Your assay queue accepts ten. Choose ten variants, rank them, and state what evidence supports each choice and what would overturn it. Report variants you considered and rejected. Do not claim a measured assay outcome.
+
+Protein sequence:
+QNEKLANELKSLLDELNVNELATGSLNTYYKRTIKISGQKAMYALKSKDFKKMSEAKYQLQKIYNEIDEA
+
+Candidate variants:
+S11N, L16S, T28Q, L21P, A22N, E66K, L26P, Q61G, R32L, L12V, S47N, S54N, T33F, D49V, A70Q, N7P, E55M, E15P, E20R, S11A, G38F, K57L, D68T, A41N, L26A, I36S, K48V, L26R, K57S, L45S, E55S, K52P, K48E, I34G, Q59E, I36W, Y30A, E15D, I67Y, G38W, M53F, R32S, K52F, S11I, G24H, A70C, E66I, D68P, D49M, E69K, M42L, D68W, E69M, K46D, E66L, A41Y, S37R, Y30N, K62N, N19P, K57W, Y29T, S54W, M53I, K62C, K31V, L26V, Y43L, Y43E, K31G, F50S, N7I, K40Q, K35F, S25L, T33V, K62Q, Y29H, E20N, N7E, S11E, M42A, K52V, Q39R, M53T, E15K, K31C, K40M, N19S, K51S, K46G, Y29C, K46M, I36F, K62D, I34Y, S37D, N27T, Y64Q, E55D
+
+
+Reference homolog FASTA for retrieval: /home/aid1/Documents/2_19C_biology/results/benchmark/stage4step1_2026-09-14/reference_fastas/SCIN_STAAR_Tsuboyama_2023_2QFF.fasta
+Reference structure PDB for geometric evaluation: /home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/SCIN_STAAR.pdb
+
+Submit exactly one answer through the mounted record channel, using item_id
+`pilot_item`. The answer object must contain `selected`: exactly ten entries,
+each with `rank` (1–10), `mutant`, `basis`, `evidence` (receipt ID array),
+`validation` (array of {category, call_id}), and `would_overturn`.
+Include `rejected`: an array of {mutant, reason}, empty only if none were
+rejected. If possible, include `ranking`: one {mutant, score} entry per
+supplied candidate, with larger predicted scores better. The scores are your predictions, not
+measured fitness. Every cited receipt must come from a successful tool call
+in this run. If you cannot support a site/variant, say so; do not invent data.
+Submit only when finished. Do not claim an assay result.

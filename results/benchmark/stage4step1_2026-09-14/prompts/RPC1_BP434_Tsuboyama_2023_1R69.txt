@@ -1,0 +1,22 @@
+You have a protein and candidate single substitutions. Your assay queue accepts ten. Choose ten variants, rank them, and state what evidence supports each choice and what would overturn it. Report variants you considered and rejected. Do not claim a measured assay outcome.
+
+Protein sequence:
+SISSRVKSKRIQLGLNQAELAQKVGTTQQSIEQLENGKTKRPRFLPELASALGVSVDWLLN
+
+Candidate variants:
+V54R, N36M, L45R, S8A, G37V, S55T, V24C, L59N, L59W, S50H, S50V, A18F, G14K, N36C, L52P, Q28D, F44L, V54G, I11E, E19M, K7V, Q33Y, K9W, K40R, R5S, L45S, V56I, L45N, R43I, D57W, L15S, K40S, R43M, V6I, K9M, I11H, S4P, A51S, I31P, P46I, G53E, P46F, K7C, V56K, T26C, E35M, E35V, W58R, K38R, T27Y, G25R, E35K, K38L, Q12L, R5P, L13R, R41S, G53H, V6M, E32Y, V6G, V54P, S50L, L45A, L20T, L15C, T26G, Q28L, R41W, Q33L, E35W, V54E, S8I, R5N, L13D, P46V, G53A, L48P, D57V, E35Q, Q12Y, I11W, L13V, S50W, K40W, A18Y, K23I, L20K, V24D, D57C, T39P, K38G, E47N, Q12V, W58G, L34Q, R10S, V6T, G14Q, Q29A
+
+
+Reference homolog FASTA for retrieval: /home/aid1/Documents/2_19C_biology/results/benchmark/stage4step1_2026-09-14/reference_fastas/RPC1_BP434_Tsuboyama_2023_1R69.fasta
+Reference structure PDB for geometric evaluation: /home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/RPC1_BP434.pdb
+
+Submit exactly one answer through the mounted record channel, using item_id
+`pilot_item`. The answer object must contain `selected`: exactly ten entries,
+each with `rank` (1–10), `mutant`, `basis`, `evidence` (receipt ID array),
+`validation` (array of {category, call_id}), and `would_overturn`.
+Include `rejected`: an array of {mutant, reason}, empty only if none were
+rejected. If possible, include `ranking`: one {mutant, score} entry per
+supplied candidate, with larger predicted scores better. The scores are your predictions, not
+measured fitness. Every cited receipt must come from a successful tool call
+in this run. If you cannot support a site/variant, say so; do not invent data.
+Submit only when finished. Do not claim an assay result.

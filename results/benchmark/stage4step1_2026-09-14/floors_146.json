@@ -1,0 +1,34 @@
+{
+  "148_published_set": {
+    "C": {
+      "n": 148,
+      "mean_spearman": 0.3449419293347146,
+      "mean_precision_at_10": 0.17567567567567569,
+      "mean_per_item_chance_at_10": 0.10265439807724028,
+      "mean_lift_over_chance": 0.07302127759843541
+    },
+    "M": {
+      "n": 148,
+      "mean_spearman": 0.49064329515572996,
+      "mean_precision_at_10": 0.21824324324324323,
+      "mean_per_item_chance_at_10": 0.10265439807724028,
+      "mean_lift_over_chance": 0.11558884516600297
+    }
+  },
+  "146_matched_set": {
+    "C": {
+      "n": 146,
+      "mean_spearman": 0.34484801103770407,
+      "mean_precision_at_10": 0.17534246575342466,
+      "mean_per_item_chance_at_10": 0.10269075969473672,
+      "mean_lift_over_chance": 0.07265170605868794
+    },
+    "M": {
+      "n": 146,
+      "mean_spearman": 0.4895319059057192,
+      "mean_precision_at_10": 0.2184931506849315,
+      "mean_per_item_chance_at_10": 0.10269075969473672,
+      "mean_lift_over_chance": 0.11580239099019479
+    }
+  }
+}

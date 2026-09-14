@@ -1,0 +1,1123 @@
+{
+  "answer": {
+    "disclaimer": "All scores and ordering are predictions from sequence, homolog, and backbone-conditioned evidence. No measured assay outcome is claimed.",
+    "ranking": [
+      {
+        "mutant": "R51K",
+        "score": 4.669243
+      },
+      {
+        "mutant": "S18E",
+        "score": 1.282314
+      },
+      {
+        "mutant": "E66D",
+        "score": 0.963298
+      },
+      {
+        "mutant": "G21S",
+        "score": 0.680121
+      },
+      {
+        "mutant": "A49L",
+        "score": 0.163143
+      },
+      {
+        "mutant": "D33E",
+        "score": -0.207603
+      },
+      {
+        "mutant": "K16D",
+        "score": -0.511543
+      },
+      {
+        "mutant": "M59N",
+        "score": -0.607959
+      },
+      {
+        "mutant": "A10T",
+        "score": -1.191104
+      },
+      {
+        "mutant": "A25Q",
+        "score": -1.24513
+      },
+      {
+        "mutant": "R53K",
+        "score": -1.428036
+      },
+      {
+        "mutant": "C62H",
+        "score": -1.621819
+      },
+      {
+        "mutant": "T52L",
+        "score": -1.627982
+      },
+      {
+        "mutant": "S18F",
+        "score": -1.633005
+      },
+      {
+        "mutant": "E3Q",
+        "score": -2.01203
+      },
+      {
+        "mutant": "F17A",
+        "score": -2.151116
+      },
+      {
+        "mutant": "M59H",
+        "score": -2.16607
+      },
+      {
+        "mutant": "T45I",
+        "score": -2.183046
+      },
+      {
+        "mutant": "K13D",
+        "score": -2.324824
+      },
+      {
+        "mutant": "G21H",
+        "score": -2.541075
+      },
+      {
+        "mutant": "L4V",
+        "score": -2.663736
+      },
+      {
+        "mutant": "S18N",
+        "score": -2.735653
+      },
+      {
+        "mutant": "L12V",
+        "score": -2.908026
+      },
+      {
+        "mutant": "E29N",
+        "score": -2.969913
+      },
+      {
+        "mutant": "Q28T",
+        "score": -3.039432
+      },
+      {
+        "mutant": "K9E",
+        "score": -3.135491
+      },
+      {
+        "mutant": "V40I",
+        "score": -3.201401
+      },
+      {
+        "mutant": "S19N",
+        "score": -3.320937
+      },
+      {
+        "mutant": "E29D",
+        "score": -3.350292
+      },
+      {
+        "mutant": "F17Q",
+        "score": -3.476574
+      },
+      {
+        "mutant": "E66T",
+        "score": -3.584033
+      },
+      {
+        "mutant": "L4A",
+        "score": -3.727207
+      },
+      {
+        "mutant": "E66Q",
+        "score": -3.791058
+      },
+      {
+        "mutant": "E29R",
+        "score": -4.073361
+      },
+      {
+        "mutant": "G48D",
+        "score": -4.248016
+      },
+      {
+        "mutant": "D33Y",
+        "score": -4.316193
+      },
+      {
+        "mutant": "L11V",
+        "score": -4.3636
+      },
+      {
+        "mutant": "K9C",
+        "score": -4.493091
+      },
+      {
+        "mutant": "A49F",
+        "score": -4.560394
+      },
+      {
+        "mutant": "D33F",
+        "score": -4.585892
+      },
+      {
+        "mutant": "L4S",
+        "score": -5.005311
+      },
+      {
+        "mutant": "K9Y",
+        "score": -5.006902
+      },
+      {
+        "mutant": "M43N",
+        "score": -5.046392
+      },
+      {
+        "mutant": "A26S",
+        "score": -5.086995
+      },
+      {
+        "mutant": "Q30I",
+        "score": -5.104528
+      },
+      {
+        "mutant": "A55I",
+        "score": -5.246406
+      },
+      {
+        "mutant": "A25F",
+        "score": -5.265432
+      },
+      {
+        "mutant": "Q30T",
+        "score": -5.373599
+      },
+      {
+        "mutant": "K6Y",
+        "score": -5.407468
+      },
+      {
+        "mutant": "E14V",
+        "score": -5.446433
+      },
+      {
+        "mutant": "E15C",
+        "score": -5.45567
+      },
+      {
+        "mutant": "A26E",
+        "score": -5.534747
+      },
+      {
+        "mutant": "E66F",
+        "score": -5.566054
+      },
+      {
+        "mutant": "K56Y",
+        "score": -5.684588
+      },
+      {
+        "mutant": "E14M",
+        "score": -5.718288
+      },
+      {
+        "mutant": "Q37R",
+        "score": -6.088036
+      },
+      {
+        "mutant": "S19M",
+        "score": -6.096908
+      },
+      {
+        "mutant": "E29L",
+        "score": -6.191824
+      },
+      {
+        "mutant": "Q20N",
+        "score": -6.273387
+      },
+      {
+        "mutant": "V24S",
+        "score": -6.739144
+      },
+      {
+        "mutant": "R53Y",
+        "score": -6.924295
+      },
+      {
+        "mutant": "S38Q",
+        "score": -6.942152
+      },
+      {
+        "mutant": "N36I",
+        "score": -6.952614
+      },
+      {
+        "mutant": "K16W",
+        "score": -7.223739
+      },
+      {
+        "mutant": "E29H",
+        "score": -7.248607
+      },
+      {
+        "mutant": "F47G",
+        "score": -7.36611
+      },
+      {
+        "mutant": "L12Q",
+        "score": -7.56854
+      },
+      {
+        "mutant": "N36R",
+        "score": -7.740465
+      },
+      {
+        "mutant": "A26D",
+        "score": -8.207787
+      },
+      {
+        "mutant": "N36M",
+        "score": -8.425886
+      },
+      {
+        "mutant": "Q20Y",
+        "score": -8.440019
+      },
+      {
+        "mutant": "R51H",
+        "score": -8.496433
+      },
+      {
+        "mutant": "A7D",
+        "score": -8.571337
+      },
+      {
+        "mutant": "G48Y",
+        "score": -8.728489
+      },
+      {
+        "mutant": "I35R",
+        "score": -8.826394
+      },
+      {
+        "mutant": "K39C",
+        "score": -8.87701
+      },
+      {
+        "mutant": "A7P",
+        "score": -8.998854
+      },
+      {
+        "mutant": "V60G",
+        "score": -9.117173
+      },
+      {
+        "mutant": "F32V",
+        "score": -9.203403
+      },
+      {
+        "mutant": "V24N",
+        "score": -9.23091
+      },
+      {
+        "mutant": "I23C",
+        "score": -9.232359
+      },
+      {
+        "mutant": "P64L",
+        "score": -9.329095
+      },
+      {
+        "mutant": "E14P",
+        "score": -9.345059
+      },
+      {
+        "mutant": "E29F",
+        "score": -9.405808
+      },
+      {
+        "mutant": "R42L",
+        "score": -9.489577
+      },
+      {
+        "mutant": "F32M",
+        "score": -9.675384
+      },
+      {
+        "mutant": "A49Q",
+        "score": -9.787599
+      },
+      {
+        "mutant": "P64I",
+        "score": -10.019299
+      },
+      {
+        "mutant": "L12D",
+        "score": -10.192606
+      },
+      {
+        "mutant": "R42M",
+        "score": -10.193343
+      },
+      {
+        "mutant": "L63R",
+        "score": -10.208364
+      },
+      {
+        "mutant": "R42T",
+        "score": -10.712608
+      },
+      {
+        "mutant": "S19P",
+        "score": -10.808293
+      },
+      {
+        "mutant": "V24D",
+        "score": -11.071547
+      },
+      {
+        "mutant": "L44S",
+        "score": -11.245295
+      },
+      {
+        "mutant": "L27C",
+        "score": -13.212855
+      },
+      {
+        "mutant": "I23G",
+        "score": -13.548195
+      },
+      {
+        "mutant": "F32T",
+        "score": -13.937754
+      },
+      {
+        "mutant": "I23E",
+        "score": -15.968828
+      },
+      {
+        "mutant": "Y61E",
+        "score": -16.156906
+      }
+    ],
+    "ranking_method": "Predicted ensemble = ESM-2 masked-marginal delta + 0.5 \u00d7 homolog PSSM delta_bits + 0.2 \u00d7 ESM-IF1 total sequence log-likelihood delta versus wild type; larger is better.",
+    "rejected": [
+      {
+        "mutant": "R53K",
+        "reason": "First alternate: conservative change with favorable backbone-conditioned prediction, but ensemble score -1.428 fell just below the ten-slot cutoff."
+      },
+      {
+        "mutant": "C62H",
+        "reason": "Near alternate, but absent homolog support and a backbone-conditioned penalty outweighed its mildly favorable ESM-2 score."
+      },
+      {
+        "mutant": "T52L",
+        "reason": "Near alternate; all three channels were mildly unfavorable and its ensemble score fell below the cutoff."
+      },
+      {
+        "mutant": "S18F",
+        "reason": "Rejected in favor of S18E at the same site: ESM-2 was neutral, but homolog and backbone channels both favored the E substitution more strongly."
+      },
+      {
+        "mutant": "E3Q",
+        "reason": "Conservative near alternate, but all three channels were mildly unfavorable and the ensemble score was below cutoff."
+      },
+      {
+        "mutant": "F17A",
+        "reason": "ESM-2 was slightly favorable, but a large backbone-conditioned penalty and no homolog support moved it below cutoff."
+      },
+      {
+        "mutant": "M59H",
+        "reason": "Rejected after three-channel review: predicted ensemble score -2.166 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "T45I",
+        "reason": "Rejected after three-channel review: predicted ensemble score -2.183 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "K13D",
+        "reason": "Rejected after three-channel review: predicted ensemble score -2.325 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "G21H",
+        "reason": "Rejected after three-channel review: predicted ensemble score -2.541 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "L4V",
+        "reason": "Rejected after three-channel review: predicted ensemble score -2.664 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "S18N",
+        "reason": "Rejected after three-channel review: predicted ensemble score -2.736 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "L12V",
+        "reason": "ESM-2 and PSSM were tolerable, but the strong backbone-conditioned penalty indicated a packing risk."
+      },
+      {
+        "mutant": "E29N",
+        "reason": "Rejected after three-channel review: predicted ensemble score -2.970 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "Q28T",
+        "reason": "Rejected after three-channel review: predicted ensemble score -3.039 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "K9E",
+        "reason": "Rejected after three-channel review: predicted ensemble score -3.135 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "V40I",
+        "reason": "Rejected after three-channel review: predicted ensemble score -3.201 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "S19N",
+        "reason": "Rejected after three-channel review: predicted ensemble score -3.321 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "E29D",
+        "reason": "Rejected after three-channel review: predicted ensemble score -3.350 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "F17Q",
+        "reason": "Rejected after three-channel review: predicted ensemble score -3.477 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "E66T",
+        "reason": "Rejected after three-channel review: predicted ensemble score -3.584 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "L4A",
+        "reason": "Rejected after three-channel review: predicted ensemble score -3.727 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "E66Q",
+        "reason": "Rejected after three-channel review: predicted ensemble score -3.791 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "E29R",
+        "reason": "Rejected after three-channel review: predicted ensemble score -4.073 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "G48D",
+        "reason": "Rejected after three-channel review: predicted ensemble score -4.248 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "D33Y",
+        "reason": "Rejected after three-channel review: predicted ensemble score -4.316 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "L11V",
+        "reason": "Conservative chemistry did not rescue negative homolog and backbone-conditioned predictions."
+      },
+      {
+        "mutant": "K9C",
+        "reason": "Rejected after three-channel review: predicted ensemble score -4.493 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "A49F",
+        "reason": "Rejected relative to selected A49L: phenylalanine lacked leucine's homolog support and had an even stronger backbone-conditioned penalty."
+      },
+      {
+        "mutant": "D33F",
+        "reason": "Rejected after three-channel review: predicted ensemble score -4.586 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "L4S",
+        "reason": "Rejected after three-channel review: predicted ensemble score -5.005 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "K9Y",
+        "reason": "Rejected after three-channel review: predicted ensemble score -5.007 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "M43N",
+        "reason": "Rejected after three-channel review: predicted ensemble score -5.046 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "A26S",
+        "reason": "Rejected after three-channel review: predicted ensemble score -5.087 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "Q30I",
+        "reason": "Rejected after three-channel review: predicted ensemble score -5.105 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "A55I",
+        "reason": "Rejected after three-channel review: predicted ensemble score -5.246 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "A25F",
+        "reason": "Rejected after three-channel review: predicted ensemble score -5.265 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "Q30T",
+        "reason": "Rejected after three-channel review: predicted ensemble score -5.374 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "K6Y",
+        "reason": "Rejected after three-channel review: predicted ensemble score -5.407 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "E14V",
+        "reason": "Rejected after three-channel review: predicted ensemble score -5.446 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "E15C",
+        "reason": "Rejected after three-channel review: predicted ensemble score -5.456 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "A26E",
+        "reason": "Rejected after three-channel review: predicted ensemble score -5.535 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "E66F",
+        "reason": "Rejected after three-channel review: predicted ensemble score -5.566 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "K56Y",
+        "reason": "Rejected after three-channel review: predicted ensemble score -5.685 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "E14M",
+        "reason": "Rejected after three-channel review: predicted ensemble score -5.718 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "Q37R",
+        "reason": "Rejected after three-channel review: predicted ensemble score -6.088 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "S19M",
+        "reason": "Rejected after three-channel review: predicted ensemble score -6.097 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "E29L",
+        "reason": "Rejected after three-channel review: predicted ensemble score -6.192 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "Q20N",
+        "reason": "Rejected after three-channel review: predicted ensemble score -6.273 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "V24S",
+        "reason": "The least disruptive residue-24 candidate by ESM-2, but strong conservation and backbone penalties kept it out."
+      },
+      {
+        "mutant": "R53Y",
+        "reason": "Rejected: strongly unfavorable ESM-2 delta -6.091 and three-channel ensemble score -6.924, below the -1.245 cutoff."
+      },
+      {
+        "mutant": "S38Q",
+        "reason": "Rejected: strongly unfavorable ESM-2 delta -6.244 and three-channel ensemble score -6.942, below the -1.245 cutoff."
+      },
+      {
+        "mutant": "N36I",
+        "reason": "Rejected: strongly unfavorable ESM-2 delta -5.023 and three-channel ensemble score -6.953, below the -1.245 cutoff."
+      },
+      {
+        "mutant": "K16W",
+        "reason": "Rejected after three-channel review: predicted ensemble score -7.224 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "E29H",
+        "reason": "Rejected after three-channel review: predicted ensemble score -7.249 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "F47G",
+        "reason": "Rejected after three-channel review: predicted ensemble score -7.366 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "L12Q",
+        "reason": "Rejected after three-channel review: predicted ensemble score -7.569 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "N36R",
+        "reason": "Rejected: strongly unfavorable ESM-2 delta -6.478 and three-channel ensemble score -7.740, below the -1.245 cutoff."
+      },
+      {
+        "mutant": "A26D",
+        "reason": "Rejected after three-channel review: predicted ensemble score -8.208 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "N36M",
+        "reason": "Rejected: strongly unfavorable ESM-2 delta -6.430 and three-channel ensemble score -8.426, below the -1.245 cutoff."
+      },
+      {
+        "mutant": "Q20Y",
+        "reason": "Rejected after three-channel review: predicted ensemble score -8.440 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "R51H",
+        "reason": "Rejected: strongly unfavorable ESM-2 delta -6.177 and three-channel ensemble score -8.496, below the -1.245 cutoff."
+      },
+      {
+        "mutant": "A7D",
+        "reason": "Rejected: strongly unfavorable ESM-2 delta -6.297 and three-channel ensemble score -8.571, below the -1.245 cutoff."
+      },
+      {
+        "mutant": "G48Y",
+        "reason": "Rejected: strongly unfavorable ESM-2 delta -6.149 and three-channel ensemble score -8.728, below the -1.245 cutoff."
+      },
+      {
+        "mutant": "I35R",
+        "reason": "Rejected: strongly unfavorable ESM-2 delta -5.166 and three-channel ensemble score -8.826, below the -1.245 cutoff."
+      },
+      {
+        "mutant": "K39C",
+        "reason": "Rejected: strongly unfavorable ESM-2 delta -7.370 and three-channel ensemble score -8.877, below the -1.245 cutoff."
+      },
+      {
+        "mutant": "A7P",
+        "reason": "Rejected: strongly unfavorable ESM-2 delta -5.745 and three-channel ensemble score -8.999, below the -1.245 cutoff."
+      },
+      {
+        "mutant": "V60G",
+        "reason": "Rejected after three-channel review: predicted ensemble score -9.117 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "F32V",
+        "reason": "Rejected after three-channel review: predicted ensemble score -9.203 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "V24N",
+        "reason": "Rejected after three-channel review: predicted ensemble score -9.231 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "I23C",
+        "reason": "Rejected: strongly unfavorable ESM-2 delta -5.926 and three-channel ensemble score -9.232, below the -1.245 cutoff."
+      },
+      {
+        "mutant": "P64L",
+        "reason": "Rejected after three-channel review: predicted ensemble score -9.329 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "E14P",
+        "reason": "Rejected after three-channel review: predicted ensemble score -9.345 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "E29F",
+        "reason": "Rejected: strongly unfavorable ESM-2 delta -5.635 and three-channel ensemble score -9.406, below the -1.245 cutoff."
+      },
+      {
+        "mutant": "R42L",
+        "reason": "Rejected: strongly unfavorable ESM-2 delta -5.588 and three-channel ensemble score -9.490, below the -1.245 cutoff."
+      },
+      {
+        "mutant": "F32M",
+        "reason": "Rejected after three-channel review: predicted ensemble score -9.675 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "A49Q",
+        "reason": "Rejected: strongly unfavorable ESM-2 delta -6.279 and three-channel ensemble score -9.788, below the -1.245 cutoff."
+      },
+      {
+        "mutant": "P64I",
+        "reason": "Rejected after three-channel review: predicted ensemble score -10.019 was below the -1.245 ten-slot cutoff."
+      },
+      {
+        "mutant": "L12D",
+        "reason": "Rejected: strongly unfavorable ESM-2 delta -6.195 and three-channel ensemble score -10.193, below the -1.245 cutoff."
+      },
+      {
+        "mutant": "R42M",
+        "reason": "Rejected: strongly unfavorable ESM-2 delta -6.182 and three-channel ensemble score -10.193, below the -1.245 cutoff."
+      },
+      {
+        "mutant": "L63R",
+        "reason": "Rejected: strongly unfavorable ESM-2 delta -5.017 and three-channel ensemble score -10.208, below the -1.245 cutoff."
+      },
+      {
+        "mutant": "R42T",
+        "reason": "Rejected: strongly unfavorable ESM-2 delta -6.511 and three-channel ensemble score -10.713, below the -1.245 cutoff."
+      },
+      {
+        "mutant": "S19P",
+        "reason": "Rejected: strongly unfavorable ESM-2 delta -6.501 and three-channel ensemble score -10.808, below the -1.245 cutoff."
+      },
+      {
+        "mutant": "V24D",
+        "reason": "Rejected: strongly unfavorable ESM-2 delta -5.650 and three-channel ensemble score -11.072, below the -1.245 cutoff."
+      },
+      {
+        "mutant": "L44S",
+        "reason": "Rejected: strongly unfavorable ESM-2 delta -7.950 and three-channel ensemble score -11.245, below the -1.245 cutoff."
+      },
+      {
+        "mutant": "L27C",
+        "reason": "Rejected: strongly unfavorable ESM-2 delta -7.803 and three-channel ensemble score -13.213, below the -1.245 cutoff."
+      },
+      {
+        "mutant": "I23G",
+        "reason": "Rejected: strongly unfavorable ESM-2 delta -8.642 and three-channel ensemble score -13.548, below the -1.245 cutoff."
+      },
+      {
+        "mutant": "F32T",
+        "reason": "Rejected: strongly unfavorable ESM-2 delta -7.861 and three-channel ensemble score -13.938, below the -1.245 cutoff."
+      },
+      {
+        "mutant": "I23E",
+        "reason": "Rejected: strongly unfavorable ESM-2 delta -11.811 and three-channel ensemble score -15.969, below the -1.245 cutoff."
+      },
+      {
+        "mutant": "Y61E",
+        "reason": "Rejected: strongly unfavorable ESM-2 delta -9.949 and three-channel ensemble score -16.157, below the -1.245 cutoff."
+      }
+    ],
+    "selected": [
+      {
+        "basis": "Predicted ensemble score 4.669: ESM-2 masked-marginal delta 1.907, homolog PSSM delta 5.322 bits, and ESM-IF1 backbone-conditioned total log-likelihood delta 0.507 versus wild type. These are model/alignment predictions, not an assay outcome.",
+        "evidence": [
+          "call_id:f5acf7a05d724bd3a4e16cad600a18e6",
+          "call_id:6c1bc28279884e02b10f0f11623f0745",
+          "call_id:9c73b6eb6c3b41ceb343a2f8540b273f",
+          "call_id:2df4aa556f644c17ad370fc6ff5b2990",
+          "call_id:4c7cfe859feb411da07d6a5628570a39"
+        ],
+        "mutant": "R51K",
+        "rank": 1,
+        "validation": [
+          {
+            "call_id": "call_id:f5acf7a05d724bd3a4e16cad600a18e6",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:6c1bc28279884e02b10f0f11623f0745",
+            "category": "homolog_substitution"
+          },
+          {
+            "call_id": "call_id:9c73b6eb6c3b41ceb343a2f8540b273f",
+            "category": "backbone_conditioned_variant"
+          },
+          {
+            "call_id": "call_id:2df4aa556f644c17ad370fc6ff5b2990",
+            "category": "backbone_wild_type_reference"
+          },
+          {
+            "call_id": "call_id:4c7cfe859feb411da07d6a5628570a39",
+            "category": "homolog_retrieval"
+          }
+        ],
+        "would_overturn": "Overturn if a biological-complex assay or a deeper nonredundant alignment shows that preserving Arg51 is required despite positive ESM-2, PSSM, and backbone-conditioned predictions."
+      },
+      {
+        "basis": "Predicted ensemble score 1.282: ESM-2 masked-marginal delta -1.584, homolog PSSM delta 4.624 bits, and ESM-IF1 backbone-conditioned total log-likelihood delta 2.771 versus wild type. These are model/alignment predictions, not an assay outcome.",
+        "evidence": [
+          "call_id:de003e2337634336bc8b769e54eff828",
+          "call_id:4d964aae8824464087afc0bf65d0813a",
+          "call_id:f6a4fd80eb9944398a3049de3dd6f0bf",
+          "call_id:2df4aa556f644c17ad370fc6ff5b2990",
+          "call_id:4c7cfe859feb411da07d6a5628570a39"
+        ],
+        "mutant": "S18E",
+        "rank": 2,
+        "validation": [
+          {
+            "call_id": "call_id:de003e2337634336bc8b769e54eff828",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:4d964aae8824464087afc0bf65d0813a",
+            "category": "homolog_substitution"
+          },
+          {
+            "call_id": "call_id:f6a4fd80eb9944398a3049de3dd6f0bf",
+            "category": "backbone_conditioned_variant"
+          },
+          {
+            "call_id": "call_id:2df4aa556f644c17ad370fc6ff5b2990",
+            "category": "backbone_wild_type_reference"
+          },
+          {
+            "call_id": "call_id:4c7cfe859feb411da07d6a5628570a39",
+            "category": "homolog_retrieval"
+          }
+        ],
+        "would_overturn": "Overturn if a deeper alignment removes the +4.624-bit glutamate preference or complex-aware structural/functional data support the ESM-2 objection to introducing a negative charge at residue 18."
+      },
+      {
+        "basis": "Predicted ensemble score 0.963: ESM-2 masked-marginal delta -0.133, homolog PSSM delta 3.000 bits, and ESM-IF1 backbone-conditioned total log-likelihood delta -2.020 versus wild type. These are model/alignment predictions, not an assay outcome.",
+        "evidence": [
+          "call_id:124eb9a97c4740d5b8e27b5e7091d7ca",
+          "call_id:7cc23d148f7c496bbeb47ef94692231c",
+          "call_id:fc490283b8ac4866a999f4690081f43f",
+          "call_id:2df4aa556f644c17ad370fc6ff5b2990",
+          "call_id:4c7cfe859feb411da07d6a5628570a39"
+        ],
+        "mutant": "E66D",
+        "rank": 3,
+        "validation": [
+          {
+            "call_id": "call_id:124eb9a97c4740d5b8e27b5e7091d7ca",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:7cc23d148f7c496bbeb47ef94692231c",
+            "category": "homolog_substitution"
+          },
+          {
+            "call_id": "call_id:fc490283b8ac4866a999f4690081f43f",
+            "category": "backbone_conditioned_variant"
+          },
+          {
+            "call_id": "call_id:2df4aa556f644c17ad370fc6ff5b2990",
+            "category": "backbone_wild_type_reference"
+          },
+          {
+            "call_id": "call_id:4c7cfe859feb411da07d6a5628570a39",
+            "category": "homolog_retrieval"
+          }
+        ],
+        "would_overturn": "Overturn if C-terminal geometry or partner binding requires the longer Glu66 side chain and the backbone-conditioned penalty proves functionally important despite conservative chemistry and homolog support."
+      },
+      {
+        "basis": "Predicted ensemble score 0.680: ESM-2 masked-marginal delta 1.206, homolog PSSM delta -1.000 bits, and ESM-IF1 backbone-conditioned total log-likelihood delta -0.132 versus wild type. These are model/alignment predictions, not an assay outcome.",
+        "evidence": [
+          "call_id:2245669baa4f45a0bfdfdc59fef79d3f",
+          "call_id:54a1c4fa1b1d415dba5049fd2a577982",
+          "call_id:af73da4427bc4206b9d865b218239fcc",
+          "call_id:2df4aa556f644c17ad370fc6ff5b2990",
+          "call_id:4c7cfe859feb411da07d6a5628570a39"
+        ],
+        "mutant": "G21S",
+        "rank": 4,
+        "validation": [
+          {
+            "call_id": "call_id:2245669baa4f45a0bfdfdc59fef79d3f",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:54a1c4fa1b1d415dba5049fd2a577982",
+            "category": "homolog_substitution"
+          },
+          {
+            "call_id": "call_id:af73da4427bc4206b9d865b218239fcc",
+            "category": "backbone_conditioned_variant"
+          },
+          {
+            "call_id": "call_id:2df4aa556f644c17ad370fc6ff5b2990",
+            "category": "backbone_wild_type_reference"
+          },
+          {
+            "call_id": "call_id:4c7cfe859feb411da07d6a5628570a39",
+            "category": "homolog_retrieval"
+          }
+        ],
+        "would_overturn": "Overturn if residue 21 requires glycine-only backbone torsions in the biological assembly, or broader homolog sampling confirms glycine conservation rather than the near-neutral backbone prediction."
+      },
+      {
+        "basis": "Predicted ensemble score 0.163: ESM-2 masked-marginal delta 0.529, homolog PSSM delta 5.322 bits, and ESM-IF1 backbone-conditioned total log-likelihood delta -15.136 versus wild type. These are model/alignment predictions, not an assay outcome.",
+        "evidence": [
+          "call_id:455478dec7ba47d8a4a449464ddc42e0",
+          "call_id:36053d508ccb4faf8b2c6056a7e14333",
+          "call_id:ca11bdafa3bc430db617f2acb1e49d39",
+          "call_id:2df4aa556f644c17ad370fc6ff5b2990",
+          "call_id:4c7cfe859feb411da07d6a5628570a39"
+        ],
+        "mutant": "A49L",
+        "rank": 5,
+        "validation": [
+          {
+            "call_id": "call_id:455478dec7ba47d8a4a449464ddc42e0",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:36053d508ccb4faf8b2c6056a7e14333",
+            "category": "homolog_substitution"
+          },
+          {
+            "call_id": "call_id:ca11bdafa3bc430db617f2acb1e49d39",
+            "category": "backbone_conditioned_variant"
+          },
+          {
+            "call_id": "call_id:2df4aa556f644c17ad370fc6ff5b2990",
+            "category": "backbone_wild_type_reference"
+          },
+          {
+            "call_id": "call_id:4c7cfe859feb411da07d6a5628570a39",
+            "category": "homolog_retrieval"
+          }
+        ],
+        "would_overturn": "Overturn if stability or assembly evidence confirms the severe ESM-IF1 penalty (total predicted delta -15.136), or a corrected/deeper alignment removes the strong leucine enrichment; this is the riskiest selected conflict."
+      },
+      {
+        "basis": "Predicted ensemble score -0.208: ESM-2 masked-marginal delta 0.460, homolog PSSM delta -1.585 bits, and ESM-IF1 backbone-conditioned total log-likelihood delta 0.625 versus wild type. These are model/alignment predictions, not an assay outcome.",
+        "evidence": [
+          "call_id:869ed0f5a109448ea49de62a7c7f6b7c",
+          "call_id:ba5feee69e3b40009228b08dae140e65",
+          "call_id:6cb2e433e96a4c1b8438b80fbeace38c",
+          "call_id:2df4aa556f644c17ad370fc6ff5b2990",
+          "call_id:4c7cfe859feb411da07d6a5628570a39"
+        ],
+        "mutant": "D33E",
+        "rank": 6,
+        "validation": [
+          {
+            "call_id": "call_id:869ed0f5a109448ea49de62a7c7f6b7c",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:ba5feee69e3b40009228b08dae140e65",
+            "category": "homolog_substitution"
+          },
+          {
+            "call_id": "call_id:6cb2e433e96a4c1b8438b80fbeace38c",
+            "category": "backbone_conditioned_variant"
+          },
+          {
+            "call_id": "call_id:2df4aa556f644c17ad370fc6ff5b2990",
+            "category": "backbone_wild_type_reference"
+          },
+          {
+            "call_id": "call_id:4c7cfe859feb411da07d6a5628570a39",
+            "category": "homolog_retrieval"
+          }
+        ],
+        "would_overturn": "Overturn if higher-depth site-specific homolog evidence confirms a strict Asp33 requirement, or complex geometry shows the extra methylene disrupts a contact despite favorable learned-sequence/backbone predictions."
+      },
+      {
+        "basis": "Predicted ensemble score -0.512: ESM-2 masked-marginal delta -0.996, homolog PSSM delta 3.807 bits, and ESM-IF1 backbone-conditioned total log-likelihood delta -7.097 versus wild type. These are model/alignment predictions, not an assay outcome.",
+        "evidence": [
+          "call_id:09c8fc6dad35444f80e3dfa3cb176c8c",
+          "call_id:b9314e37fb8a41dda9cf3c250fe94d2e",
+          "call_id:27988249ce6e4d18982ecb90bebdb614",
+          "call_id:2df4aa556f644c17ad370fc6ff5b2990",
+          "call_id:4c7cfe859feb411da07d6a5628570a39"
+        ],
+        "mutant": "K16D",
+        "rank": 7,
+        "validation": [
+          {
+            "call_id": "call_id:09c8fc6dad35444f80e3dfa3cb176c8c",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:b9314e37fb8a41dda9cf3c250fe94d2e",
+            "category": "homolog_substitution"
+          },
+          {
+            "call_id": "call_id:27988249ce6e4d18982ecb90bebdb614",
+            "category": "backbone_conditioned_variant"
+          },
+          {
+            "call_id": "call_id:2df4aa556f644c17ad370fc6ff5b2990",
+            "category": "backbone_wild_type_reference"
+          },
+          {
+            "call_id": "call_id:4c7cfe859feb411da07d6a5628570a39",
+            "category": "homolog_retrieval"
+          }
+        ],
+        "would_overturn": "Overturn if complex-aware structure or functional binding data validate the backbone penalty for charge reversal, or a deeper alignment removes the +3.807-bit Asp preference."
+      },
+      {
+        "basis": "Predicted ensemble score -0.608: ESM-2 masked-marginal delta -0.096, homolog PSSM delta -1.000 bits, and ESM-IF1 backbone-conditioned total log-likelihood delta -0.062 versus wild type. These are model/alignment predictions, not an assay outcome.",
+        "evidence": [
+          "call_id:d608a59917984f7dadc0158d04340924",
+          "call_id:6e56c8ee9762408a8833f360a7da486f",
+          "call_id:eb011a542cbb49d4b4ff0fecb3c2af21",
+          "call_id:2df4aa556f644c17ad370fc6ff5b2990",
+          "call_id:4c7cfe859feb411da07d6a5628570a39"
+        ],
+        "mutant": "M59N",
+        "rank": 8,
+        "validation": [
+          {
+            "call_id": "call_id:d608a59917984f7dadc0158d04340924",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:6e56c8ee9762408a8833f360a7da486f",
+            "category": "homolog_substitution"
+          },
+          {
+            "call_id": "call_id:eb011a542cbb49d4b4ff0fecb3c2af21",
+            "category": "backbone_conditioned_variant"
+          },
+          {
+            "call_id": "call_id:2df4aa556f644c17ad370fc6ff5b2990",
+            "category": "backbone_wild_type_reference"
+          },
+          {
+            "call_id": "call_id:4c7cfe859feb411da07d6a5628570a39",
+            "category": "homolog_retrieval"
+          }
+        ],
+        "would_overturn": "Overturn if oligomer-interface geometry shows Met59 is a required hydrophobic anchor; both learned channels are near neutral, so modest contrary site-specific evidence would be sufficient."
+      },
+      {
+        "basis": "Predicted ensemble score -1.191: ESM-2 masked-marginal delta -0.496, homolog PSSM delta -1.000 bits, and ESM-IF1 backbone-conditioned total log-likelihood delta -0.976 versus wild type. These are model/alignment predictions, not an assay outcome.",
+        "evidence": [
+          "call_id:2561eb2793784cfd8ede9022b3f272a2",
+          "call_id:3625100a32ca4ebfa7628140c121eb0c",
+          "call_id:5b808b8693434374bb8f28b5b36cc62f",
+          "call_id:2df4aa556f644c17ad370fc6ff5b2990",
+          "call_id:4c7cfe859feb411da07d6a5628570a39"
+        ],
+        "mutant": "A10T",
+        "rank": 9,
+        "validation": [
+          {
+            "call_id": "call_id:2561eb2793784cfd8ede9022b3f272a2",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:3625100a32ca4ebfa7628140c121eb0c",
+            "category": "homolog_substitution"
+          },
+          {
+            "call_id": "call_id:5b808b8693434374bb8f28b5b36cc62f",
+            "category": "backbone_conditioned_variant"
+          },
+          {
+            "call_id": "call_id:2df4aa556f644c17ad370fc6ff5b2990",
+            "category": "backbone_wild_type_reference"
+          },
+          {
+            "call_id": "call_id:4c7cfe859feb411da07d6a5628570a39",
+            "category": "homolog_retrieval"
+          }
+        ],
+        "would_overturn": "Overturn if solvent-accessibility/packing analysis in a parser-clean biological structure places Ala10 in a dry core or if deeper homolog data show strong alanine conservation."
+      },
+      {
+        "basis": "Predicted ensemble score -1.245: ESM-2 masked-marginal delta -0.816, homolog PSSM delta -1.222 bits, and ESM-IF1 backbone-conditioned total log-likelihood delta 0.910 versus wild type. These are model/alignment predictions, not an assay outcome.",
+        "evidence": [
+          "call_id:017b9d1e5e2b42298298ea8d68cb8ea2",
+          "call_id:9ab79f66ed4f46ddab18ed8b6940844f",
+          "call_id:88a3dabe49844eecb6c10aec9cd8e055",
+          "call_id:2df4aa556f644c17ad370fc6ff5b2990",
+          "call_id:4c7cfe859feb411da07d6a5628570a39"
+        ],
+        "mutant": "A25Q",
+        "rank": 10,
+        "validation": [
+          {
+            "call_id": "call_id:017b9d1e5e2b42298298ea8d68cb8ea2",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:9ab79f66ed4f46ddab18ed8b6940844f",
+            "category": "homolog_substitution"
+          },
+          {
+            "call_id": "call_id:88a3dabe49844eecb6c10aec9cd8e055",
+            "category": "backbone_conditioned_variant"
+          },
+          {
+            "call_id": "call_id:2df4aa556f644c17ad370fc6ff5b2990",
+            "category": "backbone_wild_type_reference"
+          },
+          {
+            "call_id": "call_id:4c7cfe859feb411da07d6a5628570a39",
+            "category": "homolog_retrieval"
+          }
+        ],
+        "would_overturn": "Overturn if a biological oligomer structure shows glutamine clashes or disrupts packing, or deeper homolog sampling strengthens the evolutionary penalty enough to outweigh the favorable backbone-conditioned prediction."
+      }
+    ]
+  },
+  "item_id": "pilot_item"
+}

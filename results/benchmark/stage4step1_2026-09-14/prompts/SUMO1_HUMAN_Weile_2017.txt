@@ -1,0 +1,22 @@
+You have a protein and candidate single substitutions. Your assay queue accepts ten. Choose ten variants, rank them, and state what evidence supports each choice and what would overturn it. Report variants you considered and rejected. Do not claim a measured assay outcome.
+
+Protein sequence:
+MSDQEAKPSTEDLGDKKEGEYIKLKVIGQDSSEIHFKVKMTTHLKKLKESYCQRQGVPMNSLRFLFEGQRIADNHTPKELGMEEEDVIEVYQEQTGGHSTV
+
+Candidate variants:
+S50V, K23Q, K45P, E89C, K25T, V26G, F36S, V38T, H35S, I34P, L24W, N60K, G56N, D30N, I71F, E85F, I88H, V38Y, K45Y, I34Y, Q92T, T41D, K46R, K23E, F64W, V57W, K25H, K25Q, K25W, S32W, R70S, F36G, I27C, G68R, R63D, L44G, S50C, D73H, M82I, K48F, V90M, K78V, V57S, F64H, M82R, M82L, Y91D, V90C, Q53W, R70V, F64N, I88W, D86W, T76E, Q69V, I34W, E89F, I88M, V26A, K78F, I22D, Q53C, M59L, Q92P, H43R, S61D, M82E, H35C, L44M, K78Y, C52Y, N60D, I22N, S32F, T76Y, G81P, Q69H, P58A, N74I, P58E, Q92K, M82T, K46A, F64K, E84Y, L44D, V26Y, V87F, V26N, V38R, H43T, C52H, H43Y, K45V, E67G, G68N, F36N, F66D, M40A, N60P
+
+
+Reference homolog FASTA for retrieval: /home/aid1/Documents/2_19C_biology/results/benchmark/stage4step1_2026-09-14/reference_fastas/SUMO1_HUMAN_Weile_2017.fasta
+Reference structure PDB for geometric evaluation: /home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/SUMO1_HUMAN.pdb
+
+Submit exactly one answer through the mounted record channel, using item_id
+`pilot_item`. The answer object must contain `selected`: exactly ten entries,
+each with `rank` (1–10), `mutant`, `basis`, `evidence` (receipt ID array),
+`validation` (array of {category, call_id}), and `would_overturn`.
+Include `rejected`: an array of {mutant, reason}, empty only if none were
+rejected. If possible, include `ranking`: one {mutant, score} entry per
+supplied candidate, with larger predicted scores better. The scores are your predictions, not
+measured fitness. Every cited receipt must come from a successful tool call
+in this run. If you cannot support a site/variant, say so; do not invent data.
+Submit only when finished. Do not claim an assay result.

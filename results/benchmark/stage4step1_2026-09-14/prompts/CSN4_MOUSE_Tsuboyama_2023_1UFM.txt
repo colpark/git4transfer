@@ -1,0 +1,22 @@
+You have a protein and candidate single substitutions. Your assay queue accepts ten. Choose ten variants, rank them, and state what evidence supports each choice and what would overturn it. Report variants you considered and rejected. Do not claim a measured assay outcome.
+
+Protein sequence:
+SSGGSSILDRAVIEHNLLSASKLYNNITFEELGALLEIPAAKAEKIASQMITEGRMNGFIDQIDGIVHFETR
+
+Candidate variants:
+R10T, L8M, K45M, A34N, E44Q, N25I, G54I, H15V, D64P, T52Y, T28Q, D61Y, H15F, F29S, I46W, A41Y, P39T, M56Q, I51R, N26H, K45E, A20M, L36W, D64G, I13C, A47V, V67H, Y24N, I46K, L23M, R10L, F29N, I27G, V67G, E14I, F29K, A34I, G65W, A11V, I66Q, A11P, K22Q, S19Y, A40T, Q62L, A43E, E44W, D64Y, A47L, K22A, E14H, S6N, Y24I, H68S, I63F, L36H, S48G, A41I, S6M, N16H, A40M, Y24K, I60F, G54L, R55F, V67M, I27C, I66E, D61V, Q62E, E44C, K45P, Q62T, D61P, L35Q, I66C, L35Y, M56H, E30C, I27P, E37Q, N26Y, S48V, Q49F, R10M, A43K, A43R, L32I, N16T, N26K, Q62Y, F59V, L17T, E53T, G58R, I63N, H68W, R55V, S48A, L36C
+
+
+Reference homolog FASTA for retrieval: /home/aid1/Documents/2_19C_biology/results/benchmark/stage4step1_2026-09-14/reference_fastas/CSN4_MOUSE_Tsuboyama_2023_1UFM.fasta
+Reference structure PDB for geometric evaluation: /home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/CSN4_MOUSE.pdb
+
+Submit exactly one answer through the mounted record channel, using item_id
+`pilot_item`. The answer object must contain `selected`: exactly ten entries,
+each with `rank` (1–10), `mutant`, `basis`, `evidence` (receipt ID array),
+`validation` (array of {category, call_id}), and `would_overturn`.
+Include `rejected`: an array of {mutant, reason}, empty only if none were
+rejected. If possible, include `ranking`: one {mutant, score} entry per
+supplied candidate, with larger predicted scores better. The scores are your predictions, not
+measured fitness. Every cited receipt must come from a successful tool call
+in this run. If you cannot support a site/variant, say so; do not invent data.
+Submit only when finished. Do not claim an assay result.

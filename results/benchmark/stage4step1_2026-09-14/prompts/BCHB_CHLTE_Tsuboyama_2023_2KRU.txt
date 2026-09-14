@@ -1,0 +1,22 @@
+You have a protein and candidate single substitutions. Your assay queue accepts ten. Choose ten variants, rank them, and state what evidence supports each choice and what would overturn it. Report variants you considered and rejected. Do not claim a measured assay outcome.
+
+Protein sequence:
+ELSWTAEAEKMLGKVPFFVRKKVRKNTDNYAREIGEPVVTADVFRKAKEHLG
+
+Candidate variants:
+I34D, K21H, I34C, D42R, E33C, E36I, F18P, D28E, E9G, E9M, N26P, V15W, N29Q, E9N, A47V, S3Q, P37E, S3E, V15T, G13I, G13M, D28T, V19F, P37F, V19R, E33R, R20W, L2P, R45C, T40L, L12Y, P16S, G35V, T27R, K25H, T40W, V43S, A41W, K48N, N29A, V23M, V43L, G35W, A41P, V19W, V43H, N29S, Y30M, E49P, L2R, D42Q, K25G, K46W, A6T, I34H, R32H, G35E, V43T, K10T, F44A, A47Q, L2I, V38A, A41G, F18V, E36D, D28V, V19C, V15G, K21Y, L2H, K48W, T40H, K48F, A8T, A31T, T40V, L2Q, G35C, K14E, V23L, P37N, P16L, F18M, Y30K, K21E, K14D, K21I, K46M, K25W, V38I, P16Y, T5V, K21N, F17G, G35P, V23K, A41F, E7P, R20G
+
+
+Reference homolog FASTA for retrieval: /home/aid1/Documents/2_19C_biology/results/benchmark/stage4step1_2026-09-14/reference_fastas/BCHB_CHLTE_Tsuboyama_2023_2KRU.fasta
+Reference structure PDB for geometric evaluation: /home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/BCHB_CHLTE.pdb
+
+Submit exactly one answer through the mounted record channel, using item_id
+`pilot_item`. The answer object must contain `selected`: exactly ten entries,
+each with `rank` (1–10), `mutant`, `basis`, `evidence` (receipt ID array),
+`validation` (array of {category, call_id}), and `would_overturn`.
+Include `rejected`: an array of {mutant, reason}, empty only if none were
+rejected. If possible, include `ranking`: one {mutant, score} entry per
+supplied candidate, with larger predicted scores better. The scores are your predictions, not
+measured fitness. Every cited receipt must come from a successful tool call
+in this run. If you cannot support a site/variant, say so; do not invent data.
+Submit only when finished. Do not claim an assay result.

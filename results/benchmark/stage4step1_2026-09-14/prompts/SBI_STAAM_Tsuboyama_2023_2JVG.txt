@@ -1,0 +1,22 @@
+You have a protein and candidate single substitutions. Your assay queue accepts ten. Choose ten variants, rank them, and state what evidence supports each choice and what would overturn it. Report variants you considered and rejected. Do not claim a measured assay outcome.
+
+Protein sequence:
+VRHDERVKSANDAISKLNEKDSIENRRLAQREVNKAPMDVKEHLQKQLDALVAQKD
+
+Candidate variants:
+Q30A, R27I, M38L, L28E, N34P, R26I, E5P, K41A, D39F, R27D, N25F, A10K, E32H, A10G, L44K, K35R, R26T, E42V, D12T, E24Q, V52P, I23N, E42K, K8T, V52Q, M38G, E19G, V52F, E24C, A53K, L51D, E42D, S22R, D21S, S15H, E5F, A53S, V7L, N25I, Q47K, V7E, N25G, D39N, A36G, L17N, A29K, I14N, L28D, E5R, N25Q, L28S, R6S, L48N, D21R, N34C, D39G, L48T, A13G, K35E, D39M, A36K, L51E, V40R, K16C, N11K, A53D, H43C, D12K, Q47V, K41E, N34E, L44D, R31Y, H43L, V40N, E42A, S15Q, Q30Y, N25C, K16N, Q30H, E32N, R26N, E32I, M38R, A50L, L51S, K46S, E5D, L28W, A10D, K46L, A29G, L48E, K20F, R6Q, N18S, A13H, L28T, A13M
+
+
+Reference homolog FASTA for retrieval: /home/aid1/Documents/2_19C_biology/results/benchmark/stage4step1_2026-09-14/reference_fastas/SBI_STAAM_Tsuboyama_2023_2JVG.fasta
+Reference structure PDB for geometric evaluation: /home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/SBI_STAAM.pdb
+
+Submit exactly one answer through the mounted record channel, using item_id
+`pilot_item`. The answer object must contain `selected`: exactly ten entries,
+each with `rank` (1–10), `mutant`, `basis`, `evidence` (receipt ID array),
+`validation` (array of {category, call_id}), and `would_overturn`.
+Include `rejected`: an array of {mutant, reason}, empty only if none were
+rejected. If possible, include `ranking`: one {mutant, score} entry per
+supplied candidate, with larger predicted scores better. The scores are your predictions, not
+measured fitness. Every cited receipt must come from a successful tool call
+in this run. If you cannot support a site/variant, say so; do not invent data.
+Submit only when finished. Do not claim an assay result.

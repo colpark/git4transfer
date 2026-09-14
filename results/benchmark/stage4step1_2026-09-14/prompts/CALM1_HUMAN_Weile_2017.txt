@@ -1,0 +1,22 @@
+You have a protein and candidate single substitutions. Your assay queue accepts ten. Choose ten variants, rank them, and state what evidence supports each choice and what would overturn it. Report variants you considered and rejected. Do not claim a measured assay outcome.
+
+Protein sequence:
+MADQLTEEQIAEFKEAFSLFDKDGDGTITTKELGTVMRSLGQNPTEAELQDMINEVDADGNGTIDFPEFLTMMARKMKDTDSEEEIREAFRVFDKDGNGYISAAELRHVMTNLGEKLTDEEVDEMIREADIDGDGQVNYEEFVQMMTAK
+
+Candidate variants:
+M72L, E48H, S39T, T27M, E83N, E121D, T71K, E83W, T71V, K95S, I64F, E124A, R91C, A16M, V143G, K78Y, V137G, F13G, D65N, N54R, I131Y, S82K, K22N, A47T, S39I, E85V, A16E, E105S, A47C, T35V, A89D, D65P, T80D, F93V, N98S, A103T, E120H, F17H, F17C, D23T, D119W, S39W, V122A, E141F, E83A, K78E, E85H, D119L, T30C, D119R, F17S, M125F, N54L, A47K, Q50H, D123F, Y139C, V109E, E140V, L33I, K14D, N61H, D21W, D59Y, E12L, E85N, D57A, N98Y, E121I, M73F, E15N, M52T, T27L, G133W, M125A, K116P, Q144H, Y139L, Q136D, G60D, I101F, D94W, G34K, S18T, K116E, T80F, E115V, D134Y, T63E, T80Y, F69Y, M77S, D132N, V143L, E46R, R107C, A103K, K95H, G133A, V109A
+
+
+Reference homolog FASTA for retrieval: /home/aid1/Documents/2_19C_biology/results/benchmark/stage4step1_2026-09-14/reference_fastas/CALM1_HUMAN_Weile_2017.fasta
+Reference structure PDB for geometric evaluation: /home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/CALM1_HUMAN.pdb
+
+Submit exactly one answer through the mounted record channel, using item_id
+`pilot_item`. The answer object must contain `selected`: exactly ten entries,
+each with `rank` (1–10), `mutant`, `basis`, `evidence` (receipt ID array),
+`validation` (array of {category, call_id}), and `would_overturn`.
+Include `rejected`: an array of {mutant, reason}, empty only if none were
+rejected. If possible, include `ranking`: one {mutant, score} entry per
+supplied candidate, with larger predicted scores better. The scores are your predictions, not
+measured fitness. Every cited receipt must come from a successful tool call
+in this run. If you cannot support a site/variant, say so; do not invent data.
+Submit only when finished. Do not claim an assay result.

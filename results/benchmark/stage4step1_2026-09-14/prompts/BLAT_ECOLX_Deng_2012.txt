@@ -1,0 +1,22 @@
+You have a protein and candidate single substitutions. Your assay queue accepts ten. Choose ten variants, rank them, and state what evidence supports each choice and what would overturn it. Report variants you considered and rejected. Do not claim a measured assay outcome.
+
+Protein sequence:
+MSIQHFRVALIPFFAAFCLPVFAHPETLVKVKDAEDQLGARVGYIELDLNSGKILESFRPEERFPMMSTFKVLLCGAVLSRVDAGQEQLGRRIHYSQNDLVEYSPVTEKHLTDGMTVRELCSAAITMSDNTAANLLLTTIGGPKELTAFLHNMGDHVTRLDRWEPELNEAIPNDERDTTMPAAMATTLRKLLTGELLTLASRQQLIDWMEADKVAGPLLRSALPAGWFIADKSGAGERGSRGIIAALGPDGKPSRIVVIYTTGSQATMDERNRQIAEIGASLIKHW
+
+Candidate variants:
+D231L, R81N, V117G, G236W, V42A, F58S, Q265N, K232A, D48A, G226Q, T107N, A40F, N173W, V78I, L74P, R118M, D113H, S264L, Y103S, R202Y, Q88C, Y44R, L137R, P65W, E164W, P224W, K71Y, D250W, G242M, T147H, T147W, D129G, Y260P, N152M, S233R, G251C, L55C, I54S, D161V, E46K, A211T, R92G, S68V, M209D, R63K, L47Q, G90Q, T139Y, P60T, I244E, A246H, S221R, S104N, L49G, F70P, S80T, F149K, H156R, T179F, Q86F, T116N, K109R, S104L, A148F, D212K, T69S, A200S, G194I, L197Y, A133Q, R59H, K213F, D174E, S240F, N50F, L150F, Q97V, T126L, E61V, T138M, G234F, K190D, V42H, N173F, T107V, L135A, E164N, A40Y, M184W, Y103V, V78L, T126H, A230P, E56Q, L218I, L137P, A185N, L247S, D250Q, G154Y
+
+
+Reference homolog FASTA for retrieval: /home/aid1/Documents/2_19C_biology/results/benchmark/stage4step1_2026-09-14/reference_fastas/BLAT_ECOLX_Deng_2012.fasta
+Reference structure PDB for geometric evaluation: /home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/BLAT_ECOLX.pdb
+
+Submit exactly one answer through the mounted record channel, using item_id
+`pilot_item`. The answer object must contain `selected`: exactly ten entries,
+each with `rank` (1–10), `mutant`, `basis`, `evidence` (receipt ID array),
+`validation` (array of {category, call_id}), and `would_overturn`.
+Include `rejected`: an array of {mutant, reason}, empty only if none were
+rejected. If possible, include `ranking`: one {mutant, score} entry per
+supplied candidate, with larger predicted scores better. The scores are your predictions, not
+measured fitness. Every cited receipt must come from a successful tool call
+in this run. If you cannot support a site/variant, say so; do not invent data.
+Submit only when finished. Do not claim an assay result.

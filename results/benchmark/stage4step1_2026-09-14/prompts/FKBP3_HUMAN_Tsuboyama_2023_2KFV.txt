@@ -1,0 +1,22 @@
+You have a protein and candidate single substitutions. Your assay queue accepts ten. Choose ten variants, rank them, and state what evidence supports each choice and what would overturn it. Report variants you considered and rejected. Do not claim a measured assay outcome.
+
+Protein sequence:
+VPQRAWTVEQLRSEQLPKKDIIKFLQEHGSDSFLAEHKLLGNIKNVAKTANKDHLVTAYNHLFETKRFK
+
+Candidate variants:
+K52A, T49H, T7H, K18D, H28C, W6R, W6Q, I21L, V8D, S30L, V46K, H61C, N60G, E36F, L40E, E9I, A50H, K18T, I43G, Q10A, K23G, N45E, T57D, R4L, L11A, W6M, Q15F, N51V, W6A, R4P, L55A, T7I, K66E, V56K, G41C, Q26W, A5K, Q10H, F24D, H28K, T49Y, L11M, D53M, N45Q, F63N, L16I, N60F, K23A, V56N, L11W, H61S, R4E, E36T, K66W, S30T, G29N, H54C, K52H, V56L, H54R, L34R, E14Q, N60H, F63C, P17C, N45W, N60W, L34A, T57A, D20V, V56D, A58R, F33Y, K38W, V8N, G29S, K38R, S30H, E64L, L39Y, Q26L, Q3M, E14G, A47S, K44F, L62G, K44G, E14W, E14S, K19L, V46R, F33H, L40V, K23W, V8I, E9P, E36V, H28Y, E27T, A50F
+
+
+Reference homolog FASTA for retrieval: /home/aid1/Documents/2_19C_biology/results/benchmark/stage4step1_2026-09-14/reference_fastas/FKBP3_HUMAN_Tsuboyama_2023_2KFV.fasta
+Reference structure PDB for geometric evaluation: /home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/FKBP3_HUMAN.pdb
+
+Submit exactly one answer through the mounted record channel, using item_id
+`pilot_item`. The answer object must contain `selected`: exactly ten entries,
+each with `rank` (1–10), `mutant`, `basis`, `evidence` (receipt ID array),
+`validation` (array of {category, call_id}), and `would_overturn`.
+Include `rejected`: an array of {mutant, reason}, empty only if none were
+rejected. If possible, include `ranking`: one {mutant, score} entry per
+supplied candidate, with larger predicted scores better. The scores are your predictions, not
+measured fitness. Every cited receipt must come from a successful tool call
+in this run. If you cannot support a site/variant, say so; do not invent data.
+Submit only when finished. Do not claim an assay result.

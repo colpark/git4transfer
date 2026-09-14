@@ -1,0 +1,22 @@
+You have a protein and candidate single substitutions. Your assay queue accepts ten. Choose ten variants, rank them, and state what evidence supports each choice and what would overturn it. Report variants you considered and rejected. Do not claim a measured assay outcome.
+
+Protein sequence:
+THFTSQQLQELEATFQRNHYPDMSTREEIAVWTNLTEARVRVWFKNRRAKWR
+
+Candidate variants:
+F15P, Q16A, W51N, R39Q, S24T, E12N, E37S, E27R, V42E, Q9I, E37K, T4H, P21Q, R26M, N46P, T25R, K45N, H19K, N18C, W32C, M23W, T14W, E28W, M23H, D22H, R26Q, Q16L, Y20P, T25W, T1Q, A38R, L11G, H2A, Y20C, T25Q, T33P, Q6K, E10D, P21S, Q6Y, E28D, Q6W, L11H, W32S, R47P, L11A, R39G, R47N, P21I, K50H, T25C, V42G, Q6D, A13C, K45W, R26H, L8N, F3P, R52G, V40A, S5Y, T36R, R47E, E27M, A49F, T1S, A13M, F3D, R17P, R48W, Q9L, E28V, Q7I, M23A, Q6L, L35T, R41M, R39Y, T25M, W51G, K45S, P21W, A38W, T1K, F15W, L35V, R52V, V42C, T1W, Q9K, L11C, I29L, W43E, T33R, M23G, Y20Q, W32T, Y20S, V42Q, F3V
+
+
+Reference homolog FASTA for retrieval: /home/aid1/Documents/2_19C_biology/results/benchmark/stage4step1_2026-09-14/reference_fastas/PITX2_HUMAN_Tsuboyama_2023_2L7M.fasta
+Reference structure PDB for geometric evaluation: /home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/PITX2_HUMAN.pdb
+
+Submit exactly one answer through the mounted record channel, using item_id
+`pilot_item`. The answer object must contain `selected`: exactly ten entries,
+each with `rank` (1–10), `mutant`, `basis`, `evidence` (receipt ID array),
+`validation` (array of {category, call_id}), and `would_overturn`.
+Include `rejected`: an array of {mutant, reason}, empty only if none were
+rejected. If possible, include `ranking`: one {mutant, score} entry per
+supplied candidate, with larger predicted scores better. The scores are your predictions, not
+measured fitness. Every cited receipt must come from a successful tool call
+in this run. If you cannot support a site/variant, say so; do not invent data.
+Submit only when finished. Do not claim an assay result.

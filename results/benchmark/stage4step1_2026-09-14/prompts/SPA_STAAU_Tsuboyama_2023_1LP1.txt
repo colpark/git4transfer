@@ -1,0 +1,22 @@
+You have a protein and candidate single substitutions. Your assay queue accepts ten. Choose ten variants, rank them, and state what evidence supports each choice and what would overturn it. Report variants you considered and rejected. Do not claim a measured assay outcome.
+
+Protein sequence:
+KFNKELSVAGREIVTLPNLNDPQKKAFIFSLWDDPSQSANLLAEAKKLNDAQAPK
+
+Candidate variants:
+I28M, I13D, A51D, V14K, N20P, S30M, E12G, F27M, Q37K, E44F, S36P, F27A, L6N, G10A, P35K, I13A, K1S, N40C, K46V, R11F, L19P, V14A, S7P, K1G, G10Y, P17M, D34N, A45Q, T15G, E5D, A9D, A9T, A39E, N40H, F27P, A43Q, V8C, S7M, L42V, E5L, K25N, A45K, N40S, L41E, D33R, I13C, L48F, K25Y, N3D, E12D, A9I, S36F, A45Y, V14M, L48S, N40F, A26E, K1F, K46E, V8A, P22Q, L41N, L16I, K47V, K46T, D50K, N18D, P35C, L48N, A26I, D50A, G10P, I28A, R11Q, D50Y, A39K, A43D, P35H, I13E, E12W, S38I, F2A, D34F, V8L, L6V, A39F, A43I, F29H, K1Y, R11H, S38E, L19S, P17Q, L41K, D21C, I28P, K1W, L41F, L6M, S7G
+
+
+Reference homolog FASTA for retrieval: /home/aid1/Documents/2_19C_biology/results/benchmark/stage4step1_2026-09-14/reference_fastas/SPA_STAAU_Tsuboyama_2023_1LP1.fasta
+Reference structure PDB for geometric evaluation: /home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/SPA_STAAU.pdb
+
+Submit exactly one answer through the mounted record channel, using item_id
+`pilot_item`. The answer object must contain `selected`: exactly ten entries,
+each with `rank` (1–10), `mutant`, `basis`, `evidence` (receipt ID array),
+`validation` (array of {category, call_id}), and `would_overturn`.
+Include `rejected`: an array of {mutant, reason}, empty only if none were
+rejected. If possible, include `ranking`: one {mutant, score} entry per
+supplied candidate, with larger predicted scores better. The scores are your predictions, not
+measured fitness. Every cited receipt must come from a successful tool call
+in this run. If you cannot support a site/variant, say so; do not invent data.
+Submit only when finished. Do not claim an assay result.

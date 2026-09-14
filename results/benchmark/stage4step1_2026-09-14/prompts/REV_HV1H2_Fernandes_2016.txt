@@ -1,0 +1,22 @@
+You have a protein and candidate single substitutions. Your assay queue accepts ten. Choose ten variants, rank them, and state what evidence supports each choice and what would overturn it. Report variants you considered and rejected. Do not claim a measured assay outcome.
+
+Protein sequence:
+MAGRSGDSDEELIRTVRLIKLLYQSNPPPNPEGTRQARRNRRRRWRERQRQIHSISERILSTYLGRSAEPVPLQLPPLERLTLDCNEDCGTSGTQGVGSPQILVESPTVLESGTKE
+
+Candidate variants:
+D9V, Q51Y, E47Q, H53T, E69N, C85L, S8D, Q51M, D88M, G6R, I55Y, P29D, S25T, L81S, P31R, P77C, Q49L, L81H, V97A, I55N, T94L, K20F, G93V, Q95H, L18C, R41A, I13R, I52H, Q36R, K20P, P27C, S92I, Q51H, G65C, L12G, E10M, G90P, Q36I, N40G, L110H, G90V, E111D, C89D, S8C, S99F, E105A, D7R, W45Q, T108K, P100K, V71Y, Q36A, L78T, R58Y, N26E, L64M, L64I, P72I, E111A, S61F, I55E, E57P, W45V, R14W, G113V, Q49I, R43K, P27I, I102Y, Q74G, I52F, V71A, S61A, H53Y, Y23C, I19A, G90W, R58V, D88W, C89S, P27D, P100C, V71F, N26C, L103S, D88S, P77M, T108H, R42V, T62K, C85V, Q101D, S67K, P76F, T34S, V71W, T62L, G65R, L78K, Y63I
+
+
+Reference homolog FASTA for retrieval: /home/aid1/Documents/2_19C_biology/results/benchmark/stage4step1_2026-09-14/reference_fastas/REV_HV1H2_Fernandes_2016.fasta
+Reference structure PDB for geometric evaluation: /home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/REV_HV1H2.pdb
+
+Submit exactly one answer through the mounted record channel, using item_id
+`pilot_item`. The answer object must contain `selected`: exactly ten entries,
+each with `rank` (1–10), `mutant`, `basis`, `evidence` (receipt ID array),
+`validation` (array of {category, call_id}), and `would_overturn`.
+Include `rejected`: an array of {mutant, reason}, empty only if none were
+rejected. If possible, include `ranking`: one {mutant, score} entry per
+supplied candidate, with larger predicted scores better. The scores are your predictions, not
+measured fitness. Every cited receipt must come from a successful tool call
+in this run. If you cannot support a site/variant, say so; do not invent data.
+Submit only when finished. Do not claim an assay result.

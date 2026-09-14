@@ -1,0 +1,22 @@
+You have a protein and candidate single substitutions. Your assay queue accepts ten. Choose ten variants, rank them, and state what evidence supports each choice and what would overturn it. Report variants you considered and rejected. Do not claim a measured assay outcome.
+
+Protein sequence:
+MDLIIQHAKKYKGSVVIALLAVIVMVVSALWQPKLLQQVLEAIMNDDSDKMKNLGIQLIAIAGLGLVAGVINTIFSAKVAQGVSADIREATFRKIQTFSFGNIEKFSAGNLVVRLTNDVTQIQNVIMIALQTLFRIPFLFIGSFILAMLTLPQLWWVIVALVIAVILISMLSFSQMGKHFMIIQNLIDKINGIAKENLLGIRVVKSFVQEKNQLSRFTKVSEELTTHNLIVGSLFAVMIPAFMLVANLAVVGSIFFVSNLVKDDPTLIGGVASFMNYLMQIMMAIIIGGMMMMMTSRAAVSIKRIKEVMETEPDVTYKKVPEQELIGSVEFDHVSFRYPGDEEDTLKDISFSIQPGEMIGIVGATGAGKSTLAQLIPRLFDPTEGKIEVGGVDLREVNEHSLRKTVSFVLQKAILFSGTIAQNLRHGKRDASEADMERASGIAQAKEFIEKLAEGYDAPVEERSNNFSGGQKQRLSITRGVIGEPKILILDDSTSALDARSERLVREALDKELKETTTIVIAQKISSVVHADRILVLDNGRLVGEGTHEELAATNPVYQEIYETQKGKEEA
+
+Candidate variants:
+M176Q, I286L, M275E, Q523P, T132H, R135S, M294A, M176V, A29V, Q411E, N247D, Q184H, M290T, M275P, M290H, M176E, F235G, I286K, Y338W, N247M, I286P, N124C, M176T, M25K, M25Q, Y338E, M176R, F173Q, M243S, N228I, V250M, F180N, K369N, M279V, I128P, K369A, M243D, I286Y, K369T, Q523G, Q411C, R297C, T120F, N124I, I254W, N247C, M243Q, Q523D, F173L, I239Q, M279W, G232I, T120W, N247L, R135I, Q411M, N124R, M176H, I239W, I254Q, M176Y, F235E, L224Q, F235H, L224F, I239F, F173A, Q184M, M293K, F180A, R135D, I239C, Q184S, T120H, N72F, R135F, T120Y, R297A, T120Q, M294N, M283T, N228W, F180G, V250K, Q411Y, A29W, G469E, F235N, Q280P, I254C, N247I, A29R, M294D, Q280N, R135T, N72T, M283Q, M243Y, I254S, M275C
+
+
+Reference homolog FASTA for retrieval: /home/aid1/Documents/2_19C_biology/results/benchmark/stage4step1_2026-09-14/reference_fastas/Q837P5_ENTFA_Meier_2023.fasta
+Reference structure PDB for geometric evaluation: /home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/Q837P5_ENTFA.pdb
+
+Submit exactly one answer through the mounted record channel, using item_id
+`pilot_item`. The answer object must contain `selected`: exactly ten entries,
+each with `rank` (1–10), `mutant`, `basis`, `evidence` (receipt ID array),
+`validation` (array of {category, call_id}), and `would_overturn`.
+Include `rejected`: an array of {mutant, reason}, empty only if none were
+rejected. If possible, include `ranking`: one {mutant, score} entry per
+supplied candidate, with larger predicted scores better. The scores are your predictions, not
+measured fitness. Every cited receipt must come from a successful tool call
+in this run. If you cannot support a site/variant, say so; do not invent data.
+Submit only when finished. Do not claim an assay result.

@@ -1,0 +1,2 @@
+2026-09-14T19:54:01.789470Z ERROR codex_core::tools::router: error=failed to read code-mode host message: early eof
+2026-09-14T19:54:27.804597Z ERROR codex_core::tools::router: error=code-mode host closed its stdout

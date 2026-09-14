@@ -1,0 +1,22 @@
+You have a protein and candidate single substitutions. Your assay queue accepts ten. Choose ten variants, rank them, and state what evidence supports each choice and what would overturn it. Report variants you considered and rejected. Do not claim a measured assay outcome.
+
+Protein sequence:
+MAKEDNIEMQGTVLETLPNTMFRVELENGHVVTAHISGKMRKNYIRILTGDKVTVELTPYDLSKGRIVFRSR
+
+Candidate variants:
+V24T, E56H, V53R, L26I, L14K, G65C, I36C, Q10I, S63R, T58G, V13I, V31D, D51W, L62W, R46N, K64Q, V53Q, T16R, E15D, T58M, E25D, L48N, G29L, N19D, R66N, H30V, P18Y, T16S, T58R, E56W, N19A, I67V, T16A, N43Y, L26G, F22W, N28C, I36D, D51I, N43R, T33S, P59G, E25H, I67D, E56C, E15V, F22Y, T58H, T54S, E27Y, T33H, L48K, G50E, R46A, L57E, G50S, E27V, E15P, N28T, P18T, E56A, T33M, V31E, L14W, T49V, Y44Q, N19I, T20V, T12S, L14F, V13K, R66E, H35W, I67R, E27K, V32W, T33N, E15R, L17S, R46L, K39T, E27G, P59N, L57C, L48C, D51Q, R41Q, M40P, I47N, V24D, Q10F, V24C, G38K, Y60F, L26N, L48Y, V13Q, R41T, P59F, V32P
+
+
+Reference homolog FASTA for retrieval: /home/aid1/Documents/2_19C_biology/results/benchmark/stage4step1_2026-09-14/reference_fastas/IF1_ECOLI_Kelsic_2016.fasta
+Reference structure PDB for geometric evaluation: /home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/IF1_ECOLI.pdb
+
+Submit exactly one answer through the mounted record channel, using item_id
+`pilot_item`. The answer object must contain `selected`: exactly ten entries,
+each with `rank` (1–10), `mutant`, `basis`, `evidence` (receipt ID array),
+`validation` (array of {category, call_id}), and `would_overturn`.
+Include `rejected`: an array of {mutant, reason}, empty only if none were
+rejected. If possible, include `ranking`: one {mutant, score} entry per
+supplied candidate, with larger predicted scores better. The scores are your predictions, not
+measured fitness. Every cited receipt must come from a successful tool call
+in this run. If you cannot support a site/variant, say so; do not invent data.
+Submit only when finished. Do not claim an assay result.

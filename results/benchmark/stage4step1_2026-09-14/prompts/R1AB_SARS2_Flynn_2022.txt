@@ -1,0 +1,22 @@
+You have a protein and candidate single substitutions. Your assay queue accepts ten. Choose ten variants, rank them, and state what evidence supports each choice and what would overturn it. Report variants you considered and rejected. Do not claim a measured assay outcome.
+
+Protein sequence:
+SGFRKMAFPSGKVEGCMVQVTCGTTTLNGLWLDDVVYCPRHVICTSEDMLNPNYEDLLIRKSNHNFLVQAGNVQLRVIGHSMQNCVLKLKVDTANPKTPKYKFVRIQPGQTFSVLACYNGSPSGVYQCAMRPNFTIKGSFLNGSCGSVGFNIDYDCVSFCYMHHMELPTGVHAGTDLEGNFYGPFVDRQTAQAAGTDTTITVNVLAWLYAAVINGDRWFLNRFTTTLNDFNLVAMKYNYEPLTQDHVDILGPLSAQTGIAVLDMCASLKELLQNGMNGRTILGSALLEDEFTPFDVVRQCSGVTFQ
+
+Candidate variants:
+N221V, G215I, V20R, I200F, G170D, D34Y, F8P, N84M, V261S, F223Y, P9M, I259A, I136R, A129Q, S123A, L89V, L220M, V114F, L250I, V86S, Y161T, G149Q, V20E, M235T, F185E, G29K, K97I, V77H, G195H, C38M, T280L, Q189E, N142C, L32H, V42T, P293H, I281S, S147H, E288T, N274I, N231H, T198G, V212S, S144Y, T21E, F134E, Y239R, C156P, L220I, N133Y, C265N, R60E, A260K, T24K, A116L, S10W, I136G, N119Y, P168R, N119I, I78S, R279S, L30W, C22D, M49C, E14C, M162F, V233E, W207P, E166M, T225E, D33M, G2S, D197L, E288I, G283S, H64R, N277W, T169I, T243D, Q83N, Y209H, M162L, S121E, Q74M, M17E, L67N, G215M, Q127H, L250F, K102N, S81L, T135S, Y154C, S81Y, G275E, E47A, I152G, S267W, L282M
+
+
+Reference homolog FASTA for retrieval: /home/aid1/Documents/2_19C_biology/results/benchmark/stage4step1_2026-09-14/reference_fastas/R1AB_SARS2_Flynn_2022.fasta
+Reference structure PDB for geometric evaluation: /home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/R1AB_SARS2.pdb
+
+Submit exactly one answer through the mounted record channel, using item_id
+`pilot_item`. The answer object must contain `selected`: exactly ten entries,
+each with `rank` (1–10), `mutant`, `basis`, `evidence` (receipt ID array),
+`validation` (array of {category, call_id}), and `would_overturn`.
+Include `rejected`: an array of {mutant, reason}, empty only if none were
+rejected. If possible, include `ranking`: one {mutant, score} entry per
+supplied candidate, with larger predicted scores better. The scores are your predictions, not
+measured fitness. Every cited receipt must come from a successful tool call
+in this run. If you cannot support a site/variant, say so; do not invent data.
+Submit only when finished. Do not claim an assay result.

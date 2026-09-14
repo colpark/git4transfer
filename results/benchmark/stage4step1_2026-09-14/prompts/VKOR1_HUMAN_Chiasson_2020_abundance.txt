@@ -1,0 +1,22 @@
+You have a protein and candidate single substitutions. Your assay queue accepts ten. Choose ten variants, rank them, and state what evidence supports each choice and what would overturn it. Report variants you considered and rejected. Do not claim a measured assay outcome.
+
+Protein sequence:
+MGSTWGSPGWVRLALCLTGLVLSLYALHVKAARARDRDYRALCDVGTAISCSRVFSSRWGRGFGLVEHVLGQDSILNQSNSIFGCIFYTLQLLLGCLRTRWASVLMLLSSLVSLAGSVYLAWILFFVLYDFCIVCITTYAINVSLMWLSFRKVQEPQGKAKRH
+
+Candidate variants:
+F63N, A121S, A140S, D130I, I141N, R100S, G60D, A32N, L111A, Y129P, S23M, T18Q, A140P, S81K, L97V, V11C, S103V, A31S, N142M, V54P, S50A, T18C, T138S, L105W, L65Q, I123S, L65I, F125R, L92V, I82H, V104W, A41T, A121N, N80H, S52Y, L13E, A102G, R151E, L148T, W147T, T89M, I141S, A32T, G116L, C132F, Q91N, S109L, S109E, G64L, V104C, L20P, L120I, F126P, I136R, R61L, V118Q, Y39D, V29R, S52Q, S144A, A26D, Y119F, R100M, T47I, G84L, Y25H, S117H, G60L, W101L, G64D, T137H, G84S, S110M, L65K, M106E, L15R, F131S, T99A, L97T, A31M, I49G, G95F, F87V, S110Y, S57W, W59H, V29D, S52G, I82S, S57Q, I133M, V11W, G84D, L124D, W10N, V45P, R12N, S149K, L148C, T99M
+
+
+Reference homolog FASTA for retrieval: /home/aid1/Documents/2_19C_biology/results/benchmark/stage4step1_2026-09-14/reference_fastas/VKOR1_HUMAN_Chiasson_2020_abundance.fasta
+Reference structure PDB for geometric evaluation: /home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/VKOR1_HUMAN.pdb
+
+Submit exactly one answer through the mounted record channel, using item_id
+`pilot_item`. The answer object must contain `selected`: exactly ten entries,
+each with `rank` (1–10), `mutant`, `basis`, `evidence` (receipt ID array),
+`validation` (array of {category, call_id}), and `would_overturn`.
+Include `rejected`: an array of {mutant, reason}, empty only if none were
+rejected. If possible, include `ranking`: one {mutant, score} entry per
+supplied candidate, with larger predicted scores better. The scores are your predictions, not
+measured fitness. Every cited receipt must come from a successful tool call
+in this run. If you cannot support a site/variant, say so; do not invent data.
+Submit only when finished. Do not claim an assay result.

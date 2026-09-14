@@ -1,0 +1,22 @@
+You have a protein and candidate single substitutions. Your assay queue accepts ten. Choose ten variants, rank them, and state what evidence supports each choice and what would overturn it. Report variants you considered and rejected. Do not claim a measured assay outcome.
+
+Protein sequence:
+MDVNPTLLFLKVPAQNAISTTFPYTGDPPYSHGTGTGYTMDTVNRTHQYSERGRWTTNTETGAPQLNPIDGPLPEDNEPSGYAQTDCVLEAMAFLEESHPGIFETSCLETMEVVQQTRVDKLTQGRQTYDWTLNRNQPAATALANTIEVFRSNGLTANESGRLIDFLKDVMESMNKEEMEITTHFQRKRRVRDNMTKKMVTQRTIGKRKQRLNKRSYLIRALTLNTMTKDAERGKLKRRAIATPGMQIRGFVYFVETLARSICEKLEQSGLPVGGNEKKAKLANVVRKMMTNSQDTEISFTITGDNTKWNENQNPRMFLAMITYITRNQPEWFRNVLSIAPIMFSNKMARLGKGYMFESKSMKIRTQIPAEMLASIDLKYFNDSTRKKIEKIRPLLIDGTASLSPGMMMGMFNMLSTVLGVSILNLGQKRHTKTTYWWDGLQSSDDFALIVNAPNHEGIQAGVNRFYRTCKLLGINMSKKKSYINRTGTFEFTSFFYRYGFVANFSMELPSFGVSGINESADMSIGVTVIKNNMINNDLGPATAQMALQLFIKDYRYTYRCHRGDTQIQTRRSFEIKKLWEQTHSKAGLLVSDGGPNLYNIRNLHIPEVCLKWELMDEDYQGRLCNPLNPFVNHKDIESVNNAVIMPAHGPAKNMEYDAVATTHSWIPKRNRSILNTSQRGILEDEQMYQKCCNLFEKFFPSSSYRRPVGISSMVEAMVSRARIDARIDFESGRIKKEEFTEIMKICSTIEELRRQK
+
+Candidate variants:
+V632D, D130W, K281S, G595I, E390N, K586L, I339D, V286F, R755G, S422N, M362T, T434G, P651N, V273R, S50L, R393S, H649V, P64F, R192T, I205R, E264V, W55Y, G488H, E172Y, E267Q, Y30M, M246V, T117A, G245C, T42F, L419Y, I674C, S106Y, K308V, S639H, K433Q, T183K, S639W, N597H, R220F, L73W, N676M, Y24E, K308S, S592I, L683Q, N600F, N16V, E148M, I298W, I248N, R151P, K279N, E109I, F501P, C625G, A547R, D27H, K235F, S404T, A140R, D554V, D41G, M655N, D658M, G35A, N213W, V12G, R208S, P74T, P596G, I262L, H47K, D165R, L373D, R386L, K481A, W437V, D86S, L8C, K353H, Y436C, T42K, G540W, V502W, G526M, L66H, E78N, N153P, V200E, D295T, R465V, V715G, R189Q, R162F, L548K, R723Y, I601H, M343W, Y380E
+
+
+Reference homolog FASTA for retrieval: /home/aid1/Documents/2_19C_biology/results/benchmark/stage4step1_2026-09-14/reference_fastas/RDRP_I33A0_Li_2023.fasta
+Reference structure PDB for geometric evaluation: /home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/RDRP_I33A0.pdb
+
+Submit exactly one answer through the mounted record channel, using item_id
+`pilot_item`. The answer object must contain `selected`: exactly ten entries,
+each with `rank` (1–10), `mutant`, `basis`, `evidence` (receipt ID array),
+`validation` (array of {category, call_id}), and `would_overturn`.
+Include `rejected`: an array of {mutant, reason}, empty only if none were
+rejected. If possible, include `ranking`: one {mutant, score} entry per
+supplied candidate, with larger predicted scores better. The scores are your predictions, not
+measured fitness. Every cited receipt must come from a successful tool call
+in this run. If you cannot support a site/variant, say so; do not invent data.
+Submit only when finished. Do not claim an assay result.

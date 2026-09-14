@@ -1,0 +1,794 @@
+{
+  "answer": {
+    "disclaimer": "All values reported here are model predictions and retrieval statistics from this run. No assay was performed and no measured fitness, ddG, stability or binding value is claimed or implied.",
+    "known_gaps": [
+      "DSSP FAILED on BOTH available structures (reference PDB and ESMFold artifact) with 'did not start with a valid PDB HEADER line'. I therefore have NO secondary-structure and NO solvent-accessibility evidence, and no claim about burial or exposure is made anywhere in this answer.",
+      "PSSM ARTIFACT: a pssm_score delta_bits of exactly -1.000 together with wt_bits -0.0704 is the all-pseudocount signature of a column in which NEITHER the wild-type nor the mutant residue is observed. It is absence of evidence, not negative evidence. This affects positions 9, 10, 17, 21, 52, 59 and 62, and those values were not treated as penalties.",
+      "Position 33 has MSA depth 2 and gap fraction 0.909, so both its PSSM score and its conservation value (1.0) are statistically empty. D33E rests on the two learned channels only.",
+      "No ddG, no molecular dynamics, no binding calculation. openmm_snapshot_potential_delta was deliberately not used: it compares unminimised snapshots, is explicitly not a ddG or variant ranker, and no mutant coordinates were available to feed it.",
+      "82 of 100 candidates were scored by the ESM-2 channel only. Their `ranking` scores are single-channel and correspondingly less reliable than the 18 finalists that received orthogonal PSSM and ESM-IF checks.",
+      "The MSA is shallow (22 rows) and distant, so all evolutionary evidence in this run is low-confidence relative to a deep-MSA target."
+    ],
+    "method_summary": "Three independent channels. (1) ESM-2 650M masked-marginal log-odds on all 100 candidates - the only channel applied uniformly, and therefore the source of the `ranking` scores. (2) Classical evolutionary evidence: PSSM log-odds and Shannon conservation over a 22-row query-anchored MSA from blast_msa; homologs are distant (~29-34% identity) so this channel is weak and frequently empty. (3) ESM-IF1 structure-conditioned scoring on the supplied AF2 backbone for 18 finalists; the tool returns whole-sequence mean log-likelihood, so the reported value is (variant - WT) x 69 residues, WT mean LL = -1.4952999612559443.",
+    "protein": "ARGR_ECOLI N-terminal winged-helix DNA-binding domain, 69 aa (full-length ArgR residues 7-75); candidate numbering is 1-based on the supplied 69-mer and every candidate's stated WT was verified against the query at that index",
+    "ranking": [
+      {
+        "mutant": "R51K",
+        "score": 1.907
+      },
+      {
+        "mutant": "G21S",
+        "score": 1.206
+      },
+      {
+        "mutant": "A49L",
+        "score": 0.529
+      },
+      {
+        "mutant": "D33E",
+        "score": 0.46
+      },
+      {
+        "mutant": "F17A",
+        "score": 0.079
+      },
+      {
+        "mutant": "S18F",
+        "score": 0.024
+      },
+      {
+        "mutant": "M59N",
+        "score": -0.096
+      },
+      {
+        "mutant": "E66D",
+        "score": -0.133
+      },
+      {
+        "mutant": "C62H",
+        "score": -0.376
+      },
+      {
+        "mutant": "K9E",
+        "score": -0.437
+      },
+      {
+        "mutant": "A10T",
+        "score": -0.496
+      },
+      {
+        "mutant": "L4V",
+        "score": -0.588
+      },
+      {
+        "mutant": "L12V",
+        "score": -0.692
+      },
+      {
+        "mutant": "L11V",
+        "score": -0.698
+      },
+      {
+        "mutant": "A25Q",
+        "score": -0.816
+      },
+      {
+        "mutant": "T52L",
+        "score": -0.822
+      },
+      {
+        "mutant": "A49F",
+        "score": -0.918
+      },
+      {
+        "mutant": "K16D",
+        "score": -0.996
+      },
+      {
+        "mutant": "V40I",
+        "score": -1.025
+      },
+      {
+        "mutant": "K13D",
+        "score": -1.116
+      },
+      {
+        "mutant": "V24S",
+        "score": -1.128
+      },
+      {
+        "mutant": "M59H",
+        "score": -1.169
+      },
+      {
+        "mutant": "R53K",
+        "score": -1.177
+      },
+      {
+        "mutant": "Q28T",
+        "score": -1.226
+      },
+      {
+        "mutant": "S18N",
+        "score": -1.282
+      },
+      {
+        "mutant": "T45I",
+        "score": -1.362
+      },
+      {
+        "mutant": "E3Q",
+        "score": -1.363
+      },
+      {
+        "mutant": "F17Q",
+        "score": -1.444
+      },
+      {
+        "mutant": "E14V",
+        "score": -1.525
+      },
+      {
+        "mutant": "G21H",
+        "score": -1.571
+      },
+      {
+        "mutant": "S18E",
+        "score": -1.584
+      },
+      {
+        "mutant": "S19N",
+        "score": -1.609
+      },
+      {
+        "mutant": "E29R",
+        "score": -1.631
+      },
+      {
+        "mutant": "L4A",
+        "score": -1.694
+      },
+      {
+        "mutant": "E66T",
+        "score": -1.739
+      },
+      {
+        "mutant": "E66Q",
+        "score": -1.828
+      },
+      {
+        "mutant": "Q30I",
+        "score": -1.869
+      },
+      {
+        "mutant": "K9Y",
+        "score": -1.881
+      },
+      {
+        "mutant": "G48D",
+        "score": -1.911
+      },
+      {
+        "mutant": "E29N",
+        "score": -1.953
+      },
+      {
+        "mutant": "E29D",
+        "score": -2.001
+      },
+      {
+        "mutant": "Q20N",
+        "score": -2.093
+      },
+      {
+        "mutant": "L4S",
+        "score": -2.351
+      },
+      {
+        "mutant": "A26S",
+        "score": -2.553
+      },
+      {
+        "mutant": "K9C",
+        "score": -2.682
+      },
+      {
+        "mutant": "Q30T",
+        "score": -2.901
+      },
+      {
+        "mutant": "M43N",
+        "score": -2.948
+      },
+      {
+        "mutant": "E14M",
+        "score": -2.95
+      },
+      {
+        "mutant": "D33Y",
+        "score": -3.07
+      },
+      {
+        "mutant": "E29L",
+        "score": -3.085
+      },
+      {
+        "mutant": "A55I",
+        "score": -3.12
+      },
+      {
+        "mutant": "E66F",
+        "score": -3.129
+      },
+      {
+        "mutant": "E15C",
+        "score": -3.199
+      },
+      {
+        "mutant": "Q37R",
+        "score": -3.316
+      },
+      {
+        "mutant": "K6Y",
+        "score": -3.345
+      },
+      {
+        "mutant": "A26E",
+        "score": -3.345
+      },
+      {
+        "mutant": "D33F",
+        "score": -3.391
+      },
+      {
+        "mutant": "A25F",
+        "score": -3.437
+      },
+      {
+        "mutant": "V24N",
+        "score": -3.578
+      },
+      {
+        "mutant": "F32V",
+        "score": -3.595
+      },
+      {
+        "mutant": "Q20Y",
+        "score": -3.775
+      },
+      {
+        "mutant": "E29H",
+        "score": -3.797
+      },
+      {
+        "mutant": "P64L",
+        "score": -3.809
+      },
+      {
+        "mutant": "K56Y",
+        "score": -3.86
+      },
+      {
+        "mutant": "E14P",
+        "score": -3.892
+      },
+      {
+        "mutant": "S19M",
+        "score": -4.173
+      },
+      {
+        "mutant": "P64I",
+        "score": -4.314
+      },
+      {
+        "mutant": "V60G",
+        "score": -4.383
+      },
+      {
+        "mutant": "F47G",
+        "score": -4.465
+      },
+      {
+        "mutant": "K16W",
+        "score": -4.57
+      },
+      {
+        "mutant": "F32M",
+        "score": -4.755
+      },
+      {
+        "mutant": "L12Q",
+        "score": -4.767
+      },
+      {
+        "mutant": "A26D",
+        "score": -4.815
+      },
+      {
+        "mutant": "L63R",
+        "score": -5.017
+      },
+      {
+        "mutant": "N36I",
+        "score": -5.023
+      },
+      {
+        "mutant": "I35R",
+        "score": -5.166
+      },
+      {
+        "mutant": "R42L",
+        "score": -5.588
+      },
+      {
+        "mutant": "E29F",
+        "score": -5.635
+      },
+      {
+        "mutant": "V24D",
+        "score": -5.65
+      },
+      {
+        "mutant": "A7P",
+        "score": -5.745
+      },
+      {
+        "mutant": "I23C",
+        "score": -5.926
+      },
+      {
+        "mutant": "R53Y",
+        "score": -6.091
+      },
+      {
+        "mutant": "G48Y",
+        "score": -6.149
+      },
+      {
+        "mutant": "R51H",
+        "score": -6.177
+      },
+      {
+        "mutant": "R42M",
+        "score": -6.182
+      },
+      {
+        "mutant": "L12D",
+        "score": -6.195
+      },
+      {
+        "mutant": "S38Q",
+        "score": -6.244
+      },
+      {
+        "mutant": "A49Q",
+        "score": -6.279
+      },
+      {
+        "mutant": "A7D",
+        "score": -6.297
+      },
+      {
+        "mutant": "N36M",
+        "score": -6.43
+      },
+      {
+        "mutant": "N36R",
+        "score": -6.478
+      },
+      {
+        "mutant": "S19P",
+        "score": -6.501
+      },
+      {
+        "mutant": "R42T",
+        "score": -6.511
+      },
+      {
+        "mutant": "K39C",
+        "score": -7.37
+      },
+      {
+        "mutant": "L27C",
+        "score": -7.803
+      },
+      {
+        "mutant": "F32T",
+        "score": -7.861
+      },
+      {
+        "mutant": "L44S",
+        "score": -7.95
+      },
+      {
+        "mutant": "I23G",
+        "score": -8.642
+      },
+      {
+        "mutant": "Y61E",
+        "score": -9.949
+      },
+      {
+        "mutant": "I23E",
+        "score": -11.811
+      }
+    ],
+    "ranking_semantics": "`ranking` scores are the raw ESM-2 delta_log_probability for every supplied candidate - the only channel applied uniformly across all 100, hence reproducible and single-source. Larger is better. The `selected` top-10 ORDER intentionally deviates from pure ESM-2 order because it integrates the PSSM and ESM-IF channels; each deviation is documented in the corresponding `basis` and in `rejected`.",
+    "rejected": [
+      {
+        "mutant": "F17A",
+        "reason": "ESM-2 ranked it 5th overall (+0.079) but ESM-IF strongly rejects it at -8.65, and the PSSM at column 17 is the uninformative -1.000 artifact so there is no evolutionary evidence to break the tie. Deleting a large aromatic side chain for alanine is a classic cavity-creating substitution that a fixed-backbone structure model flags for good reason. Dropped despite its top-10 sequence-channel rank."
+      },
+      {
+        "mutant": "S18F",
+        "reason": "ESM-2 ranked it 6th overall (+0.024) but it is the only finalist penalised by both other channels: PSSM -1.585 bits at a populated column and ESM-IF -4.32. Two-against-one, so dropped despite its top-10 sequence-channel rank."
+      },
+      {
+        "mutant": "K9E",
+        "reason": "ESM-2 mildly negative (-0.437) and ESM-IF strongly negative (-8.49). A full charge reversal at a surface lysine; the structure channel's objection is large and unopposed since the PSSM at column 9 is the uninformative -1.000 artifact."
+      },
+      {
+        "mutant": "L12V",
+        "reason": "The only candidate with a positive informative PSSM (+0.585 bits) that I still rejected. ESM-IF is the second-worst of all finalists at -13.6 and ESM-2 is negative (-0.692). The small evolutionary credit does not survive a structural penalty of that magnitude."
+      },
+      {
+        "mutant": "K16D",
+        "reason": "PSSM is positive (+1.585 bits) but both learned channels disagree: ESM-2 -0.996 and ESM-IF -7.10. A charge reversal; two-against-one, dropped."
+      },
+      {
+        "mutant": "A49F",
+        "reason": "Same conserved column as the retained A49L, but phenylalanine is not the family consensus (leucine is) and it scores the worst ESM-IF value of any finalist at -15.7, with PSSM uninformative for F specifically. A49L strictly dominates it as the representative substitution at this site."
+      },
+      {
+        "mutant": "V40I",
+        "reason": "Genuine negative evolutionary evidence, not an artifact: column 40 is strongly conserved for valine (wt 3.252 bits) and isoleucine scores only 0.930, giving -2.322 bits. ESM-IF -4.86 agrees. Rejected on real, well-populated data."
+      },
+      {
+        "mutant": "L11V",
+        "reason": "Strongest genuine PSSM penalty among candidates tested: -3.807 bits, with leucine highly conserved at 2.737 bits and valine unobserved. A conservative-looking substitution that the alignment specifically rules out."
+      },
+      {
+        "mutant": "L4V",
+        "reason": "ESM-IF -6.42 and ESM-2 -0.588; PSSM uninformative (-1.000, depth 19). No channel supports it."
+      },
+      {
+        "mutant": "K13D",
+        "reason": "PSSM -1.585 bits at a populated column plus ESM-2 -1.116. Charge reversal with genuine negative evolutionary evidence."
+      },
+      {
+        "mutant": "R42T / R42M / R42L",
+        "reason": "Position 42 is an arginine strictly conserved across the homolog block (the invariant R of the ...VSRD... motif) and ESM-2 assigns the wild type a near-zero log-probability of -0.048, i.e. near-certainty. All three substitutions score catastrophically (-6.51, -6.18, -5.59). Almost certainly a DNA-contacting or fold-critical residue."
+      },
+      {
+        "mutant": "I23E / I23G / I23C",
+        "reason": "The three worst or near-worst ESM-2 scores in the entire candidate set: -11.81, -8.64 and -5.93. Position 23 behaves as a strongly constrained hydrophobic site. I23E at -11.81 is the single most disfavoured candidate of all 100."
+      },
+      {
+        "mutant": "Y61E",
+        "reason": "ESM-2 -9.95 with wild-type tyrosine at log-probability -0.062, i.e. near-invariant. Aromatic-to-acidic at an apparently critical position."
+      },
+      {
+        "mutant": "L44S, L27C, F32T, K39C",
+        "reason": "All scored below -7.3 by ESM-2 (-7.95, -7.80, -7.86, -7.37) at positions whose wild-type residues carry near-zero log-probabilities. Large hydrophobic-to-polar or hydrophobic-to-small substitutions at strongly constrained sites."
+      },
+      {
+        "mutant": "A7D, A7P, L12D, S38Q, A49Q, G48Y, R51H, N36R, N36M, R53Y, E29F, L63R, N36I, I35R, F32M, A26D, F47G, V24D, P64I, V60G, E14P, S19P, K16W",
+        "reason": "Bulk rejection: all scored between -4.3 and -6.5 by ESM-2, a range where no candidate in this set was rescued by orthogonal evidence. Includes several helix-breaking proline introductions (A7P, E14P, S19P) and multiple buried-hydrophobic-to-charged swaps."
+      },
+      {
+        "mutant": "All remaining candidates scoring between -1.1 and -4.3 by ESM-2",
+        "reason": "Rejected on the uniform ESM-2 channel as strictly worse than the ten selected. This group (V24S, Q28T, R53K, S18N, T45I, E3Q, F17Q, E14V, G21H, S18E, S19N, E29R, L4A, E66T, E66Q, Q30I, K9Y, G48D, E29N, E29D, Q20N, L4S, A26S, K9C, Q30T, M43N, E14M, D33Y, E29L, A55I, E66F, K6Y, A26E, Q37R, D33F, A25F, V24N, Q20Y, S19M, K56Y, P64L, E15C, L12Q, M59H, Q20N and others) received no orthogonal follow-up because the assay queue holds only ten and their sequence-channel scores were not competitive. Their `ranking` scores are single-channel ESM-2 values and should be treated as lower-confidence than the finalists."
+      }
+    ],
+    "selected": [
+      {
+        "basis": "The only candidate supported by all three channels simultaneously. Column 51 is highly conserved (conservation 0.938, entropy 0.267 bits) and the conserved family residue is LYSINE, not the E. coli arginine: homologs read ...HLVKVP... where the query reads ...GAVRTR... This is therefore a reversion to family consensus at a well-determined site. PSSM +3.459 bits, ESM-2 +1.907 nats (the single highest of all 100 candidates), ESM-IF +0.51. Conservative charge-preserving Arg->Lys.",
+        "evidence": [
+          "call_id:2a71831dfb3a4c00a448c1931ddf1d56",
+          "call_id:41e9efcee99d472cbe4997a54fb6b104",
+          "call_id:917753f38ab14be0b91e8760ccb4ad3a",
+          "call_id:510d62f4ce1d400f9259538e3bd41020",
+          "call_id:b9f73436caee4b63b269003d3d24673d"
+        ],
+        "mutant": "R51K",
+        "rank": 1,
+        "validation": [
+          {
+            "call_id": "call_id:41e9efcee99d472cbe4997a54fb6b104",
+            "category": "evolutionary_pssm"
+          },
+          {
+            "call_id": "call_id:b9f73436caee4b63b269003d3d24673d",
+            "category": "site_conservation"
+          },
+          {
+            "call_id": "call_id:917753f38ab14be0b91e8760ccb4ad3a",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:510d62f4ce1d400f9259538e3bd41020",
+            "category": "learned_structure"
+          },
+          {
+            "call_id": "call_id:57c3b919483c40f69624930874de4d58",
+            "category": "structure_cross_check"
+          }
+        ],
+        "would_overturn": "Evidence that position 51 makes a direct arginine-specific DNA phosphate or base contact that lysine cannot geometrically substitute for - the guanidinium bidentate geometry is not reproducible by Lys. Since DSSP failed I have no exposure data to test whether this side chain faces the DNA interface, which is the main unverified assumption. Also overturned if the apparent consensus is an MSA alignment artifact in the 46-53 register, where the query carries a different local pattern from the homolog block."
+      },
+      {
+        "basis": "Second-highest ESM-2 score of all 100 candidates at +1.206 nats, with ESM-IF essentially neutral at -0.13 - i.e. the structure channel sees no packing penalty. Column 21 is only moderately conserved (0.763, entropy 1.023 bits), so the site tolerates variation. PSSM is uninformative here (the -1.000 all-pseudocount artifact), so this rests on the two learned channels agreeing.",
+        "evidence": [
+          "call_id:bd834ae390ab4ce2897d3be065bcaeaa",
+          "call_id:bd1d31318a864b4daa4ef25bbb711d4d",
+          "call_id:16a6d14a0b0b42179155d18b8fbf0da3",
+          "call_id:21fb14ab21c54a2795ba2f17213ebe58"
+        ],
+        "mutant": "G21S",
+        "rank": 2,
+        "validation": [
+          {
+            "call_id": "call_id:bd834ae390ab4ce2897d3be065bcaeaa",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:bd1d31318a864b4daa4ef25bbb711d4d",
+            "category": "learned_structure"
+          },
+          {
+            "call_id": "call_id:16a6d14a0b0b42179155d18b8fbf0da3",
+            "category": "site_conservation"
+          },
+          {
+            "call_id": "call_id:21fb14ab21c54a2795ba2f17213ebe58",
+            "category": "evolutionary_pssm_uninformative"
+          }
+        ],
+        "would_overturn": "Any evidence that Gly21 requires backbone flexibility or a positive-phi conformation - glycines in winged-helix turns are frequently conformationally obligatory, and neither learned channel reliably detects that. A Ramachandran or DSSP turn assignment showing Gly21 in a left-handed region would sink this immediately. DSSP failure means I could not perform that check."
+      },
+      {
+        "basis": "Positive in both learned channels - ESM-2 +0.460 and ESM-IF +0.625 - which is rare in this candidate set. Chemically the most conservative substitution available (carboxylate to carboxylate, one methylene longer). Ranked third rather than higher because its evolutionary support is genuinely absent, not negative: column 33 has depth 2 and gap fraction 0.909.",
+        "evidence": [
+          "call_id:618cd98212d341e0b762be2d948fa5a6",
+          "call_id:86d9486c21054be088f69780bd51a819",
+          "call_id:b81fbda195264714af6b96d8501bc054",
+          "call_id:47d20c6cc822470083c4859b59d220ad"
+        ],
+        "mutant": "D33E",
+        "rank": 3,
+        "validation": [
+          {
+            "call_id": "call_id:618cd98212d341e0b762be2d948fa5a6",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:86d9486c21054be088f69780bd51a819",
+            "category": "learned_structure"
+          },
+          {
+            "call_id": "call_id:b81fbda195264714af6b96d8501bc054",
+            "category": "site_conservation_insufficient_depth"
+          },
+          {
+            "call_id": "call_id:47d20c6cc822470083c4859b59d220ad",
+            "category": "evolutionary_pssm_insufficient_depth"
+          }
+        ],
+        "would_overturn": "A deeper MSA that actually populates column 33 and shows Asp strictly fixed. Also overturned if Asp33 makes a length-critical salt bridge or a helix N-cap where the extra methylene of Glu misplaces the carboxylate - a sub-angstrom geometric constraint that neither learned channel resolves."
+      },
+      {
+        "basis": "The lowest-risk candidate in the set: both learned channels are essentially exactly neutral (ESM-2 -0.096, ESM-IF -0.06), meaning neither the sequence model nor the backbone model objects at all. Column 59 is fairly conserved (0.877) but the PSSM is the uninformative -1.000 artifact, so conservation cannot be converted into a substitution-specific penalty. Valuable as a near-neutral internal control for the panel.",
+        "evidence": [
+          "call_id:6f4874c670df4de885dc314cc1062419",
+          "call_id:55ba65e3c3d1472fa5e57b9ccee75c43",
+          "call_id:177b4abbdcc34079b388445f7679f7a7",
+          "call_id:039060a919284242b47d988d2836ed3e"
+        ],
+        "mutant": "M59N",
+        "rank": 4,
+        "validation": [
+          {
+            "call_id": "call_id:6f4874c670df4de885dc314cc1062419",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:55ba65e3c3d1472fa5e57b9ccee75c43",
+            "category": "learned_structure"
+          },
+          {
+            "call_id": "call_id:177b4abbdcc34079b388445f7679f7a7",
+            "category": "site_conservation"
+          },
+          {
+            "call_id": "call_id:039060a919284242b47d988d2836ed3e",
+            "category": "evolutionary_pssm_uninformative"
+          }
+        ],
+        "would_overturn": "Evidence that Met59 is a buried core residue, in which case swapping a long hydrophobic thioether for a short polar amide would create an unsatisfied buried polar group and a cavity. I could not test burial because DSSP failed on both structures; this is the single largest unverified assumption for this variant."
+      },
+      {
+        "basis": "The strongest evolutionary signal in the entire candidate set, and deliberately retained despite a sharp inter-channel conflict. Column 49 is highly conserved (0.938, entropy 0.267) and the conserved residue is LEUCINE, not the E. coli alanine - homologs read ...HLVKVP... against the query's ...GAVRTR... PSSM +3.459 bits, ESM-2 +0.529. ESM-IF strongly disagrees at -15.1, which is the expected behaviour of a rigid single-conformer AF2 backbone asked to accommodate a small-to-large substitution without repacking. Ranked 5 rather than 2 to reflect that conflict honestly, and retained because it is the most information-rich experiment available: whichever way it reads, one channel is falsified.",
+        "evidence": [
+          "call_id:c5ed15c557b3470aa5c95a390f4e142c",
+          "call_id:543d3643dbab48279519b9c31508ed43",
+          "call_id:0bdab04d21a6436cb210f0df864ecd5d",
+          "call_id:06f7383cfdc34fc2bc0e4c1862b663d9",
+          "call_id:2a71831dfb3a4c00a448c1931ddf1d56"
+        ],
+        "mutant": "A49L",
+        "rank": 5,
+        "validation": [
+          {
+            "call_id": "call_id:c5ed15c557b3470aa5c95a390f4e142c",
+            "category": "evolutionary_pssm"
+          },
+          {
+            "call_id": "call_id:06f7383cfdc34fc2bc0e4c1862b663d9",
+            "category": "site_conservation"
+          },
+          {
+            "call_id": "call_id:543d3643dbab48279519b9c31508ed43",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:0bdab04d21a6436cb210f0df864ecd5d",
+            "category": "learned_structure_CONFLICTING"
+          }
+        ],
+        "would_overturn": "The ESM-IF penalty being real rather than a fixed-backbone artifact - i.e. evidence that position 49 sits in a tightly packed pocket with no room to absorb the extra volume even after repacking. A flexible-backbone repacking calculation, or DSSP-derived burial (unavailable, DSSP failed), would settle it. Also overturned if the 46-53 alignment register is wrong, which would destroy the consensus claim for both A49L and R51K at once."
+      },
+      {
+        "basis": "The best purely-evolutionary support outside positions 49 and 51: PSSM +1.848 bits at a well-populated column (depth 21, conservation 0.837), with ESM-2 effectively neutral at -0.133. Chemically conservative carboxylate-to-carboxylate. ESM-IF is mildly negative (-2.02), the weakest objection among the finalists. Near the C-terminus of this construct, where tolerance is generally higher.",
+        "evidence": [
+          "call_id:74313cb9aefc44c69c14e80de3876984",
+          "call_id:53eb2678567446c3a5f93f8c753859ef",
+          "call_id:36142f3ca9834a37a2cbeb10b0301fe4",
+          "call_id:397dd8ca03f641dd814a42176eb7f71d"
+        ],
+        "mutant": "E66D",
+        "rank": 6,
+        "validation": [
+          {
+            "call_id": "call_id:74313cb9aefc44c69c14e80de3876984",
+            "category": "evolutionary_pssm"
+          },
+          {
+            "call_id": "call_id:53eb2678567446c3a5f93f8c753859ef",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:36142f3ca9834a37a2cbeb10b0301fe4",
+            "category": "learned_structure"
+          },
+          {
+            "call_id": "call_id:397dd8ca03f641dd814a42176eb7f71d",
+            "category": "site_conservation"
+          }
+        ],
+        "would_overturn": "Position 66 lying in the linker to the C-terminal oligomerisation domain in the full-length protein rather than in the isolated 69-mer context modelled here; the assay construct boundary could make this position behave quite differently from either prediction. Also overturned by a length-critical salt bridge requiring Glu specifically."
+      },
+      {
+        "basis": "Selected chiefly on the structure channel: ESM-IF is positive at +0.91, one of only three finalists the backbone model actively prefers over wild type. Column 25 is the least conserved site among the finalists (conservation 0.502, entropy 2.152 bits), i.e. demonstrably variable across the family and therefore tolerant. ESM-2 mildly negative (-0.816) and PSSM mildly negative (-1.222), so this is a deliberate structure-channel-led pick over sequence-channel objection.",
+        "evidence": [
+          "call_id:544111bf9ec147c9b11fd243daf474ea",
+          "call_id:308a5cdc50ee49fb863a9aa9d8d1960d",
+          "call_id:684b57c5d2da44da93840a69d8d474e1",
+          "call_id:0089d3e7db1a461a90b9e55afb5eb1e4"
+        ],
+        "mutant": "A25Q",
+        "rank": 7,
+        "validation": [
+          {
+            "call_id": "call_id:544111bf9ec147c9b11fd243daf474ea",
+            "category": "learned_structure"
+          },
+          {
+            "call_id": "call_id:308a5cdc50ee49fb863a9aa9d8d1960d",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:684b57c5d2da44da93840a69d8d474e1",
+            "category": "site_conservation"
+          },
+          {
+            "call_id": "call_id:0089d3e7db1a461a90b9e55afb5eb1e4",
+            "category": "evolutionary_pssm"
+          }
+        ],
+        "would_overturn": "The ESM-IF preference not replicating on a second backbone (it was computed on the AF2 structure only; I did not re-run it against the ESMFold model). Since both sequence channels mildly disagree, a single non-replicating structure-channel result would remove the entire basis for this pick. This is the weakest-founded of the ten."
+      },
+      {
+        "basis": "Modest but consistent: ESM-2 -0.496 and ESM-IF -0.98, both small penalties, with no channel raising a strong objection. Included as a conservative small-polar substitution. Note the caveat: column 10 is highly conserved (0.938) yet the PSSM returns the uninformative -1.000 all-pseudocount value, meaning the conserved residue at that column is not alanine and the query is idiosyncratic there - so the high conservation number cannot be read as protecting the E. coli residue.",
+        "evidence": [
+          "call_id:d2776497dee649e288ecb7edc721bc68",
+          "call_id:63509a3a8aca4030b85aa000e3efa8d1",
+          "call_id:8b073951df0d4b4bb306f96321eacf9f",
+          "call_id:46bf3ad1c9394dacb4c7764cd76073a1"
+        ],
+        "mutant": "A10T",
+        "rank": 8,
+        "validation": [
+          {
+            "call_id": "call_id:d2776497dee649e288ecb7edc721bc68",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:63509a3a8aca4030b85aa000e3efa8d1",
+            "category": "learned_structure"
+          },
+          {
+            "call_id": "call_id:8b073951df0d4b4bb306f96321eacf9f",
+            "category": "site_conservation"
+          },
+          {
+            "call_id": "call_id:46bf3ad1c9394dacb4c7764cd76073a1",
+            "category": "evolutionary_pssm_uninformative"
+          }
+        ],
+        "would_overturn": "Ala10 being a buried small residue in the first helix where a beta-branched threonine would both clash and strain the helix. Threonine is the most helix-destabilising of the common polar residues, and with DSSP unavailable I could not confirm whether position 10 is helical."
+      },
+      {
+        "basis": "Ranked on the combined learned channels being only mildly negative (ESM-2 -0.822, ESM-IF -1.53), which places it among the ten least-penalised candidates overall. PSSM at column 52 is the uninformative -1.000 artifact - neither Thr nor Leu is observed there (homologs carry Val at this column), so there is no genuine evolutionary objection, and the fact that the family tolerates a beta-branched hydrophobic here is weakly encouraging for Leu.",
+        "evidence": [
+          "call_id:a527221bb076431baca3113c41143891",
+          "call_id:5bb6d800dca349aab2407256d8835c0b",
+          "call_id:43fcb8d7c7b34e239d947db2f2873b77",
+          "call_id:27263ee3f62d40028d3f7ce0655bce4e"
+        ],
+        "mutant": "T52L",
+        "rank": 9,
+        "validation": [
+          {
+            "call_id": "call_id:a527221bb076431baca3113c41143891",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:5bb6d800dca349aab2407256d8835c0b",
+            "category": "learned_structure"
+          },
+          {
+            "call_id": "call_id:43fcb8d7c7b34e239d947db2f2873b77",
+            "category": "site_conservation"
+          },
+          {
+            "call_id": "call_id:27263ee3f62d40028d3f7ce0655bce4e",
+            "category": "evolutionary_pssm_uninformative"
+          }
+        ],
+        "would_overturn": "Thr52 donating a hydrogen bond via its hydroxyl - a polar-to-hydrophobic swap would delete that interaction and neither learned channel scores hydrogen bonds explicitly. I have coordinates but did not identify a specific donor-acceptor pair to test with hbond_geometry, so this remains unchecked."
+      },
+      {
+        "basis": "The weakest of the ten and included as such. ESM-2 is only mildly negative (-0.376), and column 62 is among the more variable finalist sites (conservation 0.749, entropy 1.085 bits). ESM-IF objects more firmly at -3.73 and the PSSM is the uninformative -1.000 artifact. Retained over the alternatives because every remaining candidate scored worse on the combined learned channels; it is the marginal tenth pick, not a confident one.",
+        "evidence": [
+          "call_id:2779e4183bd341c498e4d2bd9077587f",
+          "call_id:36e2e317fd2c465e9d4b4c31fdb6b6d8",
+          "call_id:f2ab443c0ab34a64ad9ef1a020a6aab3",
+          "call_id:c80d7f9442b440d8a37b48b5b9828b33"
+        ],
+        "mutant": "C62H",
+        "rank": 10,
+        "validation": [
+          {
+            "call_id": "call_id:2779e4183bd341c498e4d2bd9077587f",
+            "category": "learned_sequence"
+          },
+          {
+            "call_id": "call_id:36e2e317fd2c465e9d4b4c31fdb6b6d8",
+            "category": "learned_structure"
+          },
+          {
+            "call_id": "call_id:f2ab443c0ab34a64ad9ef1a020a6aab3",
+            "category": "site_conservation"
+          },
+          {
+            "call_id": "call_id:c80d7f9442b440d8a37b48b5b9828b33",
+            "category": "evolutionary_pssm_uninformative"
+          }
+        ],
+        "would_overturn": "Cys62 having any structural or functional role as a cysteine - metal coordination, a disulfide, or redox sensing. ArgR is cytoplasmic so a structural disulfide is unlikely, but I have no direct evidence either way, and the ESM-IF penalty of -3.73 may be reporting exactly such a constraint. The substantial size and charge change from Cys to His makes this the highest-variance pick of the ten."
+      }
+    ],
+    "structure_validation": "The supplied AF2 reference backbone was cross-checked against an independently predicted ESMFold model: TM-score 0.939, RMSD 0.45 A over 66 aligned residues, ESMFold mean CA pLDDT 0.885. Two independent structure channels agree, so ESM-IF1 is operating on a trustworthy backbone."
+  },
+  "item_id": "pilot_item"
+}
