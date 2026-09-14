@@ -1,0 +1,5 @@
+{
+  "runs_recorded": 1,
+  "stop_reason": "CPU thermal zone >= 85 C",
+  "complete": false
+}

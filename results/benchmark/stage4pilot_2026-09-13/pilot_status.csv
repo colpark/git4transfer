@@ -1,0 +1,6 @@
+arm,planned_runs,attempted,completed,interrupted,attempt_wall_s,completed_wall_median_s,tool_attempts,tool_successes,fabricated_id_rate,rejected_empty_rate,evaluation_depth,p_at_10,spearman
+1,48,0,0,0,,,0,0,,,,,
+2,48,0,0,0,,,0,0,,,,,
+3,48,1,0,1,67.278,,0,0,,,,,
+3F,48,0,0,0,,,0,0,,,,,
+3L,48,0,0,0,,,0,0,,,,,

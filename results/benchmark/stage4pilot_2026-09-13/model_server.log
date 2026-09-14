@@ -1,0 +1,44 @@
+0.00.184.223 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.184.318 I srv          init: The UI is disabled
+0.00.184.319 I srv          init: Use --ui/--no-ui (or deprecated --webui/--no-webui) to enable/disable
+0.00.184.355 W srv  llama_server: -----------------
+0.00.184.355 W srv  llama_server: CORS is set to allow all origins ('*') and no API key is set
+0.00.184.355 W srv  llama_server: this can be a security risk (cross-origin attacks)
+0.00.184.355 W srv  llama_server: more info: https://github.com/ggml-org/llama.cpp/pull/25655
+0.00.184.355 W srv  llama_server: -----------------
+0.00.185.582 I srv    load_model: loading model '/home/aid1/.ollama/models/blobs/sha256-2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730'
+0.00.427.392 W load: control-looking token: 128247 '</s>' was not control-type; this is probably a bug in the model. its type will be overridden
+0.01.420.100 I cmn          init: llama threadpool init, n_threads = 2
+0.01.523.918 I srv    load_model: initializing, n_slots = 1, n_ctx_slot = 32768, kv_unified = 'false'
+0.01.526.562 I srv  llama_server: model loaded
+0.01.526.567 I srv  llama_server: listening on http://127.0.0.1:18080
+0.03.508.540 I slot get_availabl: id  0 | task -1 | selected slot by LRU, t_last = -1
+0.03.509.030 I slot launch_slot_: id  0 | task 0 | processing task, is_child = 0
+0.06.538.148 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   8448, progress = 0.93, t =   3.03 s / 2788.95 tokens per second
+0.06.589.882 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   8576, progress = 0.95, t =   3.08 s / 2783.67 tokens per second
+0.06.637.706 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   8704, progress = 0.96, t =   3.13 s / 2782.03 tokens per second
+0.06.688.710 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   8832, progress = 0.97, t =   3.18 s / 2777.66 tokens per second
+0.06.741.231 I slot print_timing: id  0 | task 0 | prompt processing, n_tokens =   8960, progress = 0.99, t =   3.23 s / 2772.12 tokens per second
+0.09.852.613 I slot print_timing: id  0 | task 0 | n_gen =    128, tg =  42.23 t/s, tg_3s =  42.56 t/s
+0.12.873.201 I slot print_timing: id  0 | task 0 | n_gen =    255, tg =  42.14 t/s, tg_3s =  42.04 t/s
+0.15.877.143 I slot print_timing: id  0 | task 0 | n_gen =    380, tg =  41.96 t/s, tg_3s =  41.61 t/s
+0.18.885.322 I slot print_timing: id  0 | task 0 | n_gen =    505, tg =  41.86 t/s, tg_3s =  41.55 t/s
+0.21.888.931 I slot print_timing: id  0 | task 0 | n_gen =    630, tg =  41.81 t/s, tg_3s =  41.62 t/s
+0.24.905.820 I slot print_timing: id  0 | task 0 | n_gen =    757, tg =  41.86 t/s, tg_3s =  42.10 t/s
+0.27.921.546 I slot print_timing: id  0 | task 0 | n_gen =    884, tg =  41.89 t/s, tg_3s =  42.11 t/s
+0.30.939.273 I slot print_timing: id  0 | task 0 | n_gen =   1010, tg =  41.88 t/s, tg_3s =  41.75 t/s
+0.33.958.417 I slot print_timing: id  0 | task 0 | n_gen =   1138, tg =  41.93 t/s, tg_3s =  42.40 t/s
+0.36.978.548 I slot print_timing: id  0 | task 0 | n_gen =   1265, tg =  41.95 t/s, tg_3s =  42.05 t/s
+0.39.986.330 I slot print_timing: id  0 | task 0 | n_gen =   1391, tg =  41.94 t/s, tg_3s =  41.89 t/s
+0.42.998.303 I slot print_timing: id  0 | task 0 | n_gen =   1518, tg =  41.96 t/s, tg_3s =  42.17 t/s
+0.46.010.770 I slot print_timing: id  0 | task 0 | n_gen =   1645, tg =  41.98 t/s, tg_3s =  42.16 t/s
+0.49.025.553 I slot print_timing: id  0 | task 0 | n_gen =   1772, tg =  41.99 t/s, tg_3s =  42.13 t/s
+0.52.032.160 I slot print_timing: id  0 | task 0 | n_gen =   1898, tg =  41.98 t/s, tg_3s =  41.91 t/s
+0.55.037.541 I slot print_timing: id  0 | task 0 | n_gen =   2023, tg =  41.96 t/s, tg_3s =  41.59 t/s
+0.58.058.028 I slot print_timing: id  0 | task 0 | n_gen =   2150, tg =  41.96 t/s, tg_3s =  42.05 t/s
+1.01.066.878 I slot print_timing: id  0 | task 0 | n_gen =   2276, tg =  41.96 t/s, tg_3s =  41.88 t/s
+1.04.066.978 I slot print_timing: id  0 | task 0 | n_gen =   2401, tg =  41.94 t/s, tg_3s =  41.67 t/s
+1.07.088.845 I slot print_timing: id  0 | task 0 | n_gen =   2526, tg =  41.91 t/s, tg_3s =  41.37 t/s
+1.10.110.550 I slot print_timing: id  0 | task 0 | n_gen =   2651, tg =  41.89 t/s, tg_3s =  41.37 t/s
+1.10.512.965 I srv    operator(): operator(): cleaning up before exit...
+1.10.533.823 W srv          stop: cancel task, id_task = 0

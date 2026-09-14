@@ -1,0 +1,8 @@
+{
+  "runs_in_this_session": 1,
+  "elapsed_s": 67.48,
+  "active_agent_s": 67.28,
+  "duty_cycle": 0.997,
+  "duty_cycle_definition": "sum of agent-run wall times / session elapsed including thermal waits",
+  "stop_reason": "CPU thermal zone >= 85 C"
+}

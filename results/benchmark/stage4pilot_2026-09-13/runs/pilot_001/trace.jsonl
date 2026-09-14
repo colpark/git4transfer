@@ -1,0 +1,3 @@
+{"type":"thread.started","thread_id":"01a09d83-fca3-77c0-bd37-c527199e7908"}
+{"type":"item.completed","item":{"id":"item_0","type":"error","message":"Model metadata for `stage2b-qwen7b` not found. Defaulting to fallback metadata; this can degrade performance and cause issues."}}
+{"type":"turn.started"}

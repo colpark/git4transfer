@@ -1,0 +1,2 @@
+Stage 2b Responses shim listening on 127.0.0.1:18081
+"GET /v1/models?client_version=0.154.0 HTTP/1.1" 200 -
