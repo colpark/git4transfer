@@ -21,7 +21,7 @@ def main() -> None:
     permitted = tuple((ROOT / f"results/benchmark/{stage}").resolve() for stage in
                       ("stage4pilot_2026-09-13", "stage3f_2026-09-14", "stage3g_2026-09-14",
                        "stage3h_2026-09-14", "stage3ib_2026-09-14",
-                       "stage3ic_2026-09-14"))
+                       "stage3ic_2026-09-14", "stage3id_2026-09-14"))
     if not any(parent in out.parents for parent in permitted):
         raise SystemExit("record output must be inside an explicit pilot/probe directory")
     out.mkdir(parents=True, exist_ok=True)

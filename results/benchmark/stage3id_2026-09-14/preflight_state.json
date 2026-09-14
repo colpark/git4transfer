@@ -1,0 +1,12 @@
+{
+  "accepted_3ic_catalog_bytes": 10825,
+  "live_catalog_bytes": 11137,
+  "live_mcp_function_count": 18,
+  "mcp_names_match_3ic": true,
+  "added_native_tools": [
+    "clock__curr_time"
+  ],
+  "removed_tools": [],
+  "preflight_thread_id": "01a0a0ce-260d-7a43-bc24-ff8852cab03a",
+  "pass": true
+}

@@ -101,6 +101,8 @@ def model_catalog(thread_id: str) -> dict | None:
         if payload.get("type") != "custom_tool_call_output":
             continue
         for block in payload.get("output", []):
+            if not isinstance(block, dict):
+                continue
             value = block.get("text", "")
             if "catalog_bytes" not in value:
                 continue

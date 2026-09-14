@@ -1,0 +1,7 @@
+# Stage 3i-d standing rules, panel amendment
+
+14 September 2026. **A parameter that equalizes two subjects does not constrain a control that includes neither.** The panel waived the 4,096-token output cap for this one uncapped, unscored frontier harness-validity cell. The cap was introduced to make the 7B and 30B comparisons commensurable, not to determine whether any capable model can use the rebuilt surface. Enforcing an unsupported cap through a prompt edit or provider shim would change the instrument. This is the project's sixth consecutive stage in which a parameter/proxy blocked the property actually under test.
+
+Carry forward the Stage 3i-c named-threat firewall: no native tool may provide a path to computation the arm grant excludes. Shell, executable code, package installation, and network fetch are barred; code-mode routing stays up for MCP. Verify the live grant from the model side and test the named threat, not byte identity of a tool catalog or another proxy. Record any inert native catalog drift rather than silently treating it as an arm change.
+
+An asymmetric tool presentation is a confound, not a condition. Receipt validity is not evidence relevance. A tool must measure the quantity scored, and a served checkpoint is part of its identity. Not checked is not pass. An interrupted run is not a negative result. Unknowns stay unknown. No label opening or scoring in this control.
