@@ -1,0 +1,45 @@
+{
+  "source_tool_count": 25,
+  "forwarded_function_count": 18,
+  "forwarded_tool_block_bytes": 5703,
+  "source_tool_block_bytes": 76815,
+  "allowed_namespaces": [
+    "mcp__rescue_analysis",
+    "mcp__rescue_classical",
+    "mcp__rescue_generative",
+    "mcp__rescue_lit",
+    "mcp__rescue_physics",
+    "mcp__rescue_predictive",
+    "mcp__rescue_record"
+  ],
+  "raw_model_content": "",
+  "raw_model_tool_calls": [
+    {
+      "type": "function",
+      "function": {
+        "name": "mcp__rescue_classical__conservation",
+        "arguments": "{\"msa\": [\"MLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALDLFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPKFEQPRSEIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIREEVMHFDIDPSTAT\"], \"position\": 52, \"query\": \"G\"}"
+      },
+      "id": "5oMT7JpmsvhlSjJdfy85wr77SsZMsHVI"
+    }
+  ],
+  "parsed_items": [
+    {
+      "id": "fc_e7c658b7fd16410782f67891328190c6",
+      "type": "function_call",
+      "status": "completed",
+      "call_id": "5oMT7JpmsvhlSjJdfy85wr77SsZMsHVI",
+      "namespace": "mcp__rescue_classical",
+      "name": "conservation",
+      "arguments": "{\"msa\":[\"MLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALDLFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPKFEQPRSEIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIREEVMHFDIDPSTAT\"],\"position\":52,\"query\":\"G\"}"
+    }
+  ],
+  "backend_usage": {
+    "completion_tokens": 1098,
+    "prompt_tokens": 10593,
+    "total_tokens": 11691,
+    "prompt_tokens_details": {
+      "cached_tokens": 8941
+    }
+  }
+}

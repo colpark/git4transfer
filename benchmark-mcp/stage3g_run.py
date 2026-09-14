@@ -162,9 +162,10 @@ def inspect_probe(trace: Path, phase: str) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("phase", choices=("echo7", "cell7", "fm7", "echo30", "cell30"))
+    parser.add_argument("phase", choices=("echo7", "cell7", "fm7", "echo30", "cell30", "cell30_high"))
     phase = parser.parse_args().phase
-    model = "30" if phase.endswith("30") else "7b"
+    model = "30" if phase == "echo30" or phase.startswith("cell30") else "7b"
+    response_cap = 8192 if phase == "cell30_high" else 1200
     model_name = "Qwen3-30B-A3B-Q4_K_M" if model == "30" else "qwen2.5-7b-instruct-q4_k_m"
     run_out = OUT / phase
     if (run_out / "result.json").exists():
@@ -204,7 +205,7 @@ def main() -> None:
         shim_log = (run_out / "shim_server.log").open("w")
         shim = subprocess.Popen([str(PY), str(SHIM), "--port", "18081", "--allow", ",".join(sorted(allowed)),
                                  "--output", str(shim_dir), "--seed", "1", "--temperature", "0.2",
-                                 "--max-tokens", "1200", "--model", model_name],
+                                 "--max-tokens", str(response_cap), "--model", model_name],
                                 cwd=ROOT, stdout=shim_log, stderr=subprocess.STDOUT)
         deadline = time.monotonic() + 20
         while not host.port_open(18081) and time.monotonic() < deadline:
@@ -255,10 +256,11 @@ def main() -> None:
         for raw_path in sorted(shim_dir.glob("shim_*_raw_model.json")):
             raw = json.loads(raw_path.read_text())
             if (raw.get("choices", [{}])[0].get("finish_reason") == "length" and
-                    raw.get("usage", {}).get("completion_tokens", 0) >= 1200):
+                    raw.get("usage", {}).get("completion_tokens", 0) >= response_cap):
                 cap_exhausted.append(raw_path.name)
         result = {"phase": phase, "model": model_name, "wall_s": time.monotonic() - start,
                   "exit_code": process.returncode, "timed_out": timed_out,
+                  "response_token_cap": response_cap,
                   "stop_reason": state["abort"], "prompt_sha256": pilot_run.hashlib.sha256(prompt.encode()).hexdigest(),
                   "prompt_tokens_total": sum(row["prompt_tokens"] for row in responses),
                   "generation_tokens_total": sum(row["generation_tokens"] for row in responses),

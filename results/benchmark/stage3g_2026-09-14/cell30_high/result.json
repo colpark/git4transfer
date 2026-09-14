@@ -1,0 +1,107 @@
+{
+  "phase": "cell30_high",
+  "model": "Qwen3-30B-A3B-Q4_K_M",
+  "wall_s": 142.57974484935403,
+  "exit_code": -15,
+  "timed_out": false,
+  "response_token_cap": 8192,
+  "stop_reason": "60-second generation throughput below 70% baseline",
+  "prompt_sha256": "6069ed83a2549ab80a836e3b564c5251b4d6b911bfd6fc5eead6e489e4491cda",
+  "prompt_tokens_total": 30524,
+  "generation_tokens_total": 8146,
+  "cap_exhausted_responses": [],
+  "model_responses": [
+    {
+      "response": "shim_001",
+      "prompt_tokens": 8941,
+      "generation_tokens": 2373,
+      "backend_wall_s": 42.10106158256531,
+      "generation_s": 35.473035,
+      "generation_tps": 66.89588302777024,
+      "timing_source": "llama.cpp predicted_ms"
+    },
+    {
+      "response": "shim_002",
+      "prompt_tokens": 10593,
+      "generation_tokens": 1098,
+      "backend_wall_s": 18.97402811050415,
+      "generation_s": 17.558387,
+      "generation_tps": 62.53421797799536,
+      "timing_source": "llama.cpp predicted_ms"
+    },
+    {
+      "response": "shim_003",
+      "prompt_tokens": 10990,
+      "generation_tokens": 4675,
+      "backend_wall_s": 79.71112036705017,
+      "generation_s": 79.26540399999999,
+      "generation_tps": 58.97907238320517,
+      "timing_source": "llama.cpp predicted_ms"
+    }
+  ],
+  "validity_checks": [
+    {
+      "response": "shim_001",
+      "prompt_tokens": 8941,
+      "generation_tokens": 2373,
+      "backend_wall_s": 42.10106158256531,
+      "generation_s": 35.473035,
+      "generation_tps": 66.89588302777024,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    },
+    {
+      "response": "shim_002",
+      "prompt_tokens": 10593,
+      "generation_tokens": 1098,
+      "backend_wall_s": 18.97402811050415,
+      "generation_s": 17.558387,
+      "generation_tps": 62.53421797799536,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    },
+    {
+      "response": "shim_003",
+      "prompt_tokens": 10990,
+      "generation_tokens": 4675,
+      "backend_wall_s": 79.71112036705017,
+      "generation_s": 79.26540399999999,
+      "generation_tps": 58.97907238320517,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": true
+    }
+  ],
+  "baseline_tps": 90.23800980069385,
+  "threshold_tps": 63.166606860485686,
+  "sensor_errors": [],
+  "peak_gpu_c": 73.0,
+  "peak_cpu_c": 81.3,
+  "peak_gpu_power_w": 92.29,
+  "peak_gpu_util_pct": 95.0,
+  "min_mem_available_gib": 74.886,
+  "trace_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3g_2026-09-14/cell30_high/trace.jsonl",
+  "calls": {
+    "attempted": {
+      "physics": 1,
+      "classical": 3
+    },
+    "succeeded": {
+      "classical": 2
+    },
+    "failed": {
+      "physics": 1,
+      "classical": 1
+    },
+    "receipt_ids": [
+      "call_id:0f990516666946bbae926831cc7163cd",
+      "call_id:ac7090603c4e4c89821a38150a9ff561"
+    ]
+  },
+  "submission_path": null,
+  "submitted": false,
+  "fabricated_ids": [],
+  "fabricated_id_rate": null,
+  "rejected_populated": null,
+  "evaluation_depth": null,
+  "answer_contract_status": "UNDEMONSTRATED"
+}
