@@ -1,0 +1,65 @@
+{
+  "thread_id": "01a0a0b0-0e5e-73b1-a639-7b9b0936e600",
+  "mounts": [
+    "record",
+    "classical",
+    "analysis",
+    "predictive"
+  ],
+  "wall_s": 33.61,
+  "exit_code": 0,
+  "timed_out": false,
+  "calls": [
+    {
+      "type": "mcp_tool_call",
+      "server": "rescue_predictive",
+      "tool": "esm2_likelihood",
+      "arguments": {
+        "sequence": "QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV",
+        "variant": "L27C"
+      },
+      "error": null,
+      "receipt": {
+        "call_id": "call_id:7ff0ba82871d460daab1e60c2c2eacdd",
+        "tool": "esm2_likelihood",
+        "args_hash": "c73f870e0d9cdca1c765773f85f46436d33c9f1aea339868026704bd735a10c0",
+        "runtime_s": 2.592913,
+        "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/predictive/7ff0ba82871d460daab1e60c2c2eacdd.json",
+        "cache_hit": false,
+        "input_form": "variant"
+      }
+    }
+  ],
+  "usage": {
+    "input_tokens": 36405,
+    "cached_input_tokens": 11648,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1152,
+    "reasoning_output_tokens": 359
+  },
+  "catalog": {
+    "catalog_bytes": 8987,
+    "catalog_names": [
+      "apply_patch",
+      "list_mcp_resource_templates",
+      "list_mcp_resources",
+      "mcp__rescue_analysis__seq_identity",
+      "mcp__rescue_analysis__tmalign",
+      "mcp__rescue_classical__blast_msa",
+      "mcp__rescue_classical__blast_search",
+      "mcp__rescue_classical__blosum_score",
+      "mcp__rescue_classical__conservation",
+      "mcp__rescue_classical__hbond_geometry",
+      "mcp__rescue_classical__mmseqs_search",
+      "mcp__rescue_classical__motif_scan",
+      "mcp__rescue_classical__pssm_score",
+      "mcp__rescue_predictive__esm2_likelihood",
+      "mcp__rescue_predictive__esmfold",
+      "mcp__rescue_record__log_note",
+      "mcp__rescue_record__submit_answer",
+      "read_mcp_resource",
+      "view_image"
+    ],
+    "mcp_function_count": 14
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "thread_id": "01a0a0ae-db3c-7062-9420-84308d665c34",
+  "mounts": [
+    "record"
+  ],
+  "wall_s": 23.591,
+  "exit_code": 0,
+  "timed_out": false,
+  "calls": [
+    {
+      "type": "mcp_tool_call",
+      "server": "rescue_record",
+      "tool": "log_note",
+      "arguments": {
+        "item_id": "stage3ic_probe",
+        "note": "frontier_remount_ladder"
+      },
+      "error": null,
+      "receipt": {
+        "call_id": "call_id:322fadaa38ee4fdfac0b4c60be04071f",
+        "tool": "log_note",
+        "args_hash": "b3a7c71ad876a1ff3c82ab16e60b6e857e9e3eff69c6eb807b1b17a137a33dab",
+        "runtime_s": 0.000769,
+        "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3ic_2026-09-14/ladder_1_record/artifacts/record/322fadaa38ee4fdfac0b4c60be04071f.json",
+        "cache_hit": false
+      }
+    }
+  ],
+  "usage": {
+    "input_tokens": 40707,
+    "cached_input_tokens": 19200,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 762,
+    "reasoning_output_tokens": 275
+  },
+  "catalog": {
+    "catalog_bytes": 3828,
+    "catalog_names": [
+      "apply_patch",
+      "clock__curr_time",
+      "list_mcp_resource_templates",
+      "list_mcp_resources",
+      "mcp__rescue_record__log_note",
+      "mcp__rescue_record__submit_answer",
+      "read_mcp_resource",
+      "view_image"
+    ],
+    "mcp_function_count": 2
+  }
+}

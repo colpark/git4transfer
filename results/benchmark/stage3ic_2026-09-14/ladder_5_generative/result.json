@@ -1,0 +1,67 @@
+{
+  "thread_id": "01a0a0b0-91a6-7882-9ad7-927640eb9738",
+  "mounts": [
+    "record",
+    "classical",
+    "analysis",
+    "predictive",
+    "generative"
+  ],
+  "wall_s": 28.955,
+  "exit_code": 0,
+  "timed_out": false,
+  "calls": [
+    {
+      "type": "mcp_tool_call",
+      "server": "rescue_generative",
+      "tool": "esm_if",
+      "arguments": {
+        "pdb_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/ARGR_ECOLI.pdb",
+        "chain": "A",
+        "sequence": "QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV"
+      },
+      "error": null,
+      "receipt": {
+        "call_id": "call_id:4876e9b7732e4d1b948ce2b15bb6e72b",
+        "tool": "esm_if",
+        "args_hash": "145ecf266b55b39636360ca27c3808f863122efdbe0cdd58be60f0d12c0b48b0",
+        "runtime_s": 3.495356,
+        "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/generative/4876e9b7732e4d1b948ce2b15bb6e72b.json",
+        "cache_hit": false
+      }
+    }
+  ],
+  "usage": {
+    "input_tokens": 36521,
+    "cached_input_tokens": 31232,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 843,
+    "reasoning_output_tokens": 455
+  },
+  "catalog": {
+    "catalog_bytes": 9537,
+    "catalog_names": [
+      "apply_patch",
+      "list_mcp_resource_templates",
+      "list_mcp_resources",
+      "mcp__rescue_analysis__seq_identity",
+      "mcp__rescue_analysis__tmalign",
+      "mcp__rescue_classical__blast_msa",
+      "mcp__rescue_classical__blast_search",
+      "mcp__rescue_classical__blosum_score",
+      "mcp__rescue_classical__conservation",
+      "mcp__rescue_classical__hbond_geometry",
+      "mcp__rescue_classical__mmseqs_search",
+      "mcp__rescue_classical__motif_scan",
+      "mcp__rescue_classical__pssm_score",
+      "mcp__rescue_generative__esm_if",
+      "mcp__rescue_predictive__esm2_likelihood",
+      "mcp__rescue_predictive__esmfold",
+      "mcp__rescue_record__log_note",
+      "mcp__rescue_record__submit_answer",
+      "read_mcp_resource",
+      "view_image"
+    ],
+    "mcp_function_count": 15
+  }
+}
