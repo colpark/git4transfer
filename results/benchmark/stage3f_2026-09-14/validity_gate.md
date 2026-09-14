@@ -1,0 +1,11 @@
+# Stage 3f measurement-validity gate (declared before subject-model inference)
+
+Declared 14 September 2026 UTC, before the Stage 3f baseline and single pilot cell. Named failure: thermal throttling makes wall-clock timings unrepresentative. The old 85 °C CPU abort is withdrawn; it was not a hardware trip specification. GPU and CPU temperatures, power, memory and utilization are recorded, never abort criteria.
+
+With the model unloaded of other work, send the same fixed short counting prompt three times at temperature zero, maximum 128 generated tokens. Baseline is the median of **generated tokens / generation wall time** across the three responses. If the server exposes generation-only timing, use that; otherwise use response wall time and disclose prefill overhead. The threshold is **0.70 × baseline**. For the pilot, apply it to any model response with at least 60 seconds of generation: a sustained 60-second-equivalent throughput below threshold makes the cell `UNDEMONSTRATED` and stops it. Shorter responses cannot test a sustained 60-second window and do not silently pass the gate. Do not interpret a slow tool call as model throttling.
+
+Controls before the pilot: synthetic 60-second throughput at 0.69 × baseline must abort; 0.71 × baseline must not. Record baseline and controls below before running the cell.
+
+Baseline, node 11 Qwen2.5-7B-Instruct Q4_K_M with 32K context: **47.395, 48.246, 48.149 generated tokens/s** (128 generated tokens each). The median is **48.149 tokens/s**, read from llama.cpp's generation-only `predicted_ms` timing; the 70% threshold is **33.704 tokens/s**. Exact values, prompt and server timings are in `validity_baseline.json`.
+
+Controls: synthetic 0.69 × baseline for 60 seconds **aborted**; synthetic 0.71 × baseline for 60 seconds **passed**; a 59.9-second sample was correctly **unassessed**, not passed. All three controls ran before the single pilot cell. The monitor reads completed model-response timing independently from the shim logs, rather than folding MCP latency into model tokens/s. It can terminate the cell after a completed ≥60-second slow response; it cannot observe a still-generating response mid-window because the current shim uses non-streaming inference. That instrumentation limit is disclosed rather than calling an unobserved window a pass.

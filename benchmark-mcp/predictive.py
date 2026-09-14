@@ -8,6 +8,8 @@ import subprocess
 from common import ROOT, require_sequence
 
 TORCH_PY = ROOT / "E1/.venv/bin/python"
+ESM2_MODEL = "facebook/esm2_t33_650M_UR50D"
+ESM2_REVISION = "08e4846e537177426273712802403f7ba8261b6c"
 
 
 def esm2_likelihood(sequence: str, position: int, mutant: str) -> dict:
@@ -19,10 +21,13 @@ def esm2_likelihood(sequence: str, position: int, mutant: str) -> dict:
         raise RuntimeError("Torch worker environment unavailable")
     arguments = {"sequence": sequence, "position": position, "mutant": mutant}
     process = subprocess.run([str(TORCH_PY), str(ROOT / "benchmark-mcp/esm2_worker.py")],
-                             input=json.dumps(arguments), text=True, capture_output=True, timeout=90)
+                             input=json.dumps(arguments), text=True, capture_output=True, timeout=600)
     if process.returncode:
         raise RuntimeError(f"ESM-2 worker exited {process.returncode}: {process.stderr[-500:]}")
-    return json.loads(process.stdout)
+    result = json.loads(process.stdout)
+    if result.get("model") != ESM2_MODEL or result.get("revision") != ESM2_REVISION:
+        raise RuntimeError("ESM-2 worker checkpoint identity mismatch")
+    return result
 
 
 def esmfold(sequence: str, seed: int = 0) -> dict:

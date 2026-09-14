@@ -1,0 +1,23 @@
+{
+  "sequence": "ACDEFGHIKLMNPQRSTVWY",
+  "mutation": "A1R",
+  "masked_mcp": -0.16856098175048828,
+  "masked_independent": -0.16856098175048828,
+  "unmasked_negative": -3.5586464405059814,
+  "bad_error": "ValueError: sequence must contain 1\u201310000 canonical amino acids",
+  "receipt": {
+    "call_id": "call_id:ff71651d75e74a59a01acdb85dad8d88",
+    "tool": "esm2_likelihood",
+    "args_hash": "75378649f09bbce1cd4b98db941be222e99bfffcf0feb27cbfa65bf995bbc72d",
+    "runtime_s": 2.331344,
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/predictive/ff71651d75e74a59a01acdb85dad8d88.json",
+    "cache_hit": false
+  },
+  "checks": {
+    "known_input_matches_independent_score": true,
+    "deliberately_unmasked_negative_differs": true,
+    "invalid_input_returns_error": true,
+    "receipt_resolves": true,
+    "checkpoint_pinned": true
+  }
+}

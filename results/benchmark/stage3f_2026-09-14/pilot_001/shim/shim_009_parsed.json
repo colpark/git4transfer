@@ -1,0 +1,45 @@
+{
+  "source_tool_count": 24,
+  "forwarded_function_count": 17,
+  "forwarded_tool_block_bytes": 5492,
+  "source_tool_block_bytes": 77293,
+  "allowed_namespaces": [
+    "mcp__rescue_analysis",
+    "mcp__rescue_classical",
+    "mcp__rescue_generative",
+    "mcp__rescue_lit",
+    "mcp__rescue_physics",
+    "mcp__rescue_predictive",
+    "mcp__rescue_record"
+  ],
+  "raw_model_content": "",
+  "raw_model_tool_calls": [
+    {
+      "type": "function",
+      "function": {
+        "name": "mcp__rescue_classical__blosum_score",
+        "arguments": "{\"mutant\": \"P\", \"wt\": \"L\"}"
+      },
+      "id": "mMx1WwflsWn7G26owIqJTTbn3X1s06mX"
+    }
+  ],
+  "parsed_items": [
+    {
+      "id": "fc_f20ec537d1384b9681e179e6500bd0ba",
+      "type": "function_call",
+      "status": "completed",
+      "call_id": "mMx1WwflsWn7G26owIqJTTbn3X1s06mX",
+      "namespace": "mcp__rescue_classical",
+      "name": "blosum_score",
+      "arguments": "{\"mutant\":\"P\",\"wt\":\"L\"}"
+    }
+  ],
+  "backend_usage": {
+    "completion_tokens": 36,
+    "prompt_tokens": 13186,
+    "total_tokens": 13222,
+    "prompt_tokens_details": {
+      "cached_tokens": 12859
+    }
+  }
+}

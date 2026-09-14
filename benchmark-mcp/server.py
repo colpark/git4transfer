@@ -168,9 +168,11 @@ def make_predictive(presentation: str) -> MCPServer:
 
     @mcp.tool(name="esm2_likelihood")
     def esm2_likelihood(sequence: str, position: int, mutant: str) -> dict:
-        """Pinned ESM-2 8M masked-marginal substitution log-likelihood."""
+        """Pinned ESM-2 650M masked-marginal substitution log-likelihood."""
         args = locals()
-        return emit("predictive", "esm2_likelihood", args,
+        receipt_args = {**args, "model": predictive.ESM2_MODEL,
+                        "revision": predictive.ESM2_REVISION}
+        return emit("predictive", "esm2_likelihood", receipt_args,
                     lambda: predictive.esm2_likelihood(**args))
 
     @mcp.tool(name="esmfold")

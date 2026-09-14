@@ -1,0 +1,45 @@
+{
+  "source_tool_count": 24,
+  "forwarded_function_count": 17,
+  "forwarded_tool_block_bytes": 5492,
+  "source_tool_block_bytes": 77293,
+  "allowed_namespaces": [
+    "mcp__rescue_analysis",
+    "mcp__rescue_classical",
+    "mcp__rescue_generative",
+    "mcp__rescue_lit",
+    "mcp__rescue_physics",
+    "mcp__rescue_predictive",
+    "mcp__rescue_record"
+  ],
+  "raw_model_content": "",
+  "raw_model_tool_calls": [
+    {
+      "type": "function",
+      "function": {
+        "name": "mcp__rescue_classical__screen_variant_classical",
+        "arguments": "{\"msa\": [\"MLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALDLFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPKFEQPRSEIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIREEVMHFDIDPSTAT\"], \"mutant\": \"S58P\", \"position\": 58, \"query\": \"S58P\"}"
+      },
+      "id": "ILK0lDwAMFKsJZo84W4FJBonGbukvRFR"
+    }
+  ],
+  "parsed_items": [
+    {
+      "id": "fc_3730b815ca0741778357ff91862df6b3",
+      "type": "function_call",
+      "status": "completed",
+      "call_id": "ILK0lDwAMFKsJZo84W4FJBonGbukvRFR",
+      "namespace": "mcp__rescue_classical",
+      "name": "screen_variant_classical",
+      "arguments": "{\"msa\":[\"MLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALDLFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPKFEQPRSEIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIREEVMHFDIDPSTAT\"],\"mutant\":\"S58P\",\"position\":58,\"query\":\"S58P\"}"
+    }
+  ],
+  "backend_usage": {
+    "completion_tokens": 152,
+    "prompt_tokens": 11492,
+    "total_tokens": 11644,
+    "prompt_tokens_details": {
+      "cached_tokens": 11214
+    }
+  }
+}

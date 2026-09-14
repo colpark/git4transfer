@@ -1,0 +1,46 @@
+{
+  "choices": [
+    {
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The provided sequences for the `screen_variant_classical` and `blosum_score` calls are too long, which is causing the errors. Let's focus on the candidate variants and their positions more carefully. I will start by evaluating the candidate variants `G52L`, `L79P`, and `S58P` individually, and then move on to the next set of variants.\n\nFirst, I will evaluate the BLOSUM62 score for the variant `G52L`.\n\n",
+        "tool_calls": [
+          {
+            "type": "function",
+            "function": {
+              "name": "mcp__rescue_classical__blosum_score",
+              "arguments": "{\"mutant\": \"L\", \"wt\": \"G\"}"
+            },
+            "id": "eaL7PgPK0NJqRfIEcXaWXWcwBLZxIrSr"
+          }
+        ]
+      }
+    }
+  ],
+  "created": 1789355633,
+  "model": "/home/aid1/.ollama/models/blobs/sha256-2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+  "system_fingerprint": "b1-4a89937",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 138,
+    "prompt_tokens": 12859,
+    "total_tokens": 12997,
+    "prompt_tokens_details": {
+      "cached_tokens": 12584
+    }
+  },
+  "id": "chatcmpl-plRn0LncBrXlUroXRhlbLGeMi3J0uu2k",
+  "timings": {
+    "cache_n": 12584,
+    "prompt_n": 275,
+    "prompt_ms": 144.534,
+    "prompt_per_token_ms": 0.5255781818181818,
+    "prompt_per_second": 1902.6665006157723,
+    "predicted_n": 138,
+    "predicted_ms": 3341.43,
+    "predicted_per_token_ms": 24.39,
+    "predicted_per_second": 41.00041000410005
+  }
+}

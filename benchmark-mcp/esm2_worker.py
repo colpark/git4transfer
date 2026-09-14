@@ -1,4 +1,4 @@
-"""Small pinned ESM-2 masked-marginal reference worker (E1 Torch environment)."""
+"""Pinned ProteinGym-sized ESM-2 masked-marginal worker (E1 Torch environment)."""
 
 from __future__ import annotations
 
@@ -8,12 +8,13 @@ import sys
 import torch
 from transformers import AutoModelForMaskedLM, AutoTokenizer
 
-MODEL = "facebook/esm2_t6_8M_UR50D"
-REVISION = "c731040fcd8d73dceaa04b0a8e6329b345b0f5df"
+MODEL = "facebook/esm2_t33_650M_UR50D"
+REVISION = "08e4846e537177426273712802403f7ba8261b6c"
 AA = set("ACDEFGHIKLMNPQRSTVWY")
 
 
 def score(sequence: str, position: int, mutant: str) -> dict:
+    torch.set_num_threads(2)
     sequence = sequence.upper()
     mutant = mutant.upper()
     if not sequence or len(sequence) > 1022 or set(sequence) - AA:
@@ -36,10 +37,9 @@ def score(sequence: str, position: int, mutant: str) -> dict:
             "wt_log_probability": wt_logp, "mutant_log_probability": mutant_logp,
             "delta_log_probability": mutant_logp-wt_logp,
             "method": "ESM2_single_position_masked_marginal_natural_log",
-            "model": MODEL, "revision": REVISION, "device": "cpu"}
+            "model": MODEL, "revision": REVISION, "device": "cpu", "precision": "float32"}
 
 
 if __name__ == "__main__":
     arguments = json.load(sys.stdin)
     print(json.dumps(score(**arguments), allow_nan=False))
-

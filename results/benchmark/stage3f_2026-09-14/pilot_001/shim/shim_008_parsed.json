@@ -1,0 +1,45 @@
+{
+  "source_tool_count": 24,
+  "forwarded_function_count": 17,
+  "forwarded_tool_block_bytes": 5492,
+  "source_tool_block_bytes": 77293,
+  "allowed_namespaces": [
+    "mcp__rescue_analysis",
+    "mcp__rescue_classical",
+    "mcp__rescue_generative",
+    "mcp__rescue_lit",
+    "mcp__rescue_physics",
+    "mcp__rescue_predictive",
+    "mcp__rescue_record"
+  ],
+  "raw_model_content": "The provided sequences for the `screen_variant_classical` and `blosum_score` calls are too long, which is causing the errors. Let's focus on the candidate variants and their positions more carefully. I will start by evaluating the candidate variants `G52L`, `L79P`, and `S58P` individually, and then move on to the next set of variants.\n\nFirst, I will evaluate the BLOSUM62 score for the variant `G52L`.\n\n",
+  "raw_model_tool_calls": [
+    {
+      "type": "function",
+      "function": {
+        "name": "mcp__rescue_classical__blosum_score",
+        "arguments": "{\"mutant\": \"L\", \"wt\": \"G\"}"
+      },
+      "id": "eaL7PgPK0NJqRfIEcXaWXWcwBLZxIrSr"
+    }
+  ],
+  "parsed_items": [
+    {
+      "id": "fc_d99749519b1c4594ae9b2c1b02ba9204",
+      "type": "function_call",
+      "status": "completed",
+      "call_id": "eaL7PgPK0NJqRfIEcXaWXWcwBLZxIrSr",
+      "namespace": "mcp__rescue_classical",
+      "name": "blosum_score",
+      "arguments": "{\"mutant\":\"L\",\"wt\":\"G\"}"
+    }
+  ],
+  "backend_usage": {
+    "completion_tokens": 138,
+    "prompt_tokens": 12859,
+    "total_tokens": 12997,
+    "prompt_tokens_details": {
+      "cached_tokens": 12584
+    }
+  }
+}

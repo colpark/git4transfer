@@ -1,0 +1,46 @@
+{
+  "choices": [
+    {
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "I've retrieved homologous sequences for the provided protein sequence using BLASTP. The top homologs are:\n\n1. **homolog_0000**: 100% identity, 177 alignment length, E-value 6.54e-134, bit score 364.0, 100% query coverage.\n2. **homolog_0138**: 32.456% identity, 114 alignment length, E-value 5.04e-10, bit score 47.8, 63.0% query coverage.\n3. **homolog_0162**: 33.333% identity, 75 alignment length, E-value 2.26e-6, bit score 37.4, 41.0% query coverage.\n4. **homolog_0053**: 35.714% identity, 56 alignment length, E-value 9.59e-6, bit score 35.8, 32.0% query coverage.\n5. **homolog_0060**: 35.714% identity, 56 alignment length, E-value 0.0000215, bit score 34.7, 32.0% query coverage.\n\nNext, I will use these homologs to evaluate the candidate variants. I will start by screening the variants with the highest conservation and predicted impact.\n\nLet's proceed with the evaluation.\n",
+        "tool_calls": [
+          {
+            "type": "function",
+            "function": {
+              "name": "mcp__rescue_classical__screen_variant_classical",
+              "arguments": "{\"msa\": [\"MLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALDLFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPKFEQPRSEIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIREEVMHFDIDPSTAT\"], \"mutant\": \"G52L\", \"position\": 52, \"query\": \"G52L\"}"
+            },
+            "id": "rH7sptxUxIUDiRtdZc0sq6UspEsh840c"
+          }
+        ]
+      }
+    }
+  ],
+  "created": 1789355614,
+  "model": "/home/aid1/.ollama/models/blobs/sha256-2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+  "system_fingerprint": "b1-4a89937",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 492,
+    "prompt_tokens": 10630,
+    "total_tokens": 11122,
+    "prompt_tokens_details": {
+      "cached_tokens": 8893
+    }
+  },
+  "id": "chatcmpl-Xg10i1M0qvtuLHX5yOKiE7S1WZENYuRU",
+  "timings": {
+    "cache_n": 8893,
+    "prompt_n": 1737,
+    "prompt_ms": 726.917,
+    "prompt_per_token_ms": 0.41848992515831895,
+    "prompt_per_second": 2389.5437856041335,
+    "predicted_n": 492,
+    "predicted_ms": 11670.888,
+    "predicted_per_token_ms": 23.76962932790224,
+    "predicted_per_second": 42.07049197970197
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "prompt": "Continue this integer sequence, one number per line, starting with 1. Keep counting until stopped.",
+  "max_tokens": 128,
+  "repeats": [
+    {
+      "prompt_tokens": 49,
+      "generation_tokens": 128,
+      "response_wall_s": 2.7544731004163623,
+      "generation_s": 2.700721,
+      "generation_tps": 47.39475125346157,
+      "timing_source": "llama.cpp predicted_ms",
+      "timings": {
+        "cache_n": 0,
+        "prompt_n": 49,
+        "prompt_ms": 45.869,
+        "prompt_per_token_ms": 0.9361020408163265,
+        "prompt_per_second": 1068.2596088861758,
+        "predicted_n": 128,
+        "predicted_ms": 2700.721,
+        "predicted_per_token_ms": 21.26551968503937,
+        "predicted_per_second": 47.02447975929391
+      }
+    },
+    {
+      "prompt_tokens": 49,
+      "generation_tokens": 128,
+      "response_wall_s": 2.6859722156077623,
+      "generation_s": 2.653077,
+      "generation_tps": 48.2458669688064,
+      "timing_source": "llama.cpp predicted_ms",
+      "timings": {
+        "cache_n": 48,
+        "prompt_n": 1,
+        "prompt_ms": 21.57,
+        "prompt_per_token_ms": 21.57,
+        "prompt_per_second": 46.36068613815485,
+        "predicted_n": 128,
+        "predicted_ms": 2653.077,
+        "predicted_per_token_ms": 20.89037007874016,
+        "predicted_per_second": 47.8689461331126
+      }
+    },
+    {
+      "prompt_tokens": 49,
+      "generation_tokens": 128,
+      "response_wall_s": 2.686753001064062,
+      "generation_s": 2.658417,
+      "generation_tps": 48.148954810325094,
+      "timing_source": "llama.cpp predicted_ms",
+      "timings": {
+        "cache_n": 48,
+        "prompt_n": 1,
+        "prompt_ms": 20.848,
+        "prompt_per_token_ms": 20.848,
+        "prompt_per_second": 47.966231772831925,
+        "predicted_n": 128,
+        "predicted_ms": 2658.417,
+        "predicted_per_token_ms": 20.932417322834645,
+        "predicted_per_second": 47.772791100869426
+      }
+    }
+  ],
+  "baseline_median_tps": 48.148954810325094,
+  "abort_below_tps": 33.70426836722756,
+  "fraction": 0.7,
+  "window_s": 60,
+  "controls": {
+    "synthetic_throttle_aborts": true,
+    "synthetic_healthy_passes": true,
+    "short_window_unassessed": true
+  }
+}

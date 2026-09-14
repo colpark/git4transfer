@@ -1,0 +1,45 @@
+{
+  "source_tool_count": 24,
+  "forwarded_function_count": 17,
+  "forwarded_tool_block_bytes": 5492,
+  "source_tool_block_bytes": 77293,
+  "allowed_namespaces": [
+    "mcp__rescue_analysis",
+    "mcp__rescue_classical",
+    "mcp__rescue_generative",
+    "mcp__rescue_lit",
+    "mcp__rescue_physics",
+    "mcp__rescue_predictive",
+    "mcp__rescue_record"
+  ],
+  "raw_model_content": "I've retrieved homologous sequences for the provided protein sequence using BLASTP. The top homologs are:\n\n1. **homolog_0000**: 100% identity, 177 alignment length, E-value 6.54e-134, bit score 364.0, 100% query coverage.\n2. **homolog_0138**: 32.456% identity, 114 alignment length, E-value 5.04e-10, bit score 47.8, 63.0% query coverage.\n3. **homolog_0162**: 33.333% identity, 75 alignment length, E-value 2.26e-6, bit score 37.4, 41.0% query coverage.\n4. **homolog_0053**: 35.714% identity, 56 alignment length, E-value 9.59e-6, bit score 35.8, 32.0% query coverage.\n5. **homolog_0060**: 35.714% identity, 56 alignment length, E-value 0.0000215, bit score 34.7, 32.0% query coverage.\n\nNext, I will use these homologs to evaluate the candidate variants. I will start by screening the variants with the highest conservation and predicted impact.\n\nLet's proceed with the evaluation.\n",
+  "raw_model_tool_calls": [
+    {
+      "type": "function",
+      "function": {
+        "name": "mcp__rescue_classical__screen_variant_classical",
+        "arguments": "{\"msa\": [\"MLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALDLFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPKFEQPRSEIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIREEVMHFDIDPSTAT\"], \"mutant\": \"G52L\", \"position\": 52, \"query\": \"G52L\"}"
+      },
+      "id": "rH7sptxUxIUDiRtdZc0sq6UspEsh840c"
+    }
+  ],
+  "parsed_items": [
+    {
+      "id": "fc_7194e2ae8ea148b191f7737caa1460fc",
+      "type": "function_call",
+      "status": "completed",
+      "call_id": "rH7sptxUxIUDiRtdZc0sq6UspEsh840c",
+      "namespace": "mcp__rescue_classical",
+      "name": "screen_variant_classical",
+      "arguments": "{\"msa\":[\"MLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALDLFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPKFEQPRSEIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIREEVMHFDIDPSTAT\"],\"mutant\":\"G52L\",\"position\":52,\"query\":\"G52L\"}"
+    }
+  ],
+  "backend_usage": {
+    "completion_tokens": 492,
+    "prompt_tokens": 10630,
+    "total_tokens": 11122,
+    "prompt_tokens_details": {
+      "cached_tokens": 8893
+    }
+  }
+}

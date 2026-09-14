@@ -1,0 +1,46 @@
+{
+  "choices": [
+    {
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "type": "function",
+            "function": {
+              "name": "mcp__rescue_classical__screen_variant_classical",
+              "arguments": "{\"msa\": [\"MLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALDLFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPKFEQPRSEIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIREEVMHFDIDPSTAT\"], \"mutant\": \"S58P\", \"position\": 58, \"query\": \"S58P\"}"
+            },
+            "id": "ILK0lDwAMFKsJZo84W4FJBonGbukvRFR"
+          }
+        ]
+      }
+    }
+  ],
+  "created": 1789355621,
+  "model": "/home/aid1/.ollama/models/blobs/sha256-2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+  "system_fingerprint": "b1-4a89937",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 152,
+    "prompt_tokens": 11492,
+    "total_tokens": 11644,
+    "prompt_tokens_details": {
+      "cached_tokens": 11214
+    }
+  },
+  "id": "chatcmpl-DIAOlQ90k0ebWfglibhxjDr5cvsa6g76",
+  "timings": {
+    "cache_n": 11214,
+    "prompt_n": 278,
+    "prompt_ms": 144.677,
+    "prompt_per_token_ms": 0.5204208633093524,
+    "prompt_per_second": 1921.5217346226423,
+    "predicted_n": 152,
+    "predicted_ms": 3652.327,
+    "predicted_per_token_ms": 24.187596026490066,
+    "predicted_per_second": 41.34350511331542
+  }
+}

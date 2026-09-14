@@ -1,0 +1,46 @@
+{
+  "choices": [
+    {
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "It appears that there is an issue with the `screen_variant_classical` function call, as it is failing due to the sequence length constraint. This function is intended to work with sequences of 1 to 10,000 canonical amino acids, but the sequence provided is too long. Let's proceed with a different approach to rank the variants.\n\nGiven the homologs identified by the BLAST search, we can use the BLOSUM62 score and conservation to rank the variants. Let's start with the top homologs and evaluate the variants based on these criteria.\n\nFirst, I will calculate the BLOSUM62 scores for the variants at the positions of interest using the top homologs.\n\nLet's begin with the top homolog `homolog_0000` and calculate the BLOSUM62 scores for the variants.\n",
+        "tool_calls": [
+          {
+            "type": "function",
+            "function": {
+              "name": "mcp__rescue_classical__blosum_score",
+              "arguments": "{\"mutant\": \"G52L\", \"wt\": \"G\"}"
+            },
+            "id": "JHbDSy3Ll3c7BbmOZzVBZGQaGiDzblFE"
+          }
+        ]
+      }
+    }
+  ],
+  "created": 1789355627,
+  "model": "/home/aid1/.ollama/models/blobs/sha256-2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+  "system_fingerprint": "b1-4a89937",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 215,
+    "prompt_tokens": 11915,
+    "total_tokens": 12130,
+    "prompt_tokens_details": {
+      "cached_tokens": 11643
+    }
+  },
+  "id": "chatcmpl-HLKOmBJAYfzQjAKbZELduTDuEBBU8pfX",
+  "timings": {
+    "cache_n": 11643,
+    "prompt_n": 272,
+    "prompt_ms": 144.478,
+    "prompt_per_token_ms": 0.5311691176470589,
+    "prompt_per_second": 1882.6395714226387,
+    "predicted_n": 215,
+    "predicted_ms": 5177.587,
+    "predicted_per_token_ms": 24.194331775700938,
+    "predicted_per_second": 41.33199500076
+  }
+}
