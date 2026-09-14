@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The string \"stage3c-parser-control\" has been echoed successfully. The receipt for this call includes the following details:\n\n- Call ID: call_id:85835b7b77be42d3beb646601493e81f\n\nNext, I will proceed with the task at hand, which appears to involve analyzing protein sequences and candidate variants. Please let me know if you have any specific instructions or if you would like to explore any particular variant further."
+      }
+    }
+  ],
+  "created": 1789344290,
+  "model": "/home/aid1/.ollama/models/blobs/sha256-2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+  "system_fingerprint": "b1-4a89937",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 106,
+    "prompt_tokens": 7671,
+    "total_tokens": 7777,
+    "prompt_tokens_details": {
+      "cached_tokens": 7403
+    }
+  },
+  "id": "chatcmpl-sj4efHyMSRE5sUPh2RPt6Mf4JsCGilUD",
+  "timings": {
+    "cache_n": 7403,
+    "prompt_n": 268,
+    "prompt_ms": 135.282,
+    "prompt_per_token_ms": 0.5047835820895523,
+    "prompt_per_second": 1981.0469981224405,
+    "predicted_n": 106,
+    "predicted_ms": 2410.694,
+    "predicted_per_token_ms": 22.958990476190476,
+    "predicted_per_second": 43.55592207057387
+  }
+}

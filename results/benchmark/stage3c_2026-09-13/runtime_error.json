@@ -1,0 +1,10 @@
+{
+  "error": "sustained tool-call loop failed: UNDEMONSTRATED",
+  "phase": "sustained_tool_call_envelope",
+  "abort": "GPU T.Limit margin <= 20 C",
+  "model_pid": 3155174,
+  "gpu_layers_requested": 99,
+  "batch_size": 128,
+  "reachability_attempts": 2,
+  "thermal_attempts": 105
+}

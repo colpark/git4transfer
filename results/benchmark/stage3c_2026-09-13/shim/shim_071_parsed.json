@@ -1,0 +1,46 @@
+{
+  "source_tool_count": 19,
+  "forwarded_function_count": 1,
+  "forwarded_tool_block_bytes": 233,
+  "source_tool_block_bytes": 71589,
+  "allowed_namespaces": [
+    "mcp__rescue_analysis",
+    "mcp__rescue_classical",
+    "mcp__rescue_generative",
+    "mcp__rescue_lit",
+    "mcp__rescue_physics",
+    "mcp__rescue_predictive",
+    "mcp__rescue_record",
+    "mcp__stage2b_probe"
+  ],
+  "raw_model_content": "",
+  "raw_model_tool_calls": [
+    {
+      "type": "function",
+      "function": {
+        "name": "echo_tool",
+        "arguments": "{\"text\": \"stage3c-parser-control\"}"
+      },
+      "id": "9E4hSmiNEFe9YU3gRHisCmJQFcVo1tic"
+    }
+  ],
+  "parsed_items": [
+    {
+      "id": "fc_a8b06224de8645bca2dbde78f9b57f1a",
+      "type": "function_call",
+      "status": "completed",
+      "call_id": "9E4hSmiNEFe9YU3gRHisCmJQFcVo1tic",
+      "namespace": "mcp__stage2b_probe",
+      "name": "echo_tool",
+      "arguments": "{\"text\":\"stage3c-parser-control\"}"
+    }
+  ],
+  "backend_usage": {
+    "completion_tokens": 24,
+    "prompt_tokens": 7380,
+    "total_tokens": 7404,
+    "prompt_tokens_details": {
+      "cached_tokens": 7379
+    }
+  }
+}

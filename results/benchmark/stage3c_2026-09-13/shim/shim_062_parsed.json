@@ -1,0 +1,41 @@
+{
+  "source_tool_count": 19,
+  "forwarded_function_count": 1,
+  "forwarded_tool_block_bytes": 233,
+  "source_tool_block_bytes": 71785,
+  "allowed_namespaces": [
+    "mcp__rescue_analysis",
+    "mcp__rescue_classical",
+    "mcp__rescue_generative",
+    "mcp__rescue_lit",
+    "mcp__rescue_physics",
+    "mcp__rescue_predictive",
+    "mcp__rescue_record",
+    "mcp__stage2b_probe"
+  ],
+  "raw_model_content": "The text \"stage3c-parser-control\" has been echoed. The receipt for this call has the ID `call_id:e5a6f6b01cf64e6bb5716b2c7f0ef453`.",
+  "raw_model_tool_calls": null,
+  "parsed_items": [
+    {
+      "id": "msg_34a07150130549bb8d2a6b9b58e31dd5",
+      "type": "message",
+      "status": "completed",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "The text \"stage3c-parser-control\" has been echoed. The receipt for this call has the ID `call_id:e5a6f6b01cf64e6bb5716b2c7f0ef453`.",
+          "annotations": []
+        }
+      ]
+    }
+  ],
+  "backend_usage": {
+    "completion_tokens": 55,
+    "prompt_tokens": 7669,
+    "total_tokens": 7724,
+    "prompt_tokens_details": {
+      "cached_tokens": 7403
+    }
+  }
+}

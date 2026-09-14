@@ -1,0 +1,41 @@
+{
+  "source_tool_count": 19,
+  "forwarded_function_count": 1,
+  "forwarded_tool_block_bytes": 233,
+  "source_tool_block_bytes": 71785,
+  "allowed_namespaces": [
+    "mcp__rescue_analysis",
+    "mcp__rescue_classical",
+    "mcp__rescue_generative",
+    "mcp__rescue_lit",
+    "mcp__rescue_physics",
+    "mcp__rescue_predictive",
+    "mcp__rescue_record",
+    "mcp__stage2b_probe"
+  ],
+  "raw_model_content": "The text \"stage3c-parser-control\" has been echoed. The receipt for this call, including the unique call ID, is as follows:\n\n- Call ID: call_id:58e0c6824a8e4f8c8ba39be03e03bed9\n\nThis call_id can be used for reference if needed.",
+  "raw_model_tool_calls": null,
+  "parsed_items": [
+    {
+      "id": "msg_c24028d924dd47b7abe5b32c3c36f112",
+      "type": "message",
+      "status": "completed",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "The text \"stage3c-parser-control\" has been echoed. The receipt for this call, including the unique call ID, is as follows:\n\n- Call ID: call_id:58e0c6824a8e4f8c8ba39be03e03bed9\n\nThis call_id can be used for reference if needed.",
+          "annotations": []
+        }
+      ]
+    }
+  ],
+  "backend_usage": {
+    "completion_tokens": 77,
+    "prompt_tokens": 7669,
+    "total_tokens": 7746,
+    "prompt_tokens_details": {
+      "cached_tokens": 7403
+    }
+  }
+}

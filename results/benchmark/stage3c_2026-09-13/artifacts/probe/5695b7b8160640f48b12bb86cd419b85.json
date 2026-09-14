@@ -1,0 +1,16 @@
+{
+  "args": {
+    "text": "stage3c-parser-control"
+  },
+  "result": {
+    "text": "stage3c-parser-control"
+  },
+  "error": null,
+  "receipt": {
+    "call_id": "call_id:5695b7b8160640f48b12bb86cd419b85",
+    "tool": "echo_tool",
+    "args_hash": "33d2dc39879b3f2c76cb513e9f31f14b3e8c0e230135b449858c82982db18661",
+    "runtime_s": 0.00014,
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3c_2026-09-13/artifacts/probe/5695b7b8160640f48b12bb86cd419b85.json"
+  }
+}

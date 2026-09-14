@@ -1,0 +1,46 @@
+{
+  "choices": [
+    {
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "type": "function",
+            "function": {
+              "name": "echo_tool",
+              "arguments": "{\"text\": \"stage3c-parser-control\"}"
+            },
+            "id": "u19jvQWHkEo6rWaxsNyABEl5HYrdBzM6"
+          }
+        ]
+      }
+    }
+  ],
+  "created": 1789344442,
+  "model": "/home/aid1/.ollama/models/blobs/sha256-2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+  "system_fingerprint": "b1-4a89937",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 24,
+    "prompt_tokens": 7380,
+    "total_tokens": 7404,
+    "prompt_tokens_details": {
+      "cached_tokens": 7379
+    }
+  },
+  "id": "chatcmpl-tu7hYhkugOMeSPF8bGRbCV1oCOkettOL",
+  "timings": {
+    "cache_n": 7379,
+    "prompt_n": 1,
+    "prompt_ms": 25.124,
+    "prompt_per_token_ms": 25.124,
+    "prompt_per_second": 39.802579207132624,
+    "predicted_n": 24,
+    "predicted_ms": 522.646,
+    "predicted_per_token_ms": 22.72373913043478,
+    "predicted_per_second": 44.0068421072772
+  }
+}
