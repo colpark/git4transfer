@@ -1,0 +1,74 @@
+{
+  "mcpServers": {
+    "rescue_record": {
+      "command": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/.venv/bin/python",
+      "args": [
+        "/home/aid1/Documents/2_19C_biology/benchmark-mcp/pilot_record_server.py",
+        "--out",
+        "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4prep_2026-09-14/claude_b4_record",
+        "--presentation",
+        "unguided"
+      ]
+    },
+    "rescue_classical": {
+      "command": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/.venv/bin/python",
+      "args": [
+        "/home/aid1/Documents/2_19C_biology/benchmark-mcp/server.py",
+        "--server",
+        "classical",
+        "--presentation",
+        "unguided"
+      ]
+    },
+    "rescue_analysis": {
+      "command": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/.venv/bin/python",
+      "args": [
+        "/home/aid1/Documents/2_19C_biology/benchmark-mcp/server.py",
+        "--server",
+        "analysis",
+        "--presentation",
+        "unguided"
+      ]
+    },
+    "rescue_predictive": {
+      "command": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/.venv/bin/python",
+      "args": [
+        "/home/aid1/Documents/2_19C_biology/benchmark-mcp/server.py",
+        "--server",
+        "predictive",
+        "--presentation",
+        "unguided"
+      ]
+    },
+    "rescue_generative": {
+      "command": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/.venv/bin/python",
+      "args": [
+        "/home/aid1/Documents/2_19C_biology/benchmark-mcp/server.py",
+        "--server",
+        "generative",
+        "--presentation",
+        "unguided"
+      ]
+    },
+    "rescue_physics": {
+      "command": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/.venv/bin/python",
+      "args": [
+        "/home/aid1/Documents/2_19C_biology/benchmark-mcp/server.py",
+        "--server",
+        "physics",
+        "--presentation",
+        "unguided"
+      ]
+    },
+    "rescue_lit": {
+      "command": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/.venv/bin/python",
+      "args": [
+        "/home/aid1/Documents/2_19C_biology/benchmark-mcp/server.py",
+        "--server",
+        "lit",
+        "--presentation",
+        "unguided"
+      ]
+    }
+  }
+}
