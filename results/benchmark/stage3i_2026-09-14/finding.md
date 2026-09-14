@@ -1,0 +1,7 @@
+# Stage 3i finding — authentication blocks the frontier control
+
+14 September 2026. **Stage 4 remains closed.** The required `codex logout` removed a stored ChatGPT session. No OpenAI API credential was available afterward; the models endpoint returned HTTP 401. Thus no exact frontier model could be selected and the seven-server remount ladder and one unscored cell were not run. This is an **UNDEMONSTRATED control**, not evidence that either the tool surface or the small subject model is responsible for the prior failures. Dispositions (a), (b), and (c) are inapplicable because the cell never started.
+
+The stored ChatGPT session's presence raises, but does not answer, whether earlier custom-provider runs were affected. We did not inspect or rerun them. The local defaults also leave multi-agent and native tools enabled; an eventual control must explicitly turn them off and verify the actual model-visible MCP-only grant. No prompt, scoring element, threshold, label or server implementation changed here.
+
+**Required next input:** an OpenAI API key made available to the Codex process through an environment variable or other approved credential channel. Then repeat the preflight from the authenticated models endpoint, pin the returned exact ID, verify the MCP-only single-agent grant and remount ladder, and run exactly one unscored cell. Do not infer a scale-versus-surface conclusion before that. No further Stage 3i work or Stage 4 work is authorized by this finding.
