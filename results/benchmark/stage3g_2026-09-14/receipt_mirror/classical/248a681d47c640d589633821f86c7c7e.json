@@ -1,0 +1,32 @@
+{
+  "args": {
+    "msa": [
+      "ACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY",
+      "ACEEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY"
+    ],
+    "mutant": "E",
+    "position": 3,
+    "query": "ACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "da08311078c3026501b296aec41a3fcda1fad77066c9a210e52be74e2af144bf",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/248a681d47c640d589633821f86c7c7e.json",
+    "cache_hit": true,
+    "call_id": "call_id:248a681d47c640d589633821f86c7c7e",
+    "runtime_s": 0.000155,
+    "tool": "pssm_score"
+  },
+  "result": {
+    "background": 0.05,
+    "delta_bits": 0.0,
+    "depth": 2,
+    "mutant": "E",
+    "mutant_bits": 0.8624964762500651,
+    "position": 3,
+    "pseudocount_per_aa": 1,
+    "wt": "D",
+    "wt_bits": 0.8624964762500651
+  },
+  "server": "classical"
+}

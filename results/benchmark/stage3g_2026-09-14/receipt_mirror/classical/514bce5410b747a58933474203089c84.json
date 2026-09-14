@@ -1,0 +1,20 @@
+{
+  "args": {
+    "msa": [
+      "ACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY"
+    ],
+    "position": 3,
+    "query": "ACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY"
+  },
+  "error": "ValueError: MSA has fewer than two rows at >=80% coverage",
+  "receipt": {
+    "args_hash": "b0f63e248b8343a293a9e558b996ae4c44081cabb32367fc18af8fb1b1768527",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/514bce5410b747a58933474203089c84.json",
+    "cache_hit": false,
+    "call_id": "call_id:514bce5410b747a58933474203089c84",
+    "runtime_s": 0.000111,
+    "tool": "conservation"
+  },
+  "result": null,
+  "server": "classical"
+}

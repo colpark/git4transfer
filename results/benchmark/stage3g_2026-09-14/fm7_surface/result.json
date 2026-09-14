@@ -1,0 +1,89 @@
+{
+  "phase": "fm7_surface",
+  "model": "qwen2.5-7b-instruct-q4_k_m",
+  "wall_s": 7.061508374288678,
+  "exit_code": 0,
+  "timed_out": false,
+  "response_token_cap": 1200,
+  "stop_reason": null,
+  "prompt_sha256": "3eaf6ef16d53df443a69d4f3b7e13386f2648e1bbc75c74119a23de2d72e64b4",
+  "prompt_tokens_total": 13213,
+  "generation_tokens_total": 137,
+  "cap_exhausted_responses": [],
+  "model_responses": [
+    {
+      "response": "shim_001",
+      "prompt_tokens": 6354,
+      "generation_tokens": 53,
+      "backend_wall_s": 3.5199897289276123,
+      "generation_s": 1.205775,
+      "generation_tps": 43.95513259107213,
+      "timing_source": "llama.cpp predicted_ms"
+    },
+    {
+      "response": "shim_002",
+      "prompt_tokens": 6859,
+      "generation_tokens": 84,
+      "backend_wall_s": 2.144994020462036,
+      "generation_s": 1.926469,
+      "generation_tps": 43.60308938269964,
+      "timing_source": "llama.cpp predicted_ms"
+    }
+  ],
+  "validity_checks": [
+    {
+      "response": "shim_001",
+      "prompt_tokens": 6354,
+      "generation_tokens": 53,
+      "backend_wall_s": 3.5199897289276123,
+      "generation_s": 1.205775,
+      "generation_tps": 43.95513259107213,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    }
+  ],
+  "baseline_tps": 46.56247101213353,
+  "threshold_tps": 32.59372970849347,
+  "sensor_errors": [],
+  "peak_gpu_c": 71.0,
+  "peak_cpu_c": 80.3,
+  "peak_gpu_power_w": 82.12,
+  "peak_gpu_util_pct": 95.0,
+  "min_mem_available_gib": 89.596,
+  "trace_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3g_2026-09-14/fm7_surface/trace.jsonl",
+  "probe": {
+    "tool_attempts": 1,
+    "genuine_receipts": [
+      {
+        "result": {
+          "delta_log_probability": -0.16856098175048828,
+          "device": "cpu",
+          "method": "ESM2_single_position_masked_marginal_natural_log",
+          "model": "facebook/esm2_t33_650M_UR50D",
+          "mutant": "R",
+          "mutant_log_probability": -4.669490814208984,
+          "position": 1,
+          "precision": "float32",
+          "revision": "08e4846e537177426273712802403f7ba8261b6c",
+          "wt": "A",
+          "wt_log_probability": -4.500929832458496
+        },
+        "receipt": {
+          "call_id": "call_id:a34ef65aab074a30976f9ac1e2630809",
+          "tool": "esm2_likelihood",
+          "args_hash": "75378649f09bbce1cd4b98db941be222e99bfffcf0feb27cbfa65bf995bbc72d",
+          "runtime_s": 0.000244,
+          "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/predictive/a34ef65aab074a30976f9ac1e2630809.json",
+          "cache_hit": true
+        }
+      }
+    ],
+    "cited_ids": [
+      "call_id:a34ef65aab074a30976f9ac1e2630809"
+    ],
+    "fabricated_ids": [],
+    "value_ok": true,
+    "metadata_warnings": [],
+    "pass": true
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "blast_msa": {
+    "error": null,
+    "result": {
+      "construction": "global_pairwise_query_anchored_drop_subject_insertions",
+      "depth": 2,
+      "hit_ids_used": [
+        "one_mutant_control"
+      ],
+      "msa": [
+        "ACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY",
+        "ACEEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY"
+      ],
+      "query": "ACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY",
+      "reference_fasta": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/stage3g_msa_positive.fasta",
+      "search_hits": [
+        {
+          "alignment_length": 40,
+          "bitscore": 90.9,
+          "evalue": 2.67e-32,
+          "pident_pct": 100.0,
+          "query_coverage_pct": 100.0,
+          "target": "query_control"
+        },
+        {
+          "alignment_length": 40,
+          "bitscore": 89.4,
+          "evalue": 8.95e-32,
+          "pident_pct": 97.5,
+          "query_coverage_pct": 100.0,
+          "target": "one_mutant_control"
+        }
+      ]
+    },
+    "receipt": {
+      "call_id": "call_id:13a39192e6aa4df086fee60d1268ad46",
+      "tool": "blast_msa",
+      "args_hash": "e18038a5ee9c3fa6a6f20cf944b2c57b2fe7934f0d27ea200d3e52aa323d713b",
+      "runtime_s": 0.000271,
+      "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/13a39192e6aa4df086fee60d1268ad46.json",
+      "cache_hit": true
+    }
+  },
+  "one_sequence_conservation": {
+    "result": null,
+    "error": "ValueError: MSA has fewer than two rows at >=80% coverage",
+    "receipt": {
+      "call_id": "call_id:1eec38f70b0346029b7af38f02d4a865",
+      "tool": "conservation",
+      "args_hash": "b0f63e248b8343a293a9e558b996ae4c44081cabb32367fc18af8fb1b1768527",
+      "runtime_s": 0.000183,
+      "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/1eec38f70b0346029b7af38f02d4a865.json",
+      "cache_hit": false
+    }
+  },
+  "pssm_from_msa": {
+    "error": null,
+    "result": {
+      "background": 0.05,
+      "delta_bits": 0.0,
+      "depth": 2,
+      "mutant": "E",
+      "mutant_bits": 0.8624964762500651,
+      "position": 3,
+      "pseudocount_per_aa": 1,
+      "wt": "D",
+      "wt_bits": 0.8624964762500651
+    },
+    "receipt": {
+      "call_id": "call_id:248a681d47c640d589633821f86c7c7e",
+      "tool": "pssm_score",
+      "args_hash": "da08311078c3026501b296aec41a3fcda1fad77066c9a210e52be74e2af144bf",
+      "runtime_s": 0.000155,
+      "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/248a681d47c640d589633821f86c7c7e.json",
+      "cache_hit": true
+    }
+  },
+  "guided_classical": {
+    "error": null,
+    "result": {
+      "blosum": {
+        "matrix": "BLOSUM62",
+        "mutant": "E",
+        "score": 2,
+        "wt": "D",
+        "zero_effect": false
+      },
+      "conservation": {
+        "conservation": 0.7686217868402409,
+        "depth": 2,
+        "entropy_bits": 1.0,
+        "gap_fraction": 0.0,
+        "position": 3
+      },
+      "pssm": {
+        "background": 0.05,
+        "delta_bits": 0.0,
+        "depth": 2,
+        "mutant": "E",
+        "mutant_bits": 0.8624964762500651,
+        "position": 3,
+        "pseudocount_per_aa": 1,
+        "wt": "D",
+        "wt_bits": 0.8624964762500651
+      },
+      "retrieval": {
+        "depth": 2,
+        "hit_ids_used": [
+          "one_mutant_control"
+        ]
+      }
+    },
+    "receipt": {
+      "call_id": "call_id:b1505fac2e5d44bebcc1afa0dcb834fe",
+      "tool": "screen_variant_classical",
+      "args_hash": "352fbad702e4c6b30d714297a04a9a1b42ab6e5eec22fde2ae3464213dfe4f61",
+      "runtime_s": 0.000263,
+      "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/b1505fac2e5d44bebcc1afa0dcb834fe.json",
+      "cache_hit": true
+    }
+  },
+  "bad_mutant_guided": {
+    "result": null,
+    "error": "ValueError: sequence must contain 1\u201310000 canonical amino acids",
+    "receipt": {
+      "call_id": "call_id:0343c76b23ea499db5e3e4260f9bc816",
+      "tool": "screen_variant_classical",
+      "args_hash": "aec9213966da66770fe58e6fb6160fe52caff0e04ee96c78a112652dd1a67a91",
+      "runtime_s": 0.02862,
+      "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/0343c76b23ea499db5e3e4260f9bc816.json",
+      "cache_hit": false
+    }
+  },
+  "item02_msa": {
+    "result": null,
+    "error": "ValueError: BLAST produced fewer than two distinct >=80%-coverage MSA rows",
+    "receipt": {
+      "call_id": "call_id:c9285c44492541dba84c4b8f51c63692",
+      "tool": "blast_msa",
+      "args_hash": "045d6bfe23522051a3554d19830583881fc5ceb77ed97843f56a6c263cdfe03e",
+      "runtime_s": 0.105701,
+      "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/c9285c44492541dba84c4b8f51c63692.json",
+      "cache_hit": false
+    }
+  },
+  "pass": true
+}

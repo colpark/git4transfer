@@ -1,0 +1,18 @@
+{
+  "host": "192.168.100.11",
+  "model": "qwen2.5-7b-instruct-q4_k_m",
+  "checkpoint": "/home/aid1/.ollama/models/blobs/sha256-2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+  "quantization": "Q4_K_M",
+  "context": 32768,
+  "before_baseline": {
+    "time_unix": 1789358788.7207696,
+    "gpu_util_pct": 0.0,
+    "gpu_c": 47.0,
+    "gpu_tlimit_margin_c": 49.0,
+    "gpu_power_w": 10.77,
+    "cpu_zone0_c": 52.1,
+    "cpu_zone4_c": 52.1,
+    "mem_available_gib": 89.656
+  },
+  "nvidia_memory_csv": "[N/A], [N/A]"
+}

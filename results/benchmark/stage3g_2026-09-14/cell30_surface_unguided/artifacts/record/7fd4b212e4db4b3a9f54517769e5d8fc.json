@@ -1,0 +1,234 @@
+{
+  "args": {
+    "answer": {
+      "ranking": [
+        {
+          "mutant": "G52L",
+          "score": 1
+        },
+        {
+          "mutant": "S58P",
+          "score": 0.7
+        },
+        {
+          "mutant": "Y157R",
+          "score": 0.5
+        },
+        {
+          "mutant": "S104H",
+          "score": 0.7
+        },
+        {
+          "mutant": "N128G",
+          "score": 0.5
+        },
+        {
+          "mutant": "I106V",
+          "score": 0.7
+        },
+        {
+          "mutant": "F51S",
+          "score": 1
+        },
+        {
+          "mutant": "V37D",
+          "score": 0.5
+        },
+        {
+          "mutant": "A55G",
+          "score": 1
+        },
+        {
+          "mutant": "G149H",
+          "score": 0.5
+        }
+      ],
+      "rejected": [
+        {
+          "mutant": "L79P",
+          "reason": "Low homology (32% identity)"
+        },
+        {
+          "mutant": "Y157H",
+          "reason": "Low homology (31% identity)"
+        },
+        {
+          "mutant": "Q59R",
+          "reason": "Low homology (32% identity)"
+        },
+        {
+          "mutant": "E116T",
+          "reason": "Low homology (32% identity)"
+        },
+        {
+          "mutant": "A112Q",
+          "reason": "Low homology (32% identity)"
+        }
+      ],
+      "selected": [
+        {
+          "basis": "High homology in blast_search (100% identity)",
+          "evidence": [
+            "call_id:7f4513b098374291a867ffe859581c51"
+          ],
+          "mutant": "G52L",
+          "rank": 1,
+          "validation": [
+            {
+              "call_id": "call_id:7f4513b098374291a867ffe859581c51",
+              "category": "blast_search"
+            }
+          ],
+          "would_overturn": "Low - 100% homology suggests stability"
+        },
+        {
+          "basis": "Moderate homology (33% identity)",
+          "evidence": [
+            "call_id:7f4513b098374291a867ffe859581c51"
+          ],
+          "mutant": "S58P",
+          "rank": 2,
+          "validation": [
+            {
+              "call_id": "call_id:7f4513b098374291a867ffe859581c51",
+              "category": "blast_search"
+            }
+          ],
+          "would_overturn": "Medium - Limited homology may affect stability"
+        },
+        {
+          "basis": "Low homology (31% identity)",
+          "evidence": [
+            "call_id:7f4513b098374291a867ffe859581c51"
+          ],
+          "mutant": "Y157R",
+          "rank": 3,
+          "validation": [
+            {
+              "call_id": "call_id:7f4513b098374291a867ffe859581c51",
+              "category": "blast_search"
+            }
+          ],
+          "would_overturn": "High - Low homology suggests potential instability"
+        },
+        {
+          "basis": "Moderate homology (32% identity)",
+          "evidence": [
+            "call_id:7f4513b098374291a867ffe859581c51"
+          ],
+          "mutant": "S104H",
+          "rank": 4,
+          "validation": [
+            {
+              "call_id": "call_id:7f4513b098374291a867ffe859581c51",
+              "category": "blast_search"
+            }
+          ],
+          "would_overturn": "Medium - Limited homology may affect stability"
+        },
+        {
+          "basis": "Low homology (32% identity)",
+          "evidence": [
+            "call_id:7f4513b098374291a867ffe859581c51"
+          ],
+          "mutant": "N128G",
+          "rank": 5,
+          "validation": [
+            {
+              "call_id": "call_id:7f4513b098374291a867ffe859581c51",
+              "category": "blast_search"
+            }
+          ],
+          "would_overturn": "High - Low homology suggests potential instability"
+        },
+        {
+          "basis": "Moderate homology (31% identity)",
+          "evidence": [
+            "call_id:7f4513b098374291a867ffe859581c51"
+          ],
+          "mutant": "I106V",
+          "rank": 6,
+          "validation": [
+            {
+              "call_id": "call_id:7f4513b098374291a867ffe859581c51",
+              "category": "blast_search"
+            }
+          ],
+          "would_overturn": "Medium - Limited homology may affect stability"
+        },
+        {
+          "basis": "High homology (100% identity)",
+          "evidence": [
+            "call_id:7f4513b098374291a867ffe859581c51"
+          ],
+          "mutant": "F51S",
+          "rank": 7,
+          "validation": [
+            {
+              "call_id": "call_id:7f4513b098374291a867ffe859581c51",
+              "category": "blast_search"
+            }
+          ],
+          "would_overturn": "Low - 100% homology suggests stability"
+        },
+        {
+          "basis": "Low homology (32% identity)",
+          "evidence": [
+            "call_id:7f4513b098374291a867ffe859581c51"
+          ],
+          "mutant": "V37D",
+          "rank": 8,
+          "validation": [
+            {
+              "call_id": "call_id:7f4513b098374291a867ffe859581c51",
+              "category": "blast_search"
+            }
+          ],
+          "would_overturn": "High - Low homology suggests potential instability"
+        },
+        {
+          "basis": "High homology (100% identity)",
+          "evidence": [
+            "call_id:7f4513b098374291a867ffe859581c51"
+          ],
+          "mutant": "A55G",
+          "rank": 9,
+          "validation": [
+            {
+              "call_id": "call_id:7f4513b098374291a867ffe859581c51",
+              "category": "blast_search"
+            }
+          ],
+          "would_overturn": "Low - 100% homology suggests stability"
+        },
+        {
+          "basis": "Low homology (32% identity)",
+          "evidence": [
+            "call_id:7f4513b098374291a867ffe859581c51"
+          ],
+          "mutant": "G149H",
+          "rank": 10,
+          "validation": [
+            {
+              "call_id": "call_id:7f4513b098374291a867ffe859581c51",
+              "category": "blast_search"
+            }
+          ],
+          "would_overturn": "High - Low homology suggests potential instability"
+        }
+      ]
+    },
+    "item_id": "pilot_item"
+  },
+  "error": "ValueError: item_id has already been submitted",
+  "receipt": {
+    "args_hash": "6bf58130d52fc9879b3328e5eaddf9945f58fdcad63509f3a5cba4f5ac36c66e",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3g_2026-09-14/cell30_surface_unguided/artifacts/record/7fd4b212e4db4b3a9f54517769e5d8fc.json",
+    "cache_hit": false,
+    "call_id": "call_id:7fd4b212e4db4b3a9f54517769e5d8fc",
+    "runtime_s": 0.000276,
+    "tool": "submit_answer"
+  },
+  "result": null,
+  "server": "record"
+}

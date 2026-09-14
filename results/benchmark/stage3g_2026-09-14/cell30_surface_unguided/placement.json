@@ -1,0 +1,18 @@
+{
+  "host": "192.168.100.11",
+  "model": "Qwen3-30B-A3B-Q4_K_M",
+  "checkpoint": "/home/aid1/models/stage3g/Qwen3-30B-A3B-Q4_K_M.gguf",
+  "quantization": "Q4_K_M",
+  "context": 32768,
+  "before_baseline": {
+    "time_unix": 1789359029.9229035,
+    "gpu_util_pct": 0.0,
+    "gpu_c": 58.0,
+    "gpu_tlimit_margin_c": 37.0,
+    "gpu_power_w": 12.73,
+    "cpu_zone0_c": 62.6,
+    "cpu_zone4_c": 62.6,
+    "mem_available_gib": 75.188
+  },
+  "nvidia_memory_csv": "[N/A], [N/A]"
+}

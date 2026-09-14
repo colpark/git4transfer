@@ -1,0 +1,34 @@
+{
+  "source_tool_count": 19,
+  "forwarded_function_count": 1,
+  "forwarded_tool_block_bytes": 339,
+  "source_tool_block_bytes": 71061,
+  "allowed_namespaces": [
+    "mcp__stage3g_fm"
+  ],
+  "raw_model_content": "The `esm2_likelihood` call for the mutant R at position 1 in the sequence ACDEFGHIKLMNPQRSTVWY resulted in a delta log probability of -0.1686. The exact receipt call ID is `call_id:a34ef65aab074a30976f9ac1e2630809`.",
+  "raw_model_tool_calls": null,
+  "parsed_items": [
+    {
+      "id": "msg_fe605ca31e4749b4a5052a905613d9dd",
+      "type": "message",
+      "status": "completed",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "The `esm2_likelihood` call for the mutant R at position 1 in the sequence ACDEFGHIKLMNPQRSTVWY resulted in a delta log probability of -0.1686. The exact receipt call ID is `call_id:a34ef65aab074a30976f9ac1e2630809`.",
+          "annotations": []
+        }
+      ]
+    }
+  ],
+  "backend_usage": {
+    "completion_tokens": 84,
+    "prompt_tokens": 6859,
+    "total_tokens": 6943,
+    "prompt_tokens_details": {
+      "cached_tokens": 6406
+    }
+  }
+}

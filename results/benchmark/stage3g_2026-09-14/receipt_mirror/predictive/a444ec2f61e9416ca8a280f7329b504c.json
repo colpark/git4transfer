@@ -1,0 +1,20 @@
+{
+  "args": {
+    "model": "facebook/esm2_t33_650M_UR50D",
+    "mutant": "G52L",
+    "position": 52,
+    "revision": "08e4846e537177426273712802403f7ba8261b6c",
+    "sequence": "MLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALDLFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPKFEQPRSEIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIREEVMHFDIDPSTAT"
+  },
+  "error": "ValueError: sequence must contain 1\u201310000 canonical amino acids",
+  "receipt": {
+    "args_hash": "13aa85ca18d99f995b0e8aa5a337e1a279add0eaedd94bf1f63e2cfeb240db8f",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/predictive/a444ec2f61e9416ca8a280f7329b504c.json",
+    "cache_hit": false,
+    "call_id": "call_id:a444ec2f61e9416ca8a280f7329b504c",
+    "runtime_s": 0.00017,
+    "tool": "esm2_likelihood"
+  },
+  "result": null,
+  "server": "predictive"
+}

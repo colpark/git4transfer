@@ -1,0 +1,422 @@
+{
+  "args": {
+    "max_hits": 50,
+    "reference_fasta": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_fastas/item02_homologs.fasta",
+    "sequence": "MLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALDLFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPKFEQPRSEIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIREEVMHFDIDPSTAT"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "cdf714f7b3366902bd55bf88ea6e44a53030b20389a31683803f96fe011d6703",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/7f4513b098374291a867ffe859581c51.json",
+    "cache_hit": false,
+    "call_id": "call_id:7f4513b098374291a867ffe859581c51",
+    "runtime_s": 0.038464,
+    "tool": "blast_search"
+  },
+  "result": {
+    "hits": [
+      {
+        "alignment_length": 177,
+        "bitscore": 364.0,
+        "evalue": 6.54e-134,
+        "pident_pct": 100.0,
+        "query_coverage_pct": 100.0,
+        "target": "homolog_0000"
+      },
+      {
+        "alignment_length": 114,
+        "bitscore": 47.8,
+        "evalue": 5.04e-10,
+        "pident_pct": 32.456,
+        "query_coverage_pct": 63.0,
+        "target": "homolog_0138"
+      },
+      {
+        "alignment_length": 75,
+        "bitscore": 37.4,
+        "evalue": 2.26e-06,
+        "pident_pct": 33.333,
+        "query_coverage_pct": 41.0,
+        "target": "homolog_0162"
+      },
+      {
+        "alignment_length": 56,
+        "bitscore": 35.8,
+        "evalue": 9.59e-06,
+        "pident_pct": 35.714,
+        "query_coverage_pct": 32.0,
+        "target": "homolog_0053"
+      },
+      {
+        "alignment_length": 56,
+        "bitscore": 34.7,
+        "evalue": 2.15e-05,
+        "pident_pct": 35.714,
+        "query_coverage_pct": 32.0,
+        "target": "homolog_0060"
+      },
+      {
+        "alignment_length": 82,
+        "bitscore": 34.7,
+        "evalue": 2.21e-05,
+        "pident_pct": 31.707,
+        "query_coverage_pct": 46.0,
+        "target": "homolog_0071"
+      },
+      {
+        "alignment_length": 123,
+        "bitscore": 33.1,
+        "evalue": 8.02e-05,
+        "pident_pct": 22.764,
+        "query_coverage_pct": 69.0,
+        "target": "homolog_0120"
+      },
+      {
+        "alignment_length": 142,
+        "bitscore": 32.7,
+        "evalue": 9.27e-05,
+        "pident_pct": 25.352,
+        "query_coverage_pct": 80.0,
+        "target": "homolog_0064"
+      },
+      {
+        "alignment_length": 56,
+        "bitscore": 32.3,
+        "evalue": 0.000144,
+        "pident_pct": 30.357,
+        "query_coverage_pct": 32.0,
+        "target": "homolog_0054"
+      },
+      {
+        "alignment_length": 59,
+        "bitscore": 32.3,
+        "evalue": 0.00015,
+        "pident_pct": 33.898,
+        "query_coverage_pct": 32.0,
+        "target": "homolog_0050"
+      },
+      {
+        "alignment_length": 79,
+        "bitscore": 32.0,
+        "evalue": 0.000162,
+        "pident_pct": 32.911,
+        "query_coverage_pct": 44.0,
+        "target": "homolog_0192"
+      },
+      {
+        "alignment_length": 56,
+        "bitscore": 32.0,
+        "evalue": 0.000182,
+        "pident_pct": 30.357,
+        "query_coverage_pct": 32.0,
+        "target": "homolog_0061"
+      },
+      {
+        "alignment_length": 141,
+        "bitscore": 32.0,
+        "evalue": 0.00021,
+        "pident_pct": 27.66,
+        "query_coverage_pct": 80.0,
+        "target": "homolog_0183"
+      },
+      {
+        "alignment_length": 59,
+        "bitscore": 32.0,
+        "evalue": 0.000216,
+        "pident_pct": 28.814,
+        "query_coverage_pct": 33.0,
+        "target": "homolog_0047"
+      },
+      {
+        "alignment_length": 65,
+        "bitscore": 31.6,
+        "evalue": 0.000231,
+        "pident_pct": 32.308,
+        "query_coverage_pct": 32.0,
+        "target": "homolog_0049"
+      },
+      {
+        "alignment_length": 103,
+        "bitscore": 31.6,
+        "evalue": 0.00028,
+        "pident_pct": 22.33,
+        "query_coverage_pct": 58.0,
+        "target": "homolog_0129"
+      },
+      {
+        "alignment_length": 51,
+        "bitscore": 30.8,
+        "evalue": 0.000445,
+        "pident_pct": 33.333,
+        "query_coverage_pct": 29.0,
+        "target": "homolog_0037"
+      },
+      {
+        "alignment_length": 51,
+        "bitscore": 30.0,
+        "evalue": 0.000754,
+        "pident_pct": 31.373,
+        "query_coverage_pct": 29.0,
+        "target": "homolog_0134"
+      },
+      {
+        "alignment_length": 83,
+        "bitscore": 30.0,
+        "evalue": 0.000831,
+        "pident_pct": 26.506,
+        "query_coverage_pct": 47.0,
+        "target": "homolog_0010"
+      },
+      {
+        "alignment_length": 83,
+        "bitscore": 29.6,
+        "evalue": 0.001,
+        "pident_pct": 26.506,
+        "query_coverage_pct": 47.0,
+        "target": "homolog_0008"
+      },
+      {
+        "alignment_length": 61,
+        "bitscore": 29.6,
+        "evalue": 0.001,
+        "pident_pct": 31.148,
+        "query_coverage_pct": 34.0,
+        "target": "homolog_0009"
+      },
+      {
+        "alignment_length": 83,
+        "bitscore": 29.3,
+        "evalue": 0.001,
+        "pident_pct": 26.506,
+        "query_coverage_pct": 47.0,
+        "target": "homolog_0012"
+      },
+      {
+        "alignment_length": 57,
+        "bitscore": 29.3,
+        "evalue": 0.001,
+        "pident_pct": 33.333,
+        "query_coverage_pct": 32.0,
+        "target": "homolog_0044"
+      },
+      {
+        "alignment_length": 83,
+        "bitscore": 29.3,
+        "evalue": 0.001,
+        "pident_pct": 26.506,
+        "query_coverage_pct": 47.0,
+        "target": "homolog_0014"
+      },
+      {
+        "alignment_length": 98,
+        "bitscore": 29.3,
+        "evalue": 0.001,
+        "pident_pct": 27.551,
+        "query_coverage_pct": 54.0,
+        "target": "homolog_0019"
+      },
+      {
+        "alignment_length": 118,
+        "bitscore": 29.3,
+        "evalue": 0.002,
+        "pident_pct": 27.119,
+        "query_coverage_pct": 66.0,
+        "target": "homolog_0195"
+      },
+      {
+        "alignment_length": 57,
+        "bitscore": 29.3,
+        "evalue": 0.002,
+        "pident_pct": 33.333,
+        "query_coverage_pct": 32.0,
+        "target": "homolog_0051"
+      },
+      {
+        "alignment_length": 97,
+        "bitscore": 28.9,
+        "evalue": 0.002,
+        "pident_pct": 25.773,
+        "query_coverage_pct": 55.0,
+        "target": "homolog_0069"
+      },
+      {
+        "alignment_length": 61,
+        "bitscore": 28.9,
+        "evalue": 0.002,
+        "pident_pct": 29.508,
+        "query_coverage_pct": 34.0,
+        "target": "homolog_0036"
+      },
+      {
+        "alignment_length": 116,
+        "bitscore": 28.9,
+        "evalue": 0.002,
+        "pident_pct": 28.448,
+        "query_coverage_pct": 61.0,
+        "target": "homolog_0002"
+      },
+      {
+        "alignment_length": 87,
+        "bitscore": 28.9,
+        "evalue": 0.002,
+        "pident_pct": 31.034,
+        "query_coverage_pct": 49.0,
+        "target": "homolog_0088"
+      },
+      {
+        "alignment_length": 74,
+        "bitscore": 28.5,
+        "evalue": 0.003,
+        "pident_pct": 28.378,
+        "query_coverage_pct": 42.0,
+        "target": "homolog_0197"
+      },
+      {
+        "alignment_length": 54,
+        "bitscore": 28.1,
+        "evalue": 0.003,
+        "pident_pct": 29.63,
+        "query_coverage_pct": 31.0,
+        "target": "homolog_0181"
+      },
+      {
+        "alignment_length": 60,
+        "bitscore": 28.1,
+        "evalue": 0.003,
+        "pident_pct": 28.333,
+        "query_coverage_pct": 34.0,
+        "target": "homolog_0107"
+      },
+      {
+        "alignment_length": 95,
+        "bitscore": 28.1,
+        "evalue": 0.004,
+        "pident_pct": 25.263,
+        "query_coverage_pct": 54.0,
+        "target": "homolog_0189"
+      },
+      {
+        "alignment_length": 64,
+        "bitscore": 27.7,
+        "evalue": 0.005,
+        "pident_pct": 32.812,
+        "query_coverage_pct": 33.0,
+        "target": "homolog_0075"
+      },
+      {
+        "alignment_length": 61,
+        "bitscore": 27.7,
+        "evalue": 0.005,
+        "pident_pct": 26.23,
+        "query_coverage_pct": 34.0,
+        "target": "homolog_0055"
+      },
+      {
+        "alignment_length": 58,
+        "bitscore": 26.9,
+        "evalue": 0.01,
+        "pident_pct": 36.207,
+        "query_coverage_pct": 32.0,
+        "target": "homolog_0056"
+      },
+      {
+        "alignment_length": 68,
+        "bitscore": 26.9,
+        "evalue": 0.01,
+        "pident_pct": 25.0,
+        "query_coverage_pct": 38.0,
+        "target": "homolog_0122"
+      },
+      {
+        "alignment_length": 93,
+        "bitscore": 26.9,
+        "evalue": 0.011,
+        "pident_pct": 29.032,
+        "query_coverage_pct": 51.0,
+        "target": "homolog_0180"
+      },
+      {
+        "alignment_length": 79,
+        "bitscore": 26.9,
+        "evalue": 0.011,
+        "pident_pct": 31.646,
+        "query_coverage_pct": 44.0,
+        "target": "homolog_0177"
+      },
+      {
+        "alignment_length": 79,
+        "bitscore": 26.9,
+        "evalue": 0.011,
+        "pident_pct": 31.646,
+        "query_coverage_pct": 44.0,
+        "target": "homolog_0175"
+      },
+      {
+        "alignment_length": 53,
+        "bitscore": 26.9,
+        "evalue": 0.012,
+        "pident_pct": 33.962,
+        "query_coverage_pct": 30.0,
+        "target": "homolog_0117"
+      },
+      {
+        "alignment_length": 111,
+        "bitscore": 26.6,
+        "evalue": 0.012,
+        "pident_pct": 26.126,
+        "query_coverage_pct": 61.0,
+        "target": "homolog_0145"
+      },
+      {
+        "alignment_length": 56,
+        "bitscore": 26.6,
+        "evalue": 0.013,
+        "pident_pct": 32.143,
+        "query_coverage_pct": 32.0,
+        "target": "homolog_0104"
+      },
+      {
+        "alignment_length": 103,
+        "bitscore": 26.6,
+        "evalue": 0.013,
+        "pident_pct": 25.243,
+        "query_coverage_pct": 56.0,
+        "target": "homolog_0132"
+      },
+      {
+        "alignment_length": 54,
+        "bitscore": 26.6,
+        "evalue": 0.014,
+        "pident_pct": 29.63,
+        "query_coverage_pct": 31.0,
+        "target": "homolog_0059"
+      },
+      {
+        "alignment_length": 79,
+        "bitscore": 26.6,
+        "evalue": 0.014,
+        "pident_pct": 30.38,
+        "query_coverage_pct": 42.0,
+        "target": "homolog_0112"
+      },
+      {
+        "alignment_length": 76,
+        "bitscore": 26.2,
+        "evalue": 0.015,
+        "pident_pct": 25.0,
+        "query_coverage_pct": 43.0,
+        "target": "homolog_0169"
+      },
+      {
+        "alignment_length": 56,
+        "bitscore": 26.2,
+        "evalue": 0.016,
+        "pident_pct": 28.571,
+        "query_coverage_pct": 32.0,
+        "target": "homolog_0139"
+      }
+    ],
+    "reference_fasta": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_fastas/item02_homologs.fasta"
+  },
+  "server": "classical"
+}

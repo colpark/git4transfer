@@ -1,0 +1,45 @@
+{
+  "source_tool_count": 25,
+  "forwarded_function_count": 19,
+  "forwarded_tool_block_bytes": 8303,
+  "source_tool_block_bytes": 79394,
+  "allowed_namespaces": [
+    "mcp__rescue_analysis",
+    "mcp__rescue_classical",
+    "mcp__rescue_generative",
+    "mcp__rescue_lit",
+    "mcp__rescue_physics",
+    "mcp__rescue_predictive",
+    "mcp__rescue_record"
+  ],
+  "raw_model_content": "",
+  "raw_model_tool_calls": [
+    {
+      "type": "function",
+      "function": {
+        "name": "mcp__rescue_record__log_note",
+        "arguments": "{\"item_id\": \"pilot_item\", \"note\": \"Failed to generate MSA: BLAST produced fewer than two distinct >=80%-coverage rows. Using blast_search results for heuristic ranking.\"}"
+      },
+      "id": "QmOL02B2A0uVifujhrxD6R8EqVTiDDJt"
+    }
+  ],
+  "parsed_items": [
+    {
+      "id": "fc_609a7daf15bf41239e8d69a0ee657d7d",
+      "type": "function_call",
+      "status": "completed",
+      "call_id": "QmOL02B2A0uVifujhrxD6R8EqVTiDDJt",
+      "namespace": "mcp__rescue_record",
+      "name": "log_note",
+      "arguments": "{\"item_id\":\"pilot_item\",\"note\":\"Failed to generate MSA: BLAST produced fewer than two distinct >=80%-coverage rows. Using blast_search results for heuristic ranking.\"}"
+    }
+  ],
+  "backend_usage": {
+    "completion_tokens": 1076,
+    "prompt_tokens": 17955,
+    "total_tokens": 19031,
+    "prompt_tokens_details": {
+      "cached_tokens": 17500
+    }
+  }
+}

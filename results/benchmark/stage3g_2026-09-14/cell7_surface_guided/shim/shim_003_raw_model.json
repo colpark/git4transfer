@@ -1,0 +1,46 @@
+{
+  "choices": [
+    {
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "type": "function",
+            "function": {
+              "name": "mcp__rescue_classical__screen_variant_classical",
+              "arguments": "{\"mutant\": \"L52G\", \"position\": 52, \"reference_fasta\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_fastas/item02_homologs.fasta\", \"sequence\": \"MLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALDLFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPKFEQPRSEIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIREEVMHFDIDPSTAT\"}"
+            },
+            "id": "FnlBnVTdEv8NPuGMgMldA4aDxSYWxRlZ"
+          }
+        ]
+      }
+    }
+  ],
+  "created": 1789358897,
+  "model": "/home/aid1/.ollama/models/blobs/sha256-2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+  "system_fingerprint": "b1-4a89937",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 191,
+    "prompt_tokens": 11179,
+    "total_tokens": 11370,
+    "prompt_tokens_details": {
+      "cached_tokens": 10907
+    }
+  },
+  "id": "chatcmpl-OZJvVT61gCVO9gF8l65oKDpTZqdawn3a",
+  "timings": {
+    "cache_n": 10907,
+    "prompt_n": 272,
+    "prompt_ms": 143.319,
+    "prompt_per_token_ms": 0.5269080882352941,
+    "prompt_per_second": 1897.8642050251538,
+    "predicted_n": 191,
+    "predicted_ms": 4560.296,
+    "predicted_per_token_ms": 24.001557894736845,
+    "predicted_per_second": 41.66396216385954
+  }
+}

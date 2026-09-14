@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The echo tool returned the text: \"stage3g-metadata-control\". The exact receipt call_id is `call_id:a78b9cb143a74fb6b5c4e665480afdf5`.",
+        "reasoning_content": "Okay, let me process what just happened here. The user asked me to call the echo_tool with the text \"stage3g-metadata-control\". I did that, and the response came back with some details.\n\nFirst, I need to make sure I understand the output. The tool returned the same text I provided, which makes sense because an echo tool just returns what it's given. The 'result' field has \"stage3g-metadata-control\", so that's the text. Then there's an error field, which is null, so no errors occurred. The 'receipt' contains a call_id, which is the unique identifier for this call. The artifact_path shows where the output is stored, but the user didn't ask for that, so maybe I don't need to mention it unless necessary.\n\nThe user's main request was to report the returned text and the exact receipt call_id. So I should present those two pieces of information clearly. The returned text is straightforward. The call_id is \"call_id:a78b9cb143a74fb6b5c4e665480afdf5\". I should make sure to include both in the response.\n\nI should check if there's any other information needed, but the user didn't ask for anything else. The response should be concise, just stating the result and the call_id. No need to add extra details unless the user asks for more. So the final answer should be something like:\n\nThe echo tool returned the text: \"stage3g-metadata-control\". The exact receipt call_id is \"call_id:a78b9cb143a74fb6b5c4e665480afdf5\".\n\nThat's clear and directly answers the user's question without any unnecessary information.\n"
+      }
+    }
+  ],
+  "created": 1789359018,
+  "model": "/home/aid1/models/stage3g/Qwen3-30B-A3B-Q4_K_M.gguf",
+  "system_fingerprint": "b1-4a89937",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 425,
+    "prompt_tokens": 6582,
+    "total_tokens": 7007,
+    "prompt_tokens_details": {
+      "cached_tokens": 6294
+    }
+  },
+  "id": "chatcmpl-aO2Cvi542rTbV0TY8t6jxhCsRPGUGFwf",
+  "timings": {
+    "cache_n": 6294,
+    "prompt_n": 288,
+    "prompt_ms": 262.318,
+    "prompt_per_token_ms": 0.9108263888888888,
+    "prompt_per_second": 1097.9040706318285,
+    "predicted_n": 425,
+    "predicted_ms": 6035.689,
+    "predicted_per_token_ms": 14.235115566037736,
+    "predicted_per_second": 70.24881500686996
+  }
+}

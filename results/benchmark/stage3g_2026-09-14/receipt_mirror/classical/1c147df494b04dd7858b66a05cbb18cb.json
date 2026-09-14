@@ -1,0 +1,17 @@
+{
+  "args": {
+    "mutant": "G52L",
+    "wt": "G52"
+  },
+  "error": "ValueError: sequence must contain 1\u201310000 canonical amino acids",
+  "receipt": {
+    "args_hash": "dc7e5dd62055312e633a4798f4d39b53e6b7734cabf624af5b35ada55ccc8ab3",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/1c147df494b04dd7858b66a05cbb18cb.json",
+    "cache_hit": false,
+    "call_id": "call_id:1c147df494b04dd7858b66a05cbb18cb",
+    "runtime_s": 0.000134,
+    "tool": "blosum_score"
+  },
+  "result": null,
+  "server": "classical"
+}

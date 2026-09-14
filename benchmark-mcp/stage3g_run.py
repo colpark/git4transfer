@@ -103,7 +103,8 @@ def cell_and_prompt(mode: str) -> tuple[dict, str]:
 def command(phase: str, run_out: Path, model: str) -> tuple[list[str], str, set[str]]:
     slug = "stage2b-qwen7b" if model == "7b" else "stage3g-qwen30b"
     if phase.startswith("cell"):
-        cell, prompt = cell_and_prompt("unguided")
+        mode = "guided" if phase.endswith("_guided") else "unguided"
+        cell, prompt = cell_and_prompt(mode)
         args = pilot_run.command(cell, run_out)
         index = args.index("stage2b-qwen7b")
         args[index] = slug
@@ -162,10 +163,12 @@ def inspect_probe(trace: Path, phase: str) -> dict:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("phase", choices=("echo7", "cell7", "fm7", "echo30", "cell30", "cell30_high"))
+    parser.add_argument("phase", choices=("echo7", "cell7", "fm7", "echo30", "cell30", "cell30_high",
+                                          "echo7_surface", "fm7_surface", "cell7_surface_unguided",
+                                          "cell7_surface_guided", "echo30_surface", "cell30_surface_unguided"))
     phase = parser.parse_args().phase
-    model = "30" if phase == "echo30" or phase.startswith("cell30") else "7b"
-    response_cap = 8192 if phase == "cell30_high" else 1200
+    model = "30" if phase.startswith("echo30") or phase.startswith("cell30") else "7b"
+    response_cap = 8192 if phase.startswith("cell30") and phase not in ("cell30",) else 1200
     model_name = "Qwen3-30B-A3B-Q4_K_M" if model == "30" else "qwen2.5-7b-instruct-q4_k_m"
     run_out = OUT / phase
     if (run_out / "result.json").exists():

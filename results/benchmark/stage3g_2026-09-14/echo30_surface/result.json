@@ -1,0 +1,78 @@
+{
+  "phase": "echo30_surface",
+  "model": "Qwen3-30B-A3B-Q4_K_M",
+  "wall_s": 20.176911869086325,
+  "exit_code": 0,
+  "timed_out": false,
+  "response_token_cap": 1200,
+  "stop_reason": null,
+  "prompt_sha256": "93cb4ab387bf55f031a421a0ed144dc9829fb55bd2d9a0a7bff5555c7e5d2b4c",
+  "prompt_tokens_total": 12876,
+  "generation_tokens_total": 987,
+  "cap_exhausted_responses": [],
+  "model_responses": [
+    {
+      "response": "shim_001",
+      "prompt_tokens": 6294,
+      "generation_tokens": 562,
+      "backend_wall_s": 12.492966175079346,
+      "generation_s": 7.9232190000000005,
+      "generation_tps": 70.93076690168478,
+      "timing_source": "llama.cpp predicted_ms"
+    },
+    {
+      "response": "shim_002",
+      "prompt_tokens": 6582,
+      "generation_tokens": 425,
+      "backend_wall_s": 6.324983358383179,
+      "generation_s": 6.0356890000000005,
+      "generation_tps": 70.41449617433899,
+      "timing_source": "llama.cpp predicted_ms"
+    }
+  ],
+  "validity_checks": [
+    {
+      "response": "shim_001",
+      "prompt_tokens": 6294,
+      "generation_tokens": 562,
+      "backend_wall_s": 12.492966175079346,
+      "generation_s": 7.9232190000000005,
+      "generation_tps": 70.93076690168478,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    }
+  ],
+  "baseline_tps": 88.82492260781645,
+  "threshold_tps": 62.17744582547151,
+  "sensor_errors": [],
+  "peak_gpu_c": 72.0,
+  "peak_cpu_c": 83.5,
+  "peak_gpu_power_w": 91.0,
+  "peak_gpu_util_pct": 95.0,
+  "min_mem_available_gib": 74.899,
+  "trace_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3g_2026-09-14/echo30_surface/trace.jsonl",
+  "probe": {
+    "tool_attempts": 1,
+    "genuine_receipts": [
+      {
+        "result": {
+          "text": "stage3g-metadata-control"
+        },
+        "receipt": {
+          "call_id": "call_id:a78b9cb143a74fb6b5c4e665480afdf5",
+          "tool": "echo_tool",
+          "args_hash": "3b74776e40631f158f0201e3b748d638c6628c6cdae0288d8f11759faf842c45",
+          "runtime_s": 0.00016,
+          "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3g_2026-09-14/artifacts/probe/a78b9cb143a74fb6b5c4e665480afdf5.json"
+        }
+      }
+    ],
+    "cited_ids": [
+      "call_id:a78b9cb143a74fb6b5c4e665480afdf5"
+    ],
+    "fabricated_ids": [],
+    "value_ok": true,
+    "metadata_warnings": [],
+    "pass": true
+  }
+}

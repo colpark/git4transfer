@@ -1,0 +1,18 @@
+{
+  "args": {
+    "max_hits": 50,
+    "reference_fasta": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_fastas/item02_homologs.fasta",
+    "sequence": ">query\\nMLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALDLFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPKFEQPRSEIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIREEVMHFDIDPSTAT"
+  },
+  "error": "ValueError: sequence must contain 1\u201310000 canonical amino acids",
+  "receipt": {
+    "args_hash": "3fc603a56fee35bbb60bad0d91b147244f06a820e8fb28fa71376763b0ed04ef",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/92856f033259442f81b4d6d3a274dca9.json",
+    "cache_hit": false,
+    "call_id": "call_id:92856f033259442f81b4d6d3a274dca9",
+    "runtime_s": 0.000184,
+    "tool": "blast_msa"
+  },
+  "result": null,
+  "server": "classical"
+}

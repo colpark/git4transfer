@@ -1,0 +1,23 @@
+{
+  "args": {
+    "mutant": "P",
+    "wt": "Q"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "fc14aff8b068f080b547c59d92601584b8d0b67240c17d0c53a5ec48b321e899",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/cfc9d9dd19374e3dabbbe5149e2ca152.json",
+    "cache_hit": false,
+    "call_id": "call_id:cfc9d9dd19374e3dabbbe5149e2ca152",
+    "runtime_s": 0.00025,
+    "tool": "blosum_score"
+  },
+  "result": {
+    "matrix": "BLOSUM62",
+    "mutant": "P",
+    "score": -1,
+    "wt": "Q",
+    "zero_effect": false
+  },
+  "server": "classical"
+}

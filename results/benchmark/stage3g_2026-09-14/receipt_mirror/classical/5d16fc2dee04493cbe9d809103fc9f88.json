@@ -1,0 +1,62 @@
+{
+  "args": {
+    "max_hits": 5,
+    "reference_fasta": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_fastas/item02_homologs.fasta",
+    "sequence": "MLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALDLFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPKFEQPRSEIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIREEVMHFDIDPSTAT"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "daf520df2e9b350bca8f3c2d446b4d5b4bf211cdacc8aea365aaa04ddb494ac6",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/5d16fc2dee04493cbe9d809103fc9f88.json",
+    "cache_hit": true,
+    "call_id": "call_id:5d16fc2dee04493cbe9d809103fc9f88",
+    "runtime_s": 0.000232,
+    "tool": "blast_search"
+  },
+  "result": {
+    "hits": [
+      {
+        "alignment_length": 177,
+        "bitscore": 364.0,
+        "evalue": 6.54e-134,
+        "pident_pct": 100.0,
+        "query_coverage_pct": 100.0,
+        "target": "homolog_0000"
+      },
+      {
+        "alignment_length": 114,
+        "bitscore": 47.8,
+        "evalue": 5.04e-10,
+        "pident_pct": 32.456,
+        "query_coverage_pct": 63.0,
+        "target": "homolog_0138"
+      },
+      {
+        "alignment_length": 75,
+        "bitscore": 37.4,
+        "evalue": 2.26e-06,
+        "pident_pct": 33.333,
+        "query_coverage_pct": 41.0,
+        "target": "homolog_0162"
+      },
+      {
+        "alignment_length": 56,
+        "bitscore": 35.8,
+        "evalue": 9.59e-06,
+        "pident_pct": 35.714,
+        "query_coverage_pct": 32.0,
+        "target": "homolog_0053"
+      },
+      {
+        "alignment_length": 56,
+        "bitscore": 34.7,
+        "evalue": 2.15e-05,
+        "pident_pct": 35.714,
+        "query_coverage_pct": 32.0,
+        "target": "homolog_0060"
+      }
+    ],
+    "reference_fasta": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_fastas/item02_homologs.fasta"
+  },
+  "server": "classical"
+}

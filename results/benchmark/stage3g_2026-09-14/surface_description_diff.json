@@ -1,0 +1,128 @@
+[
+  {
+    "tool": "blast_msa",
+    "before": null,
+    "after": "RETRIEVE\u2192ANALYSE: BLASTP hits plus distinct query-anchored homolog rows, query first. Pass result.msa and result.query to pssm_score or conservation; no fitness label is used.",
+    "status": "ADDED"
+  },
+  {
+    "tool": "blast_search",
+    "before": "Retrieve protein homologs from an explicit FASTA using BLASTP.",
+    "after": "RETRIEVE: BLASTP homolog IDs and alignment statistics, not MSA rows. Use blast_msa to retrieve and align sequences for pssm_score or conservation; avoid repeating identical calls.",
+    "status": "CHANGED"
+  },
+  {
+    "tool": "blosum_score",
+    "before": "Return the canonical raw BLOSUM62 substitution score.",
+    "after": "SCORE, classical generic substitution evidence: raw BLOSUM62 for one-letter wild type and mutant. Protein-independent; pair with MSA-based pssm_score and learned esm2_likelihood.",
+    "status": "CHANGED"
+  },
+  {
+    "tool": "conservation",
+    "before": "Return normalized Shannon conservation for one MSA column.",
+    "after": "ANALYSE, classical site evidence: normalized Shannon conservation of a homolog MSA column. Use blast_msa rows; one sequence fails. Not mutation-specific; pair with pssm_score and learned esm2_likelihood.",
+    "status": "CHANGED"
+  },
+  {
+    "tool": "dssp",
+    "before": "Assign per-residue secondary structure with mkdssp 4.2.2.",
+    "after": "ANALYSE, geometric structural evidence: mkdssp 4.2.2 secondary structure and solvent exposure from a valid PDB. Not stability or fitness; compare learned esmfold and esm2_likelihood separately.",
+    "status": "CHANGED"
+  },
+  {
+    "tool": "esm2_likelihood",
+    "before": "Pinned ESM-2 650M masked-marginal substitution log-likelihood.",
+    "after": "SCORE, learned sequence channel: pinned ESM-2 650M masked-marginal one-letter substitution log-odds. Not measured fitness or ddG; compare complementary classical pssm_score/BLOSUM and ESM-IF1.",
+    "status": "CHANGED"
+  },
+  {
+    "tool": "esm_if",
+    "before": "Pinned ESM-IF1 backbone-conditioned sequence log-likelihood.",
+    "after": "SCORE, learned structure-conditioned channel: pinned ESM-IF1 sequence log-likelihood on a supplied backbone. Not ddG or measured fitness; compare esm2_likelihood and classical PSSM independently.",
+    "status": "CHANGED"
+  },
+  {
+    "tool": "esmfold",
+    "before": "Pinned ESMFold v1 structure prediction; returns CA count and PDB artifact.",
+    "after": "PREDICT, learned structure channel: pinned ESMFold v1 PDB artifact, CA count and confidence. pLDDT is local structural confidence, not fitness/stability; compare geometry with dssp or tmalign.",
+    "status": "CHANGED"
+  },
+  {
+    "tool": "hbond_geometry",
+    "before": "Classify an explicit donor-hydrogen-acceptor triplet by distance and angle.",
+    "after": "ANALYSE, geometric evidence: distance/angle hydrogen-bond check on supplied coordinates. Not energy, ddG or variant fitness; compare dssp and learned sequence scores separately.",
+    "status": "CHANGED"
+  },
+  {
+    "tool": "log_note",
+    "before": "Append an auditable note for a synthetic smoke item.",
+    "after": "RECORD: append an auditable working note or rejection rationale; not final submission. Use submit_answer exactly once when evaluation is finished.",
+    "status": "CHANGED"
+  },
+  {
+    "tool": "mmseqs_search",
+    "before": "Retrieve protein homologs from an explicit FASTA using MMseqs2.",
+    "after": "RETRIEVE: MMseqs2 homolog IDs and alignment statistics, not sequences. Use blast_msa for query-anchored rows before pssm_score or conservation; compare learned esm2_likelihood separately.",
+    "status": "CHANGED"
+  },
+  {
+    "tool": "motif_scan",
+    "before": "Find overlapping sequence-regex motifs with one-based coordinates.",
+    "after": "ANALYSE: one-based overlapping sequence-regex motif hits. A motif is contextual evidence, not a measured variant effect; compare pssm_score and learned esm2_likelihood.",
+    "status": "CHANGED"
+  },
+  {
+    "tool": "openmm_snapshot_potential_delta",
+    "before": "Diagnostic: two unminimized PDB potential-energy snapshots; NOT ddG or a stability ranker.",
+    "after": "ANALYSE, physics diagnostic: potential-energy difference of two supplied unminimized PDB snapshots. Neither ddG nor stability/fitness ranker; complementary to learned esm2_likelihood, never interchangeable.",
+    "status": "CHANGED"
+  },
+  {
+    "tool": "pssm_score",
+    "before": "Score a substitution in a supplied MSA with pre-registered pseudocounts.",
+    "after": "SCORE, classical evolutionary evidence: substitution log-odds from aligned homologs. Supply full query, one-letter mutant and blast_msa rows; compare orthogonal learned esm2_likelihood, not measured fitness.",
+    "status": "CHANGED"
+  },
+  {
+    "tool": "pubmed_search",
+    "before": "Search live PubMed via NCBI E-utilities; scireason MCP is unavailable.",
+    "after": "RETRIEVE, literature evidence: live PubMed titles/records via NCBI E-utilities. Prior publications provide context, not this assay's label; compare sequence and structural tools independently.",
+    "status": "CHANGED"
+  },
+  {
+    "tool": "pyrosetta_ddg",
+    "before": "Blocked PyRosetta ddG; no physics ddG substitute is authorized.",
+    "after": "SCORE, physics channel BLOCKED: PyRosetta ddG unavailable on this host. Do not treat openmm_snapshot_potential_delta as ddG or use it to rank W1 fitness.",
+    "status": "CHANGED"
+  },
+  {
+    "tool": "screen_variant_classical",
+    "before": "Guided workflow: PSSM, conservation, and BLOSUM for one variant.",
+    "after": "GUIDED RETRIEVE\u2192SCORE: BLASTP, construct homolog MSA, then PSSM, conservation and BLOSUM for one position/one-letter mutant. Classical channel; compare screen_variant_fm for complementary learned evidence.",
+    "status": "CHANGED"
+  },
+  {
+    "tool": "screen_variant_fm",
+    "before": "Guided FM workflow: ESM-2 650M mutation score and ESM-IF1 backbone score.",
+    "after": "GUIDED LEARNED SCORES: ESM-2 650M masked-marginal mutation score plus ESM-IF1 backbone-conditioned plausibility. Compare screen_variant_classical's BLAST/PSSM/BLOSUM channel before ranking.",
+    "status": "CHANGED"
+  },
+  {
+    "tool": "seq_identity",
+    "before": "Global BLOSUM62-aligned identity including terminal gap columns.",
+    "after": "ANALYSE: global BLOSUM62-aligned sequence identity including terminal gaps. Detect redundancy; not fitness or independent validation. For mutation evidence compare pssm_score and esm2_likelihood.",
+    "status": "CHANGED"
+  },
+  {
+    "tool": "submit_answer",
+    "before": "Accept one JSON answer per synthetic smoke item, without scoring it.",
+    "after": "SUBMIT: record the one final ranked answer after evaluating and filtering candidates. Receipts must resolve; this records an unscored answer, not a measured assay result.",
+    "status": "CHANGED"
+  },
+  {
+    "tool": "tmalign",
+    "before": "Compare two explicit PDBs with the TM-align structure algorithm.",
+    "after": "ANALYSE: TM-align two explicit PDB backbones for structural similarity. Not measured stability; complement learned esmfold structure and sequence plausibility with geometric comparison.",
+    "status": "CHANGED"
+  }
+]

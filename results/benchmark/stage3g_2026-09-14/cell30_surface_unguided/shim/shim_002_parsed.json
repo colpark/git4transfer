@@ -1,0 +1,45 @@
+{
+  "source_tool_count": 25,
+  "forwarded_function_count": 19,
+  "forwarded_tool_block_bytes": 8303,
+  "source_tool_block_bytes": 79394,
+  "allowed_namespaces": [
+    "mcp__rescue_analysis",
+    "mcp__rescue_classical",
+    "mcp__rescue_generative",
+    "mcp__rescue_lit",
+    "mcp__rescue_physics",
+    "mcp__rescue_predictive",
+    "mcp__rescue_record"
+  ],
+  "raw_model_content": "",
+  "raw_model_tool_calls": [
+    {
+      "type": "function",
+      "function": {
+        "name": "mcp__rescue_classical__blast_msa",
+        "arguments": "{\"reference_fasta\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_fastas/item02_homologs.fasta\", \"sequence\": \">protein\\\\nMLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALDLFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPKFEQPRSEIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIREEVMHFDIDPSTAT\", \"max_hits\": 50}"
+      },
+      "id": "2ucR9KL6K7ix0CWpaE2ldLGsnbiLbWbW"
+    }
+  ],
+  "parsed_items": [
+    {
+      "id": "fc_5c39be771b124e819225c03fb1ba8580",
+      "type": "function_call",
+      "status": "completed",
+      "call_id": "2ucR9KL6K7ix0CWpaE2ldLGsnbiLbWbW",
+      "namespace": "mcp__rescue_classical",
+      "name": "blast_msa",
+      "arguments": "{\"reference_fasta\":\"/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_fastas/item02_homologs.fasta\",\"sequence\":\">protein\\\\nMLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALDLFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPKFEQPRSEIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIREEVMHFDIDPSTAT\",\"max_hits\":50}"
+    }
+  ],
+  "backend_usage": {
+    "completion_tokens": 1026,
+    "prompt_tokens": 15696,
+    "total_tokens": 16722,
+    "prompt_tokens_details": {
+      "cached_tokens": 9536
+    }
+  }
+}

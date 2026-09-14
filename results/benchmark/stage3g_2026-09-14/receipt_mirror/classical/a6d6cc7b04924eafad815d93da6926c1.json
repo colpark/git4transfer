@@ -1,0 +1,20 @@
+{
+  "args": {
+    "max_hits": 10,
+    "mutant": "S58P",
+    "position": 58,
+    "reference_fasta": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_fastas/item02_homologs.fasta",
+    "sequence": "MLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALDLFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPKFEQPRSEIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIREEVMHFDIDPSTAT"
+  },
+  "error": "ValueError: BLAST produced fewer than two distinct >=80%-coverage MSA rows",
+  "receipt": {
+    "args_hash": "a4cd99b5b2d030981b624ce26e5185dc78fc28193d35b5dbbce96e8137bcd535",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/a6d6cc7b04924eafad815d93da6926c1.json",
+    "cache_hit": false,
+    "call_id": "call_id:a6d6cc7b04924eafad815d93da6926c1",
+    "runtime_s": 0.049083,
+    "tool": "screen_variant_classical"
+  },
+  "result": null,
+  "server": "classical"
+}

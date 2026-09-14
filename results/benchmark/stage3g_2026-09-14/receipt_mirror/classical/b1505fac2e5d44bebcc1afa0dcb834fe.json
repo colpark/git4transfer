@@ -1,0 +1,52 @@
+{
+  "args": {
+    "max_hits": 10,
+    "mutant": "E",
+    "position": 3,
+    "reference_fasta": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/stage3g_msa_positive.fasta",
+    "sequence": "ACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "352fbad702e4c6b30d714297a04a9a1b42ab6e5eec22fde2ae3464213dfe4f61",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/b1505fac2e5d44bebcc1afa0dcb834fe.json",
+    "cache_hit": true,
+    "call_id": "call_id:b1505fac2e5d44bebcc1afa0dcb834fe",
+    "runtime_s": 0.000263,
+    "tool": "screen_variant_classical"
+  },
+  "result": {
+    "blosum": {
+      "matrix": "BLOSUM62",
+      "mutant": "E",
+      "score": 2,
+      "wt": "D",
+      "zero_effect": false
+    },
+    "conservation": {
+      "conservation": 0.7686217868402409,
+      "depth": 2,
+      "entropy_bits": 1.0,
+      "gap_fraction": 0.0,
+      "position": 3
+    },
+    "pssm": {
+      "background": 0.05,
+      "delta_bits": 0.0,
+      "depth": 2,
+      "mutant": "E",
+      "mutant_bits": 0.8624964762500651,
+      "position": 3,
+      "pseudocount_per_aa": 1,
+      "wt": "D",
+      "wt_bits": 0.8624964762500651
+    },
+    "retrieval": {
+      "depth": 2,
+      "hit_ids_used": [
+        "one_mutant_control"
+      ]
+    }
+  },
+  "server": "classical"
+}

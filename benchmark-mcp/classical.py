@@ -11,6 +11,7 @@ from collections import Counter
 from pathlib import Path
 
 from Bio.Align import PairwiseAligner, substitution_matrices
+from Bio import SeqIO
 
 from common import ROOT, reference_path, require_sequence
 
@@ -168,3 +169,37 @@ def blast_search(sequence: str, reference_fasta: str, max_hits: int = 5) -> dict
                          "evalue": float(evalue), "bitscore": float(bits),
                          "query_coverage_pct": float(qcov)})
     return {"hits": hits, "reference_fasta": str(target)}
+
+
+def blast_msa(sequence: str, reference_fasta: str, max_hits: int = 10) -> dict:
+    """Retrieve BLAST hits and anchor their full sequences to the exact query."""
+    query = require_sequence(sequence)
+    search = blast_search(query, reference_fasta, max_hits)
+    wanted = {hit["target"] for hit in search["hits"]}
+    target = reference_path(reference_fasta)
+    sequences = {record.id: require_sequence(str(record.seq)) for record in SeqIO.parse(target, "fasta")
+                 if record.id in wanted}
+    aligner = PairwiseAligner(mode="global")
+    aligner.substitution_matrix = BLOSUM62
+    aligner.open_gap_score = -10
+    aligner.extend_gap_score = -0.5
+    rows = [query]
+    used = []
+    for hit in search["hits"]:
+        sid = hit["target"]
+        subject = sequences.get(sid)
+        if subject is None or subject == query:
+            continue
+        alignment = aligner.align(query, subject)[0]
+        anchored = "".join(b for a, b in zip(str(alignment[0]), str(alignment[1])) if a != "-")
+        if len(anchored) != len(query):
+            raise RuntimeError("query-anchored alignment lost a query column")
+        if anchored.count("-") <= .2 * len(query) and anchored not in rows:
+            rows.append(anchored)
+            used.append(sid)
+    if len(rows) < 2:
+        raise ValueError("BLAST produced fewer than two distinct >=80%-coverage MSA rows")
+    return {"query": query, "msa": rows, "depth": len(rows), "hit_ids_used": used,
+            "search_hits": search["hits"],
+            "construction": "global_pairwise_query_anchored_drop_subject_insertions",
+            "reference_fasta": str(target)}

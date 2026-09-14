@@ -1,0 +1,284 @@
+{
+  "phase": "cell30_surface_unguided",
+  "model": "Qwen3-30B-A3B-Q4_K_M",
+  "wall_s": 367.2518259510398,
+  "exit_code": 0,
+  "timed_out": false,
+  "response_token_cap": 8192,
+  "stop_reason": null,
+  "prompt_sha256": "6069ed83a2549ab80a836e3b564c5251b4d6b911bfd6fc5eead6e489e4491cda",
+  "prompt_tokens_total": 220814,
+  "generation_tokens_total": 18098,
+  "cap_exhausted_responses": [],
+  "model_responses": [
+    {
+      "response": "shim_001",
+      "prompt_tokens": 9536,
+      "generation_tokens": 2503,
+      "backend_wall_s": 46.672889947891235,
+      "generation_s": 39.334165999999996,
+      "generation_tps": 63.63424611570512,
+      "timing_source": "llama.cpp predicted_ms"
+    },
+    {
+      "response": "shim_002",
+      "prompt_tokens": 15696,
+      "generation_tokens": 1026,
+      "backend_wall_s": 23.240950345993042,
+      "generation_s": 18.094132000000002,
+      "generation_tps": 56.70346607397359,
+      "timing_source": "llama.cpp predicted_ms"
+    },
+    {
+      "response": "shim_003",
+      "prompt_tokens": 16151,
+      "generation_tokens": 712,
+      "backend_wall_s": 13.18997311592102,
+      "generation_s": 12.702444,
+      "generation_tps": 56.05220538661694,
+      "timing_source": "llama.cpp predicted_ms"
+    },
+    {
+      "response": "shim_004",
+      "prompt_tokens": 16601,
+      "generation_tokens": 969,
+      "backend_wall_s": 18.361963987350464,
+      "generation_s": 17.870116000000003,
+      "generation_tps": 54.22460604060991,
+      "timing_source": "llama.cpp predicted_ms"
+    },
+    {
+      "response": "shim_005",
+      "prompt_tokens": 17055,
+      "generation_tokens": 859,
+      "backend_wall_s": 16.606969118118286,
+      "generation_s": 16.117531,
+      "generation_tps": 53.296004208088696,
+      "timing_source": "llama.cpp predicted_ms"
+    },
+    {
+      "response": "shim_006",
+      "prompt_tokens": 17500,
+      "generation_tokens": 1967,
+      "backend_wall_s": 37.648935317993164,
+      "generation_s": 37.173114999999996,
+      "generation_tps": 52.91458625407099,
+      "timing_source": "llama.cpp predicted_ms"
+    },
+    {
+      "response": "shim_007",
+      "prompt_tokens": 17955,
+      "generation_tokens": 1076,
+      "backend_wall_s": 20.920966863632202,
+      "generation_s": 20.405147,
+      "generation_tps": 52.73179360089883,
+      "timing_source": "llama.cpp predicted_ms"
+    },
+    {
+      "response": "shim_008",
+      "prompt_tokens": 18377,
+      "generation_tokens": 3052,
+      "backend_wall_s": 59.29391694068909,
+      "generation_s": 58.755160000000004,
+      "generation_tps": 51.94437390690452,
+      "timing_source": "llama.cpp predicted_ms"
+    },
+    {
+      "response": "shim_009",
+      "prompt_tokens": 20415,
+      "generation_tokens": 2181,
+      "backend_wall_s": 45.54494595527649,
+      "generation_s": 43.421094,
+      "generation_tps": 50.22904305451171,
+      "timing_source": "llama.cpp predicted_ms"
+    },
+    {
+      "response": "shim_010",
+      "prompt_tokens": 22380,
+      "generation_tokens": 2435,
+      "backend_wall_s": 52.64494705200195,
+      "generation_s": 50.663599999999995,
+      "generation_tps": 48.06211954934115,
+      "timing_source": "llama.cpp predicted_ms"
+    },
+    {
+      "response": "shim_011",
+      "prompt_tokens": 24349,
+      "generation_tokens": 493,
+      "backend_wall_s": 12.511988878250122,
+      "generation_s": 10.478534,
+      "generation_tps": 47.04856614484431,
+      "timing_source": "llama.cpp predicted_ms"
+    },
+    {
+      "response": "shim_012",
+      "prompt_tokens": 24799,
+      "generation_tokens": 825,
+      "backend_wall_s": 18.329984664916992,
+      "generation_s": 17.776640999999998,
+      "generation_tps": 46.4092175794066,
+      "timing_source": "llama.cpp predicted_ms"
+    }
+  ],
+  "validity_checks": [
+    {
+      "response": "shim_001",
+      "prompt_tokens": 9536,
+      "generation_tokens": 2503,
+      "backend_wall_s": 46.672889947891235,
+      "generation_s": 39.334165999999996,
+      "generation_tps": 63.63424611570512,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    },
+    {
+      "response": "shim_002",
+      "prompt_tokens": 15696,
+      "generation_tokens": 1026,
+      "backend_wall_s": 23.240950345993042,
+      "generation_s": 18.094132000000002,
+      "generation_tps": 56.70346607397359,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    },
+    {
+      "response": "shim_003",
+      "prompt_tokens": 16151,
+      "generation_tokens": 712,
+      "backend_wall_s": 13.18997311592102,
+      "generation_s": 12.702444,
+      "generation_tps": 56.05220538661694,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    },
+    {
+      "response": "shim_004",
+      "prompt_tokens": 16601,
+      "generation_tokens": 969,
+      "backend_wall_s": 18.361963987350464,
+      "generation_s": 17.870116000000003,
+      "generation_tps": 54.22460604060991,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    },
+    {
+      "response": "shim_005",
+      "prompt_tokens": 17055,
+      "generation_tokens": 859,
+      "backend_wall_s": 16.606969118118286,
+      "generation_s": 16.117531,
+      "generation_tps": 53.296004208088696,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    },
+    {
+      "response": "shim_006",
+      "prompt_tokens": 17500,
+      "generation_tokens": 1967,
+      "backend_wall_s": 37.648935317993164,
+      "generation_s": 37.173114999999996,
+      "generation_tps": 52.91458625407099,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    },
+    {
+      "response": "shim_007",
+      "prompt_tokens": 17955,
+      "generation_tokens": 1076,
+      "backend_wall_s": 20.920966863632202,
+      "generation_s": 20.405147,
+      "generation_tps": 52.73179360089883,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    },
+    {
+      "response": "shim_008",
+      "prompt_tokens": 18377,
+      "generation_tokens": 3052,
+      "backend_wall_s": 59.29391694068909,
+      "generation_s": 58.755160000000004,
+      "generation_tps": 51.94437390690452,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    },
+    {
+      "response": "shim_009",
+      "prompt_tokens": 20415,
+      "generation_tokens": 2181,
+      "backend_wall_s": 45.54494595527649,
+      "generation_s": 43.421094,
+      "generation_tps": 50.22904305451171,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    },
+    {
+      "response": "shim_010",
+      "prompt_tokens": 22380,
+      "generation_tokens": 2435,
+      "backend_wall_s": 52.64494705200195,
+      "generation_s": 50.663599999999995,
+      "generation_tps": 48.06211954934115,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    },
+    {
+      "response": "shim_011",
+      "prompt_tokens": 24349,
+      "generation_tokens": 493,
+      "backend_wall_s": 12.511988878250122,
+      "generation_s": 10.478534,
+      "generation_tps": 47.04856614484431,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    }
+  ],
+  "baseline_tps": 88.95424554985539,
+  "threshold_tps": 62.26797188489876,
+  "sensor_errors": [],
+  "peak_gpu_c": 77.0,
+  "peak_cpu_c": 86.4,
+  "peak_gpu_power_w": 91.43,
+  "peak_gpu_util_pct": 96.0,
+  "min_mem_available_gib": 74.857,
+  "trace_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3g_2026-09-14/cell30_surface_unguided/trace.jsonl",
+  "calls": {
+    "attempted": {
+      "classical": 9,
+      "predictive": 1,
+      "record": 5
+    },
+    "succeeded": {
+      "classical": 1,
+      "record": 3
+    },
+    "failed": {
+      "classical": 8,
+      "predictive": 1,
+      "record": 2
+    },
+    "receipt_ids": [
+      "call_id:3472c1c0c7404e88af567d1eeca29359",
+      "call_id:375b625d1a2a442d86b888468f60afc1",
+      "call_id:7f4513b098374291a867ffe859581c51",
+      "call_id:f19a7d48d23e449e8043323603b8a69f"
+    ]
+  },
+  "submission_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3g_2026-09-14/cell30_surface_unguided/submissions/pilot_item.json",
+  "submitted": true,
+  "fabricated_ids": [],
+  "fabricated_id_rate": 0.0,
+  "rejected_populated": true,
+  "evaluation_depth": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "answer_contract_status": "COMPLETED"
+}

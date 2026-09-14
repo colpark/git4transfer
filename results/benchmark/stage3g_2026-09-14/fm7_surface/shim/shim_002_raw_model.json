@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The `esm2_likelihood` call for the mutant R at position 1 in the sequence ACDEFGHIKLMNPQRSTVWY resulted in a delta log probability of -0.1686. The exact receipt call ID is `call_id:a34ef65aab074a30976f9ac1e2630809`."
+      }
+    }
+  ],
+  "created": 1789358980,
+  "model": "/home/aid1/.ollama/models/blobs/sha256-2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+  "system_fingerprint": "b1-4a89937",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 84,
+    "prompt_tokens": 6859,
+    "total_tokens": 6943,
+    "prompt_tokens_details": {
+      "cached_tokens": 6406
+    }
+  },
+  "id": "chatcmpl-x4i0d3ZHrH9pxJr52FSpoGXN4QPDPjP0",
+  "timings": {
+    "cache_n": 6406,
+    "prompt_n": 453,
+    "prompt_ms": 192.328,
+    "prompt_per_token_ms": 0.42456512141280356,
+    "prompt_per_second": 2355.3512749053702,
+    "predicted_n": 84,
+    "predicted_ms": 1926.469,
+    "predicted_per_token_ms": 23.210469879518072,
+    "predicted_per_second": 43.084004985286555
+  }
+}

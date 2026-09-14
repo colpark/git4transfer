@@ -1,0 +1,39 @@
+{
+  "source_tool_count": 19,
+  "forwarded_function_count": 1,
+  "forwarded_tool_block_bytes": 339,
+  "source_tool_block_bytes": 70865,
+  "allowed_namespaces": [
+    "mcp__stage3g_fm"
+  ],
+  "raw_model_content": "",
+  "raw_model_tool_calls": [
+    {
+      "type": "function",
+      "function": {
+        "name": "mcp__stage3g_fm__esm2_likelihood",
+        "arguments": "{\"mutant\": \"R\", \"position\": 1, \"sequence\": \"ACDEFGHIKLMNPQRSTVWY\"}"
+      },
+      "id": "g3yapwBU4Fm3Nbrgzoac7MI1gUIEigyk"
+    }
+  ],
+  "parsed_items": [
+    {
+      "id": "fc_8753a5fb80f94890826afc66414c3cbc",
+      "type": "function_call",
+      "status": "completed",
+      "call_id": "g3yapwBU4Fm3Nbrgzoac7MI1gUIEigyk",
+      "namespace": "mcp__stage3g_fm",
+      "name": "esm2_likelihood",
+      "arguments": "{\"mutant\":\"R\",\"position\":1,\"sequence\":\"ACDEFGHIKLMNPQRSTVWY\"}"
+    }
+  ],
+  "backend_usage": {
+    "completion_tokens": 53,
+    "prompt_tokens": 6354,
+    "total_tokens": 6407,
+    "prompt_tokens_details": {
+      "cached_tokens": 5
+    }
+  }
+}

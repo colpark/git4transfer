@@ -1,0 +1,102 @@
+{
+  "args": {
+    "max_hits": 10,
+    "reference_fasta": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_fastas/item02_homologs.fasta",
+    "sequence": "MLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALDLFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPKFEQPRSEIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIREEVMHFDIDPSTAT"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "b26b8ee51acb46368bc462cfa23a09158c030350ee262088e0e6eee19f9423e5",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/aa9de97d27bd41fbbcdcfe2dad94619a.json",
+    "cache_hit": true,
+    "call_id": "call_id:aa9de97d27bd41fbbcdcfe2dad94619a",
+    "runtime_s": 0.000218,
+    "tool": "blast_search"
+  },
+  "result": {
+    "hits": [
+      {
+        "alignment_length": 177,
+        "bitscore": 364.0,
+        "evalue": 6.54e-134,
+        "pident_pct": 100.0,
+        "query_coverage_pct": 100.0,
+        "target": "homolog_0000"
+      },
+      {
+        "alignment_length": 114,
+        "bitscore": 47.8,
+        "evalue": 5.04e-10,
+        "pident_pct": 32.456,
+        "query_coverage_pct": 63.0,
+        "target": "homolog_0138"
+      },
+      {
+        "alignment_length": 75,
+        "bitscore": 37.4,
+        "evalue": 2.26e-06,
+        "pident_pct": 33.333,
+        "query_coverage_pct": 41.0,
+        "target": "homolog_0162"
+      },
+      {
+        "alignment_length": 56,
+        "bitscore": 35.8,
+        "evalue": 9.59e-06,
+        "pident_pct": 35.714,
+        "query_coverage_pct": 32.0,
+        "target": "homolog_0053"
+      },
+      {
+        "alignment_length": 56,
+        "bitscore": 34.7,
+        "evalue": 2.15e-05,
+        "pident_pct": 35.714,
+        "query_coverage_pct": 32.0,
+        "target": "homolog_0060"
+      },
+      {
+        "alignment_length": 82,
+        "bitscore": 34.7,
+        "evalue": 2.21e-05,
+        "pident_pct": 31.707,
+        "query_coverage_pct": 46.0,
+        "target": "homolog_0071"
+      },
+      {
+        "alignment_length": 123,
+        "bitscore": 33.1,
+        "evalue": 8.02e-05,
+        "pident_pct": 22.764,
+        "query_coverage_pct": 69.0,
+        "target": "homolog_0120"
+      },
+      {
+        "alignment_length": 142,
+        "bitscore": 32.7,
+        "evalue": 9.27e-05,
+        "pident_pct": 25.352,
+        "query_coverage_pct": 80.0,
+        "target": "homolog_0064"
+      },
+      {
+        "alignment_length": 56,
+        "bitscore": 32.3,
+        "evalue": 0.000144,
+        "pident_pct": 30.357,
+        "query_coverage_pct": 32.0,
+        "target": "homolog_0054"
+      },
+      {
+        "alignment_length": 59,
+        "bitscore": 32.3,
+        "evalue": 0.00015,
+        "pident_pct": 33.898,
+        "query_coverage_pct": 32.0,
+        "target": "homolog_0050"
+      }
+    ],
+    "reference_fasta": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_fastas/item02_homologs.fasta"
+  },
+  "server": "classical"
+}
