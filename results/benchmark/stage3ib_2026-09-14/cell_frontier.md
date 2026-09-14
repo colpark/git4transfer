@@ -1,5 +1,5 @@
 # Frontier control cell — not run
 
-The prescribed Arm 3 unguided sample-1 cell on `ARGR_ECOLI_Tsuboyama_2023_1AOY` was not started because ChatGPT sign-in could not be restored. There is no trace. The 4,096-token cap was not exercised; wall time, prompt/generation tokens, per-server calls, usable FM scores, receipt `input_form`, submission, candidate count, validation depth, variant-specific evidence, and cost are **not measured**. There were zero model requests in this attempt, not a zero-success capability result.
+Task 2 failed before the authorized Arm 3 unguided sample-1 cell on `ARGR_ECOLI_Tsuboyama_2023_1AOY` could start. The chosen exact model was `gpt-5.6-sol` at high effort, but the model-side grant still exposed native `apply_patch` and `view_image`. Running the item would have violated the MCP-only comparison. There is no cell trace.
 
-No prompt, metric, aggregation rule, threshold, scorer, arm definition, or tool surface was changed. No labels were opened.
+The frozen Stage 3h diagnostic prompt remains unchanged (SHA-256 `eae159a26f343af8ee1554d9864410385c143fb8780634648710b3483060ab74`). The 4,096-token output cap was not exercised. Wall time, prompt and generation tokens, calls per server, usable FM scores, receipt `input_form`, submission, candidates considered, validation categories, variant-specific evidence, and cost are **not measured**. Zero item attempts is not a model-capability score. No labels, evaluator or scorer were opened, and no further item cell was run.

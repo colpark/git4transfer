@@ -1,13 +1,7 @@
-# Stage 3i-b preflight
+# Stage 3i-b preflight — ChatGPT path restored
 
-14 September 2026 UTC. `codex login` was started as specified. It printed a local browser callback URL and awaited account authentication. A subsequent `codex login status` returned `Not logged in`; the callback listener was still waiting. The login process was then interrupted rather than left running. No credential was recovered or substituted.
+14 September 2026, 15:07 UTC. `codex login status` returned **Logged in using ChatGPT**. The authenticated ChatGPT Codex models endpoint (`/backend-api/codex/models?client_version=0.154.0`) returned **HTTP 200**. `codex debug models` refreshed the authenticated catalog; the exact available ID selected for the control was **`gpt-5.6-sol`**, with **high** reasoning effort (not Ultra), on Codex CLI **0.154.0**. The catalog lists a 272,000-token context window. The direct probe's `turn_context` confirmed model `gpt-5.6-sol`, effort `high`, approval `never`, and sandbox `read-only`; `session_meta.model_provider` was `openai`, not the custom node-11 provider. No model-metadata fallback warning appeared in the probes.
 
-| Check | Result |
-|---|---|
-| Stored ChatGPT session restored | No |
-| Authenticated models endpoint HTTP 200 | Not demonstrated; no active session |
-| Exact model ID / reasoning effort / date pinned | None / none / 14 September 2026 |
-| Native-tool and multi-agent flags for a subject run | Not configured; no subject run |
-| Fallback metadata warning | Not observed; no model request |
+The attempted single-agent grant disabled `shell_tool`, `unified_exec`, `multi_agent`, `multi_agent_v2`, apps, browser/computer/image tools, goals, plugins, and native web search; no `--add-dir` was used. These flags alone are not treated as proof of the model-visible grant. The model-side result is in `grant_verify.md`. The feature combination **failed** the no-native-tools gate, so there was no seven-server ladder or scored-item cell.
 
-The Stage 3i logout correction is accepted: the ChatGPT session is the intended frontier path. This attempt did not chase an API key. [Codex authentication documentation](https://developers.openai.com/codex/auth) describes the browser flow required after `codex login`.
+The [official Codex configuration reference](https://developers.openai.com/codex/config-reference) documents the shell, multi-agent and MCP settings. Its `features.code_mode.excluded_tool_namespaces` setting was tested; it did not remove the native editor from the populated tool catalog in this CLI path.
