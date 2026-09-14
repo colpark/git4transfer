@@ -135,17 +135,17 @@ def make_physics(presentation: str) -> MCPServer:
 
     @mcp.tool(name="pyrosetta_ddg")
     def pyrosetta_ddg(wt_pdb: str, mutant_pdb: str) -> dict:
-        """Blocked PyRosetta ddG; returns a reason and points to disclosed OpenMM substitute."""
+        """Blocked PyRosetta ddG; no physics ddG substitute is authorized."""
         args = locals()
         return emit("physics", "pyrosetta_ddg", args,
                     lambda: physics.pyrosetta_ddg(**args))
 
-    @mcp.tool(name="openmm_delta_energy")
-    def openmm_delta_energy(wt_pdb: str, mutant_pdb: str) -> dict:
-        """Potential-energy difference for matched prepared PDBs; NOT folding ddG."""
+    @mcp.tool(name="openmm_snapshot_potential_delta")
+    def openmm_snapshot_potential_delta(wt_pdb: str, mutant_pdb: str) -> dict:
+        """Diagnostic: two unminimized PDB potential-energy snapshots; NOT ddG or a stability ranker."""
         args = locals()
-        return emit("physics", "openmm_delta_energy", args,
-                    lambda: physics.openmm_delta_energy(**args))
+        return emit("physics", "openmm_snapshot_potential_delta", args,
+                    lambda: physics.openmm_snapshot_potential_delta(**args))
 
     return mcp
 

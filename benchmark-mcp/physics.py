@@ -42,11 +42,11 @@ def dssp(pdb_path: str) -> dict:
 def pyrosetta_ddg(wt_pdb: str, mutant_pdb: str) -> dict:
     reference_path(wt_pdb)
     reference_path(mutant_pdb)
-    raise RuntimeError("PyRosetta institutional license and runnable current-host aarch64 build not verified; use openmm_delta_energy, which is not ddG")
+    raise RuntimeError("PyRosetta institutional license and runnable current-host aarch64 build not verified; no physics ddG substitute is authorized")
 
 
-def openmm_delta_energy(wt_pdb: str, mutant_pdb: str) -> dict:
-    """Potential-energy delta for two fully prepared structures, not folding ddG."""
+def openmm_snapshot_potential_delta(wt_pdb: str, mutant_pdb: str) -> dict:
+    """One unminimized potential-energy snapshot per supplied structure."""
     import openmm as mm
     from openmm import unit
     from openmm.app import ForceField, NoCutoff, PDBFile
@@ -72,8 +72,9 @@ def openmm_delta_energy(wt_pdb: str, mutant_pdb: str) -> dict:
     return {"wt_kj_per_mol": energies[0], "mutant_kj_per_mol": energies[1],
             "delta_kj_per_mol": energies[1] - energies[0],
             "atom_count": atom_counts[0], "method": "OpenMM_8.6.1_CPU_unminimized_potential_energy",
-            "is_folding_ddg": False,
-            "deviation": "not PyRosetta ddG; requires fully prepared matched-topology WT and mutant PDBs"}
+            "is_folding_ddg": False, "is_stability_ranker": False,
+            "purpose": "structural_diagnostic",
+            "deviation": "not PyRosetta ddG; two user-supplied fully prepared equal-atom-count PDBs; no mutation modeling or minimization"}
 
 
 def openmm_reference_corrected_energy(
@@ -84,13 +85,14 @@ def openmm_reference_corrected_energy(
     unfolded_reference_kj_per_mol: dict[str, float],
     reference_source: str,
 ) -> dict:
-    """Unvalidated prototype; intentionally NOT exposed through MCP or W2 scoring.
+    """Unvalidated research prototype; NOT exposed through MCP or W2 scoring.
 
     A supplied, complete external table is required. The historical raw tool
     and its cache remain unchanged. This does not construct mutant structures,
-    relax either structure or estimate entropy; criterion (e) is still open.
+    relax either structure or estimate entropy. Stage 3e removed the W2
+    physics claim; this function has no workflow-scoring role.
     """
-    raw = openmm_delta_energy(wt_pdb, mutant_pdb)
+    raw = openmm_snapshot_potential_delta(wt_pdb, mutant_pdb)
     correction = corrected_delta(raw["delta_kj_per_mol"], wt_aa, mutant_aa,
                                  unfolded_reference_kj_per_mol, reference_source)
     return {**raw, **correction,

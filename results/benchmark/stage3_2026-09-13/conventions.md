@@ -1,0 +1,7 @@
+# Stage 3 scoring conventions — dated verification addendum
+
+**14 September 2026 UTC; verification only.** The original Stage 3 [pre-registration](preregistration.md), [Stage 2 classical conventions](../stage2_2026-09-12/conventions.md), and accepted released-score Floor C/M results remain frozen. This file records a later code-and-checkpoint audit; it does not rewrite what the Stage 3 floor used.
+
+For the ongoing label-blind *MCP recomputation*, `esm2_likelihood` scores **masked-marginal** single substitutions: one-based position `i` is replaced with the ESM-2 mask token; the tool returns `ln p(mutant | masked WT context) − ln p(WT | masked WT context)`. It uses pinned `facebook/esm2_t6_8M_UR50D` revision `c731040fcd8d73dceaa04b0a8e6329b345b0f5df`, the **entire supplied ProteinGym `target_seq`** with no MSA-seed extraction or windowing, and rejects sequences above 1,022 residues. This matches the released ESM-2 **scheme**, not its **650M weights**. Full-length equality to an external UniProt sequence has not been checked. The [Stage 3e audit](../stage3e_2026-09-14/esm2_convention.md) provides the code quote, 20 paired candidate scores, rho 0.5578947368 and the unmasked negative control.
+
+ESM-IF1's local worker uses the supplied AF2 chain-A backbone and **does not mask low-pLDDT residues**. The historical Floor M released ESM-IF1 scores must remain separately labeled. The W1 primary decision metric is precision@10; Spearman is secondary. No W2 scoring convention is opened by this file.

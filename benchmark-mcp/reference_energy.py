@@ -2,8 +2,9 @@
 
 The caller must supply a complete, source-pinned table in kJ/mol. No table is
 bundled: importing Rosetta REU reference weights into Amber would be an
-unvalidated force-field/units substitution. This module is deliberately not
-mounted as an MCP tool until a MegaScale endpoint comparison passes criterion e.
+unvalidated force-field/units substitution. This module is not mounted as an
+MCP tool. The Stage 3e panel removed the W2 physics claim and deferred W2;
+this prototype has no role in that workflow.
 """
 
 from __future__ import annotations

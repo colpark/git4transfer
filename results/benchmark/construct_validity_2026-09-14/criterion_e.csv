@@ -12,7 +12,7 @@ predictive,esmfold,structural diagnostic,PRESENT,NOT_APPLICABLE,CONDITIONAL,pLDD
 generative,esm_if,direct W1 rank component,PRESENT,UNKNOWN_LOCAL,CALIBRATION_ONLY,no pLDDT cutoff; local P@10 pending
 physics,pyrosetta_ddg,potential W2 ranker,PRESENT,NO_LOCAL_RESULT,BLOCKED,license and aarch64 build unverified
 physics,dssp,structural diagnostic,PRESENT,NOT_APPLICABLE,CONDITIONAL,secondary structure only; no ASA
-physics,openmm_delta_energy,potential W2 ranker,PRESENT,UNKNOWN,BLOCKED_AS_DIRECT_RANKER,unminimized folded-state potential only
+physics,openmm_snapshot_potential_delta,structural diagnostic,PRESENT,NOT_APPLICABLE,NOT_RECERTIFIED_NEW_NAME,one unminimized evaluation per supplied PDB; W2 physics claim removed
 analysis,seq_identity,analysis,PRESENT,NOT_APPLICABLE,CONDITIONAL,not phenotype predictor
 analysis,tmalign,analysis,PRESENT,NOT_APPLICABLE,CONDITIONAL,not phenotype predictor
 lit,pubmed_search,retrieval,PRESENT,NOT_APPLICABLE,CONDITIONAL,NCBI substitute not scireason eight-tool group
