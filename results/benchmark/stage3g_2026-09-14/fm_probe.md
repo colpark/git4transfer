@@ -1,0 +1,5 @@
+# Item 4 — one-server ESM-2 reachability
+
+Registered Qwen2.5-7B-Instruct Q4_K_M, node 11, 32K context. A short fixed prompt asked for **one** `esm2_likelihood` call on A1R in `ACDEFGHIKLMNPQRSTVWY`. The only mounted MCP server exposed only that one tool; no W1 item, labels or other tools were present. Result: **PASS**, one attempted and successful real call, masked-marginal score **−0.1685609818**, resolving receipt `call_id:18750d4028b24e7c8877895d3ffbb787`, no fabricated ID, no metadata warning. The score equals the pinned Stage 3f 650M known-input control. Wall time 7.13 s. The prior invalid-mutant negative control and the Stage 3g guided FM-composite invalid-mutant control both returned null/errors, so the backend and receipt path demonstrably can fail.
+
+Conclusion limited to reachability: the model can understand and call this specific FM tool when it is the only choice. Its zero FM calls in the full Arm 3 cells therefore indicate **tool selection under a crowded task/grant**, not a broken ESM-2 schema or provider channel. This does not certify that the model would use ESM-IF1 or ESMFold in a full task, and it says nothing about prediction accuracy.

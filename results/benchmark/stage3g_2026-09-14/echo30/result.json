@@ -1,0 +1,86 @@
+{
+  "phase": "echo30",
+  "model": "Qwen3-30B-A3B-Q4_K_M",
+  "wall_s": 19.481851290911436,
+  "exit_code": 0,
+  "timed_out": false,
+  "stop_reason": null,
+  "prompt_sha256": "93cb4ab387bf55f031a421a0ed144dc9829fb55bd2d9a0a7bff5555c7e5d2b4c",
+  "prompt_tokens_total": 12875,
+  "generation_tokens_total": 934,
+  "model_responses": [
+    {
+      "response": "shim_001",
+      "prompt_tokens": 6294,
+      "generation_tokens": 562,
+      "backend_wall_s": 12.5210120677948,
+      "generation_s": 7.992832999999999,
+      "generation_tps": 70.3129916513957,
+      "timing_source": "llama.cpp predicted_ms"
+    },
+    {
+      "response": "shim_002",
+      "prompt_tokens": 6581,
+      "generation_tokens": 372,
+      "backend_wall_s": 5.694005489349365,
+      "generation_s": 5.410515,
+      "generation_tps": 68.75500761018128,
+      "timing_source": "llama.cpp predicted_ms"
+    }
+  ],
+  "validity_checks": [
+    {
+      "response": "shim_001",
+      "prompt_tokens": 6294,
+      "generation_tokens": 562,
+      "backend_wall_s": 12.5210120677948,
+      "generation_s": 7.992832999999999,
+      "generation_tps": 70.3129916513957,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    },
+    {
+      "response": "shim_002",
+      "prompt_tokens": 6581,
+      "generation_tokens": 372,
+      "backend_wall_s": 5.694005489349365,
+      "generation_s": 5.410515,
+      "generation_tps": 68.75500761018128,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    }
+  ],
+  "baseline_tps": 88.66273733733331,
+  "threshold_tps": 62.063916136133315,
+  "sensor_errors": [],
+  "peak_gpu_c": 62.0,
+  "peak_cpu_c": 72.3,
+  "peak_gpu_power_w": 90.19,
+  "peak_gpu_util_pct": 94.0,
+  "min_mem_available_gib": 74.438,
+  "trace_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3g_2026-09-14/echo30/trace.jsonl",
+  "probe": {
+    "tool_attempts": 1,
+    "genuine_receipts": [
+      {
+        "result": {
+          "text": "stage3g-metadata-control"
+        },
+        "receipt": {
+          "call_id": "call_id:7fb1227ab9b94ecb9d06af73820adea9",
+          "tool": "echo_tool",
+          "args_hash": "3b74776e40631f158f0201e3b748d638c6628c6cdae0288d8f11759faf842c45",
+          "runtime_s": 0.000164,
+          "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3g_2026-09-14/artifacts/probe/7fb1227ab9b94ecb9d06af73820adea9.json"
+        }
+      }
+    ],
+    "cited_ids": [
+      "call_id:7fb1227ab9b94ecb9d06af73820adea9"
+    ],
+    "fabricated_ids": [],
+    "value_ok": true,
+    "metadata_warnings": [],
+    "pass": true
+  }
+}

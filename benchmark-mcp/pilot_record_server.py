@@ -18,9 +18,10 @@ def main() -> None:
     parser.add_argument("--presentation", choices=("guided", "unguided"), required=True)
     args = parser.parse_args()
     out = Path(args.out).resolve()
-    pilot = (ROOT / "results/benchmark/stage4pilot_2026-09-13").resolve()
-    if pilot not in out.parents:
-        raise SystemExit("record output must be inside the Stage 4 pilot directory")
+    permitted = tuple((ROOT / f"results/benchmark/{stage}").resolve() for stage in
+                      ("stage4pilot_2026-09-13", "stage3f_2026-09-14", "stage3g_2026-09-14"))
+    if not any(parent in out.parents for parent in permitted):
+        raise SystemExit("record output must be inside an explicit pilot/probe directory")
     out.mkdir(parents=True, exist_ok=True)
     record.OUT = out
     common.ARTIFACTS = out / "artifacts"

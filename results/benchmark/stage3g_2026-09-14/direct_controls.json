@@ -1,0 +1,91 @@
+{
+  "record": {
+    "tools": [
+      "submit_answer",
+      "log_note"
+    ],
+    "valid_note": {
+      "result": {
+        "logged": true,
+        "item_id": "stage3g_preflight",
+        "note_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3g_2026-09-14/record_preflight/notes/stage3g_preflight_b220d7c7eb924643b603be49eef5ac6c.json"
+      },
+      "error": null,
+      "receipt": {
+        "call_id": "call_id:3280448b0c514b35a1424cca5705b0db",
+        "tool": "log_note",
+        "args_hash": "b65c6c400229c771a11dd508f94221c8e04031a937f3c4942d975206a7f28f80",
+        "runtime_s": 0.000712,
+        "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3g_2026-09-14/record_preflight/artifacts/record/3280448b0c514b35a1424cca5705b0db.json",
+        "cache_hit": false
+      }
+    },
+    "invalid_note": {
+      "result": null,
+      "error": "ValueError: note must be nonempty and at most 2000 characters",
+      "receipt": {
+        "call_id": "call_id:7d4744ccb7604f3a83b11e748026f2a2",
+        "tool": "log_note",
+        "args_hash": "6cf56e6d9cc53f0dcd37a5fe7de5c8c8017a3404457f79577c357a491cd0eb38",
+        "runtime_s": 9.9e-05,
+        "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3g_2026-09-14/record_preflight/artifacts/record/7d4744ccb7604f3a83b11e748026f2a2.json",
+        "cache_hit": false
+      }
+    },
+    "pass": true
+  },
+  "fm_composite": {
+    "valid": {
+      "result": {
+        "esm2_likelihood": {
+          "wt": "I",
+          "mutant": "A",
+          "position": 3,
+          "wt_log_probability": -0.2914721965789795,
+          "mutant_log_probability": -7.2393388748168945,
+          "delta_log_probability": -6.947866678237915,
+          "method": "ESM2_single_position_masked_marginal_natural_log",
+          "model": "facebook/esm2_t33_650M_UR50D",
+          "revision": "08e4846e537177426273712802403f7ba8261b6c",
+          "device": "cpu",
+          "precision": "float32"
+        },
+        "esm_if": {
+          "sequence_length": 76,
+          "backbone_length": 76,
+          "mean_log_likelihood": -0.3058074148077714,
+          "mean_log_likelihood_with_coords": -0.3058074148077714,
+          "native_sequence_match": false,
+          "model": "esm_if1_gvp4_t16_142M_UR50",
+          "device": "cpu",
+          "pdb_path": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/1ubq.pdb",
+          "chain": "A",
+          "interpretation": "backbone-conditioned sequence score; not a measured stability effect"
+        },
+        "note": "Model plausibility scores, not measured fitness or stability."
+      },
+      "error": null,
+      "receipt": {
+        "call_id": "call_id:ed8c8a7f5d77466ea10ecae8948986aa",
+        "tool": "screen_variant_fm",
+        "args_hash": "9eb962fc8267673ad3d4ac343a7fee21d909a331c5e59f8bc6e881b25bd9dce5",
+        "runtime_s": 6.16307,
+        "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/predictive/ed8c8a7f5d77466ea10ecae8948986aa.json",
+        "cache_hit": false
+      }
+    },
+    "invalid": {
+      "result": null,
+      "error": "ValueError: sequence must contain 1\u201310000 canonical amino acids",
+      "receipt": {
+        "call_id": "call_id:37d1a78b74074da58a97925c93961c31",
+        "tool": "screen_variant_fm",
+        "args_hash": "fbdacc0ce4d692c27ee437b4d5f4d8c9b5350fe325957986d7469f22fcc8d076",
+        "runtime_s": 0.00016,
+        "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/predictive/37d1a78b74074da58a97925c93961c31.json",
+        "cache_hit": false
+      }
+    },
+    "pass": true
+  }
+}

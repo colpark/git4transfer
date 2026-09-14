@@ -1,0 +1,39 @@
+{
+  "source_tool_count": 19,
+  "forwarded_function_count": 1,
+  "forwarded_tool_block_bytes": 233,
+  "source_tool_block_bytes": 70761,
+  "allowed_namespaces": [
+    "mcp__stage3g_echo"
+  ],
+  "raw_model_content": "",
+  "raw_model_tool_calls": [
+    {
+      "type": "function",
+      "function": {
+        "name": "mcp__stage3g_echo__echo_tool",
+        "arguments": "{\"text\": \"stage3g-metadata-control\"}"
+      },
+      "id": "OcvuZs181xe9m10eJruMd3H9cuHbtqpl"
+    }
+  ],
+  "parsed_items": [
+    {
+      "id": "fc_7c177a320497417db13d5ac1c6799d75",
+      "type": "function_call",
+      "status": "completed",
+      "call_id": "OcvuZs181xe9m10eJruMd3H9cuHbtqpl",
+      "namespace": "mcp__stage3g_echo",
+      "name": "echo_tool",
+      "arguments": "{\"text\":\"stage3g-metadata-control\"}"
+    }
+  ],
+  "backend_usage": {
+    "completion_tokens": 32,
+    "prompt_tokens": 6294,
+    "total_tokens": 6326,
+    "prompt_tokens_details": {
+      "cached_tokens": 5
+    }
+  }
+}

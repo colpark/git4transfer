@@ -1,0 +1,541 @@
+[
+  {
+    "server": "record",
+    "name": "submit_answer",
+    "description": "Accept one JSON answer per synthetic smoke item, without scoring it.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "item_id": {
+          "title": "Item Id",
+          "type": "string"
+        },
+        "answer": {
+          "additionalProperties": true,
+          "title": "Answer",
+          "type": "object"
+        }
+      },
+      "required": [
+        "item_id",
+        "answer"
+      ],
+      "title": "submit_answerArguments"
+    }
+  },
+  {
+    "server": "record",
+    "name": "log_note",
+    "description": "Append an auditable note for a synthetic smoke item.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "item_id": {
+          "title": "Item Id",
+          "type": "string"
+        },
+        "note": {
+          "title": "Note",
+          "type": "string"
+        }
+      },
+      "required": [
+        "item_id",
+        "note"
+      ],
+      "title": "log_noteArguments"
+    }
+  },
+  {
+    "server": "classical",
+    "name": "mmseqs_search",
+    "description": "Retrieve protein homologs from an explicit FASTA using MMseqs2.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "sequence": {
+          "title": "Sequence",
+          "type": "string"
+        },
+        "reference_fasta": {
+          "title": "Reference Fasta",
+          "type": "string"
+        },
+        "max_hits": {
+          "default": 5,
+          "title": "Max Hits",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "sequence",
+        "reference_fasta"
+      ],
+      "title": "mmseqs_searchArguments"
+    }
+  },
+  {
+    "server": "classical",
+    "name": "blast_search",
+    "description": "Retrieve protein homologs from an explicit FASTA using BLASTP.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "sequence": {
+          "title": "Sequence",
+          "type": "string"
+        },
+        "reference_fasta": {
+          "title": "Reference Fasta",
+          "type": "string"
+        },
+        "max_hits": {
+          "default": 5,
+          "title": "Max Hits",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "sequence",
+        "reference_fasta"
+      ],
+      "title": "blast_searchArguments"
+    }
+  },
+  {
+    "server": "classical",
+    "name": "pssm_score",
+    "description": "Score a substitution in a supplied MSA with pre-registered pseudocounts.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "title": "Query",
+          "type": "string"
+        },
+        "msa": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Msa",
+          "type": "array"
+        },
+        "position": {
+          "title": "Position",
+          "type": "integer"
+        },
+        "mutant": {
+          "title": "Mutant",
+          "type": "string"
+        }
+      },
+      "required": [
+        "query",
+        "msa",
+        "position",
+        "mutant"
+      ],
+      "title": "pssm_scoreArguments"
+    }
+  },
+  {
+    "server": "classical",
+    "name": "conservation",
+    "description": "Return normalized Shannon conservation for one MSA column.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "title": "Query",
+          "type": "string"
+        },
+        "msa": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Msa",
+          "type": "array"
+        },
+        "position": {
+          "title": "Position",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "query",
+        "msa",
+        "position"
+      ],
+      "title": "conservationArguments"
+    }
+  },
+  {
+    "server": "classical",
+    "name": "motif_scan",
+    "description": "Find overlapping sequence-regex motifs with one-based coordinates.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "sequence": {
+          "title": "Sequence",
+          "type": "string"
+        },
+        "pattern": {
+          "title": "Pattern",
+          "type": "string"
+        }
+      },
+      "required": [
+        "sequence",
+        "pattern"
+      ],
+      "title": "motif_scanArguments"
+    }
+  },
+  {
+    "server": "classical",
+    "name": "blosum_score",
+    "description": "Return the canonical raw BLOSUM62 substitution score.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "wt": {
+          "title": "Wt",
+          "type": "string"
+        },
+        "mutant": {
+          "title": "Mutant",
+          "type": "string"
+        }
+      },
+      "required": [
+        "wt",
+        "mutant"
+      ],
+      "title": "blosum_scoreArguments"
+    }
+  },
+  {
+    "server": "classical",
+    "name": "hbond_geometry",
+    "description": "Classify an explicit donor-hydrogen-acceptor triplet by distance and angle.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "donor": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Donor",
+          "type": "array"
+        },
+        "hydrogen": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Hydrogen",
+          "type": "array"
+        },
+        "acceptor": {
+          "items": {
+            "type": "number"
+          },
+          "title": "Acceptor",
+          "type": "array"
+        }
+      },
+      "required": [
+        "donor",
+        "hydrogen",
+        "acceptor"
+      ],
+      "title": "hbond_geometryArguments"
+    }
+  },
+  {
+    "server": "classical",
+    "name": "screen_variant_classical",
+    "description": "Guided workflow: PSSM, conservation, and BLOSUM for one variant.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "title": "Query",
+          "type": "string"
+        },
+        "msa": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Msa",
+          "type": "array"
+        },
+        "position": {
+          "title": "Position",
+          "type": "integer"
+        },
+        "mutant": {
+          "title": "Mutant",
+          "type": "string"
+        }
+      },
+      "required": [
+        "query",
+        "msa",
+        "position",
+        "mutant"
+      ],
+      "title": "screen_variant_classicalArguments"
+    }
+  },
+  {
+    "server": "lit",
+    "name": "pubmed_search",
+    "description": "Search live PubMed via NCBI E-utilities; scireason MCP is unavailable.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "term": {
+          "title": "Term",
+          "type": "string"
+        },
+        "max_hits": {
+          "default": 3,
+          "title": "Max Hits",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "term"
+      ],
+      "title": "pubmed_searchArguments"
+    }
+  },
+  {
+    "server": "analysis",
+    "name": "seq_identity",
+    "description": "Global BLOSUM62-aligned identity including terminal gap columns.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "sequence_a": {
+          "title": "Sequence A",
+          "type": "string"
+        },
+        "sequence_b": {
+          "title": "Sequence B",
+          "type": "string"
+        }
+      },
+      "required": [
+        "sequence_a",
+        "sequence_b"
+      ],
+      "title": "seq_identityArguments"
+    }
+  },
+  {
+    "server": "analysis",
+    "name": "tmalign",
+    "description": "Compare two explicit PDBs with the TM-align structure algorithm.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "pdb_a": {
+          "title": "Pdb A",
+          "type": "string"
+        },
+        "pdb_b": {
+          "title": "Pdb B",
+          "type": "string"
+        }
+      },
+      "required": [
+        "pdb_a",
+        "pdb_b"
+      ],
+      "title": "tmalignArguments"
+    }
+  },
+  {
+    "server": "predictive",
+    "name": "esm2_likelihood",
+    "description": "Pinned ESM-2 650M masked-marginal substitution log-likelihood.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "sequence": {
+          "title": "Sequence",
+          "type": "string"
+        },
+        "position": {
+          "title": "Position",
+          "type": "integer"
+        },
+        "mutant": {
+          "title": "Mutant",
+          "type": "string"
+        }
+      },
+      "required": [
+        "sequence",
+        "position",
+        "mutant"
+      ],
+      "title": "esm2_likelihoodArguments"
+    }
+  },
+  {
+    "server": "predictive",
+    "name": "esmfold",
+    "description": "Pinned ESMFold v1 structure prediction; returns CA count and PDB artifact.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "sequence": {
+          "title": "Sequence",
+          "type": "string"
+        },
+        "seed": {
+          "default": 0,
+          "title": "Seed",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "sequence"
+      ],
+      "title": "esmfoldArguments"
+    }
+  },
+  {
+    "server": "predictive",
+    "name": "screen_variant_fm",
+    "description": "Guided FM workflow: ESM-2 650M mutation score and ESM-IF1 backbone score.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "sequence": {
+          "title": "Sequence",
+          "type": "string"
+        },
+        "position": {
+          "title": "Position",
+          "type": "integer"
+        },
+        "mutant": {
+          "title": "Mutant",
+          "type": "string"
+        },
+        "pdb_path": {
+          "title": "Pdb Path",
+          "type": "string"
+        },
+        "chain": {
+          "default": "A",
+          "title": "Chain",
+          "type": "string"
+        }
+      },
+      "required": [
+        "sequence",
+        "position",
+        "mutant",
+        "pdb_path"
+      ],
+      "title": "screen_variant_fmArguments"
+    }
+  },
+  {
+    "server": "generative",
+    "name": "esm_if",
+    "description": "Pinned ESM-IF1 backbone-conditioned sequence log-likelihood.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "pdb_path": {
+          "title": "Pdb Path",
+          "type": "string"
+        },
+        "chain": {
+          "title": "Chain",
+          "type": "string"
+        },
+        "sequence": {
+          "title": "Sequence",
+          "type": "string"
+        }
+      },
+      "required": [
+        "pdb_path",
+        "chain",
+        "sequence"
+      ],
+      "title": "esm_ifArguments"
+    }
+  },
+  {
+    "server": "physics",
+    "name": "dssp",
+    "description": "Assign per-residue secondary structure with mkdssp 4.2.2.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "pdb_path": {
+          "title": "Pdb Path",
+          "type": "string"
+        }
+      },
+      "required": [
+        "pdb_path"
+      ],
+      "title": "dsspArguments"
+    }
+  },
+  {
+    "server": "physics",
+    "name": "pyrosetta_ddg",
+    "description": "Blocked PyRosetta ddG; no physics ddG substitute is authorized.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "wt_pdb": {
+          "title": "Wt Pdb",
+          "type": "string"
+        },
+        "mutant_pdb": {
+          "title": "Mutant Pdb",
+          "type": "string"
+        }
+      },
+      "required": [
+        "wt_pdb",
+        "mutant_pdb"
+      ],
+      "title": "pyrosetta_ddgArguments"
+    }
+  },
+  {
+    "server": "physics",
+    "name": "openmm_snapshot_potential_delta",
+    "description": "Diagnostic: two unminimized PDB potential-energy snapshots; NOT ddG or a stability ranker.",
+    "input_schema": {
+      "type": "object",
+      "properties": {
+        "wt_pdb": {
+          "title": "Wt Pdb",
+          "type": "string"
+        },
+        "mutant_pdb": {
+          "title": "Mutant Pdb",
+          "type": "string"
+        }
+      },
+      "required": [
+        "wt_pdb",
+        "mutant_pdb"
+      ],
+      "title": "openmm_snapshot_potential_deltaArguments"
+    }
+  }
+]

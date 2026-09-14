@@ -1,0 +1,45 @@
+{
+  "source_tool_count": 25,
+  "forwarded_function_count": 18,
+  "forwarded_tool_block_bytes": 5703,
+  "source_tool_block_bytes": 76815,
+  "allowed_namespaces": [
+    "mcp__rescue_analysis",
+    "mcp__rescue_classical",
+    "mcp__rescue_generative",
+    "mcp__rescue_lit",
+    "mcp__rescue_physics",
+    "mcp__rescue_predictive",
+    "mcp__rescue_record"
+  ],
+  "raw_model_content": "I've retrieved the top homologs using MMseqs2. Now, I will analyze the candidate single substitutions based on the homology and other factors. Let's proceed with evaluating the candidates.\n\nI will start by scoring the substitutions using the BLOSUM62 matrix and considering the conservation of the positions in the homologs. This will help us rank the candidates and select the top ten for the limited assay queue.\n\nI will also consider the geometric properties of the donor-hydrogen-acceptor triplets to ensure that the substitutions are feasible.\n\nLet's begin with the BLOSUM62 scores.\n",
+  "raw_model_tool_calls": [
+    {
+      "type": "function",
+      "function": {
+        "name": "mcp__rescue_classical__blosum_score",
+        "arguments": "{\"mutant\": \"L\", \"wt\": \"M\"}"
+      },
+      "id": "w4oTLMTaUU5AYJmhumEsVLxs4XUZquxA"
+    }
+  ],
+  "parsed_items": [
+    {
+      "id": "fc_e4b7a3a209774d6594310fa8575cfa1d",
+      "type": "function_call",
+      "status": "completed",
+      "call_id": "w4oTLMTaUU5AYJmhumEsVLxs4XUZquxA",
+      "namespace": "mcp__rescue_classical",
+      "name": "blosum_score",
+      "arguments": "{\"mutant\":\"L\",\"wt\":\"M\"}"
+    }
+  ],
+  "backend_usage": {
+    "completion_tokens": 160,
+    "prompt_tokens": 9885,
+    "total_tokens": 10045,
+    "prompt_tokens_details": {
+      "cached_tokens": 8941
+    }
+  }
+}

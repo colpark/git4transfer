@@ -1,0 +1,21 @@
+{
+  "args": {
+    "item_id": "stage3g_preflight",
+    "note": "record path check"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "b65c6c400229c771a11dd508f94221c8e04031a937f3c4942d975206a7f28f80",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3g_2026-09-14/record_preflight/artifacts/record/3280448b0c514b35a1424cca5705b0db.json",
+    "cache_hit": false,
+    "call_id": "call_id:3280448b0c514b35a1424cca5705b0db",
+    "runtime_s": 0.000712,
+    "tool": "log_note"
+  },
+  "result": {
+    "item_id": "stage3g_preflight",
+    "logged": true,
+    "note_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3g_2026-09-14/record_preflight/notes/stage3g_preflight_b220d7c7eb924643b603be49eef5ac6c.json"
+  },
+  "server": "record"
+}

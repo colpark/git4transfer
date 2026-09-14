@@ -1,0 +1,3 @@
+{"time_unix": 1789356951.3784087, "gpu_util_pct": 95.0, "gpu_c": 67.0, "gpu_tlimit_margin_c": 24.0, "gpu_power_w": 80.84, "cpu_zone0_c": 70.8, "cpu_zone4_c": 69.4, "mem_available_gib": 89.608}
+{"time_unix": 1789356953.781689, "gpu_util_pct": 87.0, "gpu_c": 67.0, "gpu_tlimit_margin_c": 29.0, "gpu_power_w": 57.4, "cpu_zone0_c": 74.6, "cpu_zone4_c": 74.6, "mem_available_gib": 89.601}
+{"time_unix": 1789356956.1389973, "gpu_util_pct": 94.0, "gpu_c": 58.0, "gpu_tlimit_margin_c": 37.0, "gpu_power_w": 28.53, "cpu_zone0_c": 68.0, "cpu_zone4_c": 68.0, "mem_available_gib": 89.601}

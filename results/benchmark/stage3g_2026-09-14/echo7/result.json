@@ -1,0 +1,76 @@
+{
+  "phase": "echo7",
+  "model": "qwen2.5-7b-instruct-q4_k_m",
+  "wall_s": 5.820227617397904,
+  "exit_code": 0,
+  "timed_out": false,
+  "stop_reason": null,
+  "prompt_sha256": "93cb4ab387bf55f031a421a0ed144dc9829fb55bd2d9a0a7bff5555c7e5d2b4c",
+  "prompt_tokens_total": 12886,
+  "generation_tokens_total": 87,
+  "model_responses": [
+    {
+      "response": "shim_001",
+      "prompt_tokens": 6294,
+      "generation_tokens": 32,
+      "backend_wall_s": 2.961998224258423,
+      "generation_s": 0.6934539999999999,
+      "generation_tps": 46.14581500719587,
+      "timing_source": "llama.cpp predicted_ms"
+    },
+    {
+      "response": "shim_002",
+      "prompt_tokens": 6592,
+      "generation_tokens": 55,
+      "backend_wall_s": 1.3619990348815918,
+      "generation_s": 1.2075820000000002,
+      "generation_tps": 45.54556129521639,
+      "timing_source": "llama.cpp predicted_ms"
+    }
+  ],
+  "validity_checks": [
+    {
+      "response": "shim_001",
+      "prompt_tokens": 6294,
+      "generation_tokens": 32,
+      "backend_wall_s": 2.961998224258423,
+      "generation_s": 0.6934539999999999,
+      "generation_tps": 46.14581500719587,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    }
+  ],
+  "baseline_tps": 48.43036432498289,
+  "threshold_tps": 33.90125502748802,
+  "sensor_errors": [],
+  "peak_gpu_c": 59.0,
+  "peak_cpu_c": 67.2,
+  "peak_gpu_power_w": 78.91,
+  "peak_gpu_util_pct": 95.0,
+  "min_mem_available_gib": 89.575,
+  "trace_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3g_2026-09-14/echo7/trace.jsonl",
+  "probe": {
+    "tool_attempts": 1,
+    "genuine_receipts": [
+      {
+        "result": {
+          "text": "stage3g-metadata-control"
+        },
+        "receipt": {
+          "call_id": "call_id:81aba3b922944e1e9d76883b2634eae2",
+          "tool": "echo_tool",
+          "args_hash": "3b74776e40631f158f0201e3b748d638c6628c6cdae0288d8f11759faf842c45",
+          "runtime_s": 0.000222,
+          "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3g_2026-09-14/artifacts/probe/81aba3b922944e1e9d76883b2634eae2.json"
+        }
+      }
+    ],
+    "cited_ids": [
+      "call_id:81aba3b922944e1e9d76883b2634eae2"
+    ],
+    "fabricated_ids": [],
+    "value_ok": true,
+    "metadata_warnings": [],
+    "pass": true
+  }
+}

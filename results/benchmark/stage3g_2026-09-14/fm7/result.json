@@ -1,0 +1,87 @@
+{
+  "phase": "fm7",
+  "model": "qwen2.5-7b-instruct-q4_k_m",
+  "wall_s": 7.129694070667028,
+  "exit_code": 0,
+  "timed_out": false,
+  "stop_reason": null,
+  "prompt_sha256": "3eaf6ef16d53df443a69d4f3b7e13386f2648e1bbc75c74119a23de2d72e64b4",
+  "prompt_tokens_total": 13219,
+  "generation_tokens_total": 140,
+  "model_responses": [
+    {
+      "response": "shim_001",
+      "prompt_tokens": 6354,
+      "generation_tokens": 53,
+      "backend_wall_s": 3.4599993228912354,
+      "generation_s": 1.157435,
+      "generation_tps": 45.79090834474506,
+      "timing_source": "llama.cpp predicted_ms"
+    },
+    {
+      "response": "shim_002",
+      "prompt_tokens": 6865,
+      "generation_tokens": 87,
+      "backend_wall_s": 2.1539995670318604,
+      "generation_s": 1.936007,
+      "generation_tps": 44.93785404701533,
+      "timing_source": "llama.cpp predicted_ms"
+    }
+  ],
+  "validity_checks": [
+    {
+      "response": "shim_001",
+      "prompt_tokens": 6354,
+      "generation_tokens": 53,
+      "backend_wall_s": 3.4599993228912354,
+      "generation_s": 1.157435,
+      "generation_tps": 45.79090834474506,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    }
+  ],
+  "baseline_tps": 48.07712171286765,
+  "threshold_tps": 33.65398519900735,
+  "sensor_errors": [],
+  "peak_gpu_c": 67.0,
+  "peak_cpu_c": 74.6,
+  "peak_gpu_power_w": 80.84,
+  "peak_gpu_util_pct": 95.0,
+  "min_mem_available_gib": 89.601,
+  "trace_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3g_2026-09-14/fm7/trace.jsonl",
+  "probe": {
+    "tool_attempts": 1,
+    "genuine_receipts": [
+      {
+        "result": {
+          "delta_log_probability": -0.16856098175048828,
+          "device": "cpu",
+          "method": "ESM2_single_position_masked_marginal_natural_log",
+          "model": "facebook/esm2_t33_650M_UR50D",
+          "mutant": "R",
+          "mutant_log_probability": -4.669490814208984,
+          "position": 1,
+          "precision": "float32",
+          "revision": "08e4846e537177426273712802403f7ba8261b6c",
+          "wt": "A",
+          "wt_log_probability": -4.500929832458496
+        },
+        "receipt": {
+          "call_id": "call_id:18750d4028b24e7c8877895d3ffbb787",
+          "tool": "esm2_likelihood",
+          "args_hash": "75378649f09bbce1cd4b98db941be222e99bfffcf0feb27cbfa65bf995bbc72d",
+          "runtime_s": 0.000271,
+          "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/predictive/18750d4028b24e7c8877895d3ffbb787.json",
+          "cache_hit": true
+        }
+      }
+    ],
+    "cited_ids": [
+      "call_id:18750d4028b24e7c8877895d3ffbb787"
+    ],
+    "fabricated_ids": [],
+    "value_ok": true,
+    "metadata_warnings": [],
+    "pass": true
+  }
+}

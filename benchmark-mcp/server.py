@@ -182,6 +182,24 @@ def make_predictive(presentation: str) -> MCPServer:
         return emit("predictive", "esmfold", args,
                     lambda: predictive.esmfold(**args))
 
+    if presentation == "guided":
+        @mcp.tool(name="screen_variant_fm")
+        def screen_variant_fm(sequence: str, position: int, mutant: str,
+                              pdb_path: str, chain: str = "A") -> dict:
+            """Guided FM workflow: ESM-2 650M mutation score and ESM-IF1 backbone score."""
+            args = locals()
+            identity = {**args, "esm2_model": predictive.ESM2_MODEL,
+                        "esm2_revision": predictive.ESM2_REVISION,
+                        "esm_if_checkpoint_sha256":
+                        "be4ba36edec22a9bfaa4946ff6b2815f1f19d8a3d7e0eada8b796d5a0eae9fd4"}
+            def compute() -> dict:
+                e2 = predictive.esm2_likelihood(sequence, position, mutant)
+                changed = sequence[:position-1] + mutant + sequence[position:]
+                inverse = generative.esm_if(pdb_path=pdb_path, chain=chain, sequence=changed)
+                return {"esm2_likelihood": e2, "esm_if": inverse,
+                        "note": "Model plausibility scores, not measured fitness or stability."}
+            return emit("predictive", "screen_variant_fm", identity, compute)
+
     return mcp
 
 

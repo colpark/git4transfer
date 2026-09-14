@@ -1,0 +1,17 @@
+# Item 1 — Codex model metadata and record-mount repair
+
+14 September 2026 UTC. The Stage 3f trace began with `Model metadata for stage2b-qwen7b not found. Defaulting to fallback metadata`. We registered both subject slugs in `benchmark-mcp/stage3g_model_catalog.json` and pass it through Codex's documented `model_catalog_json` setting ([official Codex configuration reference](https://learn.chatgpt.com/docs/config-file/config-reference)). The catalog pins a 32,768-token raw and maximum context, 95% effective input window, text-only modality, no assumed reasoning mode, and normal function-tool mode. The explicit llama.cpp/Qwen Hermes-to-Responses parser remains in the provider shim; Codex's catalog has no separate “Qwen tool-call format” field. The shim's 1,200-token limit is **per model response**, not a catalog setting.
+
+| Property | Stage 3f fallback | Stage 3g registered |
+|---|---|---|
+| Metadata lookup | Missing; warning in first trace row | Both slugs resolved by `codex debug models`; no warning in echo trace |
+| Raw context | Current Codex fallback source describes 272,000 tokens, **but the Stage 3f CLI override set 32,768** | Catalog raw/max 32,768; same CLI override retained |
+| Maximum/effective window | Fallback maximum is not directly emitted by the installed binary; current upstream fallback source says 272,000 max and 95% effective | 32,768 max, 95% effective (31,129 effective tokens) |
+| Auto-compaction | CLI override 30,000 tokens | Same CLI override 30,000 |
+| Model output cap | Shim 1,200 generated tokens per response | Same shim cap; catalog has no separate max-output field in the installed config |
+| Tool format | Codex Responses request; bridge parses llama.cpp structured calls or Qwen `<tool_call>` XML | **Unchanged**. Catalog `tool_mode: null`; parser remains explicit in shim |
+| Model instructions | Stage 3f provider request text | The **same bytes** copied into the catalog as base instructions; before/after provider requests have identical instruction SHA-256 `521d9331cce5b3e9071379245ece63dfcf8ecfea7585cc600f5c1bc0ef63ea30` when rendered by `jq -r` |
+
+The exact fallback maximum context and any hidden token heuristics of the installed Codex 0.154.0 binary are **not exposed in the trace**; the upstream-source value is not asserted as a runtime measurement. The important observed point is that Stage 3f already passed a 32K override, so the missing catalog cannot alone explain its zero FM calls. The registered 7B echo probe made exactly one real call, read back the text, resolved the receipt, and emitted **zero metadata warnings** (`echo7/result.json`). Its fabricated-call-ID check was negative. The same short one-tool probe is retained for 30B.
+
+An independent record-mount defect was also repaired before further cells: `pilot_record_server.py` previously accepted only paths under `stage4pilot_2026-09-13`; Stage 3f wrote to `stage3f_2026-09-14`, so **`submit_answer` was absent from the model-visible grant** in that cell. The server now accepts only the three explicit pilot/probe output directories. A Stage 3g direct positive `log_note` and must-fail empty note both passed, with a resolving receipt (`direct_controls.json`). No prompt, scoring rule, metric or arm grant was changed.

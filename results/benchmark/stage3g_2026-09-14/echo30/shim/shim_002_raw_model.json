@@ -1,0 +1,37 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The echo tool was called with the text `stage3g-metadata-control`. Here's the result:\n\n- **Returned text**: `stage3g-metadata-control`  \n- **Receipt call_id**: `call_id:7fb1227ab9b94ecb9d06af73820adea9`  \n\nThe operation completed successfully with no errors.",
+        "reasoning_content": "Okay, let me process what just happened here. The user asked me to call the echo_tool with the text \"stage3g-metadata-control\". I did that, and the response came back with some details.\n\nFirst, I need to make sure I understand the output. The tool returned the same text I provided, which makes sense because an echo tool just returns what it's given. The 'result' field has \"text\": \"stage3g-metadata-control\", so that's straightforward.\n\nNext, the 'receipt' part includes a call_id, which is \"call_id:7fb1227ab9b94ecb9d06af73820adea9\". The user wanted me to report the returned text and the exact receipt call_id. So I need to present both of those pieces of information clearly.\n\nI should check if there's any error, but the 'error' field is null, so everything went smoothly. The artifact_path is the path where the result is stored, but the user didn't ask for that, so maybe I don't need to mention it unless necessary.\n\nPutting it all together, my response should state that the echo tool returned the text \"stage3g-metadata-control\" and include the call_id from the receipt. I'll make sure to format it clearly, maybe bullet points as per the guidelines, and keep it concise as per the user's request.\n"
+      }
+    }
+  ],
+  "created": 1789357409,
+  "model": "/home/aid1/models/stage3g/Qwen3-30B-A3B-Q4_K_M.gguf",
+  "system_fingerprint": "b1-4a89937",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 372,
+    "prompt_tokens": 6581,
+    "total_tokens": 6953,
+    "prompt_tokens_details": {
+      "cached_tokens": 6294
+    }
+  },
+  "id": "chatcmpl-yX5xAdYgwu9YkvQtCHHMzU4ku1ZIIK40",
+  "timings": {
+    "cache_n": 6294,
+    "prompt_n": 287,
+    "prompt_ms": 263.931,
+    "prompt_per_token_ms": 0.9196202090592334,
+    "prompt_per_second": 1087.4054203560781,
+    "predicted_n": 372,
+    "predicted_ms": 5410.515,
+    "predicted_per_token_ms": 14.583598382749328,
+    "predicted_per_second": 68.5701823209066
+  }
+}

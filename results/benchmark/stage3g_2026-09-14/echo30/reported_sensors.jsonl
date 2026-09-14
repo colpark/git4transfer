@@ -1,0 +1,8 @@
+{"time_unix": 1789357393.1006951, "gpu_util_pct": 94.0, "gpu_c": 61.0, "gpu_tlimit_margin_c": 30.0, "gpu_power_w": 89.15, "cpu_zone0_c": 64.7, "cpu_zone4_c": 63.6, "mem_available_gib": 74.471}
+{"time_unix": 1789357395.464338, "gpu_util_pct": 93.0, "gpu_c": 62.0, "gpu_tlimit_margin_c": 27.0, "gpu_power_w": 90.19, "cpu_zone0_c": 69.8, "cpu_zone4_c": 67.5, "mem_available_gib": 74.47}
+{"time_unix": 1789357397.8676329, "gpu_util_pct": 91.0, "gpu_c": 58.0, "gpu_tlimit_margin_c": 36.0, "gpu_power_w": 56.76, "cpu_zone0_c": 69.0, "cpu_zone4_c": 69.0, "mem_available_gib": 74.475}
+{"time_unix": 1789357400.273188, "gpu_util_pct": 92.0, "gpu_c": 59.0, "gpu_tlimit_margin_c": 35.0, "gpu_power_w": 57.18, "cpu_zone0_c": 69.9, "cpu_zone4_c": 69.9, "mem_available_gib": 74.468}
+{"time_unix": 1789357403.037275, "gpu_util_pct": 91.0, "gpu_c": 60.0, "gpu_tlimit_margin_c": 34.0, "gpu_power_w": 57.49, "cpu_zone0_c": 70.5, "cpu_zone4_c": 70.5, "mem_available_gib": 74.45}
+{"time_unix": 1789357405.4398196, "gpu_util_pct": 87.0, "gpu_c": 60.0, "gpu_tlimit_margin_c": 33.0, "gpu_power_w": 56.68, "cpu_zone0_c": 71.6, "cpu_zone4_c": 71.6, "mem_available_gib": 74.456}
+{"time_unix": 1789357407.8453598, "gpu_util_pct": 87.0, "gpu_c": 61.0, "gpu_tlimit_margin_c": 33.0, "gpu_power_w": 57.22, "cpu_zone0_c": 72.3, "cpu_zone4_c": 72.3, "mem_available_gib": 74.439}
+{"time_unix": 1789357410.2104836, "gpu_util_pct": 87.0, "gpu_c": 55.0, "gpu_tlimit_margin_c": 40.0, "gpu_power_w": 34.59, "cpu_zone0_c": 66.6, "cpu_zone4_c": 66.6, "mem_available_gib": 74.438}

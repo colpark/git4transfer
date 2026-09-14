@@ -1,0 +1,34 @@
+{
+  "source_tool_count": 19,
+  "forwarded_function_count": 1,
+  "forwarded_tool_block_bytes": 233,
+  "source_tool_block_bytes": 70957,
+  "allowed_namespaces": [
+    "mcp__stage3g_echo"
+  ],
+  "raw_model_content": "The text \"stage3g-metadata-control\" was echoed back successfully. The exact receipt call ID is `call_id:81aba3b922944e1e9d76883b2634eae2`.",
+  "raw_model_tool_calls": null,
+  "parsed_items": [
+    {
+      "id": "msg_7dac02d68724470d8f8da419aadb369e",
+      "type": "message",
+      "status": "completed",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "The text \"stage3g-metadata-control\" was echoed back successfully. The exact receipt call ID is `call_id:81aba3b922944e1e9d76883b2634eae2`.",
+          "annotations": []
+        }
+      ]
+    }
+  ],
+  "backend_usage": {
+    "completion_tokens": 55,
+    "prompt_tokens": 6592,
+    "total_tokens": 6647,
+    "prompt_tokens_details": {
+      "cached_tokens": 6325
+    }
+  }
+}

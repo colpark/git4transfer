@@ -87,6 +87,7 @@ class Handler(BaseHTTPRequestHandler):
     output: Path
     allowed: set[str]
     backend: str
+    model: str
     lock = threading.Lock()
     sequence = 0
 
@@ -119,7 +120,7 @@ class Handler(BaseHTTPRequestHandler):
             tools, names = flatten_tools(payload, self.allowed)
             if not tools:
                 raise ValueError("no allowed MCP tool in provider request")
-            chat = {"model": MODEL,
+            chat = {"model": self.model,
                     "messages": chat_messages(payload, names),
                     "tools": tools, "tool_choice": "auto",
                     "temperature": self.temperature, "seed": self.seed,
@@ -240,6 +241,7 @@ def main() -> None:
     parser.add_argument("--seed", type=int, required=True)
     parser.add_argument("--temperature", type=float, default=0.2)
     parser.add_argument("--max-tokens", type=int, default=3072)
+    parser.add_argument("--model", default=MODEL)
     args = parser.parse_args()
     args.output.mkdir(parents=True, exist_ok=True)
     Handler.output = args.output
@@ -248,6 +250,7 @@ def main() -> None:
     Handler.seed = args.seed
     Handler.temperature = args.temperature
     Handler.max_tokens = args.max_tokens
+    Handler.model = args.model
     server = ThreadingHTTPServer(("127.0.0.1", args.port), Handler)
     print(f"Stage 2b Responses shim listening on 127.0.0.1:{args.port}", flush=True)
     server.serve_forever()

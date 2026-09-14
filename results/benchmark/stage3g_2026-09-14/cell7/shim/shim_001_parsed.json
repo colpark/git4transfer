@@ -1,0 +1,45 @@
+{
+  "source_tool_count": 25,
+  "forwarded_function_count": 18,
+  "forwarded_tool_block_bytes": 5703,
+  "source_tool_block_bytes": 76619,
+  "allowed_namespaces": [
+    "mcp__rescue_analysis",
+    "mcp__rescue_classical",
+    "mcp__rescue_generative",
+    "mcp__rescue_lit",
+    "mcp__rescue_physics",
+    "mcp__rescue_predictive",
+    "mcp__rescue_record"
+  ],
+  "raw_model_content": "I will proceed by evaluating the candidate single substitutions based on the provided protein sequence and the reference homolog FASTA and structure PDB. I will use the available tools to score the substitutions and rank them accordingly. Let's begin by retrieving homologs for the protein sequence using the `mcp__rescue_classical__mmseqs_search` function.\n\n",
+  "raw_model_tool_calls": [
+    {
+      "type": "function",
+      "function": {
+        "name": "mcp__rescue_classical__mmseqs_search",
+        "arguments": "{\"reference_fasta\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_fastas/item02_homologs.fasta\", \"sequence\": \"MLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALDLFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPKFEQPRSEIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIREEVMHFDIDPSTAT\", \"max_hits\": 10}"
+      },
+      "id": "cuM0Q0TueD9lNf6L8GlaAs7gYY8nojDK"
+    }
+  ],
+  "parsed_items": [
+    {
+      "id": "fc_3c7da6fdc8bf4e9ab9280c30a0c50def",
+      "type": "function_call",
+      "status": "completed",
+      "call_id": "cuM0Q0TueD9lNf6L8GlaAs7gYY8nojDK",
+      "namespace": "mcp__rescue_classical",
+      "name": "mmseqs_search",
+      "arguments": "{\"reference_fasta\":\"/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_fastas/item02_homologs.fasta\",\"sequence\":\"MLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALDLFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPKFEQPRSEIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIREEVMHFDIDPSTAT\",\"max_hits\":10}"
+    }
+  ],
+  "backend_usage": {
+    "completion_tokens": 254,
+    "prompt_tokens": 8941,
+    "total_tokens": 9195,
+    "prompt_tokens_details": {
+      "cached_tokens": 5
+    }
+  }
+}

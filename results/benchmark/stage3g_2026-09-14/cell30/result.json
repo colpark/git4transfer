@@ -1,0 +1,57 @@
+{
+  "phase": "cell30",
+  "model": "Qwen3-30B-A3B-Q4_K_M",
+  "wall_s": 26.609749090857804,
+  "exit_code": 0,
+  "timed_out": false,
+  "stop_reason": null,
+  "prompt_sha256": "6069ed83a2549ab80a836e3b564c5251b4d6b911bfd6fc5eead6e489e4491cda",
+  "prompt_tokens_total": 8941,
+  "generation_tokens_total": 1200,
+  "cap_exhausted_responses": ["shim_001_raw_model.json"],
+  "model_responses": [
+    {
+      "response": "shim_001",
+      "prompt_tokens": 8941,
+      "generation_tokens": 1200,
+      "backend_wall_s": 25.2690269947052,
+      "generation_s": 18.603049,
+      "generation_tps": 64.50555497649874,
+      "timing_source": "llama.cpp predicted_ms"
+    }
+  ],
+  "validity_checks": [
+    {
+      "response": "shim_001",
+      "prompt_tokens": 8941,
+      "generation_tokens": 1200,
+      "backend_wall_s": 25.2690269947052,
+      "generation_s": 18.603049,
+      "generation_tps": 64.50555497649874,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    }
+  ],
+  "baseline_tps": 85.93389669268629,
+  "threshold_tps": 60.1537276848804,
+  "sensor_errors": [],
+  "peak_gpu_c": 66.0,
+  "peak_cpu_c": 75.9,
+  "peak_gpu_power_w": 92.33,
+  "peak_gpu_util_pct": 95.0,
+  "min_mem_available_gib": 74.141,
+  "trace_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3g_2026-09-14/cell30/trace.jsonl",
+  "calls": {
+    "attempted": {},
+    "succeeded": {},
+    "failed": {},
+    "receipt_ids": []
+  },
+  "submission_path": null,
+  "submitted": false,
+  "fabricated_ids": [],
+  "fabricated_id_rate": null,
+  "rejected_populated": null,
+  "evaluation_depth": null,
+  "answer_contract_status": "UNDEMONSTRATED"
+}

@@ -1,0 +1,35 @@
+{
+  "repeats": [
+    {
+      "prompt_tokens": 49,
+      "generation_tokens": 128,
+      "generation_s": 2.639094,
+      "wall_s": 2.6925342874601483,
+      "tps": 48.50149331550903,
+      "timing_source": "llama.cpp predicted_ms"
+    },
+    {
+      "prompt_tokens": 49,
+      "generation_tokens": 128,
+      "generation_s": 2.643835,
+      "wall_s": 2.676334496587515,
+      "tps": 48.41451906038009,
+      "timing_source": "llama.cpp predicted_ms"
+    },
+    {
+      "prompt_tokens": 49,
+      "generation_tokens": 128,
+      "generation_s": 2.6429699999999996,
+      "wall_s": 2.672135173343122,
+      "tps": 48.43036432498289,
+      "timing_source": "llama.cpp predicted_ms"
+    }
+  ],
+  "median_tps": 48.43036432498289,
+  "threshold_tps": 33.90125502748802,
+  "window_s": 60,
+  "controls": {
+    "synthetic_throttle_aborts": true,
+    "synthetic_healthy_passes": true
+  }
+}

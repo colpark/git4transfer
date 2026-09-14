@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The text \"stage3g-metadata-control\" was echoed back successfully. The exact receipt call ID is `call_id:81aba3b922944e1e9d76883b2634eae2`."
+      }
+    }
+  ],
+  "created": 1789356851,
+  "model": "/home/aid1/.ollama/models/blobs/sha256-2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+  "system_fingerprint": "b1-4a89937",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 55,
+    "prompt_tokens": 6592,
+    "total_tokens": 6647,
+    "prompt_tokens_details": {
+      "cached_tokens": 6325
+    }
+  },
+  "id": "chatcmpl-pYVi9QVE0LAVzHUMgvADXRP4fkWkpqxQ",
+  "timings": {
+    "cache_n": 6325,
+    "prompt_n": 267,
+    "prompt_ms": 131.095,
+    "prompt_per_token_ms": 0.49099250936329586,
+    "prompt_per_second": 2036.690949311568,
+    "predicted_n": 55,
+    "predicted_ms": 1207.582,
+    "predicted_per_token_ms": 22.36262962962963,
+    "predicted_per_second": 44.71746018075791
+  }
+}
