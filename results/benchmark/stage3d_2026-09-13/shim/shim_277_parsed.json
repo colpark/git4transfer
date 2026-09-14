@@ -1,0 +1,46 @@
+{
+  "source_tool_count": 26,
+  "forwarded_function_count": 19,
+  "forwarded_tool_block_bytes": 5921,
+  "source_tool_block_bytes": 77764,
+  "allowed_namespaces": [
+    "mcp__rescue_analysis",
+    "mcp__rescue_classical",
+    "mcp__rescue_generative",
+    "mcp__rescue_lit",
+    "mcp__rescue_physics",
+    "mcp__rescue_predictive",
+    "mcp__rescue_record",
+    "mcp__stage2b_probe"
+  ],
+  "raw_model_content": "",
+  "raw_model_tool_calls": [
+    {
+      "type": "function",
+      "function": {
+        "name": "echo_tool",
+        "arguments": "{\"text\": \"stage3d-parser-control\"}"
+      },
+      "id": "XIyeuHaHvYBPROR9DRbD1BJfdEqJKpOk"
+    }
+  ],
+  "parsed_items": [
+    {
+      "id": "fc_56554bc7c8254a5b84a079676aa3270b",
+      "type": "function_call",
+      "status": "completed",
+      "call_id": "XIyeuHaHvYBPROR9DRbD1BJfdEqJKpOk",
+      "namespace": "mcp__stage2b_probe",
+      "name": "echo_tool",
+      "arguments": "{\"text\":\"stage3d-parser-control\"}"
+    }
+  ],
+  "backend_usage": {
+    "completion_tokens": 24,
+    "prompt_tokens": 9113,
+    "total_tokens": 9137,
+    "prompt_tokens_details": {
+      "cached_tokens": 9112
+    }
+  }
+}

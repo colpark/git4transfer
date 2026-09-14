@@ -1,0 +1,46 @@
+{
+  "choices": [
+    {
+      "finish_reason": "tool_calls",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "tool_calls": [
+          {
+            "type": "function",
+            "function": {
+              "name": "echo_tool",
+              "arguments": "{\"text\": \"stage3d-parser-control\"}"
+            },
+            "id": "S93QXBcu7U9ISszCL1XfT2TPU8lLPTDH"
+          }
+        ]
+      }
+    }
+  ],
+  "created": 1789347137,
+  "model": "/home/aid1/.ollama/models/blobs/sha256-2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+  "system_fingerprint": "b1-4a89937",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 24,
+    "prompt_tokens": 8032,
+    "total_tokens": 8056,
+    "prompt_tokens_details": {
+      "cached_tokens": 4615
+    }
+  },
+  "id": "chatcmpl-hgUrHO19PoRGqbYCqrtxEQfNyl3Cz2gO",
+  "timings": {
+    "cache_n": 4615,
+    "prompt_n": 3417,
+    "prompt_ms": 1302.869,
+    "prompt_per_token_ms": 0.3812903131401814,
+    "prompt_per_second": 2622.6734997916137,
+    "predicted_n": 24,
+    "predicted_ms": 542.277,
+    "predicted_per_token_ms": 23.57726086956522,
+    "predicted_per_second": 42.413747955380735
+  }
+}

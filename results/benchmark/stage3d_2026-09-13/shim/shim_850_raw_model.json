@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The text \"stage3d-parser-control\" has been echoed. The receipt for this call includes the call ID `call_id:27b8c0155f8b4260952761cf2b6d4369`."
+      }
+    }
+  ],
+  "created": 1789348891,
+  "model": "/home/aid1/.ollama/models/blobs/sha256-2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+  "system_fingerprint": "b1-4a89937",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 59,
+    "prompt_tokens": 9401,
+    "total_tokens": 9460,
+    "prompt_tokens_details": {
+      "cached_tokens": 9136
+    }
+  },
+  "id": "chatcmpl-6YjsjE1qI35GDScB9xbYHmgtfRCyhwh8",
+  "timings": {
+    "cache_n": 9136,
+    "prompt_n": 265,
+    "prompt_ms": 144.413,
+    "prompt_per_token_ms": 0.5449547169811321,
+    "prompt_per_second": 1835.0148532334345,
+    "predicted_n": 59,
+    "predicted_ms": 1387.213,
+    "predicted_per_token_ms": 23.91746551724138,
+    "predicted_per_second": 41.81045016158298
+  }
+}

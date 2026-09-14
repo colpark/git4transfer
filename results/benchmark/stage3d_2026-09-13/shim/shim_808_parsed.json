@@ -1,0 +1,41 @@
+{
+  "source_tool_count": 26,
+  "forwarded_function_count": 19,
+  "forwarded_tool_block_bytes": 5921,
+  "source_tool_block_bytes": 77960,
+  "allowed_namespaces": [
+    "mcp__rescue_analysis",
+    "mcp__rescue_classical",
+    "mcp__rescue_generative",
+    "mcp__rescue_lit",
+    "mcp__rescue_physics",
+    "mcp__rescue_predictive",
+    "mcp__rescue_record",
+    "mcp__stage2b_probe"
+  ],
+  "raw_model_content": "The text \"stage3d-parser-control\" has been echoed. The receipt for this call includes the following details:\n\n- Call ID: call_id:51e34e88bcdd4a5e9b369293d3590f67\n- Tool: echo_tool\n- Runtime: 0.000279 seconds\n\nWould you like to proceed with any further steps involving this text or the variants provided?",
+  "raw_model_tool_calls": null,
+  "parsed_items": [
+    {
+      "id": "msg_a0e16e196981431dbce20fca0aec6ee6",
+      "type": "message",
+      "status": "completed",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "The text \"stage3d-parser-control\" has been echoed. The receipt for this call includes the following details:\n\n- Call ID: call_id:51e34e88bcdd4a5e9b369293d3590f67\n- Tool: echo_tool\n- Runtime: 0.000279 seconds\n\nWould you like to proceed with any further steps involving this text or the variants provided?",
+          "annotations": []
+        }
+      ]
+    }
+  ],
+  "backend_usage": {
+    "completion_tokens": 99,
+    "prompt_tokens": 9399,
+    "total_tokens": 9498,
+    "prompt_tokens_details": {
+      "cached_tokens": 9136
+    }
+  }
+}

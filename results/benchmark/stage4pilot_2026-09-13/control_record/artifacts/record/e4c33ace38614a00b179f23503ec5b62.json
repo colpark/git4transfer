@@ -1,0 +1,19 @@
+{
+  "args": {
+    "answer": {
+      "x": 2
+    },
+    "item_id": "control"
+  },
+  "error": "ValueError: item_id has already been submitted",
+  "receipt": {
+    "args_hash": "a9aee38ca4cd375411c314dda5d5d9e786c0e437af2d37811f5ce9fd27669447",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/control_record/artifacts/record/e4c33ace38614a00b179f23503ec5b62.json",
+    "cache_hit": false,
+    "call_id": "call_id:e4c33ace38614a00b179f23503ec5b62",
+    "runtime_s": 0.000184,
+    "tool": "submit_answer"
+  },
+  "result": null,
+  "server": "record"
+}

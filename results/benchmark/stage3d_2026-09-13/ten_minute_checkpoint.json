@@ -1,0 +1,14 @@
+{
+  "phase": "ten_minute_sustained",
+  "elapsed_s": 603.43,
+  "attempts": 144,
+  "successes": 144,
+  "sample_count": 252,
+  "max_gpu_util_pct": 95.0,
+  "max_gpu_c": 69.0,
+  "steady_gpu_c_last_5min_median": 65.0,
+  "min_gpu_tlimit_margin_c": 21.0,
+  "max_gpu_power_w": 56.15,
+  "max_cpu_c": 83.8,
+  "min_mem_available_gib": 88.292
+}

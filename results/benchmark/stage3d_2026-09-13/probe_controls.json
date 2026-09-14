@@ -1,0 +1,9 @@
+{
+  "tool_listed": true,
+  "positive_value": true,
+  "positive_receipt_resolves": true,
+  "negative_input_errors": true,
+  "forged_id_rejected": true,
+  "attempted_calls": 2,
+  "successful_calls": 1
+}

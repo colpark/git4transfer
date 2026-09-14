@@ -1,0 +1,326 @@
+{
+  "seed": 42,
+  "quartile_size": 37,
+  "items": [
+    {
+      "pilot_item": 1,
+      "quartile": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "cluster_50": "96",
+      "n_candidates": 100,
+      "chance_p_at_10": 0.1,
+      "floor_c_p_at_10": 0.1,
+      "floor_c_rho": 0.10257671954276908,
+      "floor_m_p_at_10": 0.2,
+      "floor_m_rho": 0.02832934286704821,
+      "homolog_fasta_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_fastas/item01_homologs.fasta",
+      "homolog_fasta_sha256": "6ab917e7352891fe1aa889da16582303f6033a5a02a9505e56ce77718387b08c",
+      "reference_pdb_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_pdbs/item01.pdb",
+      "reference_pdb_sha256": "f49375f0e6c2f83c84229d48b17435d10502301258c5fbfe7bf7f1dc8f788206",
+      "source_pdb_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/A0A1I9GEU1_NEIME.pdb",
+      "source_pdb_sha256": "f49375f0e6c2f83c84229d48b17435d10502301258c5fbfe7bf7f1dc8f788206",
+      "prompt_files": {
+        "1": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item01_arm1.txt",
+          "sha256": "4d9a722ece8208f5eb341b600bbdbf675ca071f23e3e645fc61926086e38c1f2"
+        },
+        "2": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item01_arm2.txt",
+          "sha256": "4d9a722ece8208f5eb341b600bbdbf675ca071f23e3e645fc61926086e38c1f2"
+        },
+        "3": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item01_arm3.txt",
+          "sha256": "4d9a722ece8208f5eb341b600bbdbf675ca071f23e3e645fc61926086e38c1f2"
+        },
+        "3F": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item01_arm3F.txt",
+          "sha256": "33ac97ab269c9abf4c10099521eea015ddc9038c3f4a9b584c6dcc446b9975c3"
+        },
+        "3L": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item01_arm3L.txt",
+          "sha256": "1c8f41350760c1abfd097d5b743c2d5d6dd88ac309ea1593a414ae990c32b376"
+        }
+      }
+    },
+    {
+      "pilot_item": 2,
+      "quartile": 3,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "cluster_50": "93",
+      "n_candidates": 100,
+      "chance_p_at_10": 0.1,
+      "floor_c_p_at_10": 0.2,
+      "floor_c_rho": 0.3018605251901163,
+      "floor_m_p_at_10": 0.2,
+      "floor_m_rho": 0.5287454960261144,
+      "homolog_fasta_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_fastas/item02_homologs.fasta",
+      "homolog_fasta_sha256": "675bad547ed9b0ccbbc7db099b25265d1079270dd92a87c3a0f88032044163a7",
+      "reference_pdb_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_pdbs/item02.pdb",
+      "reference_pdb_sha256": "d572e1ddd3d1b0bdb30a7ee21761e3ad9e73223b29d7e257c0c65745d9f044ef",
+      "source_pdb_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/AACC1_PSEAI.pdb",
+      "source_pdb_sha256": "d572e1ddd3d1b0bdb30a7ee21761e3ad9e73223b29d7e257c0c65745d9f044ef",
+      "prompt_files": {
+        "1": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item02_arm1.txt",
+          "sha256": "6069ed83a2549ab80a836e3b564c5251b4d6b911bfd6fc5eead6e489e4491cda"
+        },
+        "2": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item02_arm2.txt",
+          "sha256": "6069ed83a2549ab80a836e3b564c5251b4d6b911bfd6fc5eead6e489e4491cda"
+        },
+        "3": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item02_arm3.txt",
+          "sha256": "6069ed83a2549ab80a836e3b564c5251b4d6b911bfd6fc5eead6e489e4491cda"
+        },
+        "3F": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item02_arm3F.txt",
+          "sha256": "af320d5e141968b21c04291e10b368f5b6f52f9bc388624bf9af9a92f03e6062"
+        },
+        "3L": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item02_arm3L.txt",
+          "sha256": "6dc92a2fc1da7a0c1af4ee0be67277993e1b5701f479e673bbf23b3ca2d7f061"
+        }
+      }
+    },
+    {
+      "pilot_item": 3,
+      "quartile": 4,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "cluster_50": "91",
+      "n_candidates": 100,
+      "chance_p_at_10": 0.1,
+      "floor_c_p_at_10": 0.3,
+      "floor_c_rho": 0.6966340384537373,
+      "floor_m_p_at_10": 0.3,
+      "floor_m_rho": 0.6352062941580294,
+      "homolog_fasta_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_fastas/item03_homologs.fasta",
+      "homolog_fasta_sha256": "022e08c09b5823c019c3e46092f696f5ea3461d3d25aa52aa2e3e33db1b2b6fc",
+      "reference_pdb_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_pdbs/item03.pdb",
+      "reference_pdb_sha256": "549853e42d63b132ec70511322fb5d8376b0eb2becdba963403db1e771454830",
+      "source_pdb_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/B2L11_HUMAN.pdb",
+      "source_pdb_sha256": "549853e42d63b132ec70511322fb5d8376b0eb2becdba963403db1e771454830",
+      "prompt_files": {
+        "1": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item03_arm1.txt",
+          "sha256": "bb44d064269b8d227bccb3857387a0f789bf229fd5ca8481cce495e5afc560a3"
+        },
+        "2": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item03_arm2.txt",
+          "sha256": "bb44d064269b8d227bccb3857387a0f789bf229fd5ca8481cce495e5afc560a3"
+        },
+        "3": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item03_arm3.txt",
+          "sha256": "bb44d064269b8d227bccb3857387a0f789bf229fd5ca8481cce495e5afc560a3"
+        },
+        "3F": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item03_arm3F.txt",
+          "sha256": "e4069d9c7202c01a1d1c185b83382151322c8b49f4ae8d57fdb8654e5153bdac"
+        },
+        "3L": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item03_arm3L.txt",
+          "sha256": "5d70a294af166c3eebb0728ac881d368ccc29ab29325415b5c9c6ac207606337"
+        }
+      }
+    },
+    {
+      "pilot_item": 4,
+      "quartile": 2,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "cluster_50": "65",
+      "n_candidates": 100,
+      "chance_p_at_10": 0.1,
+      "floor_c_p_at_10": 0.0,
+      "floor_c_rho": 0.4290176334529809,
+      "floor_m_p_at_10": 0.2,
+      "floor_m_rho": 0.4635275550937048,
+      "homolog_fasta_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_fastas/item04_homologs.fasta",
+      "homolog_fasta_sha256": "479604d7ec5634779cf1d8af055fdae24920b9add025e314a24e2fbbfef678f4",
+      "reference_pdb_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_pdbs/item04.pdb",
+      "reference_pdb_sha256": "2053518a782c1b6936cf9cfd62b53d63dc831ebbbcea5aa03441addf0c6c07ae",
+      "source_pdb_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/CCR5_HUMAN.pdb",
+      "source_pdb_sha256": "2053518a782c1b6936cf9cfd62b53d63dc831ebbbcea5aa03441addf0c6c07ae",
+      "prompt_files": {
+        "1": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item04_arm1.txt",
+          "sha256": "fd0bf10fa67e97992a452da6ed07c3c15542fe59d680db463261d28eb40635c1"
+        },
+        "2": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item04_arm2.txt",
+          "sha256": "fd0bf10fa67e97992a452da6ed07c3c15542fe59d680db463261d28eb40635c1"
+        },
+        "3": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item04_arm3.txt",
+          "sha256": "fd0bf10fa67e97992a452da6ed07c3c15542fe59d680db463261d28eb40635c1"
+        },
+        "3F": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item04_arm3F.txt",
+          "sha256": "468642c6fb47b604001ff49580c1b0e4711c76876f3ce1464ada839238bbfb97"
+        },
+        "3L": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item04_arm3L.txt",
+          "sha256": "25fef5cccf48003af672a0880b285cddee8504bafd36286b13d81375569206b3"
+        }
+      }
+    },
+    {
+      "pilot_item": 5,
+      "quartile": 1,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "cluster_50": "14",
+      "n_candidates": 100,
+      "chance_p_at_10": 0.1,
+      "floor_c_p_at_10": 0.0,
+      "floor_c_rho": 0.14607361899028032,
+      "floor_m_p_at_10": 0.0,
+      "floor_m_rho": 0.15998079675531365,
+      "homolog_fasta_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_fastas/item05_homologs.fasta",
+      "homolog_fasta_sha256": "8622605ac56476b7a478879520a01af1f30aedc3b2958d98bc07c60b00e6cc30",
+      "reference_pdb_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_pdbs/item05.pdb",
+      "reference_pdb_sha256": "00aee90491d11cc50ae59f569479980d797c4709b844d21ddbb8b150ee6e48b0",
+      "source_pdb_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/HMDH_HUMAN.pdb",
+      "source_pdb_sha256": "00aee90491d11cc50ae59f569479980d797c4709b844d21ddbb8b150ee6e48b0",
+      "prompt_files": {
+        "1": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item05_arm1.txt",
+          "sha256": "cd1c7db6ee9417df5666744c8237c536775d1f036a2a118c3093b9de4886abd4"
+        },
+        "2": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item05_arm2.txt",
+          "sha256": "cd1c7db6ee9417df5666744c8237c536775d1f036a2a118c3093b9de4886abd4"
+        },
+        "3": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item05_arm3.txt",
+          "sha256": "cd1c7db6ee9417df5666744c8237c536775d1f036a2a118c3093b9de4886abd4"
+        },
+        "3F": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item05_arm3F.txt",
+          "sha256": "55bc4691d7a4eaeb64efcdcdc777e2623c1e8aaee66904304dbba361240964c7"
+        },
+        "3L": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item05_arm3L.txt",
+          "sha256": "34e30f399808b795630048cd88e779bca8a6ba9e2533d7221ddf38fc5d2094cf"
+        }
+      }
+    },
+    {
+      "pilot_item": 6,
+      "quartile": 3,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "cluster_50": "115",
+      "n_candidates": 100,
+      "chance_p_at_10": 0.1,
+      "floor_c_p_at_10": 0.0,
+      "floor_c_rho": 0.3164408839409891,
+      "floor_m_p_at_10": 0.0,
+      "floor_m_rho": 0.545537193058256,
+      "homolog_fasta_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_fastas/item06_homologs.fasta",
+      "homolog_fasta_sha256": "5ef9b77c053c7c2408fd53a3b42a892d8da0f0e84d4b9ec27488bf859b2f99c6",
+      "reference_pdb_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_pdbs/item06.pdb",
+      "reference_pdb_sha256": "c921aadaa0ebb02d31d4cf77dc1aafe0c3cfa33d75dead6b573f360601821b58",
+      "source_pdb_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/IF1_ECOLI.pdb",
+      "source_pdb_sha256": "c921aadaa0ebb02d31d4cf77dc1aafe0c3cfa33d75dead6b573f360601821b58",
+      "prompt_files": {
+        "1": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item06_arm1.txt",
+          "sha256": "f85c85d6e803dbb76653f99d5685a3c1edd5ac3060845853c06a735a3864f451"
+        },
+        "2": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item06_arm2.txt",
+          "sha256": "f85c85d6e803dbb76653f99d5685a3c1edd5ac3060845853c06a735a3864f451"
+        },
+        "3": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item06_arm3.txt",
+          "sha256": "f85c85d6e803dbb76653f99d5685a3c1edd5ac3060845853c06a735a3864f451"
+        },
+        "3F": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item06_arm3F.txt",
+          "sha256": "5ca467811b9b3c94e1a610b0a357a977b3eac4aba2bace66d6538f87ae54622c"
+        },
+        "3L": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item06_arm3L.txt",
+          "sha256": "ad7daf1f0ec6493453fea32517e7149b9394a5230d7344068caae1fa8c7284c8"
+        }
+      }
+    },
+    {
+      "pilot_item": 7,
+      "quartile": 4,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "cluster_50": "135",
+      "n_candidates": 100,
+      "chance_p_at_10": 0.1,
+      "floor_c_p_at_10": 0.2,
+      "floor_c_rho": 0.512427690498006,
+      "floor_m_p_at_10": 0.3,
+      "floor_m_rho": 0.7628051845750489,
+      "homolog_fasta_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_fastas/item07_homologs.fasta",
+      "homolog_fasta_sha256": "2f7303ee670836488881ab4147c786b01bc9b5bc90e3fa6b4d79777e6c2d569f",
+      "reference_pdb_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_pdbs/item07.pdb",
+      "reference_pdb_sha256": "092b35ded11e72a7d16b2ed063f623c79598d617fef8cfc7ec3dfa60d31d3e87",
+      "source_pdb_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/NKX31_HUMAN.pdb",
+      "source_pdb_sha256": "092b35ded11e72a7d16b2ed063f623c79598d617fef8cfc7ec3dfa60d31d3e87",
+      "prompt_files": {
+        "1": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item07_arm1.txt",
+          "sha256": "c47314073631a8517f99ac12e399232d97534bbaffb9aeaaee8915a3375cc759"
+        },
+        "2": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item07_arm2.txt",
+          "sha256": "c47314073631a8517f99ac12e399232d97534bbaffb9aeaaee8915a3375cc759"
+        },
+        "3": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item07_arm3.txt",
+          "sha256": "c47314073631a8517f99ac12e399232d97534bbaffb9aeaaee8915a3375cc759"
+        },
+        "3F": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item07_arm3F.txt",
+          "sha256": "de625a4656d6389639fbfa365028c743d90a5f40309d99c70652110b966b0d24"
+        },
+        "3L": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item07_arm3L.txt",
+          "sha256": "eb81a7111b67173da32101e10765047b6387ad8f13967a998fdcf5fd4050d34e"
+        }
+      }
+    },
+    {
+      "pilot_item": 8,
+      "quartile": 2,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "cluster_50": "49",
+      "n_candidates": 100,
+      "chance_p_at_10": 0.1,
+      "floor_c_p_at_10": 0.3,
+      "floor_c_rho": 0.3834176516924357,
+      "floor_m_p_at_10": 0.3,
+      "floor_m_rho": 0.4583324583315525,
+      "homolog_fasta_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_fastas/item08_homologs.fasta",
+      "homolog_fasta_sha256": "a529076b1359e94060ecd5cf9ffb5a9caf4614d123e917e85e58d171afa757aa",
+      "reference_pdb_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_pdbs/item08.pdb",
+      "reference_pdb_sha256": "91a324a521fde27e12757516606a349d6f7ab37b7249fdeecb3716667a4b8bb6",
+      "source_pdb_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/SPG1_STRSG.pdb",
+      "source_pdb_sha256": "91a324a521fde27e12757516606a349d6f7ab37b7249fdeecb3716667a4b8bb6",
+      "prompt_files": {
+        "1": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item08_arm1.txt",
+          "sha256": "043b02a9b6a8ea6d9305d62554e5db947ff46ff12f3a38e47748c7aa305b0a1a"
+        },
+        "2": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item08_arm2.txt",
+          "sha256": "043b02a9b6a8ea6d9305d62554e5db947ff46ff12f3a38e47748c7aa305b0a1a"
+        },
+        "3": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item08_arm3.txt",
+          "sha256": "043b02a9b6a8ea6d9305d62554e5db947ff46ff12f3a38e47748c7aa305b0a1a"
+        },
+        "3F": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item08_arm3F.txt",
+          "sha256": "960e4af4ef1a4178f55e6201f78ba52eafd1a9812fef90093c6e3af7dd8782a4"
+        },
+        "3L": {
+          "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/prompts/item08_arm3L.txt",
+          "sha256": "ddfa7fd359126bd87880900599107ddffe88fa5a3872c842dfbb8447d83a80a7"
+        }
+      }
+    }
+  ]
+}

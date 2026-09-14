@@ -1,0 +1,41 @@
+{
+  "source_tool_count": 19,
+  "forwarded_function_count": 1,
+  "forwarded_tool_block_bytes": 233,
+  "source_tool_block_bytes": 71770,
+  "allowed_namespaces": [
+    "mcp__rescue_analysis",
+    "mcp__rescue_classical",
+    "mcp__rescue_generative",
+    "mcp__rescue_lit",
+    "mcp__rescue_physics",
+    "mcp__rescue_predictive",
+    "mcp__rescue_record",
+    "mcp__stage2b_probe"
+  ],
+  "raw_model_content": "The text returned by the `echo_tool` is `stage3d-parser-control`. The receipt call ID is `call_id:bda3c158f3d6472db52b3814bff09ae9`.",
+  "raw_model_tool_calls": null,
+  "parsed_items": [
+    {
+      "id": "msg_9729e13a01ed4bbebcee5f3398131aca",
+      "type": "message",
+      "status": "completed",
+      "role": "assistant",
+      "content": [
+        {
+          "type": "output_text",
+          "text": "The text returned by the `echo_tool` is `stage3d-parser-control`. The receipt call ID is `call_id:bda3c158f3d6472db52b3814bff09ae9`.",
+          "annotations": []
+        }
+      ]
+    }
+  ],
+  "backend_usage": {
+    "completion_tokens": 54,
+    "prompt_tokens": 6577,
+    "total_tokens": 6631,
+    "prompt_tokens_details": {
+      "cached_tokens": 6322
+    }
+  }
+}

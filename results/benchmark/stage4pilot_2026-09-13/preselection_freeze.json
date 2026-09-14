@@ -1,0 +1,13 @@
+{
+  "frozen_at_utc": "2026-09-14T01:23:03.183856+00:00",
+  "preregistration_sha256": "e52d3c58defd5d04db2fa2421683762869cfcab6fdcfc46fb98efcbcb547d495",
+  "source_floor_scores_sha256": "4f92dab496e5015f818e19a9cefe19eb476668a5151805bd325b823c5629ea2a",
+  "source_prompt_manifest_sha256": "ca213bc120f6d9118bb41812ce4081ed108571985244f28b47c9ef8c3266dfac",
+  "prompt_template_code_sha256": "c604a8602d0ef76f1712db4f92219a95a66f043f4c3a8b4838399ccd4f86aef0",
+  "scoring_code_sha256": "24896f361c8de45c19f2d69b99bb897b9b20cdb1735a9bb2489f047177630bcb",
+  "stage3_evaluator_sha256": "723fbf5c03831d470b54fa5d566a7782304e43900a3bed932355084aa56d7b91",
+  "stage3_floor_code_sha256": "505c59dace0369b184ba897784759c3e6e3b0c6da0418dd4256c8f7e55db6d94",
+  "runner_code_sha256": "eab6367cdfc4fd5d6da6779645aed83b5dd95b752bec006be7582ba49ebe5924",
+  "pilot_shim_sha256": "6e3213019a74418bc34c63df5e0b30184504abda06d7eb3c4686ae30d403a146",
+  "record_mount_sha256": "ad3cfdb1ab8b62abeb804b8540eec714c3185c7fa82429afbadb91e780a4d88e"
+}

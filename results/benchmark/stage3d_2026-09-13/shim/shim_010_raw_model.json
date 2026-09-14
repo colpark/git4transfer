@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The tool returned the text `stage3d-parser-control` with the exact receipt call ID `call_id:494d9ab9ca8f426eb2ffd7c962a85f46`."
+      }
+    }
+  ],
+  "created": 1789347124,
+  "model": "/home/aid1/.ollama/models/blobs/sha256-2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+  "system_fingerprint": "b1-4a89937",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 51,
+    "prompt_tokens": 7851,
+    "total_tokens": 7902,
+    "prompt_tokens_details": {
+      "cached_tokens": 7594
+    }
+  },
+  "id": "chatcmpl-chi5m13tVSEvVxq3zw6iy6PlbvC0p8Ro",
+  "timings": {
+    "cache_n": 7594,
+    "prompt_n": 257,
+    "prompt_ms": 128.774,
+    "prompt_per_token_ms": 0.5010661478599222,
+    "prompt_per_second": 1995.7444825818875,
+    "predicted_n": 51,
+    "predicted_ms": 1144.983,
+    "predicted_per_token_ms": 22.899659999999997,
+    "predicted_per_second": 43.668770628035524
+  }
+}

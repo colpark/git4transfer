@@ -1,0 +1,13 @@
+{
+  "all_pass": true,
+  "checks": {
+    "valid_top_ten_accepted": true,
+    "duplicate_top_ten_rejected": true,
+    "missing_top_ten_rejected": true,
+    "complete_ranking_accepted": true,
+    "incomplete_ranking_rejected": true,
+    "forged_receipt_counted": true,
+    "false_validation_category_rejected": true,
+    "native_out_of_grant_detected": true
+  }
+}

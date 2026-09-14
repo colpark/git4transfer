@@ -1,0 +1,1 @@
+Call echo_tool once with the string stage3d-parser-control. Report its returned text and exact receipt call_id. Do not invent a receipt.

@@ -1,0 +1,24 @@
+{
+  "results": {
+    "safe_baseline_passes": true,
+    "gpu_utilization_100_passes": true,
+    "gpu_temperature_threshold_trips": true,
+    "gpu_margin_threshold_trips": true,
+    "gpu_margin_above_threshold_passes": true,
+    "cpu_zone0_threshold_trips": true,
+    "cpu_zone4_threshold_trips": true,
+    "memory_floor_trips": true,
+    "power_threshold_trips": true,
+    "unreadable_power_trips": true,
+    "missing_sensor_trips": true
+  },
+  "all_pass": true,
+  "thresholds": {
+    "gpu_temp_c": 76.0,
+    "gpu_tlimit_margin_c": 10.0,
+    "cpu_temp_c": 85.0,
+    "mem_available_gib": 20.0,
+    "gpu_power_w": 100.0,
+    "gpu_utilization_gate": null
+  }
+}

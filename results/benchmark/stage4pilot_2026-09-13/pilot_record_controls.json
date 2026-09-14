@@ -1,0 +1,10 @@
+{
+  "all_pass": true,
+  "checks": {
+    "tool_listed": true,
+    "first_submission_accepted": true,
+    "correct_answer_stored": true,
+    "receipt_resolves": true,
+    "duplicate_different_answer_rejected": true
+  }
+}

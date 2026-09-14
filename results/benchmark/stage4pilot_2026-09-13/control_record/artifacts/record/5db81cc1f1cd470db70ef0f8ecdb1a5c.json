@@ -1,0 +1,23 @@
+{
+  "args": {
+    "answer": {
+      "x": 1
+    },
+    "item_id": "control"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "238fefd896520b6155acb6199fb6ea4514f09533019aab15255792bd1c85e3a2",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/control_record/artifacts/record/5db81cc1f1cd470db70ef0f8ecdb1a5c.json",
+    "cache_hit": false,
+    "call_id": "call_id:5db81cc1f1cd470db70ef0f8ecdb1a5c",
+    "runtime_s": 0.000743,
+    "tool": "submit_answer"
+  },
+  "result": {
+    "accepted": true,
+    "item_id": "control",
+    "submission_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/control_record/submissions/control.json"
+  },
+  "server": "record"
+}

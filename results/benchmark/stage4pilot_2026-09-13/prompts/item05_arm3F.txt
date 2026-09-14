@@ -1,0 +1,25 @@
+You have a protein and candidate single substitutions. Your assay queue accepts ten. Choose ten variants, rank them, and state what evidence supports each choice and what would overturn it. Report variants you considered and rejected. Do not claim a measured assay outcome.
+
+Protein sequence:
+MLSRLFRMHGLFVASHPWEVIVGTVTLTICMMSMNMFTGNNKICGWNYECPKFEEDVLSSDIIILTITRCIAILYIYFQFQNLRQLGSKYILGIAGLFTIFSSFVFSTVVIHFLDKELTGLNEALPFFLLLIDLSRASTLAKFALSSNSQDEVRENIARGMAILGPTFTLDALVECLVIGVGTMSGVRQLEIMCCFGCMSVLANYFVFMTFFPACVSLVLELSRESREGRPIWQLSHFARVLEEEENKPNPVTQRVKMIMSLGLVLVHAHSRWIADPSPQNSTADTSKVSLGLDENVSKRIEPSVSLWQFYLSKMISMDIEQVITLSLALLLAVKYIFFEQTETESTLSLKNPITSPVVTQKKVPDNCCRREPMLVRNNQKCDSVEEETGINRERKVEVIKPLVAETDTPNRATFVVGNSSLLDTSSVLVTQEPEIELPREPRPNEECLQILGNAEKGAKFLSDAEIIQLVNAKHIPAYKLETLMETHERGVSIRRQLLSKKLSEPSSLQYLPYRDYNYSLVMGACCENVIGYMPIPVGVAGPLCLDEKEFQVPMATTEGCLVASTNRGCRAIGLGGGASSRVLADGMTRGPVVRLPRACDSAEVKAWLETSEGFAVIKEAFDSTSRFARLQKLHTSIAGRNLYIRFQSRSGDAMGMNMISKGTEKALSKLHEYFPEMQILAVSGNYCTDKKPAAINWIEGRGKSVVCEAVIPAKVVREVLKTTTEAMIEVNINKNLVGSAMAGSIGGYNAHAANIVTAIYIACGQDAAQNVGSSNCITLMEASGPTNEDLYISCTMPSIEIGTVGGGTNLLPQQACLQMLGVQGACKDNPGENARQLARIVCGTVMAGELSLMAALAAGHLVKSHMIHNRSKINLQDLQGACTKKTA
+
+Candidate variants:
+P213L, E456K, T108I, I756L, L681D, R495C, F238S, P513R, T183E, R495Q, P543Y, S420A, S88I, H112T, S149I, D56A, E302T, G87D, G87Y, S794V, R69N, P402S, I73N, I756Y, V553A, V256S, L330V, I531A, T487V, S223H, M318T, H635Q, R646E, F338V, P477H, E550H, S420V, E123M, C382D, N518D, T723R, Q837K, E673Y, E604A, L452T, N41P, S185W, G849K, T283I, P402D, P831D, C50S, G578A, G739L, A478Q, Y514F, L328P, G773H, V720L, E486I, Y311I, Y533V, E245G, G263I, V57R, A333C, S217I, G685Y, A763F, C44D, P17M, I76A, A572Q, N771A, S384Q, M258H, P357Q, V385Y, L350H, T431H, M34A, N686T, G860R, P410H, C526W, E117W, M820N, S684N, R370A, H9W, L83Q, I391A, L350S, T38Y, D151E, M588S, S580Q, E730I, G292R, L634Y
+
+
+Reference homolog FASTA for retrieval: /home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_fastas/item05_homologs.fasta
+Reference structure PDB for geometric evaluation: /home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_pdbs/item05.pdb
+
+Submit exactly one answer through the mounted record channel, using item_id
+`pilot_item`. The answer object must contain `selected`: exactly ten entries,
+each with `rank` (1–10), `mutant`, `basis`, `evidence` (receipt ID array),
+`validation` (array of {category, call_id}), and `would_overturn`.
+Include `rejected`: an array of {mutant, reason}, empty only if none were
+rejected. If possible, include `ranking`: one {mutant, score} entry per
+supplied candidate, with larger predicted scores better. The scores are your predictions, not
+measured fitness. Every cited receipt must come from a successful tool call
+in this run. If you cannot support a site/variant, say so; do not invent data.
+Submit only when finished. Do not claim an assay result.
+
+
+Each submitted candidate must carry validation from at least three distinct categories: structural, energetic, and sequence or geometric. A second call to the same tool with different arguments does not count.

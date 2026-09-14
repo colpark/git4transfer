@@ -1,0 +1,22 @@
+Given a protein and candidate single substitutions, select ten for a limited assay queue. Rank the ten; explain the evidence for each, what would change your choice, and which candidates you considered but rejected. Do not claim a measured assay outcome.
+
+Protein sequence:
+MLRSSNDVTQQGSRPKTKLGGSSMGIIRTCRLGPDQVKSMRAALDLFGREFGDVATYSQHQPDSDYLGNLLRSKTFIALAAFDQEAVVGALAAYVLPKFEQPRSEIYIYDLAVSGEHRRQGIATALINLLKHEANALGAYVIYVQADYGDDPAVALYTKLGIREEVMHFDIDPSTAT
+
+Candidate variants:
+G52L, L79P, S58P, Y157R, S104H, N128G, I106V, F51S, V37D, A55G, G149H, G115C, Q59R, E116T, Q101R, A78P, V37I, E133D, Q120H, L70F, K38S, G121Y, H117R, A112Q, T124N, T75D, R41W, S114I, A134F, V113N, A125F, N128C, N135F, L32H, G149T, L130N, L137P, Y143H, L126T, G161Q, D150S, V141P, A80L, Y143K, R28S, L70S, D45W, G121M, I142Y, L111M, R49C, D65G, Q36R, E133G, D150Y, G149Y, D151W, A146K, L46I, V95I, Y157H, S39Y, L44H, Y148D, D151H, R163V, A134P, V88R, G149S, R41G, D35E, D147S, G149E, V37E, T124E, Y157P, Y157I, T29S, A139Y, Q120D, R163M, R72S, T124G, A139H, E50A, L137I, A134L, A43R, V141S, S39M, E50S, R163P, K74N, L111S, Y157Q, T75P, H117A, D150R, K131S, A136G
+
+
+Reference homolog FASTA for retrieval: /home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_fastas/item02_homologs.fasta
+Reference structure PDB for geometric evaluation: /home/aid1/Documents/2_19C_biology/results/benchmark/stage4pilot_2026-09-13/reference_pdbs/item02.pdb
+
+Submit exactly one answer through the mounted record channel, using item_id
+`pilot_item`. The answer object must contain `selected`: exactly ten entries,
+each with `rank` (1–10), `mutant`, `basis`, `evidence` (receipt ID array),
+`validation` (array of {category, call_id}), and `would_overturn`.
+Include `rejected`: an array of {mutant, reason}, empty only if none were
+rejected. If possible, include `ranking`: one {mutant, score} entry per
+supplied candidate, with larger predicted scores better. The scores are your predictions, not
+measured fitness. Every cited receipt must come from a successful tool call
+in this run. If you cannot support a site/variant, say so; do not invent data.
+Submit only when finished. Do not claim an assay result.

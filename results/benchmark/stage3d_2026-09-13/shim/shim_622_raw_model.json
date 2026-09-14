@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The text \"stage3d-parser-control\" has been echoed. The receipt for this call includes the following details:\n\n- Call ID: call_id:86afd274f2204503911916d04651b530\n- Tool: echo_tool\n- Arguments Hash: 9243fec12ff4b4be128b40c10c4ee2d2fa8a0cabf6d5f1e7a1dd3bf773477f30\n- Runtime: 0.000134 seconds\n\nWould you like to proceed with any further steps involving this text?"
+      }
+    }
+  ],
+  "created": 1789348424,
+  "model": "/home/aid1/.ollama/models/blobs/sha256-2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+  "system_fingerprint": "b1-4a89937",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 155,
+    "prompt_tokens": 9399,
+    "total_tokens": 9554,
+    "prompt_tokens_details": {
+      "cached_tokens": 9136
+    }
+  },
+  "id": "chatcmpl-T2JOq5PIX6XIyK1e0b4MXuX4v2NCfvZz",
+  "timings": {
+    "cache_n": 9136,
+    "prompt_n": 263,
+    "prompt_ms": 134.268,
+    "prompt_per_token_ms": 0.5105247148288974,
+    "prompt_per_second": 1958.7690291059673,
+    "predicted_n": 155,
+    "predicted_ms": 3687.417,
+    "predicted_per_token_ms": 23.944266233766232,
+    "predicted_per_second": 41.763651900503795
+  }
+}

@@ -1,0 +1,1925 @@
+{
+  "seed": 42,
+  "runs": [
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "3",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_001"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "3F",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_002"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "2",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_003"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "3L",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_004"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "3",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_005"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "3",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_006"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "3L",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_007"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "3",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_008"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "3F",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_009"
+    },
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "3",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_010"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "2",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_011"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "3",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_012"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "3L",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_013"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "3F",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_014"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "3L",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_015"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "3F",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_016"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "3F",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_017"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "1",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_018"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "2",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_019"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "3L",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_020"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "1",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_021"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "3L",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_022"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "2",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_023"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "1",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_024"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "3L",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_025"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "3",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_026"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "3L",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_027"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "3F",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_028"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "3F",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_029"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "3L",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_030"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "3",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_031"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "1",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_032"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "3",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_033"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "3F",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_034"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "3",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_035"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "3L",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_036"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "2",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_037"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "3L",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_038"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "3F",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_039"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "3F",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_040"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "3F",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_041"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "2",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_042"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "2",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_043"
+    },
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "1",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_044"
+    },
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "3",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_045"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "1",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_046"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "3",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_047"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "3L",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_048"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "1",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_049"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "1",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_050"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "1",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_051"
+    },
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "3F",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_052"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "1",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_053"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "2",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_054"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "1",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_055"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "1",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_056"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "3",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_057"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "3",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_058"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "1",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_059"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "2",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_060"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "3L",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_061"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "3",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_062"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "2",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_063"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "3F",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_064"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "1",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_065"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "1",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_066"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "3",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_067"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "3F",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_068"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "2",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_069"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "3L",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_070"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "3L",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_071"
+    },
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "3",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_072"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "3F",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_073"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "3",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_074"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "3",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_075"
+    },
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "2",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_076"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "3",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_077"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "3F",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_078"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "3",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_079"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "1",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_080"
+    },
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "1",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_081"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "1",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_082"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "1",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_083"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "3F",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_084"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "3",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_085"
+    },
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "2",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_086"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "2",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_087"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "2",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_088"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "3F",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_089"
+    },
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "1",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_090"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "1",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_091"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "2",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_092"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "3F",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_093"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "3L",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_094"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "3",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_095"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "3L",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_096"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "3L",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_097"
+    },
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "1",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_098"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "3",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_099"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "1",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_100"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "3",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_101"
+    },
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "3F",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_102"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "3F",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_103"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "3L",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_104"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "3",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_105"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "1",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_106"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "3F",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_107"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "3",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_108"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "3",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_109"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "1",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_110"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "3F",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_111"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "3L",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_112"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "3F",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_113"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "2",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_114"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "1",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_115"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "3F",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_116"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "2",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_117"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "1",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_118"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "3F",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_119"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "3L",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_120"
+    },
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "3",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_121"
+    },
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "3F",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_122"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "1",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_123"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "3L",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_124"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "3",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_125"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "3F",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_126"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "1",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_127"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "2",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_128"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "1",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_129"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "3F",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_130"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "2",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_131"
+    },
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "2",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_132"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "1",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_133"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "2",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_134"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "2",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_135"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "1",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_136"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "1",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_137"
+    },
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "3L",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_138"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "3",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_139"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "2",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_140"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "3",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_141"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "3F",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_142"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "3",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_143"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "3F",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_144"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "3",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_145"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "3F",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_146"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "3L",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_147"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "3F",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_148"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "2",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_149"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "3",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_150"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "3L",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_151"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "3L",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_152"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "3L",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_153"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "3",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_154"
+    },
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "3",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_155"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "3F",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_156"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "2",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_157"
+    },
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "3F",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_158"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "1",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_159"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "1",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_160"
+    },
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "2",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_161"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "1",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_162"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "3L",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_163"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "3F",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_164"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "2",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_165"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "3L",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_166"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "2",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_167"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "1",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_168"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "3",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_169"
+    },
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "3L",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_170"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "3F",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_171"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "1",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_172"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "3",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_173"
+    },
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "3F",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_174"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "3L",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_175"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "1",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_176"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "2",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_177"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "2",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_178"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "3",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_179"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "3F",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_180"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "3F",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_181"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "2",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_182"
+    },
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "1",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_183"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "3",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_184"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "3L",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_185"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "2",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_186"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "2",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_187"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "2",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_188"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "3L",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_189"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "1",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_190"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "3L",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_191"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "2",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_192"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "2",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_193"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "3F",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_194"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "3L",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_195"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "3",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_196"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "2",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_197"
+    },
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "2",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_198"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "3L",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_199"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "3L",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_200"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "3",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_201"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "3L",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_202"
+    },
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "2",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_203"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "3",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_204"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "1",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_205"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "2",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_206"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "1",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_207"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "3L",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_208"
+    },
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "3L",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_209"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "3",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_210"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "3",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_211"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "3L",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_212"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "3",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_213"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "1",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_214"
+    },
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "3F",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_215"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "3F",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_216"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "3L",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_217"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "1",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_218"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "2",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_219"
+    },
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "3L",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_220"
+    },
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "3L",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_221"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "3F",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_222"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "2",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_223"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "2",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_224"
+    },
+    {
+      "item": 4,
+      "assay_id": "CCR5_HUMAN_Gill_2023",
+      "arm": "3F",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_225"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "1",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_226"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "3F",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_227"
+    },
+    {
+      "item": 5,
+      "assay_id": "HMDH_HUMAN_Jiang_2019",
+      "arm": "3F",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_228"
+    },
+    {
+      "item": 8,
+      "assay_id": "SPG1_STRSG_Olson_2014",
+      "arm": "3L",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_229"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "3F",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_230"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "3L",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_231"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "2",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_232"
+    },
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "1",
+      "mode": "guided",
+      "sample": 3,
+      "run_id": "pilot_233"
+    },
+    {
+      "item": 2,
+      "assay_id": "AACC1_PSEAI_Dandage_2018",
+      "arm": "3L",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_234"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "1",
+      "mode": "unguided",
+      "sample": 3,
+      "run_id": "pilot_235"
+    },
+    {
+      "item": 3,
+      "assay_id": "B2L11_HUMAN_Dutta_2010_binding-Mcl-1",
+      "arm": "2",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_236"
+    },
+    {
+      "item": 7,
+      "assay_id": "NKX31_HUMAN_Tsuboyama_2023_2L9R",
+      "arm": "2",
+      "mode": "guided",
+      "sample": 1,
+      "run_id": "pilot_237"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "2",
+      "mode": "unguided",
+      "sample": 1,
+      "run_id": "pilot_238"
+    },
+    {
+      "item": 1,
+      "assay_id": "A0A1I9GEU1_NEIME_Kennouche_2019",
+      "arm": "3L",
+      "mode": "guided",
+      "sample": 2,
+      "run_id": "pilot_239"
+    },
+    {
+      "item": 6,
+      "assay_id": "IF1_ECOLI_Kelsic_2016",
+      "arm": "3",
+      "mode": "unguided",
+      "sample": 2,
+      "run_id": "pilot_240"
+    }
+  ]
+}

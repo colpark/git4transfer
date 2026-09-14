@@ -1,0 +1,16 @@
+{
+  "args": {
+    "text": "stage3d-parser-control"
+  },
+  "result": {
+    "text": "stage3d-parser-control"
+  },
+  "error": null,
+  "receipt": {
+    "call_id": "call_id:13b3a80675a14957a9bb55c6f78b21af",
+    "tool": "echo_tool",
+    "args_hash": "9243fec12ff4b4be128b40c10c4ee2d2fa8a0cabf6d5f1e7a1dd3bf773477f30",
+    "runtime_s": 0.000155,
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3d_2026-09-13/artifacts/probe/13b3a80675a14957a9bb55c6f78b21af.json"
+  }
+}
