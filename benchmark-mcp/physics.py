@@ -6,6 +6,7 @@ import os
 import subprocess
 
 from common import ROOT, reference_path
+from reference_energy import corrected_delta
 
 DSSP_ROOT = ROOT / "benchmark-mcp/vendor/dssp"
 MKDSSP = DSSP_ROOT / "usr/bin/mkdssp"
@@ -74,3 +75,24 @@ def openmm_delta_energy(wt_pdb: str, mutant_pdb: str) -> dict:
             "is_folding_ddg": False,
             "deviation": "not PyRosetta ddG; requires fully prepared matched-topology WT and mutant PDBs"}
 
+
+def openmm_reference_corrected_energy(
+    wt_pdb: str,
+    mutant_pdb: str,
+    wt_aa: str,
+    mutant_aa: str,
+    unfolded_reference_kj_per_mol: dict[str, float],
+    reference_source: str,
+) -> dict:
+    """Unvalidated prototype; intentionally NOT exposed through MCP or W2 scoring.
+
+    A supplied, complete external table is required. The historical raw tool
+    and its cache remain unchanged. This does not construct mutant structures,
+    relax either structure or estimate entropy; criterion (e) is still open.
+    """
+    raw = openmm_delta_energy(wt_pdb, mutant_pdb)
+    correction = corrected_delta(raw["delta_kj_per_mol"], wt_aa, mutant_aa,
+                                 unfolded_reference_kj_per_mol, reference_source)
+    return {**raw, **correction,
+            "method": "OpenMM_8.6.1_snapshot_plus_unvalidated_unfolded_reference_proxy",
+            "raw_method": raw["method"]}

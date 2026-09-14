@@ -14,3 +14,21 @@ Frozen **2026-09-12 22:23 EST (2026-09-13 03:23 UTC)**, before any Stage 2 found
 | Retrieval/ranking | Each W1/W2 candidate remains an explicitly supplied variant. Retrieve reference sequences from a declared database; calculate classical scores; compare candidates on the same scales; rank by a predeclared linear rule only after score availability; filter invalid/out-of-range mutations, then submit. Missing score stays missing, never zero. No item or cohort is selected here. | A variant whose WT disagrees with the supplied sequence fails before scoring. |
 
 The analysis denominator is **174** W1 sequence clusters and **238** W2 clusters with a usable non-WT ddG row, as ruled by the panel. Raw W1 217 overstates 174 by **24.7%**. Arm 1 memory/recitation is measured as a burn column, never an exclusion gate. FMADV Test C is withdrawn; the readiness question is whether Arm 2 can make a genuine retrieve→score→compare→rank→filter→submit attempt, not whether every FM tool has a classical counterpart.
+
+## Dated construct-validity addendum — 2026-09-14 UTC
+
+This addendum records the **implemented** conventions after the original freeze; it does not silently amend the accepted Stage 3 Floor C or promote a substitute to a stability instrument. Criterion (e) and the individual cards are in `../construct_validity_2026-09-14/tool_cards.md`.
+
+| Tool/quantity | Number-changing convention actually implemented | Consequence |
+|---|---|---|
+| `pssm_score` | Equal-length supplied MSA; query first; nongap depth ≥2, whole-query coverage ≥0.80; Laplace **+1 for every amino acid**; uniform 1/20 background; no reweighting; mutant-minus-WT log2 odds. Stage 3 Floor C uses the released A2M after its frozen parser and **full** valid MSA, not a hidden search result. | MSA depth and family composition remain input-dependent. |
+| `conservation` | Unweighted empirical Shannon `1-H/log2(20)`, no pseudocount, nongap depth ≥2. **Not** the Jensen–Shannon measure preferred in Capra–Singh's benchmark. | Do not cite that paper as validation of this implementation's accuracy. |
+| `blosum_score` | Distributed, uncorrected **BLOSUM62** integer table; no rescaling. | Position-independent prior. |
+| `seq_identity` | Full-length global-alignment exact matches divided by **all** alignment columns, with BLOSUM62 and affine gaps −10/−0.5. | Distinct from CD-HIT clustering identity. |
+| `dssp` | `mkdssp` 4.2.2; tool parses residue index, chain, amino acid and secondary-structure character only. **No ASA/RSA is returned**; max-ASA reference is therefore **not applicable**. | Any card claiming solvent accessibility from this endpoint would be false. A future ASA endpoint must fix a reference first. |
+| `esm2_likelihood` | **Masked marginal**, one mutant position per call; `facebook/esm2_t6_8M_UR50D` revision `c731040fcd8d73dceaa04b0a8e6329b345b0f5df`; natural-log mutant-minus-WT; canonical input `target_seq`, maximum 1,022 aa; no UniProt expansion or windowing. Stage 3 released score is **ESM-2 650M**, not this model. | Scheme matches for single variants, weights do not; see the scheme audit. |
+| `esm_if` | `esm_if1_gvp4_t16_142M_UR50`, supplied chain-A AF2 PDB backbone and mutated sequence of exactly matching length; returned primary value is `score_sequence`'s full **mean log likelihood**. **No pLDDT masking or threshold exists in this worker.** | Score inherits the supplied AF2 backbone; do not claim low-confidence residues were excluded. |
+| `esmfold` | Pinned worker model and input cap 600 aa; reports PDB and pLDDT, never ddG. | Structure confidence is not measured stability. |
+| `openmm_delta_energy` | OpenMM 8.6.1 CPU, Amber14, GBN2 implicit solvent without waters or TIP3P when waters present, `NoCutoff`, fully prepared input PDBs, one **unminimized** snapshot per structure, equal atom-count guard. | Neither Rosetta ddG nor folding ΔΔG; no amino-acid reference correction is present in this historical endpoint. |
+
+**W2 sign and scale are not yet frozen for scoring.** `ddG_ML` is the measured assay endpoint. An OpenMM reference correction, if implemented, must be separately versioned and benchmarked against `ddG_ML` before use; a Rosetta REU→kcal/mol factor must not be silently applied to Amber kJ/mol.

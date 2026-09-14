@@ -1,0 +1,15 @@
+# W2 prediction and OpenMM construct-validity gate
+
+Recorded 2026-09-14 UTC **before any W2 scored cohort, floor or arm run**. This is a directional prediction, not a result or permission to open W2.
+
+## Preregistered prediction
+
+The W2 Arm 3 minus Arm 2 gap on MegaScale assay-derived `ddG_ML` will be **small or indistinguishable from zero** on cluster-aware intervals; neither raw structural physics nor zero-shot sequence-model likelihood is expected to be a reliable substitute for measured stability. This expectation follows the [MegaScale authors' description](https://www.nature.com/articles/s41586-023-06328-6) of physics-based limits and the independent [ESM-2 stability benchmark](https://doi.org/10.1371/journal.pcbi.1012248), not from W2 arm outcomes. A strong gap in either direction would falsify this prediction. No threshold, weight or sign will be chosen after seeing those outcomes.
+
+## Reference-corrected prototype is not a certified scorer
+
+Target folded-stability change is `(G_folded,mut − G_folded,WT) − (G_unfolded,mut − G_unfolded,WT)`. A per-amino-acid reference table can approximate the second bracket, so a *candidate* score is `ΔU_folded − [u_ref(mutAA) − u_ref(wtAA)]`. The table must be source-pinned in **kJ/mol compatible with the OpenMM potential**, with its sign and scale frozen independently of the W2 evaluation labels. [Rosetta's `ref2015` weights](https://docs.rosettacommons.org/demos/latest/tutorials/scoring/scoring) are in Rosetta's own arbitrary energy units and were fit jointly with its force field. Copying them into Amber kJ/mol, even with a nominal 2.94 conversion, would **not** be a justified OpenMM unfolded-state term. A table inferred from the same MegaScale labels being evaluated would be training leakage.
+
+The installed OpenMM endpoint does not construct mutants, minimize, sample conformations or accept different atom counts. The available MegaScale archive supplies measured variants and mostly **domain-level AF2 structures**, not a matched, prepared WT/mutant PDB pair for each scored substitution. The Stage 2 equal-PDB zero control cannot assess rank correlation. These are additional blockers beyond the missing reference term. A source-pinned table alone would not cure them.
+
+**Before W2 scoring:** (1) freeze an externally justified reference-energy table and physical units; (2) generate and QC matched variant structures using a predeclared side-chain/protonation/minimization protocol with coverage denominators and invalid-input controls; (3) reserve a label-blind calibration panel of several hundred mutations from distinct 50%-identity clusters; (4) hash predictions before opening their `ddG_ML` values; (5) report per-domain and cluster-aware Spearman plus coverage and sign, raw OpenMM beside corrected, with uncertainty. The reference correction passes criterion (e) only if that endpoint comparison is actually published and the panel accepts its intended rank utility. W2 remains **closed** until then; no invented correlation is printed.

@@ -1,0 +1,20 @@
+server,tool,role,card_status,endpoint_accuracy,status_for_scored_use,reason
+classical,mmseqs_search,retrieval,PRESENT,NOT_APPLICABLE,CONDITIONAL,downstream MSA QC and decision metric required
+classical,blast_search,retrieval,PRESENT,NOT_APPLICABLE,CONDITIONAL,downstream MSA QC and decision metric required
+classical,pssm_score,direct W1 rank component,PRESENT,UNKNOWN_STANDALONE,CONDITIONAL,Floor C composite P@10 0.176 only
+classical,conservation,potential W1 rank component,PRESENT,UNKNOWN,BLOCKED_AS_DIRECT_RANKER,Shannon implementation has no endpoint validation
+classical,motif_scan,annotation,PRESENT,NOT_APPLICABLE,CONDITIONAL,motif alone cannot establish phenotype
+classical,blosum_score,direct W1 rank component,PRESENT,UNKNOWN_STANDALONE,CONDITIONAL,Floor C composite P@10 0.176 only
+classical,hbond_geometry,structural diagnostic,PRESENT,UNKNOWN,BLOCKED_AS_DIRECT_RANKER,geometry count not measured stability
+classical guided,screen_variant_classical,guided composite,PRESENT,UNKNOWN,BLOCKED_AS_DIRECT_RANKER,not identical to frozen Floor C composite
+predictive,esm2_likelihood,direct W1 rank component,PRESENT,UNKNOWN_LOCAL_8M,CALIBRATION_ONLY,masked scheme verified; local P@10 pending
+predictive,esmfold,structural diagnostic,PRESENT,NOT_APPLICABLE,CONDITIONAL,pLDDT not measured fitness or stability
+generative,esm_if,direct W1 rank component,PRESENT,UNKNOWN_LOCAL,CALIBRATION_ONLY,no pLDDT cutoff; local P@10 pending
+physics,pyrosetta_ddg,potential W2 ranker,PRESENT,NO_LOCAL_RESULT,BLOCKED,license and aarch64 build unverified
+physics,dssp,structural diagnostic,PRESENT,NOT_APPLICABLE,CONDITIONAL,secondary structure only; no ASA
+physics,openmm_delta_energy,potential W2 ranker,PRESENT,UNKNOWN,BLOCKED_AS_DIRECT_RANKER,unminimized folded-state potential only
+analysis,seq_identity,analysis,PRESENT,NOT_APPLICABLE,CONDITIONAL,not phenotype predictor
+analysis,tmalign,analysis,PRESENT,NOT_APPLICABLE,CONDITIONAL,not phenotype predictor
+lit,pubmed_search,retrieval,PRESENT,NOT_APPLICABLE,CONDITIONAL,NCBI substitute not scireason eight-tool group
+record,submit_answer,record,PRESENT,NOT_APPLICABLE,CONDITIONAL,receipt does not imply correctness
+record,log_note,record,PRESENT,NOT_APPLICABLE,CONDITIONAL,receipt does not imply correctness
