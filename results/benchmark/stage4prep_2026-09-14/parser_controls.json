@@ -1,0 +1,9 @@
+{
+  "valid_100": "PASS",
+  "malformed_json": "PASS: rejected",
+  "nine_picks": "PASS: rejected",
+  "eleven_picks": "PASS: rejected",
+  "duplicate_pick": "PASS: rejected",
+  "invented_receipt": "PASS: rejected",
+  "incomplete_ranking": "PASS: rejected"
+}

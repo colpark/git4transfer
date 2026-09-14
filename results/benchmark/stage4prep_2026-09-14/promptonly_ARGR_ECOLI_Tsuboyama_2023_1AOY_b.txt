@@ -1,0 +1,9 @@
+You have a protein and candidate single substitutions. Your assay queue accepts ten. Choose ten variants, rank them, and state what evidence supports each choice and what would overturn it. Report variants you considered and rejected. Do not claim a measured assay outcome.
+
+Protein sequence:
+QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV
+
+Candidate variants:
+L27C, K9C, Q30T, V24S, V24N, F17Q, Q28T, A7D, P64I, L12D, E14P, V60G, F17A, R42T, E29H, D33Y, E66Q, K39C, L12Q, E14M, M59H, S38Q, L44S, R51K, M59N, F32V, A49Q, T45I, G21H, G48Y, S18N, L63R, Q37R, A25F, Y61E, G21S, R53K, R42M, N36I, A26S, K16W, S19P, S18F, G48D, E29R, E14V, E29F, N36M, L4A, S19N, R42L, I23G, Q20N, L4S, A10T, A49F, E29L, E66T, C62H, P64L, D33F, V40I, A26D, F47G, E66F, E66D, K9Y, Q30I, I35R, L4V, K9E, K16D, E29N, T52L, R53Y, E3Q, A7P, F32T, E15C, L12V, M43N, V24D, Q20Y, S19M, K56Y, K6Y, I23E, E29D, K13D, A25Q, A55I, L11V, R51H, A49L, N36R, F32M, A26E, D33E, S18E, I23C
+
+Return one plain JSON object, with no Markdown fence or extra text. This is a prediction, not an assay result. Use exactly these keys: item_id, selected, rejected, ranking. Set item_id to pilot_item. selected must contain exactly ten unique objects with rank 1 through 10 in order, mutant, basis, evidence, validation, and would_overturn. The evidence and validation arrays must be empty because no tools are available; describe reasoning in basis, never invent a receipt. rejected must contain every other candidate exactly once, each as an object with mutant and reason. ranking must contain every supplied candidate exactly once, each as an object with mutant and finite numeric score, in descending predicted score order. The first ten ranking mutants must match selected ranks 1 through 10. If two scores tie, order their mutants lexicographically. Do not claim that predicted scores are measured fitness.

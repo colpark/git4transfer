@@ -1,0 +1,113 @@
+{
+  "source_tool_count": 12,
+  "forwarded_function_count": 18,
+  "forwarded_tool_block_bytes": 8727,
+  "source_tool_block_bytes": 12814,
+  "allowed_namespaces": [
+    "mcp__rescue_analysis",
+    "mcp__rescue_classical",
+    "mcp__rescue_generative",
+    "mcp__rescue_lit",
+    "mcp__rescue_physics",
+    "mcp__rescue_predictive",
+    "mcp__rescue_record"
+  ],
+  "raw_model_content": "",
+  "raw_model_tool_calls": [
+    {
+      "type": "function",
+      "function": {
+        "name": "mcp__rescue_classical__blast_msa",
+        "arguments": "{\"reference_fasta\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage3h_2026-09-14/audit_fastas/012.fasta\", \"sequence\": \"QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV\", \"max_hits\": 50}"
+      },
+      "id": "zQfMuEggm874sVskQdhO9ZRSsPLxhQVH"
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "mcp__rescue_classical__blosum_score",
+        "arguments": "{\"wt\": \"Q', \"}"
+      },
+      "id": "1KlGPvC2XNaYEQFb9dQ03Q5r6RjIKv2s"
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "mcp__rescue_classical__pssm_score",
+        "arguments": "{\"msa\": [\"QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV\", \"MSA_SEQUENCE_1\", \"MSA_SEQUENCE_2\", \"...\"], \"query\": \"QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV\", \"position\": 27, \"variant\": \"L27C\"}"
+      },
+      "id": "5Smr9AwmPGeTgVmF2zIdKBGZQMvrCvoY"
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "mcp__rescue_physics__dssp",
+        "arguments": "{\"pdb_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/ARGR_ECOLI.pdb\"}"
+      },
+      "id": "AUkzpBhz8x5j1mRHcxhOthurb3skdLKZ"
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "mcp__rescue_predictive__esm2_likelihood",
+        "arguments": "{\"sequence\": \"QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV\"}"
+      },
+      "id": "YGhSNAUJBIVmJckbJG2hpeSB2022WxJE"
+    }
+  ],
+  "parsed_items": [
+    {
+      "id": "fc_3cdcfcb1dc024bba9398f504991ef974",
+      "type": "function_call",
+      "status": "completed",
+      "call_id": "zQfMuEggm874sVskQdhO9ZRSsPLxhQVH",
+      "namespace": "mcp__rescue_classical",
+      "name": "blast_msa",
+      "arguments": "{\"reference_fasta\":\"/home/aid1/Documents/2_19C_biology/results/benchmark/stage3h_2026-09-14/audit_fastas/012.fasta\",\"sequence\":\"QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV\",\"max_hits\":50}"
+    },
+    {
+      "id": "fc_68e44614448445c5806ce0066cf84b0e",
+      "type": "function_call",
+      "status": "completed",
+      "call_id": "1KlGPvC2XNaYEQFb9dQ03Q5r6RjIKv2s",
+      "namespace": "mcp__rescue_classical",
+      "name": "blosum_score",
+      "arguments": "{\"wt\":\"Q', \"}"
+    },
+    {
+      "id": "fc_523061ca61d648888abcd4e9a7e4921f",
+      "type": "function_call",
+      "status": "completed",
+      "call_id": "5Smr9AwmPGeTgVmF2zIdKBGZQMvrCvoY",
+      "namespace": "mcp__rescue_classical",
+      "name": "pssm_score",
+      "arguments": "{\"msa\":[\"QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV\",\"MSA_SEQUENCE_1\",\"MSA_SEQUENCE_2\",\"...\"],\"query\":\"QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV\",\"position\":27,\"variant\":\"L27C\"}"
+    },
+    {
+      "id": "fc_efe3fe6791674c10b9edd78fcdc75b6a",
+      "type": "function_call",
+      "status": "completed",
+      "call_id": "AUkzpBhz8x5j1mRHcxhOthurb3skdLKZ",
+      "namespace": "mcp__rescue_physics",
+      "name": "dssp",
+      "arguments": "{\"pdb_path\":\"/home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/ARGR_ECOLI.pdb\"}"
+    },
+    {
+      "id": "fc_44b48ebf60d3426583f746784227d5f2",
+      "type": "function_call",
+      "status": "completed",
+      "call_id": "YGhSNAUJBIVmJckbJG2hpeSB2022WxJE",
+      "namespace": "mcp__rescue_predictive",
+      "name": "esm2_likelihood",
+      "arguments": "{\"sequence\":\"QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV\"}"
+    }
+  ],
+  "backend_usage": {
+    "completion_tokens": 1709,
+    "prompt_tokens": 7807,
+    "total_tokens": 9516,
+    "prompt_tokens_details": {
+      "cached_tokens": 1
+    }
+  }
+}

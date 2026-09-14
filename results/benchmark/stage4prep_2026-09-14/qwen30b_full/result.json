@@ -1,0 +1,131 @@
+{
+  "model": "Qwen3-30B-A3B-Q4_K_M",
+  "item": "ARGR_ECOLI_Tsuboyama_2023_1AOY",
+  "mode": "unguided",
+  "wall_s": 266.865,
+  "prompt_tokens": 41930,
+  "generation_tokens": 12491,
+  "response_count": 3,
+  "response_context_bound": 32768,
+  "legacy_4096_cap": false,
+  "exit_code": -15,
+  "timed_out": false,
+  "validity_abort": "response",
+  "session_gate": "BREACH",
+  "calls": {
+    "attempted": {
+      "classical": 6,
+      "physics": 1,
+      "predictive": 1
+    },
+    "succeeded": {
+      "classical": 3
+    },
+    "failed": {
+      "classical": 3,
+      "physics": 1,
+      "predictive": 1
+    },
+    "receipt_ids": [
+      "call_id:e9e634f7d8194667a190aac767466732",
+      "call_id:f528ba0c96124376a53c095a0e6c212b",
+      "call_id:ff1f6c1f95d449e5a6f016343038b526"
+    ]
+  },
+  "response_checks": [
+    {
+      "response": "shim_001",
+      "prompt_tokens": 7807,
+      "generation_tokens": 1709,
+      "backend_wall_s": 31.556981563568115,
+      "generation_s": 25.526759,
+      "generation_tps": 66.94935302989306,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    },
+    {
+      "response": "shim_002",
+      "prompt_tokens": 14401,
+      "generation_tokens": 866,
+      "backend_wall_s": 20.054988384246826,
+      "generation_s": 15.027537,
+      "generation_tps": 57.627540694127056,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    },
+    {
+      "response": "shim_003",
+      "prompt_tokens": 19722,
+      "generation_tokens": 9916,
+      "backend_wall_s": 212.76787757873535,
+      "generation_s": 208.504899,
+      "generation_tps": 47.55763556423679,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": true
+    }
+  ],
+  "session_checks": [
+    {
+      "response": "shim_003",
+      "active_end_s": 249.059195,
+      "active_start_s": 189.059195,
+      "estimated_tps": 47.55763556423679,
+      "breach": true
+    }
+  ],
+  "baseline_tps": 89.36775108847128,
+  "threshold_tps": 62.55742576192989,
+  "peak_gpu_c": 76.0,
+  "peak_cpu_c": 86.7,
+  "peak_gpu_power_w": 91.96,
+  "min_mem_available_gib": 74.816,
+  "sensor_errors": [],
+  "submission": "absent",
+  "candidates_considered_lower_bound": 1,
+  "considered_variants": [
+    "L27C"
+  ],
+  "validation_categories_per_pick": [],
+  "pick_has_variant_specific_evidence": [],
+  "argument_forms_attempted": [
+    {
+      "tool": "blosum_score",
+      "form": "decomposed",
+      "variant": null,
+      "mutant": null
+    },
+    {
+      "tool": "pssm_score",
+      "form": "both",
+      "variant": "L27C",
+      "mutant": null
+    },
+    {
+      "tool": "esm2_likelihood",
+      "form": "missing",
+      "variant": null,
+      "mutant": null
+    },
+    {
+      "tool": "blosum_score",
+      "form": "both",
+      "variant": "L27C",
+      "mutant": null
+    },
+    {
+      "tool": "pssm_score",
+      "form": "decomposed",
+      "variant": null,
+      "mutant": null
+    }
+  ],
+  "receipt_variant_map": {
+    "call_id:ff1f6c1f95d449e5a6f016343038b526": null,
+    "call_id:d2b86eacbc684c8dafc64f684f6010a1": "L27C",
+    "call_id:d20072708f324b32969e3bb837512326": null,
+    "call_id:5160fa55fdc342a0b7647a2089c6448c": null,
+    "call_id:f528ba0c96124376a53c095a0e6c212b": null,
+    "call_id:e9e634f7d8194667a190aac767466732": "L27C",
+    "call_id:dd67c709eeca4edbbdfb162224b70111": null
+  }
+}

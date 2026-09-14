@@ -1,0 +1,141 @@
+{
+  "pilot_item": {
+    "item_id": "pilot_item",
+    "selected": [
+      {
+        "mutant": "E29H",
+        "basis": "Introduces a charge-changing mutation (Glu→His) near a potential interaction site; may disrupt electrostatic interactions.",
+        "evidence": [],
+        "validation": [],
+        "would_overturn": "If the position is structurally constrained or critical for catalysis."
+      },
+      {
+        "mutant": "K9C",
+        "basis": "Lysine to Cysteine substitution; Cysteine may form disulfide bonds or disrupt charge distribution.",
+        "evidence": [],
+        "validation": [],
+        "would_overturn": "If the mutation disrupts folding or introduces instability."
+      },
+      {
+        "mutant": "L27C",
+        "basis": "Leucine to Cysteine substitution; potential for disulfide bond formation or hydrophobic disruption.",
+        "evidence": [],
+        "validation": [],
+        "would_overturn": "If the position is solvent-exposed and the mutation alters solubility."
+      },
+      {
+        "mutant": "F17Q",
+        "basis": "Phenylalanine to Glutamine substitution; alters hydrophobicity and hydrogen bonding potential.",
+        "evidence": [],
+        "validation": [],
+        "would_overturn": "If the position is part of a hydrophobic core or active site."
+      },
+      {
+        "mutant": "R42T",
+        "basis": "Arginine to Threonine substitution; charge and size change may affect interactions.",
+        "evidence": [],
+        "validation": [],
+        "would_overturn": "If the position is involved in DNA/RNA binding or catalysis."
+      },
+      {
+        "mutant": "E66Q",
+        "basis": "Glutamic acid to Glutamine substitution; charge-neutral mutation near a potential active site.",
+        "evidence": [],
+        "validation": [],
+        "would_overturn": "If the position is critical for proton transfer or electrostatics."
+      },
+      {
+        "mutant": "V24N",
+        "basis": "Valine to Asparagine substitution; introduces polarity and may disrupt hydrophobic interactions.",
+        "evidence": [],
+        "validation": [],
+        "would_overturn": "If the position is part of a helix or hydrophobic core."
+      },
+      {
+        "mutant": "Q30I",
+        "basis": "Glutamine to Isoleucine substitution; conservative in some contexts but alters hydrogen bonding.",
+        "evidence": [],
+        "validation": [],
+        "would_overturn": "If the position is involved in backbone hydrogen bonding."
+      },
+      {
+        "mutant": "L12D",
+        "basis": "Leucine to Aspartic acid substitution; introduces negative charge and bulk.",
+        "evidence": [],
+        "validation": [],
+        "would_overturn": "If the position is solvent-exposed or part of an active site."
+      },
+      {
+        "mutant": "M59H",
+        "basis": "Methionine to Histidine substitution; alters hydrophobicity and introduces a potential catalytic residue.",
+        "evidence": [],
+        "validation": [],
+        "would_overturn": "If the position is critical for enzyme activity or stability."
+      }
+    ],
+    "rejected": [
+      {
+        "mutant": "L4A",
+        "reason": "Conservative substitution in a non-critical region; minimal expected impact."
+      },
+      {
+        "mutant": "S19P",
+        "reason": "Proline introduction may disrupt secondary structure; low likelihood of functional impact."
+      },
+      {
+        "mutant": "A26S",
+        "reason": "Small, polar substitution in a non-essential region."
+      },
+      {
+        "mutant": "I23G",
+        "reason": "Glycine substitution may reduce local flexibility but lacks strong evidence for impact."
+      },
+      {
+        "mutant": "N36I",
+        "reason": "Hydrophobic substitution in a position with no known functional role."
+      },
+      {
+        "mutant": "V40I",
+        "reason": "Conservative hydrophobic substitution with no clear functional relevance."
+      },
+      {
+        "mutant": "G48D",
+        "reason": "Aspartic acid introduction may alter local charge but lacks evidence for impact."
+      },
+      {
+        "mutant": "F32V",
+        "reason": "Conservative substitution with minimal expected structural or functional change."
+      },
+      {
+        "mutant": "A49Q",
+        "reason": "Polar substitution in a non-critical region."
+      },
+      {
+        "mutant": "E15C",
+        "reason": "Cysteine introduction may form disulfide bonds but lacks evidence for functional relevance."
+      }
+    ],
+    "ranking": [
+      {"mutant": "E29H", "score": 10},
+      {"mutant": "K9C", "score": 9},
+      {"mutant": "L27C", "score": 8},
+      {"mutant": "F17Q", "score": 7},
+      {"mutant": "R42T", "score": 6},
+      {"mutant": "E66Q", "score": 5},
+      {"mutant": "V24N", "score": 4},
+      {"mutant": "Q30I", "score": 3},
+      {"mutant": "L12D", "score": 2},
+      {"mutant": "M59H", "score": 1},
+      {"mutant": "L4A", "score": 0},
+      {"mutant": "S19P", "score": 0},
+      {"mutant": "A26S", "score": 0},
+      {"mutant": "I23G", "score": 0},
+      {"mutant": "N36I", "score": 0},
+      {"mutant": "V40I", "score": 0},
+      {"mutant": "G48D", "score": 0},
+      {"mutant": "F32V", "score": 0},
+      {"mutant": "A49Q", "score": 0},
+      {"mutant": "E15C", "score": 0}
+    ]
+  }
+}

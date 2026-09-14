@@ -1,0 +1,151 @@
+{
+  "frozen_at_utc": "2026-09-14T18:06:28.623416+00:00",
+  "supersedes": "results/benchmark/stage4pilot_2026-09-13/freeze_hashes.json",
+  "cohort_count": 146,
+  "sealed_items": [
+    "AACC1_PSEAI_Dandage_2018",
+    "ARGR_ECOLI_Tsuboyama_2023_1AOY"
+  ],
+  "sha256": {
+    "preregistration": {
+      "path": "results/benchmark/stage4prep_2026-09-14/preregistration.md",
+      "digest": "31df91542677914f22756564f70444e7b0b70f86bf9757366ee993ba06b37c97"
+    },
+    "cohort_146": {
+      "path": "results/benchmark/stage4prep_2026-09-14/cohort_146.csv",
+      "digest": "1a99ae9981f3e09f608448b8f62726fa443a8fec1088e63d54611409caa20074"
+    },
+    "freeze_builder": {
+      "path": "benchmark-mcp/stage4prep_freeze.py",
+      "digest": "da310c90b03a4364d56e80b3f0a35970d1d4494b1e68bd0b775ddd66acff85a6"
+    },
+    "floor_scores": {
+      "path": "results/benchmark/stage3_2026-09-13/floor_item_scores.csv",
+      "digest": "4f92dab496e5015f818e19a9cefe19eb476668a5151805bd325b823c5629ea2a"
+    },
+    "source_prompt_manifest": {
+      "path": "results/benchmark/stage3_2026-09-13/prompt_manifest.jsonl",
+      "digest": "ca213bc120f6d9118bb41812ce4081ed108571985244f28b47c9ef8c3266dfac"
+    },
+    "prompt_manifest_146": {
+      "path": "results/benchmark/stage4prep_2026-09-14/prompt_manifest_146.jsonl",
+      "digest": "cfd187072a05b0c713c2610259d191a51bd06d7938850feb8723d87bc25679d9"
+    },
+    "prompt_template_original": {
+      "path": "benchmark-mcp/pilot_prepare.py",
+      "digest": "c604a8602d0ef76f1712db4f92219a95a66f043f4c3a8b4838399ccd4f86aef0"
+    },
+    "prompt_template_promptonly": {
+      "path": "benchmark-mcp/stage4prep_promptonly.py",
+      "digest": "2472f16713dc495da38415891062301ad37dd5383c1413f41c1a9142c5524f88"
+    },
+    "promptonly_parser_controls": {
+      "path": "benchmark-mcp/stage4prep_parser_controls.py",
+      "digest": "b427044ce16b949785a31648572603256314025bf365e91e105bdc476e715ee8"
+    },
+    "scoring_code": {
+      "path": "benchmark-mcp/pilot_score.py",
+      "digest": "24896f361c8de45c19f2d69b99bb897b9b20cdb1735a9bb2489f047177630bcb"
+    },
+    "evaluator": {
+      "path": "benchmark-mcp/stage3_evaluate.py",
+      "digest": "723fbf5c03831d470b54fa5d566a7782304e43900a3bed932355084aa56d7b91"
+    },
+    "floor_code": {
+      "path": "benchmark-mcp/stage3_w1.py",
+      "digest": "505c59dace0369b184ba897784759c3e6e3b0c6da0418dd4256c8f7e55db6d94"
+    },
+    "legacy_runner": {
+      "path": "benchmark-mcp/pilot_run.py",
+      "digest": "eab6367cdfc4fd5d6da6779645aed83b5dd95b752bec006be7582ba49ebe5924"
+    },
+    "frontier_control_runner": {
+      "path": "benchmark-mcp/stage3id_run.py",
+      "digest": "dc637a3facc5f857a62c8bc1f8d70259a6c0e393ec0f23cda92164832abb2ea2"
+    },
+    "qwen_prep_runner": {
+      "path": "benchmark-mcp/stage4prep_qwen.py",
+      "digest": "e9dda36e82f0a7a0f8093c72a7362886ea4fa7e4a8a5b7b82755b17211d54745"
+    },
+    "response_shim": {
+      "path": "benchmark-mcp/pilot_responses_shim.py",
+      "digest": "b6a18b32e63c7f8a42197947b1c1950f2a3baa345f90e9e017a4e81046119fab"
+    },
+    "record_mount": {
+      "path": "benchmark-mcp/pilot_record_server.py",
+      "digest": "98cfed25fa11bdb6b1fce146653980cf567730887037498a08c4f670d0754ca8"
+    },
+    "session_validity_gate": {
+      "path": "benchmark-mcp/stage3h_validity.py",
+      "digest": "d0f1c96f5bac5232f752e39489a780a0c68204d542a3ca23db73dfcdbefb7f27"
+    },
+    "server_tool_schemas_and_descriptions": {
+      "path": "benchmark-mcp/server.py",
+      "digest": "7a58de0096b3fc9426e5b28a96d5e8bb06841be2851b24bf07c49e30aab34207"
+    },
+    "current_unguided_surface": {
+      "path": "results/benchmark/stage4prep_2026-09-14/surface_unguided.json",
+      "digest": "7d3af333b81e6ef098777fdfc2cc248467e84d87f58aba865a00c0e8fe646f82"
+    },
+    "current_guided_surface": {
+      "path": "results/benchmark/stage4prep_2026-09-14/surface_guided.json",
+      "digest": "d98860c8b4fc4dda0435a057e55d135e942b9ec783e41c3ec0581ca875f43263"
+    },
+    "served_model_catalog": {
+      "path": "benchmark-mcp/stage3g_model_catalog.json",
+      "digest": "182ec7936ad36b098e5cecdf521ce4f38fd2f0589f7e9439b3109de9c39a97c4"
+    },
+    "sealed_aacc1_prompt_a": {
+      "path": "results/benchmark/stage4prep_2026-09-14/promptonly_AACC1_PSEAI_Dandage_2018_a.txt",
+      "digest": "40e4d1de1c6b7b3b5b287c7e4c528021f489cac12a45b3cc313d941319e58ec1"
+    },
+    "sealed_aacc1_prompt_b": {
+      "path": "results/benchmark/stage4prep_2026-09-14/promptonly_AACC1_PSEAI_Dandage_2018_b.txt",
+      "digest": "8fed6e4d1005e5a3560d4bd6853ebe2fe4bb4ca6008b0e18a26c8fa571131b98"
+    },
+    "sealed_argr_prompt_a": {
+      "path": "results/benchmark/stage4prep_2026-09-14/promptonly_ARGR_ECOLI_Tsuboyama_2023_1AOY_a.txt",
+      "digest": "4baaca5fd0079362f5f23fa29a1b141a0eb6754b354037ada94259f1fb92ebbd"
+    },
+    "sealed_argr_prompt_b": {
+      "path": "results/benchmark/stage4prep_2026-09-14/promptonly_ARGR_ECOLI_Tsuboyama_2023_1AOY_b.txt",
+      "digest": "793a47623ae39fe58b8c0b78e6067d19abf6c76c657174b886849e8c7a9fd09a"
+    },
+    "mcp_impl_classical": {
+      "path": "benchmark-mcp/classical.py",
+      "digest": "628560e463f0e965742d9e6316b84867eaa56ab633584c6d0e42f4812ecb4ef0"
+    },
+    "mcp_impl_analysis": {
+      "path": "benchmark-mcp/analysis.py",
+      "digest": "95ef7878c8a2258f32fc296e8288d2023d077059624940bef4a393da8843a778"
+    },
+    "mcp_impl_predictive": {
+      "path": "benchmark-mcp/predictive.py",
+      "digest": "3bf34b277064a53966524c5de78339dd2b13c6453829276d1ad790f17e03f4b4"
+    },
+    "mcp_impl_generative": {
+      "path": "benchmark-mcp/generative.py",
+      "digest": "7b822ac51117680426238821f4e1da7c98246cfe4d4a53b6954637eed3c6e5f9"
+    },
+    "mcp_impl_physics": {
+      "path": "benchmark-mcp/physics.py",
+      "digest": "a704d2d35fb847e060c1b7f24969cb56b8783ef39a084539cd3f44296ce6acc7"
+    },
+    "mcp_impl_lit": {
+      "path": "benchmark-mcp/lit.py",
+      "digest": "8a05c4d71f299ec26546df9299192ff48bbebae1bca2510a6423e657f971e60e"
+    },
+    "mcp_impl_record": {
+      "path": "benchmark-mcp/record.py",
+      "digest": "a4034dfff58c0c3be5fa5efb00f14ab05d84ef485a7e407b5b2e3822e7c1ed0d"
+    },
+    "mcp_impl_common": {
+      "path": "benchmark-mcp/common.py",
+      "digest": "8cd8a1ebfb6e45f066ada767e0c3e1463d08ebd4b7b25e876324e6d4265872c9"
+    },
+    "mcp_impl_variant_input": {
+      "path": "benchmark-mcp/variant_input.py",
+      "digest": "638ed24e7dcc29cee99371e916a26595595944807db6db42ae9fc30e2d49610d"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "condition": "b",
+  "item": "ARGR_ECOLI_Tsuboyama_2023_1AOY",
+  "model": "Qwen3-30B-A3B-Q4_K_M",
+  "wall_s": 31.447,
+  "prompt_tokens": 777,
+  "generation_tokens": 2416,
+  "finish_reason": "stop",
+  "tools_field_present": false,
+  "parser_status": "REJECTED",
+  "parser_error": "answer has wrong top-level contract",
+  "picks": []
+}

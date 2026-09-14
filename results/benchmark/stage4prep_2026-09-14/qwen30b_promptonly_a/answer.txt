@@ -1,0 +1,139 @@
+{
+  "item_id": "pilot_item",
+  "selected": [
+    {
+      "mutant": "Q30T",
+      "basis": "Conservative substitution of glutamine to threonine, preserving polarity and hydrogen bonding potential.",
+      "evidence": [],
+      "validation": [],
+      "would_overturn": "Evidence of structural disruption or loss of function in homologous proteins."
+    },
+    {
+      "mutant": "S38Q",
+      "basis": "Serine to glutamine substitution, maintaining polarity and potential hydrogen bonding.",
+      "evidence": [],
+      "validation": [],
+      "would_overturn": "Data showing impaired interaction with binding partners or catalytic activity."
+    },
+    {
+      "mutant": "E66Q",
+      "basis": "Glutamic acid to glutamine, a conservative substitution preserving charge and size.",
+      "evidence": [],
+      "validation": [],
+      "would_overturn": "Evidence of destabilizing electrostatic interactions or altered substrate specificity."
+    },
+    {
+      "mutant": "A25Q",
+      "basis": "Alanine to glutamine, introducing polarity without disrupting hydrophobic core.",
+      "evidence": [],
+      "validation": [],
+      "would_overturn": "Structural evidence of steric clashes or reduced stability."
+    },
+    {
+      "mutant": "A26S",
+      "basis": "Alanine to serine, introducing hydroxyl group for potential hydrogen bonding.",
+      "evidence": [],
+      "validation": [],
+      "would_overturn": "Data indicating loss of hydrophobic interactions or altered folding."
+    },
+    {
+      "mutant": "S19N",
+      "basis": "Serine to asparagine, maintaining polar residues and hydrogen bonding capacity.",
+      "evidence": [],
+      "validation": [],
+      "would_overturn": "Evidence of disrupted hydrogen bonding networks or functional sites."
+    },
+    {
+      "mutant": "L4A",
+      "basis": "Leucine to alanine, reducing hydrophobic bulk while preserving structure.",
+      "evidence": [],
+      "validation": [],
+      "would_overturn": "Structural evidence of destabilized helical regions or aggregation."
+    },
+    {
+      "mutant": "A10T",
+      "basis": "Alanine to threonine, introducing hydroxyl group for potential hydrogen bonding.",
+      "evidence": [],
+      "validation": [],
+      "would_overturn": "Data showing impaired solvent accessibility or binding."
+    },
+    {
+      "mutant": "A49F",
+      "basis": "Alanine to phenylalanine, introducing aromaticity without significant size change.",
+      "evidence": [],
+      "validation": [],
+      "would_overturn": "Evidence of steric hindrance or altered protein-protein interactions."
+    },
+    {
+      "mutant": "R51K",
+      "basis": "Arginine to lysine, maintaining positive charge and similar size.",
+      "evidence": [],
+      "validation": [],
+      "would_overturn": "Data indicating loss of electrostatic interactions or catalytic activity."
+    }
+  ],
+  "rejected": [
+    {
+      "mutant": "L27C",
+      "reason": "Cysteine introduction may form unintended disulfide bonds or disrupt hydrophobic core."
+    },
+    {
+      "mutant": "K9C",
+      "reason": "Lysine to cysteine substitution introduces reactive thiol group, risking aggregation."
+    },
+    {
+      "mutant": "V24S",
+      "reason": "Valine to serine substitution disrupts hydrophobic interactions in a potential helical region."
+    },
+    {
+      "mutant": "F17Q",
+      "reason": "Phenylalanine to glutamine alters aromatic interactions and hydrogen bonding."
+    },
+    {
+      "mutant": "E14P",
+      "reason": "Glutamic acid to proline disrupts helical structure and introduces kink."
+    },
+    {
+      "mutant": "P64I",
+      "reason": "Proline to isoleucine may destabilize loop regions or alter flexibility."
+    },
+    {
+      "mutant": "L12D",
+      "reason": "Leucine to aspartic acid introduces negative charge, disrupting hydrophobic core."
+    },
+    {
+      "mutant": "V60G",
+      "reason": "Valine to glycine may reduce structural stability in a β-sheet region."
+    },
+    {
+      "mutant": "F17A",
+      "reason": "Phenylalanine to alanine removes aromatic interactions, potentially affecting binding."
+    },
+    {
+      "mutant": "R42T",
+      "reason": "Arginine to threonine alters charge and hydrogen bonding capacity."
+    }
+  ],
+  "ranking": [
+    {"mutant": "Q30T", "score": 10},
+    {"mutant": "S38Q", "score": 9},
+    {"mutant": "E66Q", "score": 8},
+    {"mutant": "A25Q", "score": 7},
+    {"mutant": "A26S", "score": 6},
+    {"mutant": "S19N", "score": 5},
+    {"mutant": "L4A", "score": 4},
+    {"mutant": "A10T", "score": 3},
+    {"mutant": "A49F", "score": 2},
+    {"mutant": "R51K", "score": 1},
+    {"mutant": "K9C", "score": 0},
+    {"mutant": "V24S", "score": 0},
+    {"mutant": "F17Q", "score": 0},
+    {"mutant": "E14P", "score": 0},
+    {"mutant": "P64I", "score": 0},
+    {"mutant": "L12D", "score": 0},
+    {"mutant": "V60G", "score": 0},
+    {"mutant": "F17A", "score": 0},
+    {"mutant": "R42T", "score": 0},
+    {"mutant": "L27C", "score": 0}
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "source_tool_count": 12,
+  "forwarded_function_count": 18,
+  "forwarded_tool_block_bytes": 8727,
+  "source_tool_block_bytes": 12814,
+  "allowed_namespaces": [
+    "mcp__rescue_analysis",
+    "mcp__rescue_classical",
+    "mcp__rescue_generative",
+    "mcp__rescue_lit",
+    "mcp__rescue_physics",
+    "mcp__rescue_predictive",
+    "mcp__rescue_record"
+  ],
+  "raw_model_content": "",
+  "raw_model_tool_calls": [
+    {
+      "type": "function",
+      "function": {
+        "name": "mcp__rescue_classical__blast_msa",
+        "arguments": "{\"reference_fasta\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage3h_2026-09-14/audit_fastas/012.fasta\", \"sequence\": \"QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV\", \"max_hits\": 50}"
+      },
+      "id": "4Qwy4r1G4NnaHKFgoeMBrAisV5IUcO7I"
+    }
+  ],
+  "parsed_items": [
+    {
+      "id": "fc_505e5e45347345a7b52233524713bba3",
+      "type": "function_call",
+      "status": "completed",
+      "call_id": "4Qwy4r1G4NnaHKFgoeMBrAisV5IUcO7I",
+      "namespace": "mcp__rescue_classical",
+      "name": "blast_msa",
+      "arguments": "{\"reference_fasta\":\"/home/aid1/Documents/2_19C_biology/results/benchmark/stage3h_2026-09-14/audit_fastas/012.fasta\",\"sequence\":\"QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV\",\"max_hits\":50}"
+    }
+  ],
+  "backend_usage": {
+    "completion_tokens": 866,
+    "prompt_tokens": 14401,
+    "total_tokens": 15267,
+    "prompt_tokens_details": {
+      "cached_tokens": 7807
+    }
+  }
+}
