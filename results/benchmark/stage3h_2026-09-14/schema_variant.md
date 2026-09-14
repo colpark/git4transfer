@@ -1,0 +1,18 @@
+# Native variant encoding in W1 MCP tools
+
+The server surface now accepts the conventional `G52L` form in `blosum_score`, `conservation`, `pssm_score`, `esm2_likelihood`, `esm_if`, and both guided composites. Existing decomposed `wt`, one-based `position`, and one-letter `mutant` fields remain. `esm_if` still accepts its original full-sequence scoring form; when a variant is supplied, `sequence` is interpreted as the native sequence and the server constructs the substituted sequence before backbone-conditioned scoring. The model checkpoint and scoring conventions are unchanged.
+
+Diff: `server.py` adds optional `variant` and decomposed fields to all seven variant-taking signatures, plus `AAField` and `VariantField` JSON Schema patterns; `variant_input.py` parses, checks sequence WT and conflicts, and reports the supplied form; `common.py` includes `input_form` in receipts; `pilot_record_server.py` permits only the new Stage 3h diagnostic output directory. No prompt, metric, aggregation, threshold, scoring backend, or arm definition changed. The legacy `mutant="G52L"` shape is rejected by schema; the tool description directs the agent to `variant="G52L"`. If both forms disagree, the server returns a visible `ValueError` naming the conflicting field and expected value, never silently choosing one.
+
+| Tool | Before | After (additive API) |
+|---|---|---|
+| `blosum_score` | required `wt`, `mutant` | optional `variant`, or one-letter `wt`/`mutant`; optional position |
+| `pssm_score` | required query, MSA, position, mutant | query/MSA plus `variant`, or position/one-letter mutant; optional WT check |
+| `conservation` | required query, MSA, position | query/MSA plus `variant` or position; variant is site-only context, not a mutation-specific conservation value |
+| `esm2_likelihood` | required sequence, position, mutant | sequence plus `variant`, or position/one-letter mutant; WT checked against sequence |
+| `esm_if` | required PDB, chain, score sequence | original path preserved; optionally native sequence plus `variant` or position/one-letter mutant |
+| Guided classical/FM composites | required position, mutant | optional `variant`, or position/one-letter mutant; same parsing and checks |
+
+`schema_controls.json` records MCP input schemas, real calls, artifact-resolving receipts, and controls. Positive controls passed for both BLOSUM forms and the variant form on PSSM, conservation, ESM-2 650M, ESM-IF1, and both guided composites. The deliberately malformed single-letter field is schema-rejected. The conflicting `variant="G52L", mutant="A"` pair returns `ValueError: conflicting variant G52L: supplied mutant='A', expected 'L'`. The regex appears in every affected JSON Schema. Successful calls carry `receipt.input_form` (`variant`, `decomposed`, or `both`). The forms chosen by the 7B and 30B subjects are recorded per cell in `cells_4x.md` and each cell's `result.json` after the authorized diagnostics.
+
+Observed agent form, equal-cap full-grant cells: 7B never called a variant-taking tool. In guided mode it instead put native variant strings into `blast_search.sequence` (nine invalid attempts). The 30B called `esm2_likelihood` in both modes but supplied **only the full sequence**, omitting both `variant` and decomposed mutation fields; guided mode later placed `L27C` in the one-letter `mutant` slot of `screen_variant_classical`, which the JSON Schema rejected. Thus neither subject exercised the new `variant` field on this diagnostic item. The direct MCP controls establish API executability; the full-item behavioral result is **no successful native-form adoption yet**. Do not treat this as a model failure or as an accuracy result.

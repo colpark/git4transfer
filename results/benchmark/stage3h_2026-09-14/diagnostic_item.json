@@ -1,0 +1,9 @@
+{
+  "assay_id": "ARGR_ECOLI_Tsuboyama_2023_1AOY",
+  "usable_homologs": 79,
+  "median_usable_homologs": 79,
+  "reference_fasta": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3h_2026-09-14/audit_fastas/012.fasta",
+  "reference_pdb": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/ARGR_ECOLI.pdb",
+  "n_remaining": 140,
+  "n_usable": 131
+}

@@ -1,0 +1,34 @@
+[
+  {
+    "cell": "cell_7b_unguided",
+    "live_status": "UNDEMONSTRATED",
+    "reconciled_status": "PASS",
+    "active_generation_s": 78.68030499999999,
+    "response_count": 1,
+    "posthoc_only_breach": false
+  },
+  {
+    "cell": "cell_7b_guided",
+    "live_status": "UNDEMONSTRATED",
+    "reconciled_status": "UNDEMONSTRATED",
+    "active_generation_s": 45.873857,
+    "response_count": 11,
+    "posthoc_only_breach": false
+  },
+  {
+    "cell": "cell_30b_unguided",
+    "live_status": "BREACH",
+    "reconciled_status": "BREACH",
+    "active_generation_s": 87.672799,
+    "response_count": 2,
+    "posthoc_only_breach": false
+  },
+  {
+    "cell": "cell_30b_guided",
+    "live_status": "BREACH",
+    "reconciled_status": "BREACH",
+    "active_generation_s": 72.56286,
+    "response_count": 3,
+    "posthoc_only_breach": false
+  }
+]

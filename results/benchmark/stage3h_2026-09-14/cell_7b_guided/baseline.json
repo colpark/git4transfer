@@ -1,0 +1,39 @@
+{
+  "repeats": [
+    {
+      "prompt_tokens": 49,
+      "generation_tokens": 128,
+      "generation_s": 2.684703,
+      "wall_s": 2.736716347746551,
+      "tps": 47.67752708586388,
+      "timing_source": "llama.cpp predicted_ms"
+    },
+    {
+      "prompt_tokens": 49,
+      "generation_tokens": 128,
+      "generation_s": 2.669661,
+      "wall_s": 2.703717735596001,
+      "tps": 47.94616245283577,
+      "timing_source": "llama.cpp predicted_ms"
+    },
+    {
+      "prompt_tokens": 49,
+      "generation_tokens": 128,
+      "generation_s": 2.67812,
+      "wall_s": 2.7066733967512846,
+      "tps": 47.794721670425524,
+      "timing_source": "llama.cpp predicted_ms"
+    }
+  ],
+  "median_tps": 47.794721670425524,
+  "threshold_tps": 33.45630516929786,
+  "window_active_generation_s": 60,
+  "controls": {
+    "per_response_synthetic_throttle_aborts": true,
+    "per_response_healthy_passes": true,
+    "per_response_short_is_unassessed": true,
+    "session_synthetic_throttle_aborts": true,
+    "session_healthy_passes": true,
+    "session_short_is_unassessed": true
+  }
+}

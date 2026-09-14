@@ -1,0 +1,17 @@
+{
+  "host": "192.168.100.11",
+  "model": "qwen2.5-7b-instruct-q4_k_m",
+  "quantization": "Q4_K_M",
+  "context": 32768,
+  "sensors_initial": {
+    "time_unix": 1789384767.8062546,
+    "gpu_util_pct": 0.0,
+    "gpu_c": 40.0,
+    "gpu_tlimit_margin_c": 56.0,
+    "gpu_power_w": 9.91,
+    "cpu_zone0_c": 43.0,
+    "cpu_zone4_c": 42.7,
+    "mem_available_gib": 89.63
+  },
+  "memory_csv": "[N/A], [N/A]"
+}

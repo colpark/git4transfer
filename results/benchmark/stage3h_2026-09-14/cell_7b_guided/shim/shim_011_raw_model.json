@@ -1,0 +1,36 @@
+{
+  "choices": [
+    {
+      "finish_reason": "stop",
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "The top ten ranked variants, along with supporting evidence and potential overturning factors, are as follows:\n\n- **Rank 1: L12D**\n  - **Basis**: Potential impact on protein structure and function.\n  - **Evidence**: BLASTP search results.\n  - **Would Overturn**: Significant disruption to protein structure or function.\n\nThe following variants were considered but rejected due to the sequence being too short for a valid BLAST search:\n- L27C\n- K9C\n- Q30T\n- V24S\n- V24N\n- F17Q\n- Q28T\n- A7D\n- P64I\n\nThe ranking of the remaining candidates is ongoing, and the score for L12D is provisionally set at 0.95 based on initial geometric and structural evidence.\n\nThis ranking and selection are based on the available evidence and do not claim a definitive assay outcome. Further analysis may be required to refine the selection."
+      }
+    }
+  ],
+  "created": 1789384968,
+  "model": "/home/aid1/.ollama/models/blobs/sha256-2bada8a7450677000f678be90653b85d364de7db25eb5ea54136ada5f3933730",
+  "system_fingerprint": "b1-4a89937",
+  "object": "chat.completion",
+  "usage": {
+    "completion_tokens": 209,
+    "prompt_tokens": 14013,
+    "total_tokens": 14222,
+    "prompt_tokens_details": {
+      "cached_tokens": 13325
+    }
+  },
+  "id": "chatcmpl-ZyaC2n6sjanN9r2gXkoMrZzT9cibmQQB",
+  "timings": {
+    "cache_n": 13325,
+    "prompt_n": 688,
+    "prompt_ms": 318.929,
+    "prompt_per_token_ms": 0.4635595930232558,
+    "prompt_per_second": 2157.2199455051123,
+    "predicted_n": 209,
+    "predicted_ms": 5140.306,
+    "predicted_per_token_ms": 24.713009615384614,
+    "predicted_per_second": 40.464517092951276
+  }
+}

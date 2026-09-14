@@ -1,0 +1,877 @@
+{
+  "direct": {
+    "variant": {
+      "wt": "G",
+      "position": 52,
+      "mutant": "L",
+      "input_form": "variant"
+    },
+    "both_agree": {
+      "wt": "G",
+      "position": 52,
+      "mutant": "L",
+      "input_form": "both"
+    },
+    "conflict_rejected": true,
+    "conflict_message": "conflicting variant G52L: supplied mutant='A', expected 'L'",
+    "wrong_shape_rejected": true,
+    "wrong_shape_message": "mutant must be one amino-acid letter (e.g. G), not a variant such as G52L; use variant='G52L'"
+  },
+  "schemas": {
+    "blosum_score": {
+      "type": "object",
+      "properties": {
+        "wt": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Wt"
+        },
+        "mutant": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Mutant"
+        },
+        "position": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Position"
+        },
+        "variant": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY][1-9][0-9]*[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Variant"
+        }
+      },
+      "title": "blosum_scoreArguments"
+    },
+    "pssm_score": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "title": "Query",
+          "type": "string"
+        },
+        "msa": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Msa",
+          "type": "array"
+        },
+        "position": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Position"
+        },
+        "mutant": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Mutant"
+        },
+        "wt": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Wt"
+        },
+        "variant": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY][1-9][0-9]*[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Variant"
+        }
+      },
+      "required": [
+        "query",
+        "msa"
+      ],
+      "title": "pssm_scoreArguments"
+    },
+    "conservation": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "title": "Query",
+          "type": "string"
+        },
+        "msa": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Msa",
+          "type": "array"
+        },
+        "position": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Position"
+        },
+        "wt": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Wt"
+        },
+        "mutant": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Mutant"
+        },
+        "variant": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY][1-9][0-9]*[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Variant"
+        }
+      },
+      "required": [
+        "query",
+        "msa"
+      ],
+      "title": "conservationArguments"
+    },
+    "screen_variant_classical": {
+      "type": "object",
+      "properties": {
+        "sequence": {
+          "title": "Sequence",
+          "type": "string"
+        },
+        "reference_fasta": {
+          "title": "Reference Fasta",
+          "type": "string"
+        },
+        "position": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Position"
+        },
+        "mutant": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Mutant"
+        },
+        "wt": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Wt"
+        },
+        "variant": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY][1-9][0-9]*[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Variant"
+        },
+        "max_hits": {
+          "default": 10,
+          "title": "Max Hits",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "sequence",
+        "reference_fasta"
+      ],
+      "title": "screen_variant_classicalArguments"
+    },
+    "esm2_likelihood": {
+      "type": "object",
+      "properties": {
+        "sequence": {
+          "title": "Sequence",
+          "type": "string"
+        },
+        "position": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Position"
+        },
+        "mutant": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Mutant"
+        },
+        "wt": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Wt"
+        },
+        "variant": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY][1-9][0-9]*[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Variant"
+        }
+      },
+      "required": [
+        "sequence"
+      ],
+      "title": "esm2_likelihoodArguments"
+    },
+    "screen_variant_fm": {
+      "type": "object",
+      "properties": {
+        "sequence": {
+          "title": "Sequence",
+          "type": "string"
+        },
+        "pdb_path": {
+          "title": "Pdb Path",
+          "type": "string"
+        },
+        "position": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Position"
+        },
+        "mutant": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Mutant"
+        },
+        "wt": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Wt"
+        },
+        "variant": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY][1-9][0-9]*[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Variant"
+        },
+        "chain": {
+          "default": "A",
+          "title": "Chain",
+          "type": "string"
+        }
+      },
+      "required": [
+        "sequence",
+        "pdb_path"
+      ],
+      "title": "screen_variant_fmArguments"
+    },
+    "esm_if": {
+      "type": "object",
+      "properties": {
+        "pdb_path": {
+          "title": "Pdb Path",
+          "type": "string"
+        },
+        "chain": {
+          "title": "Chain",
+          "type": "string"
+        },
+        "sequence": {
+          "title": "Sequence",
+          "type": "string"
+        },
+        "position": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Position"
+        },
+        "mutant": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Mutant"
+        },
+        "wt": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Wt"
+        },
+        "variant": {
+          "anyOf": [
+            {
+              "pattern": "^[ACDEFGHIKLMNPQRSTVWY][1-9][0-9]*[ACDEFGHIKLMNPQRSTVWY]$",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Variant"
+        }
+      },
+      "required": [
+        "pdb_path",
+        "chain",
+        "sequence"
+      ],
+      "title": "esm_ifArguments"
+    }
+  },
+  "outcomes": {
+    "blosum_variant": {
+      "tool": "blosum_score",
+      "input": {
+        "variant": "G52L"
+      },
+      "response": {
+        "error": null,
+        "result": {
+          "matrix": "BLOSUM62",
+          "mutant": "L",
+          "score": -4,
+          "wt": "G",
+          "zero_effect": false
+        },
+        "receipt": {
+          "call_id": "call_id:91c7e7e7a8d847e3a954f5a4d738fb13",
+          "tool": "blosum_score",
+          "args_hash": "48abd48a15a5614779e6600a80fb6cc2d4838542df9515e50ad1ad8ffb834ad3",
+          "runtime_s": 0.0002,
+          "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/91c7e7e7a8d847e3a954f5a4d738fb13.json",
+          "cache_hit": true,
+          "input_form": "variant"
+        }
+      },
+      "is_error": false,
+      "receipt_resolves": true
+    },
+    "blosum_decomposed": {
+      "tool": "blosum_score",
+      "input": {
+        "wt": "G",
+        "position": 52,
+        "mutant": "L"
+      },
+      "response": {
+        "error": null,
+        "result": {
+          "matrix": "BLOSUM62",
+          "mutant": "L",
+          "score": -4,
+          "wt": "G",
+          "zero_effect": false
+        },
+        "receipt": {
+          "call_id": "call_id:bbae3073459649759884b8f23ee67dea",
+          "tool": "blosum_score",
+          "args_hash": "21a55e3b4e98dbf4d6ec351f2a6204f895d7667654b4607dc4d04b291314a9a1",
+          "runtime_s": 0.000176,
+          "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/bbae3073459649759884b8f23ee67dea.json",
+          "cache_hit": true,
+          "input_form": "decomposed"
+        }
+      },
+      "is_error": false,
+      "receipt_resolves": true
+    },
+    "blosum_bad_shape": {
+      "tool": "blosum_score",
+      "input": {
+        "wt": "G",
+        "position": 52,
+        "mutant": "G52L"
+      },
+      "response": {
+        "error": "Error executing tool blosum_score: 1 validation error for blosum_scoreArguments\nmutant\n  String should match pattern '^[ACDEFGHIKLMNPQRSTVWY]$' [type=string_pattern_mismatch, input_value='G52L', input_type=str]\n    For further information visit https://errors.pydantic.dev/2.13/v/string_pattern_mismatch"
+      },
+      "is_error": true,
+      "receipt_resolves": false
+    },
+    "blosum_conflict": {
+      "tool": "blosum_score",
+      "input": {
+        "variant": "G52L",
+        "mutant": "A"
+      },
+      "response": {
+        "result": null,
+        "error": "ValueError: conflicting variant G52L: supplied mutant='A', expected 'L'",
+        "receipt": {
+          "call_id": "call_id:6c4d470763894a8595fe049e58a4c0a4",
+          "tool": "blosum_score",
+          "args_hash": "6fafcd49550a3905d5f8604af87e719a978c9bc150d8ecf59c33cf856ed0616e",
+          "runtime_s": 0.000105,
+          "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/6c4d470763894a8595fe049e58a4c0a4.json",
+          "cache_hit": false,
+          "input_form": "both"
+        }
+      },
+      "is_error": false,
+      "receipt_resolves": true
+    },
+    "pssm_variant": {
+      "tool": "pssm_score",
+      "input": {
+        "query": "ACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY",
+        "msa": [
+          "ACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY",
+          "ACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY"
+        ],
+        "variant": "D3E"
+      },
+      "response": {
+        "error": null,
+        "result": {
+          "background": 0.05,
+          "delta_bits": -1.584962500721156,
+          "depth": 2,
+          "mutant": "E",
+          "mutant_bits": -0.13750352374993496,
+          "position": 3,
+          "pseudocount_per_aa": 1,
+          "wt": "D",
+          "wt_bits": 1.4474589769712212
+        },
+        "receipt": {
+          "call_id": "call_id:b3fa265cb5f5416ebb6cfcb98cccc614",
+          "tool": "pssm_score",
+          "args_hash": "ef6125996b96e6daa047edad421edb92d671b34ad3f9b5e7e75c2cc27d50f510",
+          "runtime_s": 0.000186,
+          "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/b3fa265cb5f5416ebb6cfcb98cccc614.json",
+          "cache_hit": true,
+          "input_form": "variant"
+        }
+      },
+      "is_error": false,
+      "receipt_resolves": true
+    },
+    "conservation_variant": {
+      "tool": "conservation",
+      "input": {
+        "query": "ACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY",
+        "msa": [
+          "ACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY",
+          "ACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY"
+        ],
+        "variant": "D3E"
+      },
+      "response": {
+        "error": null,
+        "result": {
+          "conservation": 1.0,
+          "depth": 2,
+          "entropy_bits": -0.0,
+          "gap_fraction": 0.0,
+          "position": 3
+        },
+        "receipt": {
+          "call_id": "call_id:9ea19967c7f242cea8ed2301091d2e66",
+          "tool": "conservation",
+          "args_hash": "635ce77498ede3cdd5e0bf4af4271cb926be7f95c0a316b7c1de10616ca6d9ee",
+          "runtime_s": 0.00017,
+          "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/9ea19967c7f242cea8ed2301091d2e66.json",
+          "cache_hit": true,
+          "input_form": "variant"
+        }
+      },
+      "is_error": false,
+      "receipt_resolves": true
+    },
+    "guided_variant": {
+      "tool": "screen_variant_classical",
+      "input": {
+        "sequence": "ACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY",
+        "reference_fasta": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/stage3g_msa_positive.fasta",
+        "variant": "D3E"
+      },
+      "response": {
+        "error": null,
+        "result": {
+          "blosum": {
+            "matrix": "BLOSUM62",
+            "mutant": "E",
+            "score": 2,
+            "wt": "D",
+            "zero_effect": false
+          },
+          "conservation": {
+            "conservation": 0.7686217868402409,
+            "depth": 2,
+            "entropy_bits": 1.0,
+            "gap_fraction": 0.0,
+            "position": 3
+          },
+          "pssm": {
+            "background": 0.05,
+            "delta_bits": 0.0,
+            "depth": 2,
+            "mutant": "E",
+            "mutant_bits": 0.8624964762500651,
+            "position": 3,
+            "pseudocount_per_aa": 1,
+            "wt": "D",
+            "wt_bits": 0.8624964762500651
+          },
+          "retrieval": {
+            "depth": 2,
+            "hit_ids_used": [
+              "one_mutant_control"
+            ]
+          }
+        },
+        "receipt": {
+          "call_id": "call_id:6a29fcbdc4dd4b4ea601ef8f53414081",
+          "tool": "screen_variant_classical",
+          "args_hash": "dbe47cc24880228daf00be0ddc2da9594be8540890b14746f90f361adbc64eb6",
+          "runtime_s": 0.000216,
+          "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/classical/6a29fcbdc4dd4b4ea601ef8f53414081.json",
+          "cache_hit": true,
+          "input_form": "variant"
+        }
+      },
+      "is_error": false,
+      "receipt_resolves": true
+    },
+    "esm2_variant": {
+      "tool": "esm2_likelihood",
+      "input": {
+        "sequence": "ACDEFGHIKLMNPQRSTVWYACDEFGHIKLMNPQRSTVWY",
+        "variant": "D3E"
+      },
+      "response": {
+        "error": null,
+        "result": {
+          "delta_log_probability": -5.801539735868573,
+          "device": "cpu",
+          "method": "ESM2_single_position_masked_marginal_natural_log",
+          "model": "facebook/esm2_t33_650M_UR50D",
+          "mutant": "E",
+          "mutant_log_probability": -5.821894645690918,
+          "position": 3,
+          "precision": "float32",
+          "revision": "08e4846e537177426273712802403f7ba8261b6c",
+          "wt": "D",
+          "wt_log_probability": -0.02035490982234478
+        },
+        "receipt": {
+          "call_id": "call_id:d5cfa1eeac9f4bddad39954bc21f9999",
+          "tool": "esm2_likelihood",
+          "args_hash": "1909c7062729453272b17103704fb2486ef4cd5477ef48f6fe1acdcecb7148b2",
+          "runtime_s": 0.000275,
+          "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/predictive/d5cfa1eeac9f4bddad39954bc21f9999.json",
+          "cache_hit": true,
+          "input_form": "variant"
+        }
+      },
+      "is_error": false,
+      "receipt_resolves": true
+    },
+    "fm_composite_variant": {
+      "tool": "screen_variant_fm",
+      "input": {
+        "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG",
+        "pdb_path": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/1ubq.pdb",
+        "variant": "I3A"
+      },
+      "response": {
+        "error": null,
+        "result": {
+          "esm2_likelihood": {
+            "delta_log_probability": -6.947866678237915,
+            "device": "cpu",
+            "method": "ESM2_single_position_masked_marginal_natural_log",
+            "model": "facebook/esm2_t33_650M_UR50D",
+            "mutant": "A",
+            "mutant_log_probability": -7.2393388748168945,
+            "position": 3,
+            "precision": "float32",
+            "revision": "08e4846e537177426273712802403f7ba8261b6c",
+            "wt": "I",
+            "wt_log_probability": -0.2914721965789795
+          },
+          "esm_if": {
+            "backbone_length": 76,
+            "chain": "A",
+            "device": "cpu",
+            "interpretation": "backbone-conditioned sequence score; not a measured stability effect",
+            "mean_log_likelihood": -0.3058074148077714,
+            "mean_log_likelihood_with_coords": -0.3058074148077714,
+            "model": "esm_if1_gvp4_t16_142M_UR50",
+            "native_sequence_match": false,
+            "pdb_path": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/1ubq.pdb",
+            "sequence_length": 76
+          },
+          "note": "Model plausibility scores, not measured fitness or stability."
+        },
+        "receipt": {
+          "call_id": "call_id:9e1c7cf6ec4a4eb8a3ef2446071548ca",
+          "tool": "screen_variant_fm",
+          "args_hash": "d6e7cb17c1fb65ca7d1c655948fcbcd871da3aca5ee7e9ad3eca4fefa6e16d40",
+          "runtime_s": 0.000113,
+          "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/predictive/9e1c7cf6ec4a4eb8a3ef2446071548ca.json",
+          "cache_hit": true,
+          "input_form": "variant"
+        }
+      },
+      "is_error": false,
+      "receipt_resolves": true
+    },
+    "esm_if_variant": {
+      "tool": "esm_if",
+      "input": {
+        "sequence": "MQIFVKTLTGKTITLEVEPSDTIENVKAKIQDKEGIPPDQQRLIFAGKQLEDGRTLSDYNIQKESTLHLVLRLRGG",
+        "pdb_path": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/1ubq.pdb",
+        "chain": "A",
+        "variant": "I3A"
+      },
+      "response": {
+        "error": null,
+        "result": {
+          "backbone_length": 76,
+          "chain": "A",
+          "device": "cpu",
+          "interpretation": "backbone-conditioned sequence score; not a measured stability effect",
+          "mean_log_likelihood": -0.3058074148077714,
+          "mean_log_likelihood_with_coords": -0.3058074148077714,
+          "model": "esm_if1_gvp4_t16_142M_UR50",
+          "native_sequence_match": false,
+          "pdb_path": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/fixtures/1ubq.pdb",
+          "sequence_length": 76
+        },
+        "receipt": {
+          "call_id": "call_id:088b2c219c1f40bfb92483c1cd04805e",
+          "tool": "esm_if",
+          "args_hash": "5f8ec90472c135374e4bfdbc3897ca9fad53611e25d79f60c780abcae3fe8ba7",
+          "runtime_s": 0.00014,
+          "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage2_2026-09-12/artifacts/generative/088b2c219c1f40bfb92483c1cd04805e.json",
+          "cache_hit": true,
+          "input_form": "variant"
+        }
+      },
+      "is_error": false,
+      "receipt_resolves": true
+    }
+  },
+  "checks": {
+    "positive_calls": {
+      "blosum_variant": true,
+      "blosum_decomposed": true,
+      "pssm_variant": true,
+      "conservation_variant": true,
+      "guided_variant": true,
+      "esm2_variant": true,
+      "fm_composite_variant": true,
+      "esm_if_variant": true
+    },
+    "negative_calls": {
+      "blosum_bad_shape": true,
+      "blosum_conflict": true
+    },
+    "bad_shape_names_pattern": true,
+    "conflict_names_values": true,
+    "pattern_in_all_seven_schemas": true,
+    "direct_conflict_rejected": true,
+    "direct_wrong_shape_rejected": true,
+    "receipt_input_forms": {
+      "blosum_variant": "variant",
+      "blosum_decomposed": "decomposed",
+      "pssm_variant": "variant",
+      "conservation_variant": "variant",
+      "guided_variant": "variant",
+      "esm2_variant": "variant",
+      "fm_composite_variant": "variant",
+      "esm_if_variant": "variant"
+    },
+    "receipt_forms_correct": true,
+    "pass": true
+  }
+}

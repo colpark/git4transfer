@@ -1,0 +1,88 @@
+{
+  "args": {
+    "answer": {
+      "ranking": [
+        {
+          "mutant": "L12D",
+          "score": 0.95
+        }
+      ],
+      "rejected": [
+        {
+          "mutant": "L27C",
+          "reason": "Sequence too short"
+        },
+        {
+          "mutant": "K9C",
+          "reason": "Sequence too short"
+        },
+        {
+          "mutant": "Q30T",
+          "reason": "Sequence too short"
+        },
+        {
+          "mutant": "V24S",
+          "reason": "Sequence too short"
+        },
+        {
+          "mutant": "V24N",
+          "reason": "Sequence too short"
+        },
+        {
+          "mutant": "F17Q",
+          "reason": "Sequence too short"
+        },
+        {
+          "mutant": "Q28T",
+          "reason": "Sequence too short"
+        },
+        {
+          "mutant": "A7D",
+          "reason": "Sequence too short"
+        },
+        {
+          "mutant": "P64I",
+          "reason": "Sequence too short"
+        }
+      ],
+      "selected": [
+        {
+          "basis": "Potential impact on protein structure and function",
+          "evidence": [
+            "blast_search:call_id:e0d43df846d14a108b03ff61c93372d2"
+          ],
+          "mutant": "L12D",
+          "rank": 1,
+          "validation": [],
+          "would_overturn": [
+            "Significant disruption to protein structure or function"
+          ]
+        },
+        {
+          "basis": "Not ranked due to blast_search failure",
+          "evidence": [],
+          "mutant": "K9C",
+          "rank": 2,
+          "validation": [],
+          "would_overturn": []
+        }
+      ]
+    },
+    "item_id": "pilot_item"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "00f2cdeeef80b6e056fb820e9fe64b82a475e7796de48579824bae5e1e7f4d6d",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3h_2026-09-14/cell_7b_guided/artifacts/record/3c605778e2294211ae700a4d9d68fdbe.json",
+    "cache_hit": false,
+    "call_id": "call_id:3c605778e2294211ae700a4d9d68fdbe",
+    "runtime_s": 0.000877,
+    "tool": "submit_answer"
+  },
+  "result": {
+    "accepted": true,
+    "item_id": "pilot_item",
+    "submission_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage3h_2026-09-14/cell_7b_guided/submissions/pilot_item.json"
+  },
+  "server": "record"
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "cell": "cell_7b_unguided",
+    "submission": "absent",
+    "contract_valid": false,
+    "reason": "no answer submitted",
+    "cited_ids": [],
+    "invalid_citations": []
+  },
+  {
+    "cell": "cell_7b_guided",
+    "submission": "accepted_by_record",
+    "contract_valid": false,
+    "selected_count": 2,
+    "rank_sequence_valid": false,
+    "malformed": [
+      "selected entry missing mutant, basis or would_overturn string",
+      "selected entry missing mutant, basis or would_overturn string"
+    ],
+    "cited_ids": [
+      "blast_search:call_id:e0d43df846d14a108b03ff61c93372d2"
+    ],
+    "invalid_citations": [
+      "blast_search:call_id:e0d43df846d14a108b03ff61c93372d2"
+    ],
+    "valid_receipt_count": 1
+  },
+  {
+    "cell": "cell_30b_unguided",
+    "submission": "absent",
+    "contract_valid": false,
+    "reason": "no answer submitted",
+    "cited_ids": [],
+    "invalid_citations": []
+  },
+  {
+    "cell": "cell_30b_guided",
+    "submission": "absent",
+    "contract_valid": false,
+    "reason": "no answer submitted",
+    "cited_ids": [],
+    "invalid_citations": []
+  }
+]

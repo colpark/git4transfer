@@ -39,6 +39,8 @@ def emit(server: str, tool: str, args: dict[str, Any], compute: Callable[[], Any
     receipt = {"call_id": call_id, "tool": tool, "args_hash": args_hash,
                "runtime_s": round(time.monotonic() - started, 6),
                "artifact_path": str(artifact_path), "cache_hit": cache_hit}
+    if "input_form" in args:
+        receipt["input_form"] = args["input_form"]
     response = {**body, "receipt": receipt}
     artifact_path.write_text(json.dumps({"server": server, "args": args, **response},
                                         sort_keys=True, indent=2, allow_nan=False) + "\n")

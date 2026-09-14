@@ -1,0 +1,79 @@
+{
+  "source_tool_count": 25,
+  "forwarded_function_count": 19,
+  "forwarded_tool_block_bytes": 9113,
+  "source_tool_block_bytes": 80008,
+  "allowed_namespaces": [
+    "mcp__rescue_analysis",
+    "mcp__rescue_classical",
+    "mcp__rescue_generative",
+    "mcp__rescue_lit",
+    "mcp__rescue_physics",
+    "mcp__rescue_predictive",
+    "mcp__rescue_record"
+  ],
+  "raw_model_content": "",
+  "raw_model_tool_calls": [
+    {
+      "type": "function",
+      "function": {
+        "name": "mcp__rescue_classical__blast_msa",
+        "arguments": "{\"reference_fasta\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage3h_2026-09-14/audit_fastas/012.fasta\", \"sequence\": \"QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV\", \"max_hits\": 20}"
+      },
+      "id": "vxT6LD38f8B8iejThR38HulO0hyrq9Y3"
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "mcp__rescue_predictive__esm2_likelihood",
+        "arguments": "{\"sequence\": \"QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV\"}"
+      },
+      "id": "Q3l3IMKbli1RzMXxeMfJaDaWI8W522dn"
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "mcp__rescue_analysis__tmalign",
+        "arguments": "{\"pdb_a\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/ARGR_ECOLI.pdb\", \"pdb_b\": \"QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV\"}"
+      },
+      "id": "wNKofjYQSzcFC7A7D0QS51gse6fdQhsT"
+    }
+  ],
+  "parsed_items": [
+    {
+      "id": "fc_d2715dec08434af9ad00189e651a94d3",
+      "type": "function_call",
+      "status": "completed",
+      "call_id": "vxT6LD38f8B8iejThR38HulO0hyrq9Y3",
+      "namespace": "mcp__rescue_classical",
+      "name": "blast_msa",
+      "arguments": "{\"reference_fasta\":\"/home/aid1/Documents/2_19C_biology/results/benchmark/stage3h_2026-09-14/audit_fastas/012.fasta\",\"sequence\":\"QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV\",\"max_hits\":20}"
+    },
+    {
+      "id": "fc_17cb28316896437eaa32f58501e359f7",
+      "type": "function_call",
+      "status": "completed",
+      "call_id": "Q3l3IMKbli1RzMXxeMfJaDaWI8W522dn",
+      "namespace": "mcp__rescue_predictive",
+      "name": "esm2_likelihood",
+      "arguments": "{\"sequence\":\"QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV\"}"
+    },
+    {
+      "id": "fc_4b04a2fa087b4485a26f849c0f23a64b",
+      "type": "function_call",
+      "status": "completed",
+      "call_id": "wNKofjYQSzcFC7A7D0QS51gse6fdQhsT",
+      "namespace": "mcp__rescue_analysis",
+      "name": "tmalign",
+      "arguments": "{\"pdb_a\":\"/home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/ARGR_ECOLI.pdb\",\"pdb_b\":\"QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV\"}"
+    }
+  ],
+  "backend_usage": {
+    "completion_tokens": 1108,
+    "prompt_tokens": 9733,
+    "total_tokens": 10841,
+    "prompt_tokens_details": {
+      "cached_tokens": 1
+    }
+  }
+}

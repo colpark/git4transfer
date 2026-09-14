@@ -1,0 +1,104 @@
+{
+  "model": "Qwen3-30B-A3B-Q4_K_M",
+  "mode": "unguided",
+  "assay_id": "ARGR_ECOLI_Tsuboyama_2023_1AOY",
+  "wall_s": 99.19243829231709,
+  "prompt_tokens": 23141,
+  "generation_tokens": 5122,
+  "response_cap": 4096,
+  "cap_hits": [],
+  "exit_code": -15,
+  "timed_out": false,
+  "stop_reason": "response",
+  "calls": {
+    "attempted": {
+      "classical": 2,
+      "predictive": 1,
+      "analysis": 1
+    },
+    "succeeded": {
+      "classical": 2
+    },
+    "failed": {
+      "predictive": 1,
+      "analysis": 1
+    },
+    "receipt_ids": [
+      "call_id:b5617e2d5aab4be6a624d7e18d8f6ce4",
+      "call_id:f89e890ba5924435b8bc34db59b7477c"
+    ]
+  },
+  "fm_attempted": 1,
+  "fm_usable": 0,
+  "argument_forms_with_receipts": [
+    "decomposed"
+  ],
+  "response_checks": [
+    {
+      "response": "shim_001",
+      "prompt_tokens": 9733,
+      "generation_tokens": 1108,
+      "backend_wall_s": 24.780967712402344,
+      "generation_s": 17.252519,
+      "generation_tps": 64.22250571061537,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    },
+    {
+      "response": "shim_002",
+      "prompt_tokens": 13408,
+      "generation_tokens": 4014,
+      "backend_wall_s": 73.36990451812744,
+      "generation_s": 70.42028,
+      "generation_tps": 57.00062538802742,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": true
+    }
+  ],
+  "session_checks": [
+    {
+      "response": "shim_002",
+      "active_end_s": 87.672799,
+      "active_start_s": 27.672798999999998,
+      "estimated_tps": 57.00062538802742,
+      "breach": true
+    }
+  ],
+  "session_gate": "BREACH",
+  "baseline_tps": 88.9593150132744,
+  "threshold_tps": 62.27152050929208,
+  "peak_gpu_c": 73.0,
+  "peak_cpu_c": 81.7,
+  "peak_gpu_power_w": 91.78,
+  "peak_gpu_util_pct": 95.0,
+  "min_mem_available_gib": 74.855,
+  "sensor_errors": [],
+  "submission": "absent",
+  "candidates_considered_lower_bound": 0,
+  "considered_variants": [],
+  "validation_categories_per_pick": [],
+  "pick_has_variant_specific_evidence": [],
+  "argument_forms_attempted": [
+    {
+      "tool": "esm2_likelihood",
+      "form": "missing",
+      "variant": null,
+      "mutant": null
+    },
+    {
+      "tool": "conservation",
+      "form": "decomposed",
+      "variant": null,
+      "mutant": null
+    }
+  ],
+  "receipt_variant_map": {
+    "call_id:f89e890ba5924435b8bc34db59b7477c": null,
+    "call_id:b82518049772422593bd25a8562801b3": null,
+    "call_id:6f7b289c76244090b8f7bdf834e59abc": null,
+    "call_id:b5617e2d5aab4be6a624d7e18d8f6ce4": null
+  },
+  "live_session_gate": "BREACH",
+  "active_generation_s": 87.672799,
+  "posthoc_only_breach": false
+}

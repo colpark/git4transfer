@@ -1,0 +1,113 @@
+{
+  "source_tool_count": 25,
+  "forwarded_function_count": 21,
+  "forwarded_tool_block_bytes": 10458,
+  "source_tool_block_bytes": 81310,
+  "allowed_namespaces": [
+    "mcp__rescue_analysis",
+    "mcp__rescue_classical",
+    "mcp__rescue_generative",
+    "mcp__rescue_lit",
+    "mcp__rescue_physics",
+    "mcp__rescue_predictive",
+    "mcp__rescue_record"
+  ],
+  "raw_model_content": "",
+  "raw_model_tool_calls": [
+    {
+      "type": "function",
+      "function": {
+        "name": "mcp__rescue_classical__blast_msa",
+        "arguments": "{\"reference_fasta\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage3h_2026-09-14/audit_fastas/012.fasta\", \"sequence\": \"QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV\", \"max_hits\": 50}"
+      },
+      "id": "P9DorKOTPLTCOMZ5ovcZ8UIqF9PLyYKP"
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "mcp__rescue_predictive__esm2_likelihood",
+        "arguments": "{\"sequence\": \"QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV\"}"
+      },
+      "id": "c3HdN3OnB9qdteNEZ0j4tW2Pre1lDa0d"
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "mcp__rescue_physics__dssp",
+        "arguments": "{\"pdb_path\": \"/home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/ARGR_ECOLI.pdb\"}"
+      },
+      "id": "gAKfGEaqYvitdrw43ROpFzWpO6PwlWft"
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "mcp__rescue_classical__pssm_score",
+        "arguments": "{\"msa\": [\"QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV\"], \"query\": \"QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV\"}"
+      },
+      "id": "l8WL8mMIsiamGXQd7Gou8koi0AzImron"
+    },
+    {
+      "type": "function",
+      "function": {
+        "name": "mcp__rescue_classical__conservation",
+        "arguments": "{\"msa\": [\"QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV\"], \"query\": \"QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV\"}"
+      },
+      "id": "OKljG0c9yFdLL3fKK4IXzLbtquHrZ83i"
+    }
+  ],
+  "parsed_items": [
+    {
+      "id": "fc_6759db52b3064bf7952b085c4ed15a4b",
+      "type": "function_call",
+      "status": "completed",
+      "call_id": "P9DorKOTPLTCOMZ5ovcZ8UIqF9PLyYKP",
+      "namespace": "mcp__rescue_classical",
+      "name": "blast_msa",
+      "arguments": "{\"reference_fasta\":\"/home/aid1/Documents/2_19C_biology/results/benchmark/stage3h_2026-09-14/audit_fastas/012.fasta\",\"sequence\":\"QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV\",\"max_hits\":50}"
+    },
+    {
+      "id": "fc_aaa8fa7a92994d41829fc97ad8809065",
+      "type": "function_call",
+      "status": "completed",
+      "call_id": "c3HdN3OnB9qdteNEZ0j4tW2Pre1lDa0d",
+      "namespace": "mcp__rescue_predictive",
+      "name": "esm2_likelihood",
+      "arguments": "{\"sequence\":\"QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV\"}"
+    },
+    {
+      "id": "fc_79c072fb79c44c39a7ddf7dc6de94b24",
+      "type": "function_call",
+      "status": "completed",
+      "call_id": "gAKfGEaqYvitdrw43ROpFzWpO6PwlWft",
+      "namespace": "mcp__rescue_physics",
+      "name": "dssp",
+      "arguments": "{\"pdb_path\":\"/home/aid1/Documents/2_19C_biology/results/benchmark/stage3b_2026-09-13/ProteinGym_AF2_structures/ARGR_ECOLI.pdb\"}"
+    },
+    {
+      "id": "fc_f16f282a00144c6990e8d1d0292a291c",
+      "type": "function_call",
+      "status": "completed",
+      "call_id": "l8WL8mMIsiamGXQd7Gou8koi0AzImron",
+      "namespace": "mcp__rescue_classical",
+      "name": "pssm_score",
+      "arguments": "{\"msa\":[\"QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV\"],\"query\":\"QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV\"}"
+    },
+    {
+      "id": "fc_a9f92623e71b454a902a12286369df06",
+      "type": "function_call",
+      "status": "completed",
+      "call_id": "OKljG0c9yFdLL3fKK4IXzLbtquHrZ83i",
+      "namespace": "mcp__rescue_classical",
+      "name": "conservation",
+      "arguments": "{\"msa\":[\"QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV\"],\"query\":\"QEELVKAFKALLKEEKFSSQGEIVAALQEQGFDNINQSKVSRMLTKFGAVRTRNAKMEMVYCLPAELGV\"}"
+    }
+  ],
+  "backend_usage": {
+    "completion_tokens": 1591,
+    "prompt_tokens": 10159,
+    "total_tokens": 11750,
+    "prompt_tokens_details": {
+      "cached_tokens": 1
+    }
+  }
+}

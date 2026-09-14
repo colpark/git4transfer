@@ -1,0 +1,191 @@
+{
+  "model": "qwen2.5-7b-instruct-q4_k_m",
+  "mode": "guided",
+  "assay_id": "ARGR_ECOLI_Tsuboyama_2023_1AOY",
+  "wall_s": 53.628704220987856,
+  "prompt_tokens": 131440,
+  "generation_tokens": 1896,
+  "response_cap": 4096,
+  "cap_hits": [],
+  "exit_code": 0,
+  "timed_out": false,
+  "stop_reason": null,
+  "calls": {
+    "attempted": {
+      "classical": 9,
+      "record": 1
+    },
+    "succeeded": {
+      "record": 1
+    },
+    "failed": {
+      "classical": 9
+    },
+    "receipt_ids": [
+      "call_id:3c605778e2294211ae700a4d9d68fdbe"
+    ]
+  },
+  "fm_attempted": 0,
+  "fm_usable": 0,
+  "argument_forms_with_receipts": [],
+  "response_checks": [
+    {
+      "response": "shim_001",
+      "prompt_tokens": 10159,
+      "generation_tokens": 220,
+      "backend_wall_s": 9.017988204956055,
+      "generation_s": 5.203849,
+      "generation_tps": 42.27639964188046,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    },
+    {
+      "response": "shim_002",
+      "prompt_tokens": 10509,
+      "generation_tokens": 77,
+      "backend_wall_s": 1.989997386932373,
+      "generation_s": 1.8070920000000001,
+      "generation_tps": 42.609894792296124,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    },
+    {
+      "response": "shim_003",
+      "prompt_tokens": 10862,
+      "generation_tokens": 78,
+      "backend_wall_s": 2.0129973888397217,
+      "generation_s": 1.8273009999999998,
+      "generation_tps": 42.68590670064757,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    },
+    {
+      "response": "shim_004",
+      "prompt_tokens": 11212,
+      "generation_tokens": 78,
+      "backend_wall_s": 2.0369973182678223,
+      "generation_s": 1.8481910000000001,
+      "generation_tps": 42.203430273169815,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    },
+    {
+      "response": "shim_005",
+      "prompt_tokens": 11564,
+      "generation_tokens": 78,
+      "backend_wall_s": 2.0239973068237305,
+      "generation_s": 1.850528,
+      "generation_tps": 42.150132286569026,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    },
+    {
+      "response": "shim_006",
+      "prompt_tokens": 11917,
+      "generation_tokens": 78,
+      "backend_wall_s": 2.045997381210327,
+      "generation_s": 1.856099,
+      "generation_tps": 42.0236205073113,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    },
+    {
+      "response": "shim_007",
+      "prompt_tokens": 12273,
+      "generation_tokens": 78,
+      "backend_wall_s": 2.044997215270996,
+      "generation_s": 1.8675650000000001,
+      "generation_tps": 41.76561458369588,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    },
+    {
+      "response": "shim_008",
+      "prompt_tokens": 12625,
+      "generation_tokens": 77,
+      "backend_wall_s": 2.0259971618652344,
+      "generation_s": 1.848682,
+      "generation_tps": 41.65129535528555,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    },
+    {
+      "response": "shim_009",
+      "prompt_tokens": 12981,
+      "generation_tokens": 78,
+      "backend_wall_s": 2.054997205734253,
+      "generation_s": 1.875808,
+      "generation_tps": 41.58208089527287,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    },
+    {
+      "response": "shim_010",
+      "prompt_tokens": 13325,
+      "generation_tokens": 845,
+      "backend_wall_s": 20.9449725151062,
+      "generation_s": 20.748436,
+      "generation_tps": 40.72596122425806,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    },
+    {
+      "response": "shim_011",
+      "prompt_tokens": 14013,
+      "generation_tokens": 209,
+      "backend_wall_s": 5.491992712020874,
+      "generation_s": 5.140306,
+      "generation_tps": 40.65905804051354,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": null
+    }
+  ],
+  "session_checks": [],
+  "session_gate": "UNDEMONSTRATED",
+  "baseline_tps": 47.794721670425524,
+  "threshold_tps": 33.45630516929786,
+  "peak_gpu_c": 67.0,
+  "peak_cpu_c": 81.1,
+  "peak_gpu_power_w": 80.71,
+  "peak_gpu_util_pct": 95.0,
+  "min_mem_available_gib": 89.465,
+  "sensor_errors": [],
+  "submission": "accepted",
+  "candidates_considered_lower_bound": 10,
+  "considered_variants": [
+    "A7D",
+    "F17Q",
+    "K9C",
+    "L12D",
+    "L27C",
+    "P64I",
+    "Q28T",
+    "Q30T",
+    "V24N",
+    "V24S"
+  ],
+  "validation_categories_per_pick": [
+    0,
+    0
+  ],
+  "pick_has_variant_specific_evidence": [
+    false,
+    false
+  ],
+  "argument_forms_attempted": [],
+  "receipt_variant_map": {
+    "call_id:c55d0526b0314b0a9eca58bf507570f8": null,
+    "call_id:54b24c1a2256482393e77439d98b637e": null,
+    "call_id:02ea6923dd4941c18d5dc659270b02d6": null,
+    "call_id:e0e90818a5604cb1a61aedd601d196d4": null,
+    "call_id:fb08e3153c784b448c28f8afb27307b2": null,
+    "call_id:e0d43df846d14a108b03ff61c93372d2": null,
+    "call_id:22bb11005b0b4fe8a1092f3cb727cef6": null,
+    "call_id:2e460dd5e9074083ba22f3b6d4369b83": null,
+    "call_id:f505aa14e6dd484dad4a86e98aad62d8": null,
+    "call_id:3c605778e2294211ae700a4d9d68fdbe": null
+  },
+  "live_session_gate": "UNDEMONSTRATED",
+  "active_generation_s": 45.873857,
+  "posthoc_only_breach": false
+}

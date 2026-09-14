@@ -1,0 +1,62 @@
+{
+  "model": "qwen2.5-7b-instruct-q4_k_m",
+  "mode": "unguided",
+  "assay_id": "ARGR_ECOLI_Tsuboyama_2023_1AOY",
+  "wall_s": 83.46752739418298,
+  "prompt_tokens": 9733,
+  "generation_tokens": 3297,
+  "response_cap": 4096,
+  "cap_hits": [],
+  "exit_code": 0,
+  "timed_out": false,
+  "stop_reason": null,
+  "calls": {
+    "attempted": {},
+    "succeeded": {},
+    "failed": {},
+    "receipt_ids": []
+  },
+  "fm_attempted": 0,
+  "fm_usable": 0,
+  "argument_forms_with_receipts": [],
+  "response_checks": [
+    {
+      "response": "shim_001",
+      "prompt_tokens": 9733,
+      "generation_tokens": 3297,
+      "backend_wall_s": 82.28089165687561,
+      "generation_s": 78.68030499999999,
+      "generation_tps": 41.90375215246052,
+      "timing_source": "llama.cpp predicted_ms",
+      "breach": false
+    }
+  ],
+  "session_checks": [
+    {
+      "response": "shim_001",
+      "active_end_s": 78.68030499999999,
+      "active_start_s": 18.68030499999999,
+      "estimated_tps": 41.90375215246052,
+      "breach": false
+    }
+  ],
+  "session_gate": "PASS",
+  "baseline_tps": 47.094074829541526,
+  "threshold_tps": 32.96585238067907,
+  "peak_gpu_c": 66.0,
+  "peak_cpu_c": 80.0,
+  "peak_gpu_power_w": 76.84,
+  "peak_gpu_util_pct": 95.0,
+  "min_mem_available_gib": 89.522,
+  "sensor_errors": [],
+  "submission": "absent",
+  "candidates_considered_lower_bound": 0,
+  "considered_variants": [],
+  "validation_categories_per_pick": [],
+  "pick_has_variant_specific_evidence": [],
+  "argument_forms": [],
+  "receipt_variant_map": {},
+  "live_session_gate": "UNDEMONSTRATED",
+  "active_generation_s": 78.68030499999999,
+  "posthoc_only_breach": false
+}

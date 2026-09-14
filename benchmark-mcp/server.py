@@ -4,6 +4,9 @@ from __future__ import annotations
 
 import argparse
 import asyncio
+from typing import Annotated
+
+from pydantic import Field
 
 from mcp.server.mcpserver import MCPServer
 
@@ -15,6 +18,22 @@ import physics
 import lit
 import predictive
 import generative
+from variant_input import AA_PATTERN, VARIANT_PATTERN, resolve_variant
+
+AAField = Annotated[str, Field(pattern=AA_PATTERN)]
+VariantField = Annotated[str, Field(pattern=VARIANT_PATTERN)]
+
+
+def checked_variant(server: str, tool: str, args: dict, **fields) -> tuple[dict | None, dict | None]:
+    """Make conflicts visible as normal MCP error bodies, not opaque RPC faults."""
+    try:
+        return resolve_variant(**fields), None
+    except ValueError as exc:
+        error = str(exc)
+        form = "both" if args.get("variant") is not None else "decomposed"
+        def fail():
+            raise ValueError(error)
+        return None, emit(server, tool, {**args, "input_form": form}, fail)
 
 
 def make_classical(presentation: str) -> MCPServer:
@@ -42,18 +61,31 @@ def make_classical(presentation: str) -> MCPServer:
                     lambda: classical.blast_msa(**args))
 
     @mcp.tool(name="pssm_score")
-    def pssm_score(query: str, msa: list[str], position: int, mutant: str) -> dict:
-        """SCORE, classical evolutionary evidence: substitution log-odds from aligned homologs. Supply full query, one-letter mutant and blast_msa rows; compare orthogonal learned esm2_likelihood, not measured fitness."""
+    def pssm_score(query: str, msa: list[str], position: int | None = None,
+                   mutant: AAField | None = None, wt: AAField | None = None,
+                   variant: VariantField | None = None) -> dict:
+        """SCORE, classical evolutionary evidence: substitution log-odds from aligned homologs. Pass variant='G52L' OR one-letter mutant plus position; query and blast_msa rows are required. Compare learned esm2_likelihood."""
         args = locals()
-        return emit("classical", "pssm_score", args,
-                    lambda: classical.pssm_score(**args))
+        resolved, failure = checked_variant("classical", "pssm_score", args,
+            variant=variant, wt=wt, position=position, mutant=mutant, sequence=query)
+        if failure is not None:
+            return failure
+        return emit("classical", "pssm_score", {**args, "input_form": resolved["input_form"]},
+                    lambda: classical.pssm_score(query, msa, resolved["position"], resolved["mutant"]))
 
     @mcp.tool(name="conservation")
-    def conservation(query: str, msa: list[str], position: int) -> dict:
-        """ANALYSE, classical site evidence: normalized Shannon conservation of a homolog MSA column. Use blast_msa rows; one sequence fails. Not mutation-specific; pair with pssm_score and learned esm2_likelihood."""
+    def conservation(query: str, msa: list[str], position: int | None = None,
+                     wt: AAField | None = None, mutant: AAField | None = None,
+                     variant: VariantField | None = None) -> dict:
+        """ANALYSE, classical site evidence: normalized Shannon conservation. Pass variant='G52L' OR position; query and blast_msa rows required. One sequence fails; not mutation-specific."""
         args = locals()
-        return emit("classical", "conservation", args,
-                    lambda: classical.conservation(**args))
+        resolved, failure = checked_variant("classical", "conservation", args,
+            variant=variant, wt=wt, position=position, mutant=mutant,
+            sequence=query, require_mutant=False)
+        if failure is not None:
+            return failure
+        return emit("classical", "conservation", {**args, "input_form": resolved["input_form"]},
+                    lambda: classical.conservation(query, msa, resolved["position"]))
 
     @mcp.tool(name="motif_scan")
     def motif_scan(sequence: str, pattern: str) -> dict:
@@ -63,11 +95,18 @@ def make_classical(presentation: str) -> MCPServer:
                     lambda: classical.motif_scan(**args))
 
     @mcp.tool(name="blosum_score")
-    def blosum_score(wt: str, mutant: str) -> dict:
-        """SCORE, classical generic substitution evidence: raw BLOSUM62 for one-letter wild type and mutant. Protein-independent; pair with MSA-based pssm_score and learned esm2_likelihood."""
+    def blosum_score(wt: AAField | None = None, mutant: AAField | None = None,
+                     position: int | None = None, variant: VariantField | None = None) -> dict:
+        """SCORE, classical generic BLOSUM62 substitution evidence. Pass variant='G52L' OR one-letter wt and mutant; position is optional. Protein-independent; compare learned esm2_likelihood."""
         args = locals()
-        return emit("classical", "blosum_score", args,
-                    lambda: classical.blosum_score(**args))
+        resolved, failure = checked_variant("classical", "blosum_score", args,
+            variant=variant, wt=wt, position=position, mutant=mutant)
+        if failure is not None:
+            return failure
+        if resolved["wt"] is None:
+            raise ValueError("supply one-letter wt or variant such as G52L")
+        return emit("classical", "blosum_score", {**args, "input_form": resolved["input_form"]},
+                    lambda: classical.blosum_score(resolved["wt"], resolved["mutant"]))
 
     @mcp.tool(name="hbond_geometry")
     def hbond_geometry(donor: list[float], hydrogen: list[float], acceptor: list[float]) -> dict:
@@ -78,17 +117,23 @@ def make_classical(presentation: str) -> MCPServer:
 
     if presentation == "guided":
         @mcp.tool(name="screen_variant_classical")
-        def screen_variant_classical(sequence: str, reference_fasta: str, position: int,
-                                     mutant: str, max_hits: int = 10) -> dict:
-            """GUIDED RETRIEVE→SCORE: BLASTP, construct homolog MSA, then PSSM, conservation and BLOSUM for one position/one-letter mutant. Classical channel; compare screen_variant_fm for complementary learned evidence."""
+        def screen_variant_classical(sequence: str, reference_fasta: str,
+                                     position: int | None = None, mutant: AAField | None = None,
+                                     wt: AAField | None = None, variant: VariantField | None = None,
+                                     max_hits: int = 10) -> dict:
+            """GUIDED RETRIEVE→SCORE: BLASTP→MSA→PSSM, conservation and BLOSUM for variant='G52L' OR position plus one-letter mutant. Classical channel; compare screen_variant_fm."""
             args = locals()
+            resolved, failure = checked_variant("classical", "screen_variant_classical", args,
+                variant=variant, wt=wt, position=position, mutant=mutant, sequence=sequence)
+            if failure is not None:
+                return failure
             def compute() -> dict:
                 aligned = classical.blast_msa(sequence, reference_fasta, max_hits)
-                p = classical.pssm_score(sequence, aligned["msa"], position, mutant)
+                p = classical.pssm_score(sequence, aligned["msa"], resolved["position"], resolved["mutant"])
                 return {"retrieval": {"depth": aligned["depth"], "hit_ids_used": aligned["hit_ids_used"]},
-                        "pssm": p, "conservation": classical.conservation(sequence, aligned["msa"], position),
-                        "blosum": classical.blosum_score(p["wt"], mutant)}
-            return emit("classical", "screen_variant_classical", args, compute)
+                        "pssm": p, "conservation": classical.conservation(sequence, aligned["msa"], resolved["position"]),
+                        "blosum": classical.blosum_score(p["wt"], resolved["mutant"])}
+            return emit("classical", "screen_variant_classical", {**args, "input_form": resolved["input_form"]}, compute)
 
     return mcp
 
@@ -176,13 +221,19 @@ def make_predictive(presentation: str) -> MCPServer:
     mcp = MCPServer("rescue-predictive", version="0.1.0")
 
     @mcp.tool(name="esm2_likelihood")
-    def esm2_likelihood(sequence: str, position: int, mutant: str) -> dict:
-        """SCORE, learned sequence channel: pinned ESM-2 650M masked-marginal one-letter substitution log-odds. Not measured fitness or ddG; compare complementary classical pssm_score/BLOSUM and ESM-IF1."""
+    def esm2_likelihood(sequence: str, position: int | None = None,
+                        mutant: AAField | None = None, wt: AAField | None = None,
+                        variant: VariantField | None = None) -> dict:
+        """SCORE, learned sequence channel: pinned ESM-2 650M masked-marginal log-odds. Pass variant='G52L' OR position plus one-letter mutant; compare classical PSSM/BLOSUM and ESM-IF1."""
         args = locals()
-        receipt_args = {**args, "model": predictive.ESM2_MODEL,
+        resolved, failure = checked_variant("predictive", "esm2_likelihood", args,
+            variant=variant, wt=wt, position=position, mutant=mutant, sequence=sequence)
+        if failure is not None:
+            return failure
+        receipt_args = {**args, "input_form": resolved["input_form"], "model": predictive.ESM2_MODEL,
                         "revision": predictive.ESM2_REVISION}
         return emit("predictive", "esm2_likelihood", receipt_args,
-                    lambda: predictive.esm2_likelihood(**args))
+                    lambda: predictive.esm2_likelihood(sequence, resolved["position"], resolved["mutant"]))
 
     @mcp.tool(name="esmfold")
     def esmfold(sequence: str, seed: int = 0) -> dict:
@@ -193,17 +244,22 @@ def make_predictive(presentation: str) -> MCPServer:
 
     if presentation == "guided":
         @mcp.tool(name="screen_variant_fm")
-        def screen_variant_fm(sequence: str, position: int, mutant: str,
-                              pdb_path: str, chain: str = "A") -> dict:
-            """GUIDED LEARNED SCORES: ESM-2 650M masked-marginal mutation score plus ESM-IF1 backbone-conditioned plausibility. Compare screen_variant_classical's BLAST/PSSM/BLOSUM channel before ranking."""
+        def screen_variant_fm(sequence: str, pdb_path: str, position: int | None = None,
+                              mutant: AAField | None = None, wt: AAField | None = None,
+                              variant: VariantField | None = None, chain: str = "A") -> dict:
+            """GUIDED LEARNED SCORES: ESM-2 masked-marginal plus ESM-IF1 backbone plausibility. Pass variant='G52L' OR position plus one-letter mutant; compare screen_variant_classical."""
             args = locals()
-            identity = {**args, "esm2_model": predictive.ESM2_MODEL,
+            resolved, failure = checked_variant("predictive", "screen_variant_fm", args,
+                variant=variant, wt=wt, position=position, mutant=mutant, sequence=sequence)
+            if failure is not None:
+                return failure
+            identity = {**args, "input_form": resolved["input_form"], "esm2_model": predictive.ESM2_MODEL,
                         "esm2_revision": predictive.ESM2_REVISION,
                         "esm_if_checkpoint_sha256":
                         "be4ba36edec22a9bfaa4946ff6b2815f1f19d8a3d7e0eada8b796d5a0eae9fd4"}
             def compute() -> dict:
-                e2 = predictive.esm2_likelihood(sequence, position, mutant)
-                changed = sequence[:position-1] + mutant + sequence[position:]
+                e2 = predictive.esm2_likelihood(sequence, resolved["position"], resolved["mutant"])
+                changed = sequence[:resolved["position"]-1] + resolved["mutant"] + sequence[resolved["position"]:]
                 inverse = generative.esm_if(pdb_path=pdb_path, chain=chain, sequence=changed)
                 return {"esm2_likelihood": e2, "esm_if": inverse,
                         "note": "Model plausibility scores, not measured fitness or stability."}
@@ -216,11 +272,20 @@ def make_generative(presentation: str) -> MCPServer:
     mcp = MCPServer("rescue-generative", version="0.1.0")
 
     @mcp.tool(name="esm_if")
-    def esm_if(pdb_path: str, chain: str, sequence: str) -> dict:
-        """SCORE, learned structure-conditioned channel: pinned ESM-IF1 sequence log-likelihood on a supplied backbone. Not ddG or measured fitness; compare esm2_likelihood and classical PSSM independently."""
+    def esm_if(pdb_path: str, chain: str, sequence: str,
+               position: int | None = None, mutant: AAField | None = None,
+               wt: AAField | None = None, variant: VariantField | None = None) -> dict:
+        """SCORE, learned structure-conditioned ESM-IF1. Without variant, score supplied sequence; with variant='G52L' OR position plus one-letter mutant, treat sequence as native and score its substitution on the backbone."""
         args = locals()
-        return emit("generative", "esm_if", args,
-                    lambda: generative.esm_if(**args))
+        if variant is None and mutant is None and position is None and wt is None:
+            return emit("generative", "esm_if", args, lambda: generative.esm_if(pdb_path, chain, sequence))
+        resolved, failure = checked_variant("generative", "esm_if", args,
+            variant=variant, wt=wt, position=position, mutant=mutant, sequence=sequence)
+        if failure is not None:
+            return failure
+        changed = sequence[:resolved["position"]-1] + resolved["mutant"] + sequence[resolved["position"]:]
+        return emit("generative", "esm_if", {**args, "input_form": resolved["input_form"]},
+                    lambda: generative.esm_if(pdb_path, chain, changed))
 
     return mcp
 

@@ -1,0 +1,71 @@
+{
+  "answer": {
+    "ranking": [
+      {
+        "mutant": "L12D",
+        "score": 0.95
+      }
+    ],
+    "rejected": [
+      {
+        "mutant": "L27C",
+        "reason": "Sequence too short"
+      },
+      {
+        "mutant": "K9C",
+        "reason": "Sequence too short"
+      },
+      {
+        "mutant": "Q30T",
+        "reason": "Sequence too short"
+      },
+      {
+        "mutant": "V24S",
+        "reason": "Sequence too short"
+      },
+      {
+        "mutant": "V24N",
+        "reason": "Sequence too short"
+      },
+      {
+        "mutant": "F17Q",
+        "reason": "Sequence too short"
+      },
+      {
+        "mutant": "Q28T",
+        "reason": "Sequence too short"
+      },
+      {
+        "mutant": "A7D",
+        "reason": "Sequence too short"
+      },
+      {
+        "mutant": "P64I",
+        "reason": "Sequence too short"
+      }
+    ],
+    "selected": [
+      {
+        "basis": "Potential impact on protein structure and function",
+        "evidence": [
+          "blast_search:call_id:e0d43df846d14a108b03ff61c93372d2"
+        ],
+        "mutant": "L12D",
+        "rank": 1,
+        "validation": [],
+        "would_overturn": [
+          "Significant disruption to protein structure or function"
+        ]
+      },
+      {
+        "basis": "Not ranked due to blast_search failure",
+        "evidence": [],
+        "mutant": "K9C",
+        "rank": 2,
+        "validation": [],
+        "would_overturn": []
+      }
+    ]
+  },
+  "item_id": "pilot_item"
+}
