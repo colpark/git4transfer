@@ -1,0 +1,35 @@
+{
+  "amended_at_utc": "2026-09-15T15:05:32.807054+00:00",
+  "authorization": "User explicitly requested comprehensive sealed-label evaluation and the validator repair on 2026-09-15.",
+  "blind_content_audit_sha256": "8bf518abc7aae1b43c417ad0cde01b2b6e430e02b48b3d901266e338ff6c1819",
+  "exploratory_metrics": [
+    "Kendall tau-b",
+    "Pearson correlation",
+    "precision at 5",
+    "precision at 20",
+    "NDCG at 10",
+    "reciprocal rank of the true-best candidate",
+    "top-1 hit",
+    "top-5 overlap",
+    "normalized best-in-top-10 regret",
+    "bootstrap intervals",
+    "paired win/tie/loss and paired mean differences"
+  ],
+  "exploratory_metrics_postspecified": true,
+  "frozen_primary_evaluator_sha256": "f1460d6fee1105e87cb99c7b7d7d54944cf9c564921a2f12c8e9d3c2233a6c8b",
+  "frozen_stage3_evaluator_sha256": "723fbf5c03831d470b54fa5d566a7782304e43900a3bed932355084aa56d7b91",
+  "labels_opened_before_amendment": false,
+  "mechanical_validation_summary_sha256": "3e165a3639b3846f410eb94424aa551d40c50355f6931fe80ecff8e9c80b99b2",
+  "model_predictions_rerun_or_changed": false,
+  "primary_metrics": [
+    "per-item Spearman correlation",
+    "precision at 10"
+  ],
+  "primary_metrics_changed": false,
+  "protocol_deviations": [
+    "A repaired validator was added because frozen launch records omitted prompt_path.",
+    "Three successful-process B4 runs failed the frozen base-instruction context hash and are coverage failures.",
+    "The required human content audit was replaced by a disclosed automated audit under the user's instruction."
+  ],
+  "validator_repair_amendment_sha256": "4e37cb942e1719f5be091a92aa2f88eac6d2b99dded2194776449d664b3ea23e"
+}

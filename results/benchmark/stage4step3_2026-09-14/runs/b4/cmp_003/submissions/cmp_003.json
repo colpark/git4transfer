@@ -1,0 +1,925 @@
+{
+  "answer": {
+    "method_summary": "Prospective adaptive rule for the declared higher-is-better Growth/OrganismalFitness endpoint: use item-bound, endpoint-aligned measured evidence if available; none was available here, so invoke the generic-plausibility fallback. Require a successful per-variant receipt for both signals, rank each signal higher-is-better across the frozen candidate set, and score 0.70\u00d7ESM-2 \u0394log-probability percentile + 0.30\u00d7ESM-IF1 mean-log-likelihood percentile because ESM-2 is a mutation-local WT contrast while IF1 is a secondary backbone-conditioned plausibility check. Sort descending; ties break by ESM-2, then IF1, then mutant lexically. Select exactly the first ten. A failed signal is retried and never imputed as zero; unresolved failure is a coverage failure. These are generic sequence/backbone plausibility signals, not measured assay outcomes, and may be mechanistically misaligned with organismal growth.",
+    "policy_id": "b4_v3_adaptive_item_bound_endpoint_v1",
+    "ranking": [
+      {
+        "evidence_call_ids": [
+          "call_id:7bf2c48e37164734b453bf527f341024"
+        ],
+        "mutant": "Q148K",
+        "rank": 1,
+        "rationale": "Fallback plausibility consensus 0.953535 from ESM-2 \u0394lnP 2.796327 (within-set rank 5) and ESM-IF1 mean log-likelihood -0.785723 (rank 7); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:098a5c9f454c436fb29f40b9e3624ec3"
+        ],
+        "mutant": "S171A",
+        "rank": 2,
+        "rationale": "Fallback plausibility consensus 0.944444 from ESM-2 \u0394lnP 2.413151 (within-set rank 8) and ESM-IF1 mean log-likelihood -0.775979 (rank 3); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b3bba06826fa4a97a4fd29c8ae39f389"
+        ],
+        "mutant": "K24D",
+        "rank": 3,
+        "rationale": "Fallback plausibility consensus 0.943434 from ESM-2 \u0394lnP 2.617567 (within-set rank 6) and ESM-IF1 mean log-likelihood -0.785749 (rank 8); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:9e8390eed3474588a84c33e1a432aee0"
+        ],
+        "mutant": "E169Q",
+        "rank": 4,
+        "rationale": "Fallback plausibility consensus 0.936364 from ESM-2 \u0394lnP 4.510562 (within-set rank 1) and ESM-IF1 mean log-likelihood -0.790987 (rank 22); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:43d47072226342aea029e233caceb60f"
+        ],
+        "mutant": "S189A",
+        "rank": 5,
+        "rationale": "Fallback plausibility consensus 0.904040 from ESM-2 \u0394lnP 2.082958 (within-set rank 9) and ESM-IF1 mean log-likelihood -0.788402 (rank 14); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:6cd39abb789349529d149e7a8ab6068c"
+        ],
+        "mutant": "K24N",
+        "rank": 6,
+        "rationale": "Fallback plausibility consensus 0.881818 from ESM-2 \u0394lnP 1.249053 (within-set rank 16) and ESM-IF1 mean log-likelihood -0.782819 (rank 5); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:474500bfbf59434989e3fa78bfa8a540"
+        ],
+        "mutant": "N54S",
+        "rank": 7,
+        "rationale": "Fallback plausibility consensus 0.879798 from ESM-2 \u0394lnP 1.172018 (within-set rank 18) and ESM-IF1 mean log-likelihood -0.770553 (rank 1); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:cb67a041e3824acb8beeb77bbbe6f177"
+        ],
+        "mutant": "N210D",
+        "rank": 8,
+        "rationale": "Fallback plausibility consensus 0.843434 from ESM-2 \u0394lnP 1.043786 (within-set rank 21) and ESM-IF1 mean log-likelihood -0.784711 (rank 6); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7d22b45b78b245c488e1b8404487bbf8"
+        ],
+        "mutant": "E144D",
+        "rank": 9,
+        "rationale": "Fallback plausibility consensus 0.833333 from ESM-2 \u0394lnP 1.507913 (within-set rank 13) and ESM-IF1 mean log-likelihood -0.794209 (rank 28); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:9f1b717a9aa04af08bde705a50d743e3"
+        ],
+        "mutant": "I11V",
+        "rank": 10,
+        "rationale": "Fallback plausibility consensus 0.820202 from ESM-2 \u0394lnP 1.332457 (within-set rank 14) and ESM-IF1 mean log-likelihood -0.794521 (rank 30); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:5e42b5482b254990883b34ba20fd0a85"
+        ],
+        "mutant": "F121Y",
+        "rank": 11,
+        "rationale": "Fallback plausibility consensus 0.817172 from ESM-2 \u0394lnP 1.205829 (within-set rank 17) and ESM-IF1 mean log-likelihood -0.792543 (rank 24); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:86270df2ea8b428b8f7a3f04a6a77ec5"
+        ],
+        "mutant": "I21L",
+        "rank": 12,
+        "rationale": "Fallback plausibility consensus 0.806061 from ESM-2 \u0394lnP 1.979890 (within-set rank 10) and ESM-IF1 mean log-likelihood -0.802774 (rank 44); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:5bef89c49b8a41f48449bf803fc8afe8"
+        ],
+        "mutant": "I66L",
+        "rank": 13,
+        "rationale": "Fallback plausibility consensus 0.797980 from ESM-2 \u0394lnP 4.115538 (within-set rank 3) and ESM-IF1 mean log-likelihood -0.811302 (rank 63); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:6b6fb762a0e54509b3bcfea720ceb9b3"
+        ],
+        "mutant": "K183T",
+        "rank": 14,
+        "rationale": "Fallback plausibility consensus 0.788889 from ESM-2 \u0394lnP 0.624609 (within-set rank 27) and ESM-IF1 mean log-likelihood -0.786481 (rank 10); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:829bc3799f8f4c1db75319ba92d1b43d"
+        ],
+        "mutant": "K24E",
+        "rank": 15,
+        "rationale": "Fallback plausibility consensus 0.780808 from ESM-2 \u0394lnP 0.711899 (within-set rank 26) and ESM-IF1 mean log-likelihood -0.788794 (rank 15); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:474b45019bda44b5bde9985540a1af3e"
+        ],
+        "mutant": "I82V",
+        "rank": 16,
+        "rationale": "Fallback plausibility consensus 0.769697 from ESM-2 \u0394lnP 1.105175 (within-set rank 19) and ESM-IF1 mean log-likelihood -0.797637 (rank 35); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:fc48345f65d0445e93476b32eb0cd17c"
+        ],
+        "mutant": "E169R",
+        "rank": 17,
+        "rationale": "Fallback plausibility consensus 0.761616 from ESM-2 \u0394lnP 0.329500 (within-set rank 30) and ESM-IF1 mean log-likelihood -0.787030 (rank 12); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8318f0a1b12b40719b096cdc67fd37d3"
+        ],
+        "mutant": "V198L",
+        "rank": 18,
+        "rationale": "Fallback plausibility consensus 0.753535 from ESM-2 \u0394lnP 1.087370 (within-set rank 20) and ESM-IF1 mean log-likelihood -0.798307 (rank 38); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1bdf657d4b084d29a6ffc3b1a31c6ee0"
+        ],
+        "mutant": "T204I",
+        "rank": 19,
+        "rationale": "Fallback plausibility consensus 0.747475 from ESM-2 \u0394lnP 0.923779 (within-set rank 23) and ESM-IF1 mean log-likelihood -0.797171 (rank 33); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:fa514cdeefab405cb138b540c16899d3"
+        ],
+        "mutant": "P206L",
+        "rank": 20,
+        "rationale": "Fallback plausibility consensus 0.739394 from ESM-2 \u0394lnP 2.835649 (within-set rank 4) and ESM-IF1 mean log-likelihood -0.823548 (rank 80); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:23aaa85edccf41e0b35bb8f715243ef3"
+        ],
+        "mutant": "S73A",
+        "rank": 21,
+        "rationale": "Fallback plausibility consensus 0.736364 from ESM-2 \u0394lnP 0.459921 (within-set rank 28) and ESM-IF1 mean log-likelihood -0.792987 (rank 25); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:9bc0153b42dd461c9d078fac292af948"
+        ],
+        "mutant": "D211E",
+        "rank": 22,
+        "rationale": "Fallback plausibility consensus 0.719192 from ESM-2 \u0394lnP 0.150125 (within-set rank 33) and ESM-IF1 mean log-likelihood -0.789512 (rank 19); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:c4be4621c136461ca1a5bec343645202"
+        ],
+        "mutant": "N207T",
+        "rank": 23,
+        "rationale": "Fallback plausibility consensus 0.717172 from ESM-2 \u0394lnP 4.505332 (within-set rank 2) and ESM-IF1 mean log-likelihood -0.846619 (rank 92); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:bb4b8a5628cc4e70a717d37b7066d23f"
+        ],
+        "mutant": "L7S",
+        "rank": 24,
+        "rationale": "Fallback plausibility consensus 0.694949 from ESM-2 \u0394lnP 1.536324 (within-set rank 12) and ESM-IF1 mean log-likelihood -0.819173 (rank 76); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:bc1c524002094bafba950a75c22be9a8"
+        ],
+        "mutant": "R172G",
+        "rank": 25,
+        "rationale": "Fallback plausibility consensus 0.691919 from ESM-2 \u0394lnP 1.269647 (within-set rank 15) and ESM-IF1 mean log-likelihood -0.814610 (rank 70); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:06c7bdb20ae6448692a28c703eaf9514"
+        ],
+        "mutant": "V143I",
+        "rank": 26,
+        "rationale": "Fallback plausibility consensus 0.690909 from ESM-2 \u0394lnP 0.951764 (within-set rank 22) and ESM-IF1 mean log-likelihood -0.806891 (rank 54); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:cb726d6234fb4ba58aad9f49fd4d4116"
+        ],
+        "mutant": "K183N",
+        "rank": 27,
+        "rationale": "Fallback plausibility consensus 0.679798 from ESM-2 \u0394lnP -0.605572 (within-set rank 42) and ESM-IF1 mean log-likelihood -0.786914 (rank 11); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8c2350f852304f50b8e567c335433a9e"
+        ],
+        "mutant": "G120A",
+        "rank": 28,
+        "rationale": "Fallback plausibility consensus 0.675758 from ESM-2 \u0394lnP 2.540899 (within-set rank 7) and ESM-IF1 mean log-likelihood -0.849701 (rank 94); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:c5039223ce3642a9bcc6bce52af0b8ba"
+        ],
+        "mutant": "I78R",
+        "rank": 29,
+        "rationale": "Fallback plausibility consensus 0.671717 from ESM-2 \u0394lnP 1.747528 (within-set rank 11) and ESM-IF1 mean log-likelihood -0.829926 (rank 86); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:c59e8f9e1e2b4fadb3e63cf1e4c2b9b7"
+        ],
+        "mutant": "P206S",
+        "rank": 30,
+        "rationale": "Fallback plausibility consensus 0.652525 from ESM-2 \u0394lnP 0.101606 (within-set rank 36) and ESM-IF1 mean log-likelihood -0.797223 (rank 34); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:778ea4ef983747818d5398ff1334c943"
+        ],
+        "mutant": "K9R",
+        "rank": 31,
+        "rationale": "Fallback plausibility consensus 0.647475 from ESM-2 \u0394lnP -0.684722 (within-set rank 44) and ESM-IF1 mean log-likelihood -0.788936 (rank 17); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:5fad7f21645f4bf18108b44f21ebc21d"
+        ],
+        "mutant": "Q18S",
+        "rank": 32,
+        "rationale": "Fallback plausibility consensus 0.627273 from ESM-2 \u0394lnP 0.769129 (within-set rank 25) and ESM-IF1 mean log-likelihood -0.814427 (rank 68); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:84dc82714ef841f98cf1e197e9f56b09"
+        ],
+        "mutant": "A141S",
+        "rank": 33,
+        "rationale": "Fallback plausibility consensus 0.623232 from ESM-2 \u0394lnP -0.104342 (within-set rank 38) and ESM-IF1 mean log-likelihood -0.798462 (rank 39); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:38e6efb766a24cf1b435e6309a1a47c1"
+        ],
+        "mutant": "C157T",
+        "rank": 34,
+        "rationale": "Fallback plausibility consensus 0.623232 from ESM-2 \u0394lnP -1.112576 (within-set rank 53) and ESM-IF1 mean log-likelihood -0.782676 (rank 4); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e7d9c5c4056c42e48703194712da8606"
+        ],
+        "mutant": "L7F",
+        "rank": 35,
+        "rationale": "Fallback plausibility consensus 0.620202 from ESM-2 \u0394lnP 0.426543 (within-set rank 29) and ESM-IF1 mean log-likelihood -0.809639 (rank 61); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:c9d3c87f52574f9b9093fcbb57035d7c"
+        ],
+        "mutant": "C81A",
+        "rank": 36,
+        "rationale": "Fallback plausibility consensus 0.601010 from ESM-2 \u0394lnP -0.898313 (within-set rank 48) and ESM-IF1 mean log-likelihood -0.791856 (rank 23); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1ad7cb80c03f49318432d94b0f71e03a"
+        ],
+        "mutant": "S119Y",
+        "rank": 37,
+        "rationale": "Fallback plausibility consensus 0.596970 from ESM-2 \u0394lnP -0.333172 (within-set rank 40) and ESM-IF1 mean log-likelihood -0.801886 (rank 43); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2a82f33b9c4648bfb5367c61a3c7770a"
+        ],
+        "mutant": "I66F",
+        "rank": 38,
+        "rationale": "Fallback plausibility consensus 0.585859 from ESM-2 \u0394lnP 0.876623 (within-set rank 24) and ESM-IF1 mean log-likelihood -0.829514 (rank 84); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:385f4a854de04b92b3a82fa6ca833410"
+        ],
+        "mutant": "V79L",
+        "rank": 39,
+        "rationale": "Fallback plausibility consensus 0.583838 from ESM-2 \u0394lnP 0.171840 (within-set rank 32) and ESM-IF1 mean log-likelihood -0.813258 (rank 66); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:596398945cc94800a1d1fe1d4081bdef"
+        ],
+        "mutant": "E165Q",
+        "rank": 40,
+        "rationale": "Fallback plausibility consensus 0.583838 from ESM-2 \u0394lnP -0.874971 (within-set rank 47) and ESM-IF1 mean log-likelihood -0.796022 (rank 31); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f00a5630247942e5a125b695d15d5afb"
+        ],
+        "mutant": "T93A",
+        "rank": 41,
+        "rationale": "Fallback plausibility consensus 0.581818 from ESM-2 \u0394lnP 0.080257 (within-set rank 37) and ESM-IF1 mean log-likelihood -0.807294 (rank 55); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:fa7d252d62074e87b39a902b40ed5533"
+        ],
+        "mutant": "K16Q",
+        "rank": 42,
+        "rationale": "Fallback plausibility consensus 0.574747 from ESM-2 \u0394lnP -1.627703 (within-set rank 56) and ESM-IF1 mean log-likelihood -0.788241 (rank 13); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:42555eb7e39448609fba04b8cffbc28e"
+        ],
+        "mutant": "K9N",
+        "rank": 43,
+        "rationale": "Fallback plausibility consensus 0.560606 from ESM-2 \u0394lnP -1.074754 (within-set rank 52) and ESM-IF1 mean log-likelihood -0.794132 (rank 27); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f7271751013b4447840a828f60462b01"
+        ],
+        "mutant": "K105H",
+        "rank": 44,
+        "rationale": "Fallback plausibility consensus 0.558586 from ESM-2 \u0394lnP -1.862418 (within-set rank 60) and ESM-IF1 mean log-likelihood -0.786114 (rank 9); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b2cf8461988a4442a16cc0cbb3fb3a9c"
+        ],
+        "mutant": "H56D",
+        "rank": 45,
+        "rationale": "Fallback plausibility consensus 0.557576 from ESM-2 \u0394lnP -0.831431 (within-set rank 46) and ESM-IF1 mean log-likelihood -0.801232 (rank 42); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:9becb9e04d7f49c79fdc9c0185dbe78b"
+        ],
+        "mutant": "A170S",
+        "rank": 46,
+        "rationale": "Fallback plausibility consensus 0.551515 from ESM-2 \u0394lnP -0.927946 (within-set rank 49) and ESM-IF1 mean log-likelihood -0.798244 (rank 37); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:85c64e030fcc42d2885d564a0caf8650"
+        ],
+        "mutant": "I78L",
+        "rank": 47,
+        "rationale": "Fallback plausibility consensus 0.548485 from ESM-2 \u0394lnP 0.132155 (within-set rank 34) and ESM-IF1 mean log-likelihood -0.816252 (rank 73); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:540522635eeb4d3f9ab4b54621143057"
+        ],
+        "mutant": "I59V",
+        "rank": 48,
+        "rationale": "Fallback plausibility consensus 0.543434 from ESM-2 \u0394lnP -0.823087 (within-set rank 45) and ESM-IF1 mean log-likelihood -0.804320 (rank 49); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:307e5e00065943e59a090303dbae5996"
+        ],
+        "mutant": "I87V",
+        "rank": 49,
+        "rationale": "Fallback plausibility consensus 0.539394 from ESM-2 \u0394lnP -1.706665 (within-set rank 58) and ESM-IF1 mean log-likelihood -0.789768 (rank 20); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:d58c5507403745bc9f529b0e92dcde23"
+        ],
+        "mutant": "S73G",
+        "rank": 50,
+        "rationale": "Fallback plausibility consensus 0.523232 from ESM-2 \u0394lnP 0.106328 (within-set rank 35) and ESM-IF1 mean log-likelihood -0.822461 (rank 79); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:aab4f4f69a73474cb368e81d47519295"
+        ],
+        "mutant": "D154Q",
+        "rank": 51,
+        "rationale": "Fallback plausibility consensus 0.495960 from ESM-2 \u0394lnP -2.221773 (within-set rank 65) and ESM-IF1 mean log-likelihood -0.789346 (rank 18); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:9aff85918df34f439063b68d915ab072"
+        ],
+        "mutant": "H56E",
+        "rank": 52,
+        "rationale": "Fallback plausibility consensus 0.494949 from ESM-2 \u0394lnP -1.069450 (within-set rank 51) and ESM-IF1 mean log-likelihood -0.805913 (rank 51); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4b7f1a18ab9947c2966b9d7c91063c4a"
+        ],
+        "mutant": "G25E",
+        "rank": 53,
+        "rationale": "Fallback plausibility consensus 0.493939 from ESM-2 \u0394lnP 0.193604 (within-set rank 31) and ESM-IF1 mean log-likelihood -0.862450 (rank 98); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:cb377e1dfe45405cbf580b384f8fcec2"
+        ],
+        "mutant": "T209K",
+        "rank": 54,
+        "rationale": "Fallback plausibility consensus 0.468687 from ESM-2 \u0394lnP -0.565356 (within-set rank 41) and ESM-IF1 mean log-likelihood -0.828371 (rank 83); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:db70f854c8374e33b2b73c15bc5a5b51"
+        ],
+        "mutant": "L164M",
+        "rank": 55,
+        "rationale": "Fallback plausibility consensus 0.453535 from ESM-2 \u0394lnP -1.762206 (within-set rank 59) and ESM-IF1 mean log-likelihood -0.803598 (rank 46); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f7e597e2a0364296a63a5667d3aac08b"
+        ],
+        "mutant": "I78G",
+        "rank": 56,
+        "rationale": "Fallback plausibility consensus 0.443434 from ESM-2 \u0394lnP -0.198457 (within-set rank 39) and ESM-IF1 mean log-likelihood -0.857147 (rank 96); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:c589ce46a2a242b7acc0d88089e59e87"
+        ],
+        "mutant": "A99T",
+        "rank": 57,
+        "rationale": "Fallback plausibility consensus 0.442424 from ESM-2 \u0394lnP -1.865543 (within-set rank 61) and ESM-IF1 mean log-likelihood -0.802780 (rank 45); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:04fb4460e260411ba3992415b894f8a3"
+        ],
+        "mutant": "S205T",
+        "rank": 58,
+        "rationale": "Fallback plausibility consensus 0.434343 from ESM-2 \u0394lnP -1.312801 (within-set rank 54) and ESM-IF1 mean log-likelihood -0.812707 (rank 64); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:acf43add0ccb4739b190fa7b28d6e0bc"
+        ],
+        "mutant": "L180I",
+        "rank": 59,
+        "rationale": "Fallback plausibility consensus 0.431313 from ESM-2 \u0394lnP -1.647921 (within-set rank 57) and ESM-IF1 mean log-likelihood -0.809287 (rank 58); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:9a10b85f7adf486c9517fdc5e0826e61"
+        ],
+        "mutant": "E165D",
+        "rank": 60,
+        "rationale": "Fallback plausibility consensus 0.429293 from ESM-2 \u0394lnP -1.975740 (within-set rank 62) and ESM-IF1 mean log-likelihood -0.804101 (rank 47); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2043ea4ca436416d9b4b1dc738cd3f78"
+        ],
+        "mutant": "N13K",
+        "rank": 61,
+        "rationale": "Fallback plausibility consensus 0.423232 from ESM-2 \u0394lnP -2.903986 (within-set rank 74) and ESM-IF1 mean log-likelihood -0.790585 (rank 21); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a82da7d1e14d4be993be2457e92e2d05"
+        ],
+        "mutant": "H86D",
+        "rank": 62,
+        "rationale": "Fallback plausibility consensus 0.417172 from ESM-2 \u0394lnP -3.729239 (within-set rank 83) and ESM-IF1 mean log-likelihood -0.774291 (rank 2); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:30c5e9136cb140a08d7b9c172335fef1"
+        ],
+        "mutant": "R172A",
+        "rank": 63,
+        "rationale": "Fallback plausibility consensus 0.412121 from ESM-2 \u0394lnP -2.340094 (within-set rank 67) and ESM-IF1 mean log-likelihood -0.799810 (rank 41); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1110f933f6554762a0336b3cc10c8893"
+        ],
+        "mutant": "G25R",
+        "rank": 64,
+        "rationale": "Fallback plausibility consensus 0.406061 from ESM-2 \u0394lnP -0.668669 (within-set rank 43) and ESM-IF1 mean log-likelihood -0.867344 (rank 99); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4fb5cf29d3d74ceb873388ad002020bd"
+        ],
+        "mutant": "I160V",
+        "rank": 65,
+        "rationale": "Fallback plausibility consensus 0.404040 from ESM-2 \u0394lnP -2.017792 (within-set rank 63) and ESM-IF1 mean log-likelihood -0.806408 (rank 53); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:9006a6448b2643d59e21b08ad2a28134"
+        ],
+        "mutant": "C81S",
+        "rank": 66,
+        "rationale": "Fallback plausibility consensus 0.396970 from ESM-2 \u0394lnP -2.845495 (within-set rank 73) and ESM-IF1 mean log-likelihood -0.796090 (rank 32); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ab88048c8d814797a18468eab326556f"
+        ],
+        "mutant": "V177I",
+        "rank": 67,
+        "rationale": "Fallback plausibility consensus 0.384848 from ESM-2 \u0394lnP -1.332861 (within-set rank 55) and ESM-IF1 mean log-likelihood -0.822117 (rank 78); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:95fbb376603b41e9b10aec0995578d3a"
+        ],
+        "mutant": "S76N",
+        "rank": 68,
+        "rationale": "Fallback plausibility consensus 0.374747 from ESM-2 \u0394lnP -0.996479 (within-set rank 50) and ESM-IF1 mean log-likelihood -0.848616 (rank 93); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ecad56b6bd394250a74f092742450751"
+        ],
+        "mutant": "D154H",
+        "rank": 69,
+        "rationale": "Fallback plausibility consensus 0.356566 from ESM-2 \u0394lnP -3.347347 (within-set rank 80) and ESM-IF1 mean log-likelihood -0.794461 (rank 29); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f955f378c8294be28fa5b1577f22678c"
+        ],
+        "mutant": "H67T",
+        "rank": 70,
+        "rationale": "Fallback plausibility consensus 0.355556 from ESM-2 \u0394lnP -2.269146 (within-set rank 66) and ESM-IF1 mean log-likelihood -0.809672 (rank 62); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:12efa596ade74986bd8ace7262b15808"
+        ],
+        "mutant": "G60A",
+        "rank": 71,
+        "rationale": "Fallback plausibility consensus 0.346465 from ESM-2 \u0394lnP -4.053125 (within-set rank 87) and ESM-IF1 mean log-likelihood -0.788885 (rank 16); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7070ee0f2cfa4f75bf5d305ec4959021"
+        ],
+        "mutant": "T92S",
+        "rank": 72,
+        "rationale": "Fallback plausibility consensus 0.340404 from ESM-2 \u0394lnP -2.371440 (within-set rank 69) and ESM-IF1 mean log-likelihood -0.809487 (rank 60); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:99f4df1eb119406eade4e0230ca46b7c"
+        ],
+        "mutant": "K16H",
+        "rank": 73,
+        "rationale": "Fallback plausibility consensus 0.337374 from ESM-2 \u0394lnP -3.313646 (within-set rank 78) and ESM-IF1 mean log-likelihood -0.798946 (rank 40); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:d4d4aea2a1d24c1fad9713830b425e29"
+        ],
+        "mutant": "V142F",
+        "rank": 74,
+        "rationale": "Fallback plausibility consensus 0.330303 from ESM-2 \u0394lnP -3.783061 (within-set rank 85) and ESM-IF1 mean log-likelihood -0.793099 (rank 26); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:315640f57dbc453c9956e99edc9f70fe"
+        ],
+        "mutant": "E202A",
+        "rank": 75,
+        "rationale": "Fallback plausibility consensus 0.320202 from ESM-2 \u0394lnP -2.359878 (within-set rank 68) and ESM-IF1 mean log-likelihood -0.814511 (rank 69); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1503fa04926c43eaa764a900acda6b4a"
+        ],
+        "mutant": "A168S",
+        "rank": 76,
+        "rationale": "Fallback plausibility consensus 0.311111 from ESM-2 \u0394lnP -2.547192 (within-set rank 71) and ESM-IF1 mean log-likelihood -0.813033 (rank 65); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:3ebe18f94b23460c93d25bed2d0a8ab8"
+        ],
+        "mutant": "L85I",
+        "rank": 77,
+        "rationale": "Fallback plausibility consensus 0.297980 from ESM-2 \u0394lnP -2.773224 (within-set rank 72) and ESM-IF1 mean log-likelihood -0.814000 (rank 67); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:eaebc450559c4e3aaff246c5dea52a51"
+        ],
+        "mutant": "L62F",
+        "rank": 78,
+        "rationale": "Fallback plausibility consensus 0.287879 from ESM-2 \u0394lnP -2.094168 (within-set rank 64) and ESM-IF1 mean log-likelihood -0.840539 (rank 89); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:19cbacf79135401b823fe14a0fc9a1d6"
+        ],
+        "mutant": "H67N",
+        "rank": 79,
+        "rationale": "Fallback plausibility consensus 0.278788 from ESM-2 \u0394lnP -3.536197 (within-set rank 82) and ESM-IF1 mean log-likelihood -0.805556 (rank 50); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e8df8c4d5a944fcabef9157f57374a5f"
+        ],
+        "mutant": "N13H",
+        "rank": 80,
+        "rationale": "Fallback plausibility consensus 0.257576 from ESM-2 \u0394lnP -5.311354 (within-set rank 91) and ESM-IF1 mean log-likelihood -0.797915 (rank 36); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a7979f63000946f58a0e680615645738"
+        ],
+        "mutant": "L175I",
+        "rank": 81,
+        "rationale": "Fallback plausibility consensus 0.248485 from ESM-2 \u0394lnP -2.400616 (within-set rank 70) and ESM-IF1 mean log-likelihood -0.840319 (rank 88); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e1442ffb20104ee5ac88014d8726374a"
+        ],
+        "mutant": "R181H",
+        "rank": 82,
+        "rationale": "Fallback plausibility consensus 0.245455 from ESM-2 \u0394lnP -3.238574 (within-set rank 76) and ESM-IF1 mean log-likelihood -0.818975 (rank 75); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:658033aed3e34fa0b629c72d18d681a3"
+        ],
+        "mutant": "P139A",
+        "rank": 83,
+        "rationale": "Fallback plausibility consensus 0.243434 from ESM-2 \u0394lnP -3.767301 (within-set rank 84) and ESM-IF1 mean log-likelihood -0.809229 (rank 57); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e3043737dead4c09bc34e8659d719974"
+        ],
+        "mutant": "I98L",
+        "rank": 84,
+        "rationale": "Fallback plausibility consensus 0.227273 from ESM-2 \u0394lnP -3.335238 (within-set rank 79) and ESM-IF1 mean log-likelihood -0.817927 (rank 74); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a5fef8d3ec814ad88c4996f3bc6689f0"
+        ],
+        "mutant": "S22C",
+        "rank": 85,
+        "rationale": "Fallback plausibility consensus 0.222222 from ESM-2 \u0394lnP -2.966379 (within-set rank 75) and ESM-IF1 mean log-likelihood -0.829675 (rank 85); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:897aea554d844dee8316279234502349"
+        ],
+        "mutant": "K151M",
+        "rank": 86,
+        "rationale": "Fallback plausibility consensus 0.216162 from ESM-2 \u0394lnP -4.764549 (within-set rank 90) and ESM-IF1 mean log-likelihood -0.806283 (rank 52); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1f890fb2ee544da6805985fa0f012e7d"
+        ],
+        "mutant": "H86L",
+        "rank": 87,
+        "rationale": "Fallback plausibility consensus 0.207071 from ESM-2 \u0394lnP -6.404328 (within-set rank 93) and ESM-IF1 mean log-likelihood -0.804155 (rank 48); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:183a49e9fae94115bf1e7b1e9223c8ca"
+        ],
+        "mutant": "T93I",
+        "rank": 88,
+        "rationale": "Fallback plausibility consensus 0.189899 from ESM-2 \u0394lnP -3.300587 (within-set rank 77) and ESM-IF1 mean log-likelihood -0.844887 (rank 91); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:751f9c0c62b04f43ab5bf4596df5ffd6"
+        ],
+        "mutant": "C81G",
+        "rank": 89,
+        "rationale": "Fallback plausibility consensus 0.188889 from ESM-2 \u0394lnP -3.525799 (within-set rank 81) and ESM-IF1 mean log-likelihood -0.826249 (rank 82); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7a0637ad99ac4b37822f7342871fe6db"
+        ],
+        "mutant": "D178S",
+        "rank": 90,
+        "rationale": "Fallback plausibility consensus 0.175758 from ESM-2 \u0394lnP -6.620061 (within-set rank 94) and ESM-IF1 mean log-likelihood -0.807982 (rank 56); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7a121470ef68471783acf77dec887307"
+        ],
+        "mutant": "H86V",
+        "rank": 91,
+        "rationale": "Fallback plausibility consensus 0.152525 from ESM-2 \u0394lnP -7.012082 (within-set rank 96) and ESM-IF1 mean log-likelihood -0.809293 (rank 59); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1e91a736d1f04af4bd0e53b830c7a374"
+        ],
+        "mutant": "R181C",
+        "rank": 92,
+        "rationale": "Fallback plausibility consensus 0.144444 from ESM-2 \u0394lnP -6.193518 (within-set rank 92) and ESM-IF1 mean log-likelihood -0.814687 (rank 71); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:320aae165ecc4b0ca54df0061ab30ce2"
+        ],
+        "mutant": "L147F",
+        "rank": 93,
+        "rationale": "Fallback plausibility consensus 0.138384 from ESM-2 \u0394lnP -3.858127 (within-set rank 86) and ESM-IF1 mean log-likelihood -0.833818 (rank 87); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f32026c1dfff417985382632c61eedf6"
+        ],
+        "mutant": "V143T",
+        "rank": 94,
+        "rationale": "Fallback plausibility consensus 0.135354 from ESM-2 \u0394lnP -4.585040 (within-set rank 89) and ESM-IF1 mean log-likelihood -0.823666 (rank 81); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:9762136d92f3483ea7e7236d5ab5a9a3"
+        ],
+        "mutant": "I200T",
+        "rank": 95,
+        "rationale": "Fallback plausibility consensus 0.106061 from ESM-2 \u0394lnP -8.353733 (within-set rank 97) and ESM-IF1 mean log-likelihood -0.815897 (rank 72); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b6d293914932497f9595f82e81654095"
+        ],
+        "mutant": "P161T",
+        "rank": 96,
+        "rationale": "Fallback plausibility consensus 0.093939 from ESM-2 \u0394lnP -4.344225 (within-set rank 88) and ESM-IF1 mean log-likelihood -0.857266 (rank 97); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:721f3ed0b4a34f518eda0773747d0344"
+        ],
+        "mutant": "D178G",
+        "rank": 97,
+        "rationale": "Fallback plausibility consensus 0.076768 from ESM-2 \u0394lnP -9.896717 (within-set rank 99) and ESM-IF1 mean log-likelihood -0.821791 (rank 77); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:17ba2db0552c4f1585c116eb3312b74e"
+        ],
+        "mutant": "T93L",
+        "rank": 98,
+        "rationale": "Fallback plausibility consensus 0.050505 from ESM-2 \u0394lnP -6.948493 (within-set rank 95) and ESM-IF1 mean log-likelihood -0.851685 (rank 95); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2bbbc4b127ae46b688fd0aa0e743cec7"
+        ],
+        "mutant": "S119P",
+        "rank": 99,
+        "rationale": "Fallback plausibility consensus 0.044444 from ESM-2 \u0394lnP -9.016500 (within-set rank 98) and ESM-IF1 mean log-likelihood -0.842237 (rank 90); generic model evidence only, not measured growth."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4dd9b7f7131641de9505270cb0538a72"
+        ],
+        "mutant": "I200P",
+        "rank": 100,
+        "rationale": "Fallback plausibility consensus 0.000000 from ESM-2 \u0394lnP -11.087280 (within-set rank 100) and ESM-IF1 mean log-likelihood -0.892483 (rank 100); generic model evidence only, not measured growth."
+      }
+    ],
+    "rejected": [
+      "F121Y",
+      "I21L",
+      "I66L",
+      "K183T",
+      "K24E",
+      "I82V",
+      "E169R",
+      "V198L",
+      "T204I",
+      "P206L",
+      "S73A",
+      "D211E",
+      "N207T",
+      "L7S",
+      "R172G",
+      "V143I",
+      "K183N",
+      "G120A",
+      "I78R",
+      "P206S",
+      "K9R",
+      "Q18S",
+      "A141S",
+      "C157T",
+      "L7F",
+      "C81A",
+      "S119Y",
+      "I66F",
+      "V79L",
+      "E165Q",
+      "T93A",
+      "K16Q",
+      "K9N",
+      "K105H",
+      "H56D",
+      "A170S",
+      "I78L",
+      "I59V",
+      "I87V",
+      "S73G",
+      "D154Q",
+      "H56E",
+      "G25E",
+      "T209K",
+      "L164M",
+      "I78G",
+      "A99T",
+      "S205T",
+      "L180I",
+      "E165D",
+      "N13K",
+      "H86D",
+      "R172A",
+      "G25R",
+      "I160V",
+      "C81S",
+      "V177I",
+      "S76N",
+      "D154H",
+      "H67T",
+      "G60A",
+      "T92S",
+      "K16H",
+      "V142F",
+      "E202A",
+      "A168S",
+      "L85I",
+      "L62F",
+      "H67N",
+      "N13H",
+      "L175I",
+      "R181H",
+      "P139A",
+      "I98L",
+      "S22C",
+      "K151M",
+      "H86L",
+      "T93I",
+      "C81G",
+      "D178S",
+      "H86V",
+      "R181C",
+      "L147F",
+      "V143T",
+      "I200T",
+      "P161T",
+      "D178G",
+      "T93L",
+      "S119P",
+      "I200P"
+    ],
+    "selected": [
+      "Q148K",
+      "S171A",
+      "K24D",
+      "E169Q",
+      "S189A",
+      "K24N",
+      "N54S",
+      "N210D",
+      "E144D",
+      "I11V"
+    ]
+  },
+  "contract_sha256": "e7672bc6df588155d30558627e476ccd2602741280e5c9d5128a1fa70e92d9a0",
+  "endpoint_sha256": "1882dd277cbb1014ba07f0fbc243904e77ade0b38f20e27b03d226e3038c9198",
+  "item_id": "cmp_003",
+  "validation": {
+    "accepted": true,
+    "answer_sha256": "6cb02c2429623e65db231ef1bed75e4ea701e78a257775b105339672097cef61",
+    "candidate_count": 100,
+    "contract_sha256": "e7672bc6df588155d30558627e476ccd2602741280e5c9d5128a1fa70e92d9a0",
+    "endpoint_sha256": "1882dd277cbb1014ba07f0fbc243904e77ade0b38f20e27b03d226e3038c9198",
+    "policy_id": "b4_v3_adaptive_item_bound_endpoint_v1",
+    "ranking_complete": true,
+    "unique_cited_receipts": 100
+  }
+}

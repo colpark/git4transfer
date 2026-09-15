@@ -1,0 +1,31 @@
+{
+  "completion_gate": "blind content audit, blind bundle hash, then one-shot label evaluation",
+  "labels_opened": false,
+  "recorded_at_utc": "2026-09-15T11:31:54.599826+00:00",
+  "units": {
+    "b1": {
+      "ActiveState": "active",
+      "ExecMainPID": "2677568",
+      "Id": "biology-stage4step3-b1.service",
+      "InvocationID": "61b5787b4e1c43a583d3e38e66feeb94",
+      "SubState": "running",
+      "log": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/background/b1.log"
+    },
+    "b2": {
+      "ActiveState": "active",
+      "ExecMainPID": "2677589",
+      "Id": "biology-stage4step3-b2.service",
+      "InvocationID": "bd98f52295d444f4919a19d2e02b9238",
+      "SubState": "running",
+      "log": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/background/b2.log"
+    },
+    "b4": {
+      "ActiveState": "active",
+      "ExecMainPID": "2677592",
+      "Id": "biology-stage4step3-b4.service",
+      "InvocationID": "a9a32fb959e34b869e355fb8b239a263",
+      "SubState": "running",
+      "log": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/background/b4.log"
+    }
+  }
+}

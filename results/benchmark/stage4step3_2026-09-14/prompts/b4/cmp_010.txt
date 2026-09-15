@@ -1,0 +1,12 @@
+B4 v3 prospective adaptive policy for the ten-item comparison.
+
+Rank every supplied candidate for the declared endpoint. The available evidence tools are item-bound: callers provide only a candidate variant. They do not accept a sequence, path, structure, MSA, endpoint identifier, or label. Generic plausibility evidence is not a measured assay outcome and may be mechanistically misaligned; disclose the adaptive rule in method_summary.
+
+Neutral item: cmp_010
+Declared label-free endpoint context:
+{"construct_region": "1-50", "direction": "higher values preferred", "functional_class": "Stability", "label_free": true, "measurement_assay": "Stability", "mechanistic_limit": "generic sequence/backbone plausibility is not a causal assay model", "molecule_context": "stability assay target", "phenotype_field": "ddG_ML_float", "selection_method": "cDNA display proteolysis"}
+
+Candidate variants:
+P26C, E35Q, W21M, R9H, K12I, K27Q, I37A, F46P, R11V, E35K, L18Q, I44R, I10R, F46Q, I5R, Y28T, P26K, V15T, W24M, E16H, W24V, K20S, E34Y, S4L, E35A, K7A, K12M, P33W, I5G, Y17M, T30V, R14T, F46N, W24R, W21L, W24C, L43K, N29R, L38Q, G23L, K8L, N48D, P26H, G13L, R41N, K12H, L38Y, W21I, W24H, L18E, Q47C, G23C, G23A, N36I, V15W, Y17I, R49D, L38E, P26W, V2F, D39K, G13Y, S25P, K27Y, D39F, W21Q, V2H, S4K, L42M, V15F, K7N, N36R, L42D, V2W, G23F, V15L, E34T, K7T, R14I, K7V, I10C, S25D, I44S, E35N, V2S, R9T, V2E, K20W, W31R, E35L, G23P, E6N, R22N, D39H, T30F, R14C, L43I, N36H, K12T, E3I
+
+Call submit_answer exactly once with only an answer object. The answer has exactly five keys: policy_id, method_summary, selected, rejected, ranking. policy_id is b4_v3_adaptive_item_bound_endpoint_v1. selected is exactly the first ten ranked variants; rejected is every remaining variant in rank order. ranking contains every candidate once with consecutive integer rank, mutant, one or more real evidence_call_ids, and rationale. Every row requires its own successful score_variant_fm receipt. Do not copy or supply any cryptographic hash. Invalid output is a COVERAGE FAILURE, never a zero.

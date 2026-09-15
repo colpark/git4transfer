@@ -1,0 +1,166 @@
+{
+  "b4": {
+    "cmp_001": {
+      "exit_code": 1,
+      "timed_out": false
+    },
+    "cmp_002": {
+      "context_matches_gate": true,
+      "exit_code": 0,
+      "observed_context": {
+        "approval_policy": "never",
+        "base_instructions_sha256": "cbefa6b0bede0e332d957fca70ccacf9f12f4c0ecdf81b819e5cbe1a3b16e265",
+        "cli_version": "0.154.0",
+        "developer_message_sha256": [
+          "2045f61b378e4830e1e67cbc93d8137c912a1daa4f1aaeb6dd9851d649c65132",
+          "af60719c7b64906bd05733aec72a96726712fe25d382a7bc9e05a6733cfd67dc",
+          "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e"
+        ],
+        "sandbox_type": "read-only"
+      },
+      "timed_out": false
+    },
+    "cmp_003": {
+      "context_matches_gate": true,
+      "exit_code": 0,
+      "observed_context": {
+        "approval_policy": "never",
+        "base_instructions_sha256": "cbefa6b0bede0e332d957fca70ccacf9f12f4c0ecdf81b819e5cbe1a3b16e265",
+        "cli_version": "0.154.0",
+        "developer_message_sha256": [
+          "2045f61b378e4830e1e67cbc93d8137c912a1daa4f1aaeb6dd9851d649c65132",
+          "af60719c7b64906bd05733aec72a96726712fe25d382a7bc9e05a6733cfd67dc",
+          "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e"
+        ],
+        "sandbox_type": "read-only"
+      },
+      "timed_out": false
+    },
+    "cmp_004": {
+      "context_matches_gate": false,
+      "exit_code": 0,
+      "observed_context": {
+        "approval_policy": "never",
+        "base_instructions_sha256": "a91357a1cd2727a0be06d461248d6e3a7274746e38108f548a3adf2cc2430415",
+        "cli_version": "0.154.0",
+        "developer_message_sha256": [
+          "2045f61b378e4830e1e67cbc93d8137c912a1daa4f1aaeb6dd9851d649c65132",
+          "af60719c7b64906bd05733aec72a96726712fe25d382a7bc9e05a6733cfd67dc",
+          "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e"
+        ],
+        "sandbox_type": "read-only"
+      },
+      "timed_out": false
+    },
+    "cmp_005": {
+      "context_matches_gate": true,
+      "exit_code": 0,
+      "observed_context": {
+        "approval_policy": "never",
+        "base_instructions_sha256": "cbefa6b0bede0e332d957fca70ccacf9f12f4c0ecdf81b819e5cbe1a3b16e265",
+        "cli_version": "0.154.0",
+        "developer_message_sha256": [
+          "2045f61b378e4830e1e67cbc93d8137c912a1daa4f1aaeb6dd9851d649c65132",
+          "af60719c7b64906bd05733aec72a96726712fe25d382a7bc9e05a6733cfd67dc",
+          "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e"
+        ],
+        "sandbox_type": "read-only"
+      },
+      "timed_out": false
+    },
+    "cmp_006": {
+      "context_matches_gate": true,
+      "exit_code": 0,
+      "observed_context": {
+        "approval_policy": "never",
+        "base_instructions_sha256": "cbefa6b0bede0e332d957fca70ccacf9f12f4c0ecdf81b819e5cbe1a3b16e265",
+        "cli_version": "0.154.0",
+        "developer_message_sha256": [
+          "2045f61b378e4830e1e67cbc93d8137c912a1daa4f1aaeb6dd9851d649c65132",
+          "af60719c7b64906bd05733aec72a96726712fe25d382a7bc9e05a6733cfd67dc",
+          "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e"
+        ],
+        "sandbox_type": "read-only"
+      },
+      "timed_out": false
+    },
+    "cmp_007": {
+      "context_matches_gate": true,
+      "exit_code": 0,
+      "observed_context": {
+        "approval_policy": "never",
+        "base_instructions_sha256": "cbefa6b0bede0e332d957fca70ccacf9f12f4c0ecdf81b819e5cbe1a3b16e265",
+        "cli_version": "0.154.0",
+        "developer_message_sha256": [
+          "2045f61b378e4830e1e67cbc93d8137c912a1daa4f1aaeb6dd9851d649c65132",
+          "af60719c7b64906bd05733aec72a96726712fe25d382a7bc9e05a6733cfd67dc",
+          "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e"
+        ],
+        "sandbox_type": "read-only"
+      },
+      "timed_out": false
+    },
+    "cmp_008": {
+      "context_matches_gate": false,
+      "exit_code": 0,
+      "observed_context": {
+        "approval_policy": "never",
+        "base_instructions_sha256": "a91357a1cd2727a0be06d461248d6e3a7274746e38108f548a3adf2cc2430415",
+        "cli_version": "0.154.0",
+        "developer_message_sha256": [
+          "2045f61b378e4830e1e67cbc93d8137c912a1daa4f1aaeb6dd9851d649c65132",
+          "af60719c7b64906bd05733aec72a96726712fe25d382a7bc9e05a6733cfd67dc",
+          "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e"
+        ],
+        "sandbox_type": "read-only"
+      },
+      "timed_out": false
+    },
+    "cmp_009": {
+      "context_matches_gate": false,
+      "exit_code": 0,
+      "observed_context": {
+        "approval_policy": "never",
+        "base_instructions_sha256": "a91357a1cd2727a0be06d461248d6e3a7274746e38108f548a3adf2cc2430415",
+        "cli_version": "0.154.0",
+        "developer_message_sha256": [
+          "2045f61b378e4830e1e67cbc93d8137c912a1daa4f1aaeb6dd9851d649c65132",
+          "af60719c7b64906bd05733aec72a96726712fe25d382a7bc9e05a6733cfd67dc",
+          "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e"
+        ],
+        "sandbox_type": "read-only"
+      },
+      "timed_out": false
+    },
+    "cmp_010": {
+      "context_matches_gate": true,
+      "exit_code": 0,
+      "observed_context": {
+        "approval_policy": "never",
+        "base_instructions_sha256": "cbefa6b0bede0e332d957fca70ccacf9f12f4c0ecdf81b819e5cbe1a3b16e265",
+        "cli_version": "0.154.0",
+        "developer_message_sha256": [
+          "2045f61b378e4830e1e67cbc93d8137c912a1daa4f1aaeb6dd9851d649c65132",
+          "af60719c7b64906bd05733aec72a96726712fe25d382a7bc9e05a6733cfd67dc",
+          "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e"
+        ],
+        "sandbox_type": "read-only"
+      },
+      "timed_out": false
+    }
+  },
+  "coverage": {
+    "b1": 0,
+    "b2": 0,
+    "b4": 4
+  },
+  "created_at_utc": "2026-09-15T15:05:32.806920+00:00",
+  "labels_opened": false,
+  "mechanically_valid": [
+    "cmp_002",
+    "cmp_003",
+    "cmp_007",
+    "cmp_010"
+  ],
+  "validator_repair_amendment_sha256": "4e37cb942e1719f5be091a92aa2f88eac6d2b99dded2194776449d664b3ea23e"
+}

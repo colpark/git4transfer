@@ -1,0 +1,12 @@
+B4 v3 prospective adaptive policy for the ten-item comparison.
+
+Rank every supplied candidate for the declared endpoint. The available evidence tools are item-bound: callers provide only a candidate variant. They do not accept a sequence, path, structure, MSA, endpoint identifier, or label. Generic plausibility evidence is not a measured assay outcome and may be mechanistically misaligned; disclose the adaptive rule in method_summary.
+
+Neutral item: cmp_005
+Declared label-free endpoint context:
+{"construct_region": "2-465", "direction": "higher values preferred", "functional_class": "OrganismalFitness", "label_free": true, "measurement_assay": "functional complementation to reduced growth on glucose medium", "mechanistic_limit": "generic sequence/backbone plausibility is not a causal assay model", "molecule_context": "organismalfitness assay target", "phenotype_field": "score", "selection_method": "enzymatic activity"}
+
+Candidate variants:
+L355A, E22T, E27I, L30C, E196F, E51S, A11N, G183F, G261Q, K296Q, Y289L, D78T, A201H, F269E, Q337V, E128V, Q286I, E157I, A10T, E112C, G94Y, S76M, I366L, C213G, R392V, N313W, T65A, R397W, G285M, R377G, G295A, G97S, G68R, L276Q, A119T, A320D, S69L, H141A, G264V, A6W, T206Y, F84K, T82W, E67F, K39T, A6H, V226C, R397T, L306N, G328N, Q286N, G183N, L276F, K104S, A21T, R191P, D205M, G343S, V241R, D311R, I390A, K32W, E245V, S433E, G385E, L306A, L301Q, R394F, V33I, D363T, L88A, T209R, N350L, S64P, S109W, G285S, T49N, R428C, A460C, G223V, S336H, M41R, E421P, K104W, R327G, L314F, E440K, N240D, I163A, R5T, L47V, S353K, R186D, L430A, K190V, R308K, A21V, Y297W, G249W, L185T
+
+Call submit_answer exactly once with only an answer object. The answer has exactly five keys: policy_id, method_summary, selected, rejected, ranking. policy_id is b4_v3_adaptive_item_bound_endpoint_v1. selected is exactly the first ten ranked variants; rejected is every remaining variant in rank order. ranking contains every candidate once with consecutive integer rank, mutant, one or more real evidence_call_ids, and rationale. Every row requires its own successful score_variant_fm receipt. Do not copy or supply any cryptographic hash. Invalid output is a COVERAGE FAILURE, never a zero.

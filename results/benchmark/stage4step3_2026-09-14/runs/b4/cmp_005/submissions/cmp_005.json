@@ -1,0 +1,925 @@
+{
+  "answer": {
+    "method_summary": "Adaptive rule declared for this comparison: because the endpoint is label-free and the available item-bound FM evidence is not a measured assay outcome, score every candidate independently with score_variant_fm; rank candidates separately by descending ESM-2 mutant-minus-WT log probability and descending ESM-IF1 backbone-conditioned mean log-likelihood; combine the two lists by equal-weight Borda rank sum (lower is better); break equal sums by higher ESM-2 delta, then lexicographic mutant; select ranks 1-10 and reject the rest. This is the neutral-item/label-free branch of the policy: generic sequence/backbone plausibility is used only as a non-causal proxy and may be mechanistically misaligned with functional complementation to reduced growth on glucose medium. The declared higher-values-preferred direction is applied within the two proxy signals, not treated as assay calibration or as a causal model of organismal fitness.",
+    "policy_id": "b4_v3_adaptive_item_bound_endpoint_v1",
+    "ranking": [
+      {
+        "evidence_call_ids": [
+          "call_id:1c6bf67e3003427eb00922644ca5107c"
+        ],
+        "mutant": "R308K",
+        "rank": 1,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=0.353741 (descending rank 5/100) and ESM-IF1 mean lnL=-1.154526 (descending rank 4/100), giving equal-weight rank sum 9. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:283c28cc927944a2bfbe5cae9b2314fd"
+        ],
+        "mutant": "K104S",
+        "rank": 2,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=1.860608 (descending rank 1/100) and ESM-IF1 mean lnL=-1.155323 (descending rank 10/100), giving equal-weight rank sum 11. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:9c98f1be32b842f78f3d251fdb955ad7"
+        ],
+        "mutant": "V33I",
+        "rank": 3,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-0.253574 (descending rank 10/100) and ESM-IF1 mean lnL=-1.143996 (descending rank 1/100), giving equal-weight rank sum 11. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1a78bb991cb04e278293c920a60ac840"
+        ],
+        "mutant": "L276Q",
+        "rank": 4,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=0.692314 (descending rank 4/100) and ESM-IF1 mean lnL=-1.155294 (descending rank 8/100), giving equal-weight rank sum 12. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:16d3dccbf7fb4f969226ca1b641fd79b"
+        ],
+        "mutant": "T65A",
+        "rank": 5,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-0.485150 (descending rank 12/100) and ESM-IF1 mean lnL=-1.153829 (descending rank 3/100), giving equal-weight rank sum 15. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:d448fd011abc4fdd91312ab63cba69e8"
+        ],
+        "mutant": "S433E",
+        "rank": 6,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=0.960966 (descending rank 3/100) and ESM-IF1 mean lnL=-1.157431 (descending rank 15/100), giving equal-weight rank sum 18. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e1952b7e6d9440a89204cfc5250fa219"
+        ],
+        "mutant": "R5T",
+        "rank": 7,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-0.189560 (descending rank 9/100) and ESM-IF1 mean lnL=-1.156168 (descending rank 11/100), giving equal-weight rank sum 20. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:6791e0b592a744eabf0d9dc5ecfce0b0"
+        ],
+        "mutant": "Y289L",
+        "rank": 8,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-0.917508 (descending rank 20/100) and ESM-IF1 mean lnL=-1.148186 (descending rank 2/100), giving equal-weight rank sum 22. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:08fde2ef6fbd46bea47362a078030e9e"
+        ],
+        "mutant": "E51S",
+        "rank": 9,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-0.515247 (descending rank 13/100) and ESM-IF1 mean lnL=-1.156533 (descending rank 12/100), giving equal-weight rank sum 25. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:0ddd26e8e2e74877bfdcffc1ab1817c7"
+        ],
+        "mutant": "K39T",
+        "rank": 10,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-0.553191 (descending rank 14/100) and ESM-IF1 mean lnL=-1.156572 (descending rank 13/100), giving equal-weight rank sum 27. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:675d9e6407a341029ba8a40b356e3698"
+        ],
+        "mutant": "S353K",
+        "rank": 11,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-0.172331 (descending rank 8/100) and ESM-IF1 mean lnL=-1.160535 (descending rank 23/100), giving equal-weight rank sum 31. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:be2747f05d034077b0fcd7670dfaede1"
+        ],
+        "mutant": "L47V",
+        "rank": 12,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-0.675105 (descending rank 15/100) and ESM-IF1 mean lnL=-1.159010 (descending rank 17/100), giving equal-weight rank sum 32. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:c239253d3d8d4cfc94acddf0c29fe05f"
+        ],
+        "mutant": "G328N",
+        "rank": 13,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-0.856122 (descending rank 18/100) and ESM-IF1 mean lnL=-1.158632 (descending rank 16/100), giving equal-weight rank sum 34. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7fa1bcb3919843c2885ecafc7087c8af"
+        ],
+        "mutant": "N350L",
+        "rank": 14,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-1.911547 (descending rank 30/100) and ESM-IF1 mean lnL=-1.154734 (descending rank 5/100), giving equal-weight rank sum 35. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2315f202e5c1432b883536d36b2e3acc"
+        ],
+        "mutant": "H141A",
+        "rank": 15,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-0.878193 (descending rank 19/100) and ESM-IF1 mean lnL=-1.159457 (descending rank 20/100), giving equal-weight rank sum 39. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e11ac77a0be446829d81eaaa920b35d7"
+        ],
+        "mutant": "D311R",
+        "rank": 16,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-0.733441 (descending rank 16/100) and ESM-IF1 mean lnL=-1.161094 (descending rank 25/100), giving equal-weight rank sum 41. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:fe1d98f6408c46f88f961a7293f1d450"
+        ],
+        "mutant": "K296Q",
+        "rank": 17,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-2.346511 (descending rank 36/100) and ESM-IF1 mean lnL=-1.154824 (descending rank 6/100), giving equal-weight rank sum 42. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:3efb46b40644462987da4aed7bb7d318"
+        ],
+        "mutant": "A10T",
+        "rank": 18,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-1.402861 (descending rank 23/100) and ESM-IF1 mean lnL=-1.160195 (descending rank 21/100), giving equal-weight rank sum 44. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:081c9d89a0f94679b409d2fec54d099b"
+        ],
+        "mutant": "N240D",
+        "rank": 19,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-1.968462 (descending rank 32/100) and ESM-IF1 mean lnL=-1.157349 (descending rank 14/100), giving equal-weight rank sum 46. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:29b522ae6aff4409ace018a95cc07868"
+        ],
+        "mutant": "A6H",
+        "rank": 20,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-1.326608 (descending rank 22/100) and ESM-IF1 mean lnL=-1.162017 (descending rank 26/100), giving equal-weight rank sum 48. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:42ae8527813f41d8a531009148951c88"
+        ],
+        "mutant": "E440K",
+        "rank": 21,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-0.141770 (descending rank 7/100) and ESM-IF1 mean lnL=-1.165934 (descending rank 42/100), giving equal-weight rank sum 49. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:eccea577fff54e5c98fb63539da4227e"
+        ],
+        "mutant": "A11N",
+        "rank": 22,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-1.889191 (descending rank 29/100) and ESM-IF1 mean lnL=-1.160533 (descending rank 22/100), giving equal-weight rank sum 51. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:244f94b368f44a8b8bb4febc37603d9d"
+        ],
+        "mutant": "Q286N",
+        "rank": 23,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-2.245395 (descending rank 35/100) and ESM-IF1 mean lnL=-1.159011 (descending rank 18/100), giving equal-weight rank sum 53. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:783c50ace28d431a978207b5576dab2f"
+        ],
+        "mutant": "V226C",
+        "rank": 24,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-2.950716 (descending rank 46/100) and ESM-IF1 mean lnL=-1.155103 (descending rank 7/100), giving equal-weight rank sum 53. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e205ead05019453ca2f7bee8b2aadc3d"
+        ],
+        "mutant": "S69L",
+        "rank": 25,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-2.985125 (descending rank 47/100) and ESM-IF1 mean lnL=-1.155310 (descending rank 9/100), giving equal-weight rank sum 56. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f88c000cbc2b47f2b3a1db5e29f4a3d6"
+        ],
+        "mutant": "G343S",
+        "rank": 26,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=0.053182 (descending rank 6/100) and ESM-IF1 mean lnL=-1.171944 (descending rank 57/100), giving equal-weight rank sum 63. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a5150642929847c0a92fb3381a537f26"
+        ],
+        "mutant": "L276F",
+        "rank": 27,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-1.748672 (descending rank 26/100) and ESM-IF1 mean lnL=-1.164799 (descending rank 38/100), giving equal-weight rank sum 64. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:43b69cd9403247b3bcefc8473022d790"
+        ],
+        "mutant": "E157I",
+        "rank": 28,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-1.955375 (descending rank 31/100) and ESM-IF1 mean lnL=-1.164300 (descending rank 33/100), giving equal-weight rank sum 64. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:c1299f21ef6a4ce9906b065656b6ee00"
+        ],
+        "mutant": "E27I",
+        "rank": 29,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-2.408189 (descending rank 37/100) and ESM-IF1 mean lnL=-1.162146 (descending rank 27/100), giving equal-weight rank sum 64. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:af93c234784f489f85682536eb36d0f4"
+        ],
+        "mutant": "R428C",
+        "rank": 30,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-2.946878 (descending rank 45/100) and ESM-IF1 mean lnL=-1.159078 (descending rank 19/100), giving equal-weight rank sum 64. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1638116e368948a2beb4bb3c4f87e1b6"
+        ],
+        "mutant": "A6W",
+        "rank": 31,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-2.057338 (descending rank 33/100) and ESM-IF1 mean lnL=-1.164579 (descending rank 36/100), giving equal-weight rank sum 69. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f1aca062a7c74f13a43731dec03757ec"
+        ],
+        "mutant": "T49N",
+        "rank": 32,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=0.970950 (descending rank 2/100) and ESM-IF1 mean lnL=-1.176335 (descending rank 70/100), giving equal-weight rank sum 72. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:872da7c7448a44418eca4c85c48ba9de"
+        ],
+        "mutant": "A320D",
+        "rank": 33,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-0.358729 (descending rank 11/100) and ESM-IF1 mean lnL=-1.174115 (descending rank 64/100), giving equal-weight rank sum 75. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:c32d4d23575a4bc5b7020730c6a7a93b"
+        ],
+        "mutant": "E128V",
+        "rank": 34,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-2.497772 (descending rank 38/100) and ESM-IF1 mean lnL=-1.164599 (descending rank 37/100), giving equal-weight rank sum 75. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8e44df815e0d4bcf8d1c3f1451b72564"
+        ],
+        "mutant": "G183N",
+        "rank": 35,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-0.851135 (descending rank 17/100) and ESM-IF1 mean lnL=-1.172868 (descending rank 60/100), giving equal-weight rank sum 77. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:fa4988fae77c448fbf008799b4d37a8d"
+        ],
+        "mutant": "Q337V",
+        "rank": 36,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-1.233538 (descending rank 21/100) and ESM-IF1 mean lnL=-1.171398 (descending rank 56/100), giving equal-weight rank sum 77. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f5e0fc3e33db4d66ac6007494762b06f"
+        ],
+        "mutant": "E22T",
+        "rank": 37,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-3.258534 (descending rank 49/100) and ESM-IF1 mean lnL=-1.163253 (descending rank 29/100), giving equal-weight rank sum 78. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:d538a231b70c4592ade399f5c90f5116"
+        ],
+        "mutant": "E245V",
+        "rank": 38,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-3.110118 (descending rank 48/100) and ESM-IF1 mean lnL=-1.164039 (descending rank 32/100), giving equal-weight rank sum 80. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:d28149b2b2b84af3ab6ce61818137ecc"
+        ],
+        "mutant": "Q286I",
+        "rank": 39,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-1.774051 (descending rank 27/100) and ESM-IF1 mean lnL=-1.171109 (descending rank 54/100), giving equal-weight rank sum 81. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:745c0fe788504282acfc478717dd7f6a"
+        ],
+        "mutant": "E67F",
+        "rank": 40,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-2.789465 (descending rank 42/100) and ESM-IF1 mean lnL=-1.164841 (descending rank 39/100), giving equal-weight rank sum 81. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:18cb475652664d0e9d800c643d458458"
+        ],
+        "mutant": "C213G",
+        "rank": 41,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-3.711898 (descending rank 53/100) and ESM-IF1 mean lnL=-1.163147 (descending rank 28/100), giving equal-weight rank sum 81. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:14f22ea71d6040da9400a3119be20c95"
+        ],
+        "mutant": "G97S",
+        "rank": 42,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-1.842091 (descending rank 28/100) and ESM-IF1 mean lnL=-1.171353 (descending rank 55/100), giving equal-weight rank sum 83. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:d934b46abe8a4b02bf13aef211f16609"
+        ],
+        "mutant": "A21T",
+        "rank": 43,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-2.523373 (descending rank 40/100) and ESM-IF1 mean lnL=-1.166836 (descending rank 45/100), giving equal-weight rank sum 85. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:5ed44f00921d45a384de988ec5fd271a"
+        ],
+        "mutant": "K104W",
+        "rank": 44,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-3.548707 (descending rank 50/100) and ESM-IF1 mean lnL=-1.164577 (descending rank 35/100), giving equal-weight rank sum 85. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b1bf54dffb9c44ab83019d13450162a5"
+        ],
+        "mutant": "A460C",
+        "rank": 45,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-2.513422 (descending rank 39/100) and ESM-IF1 mean lnL=-1.168218 (descending rank 48/100), giving equal-weight rank sum 87. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7b1f8fd6f0e64515a1fd2ed579ca30d4"
+        ],
+        "mutant": "K190V",
+        "rank": 46,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-2.553622 (descending rank 41/100) and ESM-IF1 mean lnL=-1.167190 (descending rank 46/100), giving equal-weight rank sum 87. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1b25a99424454bac961721c20de03b3b"
+        ],
+        "mutant": "R397T",
+        "rank": 47,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-1.564198 (descending rank 25/100) and ESM-IF1 mean lnL=-1.176123 (descending rank 68/100), giving equal-weight rank sum 93. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:fe013f4bcd534d99b3eb745761b5169f"
+        ],
+        "mutant": "K32W",
+        "rank": 48,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-3.790921 (descending rank 56/100) and ESM-IF1 mean lnL=-1.166686 (descending rank 44/100), giving equal-weight rank sum 100. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:c9aa26c2f4fb4c6c8680da22f8466d8a"
+        ],
+        "mutant": "R186D",
+        "rank": 49,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-5.728926 (descending rank 71/100) and ESM-IF1 mean lnL=-1.163530 (descending rank 30/100), giving equal-weight rank sum 101. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e31b123c10f04c28addacfafeb43c8e6"
+        ],
+        "mutant": "G68R",
+        "rank": 50,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-4.246995 (descending rank 62/100) and ESM-IF1 mean lnL=-1.165739 (descending rank 41/100), giving equal-weight rank sum 103. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4f7d94d03a4c4cf2abbfb9bc7781bda4"
+        ],
+        "mutant": "S109W",
+        "rank": 51,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-5.712217 (descending rank 70/100) and ESM-IF1 mean lnL=-1.164307 (descending rank 34/100), giving equal-weight rank sum 104. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:6f0298c651a24055a5fa7a50d54d9205"
+        ],
+        "mutant": "I366L",
+        "rank": 52,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-2.144750 (descending rank 34/100) and ESM-IF1 mean lnL=-1.176395 (descending rank 71/100), giving equal-weight rank sum 105. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:13c41bd05d1947bdbf7575ca1849f111"
+        ],
+        "mutant": "E112C",
+        "rank": 53,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-5.773386 (descending rank 74/100) and ESM-IF1 mean lnL=-1.163672 (descending rank 31/100), giving equal-weight rank sum 105. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f67e02487e454de1b435d57ce3954879"
+        ],
+        "mutant": "F269E",
+        "rank": 54,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-2.890470 (descending rank 43/100) and ESM-IF1 mean lnL=-1.175345 (descending rank 65/100), giving equal-weight rank sum 108. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:73ff20936c0d408caf396519846dc23f"
+        ],
+        "mutant": "R327G",
+        "rank": 55,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-3.882735 (descending rank 57/100) and ESM-IF1 mean lnL=-1.169084 (descending rank 52/100), giving equal-weight rank sum 109. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:243aeed798f843c3a44e1e82c73cf6a7"
+        ],
+        "mutant": "L88A",
+        "rank": 56,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-4.121649 (descending rank 60/100) and ESM-IF1 mean lnL=-1.168786 (descending rank 49/100), giving equal-weight rank sum 109. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:76ad95f1100f4cd084bc1a23a55bb108"
+        ],
+        "mutant": "A21V",
+        "rank": 57,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-2.906203 (descending rank 44/100) and ESM-IF1 mean lnL=-1.175451 (descending rank 66/100), giving equal-weight rank sum 110. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e3e17ce75f2941c689288237ac4476cc"
+        ],
+        "mutant": "L301Q",
+        "rank": 58,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-8.286361 (descending rank 87/100) and ESM-IF1 mean lnL=-1.160597 (descending rank 24/100), giving equal-weight rank sum 111. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1bfbd1e61d1e4251accf7df5628fb3e2"
+        ],
+        "mutant": "Y297W",
+        "rank": 59,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-5.742895 (descending rank 72/100) and ESM-IF1 mean lnL=-1.165529 (descending rank 40/100), giving equal-weight rank sum 112. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:5f127ee1417044949fd8426f1977cf7b"
+        ],
+        "mutant": "E421P",
+        "rank": 60,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-1.512944 (descending rank 24/100) and ESM-IF1 mean lnL=-1.185028 (descending rank 91/100), giving equal-weight rank sum 115. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:6e7d34a75f194a10b3927d266beb39b6"
+        ],
+        "mutant": "R397W",
+        "rank": 61,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-4.437591 (descending rank 65/100) and ESM-IF1 mean lnL=-1.169019 (descending rank 50/100), giving equal-weight rank sum 115. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b826383c89ce455ebebf1e5b02f758a3"
+        ],
+        "mutant": "L30C",
+        "rank": 62,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-5.875769 (descending rank 75/100) and ESM-IF1 mean lnL=-1.167280 (descending rank 47/100), giving equal-weight rank sum 122. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:914c46feee674ec4af99e86cee22b1e0"
+        ],
+        "mutant": "G285S",
+        "rank": 63,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-4.179098 (descending rank 61/100) and ESM-IF1 mean lnL=-1.173662 (descending rank 62/100), giving equal-weight rank sum 123. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:064c5797c2e0407e8be584a9d14671fc"
+        ],
+        "mutant": "G183F",
+        "rank": 64,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-3.785644 (descending rank 55/100) and ESM-IF1 mean lnL=-1.176173 (descending rank 69/100), giving equal-weight rank sum 124. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a5725ce6679c4939b62431917815d200"
+        ],
+        "mutant": "S336H",
+        "rank": 65,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-7.341478 (descending rank 82/100) and ESM-IF1 mean lnL=-1.166646 (descending rank 43/100), giving equal-weight rank sum 125. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2cb77954de434caaa131fe18c97379f0"
+        ],
+        "mutant": "I163A",
+        "rank": 66,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-4.072021 (descending rank 59/100) and ESM-IF1 mean lnL=-1.175509 (descending rank 67/100), giving equal-weight rank sum 126. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:490ca0a7faf54bbfb8d8a57a5b69ba2c"
+        ],
+        "mutant": "R392V",
+        "rank": 67,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-3.575975 (descending rank 52/100) and ESM-IF1 mean lnL=-1.177851 (descending rank 76/100), giving equal-weight rank sum 128. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:72f1cbb9d1dd43d98e8e888acc4969eb"
+        ],
+        "mutant": "L355A",
+        "rank": 68,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-4.779921 (descending rank 68/100) and ESM-IF1 mean lnL=-1.173105 (descending rank 61/100), giving equal-weight rank sum 129. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a69c58462ca741dc95e864ff3a9481fd"
+        ],
+        "mutant": "N313W",
+        "rank": 69,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-5.906805 (descending rank 76/100) and ESM-IF1 mean lnL=-1.169147 (descending rank 53/100), giving equal-weight rank sum 129. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ad611f0071b546c4a3e39d28a7bc9d17"
+        ],
+        "mutant": "I390A",
+        "rank": 70,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-3.940234 (descending rank 58/100) and ESM-IF1 mean lnL=-1.177329 (descending rank 72/100), giving equal-weight rank sum 130. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f950482dea0346cf813f052223698a97"
+        ],
+        "mutant": "E196F",
+        "rank": 71,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-5.763995 (descending rank 73/100) and ESM-IF1 mean lnL=-1.172820 (descending rank 59/100), giving equal-weight rank sum 132. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2588cc65013149129e04e503e046ffee"
+        ],
+        "mutant": "S64P",
+        "rank": 72,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-3.565041 (descending rank 51/100) and ESM-IF1 mean lnL=-1.181497 (descending rank 83/100), giving equal-weight rank sum 134. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:45bc19290e974386954214aebc22b0f7"
+        ],
+        "mutant": "L314F",
+        "rank": 73,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-3.784412 (descending rank 54/100) and ESM-IF1 mean lnL=-1.180391 (descending rank 81/100), giving equal-weight rank sum 135. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:3fad8e4984d241c9a8be398db0069c81"
+        ],
+        "mutant": "G295A",
+        "rank": 74,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-6.485621 (descending rank 78/100) and ESM-IF1 mean lnL=-1.172773 (descending rank 58/100), giving equal-weight rank sum 136. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:41cb5cfdde4640b6b30b1b4c06438975"
+        ],
+        "mutant": "G385E",
+        "rank": 75,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-8.466870 (descending rank 88/100) and ESM-IF1 mean lnL=-1.169048 (descending rank 51/100), giving equal-weight rank sum 139. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7e411e421dc54b1197c03792858a4b92"
+        ],
+        "mutant": "A119T",
+        "rank": 76,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-4.506953 (descending rank 67/100) and ESM-IF1 mean lnL=-1.177411 (descending rank 73/100), giving equal-weight rank sum 140. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:839ac17e895343fbaa125fb6cc992c10"
+        ],
+        "mutant": "L430A",
+        "rank": 77,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-4.344869 (descending rank 63/100) and ESM-IF1 mean lnL=-1.183831 (descending rank 88/100), giving equal-weight rank sum 151. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:d0ff08dfdbdf47d4a19bd27c59cdf13f"
+        ],
+        "mutant": "L185T",
+        "rank": 78,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-7.066042 (descending rank 80/100) and ESM-IF1 mean lnL=-1.177849 (descending rank 75/100), giving equal-weight rank sum 155. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:918de4d0d1b5432f97ab5c639deb7463"
+        ],
+        "mutant": "A201H",
+        "rank": 79,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-9.516792 (descending rank 93/100) and ESM-IF1 mean lnL=-1.174058 (descending rank 63/100), giving equal-weight rank sum 156. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:539dc0a2149f488792cd9ba3b134081e"
+        ],
+        "mutant": "G94Y",
+        "rank": 80,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-4.415816 (descending rank 64/100) and ESM-IF1 mean lnL=-1.188072 (descending rank 93/100), giving equal-weight rank sum 157. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b0cbfc897a8e4c75898c403f6649c7e0"
+        ],
+        "mutant": "G285M",
+        "rank": 81,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-7.001136 (descending rank 79/100) and ESM-IF1 mean lnL=-1.178384 (descending rank 79/100), giving equal-weight rank sum 158. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1316d5b4614e44c0911d69e6f7917fc2"
+        ],
+        "mutant": "L306A",
+        "rank": 82,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-7.553205 (descending rank 84/100) and ESM-IF1 mean lnL=-1.177697 (descending rank 74/100), giving equal-weight rank sum 158. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:d537971ecfd94d15bb379620af87fcb3"
+        ],
+        "mutant": "S76M",
+        "rank": 83,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-7.117398 (descending rank 81/100) and ESM-IF1 mean lnL=-1.178201 (descending rank 78/100), giving equal-weight rank sum 159. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:05ada75ee46e4e488396151832516af6"
+        ],
+        "mutant": "R394F",
+        "rank": 84,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-4.480879 (descending rank 66/100) and ESM-IF1 mean lnL=-1.189574 (descending rank 96/100), giving equal-weight rank sum 162. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:85f2ef372f114902b558cbc0e22837fe"
+        ],
+        "mutant": "G249W",
+        "rank": 85,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-4.965454 (descending rank 69/100) and ESM-IF1 mean lnL=-1.188549 (descending rank 94/100), giving equal-weight rank sum 163. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:522b2f991f2c443e85c5ff15d209e48f"
+        ],
+        "mutant": "M41R",
+        "rank": 86,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-8.161194 (descending rank 86/100) and ESM-IF1 mean lnL=-1.179651 (descending rank 80/100), giving equal-weight rank sum 166. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:c4de1ee422f2473bbdb6890327236ec7"
+        ],
+        "mutant": "V241R",
+        "rank": 87,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-9.355811 (descending rank 90/100) and ESM-IF1 mean lnL=-1.178196 (descending rank 77/100), giving equal-weight rank sum 167. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:21a54d86b8ee4550ba0b48b8fde7d9d0"
+        ],
+        "mutant": "G264V",
+        "rank": 88,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-6.484616 (descending rank 77/100) and ESM-IF1 mean lnL=-1.188643 (descending rank 95/100), giving equal-weight rank sum 172. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7f633900da214d3eba146a7755d60f4d"
+        ],
+        "mutant": "R377G",
+        "rank": 89,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-8.702900 (descending rank 89/100) and ESM-IF1 mean lnL=-1.182830 (descending rank 87/100), giving equal-weight rank sum 176. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:c7d003232e6046819d696e0cac7c2398"
+        ],
+        "mutant": "D363T",
+        "rank": 90,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-7.985331 (descending rank 85/100) and ESM-IF1 mean lnL=-1.187870 (descending rank 92/100), giving equal-weight rank sum 177. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:edef16ab945c49c89a979d0f536c672b"
+        ],
+        "mutant": "L306N",
+        "rank": 91,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-10.983768 (descending rank 94/100) and ESM-IF1 mean lnL=-1.182172 (descending rank 84/100), giving equal-weight rank sum 178. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e632cfbbeb274050a4459e0183bac21e"
+        ],
+        "mutant": "T206Y",
+        "rank": 92,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-11.762598 (descending rank 96/100) and ESM-IF1 mean lnL=-1.180413 (descending rank 82/100), giving equal-weight rank sum 178. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:096da207e90a47308cfaa3db59914ebd"
+        ],
+        "mutant": "T209R",
+        "rank": 93,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-9.362989 (descending rank 91/100) and ESM-IF1 mean lnL=-1.183930 (descending rank 89/100), giving equal-weight rank sum 180. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:c5eddb7d412e4dcc8efb4c21d5cab5c0"
+        ],
+        "mutant": "F84K",
+        "rank": 94,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-13.104780 (descending rank 97/100) and ESM-IF1 mean lnL=-1.182696 (descending rank 85/100), giving equal-weight rank sum 182. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ea9227846e344fe9b3902b3208fdc7b0"
+        ],
+        "mutant": "G223V",
+        "rank": 95,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-7.448340 (descending rank 83/100) and ESM-IF1 mean lnL=-1.203874 (descending rank 100/100), giving equal-weight rank sum 183. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:db853f2cb838425da97d7e5467ebd7e2"
+        ],
+        "mutant": "D78T",
+        "rank": 96,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-13.109146 (descending rank 98/100) and ESM-IF1 mean lnL=-1.182758 (descending rank 86/100), giving equal-weight rank sum 184. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b63a68c9a40c4099994b536b5f343b95"
+        ],
+        "mutant": "T82W",
+        "rank": 97,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-13.236845 (descending rank 99/100) and ESM-IF1 mean lnL=-1.184087 (descending rank 90/100), giving equal-weight rank sum 189. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:3c603e0dbac5489aa0ffe66748b961e3"
+        ],
+        "mutant": "G261Q",
+        "rank": 98,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-9.475170 (descending rank 92/100) and ESM-IF1 mean lnL=-1.201489 (descending rank 99/100), giving equal-weight rank sum 191. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:dd4426aa3cc24dabbe1a7b6d0b329bf7"
+        ],
+        "mutant": "R191P",
+        "rank": 99,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-11.534209 (descending rank 95/100) and ESM-IF1 mean lnL=-1.191841 (descending rank 97/100), giving equal-weight rank sum 192. These are generic plausibility signals, not a measured complementation outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:dce4017d45e84122b4e3c837dae94b11"
+        ],
+        "mutant": "D205M",
+        "rank": 100,
+        "rationale": "Item-bound FM consensus: ESM-2 \u0394lnP=-16.159733 (descending rank 100/100) and ESM-IF1 mean lnL=-1.195614 (descending rank 98/100), giving equal-weight rank sum 198. These are generic plausibility signals, not a measured complementation outcome."
+      }
+    ],
+    "rejected": [
+      "S353K",
+      "L47V",
+      "G328N",
+      "N350L",
+      "H141A",
+      "D311R",
+      "K296Q",
+      "A10T",
+      "N240D",
+      "A6H",
+      "E440K",
+      "A11N",
+      "Q286N",
+      "V226C",
+      "S69L",
+      "G343S",
+      "L276F",
+      "E157I",
+      "E27I",
+      "R428C",
+      "A6W",
+      "T49N",
+      "A320D",
+      "E128V",
+      "G183N",
+      "Q337V",
+      "E22T",
+      "E245V",
+      "Q286I",
+      "E67F",
+      "C213G",
+      "G97S",
+      "A21T",
+      "K104W",
+      "A460C",
+      "K190V",
+      "R397T",
+      "K32W",
+      "R186D",
+      "G68R",
+      "S109W",
+      "I366L",
+      "E112C",
+      "F269E",
+      "R327G",
+      "L88A",
+      "A21V",
+      "L301Q",
+      "Y297W",
+      "E421P",
+      "R397W",
+      "L30C",
+      "G285S",
+      "G183F",
+      "S336H",
+      "I163A",
+      "R392V",
+      "L355A",
+      "N313W",
+      "I390A",
+      "E196F",
+      "S64P",
+      "L314F",
+      "G295A",
+      "G385E",
+      "A119T",
+      "L430A",
+      "L185T",
+      "A201H",
+      "G94Y",
+      "G285M",
+      "L306A",
+      "S76M",
+      "R394F",
+      "G249W",
+      "M41R",
+      "V241R",
+      "G264V",
+      "R377G",
+      "D363T",
+      "L306N",
+      "T206Y",
+      "T209R",
+      "F84K",
+      "G223V",
+      "D78T",
+      "T82W",
+      "G261Q",
+      "R191P",
+      "D205M"
+    ],
+    "selected": [
+      "R308K",
+      "K104S",
+      "V33I",
+      "L276Q",
+      "T65A",
+      "S433E",
+      "R5T",
+      "Y289L",
+      "E51S",
+      "K39T"
+    ]
+  },
+  "contract_sha256": "2224a552cdf1ff80803d0729bf90d507748d58e297432038da5228556b2fe72c",
+  "endpoint_sha256": "4cb2ace7ae66e248e3759ed5f7f55231ba72f2b01c33ca3d3ad857fa5b2d565d",
+  "item_id": "cmp_005",
+  "validation": {
+    "accepted": true,
+    "answer_sha256": "e781f5290532dace0a9d513163065537b4bb0e8d51fedfa560075e207c4827fa",
+    "candidate_count": 100,
+    "contract_sha256": "2224a552cdf1ff80803d0729bf90d507748d58e297432038da5228556b2fe72c",
+    "endpoint_sha256": "4cb2ace7ae66e248e3759ed5f7f55231ba72f2b01c33ca3d3ad857fa5b2d565d",
+    "policy_id": "b4_v3_adaptive_item_bound_endpoint_v1",
+    "ranking_complete": true,
+    "unique_cited_receipts": 100
+  }
+}

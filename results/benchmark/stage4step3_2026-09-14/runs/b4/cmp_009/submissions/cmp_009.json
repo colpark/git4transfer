@@ -1,0 +1,925 @@
+{
+  "answer": {
+    "method_summary": "All 100 supplied variants received independent successful score_variant_fm calls. The declared endpoint is label-free Activity by fluorescence, with higher coef preferred, but no source selection method or measured per-variant assay evidence is available. Adaptive rule (fixed before final ranking): rank ESM-2 delta log-probability and ESM-IF1 backbone-conditioned mean log-likelihood descending; if their Spearman rank correlation is at least 0.50, use their equal-weight mean rank (Borda), breaking ties by ESM-2 rank then mutant string; otherwise use ESM-2 rank alone. Observed rho=0.748, so the consensus branch was used. These models provide generic sequence/backbone plausibility only, not a causal assay model or measured outcome, and may be mechanistically misaligned; the ordering is therefore a triage ranking for the declared endpoint, not an activity claim.",
+    "policy_id": "b4_v3_adaptive_item_bound_endpoint_v1",
+    "ranking": [
+      {
+        "evidence_call_ids": [
+          "call_id:c9a599b3084645bcad8a043372764738"
+        ],
+        "mutant": "T35S",
+        "rank": 1,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP 2.214 (rank 1/100), ESM-IF1 mean lnL -1.108190 (rank 2/100), equal-rank mean 1.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:3553dca470a54df0965d9c2774d0570b"
+        ],
+        "mutant": "K111E",
+        "rank": 2,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -0.113 (rank 6/100), ESM-IF1 mean lnL -1.112468 (rank 6/100), equal-rank mean 6.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:593185b8f65d4e0a837c40e52a30b207"
+        ],
+        "mutant": "N60S",
+        "rank": 3,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP 1.252 (rank 3/100), ESM-IF1 mean lnL -1.115943 (rank 11/100), equal-rank mean 7.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ec1e4191898a4f24bb1c61c0aed6ae7e"
+        ],
+        "mutant": "I99V",
+        "rank": 4,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP 0.568 (rank 5/100), ESM-IF1 mean lnL -1.114628 (rank 9/100), equal-rank mean 7.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:85c105b790e347dc94557c1ffcd30ed1"
+        ],
+        "mutant": "V70M",
+        "rank": 5,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -0.284 (rank 7/100), ESM-IF1 mean lnL -1.113626 (rank 7/100), equal-rank mean 7.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7129e14408884fb0a287aa2481f2889a"
+        ],
+        "mutant": "C157R",
+        "rank": 6,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -1.321 (rank 14/100), ESM-IF1 mean lnL -1.107717 (rank 1/100), equal-rank mean 7.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4d758b7520a9416f8ad96c7ed6791355"
+        ],
+        "mutant": "S123T",
+        "rank": 7,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -0.866 (rank 11/100), ESM-IF1 mean lnL -1.114415 (rank 8/100), equal-rank mean 9.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f9bd85a38594482b8e510268d1f07e61"
+        ],
+        "mutant": "N53D",
+        "rank": 8,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -0.470 (rank 8/100), ESM-IF1 mean lnL -1.116677 (rank 14/100), equal-rank mean 11.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2a1730df4723416ba904d50867024dfd"
+        ],
+        "mutant": "C157Y",
+        "rank": 9,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -2.572 (rank 19/100), ESM-IF1 mean lnL -1.112282 (rank 5/100), equal-rank mean 12.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e8bb718bd2894efe82e4d6fdb78056ae"
+        ],
+        "mutant": "K111Q",
+        "rank": 10,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -1.061 (rank 12/100), ESM-IF1 mean lnL -1.117736 (rank 17/100), equal-rank mean 14.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f89154517b0d4e53939c8a1131ff93dd"
+        ],
+        "mutant": "K30R",
+        "rank": 11,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -1.083 (rank 13/100), ESM-IF1 mean lnL -1.117951 (rank 18/100), equal-rank mean 15.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:d27494e8db7b4cc9b8979527814279eb"
+        ],
+        "mutant": "D154N",
+        "rank": 12,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -1.355 (rank 15/100), ESM-IF1 mean lnL -1.117328 (rank 16/100), equal-rank mean 15.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8eed0c2324f049d38d24f693ca556c14"
+        ],
+        "mutant": "K111R",
+        "rank": 13,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -0.778 (rank 10/100), ESM-IF1 mean lnL -1.121640 (rank 22/100), equal-rank mean 16.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:9fd73598e5524c5487a80d5f1142bf87"
+        ],
+        "mutant": "H29Q",
+        "rank": 14,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -3.223 (rank 30/100), ESM-IF1 mean lnL -1.110679 (rank 4/100), equal-rank mean 17.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:3e26121aebc5485eac6222ebe759799c"
+        ],
+        "mutant": "I69M",
+        "rank": 15,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP 1.025 (rank 4/100), ESM-IF1 mean lnL -1.125075 (rank 33/100), equal-rank mean 18.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:0de5ff6b50784b5481cc36fb1e7dc248"
+        ],
+        "mutant": "E67Q",
+        "rank": 16,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -2.061 (rank 18/100), ESM-IF1 mean lnL -1.120018 (rank 21/100), equal-rank mean 19.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ef5e87ccfa704a938147db0938d974f3"
+        ],
+        "mutant": "K159R",
+        "rank": 17,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -2.883 (rank 24/100), ESM-IF1 mean lnL -1.116967 (rank 15/100), equal-rank mean 19.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b0e4d25c55594e5db01ab0e76ccbb710"
+        ],
+        "mutant": "R214Q",
+        "rank": 18,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -1.785 (rank 16/100), ESM-IF1 mean lnL -1.122815 (rank 24/100), equal-rank mean 20.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f0efdda1851d47d29454a66bfa85219e"
+        ],
+        "mutant": "D13N",
+        "rank": 19,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -2.638 (rank 22/100), ESM-IF1 mean lnL -1.118106 (rank 19/100), equal-rank mean 20.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f28843a5b4934071bb1370813c215102"
+        ],
+        "mutant": "K197E",
+        "rank": 20,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -2.046 (rank 17/100), ESM-IF1 mean lnL -1.122847 (rank 25/100), equal-rank mean 21.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:43ba0f2ffade47739cfcd2c620cd241d"
+        ],
+        "mutant": "D153N",
+        "rank": 21,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -3.121 (rank 29/100), ESM-IF1 mean lnL -1.116664 (rank 13/100), equal-rank mean 21.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:d44d903c5e8c488f9e8350a0ce95ca81"
+        ],
+        "mutant": "T228I",
+        "rank": 22,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -2.593 (rank 20/100), ESM-IF1 mean lnL -1.121918 (rank 23/100), equal-rank mean 21.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:040fb40ef32d42c293808ef0bb773088"
+        ],
+        "mutant": "S149T",
+        "rank": 23,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -4.218 (rank 38/100), ESM-IF1 mean lnL -1.115977 (rank 12/100), equal-rank mean 25.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:d8c8e38236764b39b920ca141827144b"
+        ],
+        "mutant": "R74C",
+        "rank": 24,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -3.069 (rank 26/100), ESM-IF1 mean lnL -1.124107 (rank 29/100), equal-rank mean 27.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4130ad5a8edf41c2a8479b19a85b90d8"
+        ],
+        "mutant": "Y199F",
+        "rank": 25,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -3.863 (rank 35/100), ESM-IF1 mean lnL -1.119765 (rank 20/100), equal-rank mean 27.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b0d270f9b00e453f937c7743f4dbed6d"
+        ],
+        "mutant": "P106T",
+        "rank": 26,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -0.473 (rank 9/100), ESM-IF1 mean lnL -1.133623 (rank 47/100), equal-rank mean 28.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:5c99a24e4f6e4876aca59135258e5253"
+        ],
+        "mutant": "T218I",
+        "rank": 27,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP 1.825 (rank 2/100), ESM-IF1 mean lnL -1.137175 (rank 55/100), equal-rank mean 28.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:bc40355fea904eeeb516a11f98ff4e72"
+        ],
+        "mutant": "E163D",
+        "rank": 28,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -6.006 (rank 56/100), ESM-IF1 mean lnL -1.109731 (rank 3/100), equal-rank mean 29.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:307dbe8888234593acc7b19af385c6db"
+        ],
+        "mutant": "C143F",
+        "rank": 29,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -3.510 (rank 33/100), ESM-IF1 mean lnL -1.123553 (rank 28/100), equal-rank mean 30.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:5bac924c722a487db7b70a3fb407f8ab"
+        ],
+        "mutant": "V70G",
+        "rank": 30,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -2.596 (rank 21/100), ESM-IF1 mean lnL -1.130296 (rank 44/100), equal-rank mean 32.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:07de9d28b0c242e5a9400ae42451a1b9"
+        ],
+        "mutant": "I22V",
+        "rank": 31,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -3.073 (rank 27/100), ESM-IF1 mean lnL -1.128120 (rank 39/100), equal-rank mean 33.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:dfe9c07d6ad14b2da8718f441f611f72"
+        ],
+        "mutant": "Q198H",
+        "rank": 32,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -3.439 (rank 31/100), ESM-IF1 mean lnL -1.126429 (rank 35/100), equal-rank mean 33.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2139b7f708ab47e189d8f90223cc6ffc"
+        ],
+        "mutant": "F188Y",
+        "rank": 33,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -3.769 (rank 34/100), ESM-IF1 mean lnL -1.125056 (rank 32/100), equal-rank mean 33.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:3d14bf09569c437b96d2109b9e1d2c10"
+        ],
+        "mutant": "A173T",
+        "rank": 34,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -6.037 (rank 57/100), ESM-IF1 mean lnL -1.115798 (rank 10/100), equal-rank mean 33.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b91f10ecd88b4025be465b0a6b69c00f"
+        ],
+        "mutant": "E49V",
+        "rank": 35,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -4.616 (rank 41/100), ESM-IF1 mean lnL -1.123243 (rank 27/100), equal-rank mean 34.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ccfc56c7a72b498a8af4e3b6efc14ea5"
+        ],
+        "mutant": "F87L",
+        "rank": 36,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -3.075 (rank 28/100), ESM-IF1 mean lnL -1.130003 (rank 42/100), equal-rank mean 35.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1485249757b54f169c6fd5c918d2fc82"
+        ],
+        "mutant": "L141M",
+        "rank": 37,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -5.083 (rank 45/100), ESM-IF1 mean lnL -1.124185 (rank 30/100), equal-rank mean 37.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:54930c60ec9248ecaed3659668dc93a7"
+        ],
+        "mutant": "E57A",
+        "rank": 38,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -3.902 (rank 36/100), ESM-IF1 mean lnL -1.129445 (rank 41/100), equal-rank mean 38.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:469bb59be8054f7baa1d1dbdfe28e71c"
+        ],
+        "mutant": "H230Q",
+        "rank": 39,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -3.007 (rank 25/100), ESM-IF1 mean lnL -1.136175 (rank 53/100), equal-rank mean 39.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:39bb0f51946d49939ab67aa56343dd48"
+        ],
+        "mutant": "I145F",
+        "rank": 40,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -5.649 (rank 52/100), ESM-IF1 mean lnL -1.125042 (rank 31/100), equal-rank mean 41.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b60f5e35e97345f3adb095fc93cd1afd"
+        ],
+        "mutant": "I23L",
+        "rank": 41,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -3.958 (rank 37/100), ESM-IF1 mean lnL -1.136590 (rank 54/100), equal-rank mean 45.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:84a11e0aaed14544894748b91d1e07f8"
+        ],
+        "mutant": "V58I",
+        "rank": 42,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -2.815 (rank 23/100), ESM-IF1 mean lnL -1.146556 (rank 69/100), equal-rank mean 46.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:da804e41b6c14dd69f40a4800122a13c"
+        ],
+        "mutant": "D119E",
+        "rank": 43,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -5.079 (rank 44/100), ESM-IF1 mean lnL -1.133948 (rank 49/100), equal-rank mean 46.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:9c296898694a44e680365c7b75bf1911"
+        ],
+        "mutant": "L19S",
+        "rank": 44,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -3.488 (rank 32/100), ESM-IF1 mean lnL -1.141686 (rank 63/100), equal-rank mean 47.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2f740a049fe9405d84b96408225776e5"
+        ],
+        "mutant": "M195T",
+        "rank": 45,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -5.351 (rank 49/100), ESM-IF1 mean lnL -1.131627 (rank 46/100), equal-rank mean 47.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8a5321cf4f634312840b083cfe0638f0"
+        ],
+        "mutant": "E146G",
+        "rank": 46,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -5.423 (rank 50/100), ESM-IF1 mean lnL -1.131000 (rank 45/100), equal-rank mean 47.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:08a5b525e7f842b0b2df97e568d64fea"
+        ],
+        "mutant": "I235T",
+        "rank": 47,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -7.470 (rank 70/100), ESM-IF1 mean lnL -1.122916 (rank 26/100), equal-rank mean 48.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:918224525bdf495faf88278629fc2e1c"
+        ],
+        "mutant": "G98E",
+        "rank": 48,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -5.944 (rank 55/100), ESM-IF1 mean lnL -1.130099 (rank 43/100), equal-rank mean 49.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1042024f7edc42c38ce832cd86ea4ba6"
+        ],
+        "mutant": "M73T",
+        "rank": 49,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -6.365 (rank 58/100), ESM-IF1 mean lnL -1.128972 (rank 40/100), equal-rank mean 49.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ae739a81e7fc4fb98225d109f5e969cd"
+        ],
+        "mutant": "V239A",
+        "rank": 50,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -6.833 (rank 62/100), ESM-IF1 mean lnL -1.127787 (rank 38/100), equal-rank mean 50.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:daa178e615c444f8a224093561fc1a69"
+        ],
+        "mutant": "L167M",
+        "rank": 51,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -6.945 (rank 64/100), ESM-IF1 mean lnL -1.127337 (rank 37/100), equal-rank mean 50.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ac64f2fa18b94200bfd342398d9582bb"
+        ],
+        "mutant": "V162M",
+        "rank": 52,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -7.234 (rank 66/100), ESM-IF1 mean lnL -1.126890 (rank 36/100), equal-rank mean 51.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:bf4875e1dbd54f1d9851e8a6a382ea02"
+        ],
+        "mutant": "D41H",
+        "rank": 53,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -5.752 (rank 53/100), ESM-IF1 mean lnL -1.134638 (rank 50/100), equal-rank mean 51.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e7a19494ffd549289f687cf091452556"
+        ],
+        "mutant": "Q190H",
+        "rank": 54,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -5.155 (rank 46/100), ESM-IF1 mean lnL -1.140465 (rank 60/100), equal-rank mean 53.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:81a1bcb1bcff44689401594be1a3d505"
+        ],
+        "mutant": "D13G",
+        "rank": 55,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -6.453 (rank 60/100), ESM-IF1 mean lnL -1.133797 (rank 48/100), equal-rank mean 54.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8be93512e8fa4f62a9d122d71f81799c"
+        ],
+        "mutant": "E219V",
+        "rank": 56,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -5.544 (rank 51/100), ESM-IF1 mean lnL -1.141049 (rank 61/100), equal-rank mean 56.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a914495fa2c547a7ba5ff062976bfc5d"
+        ],
+        "mutant": "K78I",
+        "rank": 57,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -4.707 (rank 42/100), ESM-IF1 mean lnL -1.146810 (rank 71/100), equal-rank mean 56.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:3de27bef001e489cba7f79209c057099"
+        ],
+        "mutant": "L130F",
+        "rank": 58,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -4.601 (rank 40/100), ESM-IF1 mean lnL -1.151310 (rank 75/100), equal-rank mean 57.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:092d9d8d8931495f865c6e435923f8c5"
+        ],
+        "mutant": "R120G",
+        "rank": 59,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -5.337 (rank 48/100), ESM-IF1 mean lnL -1.145284 (rank 67/100), equal-rank mean 57.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:d392723f21a34010be8abdfe61e2f21d"
+        ],
+        "mutant": "M195K",
+        "rank": 60,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -8.904 (rank 82/100), ESM-IF1 mean lnL -1.125745 (rank 34/100), equal-rank mean 58.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:5fc639129b424997a1f1e57fdf961e11"
+        ],
+        "mutant": "T65I",
+        "rank": 61,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -4.382 (rank 39/100), ESM-IF1 mean lnL -1.159146 (rank 79/100), equal-rank mean 59.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:dae04fe0d3244f689dd3e59365163c8e"
+        ],
+        "mutant": "A169G",
+        "rank": 62,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -5.839 (rank 54/100), ESM-IF1 mean lnL -1.142112 (rank 64/100), equal-rank mean 59.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:c98bd8dad8bd41b2a0c0d188b881a4cd"
+        ],
+        "mutant": "L64V",
+        "rank": 63,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -4.998 (rank 43/100), ESM-IF1 mean lnL -1.155832 (rank 77/100), equal-rank mean 60.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:693c41717cb64465a46a8b490ea1139a"
+        ],
+        "mutant": "S171C",
+        "rank": 64,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -7.060 (rank 65/100), ESM-IF1 mean lnL -1.137731 (rank 57/100), equal-rank mean 61.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:34f8a791545d4c8bac3e56406d85d89f"
+        ],
+        "mutant": "F87C",
+        "rank": 65,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -8.416 (rank 77/100), ESM-IF1 mean lnL -1.136015 (rank 51/100), equal-rank mean 64.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:76c2c855d64844cdb08d016c3e61075d"
+        ],
+        "mutant": "A164T",
+        "rank": 66,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -7.714 (rank 71/100), ESM-IF1 mean lnL -1.137814 (rank 58/100), equal-rank mean 64.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7b6cced4f82843d0881da50e835ed94f"
+        ],
+        "mutant": "P174T",
+        "rank": 67,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -7.457 (rank 69/100), ESM-IF1 mean lnL -1.141370 (rank 62/100), equal-rank mean 65.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4dc15f2346b64acbb170a3a400a72420"
+        ],
+        "mutant": "R84W",
+        "rank": 68,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -8.674 (rank 80/100), ESM-IF1 mean lnL -1.136117 (rank 52/100), equal-rank mean 66.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:fd1fa743715d4fb485c6f82e3026934e"
+        ],
+        "mutant": "Y168C",
+        "rank": 69,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -6.904 (rank 63/100), ESM-IF1 mean lnL -1.146767 (rank 70/100), equal-rank mean 66.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:320d8db2035a428f967384f7627d79f9"
+        ],
+        "mutant": "W187R",
+        "rank": 70,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -6.399 (rank 59/100), ESM-IF1 mean lnL -1.151310 (rank 76/100), equal-rank mean 67.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:cf1c270cbbd14f50ab4b8ebd1b2abcbe"
+        ],
+        "mutant": "A200P",
+        "rank": 71,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -5.268 (rank 47/100), ESM-IF1 mean lnL -1.178953 (rank 93/100), equal-rank mean 70.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b5ddf95969074c01a4fae95c2c6a3698"
+        ],
+        "mutant": "Y170C",
+        "rank": 72,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -8.182 (rank 74/100), ESM-IF1 mean lnL -1.146201 (rank 68/100), equal-rank mean 71.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e6efb0c4812e48abbe7087cb1bdb4e1c"
+        ],
+        "mutant": "G175S",
+        "rank": 73,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -9.531 (rank 86/100), ESM-IF1 mean lnL -1.137267 (rank 56/100), equal-rank mean 71.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:671791c57d384eee837d497916ce3816"
+        ],
+        "mutant": "F166Y",
+        "rank": 74,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -9.383 (rank 85/100), ESM-IF1 mean lnL -1.139398 (rank 59/100), equal-rank mean 72.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:77ac9a13e0fe4898bd7726f140e93f9f"
+        ],
+        "mutant": "Q134E",
+        "rank": 75,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -8.672 (rank 79/100), ESM-IF1 mean lnL -1.143624 (rank 66/100), equal-rank mean 72.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:0f327b48968d48e6aabf0d5a76e3deb4"
+        ],
+        "mutant": "S240C",
+        "rank": 76,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -7.788 (rank 72/100), ESM-IF1 mean lnL -1.148844 (rank 74/100), equal-rank mean 73.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7a2b3220cf7e42738730ec4ce2fc2128"
+        ],
+        "mutant": "F101I",
+        "rank": 77,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -6.724 (rank 61/100), ESM-IF1 mean lnL -1.167889 (rank 87/100), equal-rank mean 74.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ced6d322bda1494992057dcf2e16b612"
+        ],
+        "mutant": "D41V",
+        "rank": 78,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -8.366 (rank 76/100), ESM-IF1 mean lnL -1.147471 (rank 72/100), equal-rank mean 74.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:054151e528e148a29f4e99b893740869"
+        ],
+        "mutant": "A164V",
+        "rank": 79,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -8.322 (rank 75/100), ESM-IF1 mean lnL -1.157236 (rank 78/100), equal-rank mean 76.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7e31d90f1dec46bfb0ee7f2699cbe0b3"
+        ],
+        "mutant": "S86G",
+        "rank": 80,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -9.840 (rank 89/100), ESM-IF1 mean lnL -1.142230 (rank 65/100), equal-rank mean 77.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:717e6d5714c3457fa3a91ee6db663895"
+        ],
+        "mutant": "F248V",
+        "rank": 81,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -7.434 (rank 68/100), ESM-IF1 mean lnL -1.172246 (rank 88/100), equal-rank mean 78.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:c4a2c383d6ea4ea4a3e559b000dc1f7d"
+        ],
+        "mutant": "V76G",
+        "rank": 82,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -7.975 (rank 73/100), ESM-IF1 mean lnL -1.166059 (rank 85/100), equal-rank mean 79.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:666ccb29855945f5bfa3d0afeae21c1e"
+        ],
+        "mutant": "S77P",
+        "rank": 83,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -7.315 (rank 67/100), ESM-IF1 mean lnL -1.179784 (rank 94/100), equal-rank mean 80.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8f1972ce884544f4b9aed6b18b8e266a"
+        ],
+        "mutant": "H81Q",
+        "rank": 84,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -8.566 (rank 78/100), ESM-IF1 mean lnL -1.166003 (rank 84/100), equal-rank mean 81.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e4f40dc819524ffca4d6b2ec94b4ebde"
+        ],
+        "mutant": "I208T",
+        "rank": 85,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -9.234 (rank 83/100), ESM-IF1 mean lnL -1.160852 (rank 80/100), equal-rank mean 81.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:71aeb31771054ca39bfb0255d8369f76"
+        ],
+        "mutant": "F188C",
+        "rank": 86,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -9.590 (rank 88/100), ESM-IF1 mean lnL -1.163285 (rank 81/100), equal-rank mean 84.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:37a60e2f31e24985b64363fe6d51fd3d"
+        ],
+        "mutant": "L167S",
+        "rank": 87,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -11.954 (rank 98/100), ESM-IF1 mean lnL -1.148787 (rank 73/100), equal-rank mean 85.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:54013010cb984a9699cb5c80c0852526"
+        ],
+        "mutant": "I22N",
+        "rank": 88,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -10.327 (rank 92/100), ESM-IF1 mean lnL -1.163577 (rank 82/100), equal-rank mean 87.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b5599d4c488843f1872d59037b9f68f1"
+        ],
+        "mutant": "S171F",
+        "rank": 89,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -9.958 (rank 90/100), ESM-IF1 mean lnL -1.167175 (rank 86/100), equal-rank mean 88.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ce07c4d60299464a9d319665c9616bdb"
+        ],
+        "mutant": "G185S",
+        "rank": 90,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -8.874 (rank 81/100), ESM-IF1 mean lnL -1.192224 (rank 98/100), equal-rank mean 89.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:31746432e1894d2da2ffe2abb00fb6a7"
+        ],
+        "mutant": "C20Y",
+        "rank": 91,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -9.587 (rank 87/100), ESM-IF1 mean lnL -1.185324 (rank 96/100), equal-rank mean 91.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:01c9b02b5d884a1795df5b3e3e4a5d3f"
+        ],
+        "mutant": "W179G",
+        "rank": 92,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -13.980 (rank 100/100), ESM-IF1 mean lnL -1.164584 (rank 83/100), equal-rank mean 91.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:abd2eb61c6da4b21bb5157677a0c389e"
+        ],
+        "mutant": "G102V",
+        "rank": 93,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -9.373 (rank 84/100), ESM-IF1 mean lnL -1.211455 (rank 100/100), equal-rank mean 92.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f46f830f736c4cd09972a36d94ff6391"
+        ],
+        "mutant": "L47H",
+        "rank": 94,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -10.628 (rank 94/100), ESM-IF1 mean lnL -1.176598 (rank 91/100), equal-rank mean 92.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:12767ed69582442abd5cfc8c855ad9ff"
+        ],
+        "mutant": "F51I",
+        "rank": 95,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -11.751 (rank 97/100), ESM-IF1 mean lnL -1.175952 (rank 90/100), equal-rank mean 93.5. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e57da2bf201c4555b6e30b794e4fcbdd"
+        ],
+        "mutant": "D63V",
+        "rank": 96,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -10.505 (rank 93/100), ESM-IF1 mean lnL -1.182874 (rank 95/100), equal-rank mean 94.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:acb24813895d4b3698b13abc6893a4ee"
+        ],
+        "mutant": "C121W",
+        "rank": 97,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -11.603 (rank 96/100), ESM-IF1 mean lnL -1.177745 (rank 92/100), equal-rank mean 94.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:5646dcf97b254d3fb94e51ca69030eeb"
+        ],
+        "mutant": "L192H",
+        "rank": 98,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -13.902 (rank 99/100), ESM-IF1 mean lnL -1.173671 (rank 89/100), equal-rank mean 94.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:5dbd6c0eb20443e8b88e34030c802cad"
+        ],
+        "mutant": "L47P",
+        "rank": 99,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -10.113 (rank 91/100), ESM-IF1 mean lnL -1.194547 (rank 99/100), equal-rank mean 95.0. This is not measured activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:53e2d7a37b154c1d8fed826ad46375f8"
+        ],
+        "mutant": "D165V",
+        "rank": 100,
+        "rationale": "Consensus plausibility proxy: ESM-2 \u0394lnP -11.525 (rank 95/100), ESM-IF1 mean lnL -1.188003 (rank 97/100), equal-rank mean 96.0. This is not measured activity."
+      }
+    ],
+    "rejected": [
+      "K30R",
+      "D154N",
+      "K111R",
+      "H29Q",
+      "I69M",
+      "E67Q",
+      "K159R",
+      "R214Q",
+      "D13N",
+      "K197E",
+      "D153N",
+      "T228I",
+      "S149T",
+      "R74C",
+      "Y199F",
+      "P106T",
+      "T218I",
+      "E163D",
+      "C143F",
+      "V70G",
+      "I22V",
+      "Q198H",
+      "F188Y",
+      "A173T",
+      "E49V",
+      "F87L",
+      "L141M",
+      "E57A",
+      "H230Q",
+      "I145F",
+      "I23L",
+      "V58I",
+      "D119E",
+      "L19S",
+      "M195T",
+      "E146G",
+      "I235T",
+      "G98E",
+      "M73T",
+      "V239A",
+      "L167M",
+      "V162M",
+      "D41H",
+      "Q190H",
+      "D13G",
+      "E219V",
+      "K78I",
+      "L130F",
+      "R120G",
+      "M195K",
+      "T65I",
+      "A169G",
+      "L64V",
+      "S171C",
+      "F87C",
+      "A164T",
+      "P174T",
+      "R84W",
+      "Y168C",
+      "W187R",
+      "A200P",
+      "Y170C",
+      "G175S",
+      "F166Y",
+      "Q134E",
+      "S240C",
+      "F101I",
+      "D41V",
+      "A164V",
+      "S86G",
+      "F248V",
+      "V76G",
+      "S77P",
+      "H81Q",
+      "I208T",
+      "F188C",
+      "L167S",
+      "I22N",
+      "S171F",
+      "G185S",
+      "C20Y",
+      "W179G",
+      "G102V",
+      "L47H",
+      "F51I",
+      "D63V",
+      "C121W",
+      "L192H",
+      "L47P",
+      "D165V"
+    ],
+    "selected": [
+      "T35S",
+      "K111E",
+      "N60S",
+      "I99V",
+      "V70M",
+      "C157R",
+      "S123T",
+      "N53D",
+      "C157Y",
+      "K111Q"
+    ]
+  },
+  "contract_sha256": "d6634623a2787a0b5fb8fb338483689c92662e449e69d1cde1a463d3be93da76",
+  "endpoint_sha256": "546a3cb95b4ff07b1ebe19c7b41a48d286ff7006b51d18cf83b42f6d1b782447",
+  "item_id": "cmp_009",
+  "validation": {
+    "accepted": true,
+    "answer_sha256": "594a1262cf051e3f5dece4c8bf0ba715d5619258692b160e2c661e6c19dd11fb",
+    "candidate_count": 100,
+    "contract_sha256": "d6634623a2787a0b5fb8fb338483689c92662e449e69d1cde1a463d3be93da76",
+    "endpoint_sha256": "546a3cb95b4ff07b1ebe19c7b41a48d286ff7006b51d18cf83b42f6d1b782447",
+    "policy_id": "b4_v3_adaptive_item_bound_endpoint_v1",
+    "ranking_complete": true,
+    "unique_cited_receipts": 100
+  }
+}

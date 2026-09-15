@@ -1,0 +1,49 @@
+{
+  "args": {
+    "chain": "A",
+    "contract_sha256": "d6634623a2787a0b5fb8fb338483689c92662e449e69d1cde1a463d3be93da76",
+    "pdb_sha256": "8be2b63d8ee01cf9a3c228a88efc858c41efa3852a83dcb3c3251ed438933dc8",
+    "sequence_sha256": "db97616a542053832f57e3a6f83b89c1b80a10c679889c6e23b20550d1cd50a1",
+    "variant": "R214Q"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "e49fb41a158255b6153f094c578dcad1ee62f43c69ddeb0712e4078d562b6d68",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/b0e4d25c55594e5db01ab0e76ccbb710.json",
+    "cache_hit": false,
+    "call_id": "call_id:b0e4d25c55594e5db01ab0e76ccbb710",
+    "runtime_s": 8.436543,
+    "tool": "score_variant_fm"
+  },
+  "result": {
+    "esm2": {
+      "delta_log_probability": -1.7852869629859924,
+      "device": "cpu",
+      "method": "ESM2_single_position_masked_marginal_natural_log",
+      "model": "facebook/esm2_t33_650M_UR50D",
+      "mutant": "Q",
+      "mutant_log_probability": -2.3189516067504883,
+      "position": 214,
+      "precision": "float32",
+      "revision": "08e4846e537177426273712802403f7ba8261b6c",
+      "wt": "R",
+      "wt_log_probability": -0.5336646437644958
+    },
+    "esm_if": {
+      "backbone_length": 258,
+      "cache_namespace": "b4v3_item-bound_esm2-08e4846e_if1-be4ba36e",
+      "chain": "A",
+      "checkpoint_sha256": "be4ba36edec22a9bfaa4946ff6b2815f1f19d8a3d7e0eada8b796d5a0eae9fd4",
+      "device": "cpu",
+      "interpretation": "backbone-conditioned sequence score; not a measured stability effect",
+      "mean_log_likelihood": -1.1228150360343991,
+      "mean_log_likelihood_with_coords": -1.1228150360343991,
+      "model": "esm_if1_gvp4_t16_142M_UR50",
+      "native_sequence_match": false,
+      "pdb_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/inputs/cmp_009/reference.pdb",
+      "sequence_length": 258
+    },
+    "note": "Generic sequence/backbone plausibility; not an assay outcome."
+  },
+  "server": "fm"
+}

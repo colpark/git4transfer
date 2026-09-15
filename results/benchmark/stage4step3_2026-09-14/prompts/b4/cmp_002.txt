@@ -1,0 +1,12 @@
+B4 v3 prospective adaptive policy for the ten-item comparison.
+
+Rank every supplied candidate for the declared endpoint. The available evidence tools are item-bound: callers provide only a candidate variant. They do not accept a sequence, path, structure, MSA, endpoint identifier, or label. Generic plausibility evidence is not a measured assay outcome and may be mechanistically misaligned; disclose the adaptive rule in method_summary.
+
+Neutral item: cmp_002
+Declared label-free endpoint context:
+{"construct_region": "672-713", "direction": "higher values preferred", "functional_class": "Stability", "label_free": true, "measurement_assay": "aggregation", "mechanistic_limit": "generic sequence/backbone plausibility is not a causal assay model", "molecule_context": "stability assay target", "phenotype_field": "nscore", "selection_method": "survival assessment assay"}
+
+Candidate variants:
+V683F, H677V, I712P, D694R, H685F, S697R, V707L, E693V, M706F, E682H, I712C, F690E, I702A, F691D, G704K, A692L, H685L, Q686D, G700S, K687S, A713G, F675V, V707N, M706G, Q686R, Y681S, S679I, G709R, A713K, I703K, K699S, R676Q, G696V, E682M, D694K, V683Q, E682Q, L688P, G704S, E674W, V695I, I712Q, F690N, I703T, A713I, S679Y, F675P, V707R, R676K, Y681F, G696H, R676D, H677L, E674S, M706Y, L705H, A701I, V695H, V695E, G708C, E682I, H684G, E674L, V711K, A701V, A692T, D694W, V689K, V683D, V683P, K699V, F690D, E693A, V711D, Q686E, L705Q, G680I, G704P, A713R, H677Y, K687H, K687T, Q686P, F690C, V689M, G680K, A713E, I702F, L688Y, V707I, F690V, D678R, I702H, F675Y, V683E, I702M, A692E, A701L, F675L, V683W
+
+Call submit_answer exactly once with only an answer object. The answer has exactly five keys: policy_id, method_summary, selected, rejected, ranking. policy_id is b4_v3_adaptive_item_bound_endpoint_v1. selected is exactly the first ten ranked variants; rejected is every remaining variant in rank order. ranking contains every candidate once with consecutive integer rank, mutant, one or more real evidence_call_ids, and rationale. Every row requires its own successful score_variant_fm receipt. Do not copy or supply any cryptographic hash. Invalid output is a COVERAGE FAILURE, never a zero.

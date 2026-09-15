@@ -1,0 +1,925 @@
+{
+  "answer": {
+    "method_summary": "Prospective label-free adaptive rule: require one successful item-bound score_variant_fm receipt for every candidate, then rank for the declared membrane-protein insertion endpoint using a depth-weighted biological insertion-free-energy \u0394\u0394G surrogate (mutant minus wild type; lower is preferred), including interfacial aromatic preference and an explicit proline helix-break penalty. Candidate-specific ESM-2 masked-marginal \u0394lnP (higher is more plausible) is used only to break mechanistically close ties; the ESM-IF1 reference-backbone value is non-differential across candidates. No measured assay labels are used. Generic sequence/backbone plausibility is not a measured assay outcome and is not a causal model of the TbL membrane-insertion assay, so it cannot override the endpoint-aligned mechanistic ordering.",
+    "policy_id": "b4_v3_adaptive_item_bound_endpoint_v1",
+    "ranking": [
+      {
+        "evidence_call_ids": [
+          "call_id:c2b286e527b5498e963e895740a07a93"
+        ],
+        "mutant": "G102L",
+        "rank": 1,
+        "rationale": "Insertion \u0394\u0394G surrogate -1.290 (lower is preferred): greater hydrophobicity favors membrane insertion. ESM-2 \u0394lnP -1.798 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:0df9aec39ab640a99e7e641a2197f1f7"
+        ],
+        "mutant": "G98I",
+        "rank": 2,
+        "rationale": "Insertion \u0394\u0394G surrogate -1.273 (lower is preferred): greater hydrophobicity favors membrane insertion. ESM-2 \u0394lnP -3.003 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8b29a19e6eb947c58bc4d150fdae8fa1"
+        ],
+        "mutant": "G105I",
+        "rank": 3,
+        "rationale": "Insertion \u0394\u0394G surrogate -1.072 (lower is preferred): greater hydrophobicity favors membrane insertion. ESM-2 \u0394lnP 0.210 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7f0a75c74e4442d59ced4bfb3949bc53"
+        ],
+        "mutant": "G98F",
+        "rank": 4,
+        "rationale": "Insertion \u0394\u0394G surrogate -1.014 (lower is preferred): greater hydrophobicity favors membrane insertion. ESM-2 \u0394lnP -2.859 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:baf6c5e513f94881b185554d73a99f5d"
+        ],
+        "mutant": "G105V",
+        "rank": 5,
+        "rationale": "Insertion \u0394\u0394G surrogate -0.840 (lower is preferred): greater hydrophobicity favors membrane insertion. ESM-2 \u0394lnP 0.213 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7d4fa4c88e1f42e998a9a6558f1b6912"
+        ],
+        "mutant": "G102M",
+        "rank": 6,
+        "rationale": "Insertion \u0394\u0394G surrogate -0.840 (lower is preferred): greater hydrophobicity favors membrane insertion. ESM-2 \u0394lnP -3.888 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4d52f859cd1b4fc9aea6f5348f381fe8"
+        ],
+        "mutant": "G98M",
+        "rank": 7,
+        "rationale": "Insertion \u0394\u0394G surrogate -0.798 (lower is preferred): greater hydrophobicity favors membrane insertion. ESM-2 \u0394lnP -4.292 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1e7e4534061e44b3b7a48ce124b205d2"
+        ],
+        "mutant": "A101I",
+        "rank": 8,
+        "rationale": "Insertion \u0394\u0394G surrogate -0.710 (lower is preferred): greater hydrophobicity favors membrane insertion. ESM-2 \u0394lnP 0.363 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1cf9e08e0556416ba3f6459e2992108f"
+        ],
+        "mutant": "T106L",
+        "rank": 9,
+        "rationale": "Insertion \u0394\u0394G surrogate -0.696 (lower is preferred): greater hydrophobicity favors membrane insertion. ESM-2 \u0394lnP 2.151 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8bcfb56edba947b38d3c905af67d0077"
+        ],
+        "mutant": "G105M",
+        "rank": 10,
+        "rationale": "Insertion \u0394\u0394G surrogate -0.672 (lower is preferred): greater hydrophobicity favors membrane insertion. ESM-2 \u0394lnP -1.836 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a867204290d543f49c8593a385685333"
+        ],
+        "mutant": "G102A",
+        "rank": 11,
+        "rationale": "Insertion \u0394\u0394G surrogate -0.630 (lower is preferred): alanine improves over the native glycine while retaining helix propensity. ESM-2 \u0394lnP -0.838 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:92d445694148467a8d8069caf6775eb7"
+        ],
+        "mutant": "T106F",
+        "rank": 12,
+        "rationale": "Insertion \u0394\u0394G surrogate -0.599 (lower is preferred): greater hydrophobicity favors membrane insertion. ESM-2 \u0394lnP 0.656 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:92b0b9f20c304ae4a52a0d7a754334ec"
+        ],
+        "mutant": "G98A",
+        "rank": 13,
+        "rationale": "Insertion \u0394\u0394G surrogate -0.598 (lower is preferred): alanine improves over the native glycine while retaining helix propensity. ESM-2 \u0394lnP -0.885 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f124d2ef27da46f795b7e87f12ca6cba"
+        ],
+        "mutant": "G98W",
+        "rank": 14,
+        "rationale": "Insertion \u0394\u0394G surrogate -0.443 (lower is preferred): aromatic hydrophobicity/interface preference favors insertion. ESM-2 \u0394lnP -6.467 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b60a3b245e8e45ad89d819e0cfd61ae6"
+        ],
+        "mutant": "G102W",
+        "rank": 15,
+        "rationale": "Insertion \u0394\u0394G surrogate -0.440 (lower is preferred): aromatic hydrophobicity/interface preference favors insertion. ESM-2 \u0394lnP -6.444 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:d56536c21472423ea0e992a23c731aa9"
+        ],
+        "mutant": "A101F",
+        "rank": 16,
+        "rationale": "Insertion \u0394\u0394G surrogate -0.430 (lower is preferred): greater hydrophobicity favors membrane insertion. ESM-2 \u0394lnP -0.242 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a4a2a1fe880647eea2a5e5314b69ca3a"
+        ],
+        "mutant": "T106C",
+        "rank": 17,
+        "rationale": "Insertion \u0394\u0394G surrogate -0.423 (lower is preferred): greater hydrophobicity favors membrane insertion. ESM-2 \u0394lnP -0.881 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:3b41e58319f7439fa72745188f407df0"
+        ],
+        "mutant": "T106A",
+        "rank": 18,
+        "rationale": "Insertion \u0394\u0394G surrogate -0.267 (lower is preferred): alanine improves over the native glycine while retaining helix propensity. ESM-2 \u0394lnP 0.728 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:199b3737154a474398335039dbe21b33"
+        ],
+        "mutant": "V99L",
+        "rank": 19,
+        "rationale": "Insertion \u0394\u0394G surrogate -0.240 (lower is preferred): greater hydrophobicity favors membrane insertion. ESM-2 \u0394lnP -2.536 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:188b1283dc3b4a87af3502df4c744e0a"
+        ],
+        "mutant": "A101C",
+        "rank": 20,
+        "rationale": "Insertion \u0394\u0394G surrogate -0.240 (lower is preferred): greater hydrophobicity favors membrane insertion. ESM-2 \u0394lnP -1.273 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:3479c7b90d054317aa7ab94853410636"
+        ],
+        "mutant": "A101M",
+        "rank": 21,
+        "rationale": "Insertion \u0394\u0394G surrogate -0.210 (lower is preferred): greater hydrophobicity favors membrane insertion. ESM-2 \u0394lnP -1.419 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8c760c3c41c647f894dd38f264cfd517"
+        ],
+        "mutant": "G105T",
+        "rank": 22,
+        "rationale": "Insertion \u0394\u0394G surrogate -0.176 (lower is preferred): the polarity change is modest at this depth. ESM-2 \u0394lnP -1.235 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:96c6867a0b9d4a53828ca4986c69d135"
+        ],
+        "mutant": "M100C",
+        "rank": 23,
+        "rationale": "Insertion \u0394\u0394G surrogate -0.030 (lower is preferred): greater hydrophobicity favors membrane insertion. ESM-2 \u0394lnP 0.133 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e4c464a46bdc4eb781342b042141ac00"
+        ],
+        "mutant": "L94W",
+        "rank": 24,
+        "rationale": "Insertion \u0394\u0394G surrogate -0.028 (lower is preferred): aromatic hydrophobicity/interface preference favors insertion. ESM-2 \u0394lnP -2.100 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:eaee288db643437e9908a7019c5bfe71"
+        ],
+        "mutant": "T106Y",
+        "rank": 25,
+        "rationale": "Insertion \u0394\u0394G surrogate -0.018 (lower is preferred): aromatic hydrophobicity/interface preference favors insertion. ESM-2 \u0394lnP -3.732 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a11297b7fbc64ff5a2485a3e22e32a9d"
+        ],
+        "mutant": "V103F",
+        "rank": 26,
+        "rationale": "Insertion \u0394\u0394G surrogate -0.010 (lower is preferred): greater hydrophobicity favors membrane insertion. ESM-2 \u0394lnP -2.139 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:3884cfeab9ac48c39ce283a312bf3b7f"
+        ],
+        "mutant": "I95L",
+        "rank": 27,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.027 (lower is preferred): the conservative hydrophobic change is neutral to mildly unfavorable. ESM-2 \u0394lnP -1.140 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:56cbaf8390584b38b368e6d02a80e0d8"
+        ],
+        "mutant": "I96L",
+        "rank": 28,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.035 (lower is preferred): the conservative hydrophobic change is neutral to mildly unfavorable. ESM-2 \u0394lnP -1.341 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4e85444b59c2481d93fa9f2843f9f47d"
+        ],
+        "mutant": "I104L",
+        "rank": 29,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.045 (lower is preferred): the conservative hydrophobic change is neutral to mildly unfavorable. ESM-2 \u0394lnP -0.250 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:da22e84570214ac09e54bc1ac8b3663e"
+        ],
+        "mutant": "I107F",
+        "rank": 30,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.065 (lower is preferred): the conservative hydrophobic change is neutral to mildly unfavorable. ESM-2 \u0394lnP -1.408 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2fe3b36f5dd54d8ab0d030392a8046de"
+        ],
+        "mutant": "G105S",
+        "rank": 31,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.080 (lower is preferred): the polar substitution weakens insertion. ESM-2 \u0394lnP -1.219 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1acde364bcac408fa0f8e8637979086b"
+        ],
+        "mutant": "L108V",
+        "rank": 32,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.084 (lower is preferred): the conservative hydrophobic change is neutral to mildly unfavorable. ESM-2 \u0394lnP 0.203 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:29d9fd91f7af4b7889f3c014f9072a85"
+        ],
+        "mutant": "G98S",
+        "rank": 33,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.095 (lower is preferred): the polar substitution weakens insertion. ESM-2 \u0394lnP -1.306 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f1170f8f218349bc94f2cbfdda433562"
+        ],
+        "mutant": "L108M",
+        "rank": 34,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.158 (lower is preferred): the conservative hydrophobic change is neutral to mildly unfavorable. ESM-2 \u0394lnP -1.578 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:3ac367288533432a834362c98b1f2a4d"
+        ],
+        "mutant": "F97C",
+        "rank": 35,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.184 (lower is preferred): the conservative hydrophobic change is neutral to mildly unfavorable. ESM-2 \u0394lnP -0.769 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ef6babbea660463c8acbdfac3b312e7b"
+        ],
+        "mutant": "A101W",
+        "rank": 36,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.190 (lower is preferred): the aromatic substitution is not favored at this helix depth. ESM-2 \u0394lnP -5.241 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:377ffe10866244c0a064862c74c80a75"
+        ],
+        "mutant": "I96V",
+        "rank": 37,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.203 (lower is preferred): the conservative hydrophobic change is neutral to mildly unfavorable. ESM-2 \u0394lnP 0.992 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b1117053b74f47688c531c2e1502914d"
+        ],
+        "mutant": "V99M",
+        "rank": 38,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.210 (lower is preferred): the conservative hydrophobic change is neutral to mildly unfavorable. ESM-2 \u0394lnP -3.786 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2362a93237634c0fa09df82b87bf8357"
+        ],
+        "mutant": "I95C",
+        "rank": 39,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.259 (lower is preferred): the conservative hydrophobic change is neutral to mildly unfavorable. ESM-2 \u0394lnP -5.065 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a25bbb7129cd43dd841b6ef5e7c1969c"
+        ],
+        "mutant": "I104V",
+        "rank": 40,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.261 (lower is preferred): the conservative hydrophobic change is neutral to mildly unfavorable. ESM-2 \u0394lnP 0.022 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:460fe33181a540528f9125657d8269f9"
+        ],
+        "mutant": "I95M",
+        "rank": 41,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.275 (lower is preferred): the conservative hydrophobic change is neutral to mildly unfavorable. ESM-2 \u0394lnP -2.467 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:922b4f2676db4d128b70317d1fb33bde"
+        ],
+        "mutant": "I96C",
+        "rank": 42,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.329 (lower is preferred): the conservative hydrophobic change is neutral to mildly unfavorable. ESM-2 \u0394lnP -1.261 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:48942472cda84d42aada99c7a95b846e"
+        ],
+        "mutant": "F97A",
+        "rank": 43,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.388 (lower is preferred): reduced side-chain hydrophobicity mildly weakens insertion. ESM-2 \u0394lnP -0.840 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a77f9ede85a3428bb1a1a33b9c969c8c"
+        ],
+        "mutant": "V103A",
+        "rank": 44,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.420 (lower is preferred): reduced side-chain hydrophobicity mildly weakens insertion. ESM-2 \u0394lnP -1.291 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7f22a56f320b4bb493214e9e27422e41"
+        ],
+        "mutant": "I104M",
+        "rank": 45,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.450 (lower is preferred): the conservative hydrophobic change is neutral to mildly unfavorable. ESM-2 \u0394lnP -1.992 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a1e49a415af84d41888a35894d8fcada"
+        ],
+        "mutant": "L108G",
+        "rank": 46,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.452 (lower is preferred): loss of side-chain hydrophobicity and added helix flexibility weaken insertion. ESM-2 \u0394lnP -0.077 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:799855101bb74de7a0f3dd074103a728"
+        ],
+        "mutant": "F97W",
+        "rank": 47,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.475 (lower is preferred): the aromatic substitution is not favored at this helix depth. ESM-2 \u0394lnP -5.167 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:05ac27573535493e8355f1e4c908e225"
+        ],
+        "mutant": "I96W",
+        "rank": 48,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.480 (lower is preferred): the aromatic substitution is not favored at this helix depth. ESM-2 \u0394lnP -4.844 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:56f422198b4649f59a45dc6cbb96c221"
+        ],
+        "mutant": "L108S",
+        "rank": 49,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.486 (lower is preferred): the polar substitution weakens insertion. ESM-2 \u0394lnP -1.003 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:6d8c59ad68cc4321be164bff018a9193"
+        ],
+        "mutant": "I96A",
+        "rank": 50,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.497 (lower is preferred): reduced side-chain hydrophobicity mildly weakens insertion. ESM-2 \u0394lnP -0.015 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:bb274a06ea4a4a43a6a5dbef7d92b279"
+        ],
+        "mutant": "I107T",
+        "rank": 51,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.560 (lower is preferred): the polar substitution weakens insertion. ESM-2 \u0394lnP -1.575 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:3bf733c039e04149afe35779d1e2002a"
+        ],
+        "mutant": "V99W",
+        "rank": 52,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.610 (lower is preferred): the aromatic substitution is not favored at this helix depth. ESM-2 \u0394lnP -6.661 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:6cdfec5a62d8440ba8d6457d9ea5af0a"
+        ],
+        "mutant": "V103W",
+        "rank": 53,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.610 (lower is preferred): the aromatic substitution is not favored at this helix depth. ESM-2 \u0394lnP -6.740 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:594e4e78859e4032b4842696669c248b"
+        ],
+        "mutant": "M100T",
+        "rank": 54,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.620 (lower is preferred): the polar substitution weakens insertion. ESM-2 \u0394lnP 0.741 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:10992a516c5447c0b0b756f3c2c8b5b1"
+        ],
+        "mutant": "I95G",
+        "rank": 55,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.737 (lower is preferred): loss of side-chain hydrophobicity and added helix flexibility weaken insertion. ESM-2 \u0394lnP -5.295 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:98d5188ba25540968a0591bd3c3812bf"
+        ],
+        "mutant": "I96Y",
+        "rank": 56,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.791 (lower is preferred): the aromatic substitution is not favored at this helix depth. ESM-2 \u0394lnP -4.514 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a9fa349ad11a4812bb12d9a3f6a7a482"
+        ],
+        "mutant": "I95S",
+        "rank": 57,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.792 (lower is preferred): the polar substitution weakens insertion. ESM-2 \u0394lnP -5.164 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b02e4ce7f2e94308bc7999bae794ae15"
+        ],
+        "mutant": "F97Y",
+        "rank": 58,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.820 (lower is preferred): the aromatic substitution is not favored at this helix depth. ESM-2 \u0394lnP -4.439 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8997c5a7bf964fee81486e5efc903342"
+        ],
+        "mutant": "V103T",
+        "rank": 59,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.830 (lower is preferred): the polar substitution weakens insertion. ESM-2 \u0394lnP -1.800 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1fbade2449ec488580d1b1d754f1d509"
+        ],
+        "mutant": "F97G",
+        "rank": 60,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.923 (lower is preferred): loss of side-chain hydrophobicity and added helix flexibility weaken insertion. ESM-2 \u0394lnP -1.529 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:213286c9d9d5452587d18689c8efb1af"
+        ],
+        "mutant": "I96G",
+        "rank": 61,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.938 (lower is preferred): loss of side-chain hydrophobicity and added helix flexibility weaken insertion. ESM-2 \u0394lnP -1.679 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:9a98a1b2bad74c8795f135a13e22ccca"
+        ],
+        "mutant": "V99Y",
+        "rank": 62,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.990 (lower is preferred): the aromatic substitution is not favored at this helix depth. ESM-2 \u0394lnP -6.381 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:67478cb573be4c48b422eecfd1a4419c"
+        ],
+        "mutant": "T106N",
+        "rank": 63,
+        "rationale": "Insertion \u0394\u0394G surrogate 0.994 (lower is preferred): introducing a strongly polar side chain is unfavorable. ESM-2 \u0394lnP -2.799 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f9b77087a27148d087b25cbc39632b2b"
+        ],
+        "mutant": "T106H",
+        "rank": 64,
+        "rationale": "Insertion \u0394\u0394G surrogate 1.001 (lower is preferred): introducing a strongly polar side chain is unfavorable. ESM-2 \u0394lnP -5.235 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:339b0c4b1e3c4e7eaf39b90da54ffb74"
+        ],
+        "mutant": "I104T",
+        "rank": 65,
+        "rationale": "Insertion \u0394\u0394G surrogate 1.008 (lower is preferred): the polar substitution weakens insertion. ESM-2 \u0394lnP -1.451 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8b0e6a2bd01b4587a244a16276448b1d"
+        ],
+        "mutant": "F97S",
+        "rank": 66,
+        "rationale": "Insertion \u0394\u0394G surrogate 1.008 (lower is preferred): the polar substitution weakens insertion. ESM-2 \u0394lnP -2.075 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:21e463ed3cdf48eb87c7cd45e9deac42"
+        ],
+        "mutant": "V99G",
+        "rank": 67,
+        "rationale": "Insertion \u0394\u0394G surrogate 1.050 (lower is preferred): loss of side-chain hydrophobicity and added helix flexibility weaken insertion. ESM-2 \u0394lnP -0.952 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a4506384fb8947d5848cf555eda4eb7f"
+        ],
+        "mutant": "V103G",
+        "rank": 68,
+        "rationale": "Insertion \u0394\u0394G surrogate 1.050 (lower is preferred): loss of side-chain hydrophobicity and added helix flexibility weaken insertion. ESM-2 \u0394lnP -2.268 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:5d0864e5b3604e90ae2338024b001a1c"
+        ],
+        "mutant": "I104Y",
+        "rank": 69,
+        "rationale": "Insertion \u0394\u0394G surrogate 1.117 (lower is preferred): the aromatic substitution is not favored at this helix depth. ESM-2 \u0394lnP -4.010 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e52d950f7c624ff78ce4144d3424b9b3"
+        ],
+        "mutant": "L94P",
+        "rank": 70,
+        "rationale": "Insertion \u0394\u0394G surrogate 1.323 (lower is preferred): the proline helix-break penalty makes insertion less favorable. ESM-2 \u0394lnP -2.934 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:3d8066248115493fa8b5118e4b4dd376"
+        ],
+        "mutant": "L108P",
+        "rank": 71,
+        "rationale": "Insertion \u0394\u0394G surrogate 1.323 (lower is preferred): the proline helix-break penalty makes insertion less favorable. ESM-2 \u0394lnP -4.194 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a7aeead5160a422ca0d0377738c327a0"
+        ],
+        "mutant": "I107H",
+        "rank": 72,
+        "rationale": "Insertion \u0394\u0394G surrogate 1.330 (lower is preferred): introducing a strongly polar side chain is unfavorable. ESM-2 \u0394lnP -6.719 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:0b4dc3e30e7745259571e0a71afdc3fa"
+        ],
+        "mutant": "T106E",
+        "rank": 73,
+        "rationale": "Insertion \u0394\u0394G surrogate 1.404 (lower is preferred): introducing charge into the membrane-spanning segment is strongly unfavorable. ESM-2 \u0394lnP -4.441 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:9aa39876f4b24a9ab23825f79849769e"
+        ],
+        "mutant": "L94D",
+        "rank": 74,
+        "rationale": "Insertion \u0394\u0394G surrogate 1.414 (lower is preferred): introducing charge into the membrane-spanning segment is strongly unfavorable. ESM-2 \u0394lnP -2.571 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ae4e124c7e85458384bbd693fdc88307"
+        ],
+        "mutant": "T106K",
+        "rank": 75,
+        "rationale": "Insertion \u0394\u0394G surrogate 1.423 (lower is preferred): introducing charge into the membrane-spanning segment is strongly unfavorable. ESM-2 \u0394lnP -5.285 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:dc329b0bd31947ec862223ff5de5e975"
+        ],
+        "mutant": "I95N",
+        "rank": 76,
+        "rationale": "Insertion \u0394\u0394G surrogate 1.458 (lower is preferred): introducing a strongly polar side chain is unfavorable. ESM-2 \u0394lnP -7.646 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:28184bc2eec04571a3d4332936bc9ef0"
+        ],
+        "mutant": "G105E",
+        "rank": 77,
+        "rationale": "Insertion \u0394\u0394G surrogate 1.552 (lower is preferred): introducing charge into the membrane-spanning segment is strongly unfavorable. ESM-2 \u0394lnP -6.117 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7efbed03d8f24f75b8d29beab634a951"
+        ],
+        "mutant": "G105K",
+        "rank": 78,
+        "rationale": "Insertion \u0394\u0394G surrogate 1.576 (lower is preferred): introducing charge into the membrane-spanning segment is strongly unfavorable. ESM-2 \u0394lnP -6.603 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:0faaf7c68ea047d49f119110d7eadd4d"
+        ],
+        "mutant": "I107R",
+        "rank": 79,
+        "rationale": "Insertion \u0394\u0394G surrogate 1.590 (lower is preferred): introducing charge into the membrane-spanning segment is strongly unfavorable. ESM-2 \u0394lnP -6.823 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:d09192d06ae74acd908dc806e0ea0262"
+        ],
+        "mutant": "I95Q",
+        "rank": 80,
+        "rationale": "Insertion \u0394\u0394G surrogate 1.628 (lower is preferred): introducing a strongly polar side chain is unfavorable. ESM-2 \u0394lnP -7.806 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:af1bad7988a84da6a0ddb6b4f893de66"
+        ],
+        "mutant": "I107E",
+        "rank": 81,
+        "rationale": "Insertion \u0394\u0394G surrogate 1.640 (lower is preferred): introducing charge into the membrane-spanning segment is strongly unfavorable. ESM-2 \u0394lnP -6.687 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:3ef7d16d503f4ff9b4d9ad330547e224"
+        ],
+        "mutant": "G98R",
+        "rank": 82,
+        "rationale": "Insertion \u0394\u0394G surrogate 1.748 (lower is preferred): introducing charge into the membrane-spanning segment is strongly unfavorable. ESM-2 \u0394lnP -7.223 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:d36deabc1b724e02bf022af80f1f29d6"
+        ],
+        "mutant": "T106P",
+        "rank": 83,
+        "rationale": "Insertion \u0394\u0394G surrogate 1.761 (lower is preferred): the proline helix-break penalty makes insertion less favorable. ESM-2 \u0394lnP -2.941 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:9cd951f668454488a3fa1c33f6b0c84e"
+        ],
+        "mutant": "I96N",
+        "rank": 84,
+        "rationale": "Insertion \u0394\u0394G surrogate 1.855 (lower is preferred): introducing a strongly polar side chain is unfavorable. ESM-2 \u0394lnP -5.549 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:d821ae2c313d44c6a385cadcc86b2282"
+        ],
+        "mutant": "G98K",
+        "rank": 85,
+        "rationale": "Insertion \u0394\u0394G surrogate 1.872 (lower is preferred): introducing charge into the membrane-spanning segment is strongly unfavorable. ESM-2 \u0394lnP -7.402 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ab90881e81c746d99d0b9f5bef9bd31b"
+        ],
+        "mutant": "I107P",
+        "rank": 86,
+        "rationale": "Insertion \u0394\u0394G surrogate 1.915 (lower is preferred): the proline helix-break penalty makes insertion less favorable. ESM-2 \u0394lnP -6.024 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f8e905de98d04e41abcb07c1adc1d0c3"
+        ],
+        "mutant": "T106D",
+        "rank": 87,
+        "rationale": "Insertion \u0394\u0394G surrogate 1.931 (lower is preferred): introducing charge into the membrane-spanning segment is strongly unfavorable. ESM-2 \u0394lnP -5.221 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:dc3b0a710f40453ab8782e01c08ddeee"
+        ],
+        "mutant": "G102K",
+        "rank": 88,
+        "rationale": "Insertion \u0394\u0394G surrogate 1.970 (lower is preferred): introducing charge into the membrane-spanning segment is strongly unfavorable. ESM-2 \u0394lnP -7.162 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b5a43d199af04e5897c1e92d377c65b8"
+        ],
+        "mutant": "I107D",
+        "rank": 89,
+        "rationale": "Insertion \u0394\u0394G surrogate 2.045 (lower is preferred): introducing charge into the membrane-spanning segment is strongly unfavorable. ESM-2 \u0394lnP -7.128 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2eb51548aa5b4d5c969a2215a41f4e45"
+        ],
+        "mutant": "I95P",
+        "rank": 90,
+        "rationale": "Insertion \u0394\u0394G surrogate 2.107 (lower is preferred): the proline helix-break penalty makes insertion less favorable. ESM-2 \u0394lnP -8.217 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:5de9e5c7bf774d61bcd5a27145f3a2e0"
+        ],
+        "mutant": "I95D",
+        "rank": 91,
+        "rationale": "Insertion \u0394\u0394G surrogate 2.250 (lower is preferred): introducing charge into the membrane-spanning segment is strongly unfavorable. ESM-2 \u0394lnP -8.129 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8d98c24bd1a2467dbd63db931b3f6e8d"
+        ],
+        "mutant": "F97Q",
+        "rank": 92,
+        "rationale": "Insertion \u0394\u0394G surrogate 2.300 (lower is preferred): introducing a strongly polar side chain is unfavorable. ESM-2 \u0394lnP -7.170 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:d222e571361a4cb6b5260ac5e52823c7"
+        ],
+        "mutant": "V99N",
+        "rank": 93,
+        "rationale": "Insertion \u0394\u0394G surrogate 2.360 (lower is preferred): introducing a strongly polar side chain is unfavorable. ESM-2 \u0394lnP -5.525 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:3549693def2f4ef6bac2376755083789"
+        ],
+        "mutant": "G98P",
+        "rank": 94,
+        "rationale": "Insertion \u0394\u0394G surrogate 2.366 (lower is preferred): the proline helix-break penalty makes insertion less favorable. ESM-2 \u0394lnP -4.732 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:c9fa730ec5c34c56a93a529fbe4f9fbb"
+        ],
+        "mutant": "V99H",
+        "rank": 95,
+        "rationale": "Insertion \u0394\u0394G surrogate 2.370 (lower is preferred): introducing a strongly polar side chain is unfavorable. ESM-2 \u0394lnP -8.925 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ae4ea58cfbf04b1f82b2c9d2ee88e87c"
+        ],
+        "mutant": "A101R",
+        "rank": 96,
+        "rationale": "Insertion \u0394\u0394G surrogate 2.470 (lower is preferred): introducing charge into the membrane-spanning segment is strongly unfavorable. ESM-2 \u0394lnP -7.633 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1a82cf4d228f43dba79e7e4738924e4b"
+        ],
+        "mutant": "F97K",
+        "rank": 97,
+        "rationale": "Insertion \u0394\u0394G surrogate 2.598 (lower is preferred): introducing charge into the membrane-spanning segment is strongly unfavorable. ESM-2 \u0394lnP -7.466 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:dc4b0a5d838e48ab8826ac395b2aa3ba"
+        ],
+        "mutant": "A101K",
+        "rank": 98,
+        "rationale": "Insertion \u0394\u0394G surrogate 2.600 (lower is preferred): introducing charge into the membrane-spanning segment is strongly unfavorable. ESM-2 \u0394lnP -7.198 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4b88f146e8ca424c9d4e86c858eb880a"
+        ],
+        "mutant": "I96D",
+        "rank": 99,
+        "rationale": "Insertion \u0394\u0394G surrogate 2.863 (lower is preferred): introducing charge into the membrane-spanning segment is strongly unfavorable. ESM-2 \u0394lnP -6.944 was used only as a plausibility tie-breaker, not as an assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:917f668370994ba4835dca0793809f50"
+        ],
+        "mutant": "V99R",
+        "rank": 100,
+        "rationale": "Insertion \u0394\u0394G surrogate 2.890 (lower is preferred): introducing charge into the membrane-spanning segment is strongly unfavorable. ESM-2 \u0394lnP -7.281 was used only as a plausibility tie-breaker, not as an assay outcome."
+      }
+    ],
+    "rejected": [
+      "G102A",
+      "T106F",
+      "G98A",
+      "G98W",
+      "G102W",
+      "A101F",
+      "T106C",
+      "T106A",
+      "V99L",
+      "A101C",
+      "A101M",
+      "G105T",
+      "M100C",
+      "L94W",
+      "T106Y",
+      "V103F",
+      "I95L",
+      "I96L",
+      "I104L",
+      "I107F",
+      "G105S",
+      "L108V",
+      "G98S",
+      "L108M",
+      "F97C",
+      "A101W",
+      "I96V",
+      "V99M",
+      "I95C",
+      "I104V",
+      "I95M",
+      "I96C",
+      "F97A",
+      "V103A",
+      "I104M",
+      "L108G",
+      "F97W",
+      "I96W",
+      "L108S",
+      "I96A",
+      "I107T",
+      "V99W",
+      "V103W",
+      "M100T",
+      "I95G",
+      "I96Y",
+      "I95S",
+      "F97Y",
+      "V103T",
+      "F97G",
+      "I96G",
+      "V99Y",
+      "T106N",
+      "T106H",
+      "I104T",
+      "F97S",
+      "V99G",
+      "V103G",
+      "I104Y",
+      "L94P",
+      "L108P",
+      "I107H",
+      "T106E",
+      "L94D",
+      "T106K",
+      "I95N",
+      "G105E",
+      "G105K",
+      "I107R",
+      "I95Q",
+      "I107E",
+      "G98R",
+      "T106P",
+      "I96N",
+      "G98K",
+      "I107P",
+      "T106D",
+      "G102K",
+      "I107D",
+      "I95P",
+      "I95D",
+      "F97Q",
+      "V99N",
+      "G98P",
+      "V99H",
+      "A101R",
+      "F97K",
+      "A101K",
+      "I96D",
+      "V99R"
+    ],
+    "selected": [
+      "G102L",
+      "G98I",
+      "G105I",
+      "G98F",
+      "G105V",
+      "G102M",
+      "G98M",
+      "A101I",
+      "T106L",
+      "G105M"
+    ]
+  },
+  "contract_sha256": "769e079c41c9e706e960324bd5c10eee5d48e24c19c2f8fa76c7d04b5fdc4ed1",
+  "endpoint_sha256": "95f0049a4e3f12c5287d2c2db5c60a084830a17ef189448ac7ed1cd4fe2fc4cc",
+  "item_id": "cmp_004",
+  "validation": {
+    "accepted": true,
+    "answer_sha256": "70f3f16dd78f73ba8b76d28a7d07ffd283c7ec213f5fd0cb32524bfe68851c5b",
+    "candidate_count": 100,
+    "contract_sha256": "769e079c41c9e706e960324bd5c10eee5d48e24c19c2f8fa76c7d04b5fdc4ed1",
+    "endpoint_sha256": "95f0049a4e3f12c5287d2c2db5c60a084830a17ef189448ac7ed1cd4fe2fc4cc",
+    "policy_id": "b4_v3_adaptive_item_bound_endpoint_v1",
+    "ranking_complete": true,
+    "unique_cited_receipts": 100
+  }
+}

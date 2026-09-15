@@ -1,0 +1,925 @@
+{
+  "answer": {
+    "method_summary": "Prospective adaptive rule: score every frozen candidate independently with the available item-bound evidence tool. Because all successful evidence was generic ESM-2 sequence plausibility plus ESM-IF1 backbone-conditioned sequence plausibility, and no endpoint-matched measured Growth/SelectionTwo assay outcome was available, use the FM-only fallback: rank higher ESM-2 single-position delta natural-log probability and higher ESM-IF1 mean log likelihood separately, then order by their equal-weight mean ordinal rank (Borda aggregation). Break ties by higher ESM-2 delta, then higher ESM-IF1 mean log likelihood, then lexicographic mutant name. The first ten are selected for the declared higher-is-better Activity/Growth endpoint. The neutral-item designation and label-free context were not used as candidate performance labels. Generic sequence/backbone plausibility is not a causal assay model, may be mechanistically misaligned with growth activity, and should be validated by the declared assay.",
+    "policy_id": "b4_v3_adaptive_item_bound_endpoint_v1",
+    "ranking": [
+      {
+        "evidence_call_ids": [
+          "call_id:edfa30843ae647ddbfdffa19dd63731d"
+        ],
+        "mutant": "D263E",
+        "rank": 1,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP 0.7181 (ordinal 4/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.970289 (ordinal 3/100); equal-weight mean ordinal 3.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:3ea249574bbc4c098e0d0139df06f718"
+        ],
+        "mutant": "A358S",
+        "rank": 2,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP 1.5487 (ordinal 1/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.972991 (ordinal 7/100); equal-weight mean ordinal 4.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a6baa9d588b1416e81bd25e2836f6749"
+        ],
+        "mutant": "V272D",
+        "rank": 3,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP 0.6058 (ordinal 5/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.975443 (ordinal 11/100); equal-weight mean ordinal 8.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1f140a012bde41419af7184fc94228fd"
+        ],
+        "mutant": "E337D",
+        "rank": 4,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -1.0993 (ordinal 14/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.969688 (ordinal 2/100); equal-weight mean ordinal 8.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ab18f774b15a459c811c02f1a29104e8"
+        ],
+        "mutant": "Q389E",
+        "rank": 5,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -0.6233 (ordinal 11/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.972212 (ordinal 6/100); equal-weight mean ordinal 8.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:85dc4bd7eb504380b65e809ec9e5fab7"
+        ],
+        "mutant": "V385T",
+        "rank": 6,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP 0.9289 (ordinal 3/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.979947 (ordinal 23/100); equal-weight mean ordinal 13.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:66fcc1d159cd4bb9981b00ed0890f745"
+        ],
+        "mutant": "R94T",
+        "rank": 7,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP 0.3736 (ordinal 6/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.979288 (ordinal 22/100); equal-weight mean ordinal 14.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a4778e6fe4b448af93de6c6ee8e2a24a"
+        ],
+        "mutant": "D206A",
+        "rank": 8,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -2.0446 (ordinal 18/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.975588 (ordinal 13/100); equal-weight mean ordinal 15.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ca932cd8ca3b4b7a9b4e07da674deb64"
+        ],
+        "mutant": "Q261M",
+        "rank": 9,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -3.1414 (ordinal 27/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.975318 (ordinal 10/100); equal-weight mean ordinal 18.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:debc6c2edf1d436989f70206e65bfc73"
+        ],
+        "mutant": "Q248M",
+        "rank": 10,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -3.3772 (ordinal 28/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.975157 (ordinal 9/100); equal-weight mean ordinal 18.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:71a035a7882644868ef75e0b46053e8d"
+        ],
+        "mutant": "Y343H",
+        "rank": 11,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -0.2797 (ordinal 10/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.980736 (ordinal 28/100); equal-weight mean ordinal 19.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:12bc6e9337724e7b9044a4b2bcbadc9e"
+        ],
+        "mutant": "R100S",
+        "rank": 12,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -2.7733 (ordinal 25/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.975880 (ordinal 14/100); equal-weight mean ordinal 19.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1852781bb6624a3ba22e45f25b7958bb"
+        ],
+        "mutant": "T300S",
+        "rank": 13,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -4.3374 (ordinal 36/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.971052 (ordinal 4/100); equal-weight mean ordinal 20.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:38c58acb8b1c46139b7139a52e37acb6"
+        ],
+        "mutant": "R301L",
+        "rank": 14,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -0.8491 (ordinal 13/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.982247 (ordinal 30/100); equal-weight mean ordinal 21.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:bd13ceec1e9e4eb6917683427221f2eb"
+        ],
+        "mutant": "W368V",
+        "rank": 15,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -2.3962 (ordinal 20/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.979974 (ordinal 24/100); equal-weight mean ordinal 22.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:6f63c08b8b5a4535a81af7244c43077a"
+        ],
+        "mutant": "Y391R",
+        "rank": 16,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -5.1202 (ordinal 43/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.965642 (ordinal 1/100); equal-weight mean ordinal 22.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:3dc43c9eaf074f928fa52729bd57bbc9"
+        ],
+        "mutant": "P55S",
+        "rank": 17,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -3.5874 (ordinal 30/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.977215 (ordinal 16/100); equal-weight mean ordinal 23.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:47de17df35d2421faf62cc015ce33d19"
+        ],
+        "mutant": "M134A",
+        "rank": 18,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -5.1925 (ordinal 44/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.971854 (ordinal 5/100); equal-weight mean ordinal 24.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:0889d519339b435c896d95155286ce37"
+        ],
+        "mutant": "D293H",
+        "rank": 19,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -1.6607 (ordinal 16/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.983991 (ordinal 34/100); equal-weight mean ordinal 25.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:18f0a0c204a94d78b882328c8e183867"
+        ],
+        "mutant": "Y36L",
+        "rank": 20,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -3.8496 (ordinal 32/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.979195 (ordinal 21/100); equal-weight mean ordinal 26.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:eaa325da84be47339862d509078f4975"
+        ],
+        "mutant": "E319L",
+        "rank": 21,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -3.5433 (ordinal 29/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.980615 (ordinal 26/100); equal-weight mean ordinal 27.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:190838c95e874790918c763c39541566"
+        ],
+        "mutant": "T346A",
+        "rank": 22,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -0.0892 (ordinal 7/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.987336 (ordinal 49/100); equal-weight mean ordinal 28.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:5b53e2f48f9042b8aaee5db74b076f07"
+        ],
+        "mutant": "T73G",
+        "rank": 23,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -2.1341 (ordinal 19/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.985658 (ordinal 41/100); equal-weight mean ordinal 30.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:048a0a82395d4917b17f203cd31b4224"
+        ],
+        "mutant": "Q261F",
+        "rank": 24,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -4.0570 (ordinal 34/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.980629 (ordinal 27/100); equal-weight mean ordinal 30.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8acea88fa3ad4580b95ef93aac84c95b"
+        ],
+        "mutant": "F254L",
+        "rank": 25,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -0.1957 (ordinal 9/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.988885 (ordinal 56/100); equal-weight mean ordinal 32.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a21bf990280945ec887c6f0ad81aa187"
+        ],
+        "mutant": "V381L",
+        "rank": 26,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -3.7430 (ordinal 31/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.984077 (ordinal 35/100); equal-weight mean ordinal 33.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:c7a0233fc6964f02af95511d85df405e"
+        ],
+        "mutant": "K236N",
+        "rank": 27,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -4.8002 (ordinal 41/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.980003 (ordinal 25/100); equal-weight mean ordinal 33.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:dfa6ee250ce74d73ade8a6b0cf0e7cde"
+        ],
+        "mutant": "V385N",
+        "rank": 28,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -1.8373 (ordinal 17/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.988150 (ordinal 52/100); equal-weight mean ordinal 34.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e08214c198844b1a8db457e9c0fbe3ee"
+        ],
+        "mutant": "S378A",
+        "rank": 29,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -1.5963 (ordinal 15/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.988792 (ordinal 55/100); equal-weight mean ordinal 35.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:5bb0c3b5bdb342c18ab38f67823cbe49"
+        ],
+        "mutant": "P198A",
+        "rank": 30,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -2.6732 (ordinal 22/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.987554 (ordinal 50/100); equal-weight mean ordinal 36.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:bcb0852cbdc5411886b83cd6f89b4d0d"
+        ],
+        "mutant": "A278G",
+        "rank": 31,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -0.1353 (ordinal 8/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.992426 (ordinal 65/100); equal-weight mean ordinal 36.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:36c14395e1864176bddf77bf1bc12c0f"
+        ],
+        "mutant": "P382E",
+        "rank": 32,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -5.8301 (ordinal 56/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.978678 (ordinal 18/100); equal-weight mean ordinal 37.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:11ad9bdd6ab04e4da8ac523afddc223b"
+        ],
+        "mutant": "I139Q",
+        "rank": 33,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -5.3123 (ordinal 46/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.981148 (ordinal 29/100); equal-weight mean ordinal 37.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e283726f023a4faea1ab612b78019cf8"
+        ],
+        "mutant": "N20T",
+        "rank": 34,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -7.7879 (ordinal 67/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.974962 (ordinal 8/100); equal-weight mean ordinal 37.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:0aec6da4d01644008c5db36f5388035e"
+        ],
+        "mutant": "E87M",
+        "rank": 35,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -5.3056 (ordinal 45/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.982883 (ordinal 32/100); equal-weight mean ordinal 38.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:55023c810dd64659a68eea5cfc142b3e"
+        ],
+        "mutant": "V16L",
+        "rank": 36,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP 1.0908 (ordinal 2/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.998385 (ordinal 76/100); equal-weight mean ordinal 39.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:0fc434a99f034944864969797a6adcbd"
+        ],
+        "mutant": "A141G",
+        "rank": 37,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -3.9869 (ordinal 33/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.986531 (ordinal 47/100); equal-weight mean ordinal 40.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:6f3068a6f7de484897130167e00d35fd"
+        ],
+        "mutant": "Q369V",
+        "rank": 38,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -4.7196 (ordinal 39/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.985746 (ordinal 43/100); equal-weight mean ordinal 41.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4a16cc5030944780a38b63e67fb7801e"
+        ],
+        "mutant": "E124I",
+        "rank": 39,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -4.5587 (ordinal 38/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.986424 (ordinal 46/100); equal-weight mean ordinal 42.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e28f0c33f9bf4aa1ae5a8c70cd4f712b"
+        ],
+        "mutant": "S342F",
+        "rank": 40,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -0.8009 (ordinal 12/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.998435 (ordinal 77/100); equal-weight mean ordinal 44.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ee207a61ad3743848d0b729e52dc1bc5"
+        ],
+        "mutant": "F170Q",
+        "rank": 41,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -8.4624 (ordinal 71/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.978749 (ordinal 19/100); equal-weight mean ordinal 45.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:da1f6307e41d43e292e6bddab77030c4"
+        ],
+        "mutant": "M240R",
+        "rank": 42,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -9.2808 (ordinal 80/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.975570 (ordinal 12/100); equal-weight mean ordinal 46.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:5c26bc5e5f634315b921c5242aa3c02c"
+        ],
+        "mutant": "V102M",
+        "rank": 43,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -2.4587 (ordinal 21/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.996326 (ordinal 72/100); equal-weight mean ordinal 46.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:cc93b01fb6864de5bc0d5ee8771b3321"
+        ],
+        "mutant": "R283W",
+        "rank": 44,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -5.6919 (ordinal 53/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.985600 (ordinal 40/100); equal-weight mean ordinal 46.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7e855fc19ae245b28b3b11304ede979f"
+        ],
+        "mutant": "E124P",
+        "rank": 45,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -2.7055 (ordinal 23/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.995545 (ordinal 71/100); equal-weight mean ordinal 47.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b406034d900443439b64d8fe569b6374"
+        ],
+        "mutant": "G370A",
+        "rank": 46,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -2.7545 (ordinal 24/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.995326 (ordinal 70/100); equal-weight mean ordinal 47.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:5bbe82e7cc8d4839bf5b7fe9db1bf9e6"
+        ],
+        "mutant": "Q369R",
+        "rank": 47,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -9.2045 (ordinal 79/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.976864 (ordinal 15/100); equal-weight mean ordinal 47.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:aa8aac3daeba4d989cd3ffdcce1987b1"
+        ],
+        "mutant": "Y234L",
+        "rank": 48,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -6.5443 (ordinal 63/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.983349 (ordinal 33/100); equal-weight mean ordinal 48.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4fc514d9ba5e4153b36cb7bd786a5d2b"
+        ],
+        "mutant": "D352S",
+        "rank": 49,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -4.2435 (ordinal 35/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.990153 (ordinal 62/100); equal-weight mean ordinal 48.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2b308ebe82d24b3aa56dd1ac94434c0c"
+        ],
+        "mutant": "R301T",
+        "rank": 50,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -5.4962 (ordinal 49/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.987246 (ordinal 48/100); equal-weight mean ordinal 48.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1a496900c48f4d03a8d51c98b3c612d0"
+        ],
+        "mutant": "E136S",
+        "rank": 51,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -7.4693 (ordinal 66/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.982578 (ordinal 31/100); equal-weight mean ordinal 48.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:88f051332e3646acb7b5bf82d571e78b"
+        ],
+        "mutant": "A363G",
+        "rank": 52,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -5.7439 (ordinal 55/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.985846 (ordinal 45/100); equal-weight mean ordinal 50.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:3c84224407444a8ea7b848bcdc1ff1aa"
+        ],
+        "mutant": "K129V",
+        "rank": 53,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -5.4331 (ordinal 48/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.988264 (ordinal 53/100); equal-weight mean ordinal 50.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:be79d0e6d15040a68b9d3c34f5f16ab6"
+        ],
+        "mutant": "N229C",
+        "rank": 54,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -6.4478 (ordinal 62/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.985224 (ordinal 39/100); equal-weight mean ordinal 50.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:c4160df91d4449489121b54dfc4f7bc2"
+        ],
+        "mutant": "F254Q",
+        "rank": 55,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -4.7616 (ordinal 40/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.992054 (ordinal 64/100); equal-weight mean ordinal 52.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2624262809714b6fbe22e280293db8f2"
+        ],
+        "mutant": "S21G",
+        "rank": 56,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -7.8930 (ordinal 68/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.984264 (ordinal 37/100); equal-weight mean ordinal 52.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:09cb1d95052c442a9b8a6dc46980f3e1"
+        ],
+        "mutant": "E322L",
+        "rank": 57,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -10.3922 (ordinal 85/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.979173 (ordinal 20/100); equal-weight mean ordinal 52.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2163d6716bc446ffbce034e19c009b62"
+        ],
+        "mutant": "E372Y",
+        "rank": 58,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -11.5129 (ordinal 92/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.978526 (ordinal 17/100); equal-weight mean ordinal 54.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:9a778643354344408e5aadb3261d9a88"
+        ],
+        "mutant": "E87W",
+        "rank": 59,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -6.0568 (ordinal 59/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.988045 (ordinal 51/100); equal-weight mean ordinal 55.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:97f4a0d8adef458f8906a6c848fe1974"
+        ],
+        "mutant": "D352T",
+        "rank": 60,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -5.5467 (ordinal 51/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.989878 (ordinal 61/100); equal-weight mean ordinal 56.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f933cbe5928f4ea6a4904f9c05e4834b"
+        ],
+        "mutant": "I295C",
+        "rank": 61,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -3.0632 (ordinal 26/100) and ESM-IF1 mean backbone-conditioned log likelihood -1.008635 (ordinal 89/100); equal-weight mean ordinal 57.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:705d21736b0f434d909e23492d102c50"
+        ],
+        "mutant": "G241C",
+        "rank": 62,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -5.5304 (ordinal 50/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.992817 (ordinal 66/100); equal-weight mean ordinal 58.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:5f6780ad070c4baba2f6aa2f8a83ec25"
+        ],
+        "mutant": "H113F",
+        "rank": 63,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -8.8783 (ordinal 74/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.985677 (ordinal 42/100); equal-weight mean ordinal 58.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:0f8f9f74713a4d6ea305c3c2f98b3ca6"
+        ],
+        "mutant": "L85S",
+        "rank": 64,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -9.1510 (ordinal 78/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.984468 (ordinal 38/100); equal-weight mean ordinal 58.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:dbc18e5282744ebdbc62229f6c69aa43"
+        ],
+        "mutant": "S397I",
+        "rank": 65,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -4.5033 (ordinal 37/100) and ESM-IF1 mean backbone-conditioned log likelihood -1.000820 (ordinal 83/100); equal-weight mean ordinal 60.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:38ae439abe1a423eb2b7a9540bbb270d"
+        ],
+        "mutant": "R161K",
+        "rank": 66,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -6.9531 (ordinal 65/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.989170 (ordinal 58/100); equal-weight mean ordinal 61.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:69dc88030b9340839272a81d144bdb09"
+        ],
+        "mutant": "N20F",
+        "rank": 67,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -11.4538 (ordinal 91/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.984146 (ordinal 36/100); equal-weight mean ordinal 63.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:3291dd19fc4f49aeac837c258c77e084"
+        ],
+        "mutant": "A354H",
+        "rank": 68,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -5.4283 (ordinal 47/100) and ESM-IF1 mean backbone-conditioned log likelihood -1.001076 (ordinal 84/100); equal-weight mean ordinal 65.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:920db7f703bc40dcbb2846d8570bfe2e"
+        ],
+        "mutant": "G376L",
+        "rank": 69,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -8.9274 (ordinal 75/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.989512 (ordinal 59/100); equal-weight mean ordinal 67.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e6730d2e0c3d4ca6a3967458d3fc3b6b"
+        ],
+        "mutant": "C326Y",
+        "rank": 70,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -8.0600 (ordinal 69/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.992991 (ordinal 67/100); equal-weight mean ordinal 68.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a8834308be284f16a7e936f7926614d2"
+        ],
+        "mutant": "T346Y",
+        "rank": 71,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -4.8597 (ordinal 42/100) and ESM-IF1 mean backbone-conditioned log likelihood -1.013134 (ordinal 95/100); equal-weight mean ordinal 68.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8c5121dcb3a046cfbe38e3dbad346cac"
+        ],
+        "mutant": "V193Q",
+        "rank": 72,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -9.1239 (ordinal 77/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.989876 (ordinal 60/100); equal-weight mean ordinal 68.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e715545dd66748a8841213bb6537d199"
+        ],
+        "mutant": "D212E",
+        "rank": 73,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -10.0699 (ordinal 83/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.988537 (ordinal 54/100); equal-weight mean ordinal 68.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:68c1c096a02a4ab59aa79b9f3f70a870"
+        ],
+        "mutant": "F152C",
+        "rank": 74,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -5.5712 (ordinal 52/100) and ESM-IF1 mean backbone-conditioned log likelihood -1.003652 (ordinal 86/100); equal-weight mean ordinal 69.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2b70543b08d3409e86857629b586ed23"
+        ],
+        "mutant": "T299E",
+        "rank": 75,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -6.8919 (ordinal 64/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.996533 (ordinal 74/100); equal-weight mean ordinal 69.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8338eb08f3b74d548b5b693bf4018515"
+        ],
+        "mutant": "L290D",
+        "rank": 76,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -8.4404 (ordinal 70/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.993977 (ordinal 69/100); equal-weight mean ordinal 69.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:577f5de54a9144abbf8d7c2c6a6c633d"
+        ],
+        "mutant": "E136T",
+        "rank": 77,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -9.5739 (ordinal 82/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.989004 (ordinal 57/100); equal-weight mean ordinal 69.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:09da415e8bbf496ea65186c191382313"
+        ],
+        "mutant": "E271R",
+        "rank": 78,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -12.7019 (ordinal 97/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.985794 (ordinal 44/100); equal-weight mean ordinal 70.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8f379981c759408f86aa7b51b617d7fa"
+        ],
+        "mutant": "F227A",
+        "rank": 79,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -5.7141 (ordinal 54/100) and ESM-IF1 mean backbone-conditioned log likelihood -1.010595 (ordinal 93/100); equal-weight mean ordinal 73.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:07103042fb484d50a16863ce0acbdb66"
+        ],
+        "mutant": "L48P",
+        "rank": 80,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -6.3359 (ordinal 60/100) and ESM-IF1 mean backbone-conditioned log likelihood -1.004577 (ordinal 87/100); equal-weight mean ordinal 73.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:55b727dbdb414a218d54105a8b12f769"
+        ],
+        "mutant": "P123G",
+        "rank": 81,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -6.0403 (ordinal 58/100) and ESM-IF1 mean backbone-conditioned log likelihood -1.009060 (ordinal 90/100); equal-weight mean ordinal 74.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ea5113dda01848c99e367f9a4c497766"
+        ],
+        "mutant": "G160F",
+        "rank": 82,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -8.6448 (ordinal 72/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.998654 (ordinal 78/100); equal-weight mean ordinal 75.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4c0ab6c81f4a45b48f89f524ee81340b"
+        ],
+        "mutant": "I68D",
+        "rank": 83,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -9.1173 (ordinal 76/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.996722 (ordinal 75/100); equal-weight mean ordinal 75.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4e9578587931420f80c2a96d1e0cd91a"
+        ],
+        "mutant": "E372K",
+        "rank": 84,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -10.6586 (ordinal 88/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.990244 (ordinal 63/100); equal-weight mean ordinal 75.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:336fec9b125b4af0912294df3abd4f30"
+        ],
+        "mutant": "A141R",
+        "rank": 85,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -8.7388 (ordinal 73/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.999399 (ordinal 79/100); equal-weight mean ordinal 76.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:243255aa602c4740ab5a8470d6b80377"
+        ],
+        "mutant": "P123S",
+        "rank": 86,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -6.3761 (ordinal 61/100) and ESM-IF1 mean backbone-conditioned log likelihood -1.009549 (ordinal 92/100); equal-weight mean ordinal 76.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:28462e95b953489798502b702f3cd953"
+        ],
+        "mutant": "I295W",
+        "rank": 87,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -5.9792 (ordinal 57/100) and ESM-IF1 mean backbone-conditioned log likelihood -1.019318 (ordinal 99/100); equal-weight mean ordinal 78.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2ab67be1dfcb40bfa9259a2710830703"
+        ],
+        "mutant": "R270Y",
+        "rank": 88,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -11.2863 (ordinal 90/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.993168 (ordinal 68/100); equal-weight mean ordinal 79.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b3a8bcad0dc840ff840501bc6e707154"
+        ],
+        "mutant": "L250D",
+        "rank": 89,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -10.7034 (ordinal 89/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.996516 (ordinal 73/100); equal-weight mean ordinal 81.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:fcfd2646fed84bfab9acdb0f2ad59655"
+        ],
+        "mutant": "D221G",
+        "rank": 90,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -10.1388 (ordinal 84/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.999692 (ordinal 81/100); equal-weight mean ordinal 82.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:cfcbf13ce7e34f25b60de3b9610792df"
+        ],
+        "mutant": "A297Q",
+        "rank": 91,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -10.5027 (ordinal 86/100) and ESM-IF1 mean backbone-conditioned log likelihood -1.002897 (ordinal 85/100); equal-weight mean ordinal 85.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:90ee914c49344209960d11c33425020d"
+        ],
+        "mutant": "F366R",
+        "rank": 92,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -12.2846 (ordinal 95/100) and ESM-IF1 mean backbone-conditioned log likelihood -0.999656 (ordinal 80/100); equal-weight mean ordinal 87.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7b9b37a3930c457c9cf1c958f56ed34f"
+        ],
+        "mutant": "G52P",
+        "rank": 93,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -9.4435 (ordinal 81/100) and ESM-IF1 mean backbone-conditioned log likelihood -1.016121 (ordinal 97/100); equal-weight mean ordinal 89.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:14df48b92641465b97e4e19e6e43aaf7"
+        ],
+        "mutant": "G22N",
+        "rank": 94,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -13.3127 (ordinal 98/100) and ESM-IF1 mean backbone-conditioned log likelihood -1.000377 (ordinal 82/100); equal-weight mean ordinal 90.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:003974b5600a4c2b96e5b2ae3e917f43"
+        ],
+        "mutant": "F89K",
+        "rank": 95,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -12.2786 (ordinal 94/100) and ESM-IF1 mean backbone-conditioned log likelihood -1.008347 (ordinal 88/100); equal-weight mean ordinal 91.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:9638135ca4674eb0a6506828088b1a7a"
+        ],
+        "mutant": "G216T",
+        "rank": 96,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -11.7372 (ordinal 93/100) and ESM-IF1 mean backbone-conditioned log likelihood -1.009313 (ordinal 91/100); equal-weight mean ordinal 92.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:0b55f1d3f3974473979a63c8eebddea1"
+        ],
+        "mutant": "I146P",
+        "rank": 97,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -10.6001 (ordinal 87/100) and ESM-IF1 mean backbone-conditioned log likelihood -1.028967 (ordinal 100/100); equal-weight mean ordinal 93.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:db1177813e8841409298506e78798f15"
+        ],
+        "mutant": "A164I",
+        "rank": 98,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -12.6970 (ordinal 96/100) and ESM-IF1 mean backbone-conditioned log likelihood -1.016652 (ordinal 98/100); equal-weight mean ordinal 97.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:46b23a204e3e49458ab3eeba48da5a7f"
+        ],
+        "mutant": "G327Q",
+        "rank": 99,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -16.3107 (ordinal 100/100) and ESM-IF1 mean backbone-conditioned log likelihood -1.011612 (ordinal 94/100); equal-weight mean ordinal 97.0 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:03928412d32d4fce9fa11eaa8f9e05af"
+        ],
+        "mutant": "G327W",
+        "rank": 100,
+        "rationale": "FM-only fallback: ESM-2 \u0394lnP -14.9619 (ordinal 99/100) and ESM-IF1 mean backbone-conditioned log likelihood -1.013222 (ordinal 96/100); equal-weight mean ordinal 97.5 determined this placement. These are generic plausibility signals, not measured Growth/SelectionTwo activity."
+      }
+    ],
+    "rejected": [
+      "Y343H",
+      "R100S",
+      "T300S",
+      "R301L",
+      "W368V",
+      "Y391R",
+      "P55S",
+      "M134A",
+      "D293H",
+      "Y36L",
+      "E319L",
+      "T346A",
+      "T73G",
+      "Q261F",
+      "F254L",
+      "V381L",
+      "K236N",
+      "V385N",
+      "S378A",
+      "P198A",
+      "A278G",
+      "P382E",
+      "I139Q",
+      "N20T",
+      "E87M",
+      "V16L",
+      "A141G",
+      "Q369V",
+      "E124I",
+      "S342F",
+      "F170Q",
+      "M240R",
+      "V102M",
+      "R283W",
+      "E124P",
+      "G370A",
+      "Q369R",
+      "Y234L",
+      "D352S",
+      "R301T",
+      "E136S",
+      "A363G",
+      "K129V",
+      "N229C",
+      "F254Q",
+      "S21G",
+      "E322L",
+      "E372Y",
+      "E87W",
+      "D352T",
+      "I295C",
+      "G241C",
+      "H113F",
+      "L85S",
+      "S397I",
+      "R161K",
+      "N20F",
+      "A354H",
+      "G376L",
+      "C326Y",
+      "T346Y",
+      "V193Q",
+      "D212E",
+      "F152C",
+      "T299E",
+      "L290D",
+      "E136T",
+      "E271R",
+      "F227A",
+      "L48P",
+      "P123G",
+      "G160F",
+      "I68D",
+      "E372K",
+      "A141R",
+      "P123S",
+      "I295W",
+      "R270Y",
+      "L250D",
+      "D221G",
+      "A297Q",
+      "F366R",
+      "G52P",
+      "G22N",
+      "F89K",
+      "G216T",
+      "I146P",
+      "A164I",
+      "G327Q",
+      "G327W"
+    ],
+    "selected": [
+      "D263E",
+      "A358S",
+      "V272D",
+      "E337D",
+      "Q389E",
+      "V385T",
+      "R94T",
+      "D206A",
+      "Q261M",
+      "Q248M"
+    ]
+  },
+  "contract_sha256": "5b3e22833f8f1cc92269ca84859290dd0bb143d965e85f02827062f9ff8ef59b",
+  "endpoint_sha256": "8b1133e492fbe8b7fa1e995f25b225d6a46f9fe61d72bd59dd76085d534bb6f8",
+  "item_id": "cmp_006",
+  "validation": {
+    "accepted": true,
+    "answer_sha256": "41b77dae9e435392e2a2034140f05bd1a4fb91a493f28d209e25911fd8ff6497",
+    "candidate_count": 100,
+    "contract_sha256": "5b3e22833f8f1cc92269ca84859290dd0bb143d965e85f02827062f9ff8ef59b",
+    "endpoint_sha256": "8b1133e492fbe8b7fa1e995f25b225d6a46f9fe61d72bd59dd76085d534bb6f8",
+    "policy_id": "b4_v3_adaptive_item_bound_endpoint_v1",
+    "ranking_complete": true,
+    "unique_cited_receipts": 100
+  }
+}

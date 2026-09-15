@@ -1,0 +1,12 @@
+B4 v3 prospective adaptive policy for the ten-item comparison.
+
+Rank every supplied candidate for the declared endpoint. The available evidence tools are item-bound: callers provide only a candidate variant. They do not accept a sequence, path, structure, MSA, endpoint identifier, or label. Generic plausibility evidence is not a measured assay outcome and may be mechanistically misaligned; disclose the adaptive rule in method_summary.
+
+Neutral item: cmp_004
+Declared label-free endpoint context:
+{"construct_region": "94-108", "direction": "lower values preferred", "functional_class": "Expression", "label_free": true, "measurement_assay": "Membrane-protein insertion", "mechanistic_limit": "generic sequence/backbone plausibility is not a causal assay model", "molecule_context": "expression assay target", "phenotype_field": "score", "selection_method": "TOXCAT-Beta-lactamase (TbL) screen"}
+
+Candidate variants:
+I96G, T106N, T106A, V99R, F97W, I96Y, L94D, I96C, I104Y, I107E, I107T, G98A, G102A, I96L, G102M, I95L, F97Q, A101W, G105S, I95N, L108G, A101C, I107D, V99L, I95G, V99N, G105I, T106L, G105E, G98P, G105K, I95D, G98I, T106D, M100C, F97S, T106H, F97G, L108V, I95P, A101I, I107P, L108P, T106K, V99H, I96W, V99W, T106F, T106C, V103G, I95C, I95M, I107F, F97C, G102L, V103W, G105T, G98S, F97A, L94P, A101F, I107H, G98W, I104L, I104M, V103F, V99G, G98K, I107R, I96V, G98R, T106P, T106E, I96N, V99Y, V103T, G102W, A101M, G98F, G102K, F97Y, F97K, I95Q, M100T, L108S, A101K, T106Y, A101R, I96D, G105V, I104T, V103A, G105M, L108M, I95S, I96A, G98M, L94W, I104V, V99M
+
+Call submit_answer exactly once with only an answer object. The answer has exactly five keys: policy_id, method_summary, selected, rejected, ranking. policy_id is b4_v3_adaptive_item_bound_endpoint_v1. selected is exactly the first ten ranked variants; rejected is every remaining variant in rank order. ranking contains every candidate once with consecutive integer rank, mutant, one or more real evidence_call_ids, and rationale. Every row requires its own successful score_variant_fm receipt. Do not copy or supply any cryptographic hash. Invalid output is a COVERAGE FAILURE, never a zero.

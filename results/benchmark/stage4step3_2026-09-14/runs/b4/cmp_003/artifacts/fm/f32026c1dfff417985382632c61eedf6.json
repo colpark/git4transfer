@@ -1,0 +1,49 @@
+{
+  "args": {
+    "chain": "A",
+    "contract_sha256": "e7672bc6df588155d30558627e476ccd2602741280e5c9d5128a1fa70e92d9a0",
+    "pdb_sha256": "f0696aae2d7a39f060288daccd946324066e7c0bff33461a265e55bbc4cb4af9",
+    "sequence_sha256": "d8a86cdeaf8e8dc92742780d24c9526abc19a05518c02a1e730d0ac8d1c7043f",
+    "variant": "V143T"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "b659a171dac216fe68e18c125343e0426cd0b1012795adf98636fa05751f3e49",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_003/artifacts/fm/f32026c1dfff417985382632c61eedf6.json",
+    "cache_hit": false,
+    "call_id": "call_id:f32026c1dfff417985382632c61eedf6",
+    "runtime_s": 8.201484,
+    "tool": "score_variant_fm"
+  },
+  "result": {
+    "esm2": {
+      "delta_log_probability": -4.58504045009613,
+      "device": "cpu",
+      "method": "ESM2_single_position_masked_marginal_natural_log",
+      "model": "facebook/esm2_t33_650M_UR50D",
+      "mutant": "T",
+      "mutant_log_probability": -5.909518241882324,
+      "position": 143,
+      "precision": "float32",
+      "revision": "08e4846e537177426273712802403f7ba8261b6c",
+      "wt": "V",
+      "wt_log_probability": -1.3244777917861938
+    },
+    "esm_if": {
+      "backbone_length": 220,
+      "cache_namespace": "b4v3_item-bound_esm2-08e4846e_if1-be4ba36e",
+      "chain": "A",
+      "checkpoint_sha256": "be4ba36edec22a9bfaa4946ff6b2815f1f19d8a3d7e0eada8b796d5a0eae9fd4",
+      "device": "cpu",
+      "interpretation": "backbone-conditioned sequence score; not a measured stability effect",
+      "mean_log_likelihood": -0.8236656882546165,
+      "mean_log_likelihood_with_coords": -0.8236656882546165,
+      "model": "esm_if1_gvp4_t16_142M_UR50",
+      "native_sequence_match": false,
+      "pdb_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/inputs/cmp_003/reference.pdb",
+      "sequence_length": 220
+    },
+    "note": "Generic sequence/backbone plausibility; not an assay outcome."
+  },
+  "server": "fm"
+}

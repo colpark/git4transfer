@@ -1,0 +1,49 @@
+{
+  "args": {
+    "chain": "A",
+    "contract_sha256": "72abdcc365b567b96372f536a44681a5b8eb759168fd9fec114b0c07e794abd9",
+    "pdb_sha256": "17acc9142bbec35da085e18aa5b4902c05bb811c3b35ee04187800e0e987bf48",
+    "sequence_sha256": "0f79dd8c1ea278edbe797ca3ccb235de12e8d482492499a37a977a0692d3e49b",
+    "variant": "R676Q"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "46b32dc5ea92eb0a5ca5bda9691e5c528ca3510ad9323acbccd3409bf0ff57e8",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_002/artifacts/fm/191f1ecda2834386924756885065cc6d.json",
+    "cache_hit": false,
+    "call_id": "call_id:191f1ecda2834386924756885065cc6d",
+    "runtime_s": 11.875174,
+    "tool": "score_variant_fm"
+  },
+  "result": {
+    "esm2": {
+      "delta_log_probability": 0.015123844146728516,
+      "device": "cpu",
+      "method": "ESM2_single_position_masked_marginal_natural_log",
+      "model": "facebook/esm2_t33_650M_UR50D",
+      "mutant": "Q",
+      "mutant_log_probability": -3.086012363433838,
+      "position": 676,
+      "precision": "float32",
+      "revision": "08e4846e537177426273712802403f7ba8261b6c",
+      "wt": "R",
+      "wt_log_probability": -3.1011362075805664
+    },
+    "esm_if": {
+      "backbone_length": 770,
+      "cache_namespace": "b4v3_item-bound_esm2-08e4846e_if1-be4ba36e",
+      "chain": "A",
+      "checkpoint_sha256": "be4ba36edec22a9bfaa4946ff6b2815f1f19d8a3d7e0eada8b796d5a0eae9fd4",
+      "device": "cpu",
+      "interpretation": "backbone-conditioned sequence score; not a measured stability effect",
+      "mean_log_likelihood": -2.2002653840300326,
+      "mean_log_likelihood_with_coords": -2.2002653840300326,
+      "model": "esm_if1_gvp4_t16_142M_UR50",
+      "native_sequence_match": false,
+      "pdb_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/inputs/cmp_002/reference.pdb",
+      "sequence_length": 770
+    },
+    "note": "Generic sequence/backbone plausibility; not an assay outcome."
+  },
+  "server": "fm"
+}

@@ -1,0 +1,2 @@
+{"run": "runs/b1/cmp_009", "wall_s": 171.437, "exit_code": 0, "timed_out": false, "model_call_attempted": true, "labels_opened": false}
+{"run": "runs/b1/cmp_010", "wall_s": 197.077, "exit_code": 0, "timed_out": false, "model_call_attempted": true, "labels_opened": false}

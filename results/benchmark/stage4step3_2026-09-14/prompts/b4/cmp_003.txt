@@ -1,0 +1,12 @@
+B4 v3 prospective adaptive policy for the ten-item comparison.
+
+Rank every supplied candidate for the declared endpoint. The available evidence tools are item-bound: callers provide only a candidate variant. They do not accept a sequence, path, structure, MSA, endpoint identifier, or label. Generic plausibility evidence is not a measured assay outcome and may be mechanistically misaligned; disclose the adaptive rule in method_summary.
+
+Neutral item: cmp_003
+Declared label-free endpoint context:
+{"construct_region": "6-211", "direction": "higher values preferred", "functional_class": "OrganismalFitness", "label_free": true, "measurement_assay": "Growth", "mechanistic_limit": "generic sequence/backbone plausibility is not a causal assay model", "molecule_context": "organismalfitness assay target", "phenotype_field": "selection", "selection_method": "Growth"}
+
+Candidate variants:
+T93I, C81G, D178S, E165Q, E165D, I66F, R172G, N207T, D154H, K183N, S189A, G25R, L62F, R181C, K151M, I78R, H86D, I66L, S73G, P206L, S22C, K24N, T92S, N54S, Q18S, H56D, A170S, S73A, K105H, C81S, S171A, G120A, E169Q, P161T, L7S, V143T, R172A, I21L, K24E, H67N, T204I, A99T, H86V, I200P, Q148K, P139A, T93L, V142F, A168S, S76N, V79L, I78G, I98L, T93A, C81A, K16H, V198L, K183T, A141S, I82V, H56E, S119P, I160V, V143I, K24D, S205T, G60A, D154Q, N13H, S119Y, I200T, N13K, H86L, E144D, L175I, L164M, L147F, C157T, L85I, D211E, K9R, K16Q, I59V, T209K, F121Y, I11V, D178G, R181H, G25E, E169R, E202A, K9N, V177I, H67T, I78L, I87V, L180I, N210D, L7F, P206S
+
+Call submit_answer exactly once with only an answer object. The answer has exactly five keys: policy_id, method_summary, selected, rejected, ranking. policy_id is b4_v3_adaptive_item_bound_endpoint_v1. selected is exactly the first ten ranked variants; rejected is every remaining variant in rank order. ranking contains every candidate once with consecutive integer rank, mutant, one or more real evidence_call_ids, and rationale. Every row requires its own successful score_variant_fm receipt. Do not copy or supply any cryptographic hash. Invalid output is a COVERAGE FAILURE, never a zero.

@@ -1,0 +1,925 @@
+{
+  "answer": {
+    "method_summary": "All 100 supplied candidates were scored independently with the item-bound score_variant_fm tool. Prospective adaptive rule: because the declared endpoint is label-free Stability (ddG_ML_float; higher values preferred) and the available evidence is generic rather than assay-trained, convert ESM-IF1 mean log-likelihood and ESM-2 masked-marginal delta log-probability to descending empirical percentiles within the 100-candidate panel, then use a stability-gated composite of 0.70*IF1 percentile + 0.30*ESM2 percentile. Rank by composite descending; break exact ties by IF1 score descending, then ESM2 delta descending, then mutant lexically. Select ranks 1-10. Missing or failed evidence is a coverage failure and is never imputed as zero. These model scores measure generic sequence/backbone plausibility, not a measured ddG_ML_float outcome or a causal model of cDNA-display proteolysis, and may therefore be mechanistically misaligned.",
+    "policy_id": "b4_v3_adaptive_item_bound_endpoint_v1",
+    "ranking": [
+      {
+        "evidence_call_ids": [
+          "call_id:ac6f9790729549c58ef045362981569f"
+        ],
+        "mutant": "M39V",
+        "rank": 1,
+        "rationale": "Adaptive score 0.993939: ESM-IF1 mean log-likelihood -1.231306 (panel rank 1/100) and ESM-2 delta log-probability 1.821026 (panel rank 3/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:0927a1f8d2b14549b21504ce62617bd2"
+        ],
+        "mutant": "F19T",
+        "rank": 2,
+        "rationale": "Adaptive score 0.969697: ESM-IF1 mean log-likelihood -1.262521 (panel rank 4/100) and ESM-2 delta log-probability 1.318509 (panel rank 4/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:99131e5ecb604213af0d143e018f0db7"
+        ],
+        "mutant": "D7A",
+        "rank": 3,
+        "rationale": "Adaptive score 0.953535: ESM-IF1 mean log-likelihood -1.263410 (panel rank 5/100) and ESM-2 delta log-probability 0.786759 (panel rank 7/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:dbd549ca0e07487895e5fa63f4b9af18"
+        ],
+        "mutant": "M39Q",
+        "rank": 4,
+        "rationale": "Adaptive score 0.950505: ESM-IF1 mean log-likelihood -1.234060 (panel rank 2/100) and ESM-2 delta log-probability -0.766824 (panel rank 15/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:15d0d9f1f3d94f2f90968e7605a8f78e"
+        ],
+        "mutant": "S29H",
+        "rank": 5,
+        "rationale": "Adaptive score 0.940404: ESM-IF1 mean log-likelihood -1.260084 (panel rank 3/100) and ESM-2 delta log-probability -0.831698 (panel rank 16/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:62b090c9e8e44accbcbbef35e5a2be0d"
+        ],
+        "mutant": "A55D",
+        "rank": 6,
+        "rationale": "Adaptive score 0.928283: ESM-IF1 mean log-likelihood -1.263711 (panel rank 6/100) and ESM-2 delta log-probability -0.432539 (panel rank 13/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:26bf083c56e54ee9b0ea900202737444"
+        ],
+        "mutant": "Y12E",
+        "rank": 7,
+        "rationale": "Adaptive score 0.901010: ESM-IF1 mean log-likelihood -1.278468 (panel rank 15/100) and ESM-2 delta log-probability 2.898232 (panel rank 1/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7f3c5eca5172421f96fcdfa10cd0988f"
+        ],
+        "mutant": "E54K",
+        "rank": 8,
+        "rationale": "Adaptive score 0.900000: ESM-IF1 mean log-likelihood -1.272227 (panel rank 13/100) and ESM-2 delta log-probability 0.850226 (panel rank 6/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8234a6400d8e4a61b5c487b7f3e692d9"
+        ],
+        "mutant": "T8K",
+        "rank": 9,
+        "rationale": "Adaptive score 0.898990: ESM-IF1 mean log-likelihood -1.268938 (panel rank 8/100) and ESM-2 delta log-probability -0.887920 (panel rank 18/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:16260b3caa584bf3a95860fe28316602"
+        ],
+        "mutant": "N62K",
+        "rank": 10,
+        "rationale": "Adaptive score 0.897980: ESM-IF1 mean log-likelihood -1.271550 (panel rank 12/100) and ESM-2 delta log-probability 0.292761 (panel rank 9/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:405ce4f502d64b4caf9d9c85cf00e318"
+        ],
+        "mutant": "E50K",
+        "rank": 11,
+        "rationale": "Adaptive score 0.874747: ESM-IF1 mean log-likelihood -1.272444 (panel rank 14/100) and ESM-2 delta log-probability -0.382152 (panel rank 12/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:29f38f34e17849029cc8bc44a6eb8a9a"
+        ],
+        "mutant": "Y36F",
+        "rank": 12,
+        "rationale": "Adaptive score 0.862626: ESM-IF1 mean log-likelihood -1.270652 (panel rank 11/100) and ESM-2 delta log-probability -1.433734 (panel rank 23/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:23d3bd7879c3432fb8ec497e0b7da64f"
+        ],
+        "mutant": "M39H",
+        "rank": 13,
+        "rationale": "Adaptive score 0.843434: ESM-IF1 mean log-likelihood -1.269368 (panel rank 9/100) and ESM-2 delta log-probability -2.269319 (panel rank 34/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1e2f43a32a5f4b7ea1fb0bf8304f71ff"
+        ],
+        "mutant": "E41K",
+        "rank": 14,
+        "rationale": "Adaptive score 0.836364: ESM-IF1 mean log-likelihood -1.268624 (panel rank 7/100) and ESM-2 delta log-probability -2.788098 (panel rank 41/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:86a6ca7bd2504d1fae5192f32a4696fa"
+        ],
+        "mutant": "K11S",
+        "rank": 15,
+        "rationale": "Adaptive score 0.833333: ESM-IF1 mean log-likelihood -1.289085 (panel rank 19/100) and ESM-2 delta log-probability -0.471678 (panel rank 14/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:33f0fdf487f743c9a61114cc076a94fa"
+        ],
+        "mutant": "T21A",
+        "rank": 16,
+        "rationale": "Adaptive score 0.823232: ESM-IF1 mean log-likelihood -1.294301 (panel rank 23/100) and ESM-2 delta log-probability 0.643824 (panel rank 8/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f30b06f8e7c44ac5ad10dfcbd2420508"
+        ],
+        "mutant": "L48F",
+        "rank": 17,
+        "rationale": "Adaptive score 0.815152: ESM-IF1 mean log-likelihood -1.282011 (panel rank 16/100) and ESM-2 delta log-probability -1.762067 (panel rank 27/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:54f3e1425b364080af36a105b9678d19"
+        ],
+        "mutant": "Y12N",
+        "rank": 18,
+        "rationale": "Adaptive score 0.811111: ESM-IF1 mean log-likelihood -1.299727 (panel rank 26/100) and ESM-2 delta log-probability 1.267978 (panel rank 5/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:c38d3065bb5749d58a16ea2a1669205a"
+        ],
+        "mutant": "F19I",
+        "rank": 19,
+        "rationale": "Adaptive score 0.798990: ESM-IF1 mean log-likelihood -1.315527 (panel rank 29/100) and ESM-2 delta log-probability 1.928199 (panel rank 2/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:6845764ccccd4579b0ac5d2639fc807f"
+        ],
+        "mutant": "D7N",
+        "rank": 20,
+        "rationale": "Adaptive score 0.794949: ESM-IF1 mean log-likelihood -1.293187 (panel rank 21/100) and ESM-2 delta log-probability -1.300101 (panel rank 22/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:38a7c82b752f47d5b00b86867443381c"
+        ],
+        "mutant": "E41R",
+        "rank": 21,
+        "rationale": "Adaptive score 0.792929: ESM-IF1 mean log-likelihood -1.284179 (panel rank 17/100) and ESM-2 delta log-probability -2.055854 (panel rank 32/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ec3f6f008f784be9a79cc0fc0ffad059"
+        ],
+        "mutant": "E25Q",
+        "rank": 22,
+        "rationale": "Adaptive score 0.760606: ESM-IF1 mean log-likelihood -1.295523 (panel rank 25/100) and ESM-2 delta log-probability -1.519568 (panel rank 24/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b9d69c2425ba4e2095addcc39793ef22"
+        ],
+        "mutant": "E33Q",
+        "rank": 23,
+        "rationale": "Adaptive score 0.757576: ESM-IF1 mean log-likelihood -1.270468 (panel rank 10/100) and ESM-2 delta log-probability -4.457785 (panel rank 60/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8b42cc79e1e246599aa4af6b354bddca"
+        ],
+        "mutant": "N62G",
+        "rank": 24,
+        "rationale": "Adaptive score 0.757576: ESM-IF1 mean log-likelihood -1.316625 (panel rank 31/100) and ESM-2 delta log-probability -0.309056 (panel rank 11/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a8f343fb5dd149f982fe2473abd2a9f5"
+        ],
+        "mutant": "F19D",
+        "rank": 25,
+        "rationale": "Adaptive score 0.740404: ESM-IF1 mean log-likelihood -1.288468 (panel rank 18/100) and ESM-2 delta log-probability -3.340386 (panel rank 47/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f46a6d27a2ca4293a0e32c5cae6811e9"
+        ],
+        "mutant": "E41S",
+        "rank": 26,
+        "rationale": "Adaptive score 0.733333: ESM-IF1 mean log-likelihood -1.293911 (panel rank 22/100) and ESM-2 delta log-probability -2.675245 (panel rank 40/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a931bb566ba34579993218ee9dc75700"
+        ],
+        "mutant": "T10M",
+        "rank": 27,
+        "rationale": "Adaptive score 0.732323: ESM-IF1 mean log-likelihood -1.324121 (panel rank 35/100) and ESM-2 delta log-probability -0.184126 (panel rank 10/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e361f78be23a4abfa4c910c6e340e5f3"
+        ],
+        "mutant": "E44N",
+        "rank": 28,
+        "rationale": "Adaptive score 0.725253: ESM-IF1 mean log-likelihood -1.294785 (panel rank 24/100) and ESM-2 delta log-probability -2.564478 (panel rank 38/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1e4d29a59e7c45319f37890ff8b3f7e1"
+        ],
+        "mutant": "Y36H",
+        "rank": 29,
+        "rationale": "Adaptive score 0.702020: ESM-IF1 mean log-likelihood -1.291674 (panel rank 20/100) and ESM-2 delta log-probability -4.045872 (panel rank 55/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:72caf9814be24fe0923d174ec8636493"
+        ],
+        "mutant": "D14S",
+        "rank": 30,
+        "rationale": "Adaptive score 0.691919: ESM-IF1 mean log-likelihood -1.309129 (panel rank 27/100) and ESM-2 delta log-probability -2.927841 (panel rank 42/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b649ba57fa7640bcb2b1ff0b1c36630a"
+        ],
+        "mutant": "E26D",
+        "rank": 31,
+        "rationale": "Adaptive score 0.685859: ESM-IF1 mean log-likelihood -1.316455 (panel rank 30/100) and ESM-2 delta log-probability -2.553634 (panel rank 37/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:6e482e2f6bdc4c8da5d23b8da56142b6"
+        ],
+        "mutant": "T21N",
+        "rank": 32,
+        "rationale": "Adaptive score 0.677778: ESM-IF1 mean log-likelihood -1.328665 (panel rank 38/100) and ESM-2 delta log-probability -1.069211 (panel rank 21/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:54dfb4570d864daabe6cd14e829c0061"
+        ],
+        "mutant": "T8F",
+        "rank": 33,
+        "rationale": "Adaptive score 0.668687: ESM-IF1 mean log-likelihood -1.332678 (panel rank 41/100) and ESM-2 delta log-probability -0.886429 (panel rank 17/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7a1a224bad6c4123aa793736418c4086"
+        ],
+        "mutant": "E25G",
+        "rank": 34,
+        "rationale": "Adaptive score 0.667677: ESM-IF1 mean log-likelihood -1.326681 (panel rank 36/100) and ESM-2 delta log-probability -1.815173 (panel rank 29/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:777d684f5c384835a69eb226151c57a4"
+        ],
+        "mutant": "R57T",
+        "rank": 35,
+        "rationale": "Adaptive score 0.660606: ESM-IF1 mean log-likelihood -1.321418 (panel rank 34/100) and ESM-2 delta log-probability -2.403020 (panel rank 36/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:478355b27e754ca8ac3b913a57a655e0"
+        ],
+        "mutant": "D7Y",
+        "rank": 36,
+        "rationale": "Adaptive score 0.638384: ESM-IF1 mean log-likelihood -1.317622 (panel rank 32/100) and ESM-2 delta log-probability -3.349162 (panel rank 48/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:67801f6ca669461b86d9d6f5b5d2093c"
+        ],
+        "mutant": "V37Y",
+        "rank": 37,
+        "rationale": "Adaptive score 0.618182: ESM-IF1 mean log-likelihood -1.314935 (panel rank 28/100) and ESM-2 delta log-probability -4.551733 (panel rank 64/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:fba814c59760478183eb4d6b690951fa"
+        ],
+        "mutant": "F19C",
+        "rank": 38,
+        "rationale": "Adaptive score 0.593939: ESM-IF1 mean log-likelihood -1.327533 (panel rank 37/100) and ESM-2 delta log-probability -3.599095 (panel rank 51/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:5d62a274065a447d85466476eac63ae2"
+        ],
+        "mutant": "D49N",
+        "rank": 39,
+        "rationale": "Adaptive score 0.576768: ESM-IF1 mean log-likelihood -1.319805 (panel rank 33/100) and ESM-2 delta log-probability -4.699045 (panel rank 66/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:d3fc49af78c147b4a8debf240400812d"
+        ],
+        "mutant": "V22N",
+        "rank": 40,
+        "rationale": "Adaptive score 0.565657: ESM-IF1 mean log-likelihood -1.343610 (panel rank 50/100) and ESM-2 delta log-probability -1.898294 (panel rank 30/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f3edc4e2a6994dd09f7578f47d29ff98"
+        ],
+        "mutant": "D18M",
+        "rank": 41,
+        "rationale": "Adaptive score 0.564646: ESM-IF1 mean log-likelihood -1.335700 (panel rank 42/100) and ESM-2 delta log-probability -3.446903 (panel rank 49/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2e9836efdf0f4b7fb36c3d480b8c0931"
+        ],
+        "mutant": "V37H",
+        "rank": 42,
+        "rationale": "Adaptive score 0.557576: ESM-IF1 mean log-likelihood -1.331170 (panel rank 40/100) and ESM-2 delta log-probability -4.230972 (panel rank 56/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:5173a73f22f54514a860303bb9abed55"
+        ],
+        "mutant": "T52G",
+        "rank": 43,
+        "rationale": "Adaptive score 0.541414: ESM-IF1 mean log-likelihood -1.341746 (panel rank 47/100) and ESM-2 delta log-probability -3.243460 (panel rank 45/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:622c7c9a0c6942a2904a0e873405e91b"
+        ],
+        "mutant": "L42M",
+        "rank": 44,
+        "rationale": "Adaptive score 0.535354: ESM-IF1 mean log-likelihood -1.351327 (panel rank 53/100) and ESM-2 delta log-probability -2.195702 (panel rank 33/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7e140e3c7b4642a5852b5b3a7b96131b"
+        ],
+        "mutant": "K61D",
+        "rank": 45,
+        "rationale": "Adaptive score 0.526263: ESM-IF1 mean log-likelihood -1.339677 (panel rank 44/100) and ESM-2 delta log-probability -4.254975 (panel rank 57/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1d159d9d16a44b7db7f0dc32ef09d14c"
+        ],
+        "mutant": "D7G",
+        "rank": 46,
+        "rationale": "Adaptive score 0.522222: ESM-IF1 mean log-likelihood -1.353362 (panel rank 57/100) and ESM-2 delta log-probability -1.789005 (panel rank 28/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:eb3e1281fd814d2197647373f862e726"
+        ],
+        "mutant": "K40P",
+        "rank": 47,
+        "rationale": "Adaptive score 0.521212: ESM-IF1 mean log-likelihood -1.365755 (panel rank 61/100) and ESM-2 delta log-probability -0.952251 (panel rank 19/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:c9bffff3ac10421fab23429cb59456d0"
+        ],
+        "mutant": "D7C",
+        "rank": 48,
+        "rationale": "Adaptive score 0.516162: ESM-IF1 mean log-likelihood -1.329691 (panel rank 39/100) and ESM-2 delta log-probability -5.109529 (panel rank 72/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ed36661c808b45d4afd58271ca6a8bf4"
+        ],
+        "mutant": "R59C",
+        "rank": 49,
+        "rationale": "Adaptive score 0.485859: ESM-IF1 mean log-likelihood -1.342614 (panel rank 48/100) and ESM-2 delta log-probability -4.468516 (panel rank 61/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:993ebc82cdba41339d343eb41c7f3255"
+        ],
+        "mutant": "E25V",
+        "rank": 50,
+        "rationale": "Adaptive score 0.484848: ESM-IF1 mean log-likelihood -1.343149 (panel rank 49/100) and ESM-2 delta log-probability -4.418454 (panel rank 59/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:d2ccd7c44c524869afa13255452727eb"
+        ],
+        "mutant": "K40C",
+        "rank": 51,
+        "rationale": "Adaptive score 0.481818: ESM-IF1 mean log-likelihood -1.340408 (panel rank 46/100) and ESM-2 delta log-probability -4.718472 (panel rank 67/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:91f93f1ad41c4e0e94da19c4551447a3"
+        ],
+        "mutant": "L43A",
+        "rank": 52,
+        "rationale": "Adaptive score 0.468687: ESM-IF1 mean log-likelihood -1.381652 (panel rank 68/100) and ESM-2 delta log-probability -1.020497 (panel rank 20/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2740811f55d14385a35203f4c5e7cdfd"
+        ],
+        "mutant": "L34M",
+        "rank": 53,
+        "rationale": "Adaptive score 0.462626: ESM-IF1 mean log-likelihood -1.361233 (panel rank 59/100) and ESM-2 delta log-probability -3.012396 (panel rank 43/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4a19d0c09fb84b028a419af81afd1c82"
+        ],
+        "mutant": "L48C",
+        "rank": 54,
+        "rationale": "Adaptive score 0.455556: ESM-IF1 mean log-likelihood -1.340216 (panel rank 45/100) and ESM-2 delta log-probability -5.931668 (panel rank 78/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:aaf14fa1e3aa461ca323fa48eaf30a45"
+        ],
+        "mutant": "D14Y",
+        "rank": 55,
+        "rationale": "Adaptive score 0.454545: ESM-IF1 mean log-likelihood -1.337620 (panel rank 43/100) and ESM-2 delta log-probability -6.728526 (panel rank 83/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7a860467d7d54ea6a3cdd7196e393f59"
+        ],
+        "mutant": "E26M",
+        "rank": 56,
+        "rationale": "Adaptive score 0.445455: ESM-IF1 mean log-likelihood -1.346954 (panel rank 52/100) and ESM-2 delta log-probability -4.654406 (panel rank 65/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:328186a1a9f94285b22ec1703c4bf66f"
+        ],
+        "mutant": "P51L",
+        "rank": 57,
+        "rationale": "Adaptive score 0.439394: ESM-IF1 mean log-likelihood -1.385079 (panel rank 70/100) and ESM-2 delta log-probability -1.737537 (panel rank 25/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:45ed202742d84791be836acb72ce760b"
+        ],
+        "mutant": "D16A",
+        "rank": 58,
+        "rationale": "Adaptive score 0.437374: ESM-IF1 mean log-likelihood -1.378441 (panel rank 66/100) and ESM-2 delta log-probability -2.369829 (panel rank 35/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:6737bc8ade6d443cbd1c171f27ed81ad"
+        ],
+        "mutant": "D7W",
+        "rank": 59,
+        "rationale": "Adaptive score 0.434343: ESM-IF1 mean log-likelihood -1.344404 (panel rank 51/100) and ESM-2 delta log-probability -5.010084 (panel rank 71/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:92b718a1ea264d9a8a25615c56066d29"
+        ],
+        "mutant": "F28M",
+        "rank": 60,
+        "rationale": "Adaptive score 0.425253: ESM-IF1 mean log-likelihood -1.374260 (panel rank 63/100) and ESM-2 delta log-probability -3.290588 (panel rank 46/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a422f2bd141b46c1811b0d07d8da0419"
+        ],
+        "mutant": "P51H",
+        "rank": 61,
+        "rationale": "Adaptive score 0.415152: ESM-IF1 mean log-likelihood -1.414310 (panel rank 73/100) and ESM-2 delta log-probability -1.739942 (panel rank 26/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b88353d486d047adbe3e9caf2796d27a"
+        ],
+        "mutant": "L43I",
+        "rank": 62,
+        "rationale": "Adaptive score 0.392929: ESM-IF1 mean log-likelihood -1.415957 (panel rank 74/100) and ESM-2 delta log-probability -1.917468 (panel rank 31/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:134ebf381ddf4f479e9276b7965a6360"
+        ],
+        "mutant": "L48Y",
+        "rank": 63,
+        "rationale": "Adaptive score 0.390909: ESM-IF1 mean log-likelihood -1.352286 (panel rank 55/100) and ESM-2 delta log-probability -5.790411 (panel rank 76/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:59e07ad4c45740829f0e860ef8c7fe5d"
+        ],
+        "mutant": "T30E",
+        "rank": 64,
+        "rationale": "Adaptive score 0.390909: ESM-IF1 mean log-likelihood -1.355376 (panel rank 58/100) and ESM-2 delta log-probability -4.890922 (panel rank 69/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:806dea460d204b11886787e5dfecc91c"
+        ],
+        "mutant": "L56A",
+        "rank": 65,
+        "rationale": "Adaptive score 0.389899: ESM-IF1 mean log-likelihood -1.385582 (panel rank 71/100) and ESM-2 delta log-probability -2.644801 (panel rank 39/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:d423796078634071a334ee5685cd0477"
+        ],
+        "mutant": "E44F",
+        "rank": 66,
+        "rationale": "Adaptive score 0.371717: ESM-IF1 mean log-likelihood -1.352720 (panel rank 56/100) and ESM-2 delta log-probability -6.162348 (panel rank 80/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e197d0bcb9214faaa4c57a2bfc482f99"
+        ],
+        "mutant": "I15E",
+        "rank": 67,
+        "rationale": "Adaptive score 0.369697: ESM-IF1 mean log-likelihood -1.375064 (panel rank 64/100) and ESM-2 delta log-probability -4.469742 (panel rank 62/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:90d7356b85fa41e6861440d28bd23909"
+        ],
+        "mutant": "V24D",
+        "rank": 68,
+        "rationale": "Adaptive score 0.358586: ESM-IF1 mean log-likelihood -1.364157 (panel rank 60/100) and ESM-2 delta log-probability -5.621385 (panel rank 75/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:798e068d827a4ddb8598f9db77a65e18"
+        ],
+        "mutant": "E41W",
+        "rank": 69,
+        "rationale": "Adaptive score 0.349495: ESM-IF1 mean log-likelihood -1.351769 (panel rank 54/100) and ESM-2 delta log-probability -8.241395 (panel rank 92/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:18ca6ca4a10d431784dcd8c7016eb813"
+        ],
+        "mutant": "D16H",
+        "rank": 70,
+        "rationale": "Adaptive score 0.344444: ESM-IF1 mean log-likelihood -1.377840 (panel rank 65/100) and ESM-2 delta log-probability -4.815454 (panel rank 68/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8333021d627a4d968626e1e84143ae0b"
+        ],
+        "mutant": "L43F",
+        "rank": 71,
+        "rationale": "Adaptive score 0.337374: ESM-IF1 mean log-likelihood -1.405940 (panel rank 72/100) and ESM-2 delta log-probability -3.829555 (panel rank 54/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2bc0857d5b47429aa793f6e12f98ab5f"
+        ],
+        "mutant": "P38C",
+        "rank": 72,
+        "rationale": "Adaptive score 0.298990: ESM-IF1 mean log-likelihood -1.373071 (panel rank 62/100) and ESM-2 delta log-probability -7.887330 (panel rank 90/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2142608c279f4f859c3f27bff55ec24e"
+        ],
+        "mutant": "L48W",
+        "rank": 73,
+        "rationale": "Adaptive score 0.290909: ESM-IF1 mean log-likelihood -1.379116 (panel rank 67/100) and ESM-2 delta log-probability -6.234694 (panel rank 81/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7fb6c83fb5df48d4ae563f762b35ce5d"
+        ],
+        "mutant": "I15Q",
+        "rank": 74,
+        "rationale": "Adaptive score 0.282828: ESM-IF1 mean log-likelihood -1.384998 (panel rank 69/100) and ESM-2 delta log-probability -6.154897 (panel rank 79/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b152ec02f25548d68f884c4cd244be9e"
+        ],
+        "mutant": "E54P",
+        "rank": 75,
+        "rationale": "Adaptive score 0.271717: ESM-IF1 mean log-likelihood -1.429417 (panel rank 83/100) and ESM-2 delta log-probability -3.544132 (panel rank 50/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2ad1db7badfb4c2098f32a9e0436e30c"
+        ],
+        "mutant": "G47H",
+        "rank": 76,
+        "rationale": "Adaptive score 0.260606: ESM-IF1 mean log-likelihood -1.417350 (panel rank 76/100) and ESM-2 delta log-probability -4.995048 (panel rank 70/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:74e7c99ef00e4e09adbbf5e6bcf9233b"
+        ],
+        "mutant": "L42F",
+        "rank": 77,
+        "rationale": "Adaptive score 0.251515: ESM-IF1 mean log-likelihood -1.439903 (panel rank 85/100) and ESM-2 delta log-probability -3.715433 (panel rank 52/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:959c840ef50f4eb083bcc5cbf8ec8a54"
+        ],
+        "mutant": "E26I",
+        "rank": 78,
+        "rationale": "Adaptive score 0.234343: ESM-IF1 mean log-likelihood -1.417762 (panel rank 78/100) and ESM-2 delta log-probability -5.389259 (panel rank 74/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:6614c0c075b2413992094e847fbf06e5"
+        ],
+        "mutant": "G47R",
+        "rank": 79,
+        "rationale": "Adaptive score 0.223232: ESM-IF1 mean log-likelihood -1.423667 (panel rank 80/100) and ESM-2 delta log-probability -5.336010 (panel rank 73/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e195ef1446b34a919414e3aceb6d3036"
+        ],
+        "mutant": "N62P",
+        "rank": 80,
+        "rationale": "Adaptive score 0.219192: ESM-IF1 mean log-likelihood -1.454939 (panel rank 93/100) and ESM-2 delta log-probability -3.181808 (panel rank 44/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7ee25148abce4829a31daf85860045f3"
+        ],
+        "mutant": "G47F",
+        "rank": 81,
+        "rationale": "Adaptive score 0.218182: ESM-IF1 mean log-likelihood -1.422292 (panel rank 79/100) and ESM-2 delta log-probability -5.870225 (panel rank 77/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:819cb64d9eb140e098294cc72687824a"
+        ],
+        "mutant": "V53R",
+        "rank": 82,
+        "rationale": "Adaptive score 0.217172: ESM-IF1 mean log-likelihood -1.417449 (panel rank 77/100) and ESM-2 delta log-probability -6.652596 (panel rank 82/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:89f142604af54ed3be7bca449cf8e18b"
+        ],
+        "mutant": "D16F",
+        "rank": 83,
+        "rationale": "Adaptive score 0.194949: ESM-IF1 mean log-likelihood -1.416381 (panel rank 75/100) and ESM-2 delta log-probability -8.318177 (panel rank 94/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:d38f2e73727b4328956081c4427abd9b"
+        ],
+        "mutant": "A35G",
+        "rank": 84,
+        "rationale": "Adaptive score 0.183838: ESM-IF1 mean log-likelihood -1.453737 (panel rank 92/100) and ESM-2 delta log-probability -4.368343 (panel rank 58/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:436123351c2a44a8a1818d05dfc163ac"
+        ],
+        "mutant": "F28K",
+        "rank": 85,
+        "rationale": "Adaptive score 0.179798: ESM-IF1 mean log-likelihood -1.424275 (panel rank 81/100) and ESM-2 delta log-probability -6.872085 (panel rank 85/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4fac24fb2a924a4c97c31b254a80465b"
+        ],
+        "mutant": "F9V",
+        "rank": 86,
+        "rationale": "Adaptive score 0.163636: ESM-IF1 mean log-likelihood -1.467605 (panel rank 97/100) and ESM-2 delta log-probability -3.750705 (panel rank 53/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:523d3de354af4e47adaa8ab77209f7f2"
+        ],
+        "mutant": "V53Q",
+        "rank": 87,
+        "rationale": "Adaptive score 0.148485: ESM-IF1 mean log-likelihood -1.425531 (panel rank 82/100) and ESM-2 delta log-probability -8.309691 (panel rank 93/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:9486042c138049e8ab0faf73f2103ca4"
+        ],
+        "mutant": "A60T",
+        "rank": 88,
+        "rationale": "Adaptive score 0.147475: ESM-IF1 mean log-likelihood -1.457736 (panel rank 95/100) and ESM-2 delta log-probability -4.527947 (panel rank 63/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:710b4e183c1b4129a2837cbe122b23e3"
+        ],
+        "mutant": "E44P",
+        "rank": 89,
+        "rationale": "Adaptive score 0.147475: ESM-IF1 mean log-likelihood -1.446660 (panel rank 86/100) and ESM-2 delta log-probability -6.867009 (panel rank 84/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:713f5c17a35a48b9b6e84263a60b902c"
+        ],
+        "mutant": "L34N",
+        "rank": 90,
+        "rationale": "Adaptive score 0.113131: ESM-IF1 mean log-likelihood -1.431671 (panel rank 84/100) and ESM-2 delta log-probability -11.118495 (panel rank 100/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8cf1f5649c8e4951899dd6a1eddd33bd"
+        ],
+        "mutant": "L31D",
+        "rank": 91,
+        "rationale": "Adaptive score 0.112121: ESM-IF1 mean log-likelihood -1.448884 (panel rank 88/100) and ESM-2 delta log-probability -7.933371 (panel rank 91/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2e48740433ec4a2189460b9307a62467"
+        ],
+        "mutant": "A60M",
+        "rank": 92,
+        "rationale": "Adaptive score 0.111111: ESM-IF1 mean log-likelihood -1.450469 (panel rank 89/100) and ESM-2 delta log-probability -7.618360 (panel rank 89/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:86592889d7c4437cb2b047081687f3bd"
+        ],
+        "mutant": "E32P",
+        "rank": 93,
+        "rationale": "Adaptive score 0.107071: ESM-IF1 mean log-likelihood -1.448329 (panel rank 87/100) and ESM-2 delta log-probability -8.454824 (panel rank 95/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ef9ed6c82fb2413e9d38fea5515cb78a"
+        ],
+        "mutant": "F9S",
+        "rank": 94,
+        "rationale": "Adaptive score 0.078788: ESM-IF1 mean log-likelihood -1.457282 (panel rank 94/100) and ESM-2 delta log-probability -7.276647 (panel rank 88/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:6a9f87b7fe8145b09f2eb2d927154667"
+        ],
+        "mutant": "L34S",
+        "rank": 95,
+        "rationale": "Adaptive score 0.076768: ESM-IF1 mean log-likelihood -1.452839 (panel rank 90/100) and ESM-2 delta log-probability -9.586994 (panel rank 98/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2a292e9b6c3d46ddac19a60e0aa08922"
+        ],
+        "mutant": "L56R",
+        "rank": 96,
+        "rationale": "Adaptive score 0.075758: ESM-IF1 mean log-likelihood -1.452997 (panel rank 91/100) and ESM-2 delta log-probability -8.591890 (panel rank 96/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:caaeafedaec14580b5a8d31b02b2a378"
+        ],
+        "mutant": "L31K",
+        "rank": 97,
+        "rationale": "Adaptive score 0.067677: ESM-IF1 mean log-likelihood -1.459432 (panel rank 96/100) and ESM-2 delta log-probability -7.154036 (panel rank 87/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:418091630d4a4880bb1059215fb845d0"
+        ],
+        "mutant": "A20I",
+        "rank": 98,
+        "rationale": "Adaptive score 0.042424: ESM-IF1 mean log-likelihood -1.588912 (panel rank 100/100) and ESM-2 delta log-probability -7.148681 (panel rank 86/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:9fd1dd1554794c04b6cb8cb0e49affdd"
+        ],
+        "mutant": "T30P",
+        "rank": 99,
+        "rationale": "Adaptive score 0.023232: ESM-IF1 mean log-likelihood -1.522435 (panel rank 98/100) and ESM-2 delta log-probability -8.765980 (panel rank 97/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:6ef8a3d3102e49a293a3a05c874ea59c"
+        ],
+        "mutant": "L23P",
+        "rank": 100,
+        "rationale": "Adaptive score 0.010101: ESM-IF1 mean log-likelihood -1.564991 (panel rank 99/100) and ESM-2 delta log-probability -9.667460 (panel rank 99/100), combined by the declared 70/30 stability rule; generic plausibility evidence only, not a measured assay outcome."
+      }
+    ],
+    "rejected": [
+      "E50K",
+      "Y36F",
+      "M39H",
+      "E41K",
+      "K11S",
+      "T21A",
+      "L48F",
+      "Y12N",
+      "F19I",
+      "D7N",
+      "E41R",
+      "E25Q",
+      "E33Q",
+      "N62G",
+      "F19D",
+      "E41S",
+      "T10M",
+      "E44N",
+      "Y36H",
+      "D14S",
+      "E26D",
+      "T21N",
+      "T8F",
+      "E25G",
+      "R57T",
+      "D7Y",
+      "V37Y",
+      "F19C",
+      "D49N",
+      "V22N",
+      "D18M",
+      "V37H",
+      "T52G",
+      "L42M",
+      "K61D",
+      "D7G",
+      "K40P",
+      "D7C",
+      "R59C",
+      "E25V",
+      "K40C",
+      "L43A",
+      "L34M",
+      "L48C",
+      "D14Y",
+      "E26M",
+      "P51L",
+      "D16A",
+      "D7W",
+      "F28M",
+      "P51H",
+      "L43I",
+      "L48Y",
+      "T30E",
+      "L56A",
+      "E44F",
+      "I15E",
+      "V24D",
+      "E41W",
+      "D16H",
+      "L43F",
+      "P38C",
+      "L48W",
+      "I15Q",
+      "E54P",
+      "G47H",
+      "L42F",
+      "E26I",
+      "G47R",
+      "N62P",
+      "G47F",
+      "V53R",
+      "D16F",
+      "A35G",
+      "F28K",
+      "F9V",
+      "V53Q",
+      "A60T",
+      "E44P",
+      "L34N",
+      "L31D",
+      "A60M",
+      "E32P",
+      "F9S",
+      "L34S",
+      "L56R",
+      "L31K",
+      "A20I",
+      "T30P",
+      "L23P"
+    ],
+    "selected": [
+      "M39V",
+      "F19T",
+      "D7A",
+      "M39Q",
+      "S29H",
+      "A55D",
+      "Y12E",
+      "E54K",
+      "T8K",
+      "N62K"
+    ]
+  },
+  "contract_sha256": "bdc0c729d6f22820b861b79682e938555593bb1216d88b461a232392c411b65d",
+  "endpoint_sha256": "526e803bfeb7531499f3e98ef48a9e1507cf31b6610e2f0a6703e9124c95fa6e",
+  "item_id": "cmp_008",
+  "validation": {
+    "accepted": true,
+    "answer_sha256": "6ff113b6bde24f9475aa8da7b19e689378e31902268d9f37320d03b7b0469c74",
+    "candidate_count": 100,
+    "contract_sha256": "bdc0c729d6f22820b861b79682e938555593bb1216d88b461a232392c411b65d",
+    "endpoint_sha256": "526e803bfeb7531499f3e98ef48a9e1507cf31b6610e2f0a6703e9124c95fa6e",
+    "policy_id": "b4_v3_adaptive_item_bound_endpoint_v1",
+    "ranking_complete": true,
+    "unique_cited_receipts": 100
+  }
+}

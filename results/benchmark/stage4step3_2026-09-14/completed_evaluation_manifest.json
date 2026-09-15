@@ -1,0 +1,44 @@
+{
+  "analysis_code": {
+    "blind_audit": "55acaf0ac89c34792317214edda69f61c861e2456a28aa41a46b834a178da330",
+    "comprehensive_evaluator": "2e8606046841de40f7992a28bdbf2343a70921c56b8e618fc89e7cb360f400e4",
+    "frozen_primary_evaluator": "f1460d6fee1105e87cb99c7b7d7d54944cf9c564921a2f12c8e9d3c2233a6c8b",
+    "validator_repair": "92827e901e9d0a64164cd89f12676dca833c150ca824eaae827de34ae8f04557"
+  },
+  "authorized_labels_opened": [
+    "A0A192B1T2_9HIV1_Haddox_2018",
+    "A4_HUMAN_Seuma_2022",
+    "HIS7_YEAST_Pokusaeva_2019",
+    "GLPA_HUMAN_Elazar_2016",
+    "HXK4_HUMAN_Gersing_2022_activity",
+    "LGK_LIPST_Klesmith_2015",
+    "FKBP3_HUMAN_Tsuboyama_2023_2KFV",
+    "NUSA_ECOLI_Tsuboyama_2023_1WCL",
+    "CASP3_HUMAN_Roychowdhury_2020",
+    "CBX4_HUMAN_Tsuboyama_2023_2K28"
+  ],
+  "completed_at_utc": "2026-09-15T15:10:37.616677+00:00",
+  "files": {
+    "blind_b1.jsonl": "790ad478c867bba08930894ebdd675a404d6a88a37f761b432353f4f04a987a7",
+    "blind_b2.jsonl": "abc927525673f67fcd5e7046ea94d6eb59b7d1b81ef89643c762fd5b02651c0d",
+    "blind_b4.jsonl": "5bc298e0281185c79d1e0d037a0c9e6f49179f03bb9b48cc234e98a6b1593952",
+    "blind_bundle_manifest.json": "0702ebfa8ff14ecdb6585c3024eecc6b62014bf334c60ea3571c567992701b5d",
+    "blind_content_audit.json": "253f6825156315da78f8dd0ea05ae123bda916446e84229b22902ccb4be0d79d",
+    "blind_floor_c.jsonl": "7ed32228c634b7a970fb5d19086bf411c193d33c3f20721b63734cefedb5e33c",
+    "blind_floor_m.jsonl": "118f38b1ff52f048778c75675ded2005f539f5a8533534b80319aaf044052ceb",
+    "comparison.md": "5b989fca97a0a5f454ad0cc472d447d9d6ec5e55586b0179516629530baaaaee",
+    "comparison_rows.csv": "17a1fbd8b8f62122358bbfdebebf0e2edcbdadd40948f0c048dd4e563c226726",
+    "comparison_summary.json": "4250e0e0d8a3e0386bd70c089f718df904259394a3997777d808572c4d6b970e",
+    "comprehensive_metric_rows.csv": "2219aefe26d8cffee67d3635db3fe6f91fd8749731e9b3239cf7e4f1f4ca38f9",
+    "comprehensive_report.md": "b83f34a3cc3bed89fe108bd34560f4dc9bf0be1e28a07610326c9e1a1e2a733a",
+    "comprehensive_summary.json": "a9a08b06417249c0ef8af5a30765eb53ef45f7f3b3b5d3247a8dcd69ea762da0",
+    "evaluation_execution_amendment.json": "078c71ec0306bd0cdae86e7d862cc945c6ca9a71933c9d9416a7f7ae58469aef",
+    "evaluation_integrity.json": "8c68183338b150fa5bfcde0192b73fbb8e7bcb5f94da3f4e3244219a68807469",
+    "mechanical_failure_decisions.json": "bca01e14cf1bc77b3d7995d25baf0ed80d44b2cfa8641b0b717b5dc75914b496",
+    "mechanical_validation_summary.json": "ba225f7cf843fe51fb3c3aa8adf27852c1593cfd83548a429797c24c2239e9c1",
+    "validator_repair_amendment.json": "4e37cb942e1719f5be091a92aa2f88eac6d2b99dded2194776449d664b3ea23e"
+  },
+  "model_predictions_rerun": false,
+  "other_135_labels_opened": false,
+  "status": "COMPLETE_WITH_DISCLOSED_PROTOCOL_DEVIATIONS"
+}

@@ -1,0 +1,12 @@
+B4 v3 prospective adaptive policy for the ten-item comparison.
+
+Rank every supplied candidate for the declared endpoint. The available evidence tools are item-bound: callers provide only a candidate variant. They do not accept a sequence, path, structure, MSA, endpoint identifier, or label. Generic plausibility evidence is not a measured assay outcome and may be mechanistically misaligned; disclose the adaptive rule in method_summary.
+
+Neutral item: cmp_007
+Declared label-free endpoint context:
+{"construct_region": "1-69", "direction": "higher values preferred", "functional_class": "Stability", "label_free": true, "measurement_assay": "Stability", "mechanistic_limit": "generic sequence/backbone plausibility is not a causal assay model", "molecule_context": "stability assay target", "phenotype_field": "ddG_ML_float", "selection_method": "cDNA display proteolysis"}
+
+Candidate variants:
+K52A, T49H, T7H, K18D, H28C, W6R, W6Q, I21L, V8D, S30L, V46K, H61C, N60G, E36F, L40E, E9I, A50H, K18T, I43G, Q10A, K23G, N45E, T57D, R4L, L11A, W6M, Q15F, N51V, W6A, R4P, L55A, T7I, K66E, V56K, G41C, Q26W, A5K, Q10H, F24D, H28K, T49Y, L11M, D53M, N45Q, F63N, L16I, N60F, K23A, V56N, L11W, H61S, R4E, E36T, K66W, S30T, G29N, H54C, K52H, V56L, H54R, L34R, E14Q, N60H, F63C, P17C, N45W, N60W, L34A, T57A, D20V, V56D, A58R, F33Y, K38W, V8N, G29S, K38R, S30H, E64L, L39Y, Q26L, Q3M, E14G, A47S, K44F, L62G, K44G, E14W, E14S, K19L, V46R, F33H, L40V, K23W, V8I, E9P, E36V, H28Y, E27T, A50F
+
+Call submit_answer exactly once with only an answer object. The answer has exactly five keys: policy_id, method_summary, selected, rejected, ranking. policy_id is b4_v3_adaptive_item_bound_endpoint_v1. selected is exactly the first ten ranked variants; rejected is every remaining variant in rank order. ranking contains every candidate once with consecutive integer rank, mutant, one or more real evidence_call_ids, and rationale. Every row requires its own successful score_variant_fm receipt. Do not copy or supply any cryptographic hash. Invalid output is a COVERAGE FAILURE, never a zero.

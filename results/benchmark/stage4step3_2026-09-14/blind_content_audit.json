@@ -1,0 +1,317 @@
+{
+  "audit_type": "blind_prelabel_content_and_coverage_audit",
+  "authorship": "automated_agent",
+  "checks": {
+    "b4": "Repaired mechanical validation, frozen context equality, answer/receipt revalidation, allowlisted traces, and explicit proxy/no-measured-outcome language.",
+    "prompt_only": "Frozen parser validity plus rejection of unavailable evidence/tool/file claims."
+  },
+  "created_at_utc": "2026-09-15T15:06:16.772573+00:00",
+  "decisions": {
+    "b1/cmp_001": {
+      "accepted": true,
+      "checks": {
+        "candidate_count": 100,
+        "empty_evidence_and_validation_arrays": true,
+        "forbidden_claim_terms": [],
+        "structured_answer_valid": true
+      },
+      "reason": "schema-valid prompt-only prediction with no evidence/tool/file claims"
+    },
+    "b1/cmp_002": {
+      "accepted": false,
+      "checks": {},
+      "reason": "process exit=1 timed_out=False"
+    },
+    "b1/cmp_003": {
+      "accepted": false,
+      "checks": {},
+      "reason": "structured-answer validation failed: ValueError: answer is not one plain JSON object"
+    },
+    "b1/cmp_004": {
+      "accepted": true,
+      "checks": {
+        "candidate_count": 100,
+        "empty_evidence_and_validation_arrays": true,
+        "forbidden_claim_terms": [],
+        "structured_answer_valid": true
+      },
+      "reason": "schema-valid prompt-only prediction with no evidence/tool/file claims"
+    },
+    "b1/cmp_005": {
+      "accepted": true,
+      "checks": {
+        "candidate_count": 100,
+        "empty_evidence_and_validation_arrays": true,
+        "forbidden_claim_terms": [],
+        "structured_answer_valid": true
+      },
+      "reason": "schema-valid prompt-only prediction with no evidence/tool/file claims"
+    },
+    "b1/cmp_006": {
+      "accepted": false,
+      "checks": {},
+      "reason": "structured-answer validation failed: ValueError: answer is not one plain JSON object"
+    },
+    "b1/cmp_007": {
+      "accepted": true,
+      "checks": {
+        "candidate_count": 100,
+        "empty_evidence_and_validation_arrays": true,
+        "forbidden_claim_terms": [],
+        "structured_answer_valid": true
+      },
+      "reason": "schema-valid prompt-only prediction with no evidence/tool/file claims"
+    },
+    "b1/cmp_008": {
+      "accepted": false,
+      "checks": {},
+      "reason": "run unavailable: one-shot process interrupted by the 2026-09-14 assistant turn abort; no retry permitted"
+    },
+    "b1/cmp_009": {
+      "accepted": true,
+      "checks": {
+        "candidate_count": 100,
+        "empty_evidence_and_validation_arrays": true,
+        "forbidden_claim_terms": [],
+        "structured_answer_valid": true
+      },
+      "reason": "schema-valid prompt-only prediction with no evidence/tool/file claims"
+    },
+    "b1/cmp_010": {
+      "accepted": true,
+      "checks": {
+        "candidate_count": 100,
+        "empty_evidence_and_validation_arrays": true,
+        "forbidden_claim_terms": [],
+        "structured_answer_valid": true
+      },
+      "reason": "schema-valid prompt-only prediction with no evidence/tool/file claims"
+    },
+    "b2/cmp_001": {
+      "accepted": false,
+      "checks": {},
+      "reason": "structured-answer validation failed: ValueError: rejected must be the candidate complement"
+    },
+    "b2/cmp_002": {
+      "accepted": false,
+      "checks": {},
+      "reason": "structured-answer validation failed: ValueError: rejected must be the candidate complement"
+    },
+    "b2/cmp_003": {
+      "accepted": false,
+      "checks": {},
+      "reason": "structured-answer validation failed: ValueError: selected basis is empty"
+    },
+    "b2/cmp_004": {
+      "accepted": false,
+      "checks": {},
+      "reason": "structured-answer validation failed: ValueError: rejected must be the candidate complement"
+    },
+    "b2/cmp_005": {
+      "accepted": false,
+      "checks": {},
+      "reason": "structured-answer validation failed: ValueError: would_overturn is empty"
+    },
+    "b2/cmp_006": {
+      "accepted": false,
+      "checks": {},
+      "reason": "structured-answer validation failed: ValueError: selected basis is empty"
+    },
+    "b2/cmp_007": {
+      "accepted": false,
+      "checks": {},
+      "reason": "structured-answer validation failed: ValueError: rejected must be the candidate complement"
+    },
+    "b2/cmp_008": {
+      "accepted": false,
+      "checks": {},
+      "reason": "structured-answer validation failed: ValueError: rejected must be the candidate complement"
+    },
+    "b2/cmp_009": {
+      "accepted": false,
+      "checks": {},
+      "reason": "structured-answer validation failed: ValueError: rejected must be the candidate complement"
+    },
+    "b2/cmp_010": {
+      "accepted": false,
+      "checks": {},
+      "reason": "structured-answer validation failed: ValueError: rejected must be the candidate complement"
+    },
+    "b4/cmp_001": {
+      "accepted": false,
+      "checks": {},
+      "reason": "process exit=1 timed_out=False"
+    },
+    "b4/cmp_002": {
+      "accepted": true,
+      "checks": {
+        "every_rank_has_variant-bound_fm_receipt": true,
+        "mechanical_integrity_sha256": "a8055a6108797f342a8203776370bb8ff334f0923908af75cae9d7812b306257",
+        "no_measured_outcome_claim": true,
+        "proxy_limit_explicit": true,
+        "structured_answer_revalidated": true,
+        "submission_sha256": "023112f4c6aa8e94183005c78545888ed47f3c1c78f3adad7606e59e414c87c7",
+        "trace_sha256": "00abaa3f04466d421e36233910511f4a7e9524902c725105ea6b6eb0193a9639",
+        "trace_tools_within_allowlist": true
+      },
+      "reason": "mechanically valid item-bound prediction; prose identifies proxy limits"
+    },
+    "b4/cmp_003": {
+      "accepted": true,
+      "checks": {
+        "every_rank_has_variant-bound_fm_receipt": true,
+        "mechanical_integrity_sha256": "26f1251462107ff1f918604aef233eee0c15033eb5f011a5d2847d6d2eb8665a",
+        "no_measured_outcome_claim": true,
+        "proxy_limit_explicit": true,
+        "structured_answer_revalidated": true,
+        "submission_sha256": "2e63543ffd85ac688642562389e52f6334094ab3c1b61a06dda0a396d592b8c9",
+        "trace_sha256": "159b9ed90c49f4d2084ec9c5757ee4ab4005bd53115fdca01459d82d25a0fe61",
+        "trace_tools_within_allowlist": true
+      },
+      "reason": "mechanically valid item-bound prediction; prose identifies proxy limits"
+    },
+    "b4/cmp_004": {
+      "accepted": false,
+      "checks": {
+        "expected": {
+          "approval_policy": "never",
+          "base_instructions_sha256": "cbefa6b0bede0e332d957fca70ccacf9f12f4c0ecdf81b819e5cbe1a3b16e265",
+          "cli_version": "0.154.0",
+          "developer_message_sha256": [
+            "2045f61b378e4830e1e67cbc93d8137c912a1daa4f1aaeb6dd9851d649c65132",
+            "af60719c7b64906bd05733aec72a96726712fe25d382a7bc9e05a6733cfd67dc",
+            "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e"
+          ],
+          "sandbox_type": "read-only"
+        },
+        "observed": {
+          "approval_policy": "never",
+          "base_instructions_sha256": "a91357a1cd2727a0be06d461248d6e3a7274746e38108f548a3adf2cc2430415",
+          "cli_version": "0.154.0",
+          "developer_message_sha256": [
+            "2045f61b378e4830e1e67cbc93d8137c912a1daa4f1aaeb6dd9851d649c65132",
+            "af60719c7b64906bd05733aec72a96726712fe25d382a7bc9e05a6733cfd67dc",
+            "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e"
+          ],
+          "sandbox_type": "read-only"
+        }
+      },
+      "reason": "stable received context differs from prospective gate"
+    },
+    "b4/cmp_005": {
+      "accepted": true,
+      "checks": {
+        "every_rank_has_variant-bound_fm_receipt": true,
+        "mechanical_integrity_sha256": "68cc077f72e3b09e067dba735a5dde21b22fc44348769cfdf577a8be1ce66326",
+        "no_measured_outcome_claim": true,
+        "proxy_limit_explicit": true,
+        "structured_answer_revalidated": true,
+        "submission_sha256": "f55cab04702e0878df52fada608fdf35cae726e6bcdc4600c50d254aab84e458",
+        "trace_sha256": "f4467208d3795ac5ba2d721d1ac0fe62dabe7ffb18894f4f4aeea711151ea564",
+        "trace_tools_within_allowlist": true
+      },
+      "reason": "mechanically valid item-bound prediction; prose identifies proxy limits"
+    },
+    "b4/cmp_006": {
+      "accepted": true,
+      "checks": {
+        "every_rank_has_variant-bound_fm_receipt": true,
+        "mechanical_integrity_sha256": "5240db0c5a12d37d17fa7a8ac13342f8ee729ad60757f45b14bffdcb29ef5cdc",
+        "no_measured_outcome_claim": true,
+        "proxy_limit_explicit": true,
+        "structured_answer_revalidated": true,
+        "submission_sha256": "f7010b351f330e6e5aa8a0d1a76b7f27d56f62f90589348e09e050dfe2c4ba1e",
+        "trace_sha256": "942125d6e7fd74ba06d0e8240e726e16cd5a8b185b3a83831a883cd061407542",
+        "trace_tools_within_allowlist": true
+      },
+      "reason": "mechanically valid item-bound prediction; prose identifies proxy limits"
+    },
+    "b4/cmp_007": {
+      "accepted": true,
+      "checks": {
+        "every_rank_has_variant-bound_fm_receipt": true,
+        "mechanical_integrity_sha256": "552bbf49b1903d8d54a6ce461119e21d8586be74aea736fe8689ec22459fe4fc",
+        "no_measured_outcome_claim": true,
+        "proxy_limit_explicit": true,
+        "structured_answer_revalidated": true,
+        "submission_sha256": "19621d414c57f1a03afe5b302df2454d27a1aca4c9d7a5673c0ee0863ffc9e06",
+        "trace_sha256": "b75253f11a381c8188ed8dec22e07d4c7e12ca0b448931f410efa9aa5b837192",
+        "trace_tools_within_allowlist": true
+      },
+      "reason": "mechanically valid item-bound prediction; prose identifies proxy limits"
+    },
+    "b4/cmp_008": {
+      "accepted": false,
+      "checks": {
+        "expected": {
+          "approval_policy": "never",
+          "base_instructions_sha256": "cbefa6b0bede0e332d957fca70ccacf9f12f4c0ecdf81b819e5cbe1a3b16e265",
+          "cli_version": "0.154.0",
+          "developer_message_sha256": [
+            "2045f61b378e4830e1e67cbc93d8137c912a1daa4f1aaeb6dd9851d649c65132",
+            "af60719c7b64906bd05733aec72a96726712fe25d382a7bc9e05a6733cfd67dc",
+            "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e"
+          ],
+          "sandbox_type": "read-only"
+        },
+        "observed": {
+          "approval_policy": "never",
+          "base_instructions_sha256": "a91357a1cd2727a0be06d461248d6e3a7274746e38108f548a3adf2cc2430415",
+          "cli_version": "0.154.0",
+          "developer_message_sha256": [
+            "2045f61b378e4830e1e67cbc93d8137c912a1daa4f1aaeb6dd9851d649c65132",
+            "af60719c7b64906bd05733aec72a96726712fe25d382a7bc9e05a6733cfd67dc",
+            "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e"
+          ],
+          "sandbox_type": "read-only"
+        }
+      },
+      "reason": "stable received context differs from prospective gate"
+    },
+    "b4/cmp_009": {
+      "accepted": false,
+      "checks": {
+        "expected": {
+          "approval_policy": "never",
+          "base_instructions_sha256": "cbefa6b0bede0e332d957fca70ccacf9f12f4c0ecdf81b819e5cbe1a3b16e265",
+          "cli_version": "0.154.0",
+          "developer_message_sha256": [
+            "2045f61b378e4830e1e67cbc93d8137c912a1daa4f1aaeb6dd9851d649c65132",
+            "af60719c7b64906bd05733aec72a96726712fe25d382a7bc9e05a6733cfd67dc",
+            "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e"
+          ],
+          "sandbox_type": "read-only"
+        },
+        "observed": {
+          "approval_policy": "never",
+          "base_instructions_sha256": "a91357a1cd2727a0be06d461248d6e3a7274746e38108f548a3adf2cc2430415",
+          "cli_version": "0.154.0",
+          "developer_message_sha256": [
+            "2045f61b378e4830e1e67cbc93d8137c912a1daa4f1aaeb6dd9851d649c65132",
+            "af60719c7b64906bd05733aec72a96726712fe25d382a7bc9e05a6733cfd67dc",
+            "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e"
+          ],
+          "sandbox_type": "read-only"
+        }
+      },
+      "reason": "stable received context differs from prospective gate"
+    },
+    "b4/cmp_010": {
+      "accepted": true,
+      "checks": {
+        "every_rank_has_variant-bound_fm_receipt": true,
+        "mechanical_integrity_sha256": "b698b6fe78c9d0f8847712aee59d51c5a141b61f9f2431b26b4c5262e2001db8",
+        "no_measured_outcome_claim": true,
+        "proxy_limit_explicit": true,
+        "structured_answer_revalidated": true,
+        "submission_sha256": "42118f0f85efbf9ef3279a5f37b3cf60eee48effc0d51fa03734bee2ccd1fb0b",
+        "trace_sha256": "68247b4048e5c6a2bab63e7122064011978ffb9986b34b40bff493ad6a7a2982",
+        "trace_tools_within_allowlist": true
+      },
+      "reason": "mechanically valid item-bound prediction; prose identifies proxy limits"
+    }
+  },
+  "human_audit_substitution": true,
+  "labels_opened_during_audit": false,
+  "protocol_deviation": "The prospective human-content-audit requirement was not met; an automated audit was used on the user's explicit instruction to complete evaluation."
+}

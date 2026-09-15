@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/aid1/Documents/2_19C_biology/benchmark-mcp/stage4step3_validate.py", line 170, in <module>
+    main()
+  File "/home/aid1/Documents/2_19C_biology/benchmark-mcp/stage4step3_validate.py", line 89, in main
+    prompt_path = Path(launch["prompt_path"])
+                       ~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'prompt_path'

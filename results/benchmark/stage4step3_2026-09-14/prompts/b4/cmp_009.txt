@@ -1,0 +1,12 @@
+B4 v3 prospective adaptive policy for the ten-item comparison.
+
+Rank every supplied candidate for the declared endpoint. The available evidence tools are item-bound: callers provide only a candidate variant. They do not accept a sequence, path, structure, MSA, endpoint identifier, or label. Generic plausibility evidence is not a measured assay outcome and may be mechanistically misaligned; disclose the adaptive rule in method_summary.
+
+Neutral item: cmp_009
+Declared label-free endpoint context:
+{"construct_region": "2-258", "direction": "higher values preferred", "functional_class": "Activity", "label_free": true, "measurement_assay": "Fluorescence measurement", "mechanistic_limit": "generic sequence/backbone plausibility is not a causal assay model", "molecule_context": "activity assay target", "phenotype_field": "coef", "selection_method": "NOT_REPORTED_IN_SOURCE_METADATA"}
+
+Candidate variants:
+A169G, T35S, I23L, R120G, Q134E, S86G, T228I, Y170C, H230Q, K197E, Q190H, W179G, V70M, E57A, S149T, I69M, N53D, L130F, Y199F, D154N, W187R, A164V, H29Q, V70G, F188C, K78I, Y168C, L47H, D13N, S240C, D119E, E49V, F51I, T65I, I235T, M195K, K111E, I208T, K111Q, V58I, N60S, A200P, K30R, S77P, D41H, F188Y, R74C, H81Q, P174T, C143F, Q198H, L64V, V162M, C121W, D63V, L167S, E67Q, V239A, I145F, D153N, C157R, L192H, S171F, R214Q, I22N, G175S, K159R, M73T, C20Y, F166Y, F87L, G102V, E163D, V76G, F87C, E146G, D41V, T218I, G98E, D13G, L19S, D165V, I22V, E219V, F248V, S171C, F101I, M195T, L141M, G185S, A164T, K111R, A173T, S123T, R84W, L47P, L167M, P106T, C157Y, I99V
+
+Call submit_answer exactly once with only an answer object. The answer has exactly five keys: policy_id, method_summary, selected, rejected, ranking. policy_id is b4_v3_adaptive_item_bound_endpoint_v1. selected is exactly the first ten ranked variants; rejected is every remaining variant in rank order. ranking contains every candidate once with consecutive integer rank, mutant, one or more real evidence_call_ids, and rationale. Every row requires its own successful score_variant_fm receipt. Do not copy or supply any cryptographic hash. Invalid output is a COVERAGE FAILURE, never a zero.

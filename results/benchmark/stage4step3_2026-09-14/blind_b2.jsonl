@@ -1,0 +1,10 @@
+{"answer": null, "arm": "b2", "coverage_failure_reason": "rejected must be the candidate complement", "neutral_item_id": "cmp_001", "status": "COVERAGE FAILURE"}
+{"answer": null, "arm": "b2", "coverage_failure_reason": "rejected must be the candidate complement", "neutral_item_id": "cmp_002", "status": "COVERAGE FAILURE"}
+{"answer": null, "arm": "b2", "coverage_failure_reason": "selected basis is empty", "neutral_item_id": "cmp_003", "status": "COVERAGE FAILURE"}
+{"answer": null, "arm": "b2", "coverage_failure_reason": "rejected must be the candidate complement", "neutral_item_id": "cmp_004", "status": "COVERAGE FAILURE"}
+{"answer": null, "arm": "b2", "coverage_failure_reason": "would_overturn is empty", "neutral_item_id": "cmp_005", "status": "COVERAGE FAILURE"}
+{"answer": null, "arm": "b2", "coverage_failure_reason": "selected basis is empty", "neutral_item_id": "cmp_006", "status": "COVERAGE FAILURE"}
+{"answer": null, "arm": "b2", "coverage_failure_reason": "rejected must be the candidate complement", "neutral_item_id": "cmp_007", "status": "COVERAGE FAILURE"}
+{"answer": null, "arm": "b2", "coverage_failure_reason": "rejected must be the candidate complement", "neutral_item_id": "cmp_008", "status": "COVERAGE FAILURE"}
+{"answer": null, "arm": "b2", "coverage_failure_reason": "rejected must be the candidate complement", "neutral_item_id": "cmp_009", "status": "COVERAGE FAILURE"}
+{"answer": null, "arm": "b2", "coverage_failure_reason": "rejected must be the candidate complement", "neutral_item_id": "cmp_010", "status": "COVERAGE FAILURE"}

@@ -1,0 +1,12 @@
+{
+  "blind_content_audit_sha256": "253f6825156315da78f8dd0ea05ae123bda916446e84229b22902ccb4be0d79d",
+  "broad_integrity_passed": false,
+  "evaluation_authorized": false,
+  "failure_reason": "stable received context differs from prospective gate",
+  "failure_stage": "stable_context_gate",
+  "human_content_audit_required": true,
+  "labels_opened": false,
+  "structural_and_receipt_integrity_passed": false,
+  "trace_sha256": "dff00193eddbf9be090e9148c3ae4fecb075aacb13f3f10a4c3ca12ff17bf7fa",
+  "validator_repair_amendment_sha256": "4e37cb942e1719f5be091a92aa2f88eac6d2b99dded2194776449d664b3ea23e"
+}

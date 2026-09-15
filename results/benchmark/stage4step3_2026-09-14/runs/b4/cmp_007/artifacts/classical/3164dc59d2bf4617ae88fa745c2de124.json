@@ -1,0 +1,26 @@
+{
+  "args": {
+    "contract_sha256": "b7f52bb42552ec5f06fb3e72423ae87f9d0d3cb37dc235ad17bd29af46304039",
+    "fasta_sha256": "281d41c8e2bd4afc5cf42723d0aba80240391f9842bc7092823d731ceac841f9",
+    "sequence_sha256": "22de585899af7e94250a30dd5566bc1d6e23307ea5a4131ea4d3746b07510a5f",
+    "variant": "Q26L"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "bf891c6e66df7594d2ad1fdedc14f41e8959ac8e5863703cf9bbc30d32112555",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_007/artifacts/classical/3164dc59d2bf4617ae88fa745c2de124.json",
+    "cache_hit": false,
+    "call_id": "call_id:3164dc59d2bf4617ae88fa745c2de124",
+    "runtime_s": 0.000361,
+    "tool": "score_variant_classical"
+  },
+  "result": {
+    "blosum62": -2,
+    "conservation": 1.0,
+    "msa_depth": 7,
+    "msa_sha256": "eb20862d4ffeb5e5cc59bfd5e7316af1b26b500a7a8b1a1df3e762364c1a2cfe",
+    "note": "Generic evolutionary evidence; not an assay outcome.",
+    "pssm_delta_bits": -3.0
+  },
+  "server": "classical"
+}

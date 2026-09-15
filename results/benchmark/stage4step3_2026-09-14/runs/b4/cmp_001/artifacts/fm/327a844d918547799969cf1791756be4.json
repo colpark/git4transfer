@@ -1,0 +1,49 @@
+{
+  "args": {
+    "chain": "A",
+    "contract_sha256": "c3734e35c4353694e6a69952d792ac13ca4fd5ae121018c00747e8c7afd1b25b",
+    "pdb_sha256": "139019811fa291a66eb058c0691b74ebc6d1dc62289fbe2266c6a68b5fad6d85",
+    "sequence_sha256": "589a3d75f09a5e1beeec23d1ed9eb52c3071477a0bb2299faba979098821ec0f",
+    "variant": "L649C"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "45e4e01c193739577c93f1b5e1521382e6b31b528c5893096d5fa76761f20aed",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_001/artifacts/fm/327a844d918547799969cf1791756be4.json",
+    "cache_hit": false,
+    "call_id": "call_id:327a844d918547799969cf1791756be4",
+    "runtime_s": 12.447084,
+    "tool": "score_variant_fm"
+  },
+  "result": {
+    "esm2": {
+      "delta_log_probability": -6.876079559326172,
+      "device": "cpu",
+      "method": "ESM2_single_position_masked_marginal_natural_log",
+      "model": "facebook/esm2_t33_650M_UR50D",
+      "mutant": "C",
+      "mutant_log_probability": -8.401582717895508,
+      "position": 649,
+      "precision": "float32",
+      "revision": "08e4846e537177426273712802403f7ba8261b6c",
+      "wt": "L",
+      "wt_log_probability": -1.525503158569336
+    },
+    "esm_if": {
+      "backbone_length": 852,
+      "cache_namespace": "b4v3_item-bound_esm2-08e4846e_if1-be4ba36e",
+      "chain": "A",
+      "checkpoint_sha256": "be4ba36edec22a9bfaa4946ff6b2815f1f19d8a3d7e0eada8b796d5a0eae9fd4",
+      "device": "cpu",
+      "interpretation": "backbone-conditioned sequence score; not a measured stability effect",
+      "mean_log_likelihood": -2.0848185221354165,
+      "mean_log_likelihood_with_coords": -2.0848185221354165,
+      "model": "esm_if1_gvp4_t16_142M_UR50",
+      "native_sequence_match": false,
+      "pdb_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/inputs/cmp_001/reference.pdb",
+      "sequence_length": 852
+    },
+    "note": "Generic sequence/backbone plausibility; not an assay outcome."
+  },
+  "server": "fm"
+}

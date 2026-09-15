@@ -1,0 +1,18 @@
+{
+  "decisions": [
+    {
+      "decision_sha256": "0dfc0b87281965710a3cc9c33d2c7e865c78d6ccb83fec5c9f823b1a55d2e90c",
+      "neutral_item_id": "cmp_004"
+    },
+    {
+      "decision_sha256": "6067248fbc520582a1a86af9f2bf71d82849b0b98513ba3e52b313866634cb53",
+      "neutral_item_id": "cmp_008"
+    },
+    {
+      "decision_sha256": "60630506581060f6a8d657c686fa66587cad2c28a50d3126fded02eb03a9794c",
+      "neutral_item_id": "cmp_009"
+    }
+  ],
+  "labels_opened": false,
+  "purpose": "Explicit fail-closed decisions so blind assembly preserves the substantive context-gate reason."
+}

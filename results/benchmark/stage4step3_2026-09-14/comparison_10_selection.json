@@ -1,0 +1,19 @@
+{
+  "created_at": "2026-09-14",
+  "selection_rule": "first 3 canonical IDs from prior Q1 and Q2 strata; first 2 from prior Q3 and Q4 strata",
+  "inherited_seed": 42,
+  "canonical_serialization": "UTF-8, one item ID plus LF per line, including final LF",
+  "item_ids_sha256": "135710fe4cd6b1c7ea246e7aa6d64aefe5b8e8411d46e7308ba12529cc4811a1",
+  "items": [
+    "A0A192B1T2_9HIV1_Haddox_2018",
+    "A4_HUMAN_Seuma_2022",
+    "HIS7_YEAST_Pokusaeva_2019",
+    "GLPA_HUMAN_Elazar_2016",
+    "HXK4_HUMAN_Gersing_2022_activity",
+    "LGK_LIPST_Klesmith_2015",
+    "FKBP3_HUMAN_Tsuboyama_2023_2KFV",
+    "NUSA_ECOLI_Tsuboyama_2023_1WCL",
+    "CASP3_HUMAN_Roychowdhury_2020",
+    "CBX4_HUMAN_Tsuboyama_2023_2K28"
+  ]
+}

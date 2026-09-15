@@ -1,0 +1,34 @@
+{
+  "assay_proxy_alignment_limit": "ACCEPTED_AND_MUST_BE_REPORTED",
+  "authorization_source": "user instruction dated 2026-09-14 to generate the comparison on 10 samples and expose their labels",
+  "b1_ruling": "APPROVED_WITH_FAIL_CLOSED_FABRICATION_RULE",
+  "batch_one_open": false,
+  "cohort_authorized": true,
+  "comparison_release": true,
+  "exact_started_completed_pairing_required": true,
+  "expected_stable_context": {
+    "approval_policy": "never",
+    "base_instructions_sha256": "cbefa6b0bede0e332d957fca70ccacf9f12f4c0ecdf81b819e5cbe1a3b16e265",
+    "cli_version": "0.154.0",
+    "developer_message_sha256": [
+      "2045f61b378e4830e1e67cbc93d8137c912a1daa4f1aaeb6dd9851d649c65132",
+      "af60719c7b64906bd05733aec72a96726712fe25d382a7bc9e05a6733cfd67dc",
+      "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e"
+    ],
+    "sandbox_type": "read-only"
+  },
+  "human_content_audit_before_blind_export": true,
+  "immutable_model_id": null,
+  "invalid_answers": "COVERAGE FAILURE, never scored zero",
+  "irreducible_candidate_pattern_recognition": "ACCEPTED_FOR_THIS_DESCRIPTIVE_COMPARISON",
+  "labels_open_only_after_blind_bundle_hash": true,
+  "labels_opened": false,
+  "moving_alias_observed": "gpt-5.6-sol",
+  "moving_alias_panel_waiver": true,
+  "platform_catalog_residual_visibility": "ACCEPTED_WITH_TRACE_AUDIT_FOR_THIS_DESCRIPTIVE_COMPARISON",
+  "resume_context_calibration": "context_calibration_2026-09-15.json",
+  "resume_context_changed": true,
+  "scope": "exactly cmp_001 through cmp_010 in the frozen internal manifest",
+  "ten_item_comparison_open": true,
+  "v3_context_calibration_captured": true
+}

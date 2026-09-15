@@ -1,0 +1,49 @@
+{
+  "args": {
+    "chain": "A",
+    "contract_sha256": "bdc0c729d6f22820b861b79682e938555593bb1216d88b461a232392c411b65d",
+    "pdb_sha256": "ec3fac87cc351f5d49ee1499cb1764040af39f79ae8700bf6b654d2596f01c82",
+    "sequence_sha256": "7d61e64ba38de72f22d854c934eeacefabdf6b69da6e65de3a4d4762719699f3",
+    "variant": "V37Y"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "009b38dbe75dd36c8dbaabad9ece7a56939d5802b770c1971d9c40de47b0eedb",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_008/artifacts/fm/67801f6ca669461b86d9d6f5b5d2093c.json",
+    "cache_hit": false,
+    "call_id": "call_id:67801f6ca669461b86d9d6f5b5d2093c",
+    "runtime_s": 6.963518,
+    "tool": "score_variant_fm"
+  },
+  "result": {
+    "esm2": {
+      "delta_log_probability": -4.551732778549194,
+      "device": "cpu",
+      "method": "ESM2_single_position_masked_marginal_natural_log",
+      "model": "facebook/esm2_t33_650M_UR50D",
+      "mutant": "Y",
+      "mutant_log_probability": -6.239940643310547,
+      "position": 37,
+      "precision": "float32",
+      "revision": "08e4846e537177426273712802403f7ba8261b6c",
+      "wt": "V",
+      "wt_log_probability": -1.6882078647613525
+    },
+    "esm_if": {
+      "backbone_length": 69,
+      "cache_namespace": "b4v3_item-bound_esm2-08e4846e_if1-be4ba36e",
+      "chain": "A",
+      "checkpoint_sha256": "be4ba36edec22a9bfaa4946ff6b2815f1f19d8a3d7e0eada8b796d5a0eae9fd4",
+      "device": "cpu",
+      "interpretation": "backbone-conditioned sequence score; not a measured stability effect",
+      "mean_log_likelihood": -1.314935324848562,
+      "mean_log_likelihood_with_coords": -1.314935324848562,
+      "model": "esm_if1_gvp4_t16_142M_UR50",
+      "native_sequence_match": false,
+      "pdb_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/inputs/cmp_008/reference.pdb",
+      "sequence_length": 69
+    },
+    "note": "Generic sequence/backbone plausibility; not an assay outcome."
+  },
+  "server": "fm"
+}

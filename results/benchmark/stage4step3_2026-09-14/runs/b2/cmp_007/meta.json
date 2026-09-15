@@ -1,0 +1,25 @@
+{
+  "error": null,
+  "finish_reason": "stop",
+  "labels_opened": false,
+  "model_call_attempted": true,
+  "post_sensors": {
+    "cpu_zone0_c": 80.0,
+    "cpu_zone4_c": 80.0,
+    "gpu_c": 70.0,
+    "gpu_power_w": 31.6,
+    "gpu_tlimit_margin_c": 28.0,
+    "gpu_util_pct": 67.0,
+    "mem_available_gib": 69.393,
+    "time_unix": 1789472516.561356
+  },
+  "usage": {
+    "completion_tokens": 7618,
+    "prompt_tokens": 848,
+    "prompt_tokens_details": {
+      "cached_tokens": 84
+    },
+    "total_tokens": 8466
+  },
+  "wall_s": 98.776
+}

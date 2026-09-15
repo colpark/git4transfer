@@ -1,0 +1,925 @@
+{
+  "answer": {
+    "method_summary": "Prospective adaptive rule: require one successful item-bound score_variant_fm receipt per candidate; because the available evidence is limited to generic ESM-2 sequence plausibility and ESM-IF1 backbone-conditioned likelihood and is mechanistically misaligned with the declared label-free aggregation/stability endpoint, enter the fallback branch rather than treating either signal as a causal assay model. Across the frozen ten-item comparison candidate set, z-standardize ESM-2 delta log probability and ESM-IF1 mean log likelihood separately, average the two z-scores with equal 0.5 weights, and rank higher composite values first (stable mutant-label ascending tie-break). The endpoint's higher-is-preferred direction determines descending prioritization, but no measured aggregation outcome is claimed; the ordering is a weak generic-plausibility prioritization only. Select ranks 1-10 and reject ranks 11-100; missing/invalid evidence would be a coverage failure, never imputed as zero.",
+    "policy_id": "b4_v3_adaptive_item_bound_endpoint_v1",
+    "ranking": [
+      {
+        "evidence_call_ids": [
+          "call_id:f851e8c74bf64bfea0ab2bd305999544"
+        ],
+        "mutant": "F691D",
+        "rank": 1,
+        "rationale": "Adaptive fallback composite 1.591931 (equal-weight within-set z-scores): ESM-2 delta log probability 3.581523; ESM-IF1 backbone-conditioned mean log likelihood -2.197956. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ca7c7e0714cb4b4783b829a1731ba08a"
+        ],
+        "mutant": "F690D",
+        "rank": 2,
+        "rationale": "Adaptive fallback composite 1.564039 (equal-weight within-set z-scores): ESM-2 delta log probability 3.106463; ESM-IF1 backbone-conditioned mean log likelihood -2.197892. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:702f91a4e1cc44e68c858f3569df4aea"
+        ],
+        "mutant": "F690E",
+        "rank": 3,
+        "rationale": "Adaptive fallback composite 1.550631 (equal-weight within-set z-scores): ESM-2 delta log probability 3.058903; ESM-IF1 backbone-conditioned mean log likelihood -2.197918. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a294a6738e4b45cbb1fbc78769fd4793"
+        ],
+        "mutant": "Y681S",
+        "rank": 4,
+        "rationale": "Adaptive fallback composite 1.393719 (equal-weight within-set z-scores): ESM-2 delta log probability 2.034793; ESM-IF1 backbone-conditioned mean log likelihood -2.198081. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:59dce00300854cdaa0396a8a1e5de9cf"
+        ],
+        "mutant": "F690N",
+        "rank": 5,
+        "rationale": "Adaptive fallback composite 1.309789 (equal-weight within-set z-scores): ESM-2 delta log probability 2.481288; ESM-IF1 backbone-conditioned mean log likelihood -2.198481. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:96ed34d1db9843e3919a5b5652f7f5dc"
+        ],
+        "mutant": "M706G",
+        "rank": 6,
+        "rationale": "Adaptive fallback composite 1.020493 (equal-weight within-set z-scores): ESM-2 delta log probability -5.130908; ESM-IF1 backbone-conditioned mean log likelihood -2.196975. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f96d087d4f5643a19c236a746583df1a"
+        ],
+        "mutant": "A692E",
+        "rank": 7,
+        "rationale": "Adaptive fallback composite 0.961398 (equal-weight within-set z-scores): ESM-2 delta log probability 0.771579; ESM-IF1 backbone-conditioned mean log likelihood -2.199020. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4dd788974e9c4ed4b6f46265a9e976db"
+        ],
+        "mutant": "H684G",
+        "rank": 8,
+        "rationale": "Adaptive fallback composite 0.911421 (equal-weight within-set z-scores): ESM-2 delta log probability 0.644848; ESM-IF1 backbone-conditioned mean log likelihood -2.199134. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4aa5474394f94eb18e42511df577f207"
+        ],
+        "mutant": "F675V",
+        "rank": 9,
+        "rationale": "Adaptive fallback composite 0.900362 (equal-weight within-set z-scores): ESM-2 delta log probability 1.722029; ESM-IF1 backbone-conditioned mean log likelihood -2.199508. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:c57a99df25a04202a776b276ca7e5b25"
+        ],
+        "mutant": "V695E",
+        "rank": 10,
+        "rationale": "Adaptive fallback composite 0.807624 (equal-weight within-set z-scores): ESM-2 delta log probability 1.700165; ESM-IF1 backbone-conditioned mean log likelihood -2.199788. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1c64e8ba695f4532b9e88bc04fd0500b"
+        ],
+        "mutant": "F675L",
+        "rank": 11,
+        "rationale": "Adaptive fallback composite 0.803248 (equal-weight within-set z-scores): ESM-2 delta log probability 1.543169; ESM-IF1 backbone-conditioned mean log likelihood -2.199752. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:929b98d5c5124ed8bedec3244fb5cfb6"
+        ],
+        "mutant": "H677L",
+        "rank": 12,
+        "rationale": "Adaptive fallback composite 0.797951 (equal-weight within-set z-scores): ESM-2 delta log probability -0.002499; ESM-IF1 backbone-conditioned mean log likelihood -2.199281. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:fa84af8e8b1d47f1b03feee9b341afbb"
+        ],
+        "mutant": "F690V",
+        "rank": 13,
+        "rationale": "Adaptive fallback composite 0.780686 (equal-weight within-set z-scores): ESM-2 delta log probability 2.201455; ESM-IF1 backbone-conditioned mean log likelihood -2.200030. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:0519b0fbe36b40ee966ec079dc2d9c60"
+        ],
+        "mutant": "M706F",
+        "rank": 14,
+        "rationale": "Adaptive fallback composite 0.762906 (equal-weight within-set z-scores): ESM-2 delta log probability -0.447694; ESM-IF1 backbone-conditioned mean log likelihood -2.199249. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e4f494753dc540cebb48597e9e619ed6"
+        ],
+        "mutant": "H677V",
+        "rank": 15,
+        "rationale": "Adaptive fallback composite 0.699718 (equal-weight within-set z-scores): ESM-2 delta log probability 0.440440; ESM-IF1 backbone-conditioned mean log likelihood -2.199725. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e454ac87d4d641c98eec70d24be4046f"
+        ],
+        "mutant": "Q686E",
+        "rank": 16,
+        "rationale": "Adaptive fallback composite 0.688707 (equal-weight within-set z-scores): ESM-2 delta log probability 0.837062; ESM-IF1 backbone-conditioned mean log likelihood -2.199884. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a9d393d60d2b4d0db601602732990117"
+        ],
+        "mutant": "V689K",
+        "rank": 17,
+        "rationale": "Adaptive fallback composite 0.635100 (equal-weight within-set z-scores): ESM-2 delta log probability -0.422432; ESM-IF1 backbone-conditioned mean log likelihood -2.199652. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:5cc5234920a54b6cb07f8eb0dc2f039d"
+        ],
+        "mutant": "R676D",
+        "rank": 18,
+        "rationale": "Adaptive fallback composite 0.626712 (equal-weight within-set z-scores): ESM-2 delta log probability 0.635201; ESM-IF1 backbone-conditioned mean log likelihood -2.200012. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:9f803e6201544c0da0c0eecda6efcb34"
+        ],
+        "mutant": "K699S",
+        "rank": 19,
+        "rationale": "Adaptive fallback composite 0.576259 (equal-weight within-set z-scores): ESM-2 delta log probability -2.443421; ESM-IF1 backbone-conditioned mean log likelihood -2.199197. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2dec8d2f3faf487cb478a03af0291077"
+        ],
+        "mutant": "Y681F",
+        "rank": 20,
+        "rationale": "Adaptive fallback composite 0.553746 (equal-weight within-set z-scores): ESM-2 delta log probability 0.007610; ESM-IF1 backbone-conditioned mean log likelihood -2.200040. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:77e96b9d8d35415e9bb48b14c93ee6db"
+        ],
+        "mutant": "R676K",
+        "rank": 21,
+        "rationale": "Adaptive fallback composite 0.549958 (equal-weight within-set z-scores): ESM-2 delta log probability 0.517290; ESM-IF1 backbone-conditioned mean log likelihood -2.200212. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:0617ac94810d4986b0529ff36c403b8d"
+        ],
+        "mutant": "K687S",
+        "rank": 22,
+        "rationale": "Adaptive fallback composite 0.533721 (equal-weight within-set z-scores): ESM-2 delta log probability 0.861159; ESM-IF1 backbone-conditioned mean log likelihood -2.200371. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ac7431d6a61b49268bf02b99b0008681"
+        ],
+        "mutant": "A692T",
+        "rank": 23,
+        "rationale": "Adaptive fallback composite 0.528126 (equal-weight within-set z-scores): ESM-2 delta log probability -0.187846; ESM-IF1 backbone-conditioned mean log likelihood -2.200057. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:88129a96761f4770bec483e3efeff43b"
+        ],
+        "mutant": "I703T",
+        "rank": 24,
+        "rationale": "Adaptive fallback composite 0.481616 (equal-weight within-set z-scores): ESM-2 delta log probability -6.707790; ESM-IF1 backbone-conditioned mean log likelihood -2.198145. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:191f1ecda2834386924756885065cc6d"
+        ],
+        "mutant": "R676Q",
+        "rank": 25,
+        "rationale": "Adaptive fallback composite 0.481531 (equal-weight within-set z-scores): ESM-2 delta log probability 0.015124; ESM-IF1 backbone-conditioned mean log likelihood -2.200265. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:9aecf9cf5d784a90aac9f8ded11ee414"
+        ],
+        "mutant": "A713G",
+        "rank": 26,
+        "rationale": "Adaptive fallback composite 0.447563 (equal-weight within-set z-scores): ESM-2 delta log probability -4.211106; ESM-IF1 backbone-conditioned mean log likelihood -2.199037. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:d6d6843168464afa8e794395c7c15c30"
+        ],
+        "mutant": "H685L",
+        "rank": 27,
+        "rationale": "Adaptive fallback composite 0.420907 (equal-weight within-set z-scores): ESM-2 delta log probability -0.766357; ESM-IF1 backbone-conditioned mean log likelihood -2.200206. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8ef83a178a804b8ab26f5ecdf4574c70"
+        ],
+        "mutant": "K687T",
+        "rank": 28,
+        "rationale": "Adaptive fallback composite 0.415217 (equal-weight within-set z-scores): ESM-2 delta log probability -0.084348; ESM-IF1 backbone-conditioned mean log likelihood -2.200439. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:d8ad95764adc4c59a03722d2723037c9"
+        ],
+        "mutant": "V683E",
+        "rank": 29,
+        "rationale": "Adaptive fallback composite 0.392458 (equal-weight within-set z-scores): ESM-2 delta log probability 0.491597; ESM-IF1 backbone-conditioned mean log likelihood -2.200691. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f0b43f5e82b64c1bac14df3e217a598c"
+        ],
+        "mutant": "D678R",
+        "rank": 30,
+        "rationale": "Adaptive fallback composite 0.367856 (equal-weight within-set z-scores): ESM-2 delta log probability -0.450288; ESM-IF1 backbone-conditioned mean log likelihood -2.200470. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f0b66e1d959147409996f8f4ecccd8db"
+        ],
+        "mutant": "E674S",
+        "rank": 31,
+        "rationale": "Adaptive fallback composite 0.325417 (equal-weight within-set z-scores): ESM-2 delta log probability 0.121635; ESM-IF1 backbone-conditioned mean log likelihood -2.200782. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a560ffbd0eee422c967edb82e35766b4"
+        ],
+        "mutant": "Q686R",
+        "rank": 32,
+        "rationale": "Adaptive fallback composite 0.314385 (equal-weight within-set z-scores): ESM-2 delta log probability -0.279561; ESM-IF1 backbone-conditioned mean log likelihood -2.200689. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b19ed1094f214f99914a57a11f0fa6a9"
+        ],
+        "mutant": "Q686D",
+        "rank": 33,
+        "rationale": "Adaptive fallback composite 0.312590 (equal-weight within-set z-scores): ESM-2 delta log probability 0.553732; ESM-IF1 backbone-conditioned mean log likelihood -2.200958. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:3ada2b11cf98425faeba52322a65ceda"
+        ],
+        "mutant": "L688P",
+        "rank": 34,
+        "rationale": "Adaptive fallback composite 0.305031 (equal-weight within-set z-scores): ESM-2 delta log probability 1.185757; ESM-IF1 backbone-conditioned mean log likelihood -2.201181. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4c86f3d4cb744fe5bd1fefb3d55f1b9b"
+        ],
+        "mutant": "A701V",
+        "rank": 35,
+        "rationale": "Adaptive fallback composite 0.241891 (equal-weight within-set z-scores): ESM-2 delta log probability -2.392729; ESM-IF1 backbone-conditioned mean log likelihood -2.200247. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:847a376cd31147eaa83446d9b40deb8e"
+        ],
+        "mutant": "F675P",
+        "rank": 36,
+        "rationale": "Adaptive fallback composite 0.187787 (equal-weight within-set z-scores): ESM-2 delta log probability 1.305049; ESM-IF1 backbone-conditioned mean log likelihood -2.201581. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7195cae5b596433dbeee2c9588732a5a"
+        ],
+        "mutant": "D694K",
+        "rank": 37,
+        "rationale": "Adaptive fallback composite 0.179301 (equal-weight within-set z-scores): ESM-2 delta log probability -1.563562; ESM-IF1 backbone-conditioned mean log likelihood -2.200702. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:21775c08412e48aaa3cadfa93a0179ff"
+        ],
+        "mutant": "V707L",
+        "rank": 38,
+        "rationale": "Adaptive fallback composite 0.175957 (equal-weight within-set z-scores): ESM-2 delta log probability -1.834088; ESM-IF1 backbone-conditioned mean log likelihood -2.200627. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4eba494c31df436598d0a5bfc82d855d"
+        ],
+        "mutant": "I702A",
+        "rank": 39,
+        "rationale": "Adaptive fallback composite 0.138742 (equal-weight within-set z-scores): ESM-2 delta log probability -5.879562; ESM-IF1 backbone-conditioned mean log likelihood -2.199466. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2062fc7e30a944758da643b3c2797260"
+        ],
+        "mutant": "F675Y",
+        "rank": 40,
+        "rationale": "Adaptive fallback composite 0.136428 (equal-weight within-set z-scores): ESM-2 delta log probability 0.038448; ESM-IF1 backbone-conditioned mean log likelihood -2.201340. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:70d900e1e26d4692a6ffa70f8f5bd65c"
+        ],
+        "mutant": "K699V",
+        "rank": 41,
+        "rationale": "Adaptive fallback composite 0.117870 (equal-weight within-set z-scores): ESM-2 delta log probability -4.558862; ESM-IF1 backbone-conditioned mean log likelihood -2.199948. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:5588422d053543b9856690bae21045d7"
+        ],
+        "mutant": "V695I",
+        "rank": 42,
+        "rationale": "Adaptive fallback composite 0.100459 (equal-weight within-set z-scores): ESM-2 delta log probability -0.994803; ESM-IF1 backbone-conditioned mean log likelihood -2.201126. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7c148621cbe547c08feec6a683c27e5f"
+        ],
+        "mutant": "H677Y",
+        "rank": 43,
+        "rationale": "Adaptive fallback composite 0.086778 (equal-weight within-set z-scores): ESM-2 delta log probability -1.049560; ESM-IF1 backbone-conditioned mean log likelihood -2.201151. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f59c15ffd9b7486a9e498c6f455fef62"
+        ],
+        "mutant": "V695H",
+        "rank": 44,
+        "rationale": "Adaptive fallback composite 0.082851 (equal-weight within-set z-scores): ESM-2 delta log probability -0.066788; ESM-IF1 backbone-conditioned mean log likelihood -2.201473. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:0148a0803fbe45979e8efbb632608d99"
+        ],
+        "mutant": "K687H",
+        "rank": 45,
+        "rationale": "Adaptive fallback composite 0.064767 (equal-weight within-set z-scores): ESM-2 delta log probability -0.342136; ESM-IF1 backbone-conditioned mean log likelihood -2.201442. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2a57d766941544ffa3522b054a1134ed"
+        ],
+        "mutant": "V683D",
+        "rank": 46,
+        "rationale": "Adaptive fallback composite 0.057344 (equal-weight within-set z-scores): ESM-2 delta log probability 0.211304; ESM-IF1 backbone-conditioned mean log likelihood -2.201639. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:9b9aaae3ce794296a98e7ac04c17166a"
+        ],
+        "mutant": "V683F",
+        "rank": 47,
+        "rationale": "Adaptive fallback composite 0.042846 (equal-weight within-set z-scores): ESM-2 delta log probability -1.980963; ESM-IF1 backbone-conditioned mean log likelihood -2.200993. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:d5000556760e49eca4714e416cb3470f"
+        ],
+        "mutant": "V707I",
+        "rank": 48,
+        "rationale": "Adaptive fallback composite 0.041646 (equal-weight within-set z-scores): ESM-2 delta log probability -0.922708; ESM-IF1 backbone-conditioned mean log likelihood -2.201330. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f2bebb4812e249b390999614bcee3c16"
+        ],
+        "mutant": "H685F",
+        "rank": 49,
+        "rationale": "Adaptive fallback composite 0.028798 (equal-weight within-set z-scores): ESM-2 delta log probability -2.270010; ESM-IF1 backbone-conditioned mean log likelihood -2.200945. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e379d04be1344bdbbde34ecf1a62c917"
+        ],
+        "mutant": "I702F",
+        "rank": 50,
+        "rationale": "Adaptive fallback composite 0.008211 (equal-weight within-set z-scores): ESM-2 delta log probability -4.206361; ESM-IF1 backbone-conditioned mean log likelihood -2.200398. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:11f05615631440c293f280f0701c0d82"
+        ],
+        "mutant": "E682Q",
+        "rank": 51,
+        "rationale": "Adaptive fallback composite 0.005153 (equal-weight within-set z-scores): ESM-2 delta log probability -0.751344; ESM-IF1 backbone-conditioned mean log likelihood -2.201497. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:fad47b7179c742388ca93d2772594f47"
+        ],
+        "mutant": "E693A",
+        "rank": 52,
+        "rationale": "Adaptive fallback composite 0.004820 (equal-weight within-set z-scores): ESM-2 delta log probability -1.230068; ESM-IF1 backbone-conditioned mean log likelihood -2.201347. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7708fe693fca45ea9a439987ab6e190b"
+        ],
+        "mutant": "A701L",
+        "rank": 53,
+        "rationale": "Adaptive fallback composite -0.008114 (equal-weight within-set z-scores): ESM-2 delta log probability -3.544212; ESM-IF1 backbone-conditioned mean log likelihood -2.200657. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2f60fcce4379414996e719ae9fec8ed9"
+        ],
+        "mutant": "S679I",
+        "rank": 54,
+        "rationale": "Adaptive fallback composite -0.008661 (equal-weight within-set z-scores): ESM-2 delta log probability -1.123534; ESM-IF1 backbone-conditioned mean log likelihood -2.201423. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:fe9406ded6764fff944de300f0cd7760"
+        ],
+        "mutant": "V683Q",
+        "rank": 55,
+        "rationale": "Adaptive fallback composite -0.030653 (equal-weight within-set z-scores): ESM-2 delta log probability -0.303850; ESM-IF1 backbone-conditioned mean log likelihood -2.201749. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:fb10c1b52fdc4a9fa98544d9de38b8ad"
+        ],
+        "mutant": "A692L",
+        "rank": 56,
+        "rationale": "Adaptive fallback composite -0.036343 (equal-weight within-set z-scores): ESM-2 delta log probability -1.773457; ESM-IF1 backbone-conditioned mean log likelihood -2.201303. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e5cf2f57c0ec4d5cb6f8c1de18dad17c"
+        ],
+        "mutant": "M706Y",
+        "rank": 57,
+        "rationale": "Adaptive fallback composite -0.051774 (equal-weight within-set z-scores): ESM-2 delta log probability -6.618544; ESM-IF1 backbone-conditioned mean log likelihood -2.199823. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:0faff3b6b64b4e04813cf876842a05e6"
+        ],
+        "mutant": "D694R",
+        "rank": 58,
+        "rationale": "Adaptive fallback composite -0.067308 (equal-weight within-set z-scores): ESM-2 delta log probability -2.560614; ESM-IF1 backbone-conditioned mean log likelihood -2.201151. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:097dd3db67924105b46231fbd93b8a30"
+        ],
+        "mutant": "G680K",
+        "rank": 59,
+        "rationale": "Adaptive fallback composite -0.077457 (equal-weight within-set z-scores): ESM-2 delta log probability -0.071769; ESM-IF1 backbone-conditioned mean log likelihood -2.201967. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:88b6bb1a1d6348cda1837cfe397c5782"
+        ],
+        "mutant": "G700S",
+        "rank": 60,
+        "rationale": "Adaptive fallback composite -0.097644 (equal-weight within-set z-scores): ESM-2 delta log probability -1.225167; ESM-IF1 backbone-conditioned mean log likelihood -2.201666. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:20e665ef78b344f7bc06eb41ab349333"
+        ],
+        "mutant": "I702M",
+        "rank": 61,
+        "rationale": "Adaptive fallback composite -0.147951 (equal-weight within-set z-scores): ESM-2 delta log probability -2.041678; ESM-IF1 backbone-conditioned mean log likelihood -2.201564. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:c409258ded0c43ce92283ae56dd2d58c"
+        ],
+        "mutant": "E693V",
+        "rank": 62,
+        "rationale": "Adaptive fallback composite -0.162496 (equal-weight within-set z-scores): ESM-2 delta log probability -2.389880; ESM-IF1 backbone-conditioned mean log likelihood -2.201499. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:3ae0525e6c2e4836995b33293410b79b"
+        ],
+        "mutant": "S697R",
+        "rank": 63,
+        "rationale": "Adaptive fallback composite -0.162650 (equal-weight within-set z-scores): ESM-2 delta log probability -3.345824; ESM-IF1 backbone-conditioned mean log likelihood -2.201198. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:d1808f03326940eb8e3cd981d1b3e04d"
+        ],
+        "mutant": "A701I",
+        "rank": 64,
+        "rationale": "Adaptive fallback composite -0.182180 (equal-weight within-set z-scores): ESM-2 delta log probability -3.374504; ESM-IF1 backbone-conditioned mean log likelihood -2.201249. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:9cf53028fc4744189e3b5502ea9492e7"
+        ],
+        "mutant": "L688Y",
+        "rank": 65,
+        "rationale": "Adaptive fallback composite -0.186498 (equal-weight within-set z-scores): ESM-2 delta log probability -1.285838; ESM-IF1 backbone-conditioned mean log likelihood -2.201921. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4b67e1ca8f0746df8e4a33bf7372b9a0"
+        ],
+        "mutant": "I712Q",
+        "rank": 66,
+        "rationale": "Adaptive fallback composite -0.191769 (equal-weight within-set z-scores): ESM-2 delta log probability -12.297172; ESM-IF1 backbone-conditioned mean log likelihood -2.198464. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:bdbfb88f31124916b5708c1cfc3f8dd9"
+        ],
+        "mutant": "E682I",
+        "rank": 67,
+        "rationale": "Adaptive fallback composite -0.196246 (equal-weight within-set z-scores): ESM-2 delta log probability -1.415605; ESM-IF1 backbone-conditioned mean log likelihood -2.201911. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:6b6612ba233b4ebc91fa2141ac5fb901"
+        ],
+        "mutant": "E682H",
+        "rank": 68,
+        "rationale": "Adaptive fallback composite -0.234953 (equal-weight within-set z-scores): ESM-2 delta log probability -0.967416; ESM-IF1 backbone-conditioned mean log likelihood -2.202172. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:62f14223cb4745fb8052d0ffd188b4dc"
+        ],
+        "mutant": "E674L",
+        "rank": 69,
+        "rationale": "Adaptive fallback composite -0.265260 (equal-weight within-set z-scores): ESM-2 delta log probability -1.102285; ESM-IF1 backbone-conditioned mean log likelihood -2.202223. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e91435c5f3ce4fd1a905745685b6b747"
+        ],
+        "mutant": "G680I",
+        "rank": 70,
+        "rationale": "Adaptive fallback composite -0.271095 (equal-weight within-set z-scores): ESM-2 delta log probability -1.002690; ESM-IF1 backbone-conditioned mean log likelihood -2.202272. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ed3bf0a2f0454ba0991874ce322dbd19"
+        ],
+        "mutant": "V689M",
+        "rank": 71,
+        "rationale": "Adaptive fallback composite -0.305499 (equal-weight within-set z-scores): ESM-2 delta log probability -1.265192; ESM-IF1 backbone-conditioned mean log likelihood -2.202296. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:96c0c8003c774d528641f2ca465cc695"
+        ],
+        "mutant": "I702H",
+        "rank": 72,
+        "rationale": "Adaptive fallback composite -0.309940 (equal-weight within-set z-scores): ESM-2 delta log probability -9.823247; ESM-IF1 backbone-conditioned mean log likelihood -2.199610. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:76e933d2f4b84f1388aabf224a402d6a"
+        ],
+        "mutant": "L705Q",
+        "rank": 73,
+        "rationale": "Adaptive fallback composite -0.313526 (equal-weight within-set z-scores): ESM-2 delta log probability -12.753378; ESM-IF1 backbone-conditioned mean log likelihood -2.198697. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ac6f5e116e554738a2172cb196c8deee"
+        ],
+        "mutant": "A713I",
+        "rank": 74,
+        "rationale": "Adaptive fallback composite -0.346356 (equal-weight within-set z-scores): ESM-2 delta log probability -3.415408; ESM-IF1 backbone-conditioned mean log likelihood -2.201744. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:6b64e2ffb01d42a7a43f91135a11ffc7"
+        ],
+        "mutant": "S679Y",
+        "rank": 75,
+        "rationale": "Adaptive fallback composite -0.355031 (equal-weight within-set z-scores): ESM-2 delta log probability -1.876077; ESM-IF1 backbone-conditioned mean log likelihood -2.202257. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:022c4586fae248acbd63b93cd06cd761"
+        ],
+        "mutant": "V683P",
+        "rank": 76,
+        "rationale": "Adaptive fallback composite -0.374967 (equal-weight within-set z-scores): ESM-2 delta log probability -0.251175; ESM-IF1 backbone-conditioned mean log likelihood -2.202831. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b4c85ad1d014442abf93be14a43c7bc3"
+        ],
+        "mutant": "I712C",
+        "rank": 77,
+        "rationale": "Adaptive fallback composite -0.396735 (equal-weight within-set z-scores): ESM-2 delta log probability -4.044142; ESM-IF1 backbone-conditioned mean log likelihood -2.201702. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f1c7e2fdbf3a435fbbb1cf33757bc5ff"
+        ],
+        "mutant": "G696V",
+        "rank": 78,
+        "rationale": "Adaptive fallback composite -0.398198 (equal-weight within-set z-scores): ESM-2 delta log probability -1.641001; ESM-IF1 backbone-conditioned mean log likelihood -2.202464. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7957042f48d946aba14576acdee93314"
+        ],
+        "mutant": "Q686P",
+        "rank": 79,
+        "rationale": "Adaptive fallback composite -0.410102 (equal-weight within-set z-scores): ESM-2 delta log probability -0.073026; ESM-IF1 backbone-conditioned mean log likelihood -2.202996. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:5124bd7ef3324002aecf7e7229545bfe"
+        ],
+        "mutant": "L705H",
+        "rank": 80,
+        "rationale": "Adaptive fallback composite -0.461280 (equal-weight within-set z-scores): ESM-2 delta log probability -13.620331; ESM-IF1 backbone-conditioned mean log likelihood -2.198881. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2f4a159152c14ccc8ac9b5a3a22acaf5"
+        ],
+        "mutant": "A713E",
+        "rank": 81,
+        "rationale": "Adaptive fallback composite -0.562376 (equal-weight within-set z-scores): ESM-2 delta log probability -13.507536; ESM-IF1 backbone-conditioned mean log likelihood -2.199229. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:634ee1c08b6c4b5dbfd8b3ccc4af8215"
+        ],
+        "mutant": "V711D",
+        "rank": 82,
+        "rationale": "Adaptive fallback composite -0.596724 (equal-weight within-set z-scores): ESM-2 delta log probability -13.511655; ESM-IF1 backbone-conditioned mean log likelihood -2.199334. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ad6e5e58a7f64b11b99093166d3b9c20"
+        ],
+        "mutant": "I703K",
+        "rank": 83,
+        "rationale": "Adaptive fallback composite -0.601230 (equal-weight within-set z-scores): ESM-2 delta log probability -13.179399; ESM-IF1 backbone-conditioned mean log likelihood -2.199453. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4f17680f23db488e9228ebb75962baa9"
+        ],
+        "mutant": "G704S",
+        "rank": 84,
+        "rationale": "Adaptive fallback composite -0.617507 (equal-weight within-set z-scores): ESM-2 delta log probability -8.736736; ESM-IF1 backbone-conditioned mean log likelihood -2.200904. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:3fbf580a3bd84c9bb7404f9f2e6f9892"
+        ],
+        "mutant": "G696H",
+        "rank": 85,
+        "rationale": "Adaptive fallback composite -0.630832 (equal-weight within-set z-scores): ESM-2 delta log probability -1.354573; ESM-IF1 backbone-conditioned mean log likelihood -2.203274. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2ec754170f2c44bba9ca164b6a78a2b9"
+        ],
+        "mutant": "V707N",
+        "rank": 86,
+        "rationale": "Adaptive fallback composite -0.680571 (equal-weight within-set z-scores): ESM-2 delta log probability -11.949078; ESM-IF1 backbone-conditioned mean log likelihood -2.200086. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:0c599ae6e0ce45fb92d3b1f87fbaaf45"
+        ],
+        "mutant": "V711K",
+        "rank": 87,
+        "rationale": "Adaptive fallback composite -0.704262 (equal-weight within-set z-scores): ESM-2 delta log probability -13.095635; ESM-IF1 backbone-conditioned mean log likelihood -2.199798. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:dc40a06b76a446fa8093d6bc0ea410db"
+        ],
+        "mutant": "E682M",
+        "rank": 88,
+        "rationale": "Adaptive fallback composite -0.832144 (equal-weight within-set z-scores): ESM-2 delta log probability -2.121020; ESM-IF1 backbone-conditioned mean log likelihood -2.203655. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:89df136d085244b18b509e8024a406ff"
+        ],
+        "mutant": "I712P",
+        "rank": 89,
+        "rationale": "Adaptive fallback composite -0.854505 (equal-weight within-set z-scores): ESM-2 delta log probability -11.644891; ESM-IF1 backbone-conditioned mean log likelihood -2.200720. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:95897c4adcc94fe08a08fcb67ccfbc4a"
+        ],
+        "mutant": "F690C",
+        "rank": 90,
+        "rationale": "Adaptive fallback composite -0.873084 (equal-weight within-set z-scores): ESM-2 delta log probability -4.665073; ESM-IF1 backbone-conditioned mean log likelihood -2.202979. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f1421c3130c74242afc83ce4d978a6d0"
+        ],
+        "mutant": "V707R",
+        "rank": 91,
+        "rationale": "Adaptive fallback composite -0.918073 (equal-weight within-set z-scores): ESM-2 delta log probability -12.732678; ESM-IF1 backbone-conditioned mean log likelihood -2.200574. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8d5bba0e26aa469a84d0e2cbc7d313de"
+        ],
+        "mutant": "V683W",
+        "rank": 92,
+        "rationale": "Adaptive fallback composite -0.987218 (equal-weight within-set z-scores): ESM-2 delta log probability -4.179550; ESM-IF1 backbone-conditioned mean log likelihood -2.203486. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2b0f661726e84f8da79f655dfe863d6f"
+        ],
+        "mutant": "A713R",
+        "rank": 93,
+        "rationale": "Adaptive fallback composite -1.038324 (equal-weight within-set z-scores): ESM-2 delta log probability -14.698496; ESM-IF1 backbone-conditioned mean log likelihood -2.200326. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4ce7def14d2e49f89304f404a47a4400"
+        ],
+        "mutant": "A713K",
+        "rank": 94,
+        "rationale": "Adaptive fallback composite -1.050206 (equal-weight within-set z-scores): ESM-2 delta log probability -15.138697; ESM-IF1 backbone-conditioned mean log likelihood -2.200224. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7809f7221c704adb81f97cee0260b89f"
+        ],
+        "mutant": "D694W",
+        "rank": 95,
+        "rationale": "Adaptive fallback composite -1.279324 (equal-weight within-set z-scores): ESM-2 delta log probability -6.019323; ESM-IF1 backbone-conditioned mean log likelihood -2.203809. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8cebe4c147ba4eae8a01a6ed01218be2"
+        ],
+        "mutant": "G704K",
+        "rank": 96,
+        "rationale": "Adaptive fallback composite -1.417910 (equal-weight within-set z-scores): ESM-2 delta log probability -15.143507; ESM-IF1 backbone-conditioned mean log likelihood -2.201359. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:0018224a744b4eceb0093baa6e6b5b15"
+        ],
+        "mutant": "G709R",
+        "rank": 97,
+        "rationale": "Adaptive fallback composite -1.502619 (equal-weight within-set z-scores): ESM-2 delta log probability -13.772838; ESM-IF1 backbone-conditioned mean log likelihood -2.202054. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:48545b11870c4216893fced0a30f5426"
+        ],
+        "mutant": "G708C",
+        "rank": 98,
+        "rationale": "Adaptive fallback composite -1.606497 (equal-weight within-set z-scores): ESM-2 delta log probability -3.590133; ESM-IF1 backbone-conditioned mean log likelihood -2.205587. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:c2e6414830924ff58d12cb275986bbe7"
+        ],
+        "mutant": "E674W",
+        "rank": 99,
+        "rationale": "Adaptive fallback composite -1.614774 (equal-weight within-set z-scores): ESM-2 delta log probability -4.835324; ESM-IF1 backbone-conditioned mean log likelihood -2.205220. These are generic plausibility signals, not measured aggregation or stability effects."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:405da5b45c094c9db6740326d13d2d77"
+        ],
+        "mutant": "G704P",
+        "rank": 100,
+        "rationale": "Adaptive fallback composite -2.095605 (equal-weight within-set z-scores): ESM-2 delta log probability -13.466883; ESM-IF1 backbone-conditioned mean log likelihood -2.203985. These are generic plausibility signals, not measured aggregation or stability effects."
+      }
+    ],
+    "rejected": [
+      "F675L",
+      "H677L",
+      "F690V",
+      "M706F",
+      "H677V",
+      "Q686E",
+      "V689K",
+      "R676D",
+      "K699S",
+      "Y681F",
+      "R676K",
+      "K687S",
+      "A692T",
+      "I703T",
+      "R676Q",
+      "A713G",
+      "H685L",
+      "K687T",
+      "V683E",
+      "D678R",
+      "E674S",
+      "Q686R",
+      "Q686D",
+      "L688P",
+      "A701V",
+      "F675P",
+      "D694K",
+      "V707L",
+      "I702A",
+      "F675Y",
+      "K699V",
+      "V695I",
+      "H677Y",
+      "V695H",
+      "K687H",
+      "V683D",
+      "V683F",
+      "V707I",
+      "H685F",
+      "I702F",
+      "E682Q",
+      "E693A",
+      "A701L",
+      "S679I",
+      "V683Q",
+      "A692L",
+      "M706Y",
+      "D694R",
+      "G680K",
+      "G700S",
+      "I702M",
+      "E693V",
+      "S697R",
+      "A701I",
+      "L688Y",
+      "I712Q",
+      "E682I",
+      "E682H",
+      "E674L",
+      "G680I",
+      "V689M",
+      "I702H",
+      "L705Q",
+      "A713I",
+      "S679Y",
+      "V683P",
+      "I712C",
+      "G696V",
+      "Q686P",
+      "L705H",
+      "A713E",
+      "V711D",
+      "I703K",
+      "G704S",
+      "G696H",
+      "V707N",
+      "V711K",
+      "E682M",
+      "I712P",
+      "F690C",
+      "V707R",
+      "V683W",
+      "A713R",
+      "A713K",
+      "D694W",
+      "G704K",
+      "G709R",
+      "G708C",
+      "E674W",
+      "G704P"
+    ],
+    "selected": [
+      "F691D",
+      "F690D",
+      "F690E",
+      "Y681S",
+      "F690N",
+      "M706G",
+      "A692E",
+      "H684G",
+      "F675V",
+      "V695E"
+    ]
+  },
+  "contract_sha256": "72abdcc365b567b96372f536a44681a5b8eb759168fd9fec114b0c07e794abd9",
+  "endpoint_sha256": "e5867f984f085c7e2b05629ffb1f9c50447439b2fcd9b12436b251d9869fd2e8",
+  "item_id": "cmp_002",
+  "validation": {
+    "accepted": true,
+    "answer_sha256": "5ae1e8e3bcf67c4213ee63de7b9624a208a3c0ae3c5973ecfeb2bf840e8a8388",
+    "candidate_count": 100,
+    "contract_sha256": "72abdcc365b567b96372f536a44681a5b8eb759168fd9fec114b0c07e794abd9",
+    "endpoint_sha256": "e5867f984f085c7e2b05629ffb1f9c50447439b2fcd9b12436b251d9869fd2e8",
+    "policy_id": "b4_v3_adaptive_item_bound_endpoint_v1",
+    "ranking_complete": true,
+    "unique_cited_receipts": 100
+  }
+}

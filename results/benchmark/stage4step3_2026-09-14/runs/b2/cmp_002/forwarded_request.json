@@ -1,0 +1,13 @@
+{
+  "model": "Qwen3-30B-A3B-Q4_K_M",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Rank every supplied single-substitution candidate for the declared endpoint. This is a prediction, not a measured assay result. No scientific, filesystem, shell, retrieval, or web tools are available. Use only the endpoint description and candidate notation. Do not imply that you read a sequence, FASTA, PDB, file, tool result, database record, or measured value.\n\nNeutral item: cmp_002\nDeclared label-free endpoint context:\n{\"construct_region\": \"672-713\", \"direction\": \"higher values preferred\", \"functional_class\": \"Stability\", \"label_free\": true, \"measurement_assay\": \"aggregation\", \"mechanistic_limit\": \"generic sequence/backbone plausibility is not a causal assay model\", \"molecule_context\": \"stability assay target\", \"phenotype_field\": \"nscore\", \"selection_method\": \"survival assessment assay\"}\n\nCandidate variants:\nV683F, H677V, I712P, D694R, H685F, S697R, V707L, E693V, M706F, E682H, I712C, F690E, I702A, F691D, G704K, A692L, H685L, Q686D, G700S, K687S, A713G, F675V, V707N, M706G, Q686R, Y681S, S679I, G709R, A713K, I703K, K699S, R676Q, G696V, E682M, D694K, V683Q, E682Q, L688P, G704S, E674W, V695I, I712Q, F690N, I703T, A713I, S679Y, F675P, V707R, R676K, Y681F, G696H, R676D, H677L, E674S, M706Y, L705H, A701I, V695H, V695E, G708C, E682I, H684G, E674L, V711K, A701V, A692T, D694W, V689K, V683D, V683P, K699V, F690D, E693A, V711D, Q686E, L705Q, G680I, G704P, A713R, H677Y, K687H, K687T, Q686P, F690C, V689M, G680K, A713E, I702F, L688Y, V707I, F690V, D678R, I702H, F675Y, V683E, I702M, A692E, A701L, F675L, V683W\n\nReturn one plain JSON object with no Markdown fence or extra text and exactly these keys: item_id, selected, rejected, ranking. Set item_id to cmp_002. selected contains exactly ten unique objects in rank order with exactly the keys rank, mutant, basis, evidence, validation, would_overturn. Ranks are integers 1 through 10. evidence and validation are empty arrays because no tools are available. rejected contains every other candidate exactly once, each as an object with exactly mutant and reason. ranking contains every candidate exactly once in predicted descending order, each with exactly rank, mutant, and a finite numeric score. Ranking ranks are consecutive integers starting at 1; its first ten mutants exactly match selected. Break tied scores by mutant lexicographic order. Never invent an observation, receipt, or assay result.\n"
+    }
+  ],
+  "temperature": 0.2,
+  "seed": 1,
+  "max_tokens": 16384,
+  "stream": false
+}

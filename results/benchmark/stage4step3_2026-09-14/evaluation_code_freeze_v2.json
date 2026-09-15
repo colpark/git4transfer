@@ -1,0 +1,27 @@
+{
+  "files": [
+    {
+      "path": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/stage4step3_finalize.py",
+      "sha256": "f1460d6fee1105e87cb99c7b7d7d54944cf9c564921a2f12c8e9d3c2233a6c8b"
+    },
+    {
+      "path": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/stage3_evaluate.py",
+      "sha256": "723fbf5c03831d470b54fa5d566a7782304e43900a3bed932355084aa56d7b91"
+    },
+    {
+      "path": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/pilot_score.py",
+      "sha256": "24896f361c8de45c19f2d69b99bb897b9b20cdb1735a9bb2489f047177630bcb"
+    },
+    {
+      "path": "/home/aid1/Documents/2_19C_biology/benchmark-mcp/stage4step2e_contract.py",
+      "sha256": "82cdcd7cb887f1baef706f277ac24f498ddb90fd464dd438d110d64cde2ba9e2"
+    },
+    {
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/comparison_10_prereg.md",
+      "sha256": "29ad63c4f3d37f98a22720f5e91896792e8e3f41035f113d2c0368443b00dd49"
+    }
+  ],
+  "labels_opened": false,
+  "reason": "integrity manifest now includes the resume context freeze; metric code and definitions unchanged",
+  "supersedes": "evaluation_code_freeze.json"
+}

@@ -1,0 +1,16 @@
+{
+  "labels_opened": false,
+  "model": "gpt-5.6-sol",
+  "stable_context": {
+    "approval_policy": "never",
+    "base_instructions_sha256": "a91357a1cd2727a0be06d461248d6e3a7274746e38108f548a3adf2cc2430415",
+    "cli_version": "0.154.0",
+    "developer_message_sha256": [
+      "2045f61b378e4830e1e67cbc93d8137c912a1daa4f1aaeb6dd9851d649c65132",
+      "af60719c7b64906bd05733aec72a96726712fe25d382a7bc9e05a6733cfd67dc",
+      "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e"
+    ],
+    "sandbox_type": "read-only"
+  },
+  "trace_sha256": "add946dd58d5748deba6f48b726daf84b08380d2680e6f46ea2ab8daa14a856d"
+}

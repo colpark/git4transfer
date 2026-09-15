@@ -1,0 +1,20 @@
+{
+  "command": [
+    "claude",
+    "-p",
+    "Reply with the single word: ok",
+    "--model",
+    "claude-opus-5",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/empty_mcp.json",
+    "--disallowedTools",
+    "Task,Bash,CronCreate,CronDelete,CronList,DesignSync,Edit,EnterWorktree,ExitWorktree,ListAgents,Monitor,NotebookEdit,PushNotification,Read,RemoteTrigger,ReportFindings,ScheduleWakeup,SendMessage,Skill,TaskOutput,TaskStop,ToolSearch,WebFetch,WebSearch,Workflow,Write,Glob,Grep,ListMcpResourcesTool,ReadMcpResourceDirTool,ReadMcpResourceTool",
+    "--output-format",
+    "stream-json",
+    "--verbose"
+  ],
+  "cwd": "/tmp/b1_stage4step3",
+  "labels_opened": false,
+  "prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

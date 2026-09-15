@@ -1,0 +1,16 @@
+{
+  "checkpoint": "/home/aid1/models/stage3g/Qwen3-30B-A3B-Q4_K_M.gguf",
+  "context": 32768,
+  "host": "192.168.100.11",
+  "quantization": "Q4_K_M",
+  "sensors": {
+    "cpu_zone0_c": 42.5,
+    "cpu_zone4_c": 42.5,
+    "gpu_c": 38.0,
+    "gpu_power_w": 23.74,
+    "gpu_tlimit_margin_c": 57.0,
+    "gpu_util_pct": 91.0,
+    "mem_available_gib": 75.195,
+    "time_unix": 1789471815.4861612
+  }
+}

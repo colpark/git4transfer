@@ -1,0 +1,949 @@
+{
+  "answer": {
+    "method_summary": "Prospective item-bound policy: call score_variant_fm once successfully for every supplied candidate. Rank ESM-2 delta log-probability and IF1 backbone-conditioned mean log-likelihood separately in the higher-is-better direction, then order by their equal-weight mean rank. Trigger an item-bound classical check only for exact FM aggregate ties near the cutoff (FM ranks 7-20) or strong FM disagreement (absolute component-rank gap at least 50); use BLOSUM62 only to break an exact aggregate tie when all tied candidates have that check, then smaller worst component rank and mutant lexicographic order for determinism. The classical checks here are shallow and mostly invariant, so otherwise they are diagnostic only. These are generic sequence/backbone/evolutionary plausibility signals, not measured cDNA-display-proteolysis ddG_ML_float outcomes, and the mechanistic mismatch means the ranking is hypothesis-level rather than a causal stability-assay model.",
+    "policy_id": "b4_v3_adaptive_item_bound_endpoint_v1",
+    "ranking": [
+      {
+        "evidence_call_ids": [
+          "call_id:4a3780e2da9b4e3f8b16879f230ee137"
+        ],
+        "mutant": "A5K",
+        "rank": 1,
+        "rationale": "FM mean-rank 3.5: ESM-2 rank 5 (delta lnP 1.121) and IF1 rank 2 (mean LL -1.2165), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:bd8163fe3f864204aaf50abb5943a51b"
+        ],
+        "mutant": "N45E",
+        "rank": 2,
+        "rationale": "FM mean-rank 6.5: ESM-2 rank 8 (delta lnP 0.736) and IF1 rank 5 (mean LL -1.2398), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a89a22633da94ebda0a5ad724401d59e"
+        ],
+        "mutant": "K23A",
+        "rank": 3,
+        "rationale": "FM mean-rank 10.5: ESM-2 rank 11 (delta lnP 0.551) and IF1 rank 10 (mean LL -1.2561), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7be25bde3a074a6e97c7c8a76c665ad4"
+        ],
+        "mutant": "L40E",
+        "rank": 4,
+        "rationale": "FM mean-rank 11.0: ESM-2 rank 13 (delta lnP 0.447) and IF1 rank 9 (mean LL -1.2542), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1839cb9330424ec8a990a5a3c7928cf0"
+        ],
+        "mutant": "T57A",
+        "rank": 5,
+        "rationale": "FM mean-rank 12.0: ESM-2 rank 4 (delta lnP 1.157) and IF1 rank 20 (mean LL -1.2697), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:dbfd3a02bbb14088938f51a2cd5540d0"
+        ],
+        "mutant": "N45Q",
+        "rank": 6,
+        "rationale": "FM mean-rank 13.0: ESM-2 rank 19 (delta lnP 0.142) and IF1 rank 7 (mean LL -1.2471), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:3c34361944014f7b8b67d95017c5d97c"
+        ],
+        "mutant": "H61S",
+        "rank": 7,
+        "rationale": "FM mean-rank 14.0: ESM-2 rank 24 (delta lnP -0.108) and IF1 rank 4 (mean LL -1.2304), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:617d33c0bcf84108a57a43db32442506"
+        ],
+        "mutant": "E14S",
+        "rank": 8,
+        "rationale": "FM mean-rank 14.5: ESM-2 rank 23 (delta lnP 0.070) and IF1 rank 6 (mean LL -1.2404), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1a835f814cb94509aa122d789317d647"
+        ],
+        "mutant": "K66E",
+        "rank": 9,
+        "rationale": "FM mean-rank 20.5: ESM-2 rank 30 (delta lnP -0.277) and IF1 rank 11 (mean LL -1.2563), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a8606405356a4a199f2568e989645de2",
+          "call_id:e585f2739f6442e2addeeb2214f9849f"
+        ],
+        "mutant": "V8I",
+        "rank": 10,
+        "rationale": "FM mean-rank 21.5: ESM-2 rank 31 (delta lnP -0.320) and IF1 rank 12 (mean LL -1.2591), all higher-is-better. Adaptive classical check: BLOSUM62 3; used only for an exact FM tie, otherwise diagnostic."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4a4a465f5c32407ab6c7ff2b2bd0ed4e",
+          "call_id:c6378e677a06453292d26aaee3867b51"
+        ],
+        "mutant": "A47S",
+        "rank": 11,
+        "rationale": "FM mean-rank 21.5: ESM-2 rank 29 (delta lnP -0.227) and IF1 rank 14 (mean LL -1.2632), all higher-is-better. Adaptive classical check: BLOSUM62 1; used only for an exact FM tie, otherwise diagnostic."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:d139af572842454791605eca4cd3bee2",
+          "call_id:d2133f64f4a34903a1f4fb38506da67f"
+        ],
+        "mutant": "L40V",
+        "rank": 12,
+        "rationale": "FM mean-rank 22.5: ESM-2 rank 20 (delta lnP 0.137) and IF1 rank 25 (mean LL -1.2739), all higher-is-better. Adaptive classical check: BLOSUM62 1; used only for an exact FM tie, otherwise diagnostic."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:78c44ed09a214e779e01e28c2ed823cf",
+          "call_id:156132787d16432d9bc9483adf4b4681"
+        ],
+        "mutant": "H54R",
+        "rank": 13,
+        "rationale": "FM mean-rank 22.5: ESM-2 rank 10 (delta lnP 0.573) and IF1 rank 35 (mean LL -1.2854), all higher-is-better. Adaptive classical check: BLOSUM62 0; used only for an exact FM tie, otherwise diagnostic."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e827e3ea679f4f298d41fa3a2b44989c",
+          "call_id:72d1e439da2649f590d9d1be26cdf038"
+        ],
+        "mutant": "S30H",
+        "rank": 14,
+        "rationale": "FM mean-rank 22.5: ESM-2 rank 3 (delta lnP 1.498) and IF1 rank 42 (mean LL -1.3024), all higher-is-better. Adaptive classical check: BLOSUM62 -1; used only for an exact FM tie, otherwise diagnostic."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ab850ebc801b4c79bab62d315d2a97f1"
+        ],
+        "mutant": "T57D",
+        "rank": 15,
+        "rationale": "FM mean-rank 23.0: ESM-2 rank 15 (delta lnP 0.411) and IF1 rank 31 (mean LL -1.2813), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b22660a9e9074f96bd931cc25139dd57"
+        ],
+        "mutant": "L16I",
+        "rank": 16,
+        "rationale": "FM mean-rank 23.5: ESM-2 rank 18 (delta lnP 0.252) and IF1 rank 29 (mean LL -1.2790), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:00a36c31fe964bbfa7d6a6fc1a8082e5",
+          "call_id:1d5839b0ffe6478381b3aaf8bce69f42"
+        ],
+        "mutant": "E14Q",
+        "rank": 17,
+        "rationale": "FM mean-rank 24.0: ESM-2 rank 35 (delta lnP -0.506) and IF1 rank 13 (mean LL -1.2608), all higher-is-better. Adaptive classical check: BLOSUM62 2; used only for an exact FM tie, otherwise diagnostic."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:278d0ff740bf4c18b0c961b798994704",
+          "call_id:e236d5edd1914f73b7c713d6d1e50399"
+        ],
+        "mutant": "E14G",
+        "rank": 18,
+        "rationale": "FM mean-rank 24.0: ESM-2 rank 26 (delta lnP -0.181) and IF1 rank 22 (mean LL -1.2722), all higher-is-better. Adaptive classical check: BLOSUM62 -2; used only for an exact FM tie, otherwise diagnostic."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:88b16894ceca45d2b7303dcc35348e7b",
+          "call_id:a1af0efa99d346789e45ad1cff176603"
+        ],
+        "mutant": "S30L",
+        "rank": 19,
+        "rationale": "FM mean-rank 24.0: ESM-2 rank 1 (delta lnP 3.029) and IF1 rank 47 (mean LL -1.3064), all higher-is-better. Adaptive classical check: BLOSUM62 -2; used only for an exact FM tie, otherwise diagnostic."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:5f91fe8b20584411836e00977efa097a"
+        ],
+        "mutant": "V56L",
+        "rank": 20,
+        "rationale": "FM mean-rank 25.0: ESM-2 rank 16 (delta lnP 0.407) and IF1 rank 34 (mean LL -1.2839), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f41fa1f326f04b38987339cbbeef2b02"
+        ],
+        "mutant": "R4E",
+        "rank": 21,
+        "rationale": "FM mean-rank 25.5: ESM-2 rank 14 (delta lnP 0.430) and IF1 rank 37 (mean LL -1.2903), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1973a257f5204101ac0de21f7f30fb64"
+        ],
+        "mutant": "K44G",
+        "rank": 22,
+        "rationale": "FM mean-rank 27.0: ESM-2 rank 38 (delta lnP -0.558) and IF1 rank 16 (mean LL -1.2665), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8cb5da421db84dfeb304bcfaf45a6fe6"
+        ],
+        "mutant": "H28K",
+        "rank": 23,
+        "rationale": "FM mean-rank 29.5: ESM-2 rank 21 (delta lnP 0.128) and IF1 rank 38 (mean LL -1.2939), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b2a6cce825cd4c128f462df107850b48"
+        ],
+        "mutant": "R4P",
+        "rank": 24,
+        "rationale": "FM mean-rank 29.5: ESM-2 rank 9 (delta lnP 0.695) and IF1 rank 50 (mean LL -1.3151), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4f0d0a0440754ce2875308ea0b685ed7"
+        ],
+        "mutant": "E64L",
+        "rank": 25,
+        "rationale": "FM mean-rank 30.5: ESM-2 rank 46 (delta lnP -1.010) and IF1 rank 15 (mean LL -1.2649), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4e31fc181c0f4de09f295e94a86f85b7"
+        ],
+        "mutant": "K38R",
+        "rank": 26,
+        "rationale": "FM mean-rank 30.5: ESM-2 rank 53 (delta lnP -1.231) and IF1 rank 8 (mean LL -1.2520), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f9977d734b934ef8b5895a57d955b024",
+          "call_id:5e016333467f42d0be1aa64f01fee7ba"
+        ],
+        "mutant": "V8D",
+        "rank": 27,
+        "rationale": "FM mean-rank 31.0: ESM-2 rank 61 (delta lnP -1.470) and IF1 rank 1 (mean LL -1.2113), all higher-is-better. Adaptive classical check: BLOSUM62 -3; used only for an exact FM tie, otherwise diagnostic."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1ced842973c54838b38b4344e04670ae"
+        ],
+        "mutant": "S30T",
+        "rank": 28,
+        "rationale": "FM mean-rank 32.0: ESM-2 rank 45 (delta lnP -0.924) and IF1 rank 19 (mean LL -1.2694), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b9f1f7bd5dd34d42bd1d715327475e70"
+        ],
+        "mutant": "Q15F",
+        "rank": 29,
+        "rationale": "FM mean-rank 33.0: ESM-2 rank 33 (delta lnP -0.444) and IF1 rank 33 (mean LL -1.2837), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:3cc1a8af11634e958dc922249ecf89f1"
+        ],
+        "mutant": "D20V",
+        "rank": 30,
+        "rationale": "FM mean-rank 36.5: ESM-2 rank 55 (delta lnP -1.283) and IF1 rank 18 (mean LL -1.2693), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b015da730f94407f807fbb8f96012544"
+        ],
+        "mutant": "N51V",
+        "rank": 31,
+        "rationale": "FM mean-rank 37.0: ESM-2 rank 48 (delta lnP -1.013) and IF1 rank 26 (mean LL -1.2756), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:88b310301c5a4c97929de1addb75d3b7"
+        ],
+        "mutant": "H28Y",
+        "rank": 32,
+        "rationale": "FM mean-rank 37.0: ESM-2 rank 51 (delta lnP -1.091) and IF1 rank 23 (mean LL -1.2727), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f50fd69586b449459c689bfd424d29cc"
+        ],
+        "mutant": "Q3M",
+        "rank": 33,
+        "rationale": "FM mean-rank 39.5: ESM-2 rank 49 (delta lnP -1.039) and IF1 rank 30 (mean LL -1.2812), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:bb7e8b30e2eb42b2a00a1e911f1d13aa",
+          "call_id:7c564107fb584bb48e5ecbaafa82f17a"
+        ],
+        "mutant": "I43G",
+        "rank": 34,
+        "rationale": "FM mean-rank 40.5: ESM-2 rank 2 (delta lnP 2.152) and IF1 rank 79 (mean LL -1.3904), all higher-is-better. Adaptive classical check: BLOSUM62 -4; used only for an exact FM tie, otherwise diagnostic."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:c6ce71cf739b410b95a26d467d3d5de5"
+        ],
+        "mutant": "R4L",
+        "rank": 35,
+        "rationale": "FM mean-rank 41.0: ESM-2 rank 25 (delta lnP -0.125) and IF1 rank 57 (mean LL -1.3221), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8b6b7b950bfd47e3bb38960686718045"
+        ],
+        "mutant": "V56K",
+        "rank": 36,
+        "rationale": "FM mean-rank 41.5: ESM-2 rank 40 (delta lnP -0.587) and IF1 rank 43 (mean LL -1.3028), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:647f7f4de46b4176aa130eda1771db87"
+        ],
+        "mutant": "K52A",
+        "rank": 37,
+        "rationale": "FM mean-rank 41.5: ESM-2 rank 27 (delta lnP -0.196) and IF1 rank 56 (mean LL -1.3205), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:de691898f5e348b289d1f3f21c05b759",
+          "call_id:09c809aed32a4ce08299f0e3f395bd09"
+        ],
+        "mutant": "E36T",
+        "rank": 38,
+        "rationale": "FM mean-rank 42.0: ESM-2 rank 67 (delta lnP -1.654) and IF1 rank 17 (mean LL -1.2684), all higher-is-better. Adaptive classical check: BLOSUM62 -1; used only for an exact FM tie, otherwise diagnostic."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:98eb3b5285bd449bace4f5c6e9331782",
+          "call_id:7a27b2f3d89b49ac8e8b2d9d4e05932a"
+        ],
+        "mutant": "V8N",
+        "rank": 39,
+        "rationale": "FM mean-rank 42.5: ESM-2 rank 82 (delta lnP -2.401) and IF1 rank 3 (mean LL -1.2282), all higher-is-better. Adaptive classical check: BLOSUM62 -3; used only for an exact FM tie, otherwise diagnostic."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f9c50d5c6d2343c5bb1181a92c025e49"
+        ],
+        "mutant": "E27T",
+        "rank": 40,
+        "rationale": "FM mean-rank 43.5: ESM-2 rank 59 (delta lnP -1.460) and IF1 rank 28 (mean LL -1.2781), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:77ccccb44d5e4958aed272279b39383e",
+          "call_id:297c9159ee93407c94dfe7b28a043a6c"
+        ],
+        "mutant": "W6R",
+        "rank": 41,
+        "rationale": "FM mean-rank 43.5: ESM-2 rank 6 (delta lnP 0.994) and IF1 rank 81 (mean LL -1.3936), all higher-is-better. Adaptive classical check: BLOSUM62 -3; used only for an exact FM tie, otherwise diagnostic."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2f5b0b61f59a4e6ab7c28953ea0a6150"
+        ],
+        "mutant": "I21L",
+        "rank": 42,
+        "rationale": "FM mean-rank 44.0: ESM-2 rank 22 (delta lnP 0.091) and IF1 rank 66 (mean LL -1.3445), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:490255346367455287a7d7b0a0a041cf"
+        ],
+        "mutant": "T49H",
+        "rank": 43,
+        "rationale": "FM mean-rank 44.5: ESM-2 rank 43 (delta lnP -0.674) and IF1 rank 46 (mean LL -1.3062), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:938a948977e1458fadb9eb902f0ca89a"
+        ],
+        "mutant": "T49Y",
+        "rank": 44,
+        "rationale": "FM mean-rank 45.0: ESM-2 rank 39 (delta lnP -0.572) and IF1 rank 51 (mean LL -1.3163), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:6ebdb4be40f84e36bb2104c4e663b74c"
+        ],
+        "mutant": "K18D",
+        "rank": 45,
+        "rationale": "FM mean-rank 45.0: ESM-2 rank 54 (delta lnP -1.262) and IF1 rank 36 (mean LL -1.2879), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ab7e0e1907da4fb18fda4b57ae94c410",
+          "call_id:5e5ca22a4a834bfa9d2baadca5778aaa"
+        ],
+        "mutant": "W6A",
+        "rank": 46,
+        "rationale": "FM mean-rank 45.0: ESM-2 rank 12 (delta lnP 0.448) and IF1 rank 78 (mean LL -1.3777), all higher-is-better. Adaptive classical check: BLOSUM62 -3; used only for an exact FM tie, otherwise diagnostic."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:68c6b4aa01614aeba2d9ac4394a23e9d"
+        ],
+        "mutant": "K44F",
+        "rank": 47,
+        "rationale": "FM mean-rank 46.0: ESM-2 rank 60 (delta lnP -1.463) and IF1 rank 32 (mean LL -1.2829), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2118d173053a48c6b3b2e0668820fbe1",
+          "call_id:0a3b564da9cd4125af0b7c9255caa0fb"
+        ],
+        "mutant": "W6M",
+        "rank": 48,
+        "rationale": "FM mean-rank 48.5: ESM-2 rank 7 (delta lnP 0.763) and IF1 rank 90 (mean LL -1.4148), all higher-is-better. Adaptive classical check: BLOSUM62 -1; used only for an exact FM tie, otherwise diagnostic."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:3cf7a34a0b994c13895ec510c46978ac"
+        ],
+        "mutant": "D53M",
+        "rank": 49,
+        "rationale": "FM mean-rank 50.0: ESM-2 rank 73 (delta lnP -1.856) and IF1 rank 27 (mean LL -1.2767), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8413577112a841329d8b055b13a502cb"
+        ],
+        "mutant": "F33Y",
+        "rank": 50,
+        "rationale": "FM mean-rank 50.5: ESM-2 rank 41 (delta lnP -0.603) and IF1 rank 60 (mean LL -1.3318), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2a907ad0f6894483989a35a17b536961"
+        ],
+        "mutant": "Q10A",
+        "rank": 51,
+        "rationale": "FM mean-rank 51.5: ESM-2 rank 44 (delta lnP -0.743) and IF1 rank 59 (mean LL -1.3255), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:aa64d73cd0274c68aee39e458e5387b0",
+          "call_id:4a8d58c467844584904fc9ade025d04c"
+        ],
+        "mutant": "W6Q",
+        "rank": 52,
+        "rationale": "FM mean-rank 51.5: ESM-2 rank 17 (delta lnP 0.315) and IF1 rank 86 (mean LL -1.4089), all higher-is-better. Adaptive classical check: BLOSUM62 -2; used only for an exact FM tie, otherwise diagnostic."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4c8d6c1dea734cbaadd3a6415665a8e5"
+        ],
+        "mutant": "E14W",
+        "rank": 53,
+        "rationale": "FM mean-rank 52.0: ESM-2 rank 64 (delta lnP -1.572) and IF1 rank 40 (mean LL -1.3003), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:634d588cd6b947e9a6a21617683392f3"
+        ],
+        "mutant": "K23G",
+        "rank": 54,
+        "rationale": "FM mean-rank 53.0: ESM-2 rank 58 (delta lnP -1.426) and IF1 rank 48 (mean LL -1.3078), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:259ad92ea95e4ccfa57e06ceb818a534"
+        ],
+        "mutant": "K19L",
+        "rank": 55,
+        "rationale": "FM mean-rank 53.5: ESM-2 rank 63 (delta lnP -1.555) and IF1 rank 44 (mean LL -1.3029), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:cc59b9efee6d4cca85ea768c52bbc8ef"
+        ],
+        "mutant": "V46K",
+        "rank": 56,
+        "rationale": "FM mean-rank 53.5: ESM-2 rank 42 (delta lnP -0.650) and IF1 rank 65 (mean LL -1.3414), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a869ee1059ea4618acc8e532c45a550e",
+          "call_id:5ef8ccc9a82a4a268862106e07dda75f"
+        ],
+        "mutant": "H61C",
+        "rank": 57,
+        "rationale": "FM mean-rank 53.5: ESM-2 rank 83 (delta lnP -2.497) and IF1 rank 24 (mean LL -1.2739), all higher-is-better. Adaptive classical check: BLOSUM62 -3; used only for an exact FM tie, otherwise diagnostic."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:66098abb0a51445a9fc3171bf37bb2f9"
+        ],
+        "mutant": "K18T",
+        "rank": 58,
+        "rationale": "FM mean-rank 55.5: ESM-2 rank 47 (delta lnP -1.011) and IF1 rank 64 (mean LL -1.3413), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:0559096d88d54c008d21c42f1d49f60b",
+          "call_id:499fcc4afa1349d78dcf5807f028cfe1"
+        ],
+        "mutant": "E36F",
+        "rank": 59,
+        "rationale": "FM mean-rank 56.0: ESM-2 rank 91 (delta lnP -3.099) and IF1 rank 21 (mean LL -1.2712), all higher-is-better. Adaptive classical check: BLOSUM62 -3; used only for an exact FM tie, otherwise diagnostic."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1d847e4544c54c25adc25d58658e61c5",
+          "call_id:3164dc59d2bf4617ae88fa745c2de124"
+        ],
+        "mutant": "Q26L",
+        "rank": 60,
+        "rationale": "FM mean-rank 57.5: ESM-2 rank 28 (delta lnP -0.202) and IF1 rank 87 (mean LL -1.4101), all higher-is-better. Adaptive classical check: BLOSUM62 -2; used only for an exact FM tie, otherwise diagnostic."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a8360bfba90648b8b91eb01734d8ed98"
+        ],
+        "mutant": "H28C",
+        "rank": 61,
+        "rationale": "FM mean-rank 59.0: ESM-2 rank 66 (delta lnP -1.620) and IF1 rank 52 (mean LL -1.3170), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:9bd1d6d85eb741ef92cb919d7d92382f"
+        ],
+        "mutant": "N60H",
+        "rank": 62,
+        "rationale": "FM mean-rank 59.0: ESM-2 rank 79 (delta lnP -2.239) and IF1 rank 39 (mean LL -1.3000), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:cc37789f2d7d422c916dd100dc0f3b2f"
+        ],
+        "mutant": "V46R",
+        "rank": 63,
+        "rationale": "FM mean-rank 61.0: ESM-2 rank 68 (delta lnP -1.657) and IF1 rank 54 (mean LL -1.3185), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f4b7d6e8209649a4acf37bc0f12393e3",
+          "call_id:29d91e32797c4097b5da988a536fd8b2"
+        ],
+        "mutant": "F63N",
+        "rank": 64,
+        "rationale": "FM mean-rank 61.5: ESM-2 rank 32 (delta lnP -0.376) and IF1 rank 91 (mean LL -1.4167), all higher-is-better. Adaptive classical check: BLOSUM62 -3; used only for an exact FM tie, otherwise diagnostic."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:6be7157e7d5145f786a80ee5219047b1"
+        ],
+        "mutant": "K52H",
+        "rank": 65,
+        "rationale": "FM mean-rank 62.5: ESM-2 rank 52 (delta lnP -1.094) and IF1 rank 73 (mean LL -1.3606), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a1a14a97e2ba427b886318511dc63a90"
+        ],
+        "mutant": "A50F",
+        "rank": 66,
+        "rationale": "FM mean-rank 65.0: ESM-2 rank 56 (delta lnP -1.372) and IF1 rank 74 (mean LL -1.3620), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f8384708f0d04d6fa4c2889372674347"
+        ],
+        "mutant": "E36V",
+        "rank": 67,
+        "rationale": "FM mean-rank 65.0: ESM-2 rank 85 (delta lnP -2.634) and IF1 rank 45 (mean LL -1.3050), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:02fe8c327e3d4c0cb803e07fab71e464",
+          "call_id:3b290153a2a74d9aa545d75d7e472dde"
+        ],
+        "mutant": "G29S",
+        "rank": 68,
+        "rationale": "FM mean-rank 65.0: ESM-2 rank 36 (delta lnP -0.518) and IF1 rank 94 (mean LL -1.4257), all higher-is-better. Adaptive classical check: BLOSUM62 0; used only for an exact FM tie, otherwise diagnostic."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:17c48393215e48389ccbc917ab6a6526",
+          "call_id:ec888dd5f94f4f74a0272f69b629a3d4"
+        ],
+        "mutant": "F63C",
+        "rank": 69,
+        "rationale": "FM mean-rank 65.0: ESM-2 rank 37 (delta lnP -0.533) and IF1 rank 93 (mean LL -1.4237), all higher-is-better. Adaptive classical check: BLOSUM62 -2; used only for an exact FM tie, otherwise diagnostic."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:069c58f99a4e4adaa25172367a1dc3d3"
+        ],
+        "mutant": "L34A",
+        "rank": 70,
+        "rationale": "FM mean-rank 66.0: ESM-2 rank 62 (delta lnP -1.483) and IF1 rank 70 (mean LL -1.3526), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b89d1ecbaae54244bf55e37dd6527729"
+        ],
+        "mutant": "L11A",
+        "rank": 71,
+        "rationale": "FM mean-rank 66.5: ESM-2 rank 50 (delta lnP -1.043) and IF1 rank 83 (mean LL -1.3967), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:63a3b87283ab4387846db546f3c37a06",
+          "call_id:ea918e1b512a4da4a27890b07fc447f1"
+        ],
+        "mutant": "G29N",
+        "rank": 72,
+        "rationale": "FM mean-rank 66.5: ESM-2 rank 34 (delta lnP -0.460) and IF1 rank 99 (mean LL -1.5170), all higher-is-better. Adaptive classical check: BLOSUM62 0; used only for an exact FM tie, otherwise diagnostic."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:0b5a67ca03d049bea07af1135e56a7b7",
+          "call_id:a556bb18b7394adc8de4d30e5f75fdc2"
+        ],
+        "mutant": "K23W",
+        "rank": 73,
+        "rationale": "FM mean-rank 67.0: ESM-2 rank 93 (delta lnP -3.218) and IF1 rank 41 (mean LL -1.3010), all higher-is-better. Adaptive classical check: BLOSUM62 -3; used only for an exact FM tie, otherwise diagnostic."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:279da9a3fab64f7b99f9e69556912e6d"
+        ],
+        "mutant": "N60F",
+        "rank": 74,
+        "rationale": "FM mean-rank 67.5: ESM-2 rank 77 (delta lnP -2.091) and IF1 rank 58 (mean LL -1.3248), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:403bbe2b2e2b490db3d58fffc1e6bcee"
+        ],
+        "mutant": "A50H",
+        "rank": 75,
+        "rationale": "FM mean-rank 67.5: ESM-2 rank 86 (delta lnP -2.756) and IF1 rank 49 (mean LL -1.3121), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a43d958da85643399a907429cbfcb028"
+        ],
+        "mutant": "L55A",
+        "rank": 76,
+        "rationale": "FM mean-rank 68.5: ESM-2 rank 57 (delta lnP -1.406) and IF1 rank 80 (mean LL -1.3931), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:59c5f7ebe1bb4ac5a500d56b04b30cee"
+        ],
+        "mutant": "H54C",
+        "rank": 77,
+        "rationale": "FM mean-rank 69.5: ESM-2 rank 78 (delta lnP -2.116) and IF1 rank 61 (mean LL -1.3319), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:fbca3a835d3449b7a4b95eecb65e19d1"
+        ],
+        "mutant": "Q10H",
+        "rank": 78,
+        "rationale": "FM mean-rank 72.5: ESM-2 rank 69 (delta lnP -1.673) and IF1 rank 76 (mean LL -1.3656), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:332801419ae243049f42bdc57f5c2308"
+        ],
+        "mutant": "N60G",
+        "rank": 79,
+        "rationale": "FM mean-rank 72.5: ESM-2 rank 90 (delta lnP -3.027) and IF1 rank 55 (mean LL -1.3199), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:c68d2570b5474c7586dae64e8d69451c"
+        ],
+        "mutant": "K66W",
+        "rank": 80,
+        "rationale": "FM mean-rank 73.5: ESM-2 rank 80 (delta lnP -2.282) and IF1 rank 67 (mean LL -1.3449), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ec846164fe51479db4711a292e61414c"
+        ],
+        "mutant": "N45W",
+        "rank": 81,
+        "rationale": "FM mean-rank 73.5: ESM-2 rank 94 (delta lnP -3.579) and IF1 rank 53 (mean LL -1.3178), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:afee19df1ec34a5b8d6a4aa44abe1bcb"
+        ],
+        "mutant": "L11M",
+        "rank": 82,
+        "rationale": "FM mean-rank 74.5: ESM-2 rank 74 (delta lnP -1.874) and IF1 rank 75 (mean LL -1.3630), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a6918623d7a04a52a2f11a39fe3e3706"
+        ],
+        "mutant": "V56N",
+        "rank": 83,
+        "rationale": "FM mean-rank 74.5: ESM-2 rank 72 (delta lnP -1.852) and IF1 rank 77 (mean LL -1.3671), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:16cc0fe5044b40d9aa8c0866d7ea6104"
+        ],
+        "mutant": "F33H",
+        "rank": 84,
+        "rationale": "FM mean-rank 76.0: ESM-2 rank 81 (delta lnP -2.388) and IF1 rank 71 (mean LL -1.3541), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:6281961f7e904040bc6f8db08c0d1914"
+        ],
+        "mutant": "L34R",
+        "rank": 85,
+        "rationale": "FM mean-rank 76.5: ESM-2 rank 84 (delta lnP -2.600) and IF1 rank 69 (mean LL -1.3490), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:5349ee3d61fa42388e1dc8a5dc3cf074"
+        ],
+        "mutant": "T7I",
+        "rank": 86,
+        "rationale": "FM mean-rank 77.0: ESM-2 rank 65 (delta lnP -1.578) and IF1 rank 89 (mean LL -1.4109), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e3059a1ecfdc46019118d18ff8b9bc94"
+        ],
+        "mutant": "V56D",
+        "rank": 87,
+        "rationale": "FM mean-rank 78.5: ESM-2 rank 75 (delta lnP -1.947) and IF1 rank 82 (mean LL -1.3953), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b7c5a3e5a31b4dae894772043d926700"
+        ],
+        "mutant": "P17C",
+        "rank": 88,
+        "rationale": "FM mean-rank 80.5: ESM-2 rank 76 (delta lnP -2.051) and IF1 rank 85 (mean LL -1.4002), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:624fadba5e8440259af62f4063e63fa0"
+        ],
+        "mutant": "L39Y",
+        "rank": 89,
+        "rationale": "FM mean-rank 81.0: ESM-2 rank 70 (delta lnP -1.695) and IF1 rank 92 (mean LL -1.4197), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ea533be671924f6abd1d647f04fb337d"
+        ],
+        "mutant": "K38W",
+        "rank": 90,
+        "rationale": "FM mean-rank 81.0: ESM-2 rank 99 (delta lnP -4.023) and IF1 rank 63 (mean LL -1.3385), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ca794e258f514adcb745edbf6dd505df"
+        ],
+        "mutant": "E9I",
+        "rank": 91,
+        "rationale": "FM mean-rank 81.0: ESM-2 rank 100 (delta lnP -4.330) and IF1 rank 62 (mean LL -1.3360), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b3134f6278eb4810a3e1baabbb69e22c"
+        ],
+        "mutant": "F24D",
+        "rank": 92,
+        "rationale": "FM mean-rank 81.5: ESM-2 rank 95 (delta lnP -3.635) and IF1 rank 68 (mean LL -1.3483), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:6ca46c8077bd475884ac2c04828cf5ed"
+        ],
+        "mutant": "A58R",
+        "rank": 93,
+        "rationale": "FM mean-rank 84.5: ESM-2 rank 71 (delta lnP -1.781) and IF1 rank 98 (mean LL -1.4730), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b3d3b56f4439417fb96a5cda4806b108"
+        ],
+        "mutant": "N60W",
+        "rank": 94,
+        "rationale": "FM mean-rank 85.0: ESM-2 rank 98 (delta lnP -3.989) and IF1 rank 72 (mean LL -1.3547), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:68bff753dbd3473798ffad129fd00e16"
+        ],
+        "mutant": "E9P",
+        "rank": 95,
+        "rationale": "FM mean-rank 88.0: ESM-2 rank 92 (delta lnP -3.212) and IF1 rank 84 (mean LL -1.3973), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:31813f35318748ba97e04f57a4605b76"
+        ],
+        "mutant": "L11W",
+        "rank": 96,
+        "rationale": "FM mean-rank 91.0: ESM-2 rank 87 (delta lnP -2.791) and IF1 rank 95 (mean LL -1.4440), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:40293fff5fee4ff092926537ea3d1674"
+        ],
+        "mutant": "T7H",
+        "rank": 97,
+        "rationale": "FM mean-rank 92.0: ESM-2 rank 96 (delta lnP -3.861) and IF1 rank 88 (mean LL -1.4104), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:0773fae1f5f647008fe9bd71623d9a67"
+        ],
+        "mutant": "Q26W",
+        "rank": 98,
+        "rationale": "FM mean-rank 92.5: ESM-2 rank 89 (delta lnP -2.888) and IF1 rank 96 (mean LL -1.4545), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:02ace0e06d03408aaf255b5ac65832fb"
+        ],
+        "mutant": "L62G",
+        "rank": 99,
+        "rationale": "FM mean-rank 92.5: ESM-2 rank 88 (delta lnP -2.801) and IF1 rank 97 (mean LL -1.4663), all higher-is-better."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:31dbe31b34474178b8179a8da7e61160"
+        ],
+        "mutant": "G41C",
+        "rank": 100,
+        "rationale": "FM mean-rank 98.5: ESM-2 rank 97 (delta lnP -3.941) and IF1 rank 100 (mean LL -1.5297), all higher-is-better."
+      }
+    ],
+    "rejected": [
+      "A47S",
+      "L40V",
+      "H54R",
+      "S30H",
+      "T57D",
+      "L16I",
+      "E14Q",
+      "E14G",
+      "S30L",
+      "V56L",
+      "R4E",
+      "K44G",
+      "H28K",
+      "R4P",
+      "E64L",
+      "K38R",
+      "V8D",
+      "S30T",
+      "Q15F",
+      "D20V",
+      "N51V",
+      "H28Y",
+      "Q3M",
+      "I43G",
+      "R4L",
+      "V56K",
+      "K52A",
+      "E36T",
+      "V8N",
+      "E27T",
+      "W6R",
+      "I21L",
+      "T49H",
+      "T49Y",
+      "K18D",
+      "W6A",
+      "K44F",
+      "W6M",
+      "D53M",
+      "F33Y",
+      "Q10A",
+      "W6Q",
+      "E14W",
+      "K23G",
+      "K19L",
+      "V46K",
+      "H61C",
+      "K18T",
+      "E36F",
+      "Q26L",
+      "H28C",
+      "N60H",
+      "V46R",
+      "F63N",
+      "K52H",
+      "A50F",
+      "E36V",
+      "G29S",
+      "F63C",
+      "L34A",
+      "L11A",
+      "G29N",
+      "K23W",
+      "N60F",
+      "A50H",
+      "L55A",
+      "H54C",
+      "Q10H",
+      "N60G",
+      "K66W",
+      "N45W",
+      "L11M",
+      "V56N",
+      "F33H",
+      "L34R",
+      "T7I",
+      "V56D",
+      "P17C",
+      "L39Y",
+      "K38W",
+      "E9I",
+      "F24D",
+      "A58R",
+      "N60W",
+      "E9P",
+      "L11W",
+      "T7H",
+      "Q26W",
+      "L62G",
+      "G41C"
+    ],
+    "selected": [
+      "A5K",
+      "N45E",
+      "K23A",
+      "L40E",
+      "T57A",
+      "N45Q",
+      "H61S",
+      "E14S",
+      "K66E",
+      "V8I"
+    ]
+  },
+  "contract_sha256": "b7f52bb42552ec5f06fb3e72423ae87f9d0d3cb37dc235ad17bd29af46304039",
+  "endpoint_sha256": "526e803bfeb7531499f3e98ef48a9e1507cf31b6610e2f0a6703e9124c95fa6e",
+  "item_id": "cmp_007",
+  "validation": {
+    "accepted": true,
+    "answer_sha256": "4908d235ef789ccf708f8e27c88a124138e1e5a233205dd13a06c90cf15c4b5d",
+    "candidate_count": 100,
+    "contract_sha256": "b7f52bb42552ec5f06fb3e72423ae87f9d0d3cb37dc235ad17bd29af46304039",
+    "endpoint_sha256": "526e803bfeb7531499f3e98ef48a9e1507cf31b6610e2f0a6703e9124c95fa6e",
+    "policy_id": "b4_v3_adaptive_item_bound_endpoint_v1",
+    "ranking_complete": true,
+    "unique_cited_receipts": 124
+  }
+}

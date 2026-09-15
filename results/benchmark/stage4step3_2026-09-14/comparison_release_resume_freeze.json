@@ -1,0 +1,10 @@
+{
+  "b4_comparison_items_started_before_amendment": 0,
+  "frozen_at_utc": "2026-09-15T11:30:13.128010+00:00",
+  "labels_opened": false,
+  "original_release_freeze_sha256": "cd410e874d13bb16390c4a2d49e15a5177c7a956845318ef437d8920d7ce7149",
+  "reason": "execution resumed on 2026-09-15 before any B4 comparison item or label opening",
+  "release_requirements_sha256": "c8e67521c2693feee0a7fa03f1c4507aebd32733aecbe98342fa0f08b6bc7922",
+  "resume_context_calibration_sha256": "1089f02f19993c4242f742b396e0c8fe0b0ca3c5616fb0649530ac533e523565",
+  "supervisor_sha256": "346c5dfcf2a806ef9b40838e0670cdeea09db1bdd322ee14a7f8c81336d51ce8"
+}

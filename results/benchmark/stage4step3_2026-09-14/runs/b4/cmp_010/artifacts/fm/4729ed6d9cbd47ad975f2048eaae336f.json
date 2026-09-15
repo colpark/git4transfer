@@ -1,0 +1,49 @@
+{
+  "args": {
+    "chain": "A",
+    "contract_sha256": "7df7631632da32d5a1dd93a4b82ff5e985973ca9d5877dde646efdc927be26f1",
+    "pdb_sha256": "3412b0cff27bedb1c07e227b157d3ca606e461caa686fb02939703a13209cb9b",
+    "sequence_sha256": "98af4350fbb819c7ff347e0a3d2cef6e324feb76ec19f8a98231519888ff80f2",
+    "variant": "N36R"
+  },
+  "error": null,
+  "receipt": {
+    "args_hash": "ce13813e291dad640440b4c52a2fc83b0288bb1fffac94c9eb12b615dbc0dc9f",
+    "artifact_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_010/artifacts/fm/4729ed6d9cbd47ad975f2048eaae336f.json",
+    "cache_hit": false,
+    "call_id": "call_id:4729ed6d9cbd47ad975f2048eaae336f",
+    "runtime_s": 6.999451,
+    "tool": "score_variant_fm"
+  },
+  "result": {
+    "esm2": {
+      "delta_log_probability": -5.647264868021011,
+      "device": "cpu",
+      "method": "ESM2_single_position_masked_marginal_natural_log",
+      "model": "facebook/esm2_t33_650M_UR50D",
+      "mutant": "R",
+      "mutant_log_probability": -5.806989669799805,
+      "position": 36,
+      "precision": "float32",
+      "revision": "08e4846e537177426273712802403f7ba8261b6c",
+      "wt": "N",
+      "wt_log_probability": -0.15972480177879333
+    },
+    "esm_if": {
+      "backbone_length": 50,
+      "cache_namespace": "b4v3_item-bound_esm2-08e4846e_if1-be4ba36e",
+      "chain": "A",
+      "checkpoint_sha256": "be4ba36edec22a9bfaa4946ff6b2815f1f19d8a3d7e0eada8b796d5a0eae9fd4",
+      "device": "cpu",
+      "interpretation": "backbone-conditioned sequence score; not a measured stability effect",
+      "mean_log_likelihood": -1.1798310089111328,
+      "mean_log_likelihood_with_coords": -1.1798310089111328,
+      "model": "esm_if1_gvp4_t16_142M_UR50",
+      "native_sequence_match": false,
+      "pdb_path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/inputs/cmp_010/reference.pdb",
+      "sequence_length": 50
+    },
+    "note": "Generic sequence/backbone plausibility; not an assay outcome."
+  },
+  "server": "fm"
+}

@@ -1,0 +1,20 @@
+{
+  "command": [
+    "claude",
+    "-p",
+    "Rank every supplied single-substitution candidate for the declared endpoint. This is a prediction, not a measured assay result. No scientific, filesystem, shell, retrieval, or web tools are available. Use only the endpoint description and candidate notation. Do not imply that you read a sequence, FASTA, PDB, file, tool result, database record, or measured value.\n\nNeutral item: cmp_010\nDeclared label-free endpoint context:\n{\"construct_region\": \"1-50\", \"direction\": \"higher values preferred\", \"functional_class\": \"Stability\", \"label_free\": true, \"measurement_assay\": \"Stability\", \"mechanistic_limit\": \"generic sequence/backbone plausibility is not a causal assay model\", \"molecule_context\": \"stability assay target\", \"phenotype_field\": \"ddG_ML_float\", \"selection_method\": \"cDNA display proteolysis\"}\n\nCandidate variants:\nP26C, E35Q, W21M, R9H, K12I, K27Q, I37A, F46P, R11V, E35K, L18Q, I44R, I10R, F46Q, I5R, Y28T, P26K, V15T, W24M, E16H, W24V, K20S, E34Y, S4L, E35A, K7A, K12M, P33W, I5G, Y17M, T30V, R14T, F46N, W24R, W21L, W24C, L43K, N29R, L38Q, G23L, K8L, N48D, P26H, G13L, R41N, K12H, L38Y, W21I, W24H, L18E, Q47C, G23C, G23A, N36I, V15W, Y17I, R49D, L38E, P26W, V2F, D39K, G13Y, S25P, K27Y, D39F, W21Q, V2H, S4K, L42M, V15F, K7N, N36R, L42D, V2W, G23F, V15L, E34T, K7T, R14I, K7V, I10C, S25D, I44S, E35N, V2S, R9T, V2E, K20W, W31R, E35L, G23P, E6N, R22N, D39H, T30F, R14C, L43I, N36H, K12T, E3I\n\nReturn one plain JSON object with no Markdown fence or extra text and exactly these keys: item_id, selected, rejected, ranking. Set item_id to cmp_010. selected contains exactly ten unique objects in rank order with exactly the keys rank, mutant, basis, evidence, validation, would_overturn. Ranks are integers 1 through 10. evidence and validation are empty arrays because no tools are available. rejected contains every other candidate exactly once, each as an object with exactly mutant and reason. ranking contains every candidate exactly once in predicted descending order, each with exactly rank, mutant, and a finite numeric score. Ranking ranks are consecutive integers starting at 1; its first ten mutants exactly match selected. Break tied scores by mutant lexicographic order. Never invent an observation, receipt, or assay result.\n",
+    "--model",
+    "claude-opus-5",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/empty_mcp.json",
+    "--disallowedTools",
+    "Task,Bash,CronCreate,CronDelete,CronList,DesignSync,Edit,EnterWorktree,ExitWorktree,ListAgents,Monitor,NotebookEdit,PushNotification,Read,RemoteTrigger,ReportFindings,ScheduleWakeup,SendMessage,Skill,TaskOutput,TaskStop,ToolSearch,WebFetch,WebSearch,Workflow,Write,Glob,Grep,ListMcpResourcesTool,ReadMcpResourceDirTool,ReadMcpResourceTool",
+    "--output-format",
+    "stream-json",
+    "--verbose"
+  ],
+  "cwd": "/tmp/b1_stage4step3",
+  "labels_opened": false,
+  "prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

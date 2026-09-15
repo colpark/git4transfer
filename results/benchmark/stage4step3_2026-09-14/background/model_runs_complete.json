@@ -1,0 +1,193 @@
+{
+  "blind_content_audit_pending": true,
+  "completed_at_utc": "2026-09-15T14:14:04.755897+00:00",
+  "labels_opened": false,
+  "runs": {
+    "b1": {
+      "cmp_001": {
+        "interrupted_marker": false,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": true
+      },
+      "cmp_002": {
+        "interrupted_marker": false,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": true
+      },
+      "cmp_003": {
+        "interrupted_marker": false,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": true
+      },
+      "cmp_004": {
+        "interrupted_marker": false,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": true
+      },
+      "cmp_005": {
+        "interrupted_marker": false,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": true
+      },
+      "cmp_006": {
+        "interrupted_marker": false,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": true
+      },
+      "cmp_007": {
+        "interrupted_marker": false,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": true
+      },
+      "cmp_008": {
+        "interrupted_marker": true,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": false
+      },
+      "cmp_009": {
+        "interrupted_marker": false,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": true
+      },
+      "cmp_010": {
+        "interrupted_marker": false,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": true
+      }
+    },
+    "b2": {
+      "cmp_001": {
+        "interrupted_marker": false,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": true
+      },
+      "cmp_002": {
+        "interrupted_marker": false,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": true
+      },
+      "cmp_003": {
+        "interrupted_marker": false,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": true
+      },
+      "cmp_004": {
+        "interrupted_marker": false,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": true
+      },
+      "cmp_005": {
+        "interrupted_marker": false,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": true
+      },
+      "cmp_006": {
+        "interrupted_marker": false,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": true
+      },
+      "cmp_007": {
+        "interrupted_marker": false,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": true
+      },
+      "cmp_008": {
+        "interrupted_marker": false,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": true
+      },
+      "cmp_009": {
+        "interrupted_marker": false,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": true
+      },
+      "cmp_010": {
+        "interrupted_marker": false,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": true
+      }
+    },
+    "b4": {
+      "cmp_001": {
+        "interrupted_marker": false,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": true
+      },
+      "cmp_002": {
+        "interrupted_marker": false,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": true
+      },
+      "cmp_003": {
+        "interrupted_marker": false,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": true
+      },
+      "cmp_004": {
+        "interrupted_marker": false,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": true
+      },
+      "cmp_005": {
+        "interrupted_marker": false,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": true
+      },
+      "cmp_006": {
+        "interrupted_marker": false,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": true
+      },
+      "cmp_007": {
+        "interrupted_marker": false,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": true
+      },
+      "cmp_008": {
+        "interrupted_marker": false,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": true
+      },
+      "cmp_009": {
+        "interrupted_marker": false,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": true
+      },
+      "cmp_010": {
+        "interrupted_marker": false,
+        "mechanical_integrity": false,
+        "run_exists": true,
+        "terminal_meta": true
+      }
+    }
+  }
+}

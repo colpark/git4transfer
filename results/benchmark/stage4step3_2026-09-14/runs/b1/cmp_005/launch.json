@@ -1,0 +1,20 @@
+{
+  "command": [
+    "claude",
+    "-p",
+    "Rank every supplied single-substitution candidate for the declared endpoint. This is a prediction, not a measured assay result. No scientific, filesystem, shell, retrieval, or web tools are available. Use only the endpoint description and candidate notation. Do not imply that you read a sequence, FASTA, PDB, file, tool result, database record, or measured value.\n\nNeutral item: cmp_005\nDeclared label-free endpoint context:\n{\"construct_region\": \"2-465\", \"direction\": \"higher values preferred\", \"functional_class\": \"OrganismalFitness\", \"label_free\": true, \"measurement_assay\": \"functional complementation to reduced growth on glucose medium\", \"mechanistic_limit\": \"generic sequence/backbone plausibility is not a causal assay model\", \"molecule_context\": \"organismalfitness assay target\", \"phenotype_field\": \"score\", \"selection_method\": \"enzymatic activity\"}\n\nCandidate variants:\nL355A, E22T, E27I, L30C, E196F, E51S, A11N, G183F, G261Q, K296Q, Y289L, D78T, A201H, F269E, Q337V, E128V, Q286I, E157I, A10T, E112C, G94Y, S76M, I366L, C213G, R392V, N313W, T65A, R397W, G285M, R377G, G295A, G97S, G68R, L276Q, A119T, A320D, S69L, H141A, G264V, A6W, T206Y, F84K, T82W, E67F, K39T, A6H, V226C, R397T, L306N, G328N, Q286N, G183N, L276F, K104S, A21T, R191P, D205M, G343S, V241R, D311R, I390A, K32W, E245V, S433E, G385E, L306A, L301Q, R394F, V33I, D363T, L88A, T209R, N350L, S64P, S109W, G285S, T49N, R428C, A460C, G223V, S336H, M41R, E421P, K104W, R327G, L314F, E440K, N240D, I163A, R5T, L47V, S353K, R186D, L430A, K190V, R308K, A21V, Y297W, G249W, L185T\n\nReturn one plain JSON object with no Markdown fence or extra text and exactly these keys: item_id, selected, rejected, ranking. Set item_id to cmp_005. selected contains exactly ten unique objects in rank order with exactly the keys rank, mutant, basis, evidence, validation, would_overturn. Ranks are integers 1 through 10. evidence and validation are empty arrays because no tools are available. rejected contains every other candidate exactly once, each as an object with exactly mutant and reason. ranking contains every candidate exactly once in predicted descending order, each with exactly rank, mutant, and a finite numeric score. Ranking ranks are consecutive integers starting at 1; its first ten mutants exactly match selected. Break tied scores by mutant lexicographic order. Never invent an observation, receipt, or assay result.\n",
+    "--model",
+    "claude-opus-5",
+    "--strict-mcp-config",
+    "--mcp-config",
+    "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/empty_mcp.json",
+    "--disallowedTools",
+    "Task,Bash,CronCreate,CronDelete,CronList,DesignSync,Edit,EnterWorktree,ExitWorktree,ListAgents,Monitor,NotebookEdit,PushNotification,Read,RemoteTrigger,ReportFindings,ScheduleWakeup,SendMessage,Skill,TaskOutput,TaskStop,ToolSearch,WebFetch,WebSearch,Workflow,Write,Glob,Grep,ListMcpResourcesTool,ReadMcpResourceDirTool,ReadMcpResourceTool",
+    "--output-format",
+    "stream-json",
+    "--verbose"
+  ],
+  "cwd": "/tmp/b1_stage4step3",
+  "labels_opened": false,
+  "prompt_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,925 @@
+{
+  "answer": {
+    "method_summary": "Prospective adaptive rule: obtain one successful item-bound score_variant_fm receipt for every candidate, supplying only its variant; any missing/invalid call is retried and remains a coverage failure, never a zero. Across the complete panel, compare the descending ESM-2 mutation delta-ln-probability and ESM-IF1 backbone-conditioned mean-log-likelihood rankings. If Spearman rho is at least 0.50, population-z-standardize both signals and rank by their equal-weight mean; otherwise rank conservatively by the worse (lower) of the two within-panel percentile scores, then by their mean percentile. Here rho=0.599, so the equal-weight z-score branch applied. Higher composite is preferred, consistent with the declared endpoint direction; exact ties are broken by supplied candidate order, and the first ten are selected. These are generic sequence/backbone plausibility signals, not measured ddG_ML_float or a causal stability-assay model, and may be mechanistically misaligned with cDNA-display proteolysis.",
+    "policy_id": "b4_v3_adaptive_item_bound_endpoint_v1",
+    "ranking": [
+      {
+        "evidence_call_ids": [
+          "call_id:45801c21b21c4f5f810fd04ac2a988f4"
+        ],
+        "mutant": "L43I",
+        "rank": 1,
+        "rationale": "Agreement-branch composite z=1.7013 (ESM-2 delta lnP=-0.2523; IF1 mean LL=-1.11873); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b6dda69ee725455aa31e5ea611c17234"
+        ],
+        "mutant": "I44R",
+        "rank": 2,
+        "rationale": "Agreement-branch composite z=1.6963 (ESM-2 delta lnP=1.8858; IF1 mean LL=-1.18525); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:231fc4b2007042828a8bfb94bc56a246"
+        ],
+        "mutant": "S4K",
+        "rank": 3,
+        "rationale": "Agreement-branch composite z=1.5675 (ESM-2 delta lnP=0.1920; IF1 mean LL=-1.15560); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:9d51a0abfa4b4b5fb98a7604aec65c31"
+        ],
+        "mutant": "V15T",
+        "rank": 4,
+        "rationale": "Agreement-branch composite z=1.5590 (ESM-2 delta lnP=-0.1247; IF1 mean LL=-1.14735); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:362002bfa3aa4522a3dbb7df679d6114"
+        ],
+        "mutant": "I44S",
+        "rank": 5,
+        "rationale": "Agreement-branch composite z=1.4973 (ESM-2 delta lnP=1.3093; IF1 mean LL=-1.20208); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:562660eeb8384570b194dbc01e0b22ce"
+        ],
+        "mutant": "R41N",
+        "rank": 6,
+        "rationale": "Agreement-branch composite z=1.3933 (ESM-2 delta lnP=-0.3957; IF1 mean LL=-1.16779); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:139c33a994ea4f3eb5cee8eb22728923"
+        ],
+        "mutant": "K7A",
+        "rank": 7,
+        "rationale": "Agreement-branch composite z=1.2384 (ESM-2 delta lnP=-1.6223; IF1 mean LL=-1.15700); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ef4f627128fb45938fd8eed5c21513b6"
+        ],
+        "mutant": "N48D",
+        "rank": 8,
+        "rationale": "Agreement-branch composite z=1.1787 (ESM-2 delta lnP=-0.5450; IF1 mean LL=-1.20044); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:909f0bb19e7f4f6e8bd85f58a1390435"
+        ],
+        "mutant": "L38Q",
+        "rank": 9,
+        "rationale": "Agreement-branch composite z=1.1200 (ESM-2 delta lnP=-2.3594; IF1 mean LL=-1.15493); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:fcae3c9738034d7f804b163cac2f894b"
+        ],
+        "mutant": "K7N",
+        "rank": 10,
+        "rationale": "Agreement-branch composite z=1.0952 (ESM-2 delta lnP=-1.2227; IF1 mean LL=-1.19413); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:58fb13b559ac4d4295e311ae078c0d16"
+        ],
+        "mutant": "K27Q",
+        "rank": 11,
+        "rationale": "Agreement-branch composite z=1.0158 (ESM-2 delta lnP=-2.4992; IF1 mean LL=-1.16871); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f9c3a89586c545ceab730b322f3d53fd"
+        ],
+        "mutant": "L38E",
+        "rank": 12,
+        "rationale": "Agreement-branch composite z=0.9595 (ESM-2 delta lnP=-2.8894; IF1 mean LL=-1.16649); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:9b3a9ae5d888445fada886aefa18ee1b"
+        ],
+        "mutant": "S25D",
+        "rank": 13,
+        "rationale": "Agreement-branch composite z=0.9539 (ESM-2 delta lnP=-2.7645; IF1 mean LL=-1.17130); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7b7f23b091e84815857b092b7f00610d"
+        ],
+        "mutant": "W24H",
+        "rank": 14,
+        "rationale": "Agreement-branch composite z=0.9098 (ESM-2 delta lnP=-3.3759; IF1 mean LL=-1.16018); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7df01b18e2f340a1ad47229c0bf24694"
+        ],
+        "mutant": "E35A",
+        "rank": 15,
+        "rationale": "Agreement-branch composite z=0.8904 (ESM-2 delta lnP=-1.7954; IF1 mean LL=-1.21208); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4b95fb2502d94e29a4c5fe55b0e354d1"
+        ],
+        "mutant": "I10R",
+        "rank": 16,
+        "rationale": "Agreement-branch composite z=0.8800 (ESM-2 delta lnP=-1.3054; IF1 mean LL=-1.22893); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8d0aa5a082f8428fb08504caf5f7fe34"
+        ],
+        "mutant": "S4L",
+        "rank": 17,
+        "rationale": "Agreement-branch composite z=0.8497 (ESM-2 delta lnP=-2.1624; IF1 mean LL=-1.20788); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:060ab02671f44cb8b0e2ea1cb139b87e"
+        ],
+        "mutant": "K12H",
+        "rank": 18,
+        "rationale": "Agreement-branch composite z=0.8443 (ESM-2 delta lnP=-2.8301; IF1 mean LL=-1.18831); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:38177e7406fe4913a19791f10a9a76c4"
+        ],
+        "mutant": "N36H",
+        "rank": 19,
+        "rationale": "Agreement-branch composite z=0.8436 (ESM-2 delta lnP=-2.2253; IF1 mean LL=-1.20700); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:422b2f3ddae74fb3bb63a5f12cfa6456"
+        ],
+        "mutant": "L43K",
+        "rank": 20,
+        "rationale": "Agreement-branch composite z=0.8211 (ESM-2 delta lnP=-2.3262; IF1 mean LL=-1.20780); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:178da538cd6e4a4dbb13a4bc55653e42"
+        ],
+        "mutant": "E35K",
+        "rank": 21,
+        "rationale": "Agreement-branch composite z=0.7143 (ESM-2 delta lnP=-2.5119; IF1 mean LL=-1.22065); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ad9ce47ef47745299fa24ff39d09e7b4"
+        ],
+        "mutant": "P26H",
+        "rank": 22,
+        "rationale": "Agreement-branch composite z=0.7029 (ESM-2 delta lnP=0.2344; IF1 mean LL=-1.30694); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:5806333d3d584e8cb27f30a96d81b47a"
+        ],
+        "mutant": "E6N",
+        "rank": 23,
+        "rationale": "Agreement-branch composite z=0.6929 (ESM-2 delta lnP=-1.6982; IF1 mean LL=-1.24934); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:67f2b172506a44969687adb57fe45e59"
+        ],
+        "mutant": "R22N",
+        "rank": 24,
+        "rationale": "Agreement-branch composite z=0.6876 (ESM-2 delta lnP=-2.6841; IF1 mean LL=-1.21998); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:92f9462161034d5b9199665307a458f9"
+        ],
+        "mutant": "R14T",
+        "rank": 25,
+        "rationale": "Agreement-branch composite z=0.6852 (ESM-2 delta lnP=-2.5861; IF1 mean LL=-1.22341); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:54d845f868f94ecaa99bea86d3b1c710"
+        ],
+        "mutant": "E35Q",
+        "rank": 26,
+        "rationale": "Agreement-branch composite z=0.6817 (ESM-2 delta lnP=-2.5832; IF1 mean LL=-1.22412); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:553c8483380c4f4e9dd834d0d897bf6d"
+        ],
+        "mutant": "V15L",
+        "rank": 27,
+        "rationale": "Agreement-branch composite z=0.6341 (ESM-2 delta lnP=-1.3529; IF1 mean LL=-1.27014); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1e3c55ae5ed545a9be7690ac7935947c"
+        ],
+        "mutant": "P26K",
+        "rank": 28,
+        "rationale": "Agreement-branch composite z=0.6106 (ESM-2 delta lnP=-0.4551; IF1 mean LL=-1.30180); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a8ab31e8e929409385521d4f2379159e"
+        ],
+        "mutant": "R11V",
+        "rank": 29,
+        "rationale": "Agreement-branch composite z=0.5731 (ESM-2 delta lnP=-4.5302; IF1 mean LL=-1.18319); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:9f9a3135e8cc48358f18a4d71e6ea60a"
+        ],
+        "mutant": "L38Y",
+        "rank": 30,
+        "rationale": "Agreement-branch composite z=0.5688 (ESM-2 delta lnP=-3.5635; IF1 mean LL=-1.21361); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f0b3dce92a7748ca8dabbc11669be4b0"
+        ],
+        "mutant": "W24C",
+        "rank": 31,
+        "rationale": "Agreement-branch composite z=0.5629 (ESM-2 delta lnP=-3.9648; IF1 mean LL=-1.20231); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ed4c90351dd04ba09c73f15ed7fce9f9"
+        ],
+        "mutant": "S25P",
+        "rank": 32,
+        "rationale": "Agreement-branch composite z=0.5335 (ESM-2 delta lnP=-1.0662; IF1 mean LL=-1.29641); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2ab3c553e08b4a98bca603f499783c29"
+        ],
+        "mutant": "E35N",
+        "rank": 33,
+        "rationale": "Agreement-branch composite z=0.5209 (ESM-2 delta lnP=-2.9030; IF1 mean LL=-1.24220); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:fdc109e24b8f49858f391e21a2ad8032"
+        ],
+        "mutant": "E16H",
+        "rank": 34,
+        "rationale": "Agreement-branch composite z=0.4959 (ESM-2 delta lnP=-3.4202; IF1 mean LL=-1.23065); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7cc0f0206f7744c0aea8af5ea2d9a722"
+        ],
+        "mutant": "R49D",
+        "rank": 35,
+        "rationale": "Agreement-branch composite z=0.4790 (ESM-2 delta lnP=-2.7665; IF1 mean LL=-1.25366); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ff2889c36f9244768baba70d79114201"
+        ],
+        "mutant": "K20S",
+        "rank": 36,
+        "rationale": "Agreement-branch composite z=0.4503 (ESM-2 delta lnP=-4.4203; IF1 mean LL=-1.20786); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1ff662d9776140bc8999c1b71cdf5e05"
+        ],
+        "mutant": "R14I",
+        "rank": 37,
+        "rationale": "Agreement-branch composite z=0.4286 (ESM-2 delta lnP=-3.2555; IF1 mean LL=-1.24740); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4729ed6d9cbd47ad975f2048eaae336f"
+        ],
+        "mutant": "N36R",
+        "rank": 38,
+        "rationale": "Agreement-branch composite z=0.3947 (ESM-2 delta lnP=-5.6473; IF1 mean LL=-1.17983); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2ab8035ef4d1496baa43ee389df51d36"
+        ],
+        "mutant": "Q47C",
+        "rank": 39,
+        "rationale": "Agreement-branch composite z=0.3632 (ESM-2 delta lnP=-3.1523; IF1 mean LL=-1.26191); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f426341072694162a26ef8c7bcbee2a9"
+        ],
+        "mutant": "W24M",
+        "rank": 40,
+        "rationale": "Agreement-branch composite z=0.3340 (ESM-2 delta lnP=-5.0865; IF1 mean LL=-1.20759); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2b5d25458ce04a2eb920d4a500cd4ef3"
+        ],
+        "mutant": "R14C",
+        "rank": 41,
+        "rationale": "Agreement-branch composite z=0.3072 (ESM-2 delta lnP=-3.7347; IF1 mean LL=-1.25375); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:26654a12348e406db142bb34a17f1865"
+        ],
+        "mutant": "W24R",
+        "rank": 42,
+        "rationale": "Agreement-branch composite z=0.3068 (ESM-2 delta lnP=-5.7344; IF1 mean LL=-1.19242); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a0b3f46ff571403f9b641735c8ed836f"
+        ],
+        "mutant": "E34T",
+        "rank": 43,
+        "rationale": "Agreement-branch composite z=0.2270 (ESM-2 delta lnP=-3.4358; IF1 mean LL=-1.27684); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e4dbb41889be4288b05584063d155e05"
+        ],
+        "mutant": "E34Y",
+        "rank": 44,
+        "rationale": "Agreement-branch composite z=0.2017 (ESM-2 delta lnP=-3.9502; IF1 mean LL=-1.26544); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:713c872016844002a144d2ef3137f302"
+        ],
+        "mutant": "N29R",
+        "rank": 45,
+        "rationale": "Agreement-branch composite z=0.1910 (ESM-2 delta lnP=-3.3173; IF1 mean LL=-1.28673); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f80c1a2d4ebf41edaa31ca820472c7b2"
+        ],
+        "mutant": "K7T",
+        "rank": 46,
+        "rationale": "Agreement-branch composite z=0.1875 (ESM-2 delta lnP=-3.4127; IF1 mean LL=-1.28441); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:25a778af58e74f158af5fc46d33b198a"
+        ],
+        "mutant": "K12M",
+        "rank": 47,
+        "rationale": "Agreement-branch composite z=0.1567 (ESM-2 delta lnP=-5.1908; IF1 mean LL=-1.23517); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:9372d11f51e14e2c82f82723b8bb1eed"
+        ],
+        "mutant": "L18Q",
+        "rank": 48,
+        "rationale": "Agreement-branch composite z=0.1309 (ESM-2 delta lnP=-4.5608; IF1 mean LL=-1.25897); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:e132172a5ee14ed98dc05e8e5cad7ad3"
+        ],
+        "mutant": "V2F",
+        "rank": 49,
+        "rationale": "Agreement-branch composite z=0.0994 (ESM-2 delta lnP=-6.5194; IF1 mean LL=-1.20432); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1f2858748e4245bc8a448f9e69a4f1d6"
+        ],
+        "mutant": "I10C",
+        "rank": 50,
+        "rationale": "Agreement-branch composite z=0.0917 (ESM-2 delta lnP=-4.0745; IF1 mean LL=-1.28072); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ff14fa3511024052857741f8418f4b8e"
+        ],
+        "mutant": "K27Y",
+        "rank": 51,
+        "rationale": "Agreement-branch composite z=0.0879 (ESM-2 delta lnP=-5.7852; IF1 mean LL=-1.22885); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:c3c2f195168145f8a98d24f676e4670c"
+        ],
+        "mutant": "K12T",
+        "rank": 52,
+        "rationale": "Agreement-branch composite z=0.0455 (ESM-2 delta lnP=-5.4220; IF1 mean LL=-1.24737); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8c5aae590d8f49f995de82aa2ba24440"
+        ],
+        "mutant": "V15F",
+        "rank": 53,
+        "rationale": "Agreement-branch composite z=0.0355 (ESM-2 delta lnP=-3.8600; IF1 mean LL=-1.29705); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:8f4c5a4bc54d43c8a6b87781f2fba6a9"
+        ],
+        "mutant": "E35L",
+        "rank": 54,
+        "rationale": "Agreement-branch composite z=0.0195 (ESM-2 delta lnP=-4.4687; IF1 mean LL=-1.28113); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:3e139688e3e646afa08401835cfccb11"
+        ],
+        "mutant": "L42M",
+        "rank": 55,
+        "rationale": "Agreement-branch composite z=0.0179 (ESM-2 delta lnP=-3.6593; IF1 mean LL=-1.30628); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7bbb1ab11eaa487299d91819474567ab"
+        ],
+        "mutant": "Y28T",
+        "rank": 56,
+        "rationale": "Agreement-branch composite z=0.0047 (ESM-2 delta lnP=-4.3067; IF1 mean LL=-1.28868); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7f80bbdfed0f41a69b34e8e85c3eea22"
+        ],
+        "mutant": "D39H",
+        "rank": 57,
+        "rationale": "Agreement-branch composite z=-0.0018 (ESM-2 delta lnP=-4.3055; IF1 mean LL=-1.28986); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:77345f35d2b5423e96e853581852f63e"
+        ],
+        "mutant": "D39K",
+        "rank": 58,
+        "rationale": "Agreement-branch composite z=-0.0285 (ESM-2 delta lnP=-5.9892; IF1 mean LL=-1.24279); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:7d7ad51783f84bba8aa66949e454acac"
+        ],
+        "mutant": "V2E",
+        "rank": 59,
+        "rationale": "Agreement-branch composite z=-0.1412 (ESM-2 delta lnP=-8.0957; IF1 mean LL=-1.19767); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:358534caf9494e97a39cd33aa70b9957"
+        ],
+        "mutant": "P26C",
+        "rank": 60,
+        "rationale": "Agreement-branch composite z=-0.1928 (ESM-2 delta lnP=-3.1976; IF1 mean LL=-1.35701); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:c7b798198c0f45f7a86d63e715f6cb4a"
+        ],
+        "mutant": "K8L",
+        "rank": 61,
+        "rationale": "Agreement-branch composite z=-0.2005 (ESM-2 delta lnP=-6.1010; IF1 mean LL=-1.26920); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:4580489ea52b43bc9461646e2dce260d"
+        ],
+        "mutant": "L18E",
+        "rank": 62,
+        "rationale": "Agreement-branch composite z=-0.2540 (ESM-2 delta lnP=-6.2921; IF1 mean LL=-1.27263); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b66393dec05d41d8875897dc6a4d7d12"
+        ],
+        "mutant": "V15W",
+        "rank": 63,
+        "rationale": "Agreement-branch composite z=-0.2792 (ESM-2 delta lnP=-4.0602; IF1 mean LL=-1.34553); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:eb9671fae6b244e8afd58f5eccd07210"
+        ],
+        "mutant": "W24V",
+        "rank": 64,
+        "rationale": "Agreement-branch composite z=-0.3019 (ESM-2 delta lnP=-6.4119; IF1 mean LL=-1.27726); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:33441fb14a4f44df951cf74aa9d80963"
+        ],
+        "mutant": "P33W",
+        "rank": 65,
+        "rationale": "Agreement-branch composite z=-0.3164 (ESM-2 delta lnP=-5.2733; IF1 mean LL=-1.31474); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:37a85d245c7a4fd99dc2721a7b717eb0"
+        ],
+        "mutant": "K12I",
+        "rank": 66,
+        "rationale": "Agreement-branch composite z=-0.3567 (ESM-2 delta lnP=-6.4702; IF1 mean LL=-1.28498); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:eac1eb2bbdcd4638a88a67395545058b"
+        ],
+        "mutant": "P26W",
+        "rank": 67,
+        "rationale": "Agreement-branch composite z=-0.3979 (ESM-2 delta lnP=-3.8531; IF1 mean LL=-1.37249); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:3866b5fecdf549259b03d31aaec59376"
+        ],
+        "mutant": "G23F",
+        "rank": 68,
+        "rationale": "Agreement-branch composite z=-0.4511 (ESM-2 delta lnP=-4.8233; IF1 mean LL=-1.35192); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:d927466d46ce4b4e8f12b1f82121ce2c"
+        ],
+        "mutant": "V2S",
+        "rank": 69,
+        "rationale": "Agreement-branch composite z=-0.4520 (ESM-2 delta lnP=-8.3869; IF1 mean LL=-1.24267); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:cb87f3a85a9d432c9984f98e31a691cb"
+        ],
+        "mutant": "D39F",
+        "rank": 70,
+        "rationale": "Agreement-branch composite z=-0.4617 (ESM-2 delta lnP=-6.2663; IF1 mean LL=-1.30946); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:da68912e20a84ee580ecdd16762741d6"
+        ],
+        "mutant": "K7V",
+        "rank": 71,
+        "rationale": "Agreement-branch composite z=-0.4668 (ESM-2 delta lnP=-5.6913; IF1 mean LL=-1.32800); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1b1864ed7f414cc99a2789924c877cfd"
+        ],
+        "mutant": "T30V",
+        "rank": 72,
+        "rationale": "Agreement-branch composite z=-0.5074 (ESM-2 delta lnP=-7.5600; IF1 mean LL=-1.27767); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:339e17d34ff44a1da57158f519d2f35d"
+        ],
+        "mutant": "G23A",
+        "rank": 73,
+        "rationale": "Agreement-branch composite z=-0.5086 (ESM-2 delta lnP=-4.5726; IF1 mean LL=-1.36959); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:01a1a41c0e5b417ab5feed50ba3e0121"
+        ],
+        "mutant": "G23L",
+        "rank": 74,
+        "rationale": "Agreement-branch composite z=-0.5389 (ESM-2 delta lnP=-5.0500; IF1 mean LL=-1.36020); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:5600f5d5cbbe4bb2b5bfd534ad5d8a24"
+        ],
+        "mutant": "V2W",
+        "rank": 75,
+        "rationale": "Agreement-branch composite z=-0.5895 (ESM-2 delta lnP=-10.1843; IF1 mean LL=-1.21134); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ff8bb440c88042e6a556ff275eadfbfd"
+        ],
+        "mutant": "W21L",
+        "rank": 76,
+        "rationale": "Agreement-branch composite z=-0.7037 (ESM-2 delta lnP=-6.7872; IF1 mean LL=-1.33546); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b1e9fd8feaa9460185a1cf469d177101"
+        ],
+        "mutant": "N36I",
+        "rank": 77,
+        "rationale": "Agreement-branch composite z=-0.7482 (ESM-2 delta lnP=-8.0150; IF1 mean LL=-1.30548); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:b3816150a8994e92af20c272c9a7ea01"
+        ],
+        "mutant": "E3I",
+        "rank": 78,
+        "rationale": "Agreement-branch composite z=-0.7612 (ESM-2 delta lnP=-7.4982; IF1 mean LL=-1.32361); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:c3bfd18f80074e5c900727326c85ab72"
+        ],
+        "mutant": "G13Y",
+        "rank": 79,
+        "rationale": "Agreement-branch composite z=-0.8404 (ESM-2 delta lnP=-6.6093; IF1 mean LL=-1.36465); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2834ae682dda4bc4bf6d87fb6abc90fa"
+        ],
+        "mutant": "K20W",
+        "rank": 80,
+        "rationale": "Agreement-branch composite z=-0.8404 (ESM-2 delta lnP=-8.7931; IF1 mean LL=-1.29760); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:bc3e9472b3394ac1bf3997b9d67ffbcc"
+        ],
+        "mutant": "F46Q",
+        "rank": 81,
+        "rationale": "Agreement-branch composite z=-0.8596 (ESM-2 delta lnP=-7.0448; IF1 mean LL=-1.35461); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f25a2f789f3948f7b3caf47ab0651cc2"
+        ],
+        "mutant": "R9T",
+        "rank": 82,
+        "rationale": "Agreement-branch composite z=-0.8654 (ESM-2 delta lnP=-8.3862; IF1 mean LL=-1.31443); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:6c36bbc1e0fb4b9cb9245e6f50a9dc2b"
+        ],
+        "mutant": "G23C",
+        "rank": 83,
+        "rationale": "Agreement-branch composite z=-0.8715 (ESM-2 delta lnP=-5.9966; IF1 mean LL=-1.38886); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ce4c5cb11d784331ad04b940b1cbde29"
+        ],
+        "mutant": "G13L",
+        "rank": 84,
+        "rationale": "Agreement-branch composite z=-0.8772 (ESM-2 delta lnP=-7.6480; IF1 mean LL=-1.33915); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:6ee8ea65d79f40ab9332cd46f2d405ee"
+        ],
+        "mutant": "V2H",
+        "rank": 85,
+        "rationale": "Agreement-branch composite z=-0.9042 (ESM-2 delta lnP=-10.3295; IF1 mean LL=-1.26150); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:ad04494367644765b2a4ad064939d7cb"
+        ],
+        "mutant": "Y17M",
+        "rank": 86,
+        "rationale": "Agreement-branch composite z=-0.9866 (ESM-2 delta lnP=-8.1482; IF1 mean LL=-1.34276); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f40ba71eda1a4dc58285adf418fea92d"
+        ],
+        "mutant": "R9H",
+        "rank": 87,
+        "rationale": "Agreement-branch composite z=-1.0069 (ESM-2 delta lnP=-6.6532; IF1 mean LL=-1.39219); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2e265fb4bce4447a8402be6b3db9f6e0"
+        ],
+        "mutant": "T30F",
+        "rank": 88,
+        "rationale": "Agreement-branch composite z=-1.0226 (ESM-2 delta lnP=-8.1675; IF1 mean LL=-1.34843); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:6dd9753d4b7c463c86c9618c159e1102"
+        ],
+        "mutant": "F46N",
+        "rank": 89,
+        "rationale": "Agreement-branch composite z=-1.0457 (ESM-2 delta lnP=-6.7333; IF1 mean LL=-1.39647); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:21b3479116494a8a889ac0e3921350ad"
+        ],
+        "mutant": "I37A",
+        "rank": 90,
+        "rationale": "Agreement-branch composite z=-1.1116 (ESM-2 delta lnP=-6.5276; IF1 mean LL=-1.41422); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:1af0af83719449f8a23f22369fd0959f"
+        ],
+        "mutant": "L42D",
+        "rank": 91,
+        "rationale": "Agreement-branch composite z=-1.1387 (ESM-2 delta lnP=-8.2110; IF1 mean LL=-1.36724); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f1620b3341f34045a0f787222bafda96"
+        ],
+        "mutant": "Y17I",
+        "rank": 92,
+        "rationale": "Agreement-branch composite z=-1.3219 (ESM-2 delta lnP=-7.4701; IF1 mean LL=-1.42177); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:3ba7484b96234dc68c43aa4b2d71b6d0"
+        ],
+        "mutant": "W21Q",
+        "rank": 93,
+        "rationale": "Agreement-branch composite z=-1.3945 (ESM-2 delta lnP=-10.8264; IF1 mean LL=-1.33132); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f1aa9db9e32d4453a015a20c6dd62488"
+        ],
+        "mutant": "W21M",
+        "rank": 94,
+        "rationale": "Agreement-branch composite z=-1.4189 (ESM-2 delta lnP=-10.6005; IF1 mean LL=-1.34250); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:2fa70b109c5f4f7992ee8941f814c833"
+        ],
+        "mutant": "W21I",
+        "rank": 95,
+        "rationale": "Agreement-branch composite z=-1.4568 (ESM-2 delta lnP=-10.7306; IF1 mean LL=-1.34508); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:92acf2aa5e0f498a8b8b94c7c63ff884"
+        ],
+        "mutant": "G23P",
+        "rank": 96,
+        "rationale": "Agreement-branch composite z=-1.5785 (ESM-2 delta lnP=-6.6905; IF1 mean LL=-1.49024); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:a565462a604246619c94f9be8fbbcfbc"
+        ],
+        "mutant": "I5R",
+        "rank": 97,
+        "rationale": "Agreement-branch composite z=-1.5851 (ESM-2 delta lnP=-8.3056; IF1 mean LL=-1.44180); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:c8d48666d152419ea2c6f6d38a18172a"
+        ],
+        "mutant": "W31R",
+        "rank": 98,
+        "rationale": "Agreement-branch composite z=-1.8207 (ESM-2 delta lnP=-7.5472; IF1 mean LL=-1.50598); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:f28c5830289e4e819083c8f4b6cbe3cb"
+        ],
+        "mutant": "I5G",
+        "rank": 99,
+        "rationale": "Agreement-branch composite z=-2.3139 (ESM-2 delta lnP=-9.4662; IF1 mean LL=-1.53264); generic plausibility proxy, not measured stability."
+      },
+      {
+        "evidence_call_ids": [
+          "call_id:029f14e37ac745fbbd9fd4b50119eda5"
+        ],
+        "mutant": "F46P",
+        "rank": 100,
+        "rationale": "Agreement-branch composite z=-2.3185 (ESM-2 delta lnP=-8.1480; IF1 mean LL=-1.57392); generic plausibility proxy, not measured stability."
+      }
+    ],
+    "rejected": [
+      "K27Q",
+      "L38E",
+      "S25D",
+      "W24H",
+      "E35A",
+      "I10R",
+      "S4L",
+      "K12H",
+      "N36H",
+      "L43K",
+      "E35K",
+      "P26H",
+      "E6N",
+      "R22N",
+      "R14T",
+      "E35Q",
+      "V15L",
+      "P26K",
+      "R11V",
+      "L38Y",
+      "W24C",
+      "S25P",
+      "E35N",
+      "E16H",
+      "R49D",
+      "K20S",
+      "R14I",
+      "N36R",
+      "Q47C",
+      "W24M",
+      "R14C",
+      "W24R",
+      "E34T",
+      "E34Y",
+      "N29R",
+      "K7T",
+      "K12M",
+      "L18Q",
+      "V2F",
+      "I10C",
+      "K27Y",
+      "K12T",
+      "V15F",
+      "E35L",
+      "L42M",
+      "Y28T",
+      "D39H",
+      "D39K",
+      "V2E",
+      "P26C",
+      "K8L",
+      "L18E",
+      "V15W",
+      "W24V",
+      "P33W",
+      "K12I",
+      "P26W",
+      "G23F",
+      "V2S",
+      "D39F",
+      "K7V",
+      "T30V",
+      "G23A",
+      "G23L",
+      "V2W",
+      "W21L",
+      "N36I",
+      "E3I",
+      "G13Y",
+      "K20W",
+      "F46Q",
+      "R9T",
+      "G23C",
+      "G13L",
+      "V2H",
+      "Y17M",
+      "R9H",
+      "T30F",
+      "F46N",
+      "I37A",
+      "L42D",
+      "Y17I",
+      "W21Q",
+      "W21M",
+      "W21I",
+      "G23P",
+      "I5R",
+      "W31R",
+      "I5G",
+      "F46P"
+    ],
+    "selected": [
+      "L43I",
+      "I44R",
+      "S4K",
+      "V15T",
+      "I44S",
+      "R41N",
+      "K7A",
+      "N48D",
+      "L38Q",
+      "K7N"
+    ]
+  },
+  "contract_sha256": "7df7631632da32d5a1dd93a4b82ff5e985973ca9d5877dde646efdc927be26f1",
+  "endpoint_sha256": "d73082bf4f5181a0d3c7c6f430fedd53f9d813a48c5776b860602b222ff78eb2",
+  "item_id": "cmp_010",
+  "validation": {
+    "accepted": true,
+    "answer_sha256": "9d7414796c67226c5ae29977347cd5ba608ca5d0bfcf60b7e618319d6a752d2e",
+    "candidate_count": 100,
+    "contract_sha256": "7df7631632da32d5a1dd93a4b82ff5e985973ca9d5877dde646efdc927be26f1",
+    "endpoint_sha256": "d73082bf4f5181a0d3c7c6f430fedd53f9d813a48c5776b860602b222ff78eb2",
+    "policy_id": "b4_v3_adaptive_item_bound_endpoint_v1",
+    "ranking_complete": true,
+    "unique_cited_receipts": 100
+  }
+}

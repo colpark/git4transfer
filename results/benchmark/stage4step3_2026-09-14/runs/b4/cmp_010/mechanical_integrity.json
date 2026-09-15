@@ -1,0 +1,10 @@
+{
+  "broad_integrity_passed": false,
+  "contract_sha256": "7df7631632da32d5a1dd93a4b82ff5e985973ca9d5877dde646efdc927be26f1",
+  "evaluation_authorized": false,
+  "human_content_audit_required": true,
+  "labels_opened": false,
+  "receipt_manifest_sha256": "d4f211c1f55ec20c731695b34f761456416059ee622ac06816f9bf0a28dcfa16",
+  "structural_and_receipt_integrity_passed": true,
+  "validator_repair_amendment_sha256": "4e37cb942e1719f5be091a92aa2f88eac6d2b99dded2194776449d664b3ea23e"
+}
