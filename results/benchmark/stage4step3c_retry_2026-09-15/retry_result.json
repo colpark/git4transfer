@@ -1,0 +1,36 @@
+{
+  "artifact_count": 0,
+  "complete_submission": false,
+  "contract_valid": false,
+  "fm_completed": 0,
+  "fm_started": 0,
+  "labels_opened": false,
+  "model_call_count": 1,
+  "neutral_item_id": "cmp_001",
+  "process": {
+    "completed_at_utc": "2026-09-15T17:39:52.502074+00:00",
+    "exit_code": 1,
+    "labels_opened": false,
+    "model_call_attempted": true,
+    "model_call_count": 1,
+    "timed_out": false,
+    "wall_s": 18.881
+  },
+  "same_normalized_context_as_active_b4": null,
+  "separate_retry_not_step3b": true,
+  "terminal_errors": [
+    {
+      "message": "This content was flagged for possible biological risk. If this seems wrong, try rephrasing your request. We are continuously refining our work in detecting biological risk, and you can read more about our approach in our blog post: https://openai.com/index/preparing-for-future-ai-capabilities-in-biology",
+      "type": "error"
+    },
+    {
+      "error": {
+        "message": "This content was flagged for possible biological risk. If this seems wrong, try rephrasing your request. We are continuously refining our work in detecting biological risk, and you can read more about our approach in our blog post: https://openai.com/index/preparing-for-future-ai-capabilities-in-biology"
+      },
+      "type": "turn.failed"
+    }
+  ],
+  "trace_sha256": "7e2a9df14814d1f045820a3f4c0eebc3bac78a9b7902652b316f81b5f4a1cc5d",
+  "validated_at_utc": "2026-09-15T17:39:59.641000+00:00",
+  "validation_error": "process did not complete successfully"
+}

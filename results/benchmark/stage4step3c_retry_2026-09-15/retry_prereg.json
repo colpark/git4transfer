@@ -1,0 +1,23 @@
+{
+  "approval_policy": "never",
+  "arm": "B4",
+  "b4_command_code_sha256": "8c70434c1080e96a5e4ded86f86eb7ef693c7064a6595617be1beaee374ea8b1",
+  "context_gate_code_sha256": "1d579eed8ece64628d49123c6cc8d9b4568dcca0257f5a2499f9ad312191b215",
+  "contract_code_sha256": "82cdcd7cb887f1baef706f277ac24f498ddb90fd464dd438d110d64cde2ba9e2",
+  "contract_sha256": "da4f2f404a45c433337e852b7319bfbed1edf15210c3223d6a1a7a9f5b723f0b",
+  "disposition": "Separate retry; not incorporated into frozen Step 3b coverage or scores without a panel ruling.",
+  "labels_opened_for_retry": false,
+  "model_alias": "gpt-5.6-sol",
+  "model_calls_authorized": 1,
+  "neutral_item_id": "cmp_001",
+  "original_meta_sha256": "374e57183ff96347ea97fd10f0dfc7e1007733e5506db0d14dd1041c47253272",
+  "original_trace_sha256": "2f75acda097cdd75d751fab995192d2ffa8c77ebab0536c538db42e186b8265d",
+  "prompt_sha256": "8d9ce8ee638158863cf18f8eff900692b5bf984b43253470bd7e6c49dca7896a",
+  "purpose": "One label-free diagnostic retry of B4 cmp_001 after platform biological-risk interruption.",
+  "reasoning_effort": "high",
+  "registered_at_utc": "2026-09-15T17:39:24.807615+00:00",
+  "runner_sha256": "cce8098abf589447b87fafad55dbdf895c9f71b2e588ed36044f74abbad1e719",
+  "sandbox": "read-only",
+  "stop": "Stop after label-free structural/context validation; do not GT-score or alter Step 3b.",
+  "web_search": "disabled"
+}
