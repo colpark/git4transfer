@@ -1,0 +1,25 @@
+{
+  "authorized_label_count": 10,
+  "authorized_label_members_opened_by_this_scorer": [
+    "DMS_ProteinGym_substitutions/A0A192B1T2_9HIV1_Haddox_2018.csv",
+    "DMS_ProteinGym_substitutions/A4_HUMAN_Seuma_2022.csv",
+    "DMS_ProteinGym_substitutions/HIS7_YEAST_Pokusaeva_2019.csv",
+    "DMS_ProteinGym_substitutions/GLPA_HUMAN_Elazar_2016.csv",
+    "DMS_ProteinGym_substitutions/HXK4_HUMAN_Gersing_2022_activity.csv",
+    "DMS_ProteinGym_substitutions/LGK_LIPST_Klesmith_2015.csv",
+    "DMS_ProteinGym_substitutions/FKBP3_HUMAN_Tsuboyama_2023_2KFV.csv",
+    "DMS_ProteinGym_substitutions/NUSA_ECOLI_Tsuboyama_2023_1WCL.csv",
+    "DMS_ProteinGym_substitutions/CASP3_HUMAN_Roychowdhury_2020.csv",
+    "DMS_ProteinGym_substitutions/CBX4_HUMAN_Tsuboyama_2023_2K28.csv"
+  ],
+  "blind_bundle_sha256": "343c1faa037e0b481b1e7bfb06a5c093b6a8d47ce4aec6409ba01cb94bfc2669",
+  "blind_hashes_verified_before_this_label_read": true,
+  "evaluated_at_utc": "2026-09-15T16:08:21.544384+00:00",
+  "labels_were_already_opened_in_original_step3_evaluation": true,
+  "model_calls": 0,
+  "other_135_labels_opened_by_this_scorer": false,
+  "post_hoc": true,
+  "reproduced_previously_scorable_rows": true,
+  "rows_sha256": "27299f16a4a885729153d80bef803aa91e1ac2f8456d90a168651af71cb58a36",
+  "source_label_archive_sha256_from_prior_frozen_evaluation": "3a83766254ac9ac9984ec25cb73c6e010ea4418f5e35f143933e6b6e6473b921"
+}

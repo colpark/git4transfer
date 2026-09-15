@@ -1,0 +1,25 @@
+{
+  "files": {
+    "benchmark-mcp/pilot_score.py": "24896f361c8de45c19f2d69b99bb897b9b20cdb1735a9bb2489f047177630bcb",
+    "benchmark-mcp/stage3_evaluate.py": "723fbf5c03831d470b54fa5d566a7782304e43900a3bed932355084aa56d7b91",
+    "benchmark-mcp/stage4step2e_contract.py": "82cdcd7cb887f1baef706f277ac24f498ddb90fd464dd438d110d64cde2ba9e2",
+    "benchmark-mcp/stage4step3_validate.py": "d19677599b5907ff8b395c17790f785819bdbca5cc4c7f7714fabf5ec206e4a7",
+    "benchmark-mcp/stage4step3b_gate_diagnose.py": "e45ed51e653f52abba88c7a3e98528ebea7c651ae8c6a0e1e9fe1904d1f6a1de",
+    "benchmark-mcp/stage4step3b_recover.py": "1d579eed8ece64628d49123c6cc8d9b4568dcca0257f5a2499f9ad312191b215",
+    "results/benchmark/stage4step3_2026-09-14/blind_b4.jsonl": "5bc298e0281185c79d1e0d037a0c9e6f49179f03bb9b48cc234e98a6b1593952",
+    "results/benchmark/stage4step3_2026-09-14/blind_floor_c.jsonl": "7ed32228c634b7a970fb5d19086bf411c193d33c3f20721b63734cefedb5e33c",
+    "results/benchmark/stage4step3_2026-09-14/blind_floor_m.jsonl": "118f38b1ff52f048778c75675ded2005f539f5a8533534b80319aaf044052ceb",
+    "results/benchmark/stage4step3_2026-09-14/blind_item_manifest_internal.jsonl": "d2ce89bb58b05e8d8010149933927398e9f6571bbf19c188ae5c859cef3374c2",
+    "results/benchmark/stage4step3_2026-09-14/completed_evaluation_manifest.json": "98478a1b4ded2eaf68922edfd0651d3cb21545cc94aee6a6ec1e6ec4efe271f4",
+    "results/benchmark/stage4step3_2026-09-14/context_calibration.json": "5b125cd848d318e2b2b22e68e8117cc8294be2fd40090404d886f947b25c01de",
+    "results/benchmark/stage4step3_2026-09-14/context_calibration_2026-09-15.json": "1089f02f19993c4242f742b396e0c8fe0b0ca3c5616fb0649530ac533e523565",
+    "results/benchmark/stage4step3b_2026-09-15/gate_controls.json": "59e2628e115807ff9f5bad77bb48c0c01a96618f5694653b7877db29b6359a02",
+    "results/benchmark/stage4step3b_2026-09-15/gate_diagnosis.md": "b56b5960744480f63e33bf7c4befaf3807a69738b9f7039e2b5b4997dbf72067",
+    "results/benchmark/stage4step3b_2026-09-15/posthoc_gate_amendment.json": "820fa3ff74240407592a3607a647188fae9ac493ea0ba00fa0cd6375c9d2bd39"
+  },
+  "frozen_at_utc": "2026-09-15T16:08:00.482686+00:00",
+  "labels_already_opened_for_exact_ten_item_set": true,
+  "model_calls": 0,
+  "other_135_labels_opened": false,
+  "post_hoc": true
+}

@@ -1,0 +1,20 @@
+{
+  "all_pass": true,
+  "checks": {
+    "must_fire_approval_policy_change": true,
+    "must_fire_cli_version_change": true,
+    "must_fire_developer_message_change": true,
+    "must_fire_instruction_sentence_change": true,
+    "must_fire_sandbox_type_change": true,
+    "positive_proven_heading_delta_passes": true
+  },
+  "created_at_utc": "2026-09-15T16:07:48.870218+00:00",
+  "labels_opened_during_controls": false,
+  "model_calls": 0,
+  "normalization": {
+    "all_other_base_text": "Identity; bytes are unchanged.",
+    "base_instructions": "Canonicalize only an exact whole-line Markdown H1 equal to '# Destructive actions' or '# Destructive Actions' as '# Destructive Actions'.",
+    "developer_messages": "Identity; ordered messages and bytes are unchanged.",
+    "runtime_controls": "Exact equality; no normalization."
+  }
+}

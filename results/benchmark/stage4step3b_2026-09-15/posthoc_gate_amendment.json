@@ -1,0 +1,53 @@
+{
+  "amended_at_utc": "2026-09-15T16:08:00.482527+00:00",
+  "arm_definitions_changed": false,
+  "authorized_ten_labels_previously_opened": [
+    "A0A192B1T2_9HIV1_Haddox_2018",
+    "A4_HUMAN_Seuma_2022",
+    "HIS7_YEAST_Pokusaeva_2019",
+    "GLPA_HUMAN_Elazar_2016",
+    "HXK4_HUMAN_Gersing_2022_activity",
+    "LGK_LIPST_Klesmith_2015",
+    "FKBP3_HUMAN_Tsuboyama_2023_2KFV",
+    "NUSA_ECOLI_Tsuboyama_2023_1WCL",
+    "CASP3_HUMAN_Roychowdhury_2020",
+    "CBX4_HUMAN_Tsuboyama_2023_2K28"
+  ],
+  "classification": "COSMETIC",
+  "contract_changed": false,
+  "frozen_source_runs": {
+    "cmp_004": {
+      "meta_sha256": "b44c1e95d2f4501ae9e2ff52e8680d5c7d32db735a453e38bd8fbc186b7560d3",
+      "submission_sha256": "79d924ec03efe993ea67488702c6a577f46a55748d5222be7f09bd9792ac6201",
+      "trace_sha256": "dff00193eddbf9be090e9148c3ae4fecb075aacb13f3f10a4c3ca12ff17bf7fa"
+    },
+    "cmp_008": {
+      "meta_sha256": "86dbb7efab6da81599f8c8a50638888824ccf4e903f6649adc781b51cd1786a9",
+      "submission_sha256": "326dcf9ef8581c21001d41115c64a9419146170ca06f9b588d9e88112da16770",
+      "trace_sha256": "d942f1a33e86d6c01ace95fba601a9301d5884541337d54faa4f5e2a62554a0d"
+    },
+    "cmp_009": {
+      "meta_sha256": "e5742d01a191ef6f6151f282a86306916a66c581066783162e0e3cf123d9eaae",
+      "submission_sha256": "5d160b8d62a70e628200afb6a5081b1617e870ac060d842391f4ecba13a60370",
+      "trace_sha256": "624d2e3faf7cfe66f57be4f911a2981fdb3d2084ec88f29bd6ffc9ab9cfdb6e8"
+    }
+  },
+  "gate_controls_sha256": "59e2628e115807ff9f5bad77bb48c0c01a96618f5694653b7877db29b6359a02",
+  "gate_diagnosis_sha256": "b56b5960744480f63e33bf7c4befaf3807a69738b9f7039e2b5b4997dbf72067",
+  "item_list_changed": false,
+  "model_calls": 0,
+  "model_predictions_rerun_or_changed": false,
+  "named_threat": "The agent receives behaviour-affecting instructions, tools/grants, or runtime controls that differ across cells, so B4 is not one arm.",
+  "normalization_spec": {
+    "all_other_base_text": "Identity; bytes are unchanged.",
+    "base_instructions": "Canonicalize only an exact whole-line Markdown H1 equal to '# Destructive actions' or '# Destructive Actions' as '# Destructive Actions'.",
+    "developer_messages": "Identity; ordered messages and bytes are unchanged.",
+    "runtime_controls": "Exact equality; no normalization."
+  },
+  "other_135_labels_opened": false,
+  "permitted_change": "Stable-context gate normalization only.",
+  "post_hoc": true,
+  "prompts_changed": false,
+  "reason": "The raw base-instructions gate rejected three completed cells solely because the Markdown heading '# Destructive Actions' differed in capitalization from '# Destructive actions'. Task 1 established that all instruction sentences, developer messages, tools/grants, and runtime controls were unchanged.",
+  "scorer_changed": false
+}

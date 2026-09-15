@@ -1,0 +1,643 @@
+{
+  "accepted": true,
+  "artifacts": [
+    {
+      "call_id": "call_id:01c9b02b5d884a1795df5b3e3e4a5d3f",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/01c9b02b5d884a1795df5b3e3e4a5d3f.json",
+      "sha256": "e7090e93844a573b5fc32d595810430b64a8647d0ccc4834e98ef6d1aedbd429",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:040fb40ef32d42c293808ef0bb773088",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/040fb40ef32d42c293808ef0bb773088.json",
+      "sha256": "4ff0fa8305def39a6d58eca830818bdd5ddee01277c25e1fb8f7d0cec6e07d57",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:054151e528e148a29f4e99b893740869",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/054151e528e148a29f4e99b893740869.json",
+      "sha256": "534f44fb454296a2b374f60901b7d76774b1afda489b2d7b5a77c628d7d2d4ab",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:07de9d28b0c242e5a9400ae42451a1b9",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/07de9d28b0c242e5a9400ae42451a1b9.json",
+      "sha256": "9201bf74f7c1bb7f670c92ffedc5ee545d9f696bc9d601e7a4956e49edb5d0c3",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:08a5b525e7f842b0b2df97e568d64fea",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/08a5b525e7f842b0b2df97e568d64fea.json",
+      "sha256": "2b48186ebf12a0ab574c1c8b06e4af58d4d0fde644038584a64a3d81648e9b10",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:092d9d8d8931495f865c6e435923f8c5",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/092d9d8d8931495f865c6e435923f8c5.json",
+      "sha256": "88bff6142d315cd16ff5d8e20bba5cbe0f6ccabc9710c7fc2cb6e69b3b89ced0",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:0de5ff6b50784b5481cc36fb1e7dc248",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/0de5ff6b50784b5481cc36fb1e7dc248.json",
+      "sha256": "fed10a4bfc2452a814a4e55f3da3c26530d35a617dc3d0f38bfb61c325371dbd",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:0f327b48968d48e6aabf0d5a76e3deb4",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/0f327b48968d48e6aabf0d5a76e3deb4.json",
+      "sha256": "9f7017cb987c8fef74e8013c93cd1f143f3053e3793f35babe6beb96988e0d21",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:1042024f7edc42c38ce832cd86ea4ba6",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/1042024f7edc42c38ce832cd86ea4ba6.json",
+      "sha256": "211eba20f2588beb6054b5c8b6a6357aa004fec2d079f670407e9fd1c3e5638a",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:12767ed69582442abd5cfc8c855ad9ff",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/12767ed69582442abd5cfc8c855ad9ff.json",
+      "sha256": "a51e77c2471dc8d311452065bb7dccc87dfc576e04d80e170f7264f08b43ce48",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:1485249757b54f169c6fd5c918d2fc82",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/1485249757b54f169c6fd5c918d2fc82.json",
+      "sha256": "303311e6bf86140ea232e17f49435e6e1a52bb964e99202946d6c8e57bf14856",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:2139b7f708ab47e189d8f90223cc6ffc",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/2139b7f708ab47e189d8f90223cc6ffc.json",
+      "sha256": "7c0de8a323060d0fa71c3f2ca224571e314b456ec8021eaf836a97df854fb0b6",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:2a1730df4723416ba904d50867024dfd",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/2a1730df4723416ba904d50867024dfd.json",
+      "sha256": "74b13cebe6d7857fa80c86846c5217470931d2b418d882de428306c6adec2789",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:2f740a049fe9405d84b96408225776e5",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/2f740a049fe9405d84b96408225776e5.json",
+      "sha256": "e096ce58829b2be655800b464ca8aa112d184327ef95086eaacc6ae7d7d6da1c",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:307dbe8888234593acc7b19af385c6db",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/307dbe8888234593acc7b19af385c6db.json",
+      "sha256": "084de47d3d3c08c407b67aef0aee751f9032e6275c730e2eb91850e846d1ecd5",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:31746432e1894d2da2ffe2abb00fb6a7",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/31746432e1894d2da2ffe2abb00fb6a7.json",
+      "sha256": "c7c110c9932a8e56c04a47a9f16f754060ba5a51da8865008719e48df84db4f4",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:320d8db2035a428f967384f7627d79f9",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/320d8db2035a428f967384f7627d79f9.json",
+      "sha256": "d79ff6c745b423b6e59ac894b49cd645b2d1fb56ee1972e7e1fbd0e82f44edb6",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:34f8a791545d4c8bac3e56406d85d89f",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/34f8a791545d4c8bac3e56406d85d89f.json",
+      "sha256": "b25aaadf448b80712dcf8b0ca43e38ae4087009c64d2a76581cddc50c42f27b1",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:3553dca470a54df0965d9c2774d0570b",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/3553dca470a54df0965d9c2774d0570b.json",
+      "sha256": "e21e0003191c9f3ca0628e16d9985cea6fa57924c23dd5a4e3a6f1920d94b689",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:37a60e2f31e24985b64363fe6d51fd3d",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/37a60e2f31e24985b64363fe6d51fd3d.json",
+      "sha256": "72a88ba90143ca0cb6e1802d8bad6b33f5450ca08747cb442690131e3caf2628",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:39bb0f51946d49939ab67aa56343dd48",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/39bb0f51946d49939ab67aa56343dd48.json",
+      "sha256": "c118b37331184ddc7904c7bc2c99c2a074388b8f515c1cd6db218a1ae907c872",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:3d14bf09569c437b96d2109b9e1d2c10",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/3d14bf09569c437b96d2109b9e1d2c10.json",
+      "sha256": "bfd6a895e4034a42659720d3ec299a1eff0e313f8242281a31778dfb7d2a8736",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:3de27bef001e489cba7f79209c057099",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/3de27bef001e489cba7f79209c057099.json",
+      "sha256": "9222eab088ef101e07ef7a161b7f418cf7a72b5c400c9cdc495e01890f811e74",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:3e26121aebc5485eac6222ebe759799c",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/3e26121aebc5485eac6222ebe759799c.json",
+      "sha256": "a4bb7460bc8a7c011f26f26f0188f7e54cb2471534df41d9492937a3bad4a233",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:4130ad5a8edf41c2a8479b19a85b90d8",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/4130ad5a8edf41c2a8479b19a85b90d8.json",
+      "sha256": "3070df29d3b1e2388d0059d79982a87e84fc63dbbd85960da25312879b756b53",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:43ba0f2ffade47739cfcd2c620cd241d",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/43ba0f2ffade47739cfcd2c620cd241d.json",
+      "sha256": "6d6944c7011de401694fb955a0489294f633868b95c1757c5d0535e57112414d",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:469bb59be8054f7baa1d1dbdfe28e71c",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/469bb59be8054f7baa1d1dbdfe28e71c.json",
+      "sha256": "6f90bcb8688267e458a2590675795676ee84c5bd316bdd8d574af6654571b7e0",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:4d758b7520a9416f8ad96c7ed6791355",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/4d758b7520a9416f8ad96c7ed6791355.json",
+      "sha256": "8606e42ed6534ba0129a0060e0a83e35205e15967e1457354bf3b51937bf03e4",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:4dc15f2346b64acbb170a3a400a72420",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/4dc15f2346b64acbb170a3a400a72420.json",
+      "sha256": "7837279aa833f4700fc05df992ec56d0c72a0bc28121dc626fb4024c99251e26",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:53e2d7a37b154c1d8fed826ad46375f8",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/53e2d7a37b154c1d8fed826ad46375f8.json",
+      "sha256": "8779fea623e25bd089ba79b4795f235ec9ec04e7320ec2c70a72dfed1df159ec",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:54013010cb984a9699cb5c80c0852526",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/54013010cb984a9699cb5c80c0852526.json",
+      "sha256": "3efd242634487ea911e96d1e0a36b9bee5ad80ae8499c036340d8f88d1285313",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:54930c60ec9248ecaed3659668dc93a7",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/54930c60ec9248ecaed3659668dc93a7.json",
+      "sha256": "53facaab13e9d0d1efaab03b417d8761ef9261a856c1277d7748f9cf89512727",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:5646dcf97b254d3fb94e51ca69030eeb",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/5646dcf97b254d3fb94e51ca69030eeb.json",
+      "sha256": "be22ed2f1afa72d6023f24ef2a97962a973b553ea3ca9d3e8bb897def5de1921",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:593185b8f65d4e0a837c40e52a30b207",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/593185b8f65d4e0a837c40e52a30b207.json",
+      "sha256": "1a7306bde6ebe95e0206d0c9287e92fa33aa4da717919db8081940dbb928eca5",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:5bac924c722a487db7b70a3fb407f8ab",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/5bac924c722a487db7b70a3fb407f8ab.json",
+      "sha256": "4f4f0fb79569d6c0dc84c22fd343bfb92bd4289dfadd3d4590bc4bbe9073bcea",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:5c99a24e4f6e4876aca59135258e5253",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/5c99a24e4f6e4876aca59135258e5253.json",
+      "sha256": "91b94e1f5e7cf2b57c51f3985602990a2b5ba1cadef9f6c4646b6c3015a91d63",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:5dbd6c0eb20443e8b88e34030c802cad",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/5dbd6c0eb20443e8b88e34030c802cad.json",
+      "sha256": "ef74adb88967d8c39201458d972148edbbcffaaa4ff675869d87235e3dd3d189",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:5fc639129b424997a1f1e57fdf961e11",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/5fc639129b424997a1f1e57fdf961e11.json",
+      "sha256": "903342fc290ba41440fda491186767384606e24a394ec0f94c961ab04a0a2296",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:666ccb29855945f5bfa3d0afeae21c1e",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/666ccb29855945f5bfa3d0afeae21c1e.json",
+      "sha256": "6ccea112ff7aff8b9f4fe1c76d435df555d32d073fe464e8ac9b96339d7c043c",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:671791c57d384eee837d497916ce3816",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/671791c57d384eee837d497916ce3816.json",
+      "sha256": "31f9c60c12c6aa2190720a80f9e098bd1d502d60a986386cd347eedce93fd2d0",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:693c41717cb64465a46a8b490ea1139a",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/693c41717cb64465a46a8b490ea1139a.json",
+      "sha256": "686e68e7df88fc956bdc729694bc27989dead8e822805a794b77205c2e41a79d",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:7129e14408884fb0a287aa2481f2889a",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/7129e14408884fb0a287aa2481f2889a.json",
+      "sha256": "44583d5a17ec65d98fde536e35b81fc097925ecb3101e887bba01a4723dd251b",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:717e6d5714c3457fa3a91ee6db663895",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/717e6d5714c3457fa3a91ee6db663895.json",
+      "sha256": "b4d6c164e7ec6b59b13dfe91c246848e7a89c6f9dea08a1d40a085e7ec3c1565",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:71aeb31771054ca39bfb0255d8369f76",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/71aeb31771054ca39bfb0255d8369f76.json",
+      "sha256": "3d2fb35319a5e875c87e44e9c66b9fab9325a7ceb5d1d05243d56184ff077d66",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:76c2c855d64844cdb08d016c3e61075d",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/76c2c855d64844cdb08d016c3e61075d.json",
+      "sha256": "f140cc75fdb16d5c0b3c990e2b3ad8ff3208ca066e88ed32b623959e63b090ab",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:77ac9a13e0fe4898bd7726f140e93f9f",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/77ac9a13e0fe4898bd7726f140e93f9f.json",
+      "sha256": "deddfe0ca05d70d81c5a15b350e6bfaa3bb27dd90c591fd6c7c918f11d7bdf4f",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:7a2b3220cf7e42738730ec4ce2fc2128",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/7a2b3220cf7e42738730ec4ce2fc2128.json",
+      "sha256": "53e57e7a900fe0932f783ff0c0c567f29fe9e6a0493b5f83c5d8c85c64cad3bd",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:7b6cced4f82843d0881da50e835ed94f",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/7b6cced4f82843d0881da50e835ed94f.json",
+      "sha256": "ec8fac6c40460711a8e915f95da838d08616ac3324d7987185eabc6943ae222a",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:7e31d90f1dec46bfb0ee7f2699cbe0b3",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/7e31d90f1dec46bfb0ee7f2699cbe0b3.json",
+      "sha256": "b11e0aa3778f5866e083b71d48d7c777be6cbb1d457c08f2908427a8584e94f2",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:81a1bcb1bcff44689401594be1a3d505",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/81a1bcb1bcff44689401594be1a3d505.json",
+      "sha256": "b8af4c45b444d3ad46a4a3e2372f066510aaf98ad3e3fe0a8949611e258f23aa",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:84a11e0aaed14544894748b91d1e07f8",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/84a11e0aaed14544894748b91d1e07f8.json",
+      "sha256": "fddbaddc38c2a59c28ea32d1da5962e59afc36ff0221871ae8bf35ff403a5972",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:85c105b790e347dc94557c1ffcd30ed1",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/85c105b790e347dc94557c1ffcd30ed1.json",
+      "sha256": "4fc50406912f0d5faf13cbb19e984add873ca04c4a72afd7d96757e4d8663f7a",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:8a5321cf4f634312840b083cfe0638f0",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/8a5321cf4f634312840b083cfe0638f0.json",
+      "sha256": "788d42e0a04bddb4c774245d79de844387c364fa1f4ac63d5ec4e36974b11794",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:8be93512e8fa4f62a9d122d71f81799c",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/8be93512e8fa4f62a9d122d71f81799c.json",
+      "sha256": "e2f89b1a121fb75fbfaa3f3bf7581693397b0425c5afa6d518bcd4bb12254fe8",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:8eed0c2324f049d38d24f693ca556c14",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/8eed0c2324f049d38d24f693ca556c14.json",
+      "sha256": "3cf4b167d138dfa5de4fb87a1e9065010a02c601a6356c3ea6589c198d8ff470",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:8f1972ce884544f4b9aed6b18b8e266a",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/8f1972ce884544f4b9aed6b18b8e266a.json",
+      "sha256": "a6716d71ed7961360b4a0da201e7262a88c2d45ae15b9e33ee39d90979d57760",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:918224525bdf495faf88278629fc2e1c",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/918224525bdf495faf88278629fc2e1c.json",
+      "sha256": "76fe9cc8f2c3a5fc95cd350d1b52950ae84cf528ae7f79f004630eb8fc09e237",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:9c296898694a44e680365c7b75bf1911",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/9c296898694a44e680365c7b75bf1911.json",
+      "sha256": "9c5b527d4b68cb94b323c9f7726cf88c7bc4840363554507504ee595c779de03",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:9fd73598e5524c5487a80d5f1142bf87",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/9fd73598e5524c5487a80d5f1142bf87.json",
+      "sha256": "d9baea6dd8fbbb5fc6c0dfdf9d79b1bd900207b1e1158f1670b86aba83fe157b",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:a914495fa2c547a7ba5ff062976bfc5d",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/a914495fa2c547a7ba5ff062976bfc5d.json",
+      "sha256": "c07ae8e75983c36291fe20743835c9f9f4a9099e3383771016592271f70e1d12",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:abd2eb61c6da4b21bb5157677a0c389e",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/abd2eb61c6da4b21bb5157677a0c389e.json",
+      "sha256": "fecc242307e2e78541223c0e35c538e0f9b776ebbf8b4347b3eea0912ffa25d7",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:ac64f2fa18b94200bfd342398d9582bb",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/ac64f2fa18b94200bfd342398d9582bb.json",
+      "sha256": "237ddd52d75b313f7f5a1e3b922a0feed786a3e90424706919e7320124c059c1",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:acb24813895d4b3698b13abc6893a4ee",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/acb24813895d4b3698b13abc6893a4ee.json",
+      "sha256": "4c7cc895432f42405fa16a555155124a4ff0d497fb804eadb68b432d5d8adf92",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:ae739a81e7fc4fb98225d109f5e969cd",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/ae739a81e7fc4fb98225d109f5e969cd.json",
+      "sha256": "ede5912258496381614b2c27fe473a0b9900f829e58b5d81b7ab5f79b8caf29d",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:b0d270f9b00e453f937c7743f4dbed6d",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/b0d270f9b00e453f937c7743f4dbed6d.json",
+      "sha256": "e90591d4bc10f32bd825ebac725adff9a56d4c5a2d75352b12003a0bb6a377a1",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:b0e4d25c55594e5db01ab0e76ccbb710",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/b0e4d25c55594e5db01ab0e76ccbb710.json",
+      "sha256": "b4f05e09968aa46bfb572c5f2dfdfcfeffe9335f7dea2906d0642a3e46ca4761",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:b5599d4c488843f1872d59037b9f68f1",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/b5599d4c488843f1872d59037b9f68f1.json",
+      "sha256": "115b07dc4f643ac06b998b71ee572b35ddfd442937f9510498e89987de67cb8c",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:b5ddf95969074c01a4fae95c2c6a3698",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/b5ddf95969074c01a4fae95c2c6a3698.json",
+      "sha256": "fb6450071e15d7160e180def80b5e95d6281730d042a933588519090763c119a",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:b60f5e35e97345f3adb095fc93cd1afd",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/b60f5e35e97345f3adb095fc93cd1afd.json",
+      "sha256": "dcb26ca8f424b51e306fbe5e18a9ea4dd77361c8ac764647d62381cde4511add",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:b91f10ecd88b4025be465b0a6b69c00f",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/b91f10ecd88b4025be465b0a6b69c00f.json",
+      "sha256": "1bee316c419ff65cc7443f3a12edce9afd044d726d767feea7e90f4e580e2ba3",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:bc40355fea904eeeb516a11f98ff4e72",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/bc40355fea904eeeb516a11f98ff4e72.json",
+      "sha256": "28f746e3fe45467c49f981438ae88af60b632c19028d409a663d1dd0ec0b8484",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:bf4875e1dbd54f1d9851e8a6a382ea02",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/bf4875e1dbd54f1d9851e8a6a382ea02.json",
+      "sha256": "5675ee2ec43605da7e47fcecc74cf56782b9564d0e8587a529f9359cb0d17c53",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:c4a2c383d6ea4ea4a3e559b000dc1f7d",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/c4a2c383d6ea4ea4a3e559b000dc1f7d.json",
+      "sha256": "f97acc2984d00c6d98a6de8396d4a39e46821574110d9e140870b8bf265f58e6",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:c98bd8dad8bd41b2a0c0d188b881a4cd",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/c98bd8dad8bd41b2a0c0d188b881a4cd.json",
+      "sha256": "aed9d6cb0e6498f4362f04c31f48018d98425c6d3a31511a2f33c5f777314e30",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:c9a599b3084645bcad8a043372764738",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/c9a599b3084645bcad8a043372764738.json",
+      "sha256": "c38d14d57e9be48436edce6534d638660bb27374983c1987f3699089a186ea26",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:ccfc56c7a72b498a8af4e3b6efc14ea5",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/ccfc56c7a72b498a8af4e3b6efc14ea5.json",
+      "sha256": "c38dce9783f547e5d94c7b5c566842ad9ed6bc1a2d7cdc03e1fc70e0407d9e33",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:ce07c4d60299464a9d319665c9616bdb",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/ce07c4d60299464a9d319665c9616bdb.json",
+      "sha256": "d8bdf40e6e838abc10787ef839ed9e872b3fafe8e404e30d46c656a56d688300",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:ced6d322bda1494992057dcf2e16b612",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/ced6d322bda1494992057dcf2e16b612.json",
+      "sha256": "1bc3493b28665767a1b82b79cd1296aaa58c0a426a9518f5b468ed500de1785d",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:cf1c270cbbd14f50ab4b8ebd1b2abcbe",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/cf1c270cbbd14f50ab4b8ebd1b2abcbe.json",
+      "sha256": "1ad41a820a83728ac062d12f27df55a61a575f9415e6b53506959fc91294f553",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:d27494e8db7b4cc9b8979527814279eb",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/d27494e8db7b4cc9b8979527814279eb.json",
+      "sha256": "c45de769de6252ed29c0934e7b5d239d1e185d9c626bfeab4ebdd89dd41ee400",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:d392723f21a34010be8abdfe61e2f21d",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/d392723f21a34010be8abdfe61e2f21d.json",
+      "sha256": "8a343587e09026d27874f7a4877b80d21a483c74f184f269b86bdd4734225ab9",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:d44d903c5e8c488f9e8350a0ce95ca81",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/d44d903c5e8c488f9e8350a0ce95ca81.json",
+      "sha256": "58475bf46c90fb8ea2c3d97ba7587af4b6dcb8891fba9a305e35bd0cbea15a48",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:d8c8e38236764b39b920ca141827144b",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/d8c8e38236764b39b920ca141827144b.json",
+      "sha256": "f3f8ad50bd60fe7cb9ad0379d8edcfe1ba6570eb94a050921ee53aeed9393e6f",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:da804e41b6c14dd69f40a4800122a13c",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/da804e41b6c14dd69f40a4800122a13c.json",
+      "sha256": "b4bc6d784f36bd02752b4f114b95a545b0e64a6613df2ba4e879a2a4aa19fb10",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:daa178e615c444f8a224093561fc1a69",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/daa178e615c444f8a224093561fc1a69.json",
+      "sha256": "f3d0063e9f9e597e6641db86b7e5ab600e864f4c257a4e73922978d258ae4714",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:dae04fe0d3244f689dd3e59365163c8e",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/dae04fe0d3244f689dd3e59365163c8e.json",
+      "sha256": "fb72d9fc0ea0ec621c65659c029916cee3bda65656c10d56a1722e8f36c25ed8",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:dfe9c07d6ad14b2da8718f441f611f72",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/dfe9c07d6ad14b2da8718f441f611f72.json",
+      "sha256": "1ab88c63cda391fc6c00e128211bfa107707cfba52ebc116da278bbc80aa4aaa",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:e4f40dc819524ffca4d6b2ec94b4ebde",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/e4f40dc819524ffca4d6b2ec94b4ebde.json",
+      "sha256": "5c18a2f80c10bf9005f23d0c17a7615c5c61d328e8d08863dc8e99e84d497603",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:e57da2bf201c4555b6e30b794e4fcbdd",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/e57da2bf201c4555b6e30b794e4fcbdd.json",
+      "sha256": "681576273ba3b3b08c5c1bae34986e5d93a1cb97d330af9f271a87ad8c99fc6d",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:e6efb0c4812e48abbe7087cb1bdb4e1c",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/e6efb0c4812e48abbe7087cb1bdb4e1c.json",
+      "sha256": "a0a8523fa7686bbdb24e1593e9fb8de4af609aa2bb1a7695cba8d40917300fa7",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:e7a19494ffd549289f687cf091452556",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/e7a19494ffd549289f687cf091452556.json",
+      "sha256": "652f959535761c130e23d76717a95a4def7be437efa45a86bd5c3400f80c7615",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:e8bb718bd2894efe82e4d6fdb78056ae",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/e8bb718bd2894efe82e4d6fdb78056ae.json",
+      "sha256": "6ffd821b93ebeff4be2381c1cc7cf71b743f42f2e3d1bee2ff6431f8b9a54a54",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:ec1e4191898a4f24bb1c61c0aed6ae7e",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/ec1e4191898a4f24bb1c61c0aed6ae7e.json",
+      "sha256": "ad284b5f351a605f9212f3e7453ef6f831a6c7950ea387383c5afa08d0cc5947",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:ef5e87ccfa704a938147db0938d974f3",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/ef5e87ccfa704a938147db0938d974f3.json",
+      "sha256": "9694e6914d161102dc90d58d1ddb5cff73bdae8adcfe4618b3272e6ca28c1e84",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:f0efdda1851d47d29454a66bfa85219e",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/f0efdda1851d47d29454a66bfa85219e.json",
+      "sha256": "78a0dd9fbea5887787d2901cf687b5d4af83d987a6ea73bf0be04df7ca8602aa",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:f28843a5b4934071bb1370813c215102",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/f28843a5b4934071bb1370813c215102.json",
+      "sha256": "358c3f96ff2980c6b8a38f1e46a394d81aee36c1cac6bfb3ca9a7f2cc62fda5a",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:f46f830f736c4cd09972a36d94ff6391",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/f46f830f736c4cd09972a36d94ff6391.json",
+      "sha256": "bee2cc0993315f7ec1615ebb4c18b3b76b9577b07b509002976d458cd084d90e",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:f89154517b0d4e53939c8a1131ff93dd",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/f89154517b0d4e53939c8a1131ff93dd.json",
+      "sha256": "782e16d422ebdb83aa6f8c3867cf93322a6280425ee8eb83fe4e8e4a2c151545",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:f9bd85a38594482b8e510268d1f07e61",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/f9bd85a38594482b8e510268d1f07e61.json",
+      "sha256": "fc3ac69d49a4ee488361a881d7a3f1ec579cfcc9487dc76f4e4d9d35d87fe068",
+      "successful": true
+    },
+    {
+      "call_id": "call_id:fd1fa743715d4fb485c6f82e3026934e",
+      "path": "/home/aid1/Documents/2_19C_biology/results/benchmark/stage4step3_2026-09-14/runs/b4/cmp_009/artifacts/fm/fd1fa743715d4fb485c6f82e3026934e.json",
+      "sha256": "1e3655f21aa41da2235a1a7701edfcfd30cdb589ebffa45e98b288cfd74b9028",
+      "successful": true
+    }
+  ],
+  "checks": {
+    "all_candidate_receipts_resolve_and_match_trace": true,
+    "apps_and_orchestrator_skills_disabled": true,
+    "contract_verdict_reproducible": true,
+    "historical_trace_hash_unchanged": true,
+    "model_identity_or_waiver_valid": true,
+    "normalized_context_threat_absent": true,
+    "proxy_limit_explicit": true,
+    "received_prompt_byte_identical": true,
+    "runtime_controls_exact": true,
+    "stored_answer_equals_frozen_trace_argument": true,
+    "trace_pairs_complete": true
+  },
+  "contract_sha256": "d6634623a2787a0b5fb8fb338483689c92662e449e69d1cde1a463d3be93da76",
+  "labels_opened_during_validation": false,
+  "model_calls": 0,
+  "neutral_item_id": "cmp_009",
+  "normalized_stable_context": {
+    "approval_policy": "never",
+    "cli_version": "0.154.0",
+    "developer_message_sha256": [
+      "2045f61b378e4830e1e67cbc93d8137c912a1daa4f1aaeb6dd9851d649c65132",
+      "af60719c7b64906bd05733aec72a96726712fe25d382a7bc9e05a6733cfd67dc",
+      "6ded806e3cdbb35599ecaf8742574bc5274908472b1729090010c404c2151e8e"
+    ],
+    "normalized_base_instructions_sha256": "cbefa6b0bede0e332d957fca70ccacf9f12f4c0ecdf81b819e5cbe1a3b16e265",
+    "sandbox_type": "read-only"
+  },
+  "post_hoc_gate_repair": true,
+  "prompt_sha256": "5fa8c6dc1e0915b33651ba1068739a0b15af8011e2597e88c65ac45a8e7967bd",
+  "raw_base_instructions_sha256": "a91357a1cd2727a0be06d461248d6e3a7274746e38108f548a3adf2cc2430415",
+  "rollout_sha256": "7cd596dd7bee902c6a1467a51468df9627f3d895b5c4a456dcdde76c5e2ac044",
+  "science_receipt_count": 100,
+  "start_completion_pairs": 101,
+  "submission_sha256": "5d160b8d62a70e628200afb6a5081b1617e870ac060d842391f4ecba13a60370",
+  "thread_id": "01a0a54e-aa34-72c1-8b1b-aed7fc5d5bcb",
+  "trace_sha256": "624d2e3faf7cfe66f57be4f911a2981fdb3d2084ec88f29bd6ffc9ab9cfdb6e8",
+  "validated_at_utc": "2026-09-15T16:08:05.713478+00:00"
+}

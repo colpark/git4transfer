@@ -1,0 +1,34 @@
+{
+  "coverage_after": {
+    "attempted": 10,
+    "scorable": 9
+  },
+  "coverage_before": {
+    "attempted": 10,
+    "scorable": 6
+  },
+  "decisions": {
+    "cmp_004": {
+      "accepted": true,
+      "sha256": "1453061807303b3dd2462a4fc27e0e5accde926147361be87d59fc3b815a198d"
+    },
+    "cmp_008": {
+      "accepted": true,
+      "sha256": "7847f6c927fd480c3a830f4294cd7e06d0924454fefe09c4fac7eade7fa09cb7"
+    },
+    "cmp_009": {
+      "accepted": true,
+      "sha256": "edb5086caa9d73728dd9faace1b95ab1bd16dde8fe8c7353d31c7e90a4a49fc2"
+    }
+  },
+  "labels_opened_during_validation": false,
+  "model_calls": 0,
+  "post_hoc": true,
+  "recovered": [
+    "cmp_004",
+    "cmp_008",
+    "cmp_009"
+  ],
+  "recovery_freeze_sha256": "67fa806fb0c805b2fec6d1d3e71c5ae548efe40eff3cde411f5d01b26bf697ba",
+  "validated_at_utc": "2026-09-15T16:08:05.714734+00:00"
+}
